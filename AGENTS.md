@@ -136,6 +136,13 @@ agents/
 ## pages 폴더 규칙
 - 각 페이지는 원본 `pages/<slug>.md`와 검색엔진용 생성 결과 `pages/<slug>.html` 한 쌍으로 유지한다.
 - 토픽 페이지 파일명은 `분야-hot-topic-번호` 형식을 쓰지 않고, 글 제목을 영어로 요약한 kebab-case slug를 사용한다.
+- slug는 제목의 핵심 명사와 독자 질문을 3~8개 영어 단어로 압축해 만든다.
+- slug에는 가능하면 정규화된 분야 접두어(`technology`, `semiconductor`, `economy`, `global`, `politics`, `industry`, `science`, `culture`, `sports`)를 앞에 둔다.
+- slug는 소문자 영문, 숫자, 하이픈만 사용하고 공백, 한글, 특수문자, 마침표는 넣지 않는다.
+- slug 끝에는 글의 시의성을 구분할 수 있도록 필요한 경우 `2026` 같은 연도 토큰을 붙인다.
+- `hot-topic`, `topic`, `issue`, 번호만 붙인 이름, 의미가 빈약한 임시 이름은 파일명으로 쓰지 않는다.
+- 제목이 비슷해 slug가 겹치면 단순 번호를 먼저 붙이지 말고 제목의 차이를 드러내는 영어 핵심어를 추가해 구분한다.
+- slug를 정하면 같은 slug로 `pages/<slug>.md`, `pages/<slug>.html`, `app.js`의 `topicSlugsByDesk` 또는 manifest 항목, 정적 HTML 내부 canonical/OG/JSON-LD URL, `sitemap.xml`을 모두 함께 갱신한다.
 - 한 파일은 최소 3천자 이상의 장문 본문을 가진다.
 - 분야와 메타데이터는 파일 안이 아니라 `app.js`의 manifest에서 관리하고, 생성된 HTML의 head 메타데이터도 이 manifest를 기준으로 맞춘다.
 - 글 발행시각은 날짜만 쓰지 않고 `YYYY-MM-DDTHH:mm:ss+09:00` 형식으로 시분초와 시간대까지 기록한다.
