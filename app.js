@@ -616,8 +616,8 @@ function getDeskLabel(desk) {
   return `${deskEmoji[desk] || "📌"} ${desk}`;
 }
 
-function formatPageCount(count) {
-  return String(count).padStart(2, "0");
+function formatCountLabel(count) {
+  return `(${count})`;
 }
 
 function renderDeskMenu() {
@@ -634,8 +634,8 @@ function renderCards(query = "") {
   const latestByDesk = getLatestPagesByDesk(pages);
 
   listHeadingNode.textContent = normalized
-    ? `🔎 검색 결과 ${formatPageCount(filtered.length)}`
-    : `🔥 지금 사람들이 많이 궁금해하는 주제 ${formatPageCount(latestByDesk.length)}`;
+    ? `🔎 검색 결과 ${formatCountLabel(filtered.length)}`
+    : `🔥 지금 사람들이 많이 궁금해하는 주제 ${formatCountLabel(latestByDesk.length)}`;
   emptyStateNode.hidden = filtered.length > 0;
   if (normalized) {
     pageListNode.innerHTML = `
@@ -745,7 +745,7 @@ function renderDeskSections(items) {
         <section class="desk-section" aria-labelledby="${deskId}">
           <div class="section-head section-head--compact">
             <div>
-              <h3 id="${deskId}">${escapeHtml(`${getDeskLabel(desk)} ${formatPageCount(deskPages.length)}`)}</h3>
+              <h3 id="${deskId}">${escapeHtml(`${getDeskLabel(desk)} ${formatCountLabel(deskPages.length)}`)}</h3>
             </div>
             <a class="more-link" href="?desk=${encodeURIComponent(desk)}">+ 더보기</a>
           </div>
@@ -771,7 +771,7 @@ function renderDeskDetail(desk) {
   listViewNode.hidden = false;
   articleViewNode.hidden = true;
   activePage = null;
-  listHeadingNode.textContent = `${getDeskLabel(normalizedDesk)} 전체 보기 ${formatPageCount(deskPages.length)}`;
+  listHeadingNode.textContent = `${getDeskLabel(normalizedDesk)} 전체 보기 ${formatCountLabel(deskPages.length)}`;
   emptyStateNode.hidden = deskPages.length > 0;
   pageListNode.innerHTML = `
     <div class="desk-detail-summary">${escapeHtml(`${normalizedDesk} 분야의 주제 ${deskPages.length}개를 모았습니다.`)}</div>
