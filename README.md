@@ -43,7 +43,7 @@ pages/
   <slug>.html
 agents/
   README.md
-  <desk>-agent.md
+  <desk>-agent-<name>.md
 ```
 
 ### 핵심 파일 역할
@@ -59,7 +59,7 @@ agents/
 | `robots.txt` | 검색엔진 크롤링 정책 |
 | `sitemap.xml` | 검색엔진 제출용 URL 목록 |
 | `AGENTS.md` | 프로젝트 운영 규칙과 구현 제약 |
-| `agents/<desk>-agent.md` | 글 생성과 검토에 참고하는 분야별 전문가 페르소나 문서 |
+| `agents/<desk>-agent-<name>.md` | 글 생성과 검토에 참고하는 분야별 전문가 페르소나 문서 |
 
 ## 로컬 실행
 
@@ -119,4 +119,4 @@ http://localhost:8000/
 - 로그인, 회원가입, 댓글, 결제 기능을 추가하지 않습니다.
 - 사용자-facing 런타임 코드는 루트의 `index.html`, `style.css`, `app.js` 중심으로 유지합니다.
 - 운영 규칙과 현재 구조의 진실은 `AGENTS.md`를 기준으로 관리합니다.
-- 새 글을 만들 때는 해당 분야의 `agents/<desk>-agent.md`를 참고해 주제 선정, 작성, 검증, SEO 정합성을 함께 점검합니다.
+- 새 글을 만들 때는 해당 분야의 `agents/<desk>-agent-<name>.md`를 참고해 주제 선정, 작성, 검증, SEO 정합성을 함께 점검합니다.
