@@ -24,6 +24,7 @@ robots.txt
 sitemap.xml
 pages/
   <slug>.md
+  <slug>.html
 agents/
   README.md
   *.md
@@ -32,14 +33,14 @@ agents/
 - 위 구조 외의 프로젝트 파일/폴더는 유지하지 않는다.
 - `README.md`는 공개 저장소용 프로젝트 소개 문서로 유지한다.
 - `agents/` 폴더는 역할 문서 저장용으로 남긴다.
-- 실제 사용자-facing 사이트는 루트의 `index.html`, `style.css`, `app.js`만 사용한다.
+- 실제 사용자-facing 사이트는 루트의 `index.html`, `style.css`, `app.js`와 `pages/<slug>.html` 정적 글 페이지를 사용한다.
 - 검색엔진 수집 보조 파일은 루트의 `robots.txt`, `sitemap.xml`만 사용한다.
 - 정적 파일 경로는 배포 위치에 덜 민감하도록 상대 경로를 우선 사용한다.
 
 ## 진실의 원천 우선순위
 1. 실제 루트 파일 구조와 실제 코드
 2. 이 문서 `AGENTS.md`
-3. `pages/*.md` 본문 내용
+3. `pages/*.md` 본문 원본과 `pages/*.html` 생성 결과
 4. `agents/*.md` 참고 문서
 
 ## 전역 규칙
@@ -51,7 +52,7 @@ agents/
 - Python 백엔드, 관리자 페이지, 승인 API, 데이터베이스, 서버 라우터를 다시 도입하지 않는다.
 - 페이지 렌더링과 상호작용은 `app.js` 하나에서 처리한다.
 - 스타일은 `style.css` 하나에서 처리한다.
-- 페이지 본문은 `pages/<slug>.md` 파일로 저장한다.
+- 페이지 본문 원본은 `pages/<slug>.md` 파일로 저장하고, 검색엔진용 정적 글 페이지는 같은 slug의 `pages/<slug>.html` 파일로 생성한다.
 - 페이지 메타데이터 목록은 `app.js` 내부 manifest 배열에서 관리한다.
 
 ## 금지 사항
@@ -70,9 +71,9 @@ agents/
 - 화면에 표시하는 분야명은 `app.js`에서 정규화하며, `국제정치`와 `세계`는 `글로벌`, `한국 정치`는 `정치`, `문화·미디어`와 `문화미디어`는 `문화`로 보여준다.
 - `글로벌` 분야 이모티콘은 지구본 `🌍`를 사용한다.
 - 검색은 제목, 요약, 분야를 기준으로 동작한다.
-- 카드 클릭 시 같은 `index.html` 안에서 상세 보기 상태로 전환한다.
-- 카드와 분야 링크는 검색엔진이 읽을 수 있도록 `?page=<slug>`, `?desk=<분야>` 쿼리 라우팅을 우선 사용하며, 기존 `#page`, `#desk` 해시 라우팅도 `app.js`에서 호환한다.
-- 상세 본문은 `pages/<slug>.md`를 fetch해서 문단 단위로 렌더링한다.
+- 카드 클릭 시 검색엔진이 바로 읽을 수 있는 `pages/<slug>.html` 정적 글 페이지로 이동한다.
+- 카드 링크는 검색엔진이 읽을 수 있도록 `pages/<slug>.html` 정적 글 페이지를 우선 사용하며, 분야 링크는 `?desk=<분야>` 쿼리 라우팅을 사용한다. 기존 `?page=<slug>`, `#page`, `#desk` 주소도 `app.js`에서 호환한다.
+- 정적 글 페이지는 `pages/<slug>.html`에 전체 본문과 글별 SEO 메타데이터를 포함하며, `app.js`는 같은 slug의 `pages/<slug>.md` 원본을 fetch해 상호작용용 상세 화면을 보강한다.
 - 상세 본문 렌더링 시 본문 첫 줄의 `한 줄 요약:` 문장 전체와 예전 분야 표현도 `app.js`에서 제거·정규화해 보여준다.
 - Markdown 헤더 문법을 별도 파서로 해석하지 않고, 빈 줄 기준 문단 렌더링을 사용한다.
 - 홈 상단에는 `🔥 지금 사람들이 많이 궁금해하는 주제` 무한 카드 슬라이더가 있다.
@@ -93,10 +94,10 @@ agents/
 - 라우트별 제목, 설명, canonical, Open Graph, Twitter 카드, JSON-LD 구조화 데이터는 `app.js`에서 현재 화면 상태에 맞게 갱신한다.
 - 홈은 `WebSite`, 분야별 전체 보기는 `CollectionPage`, 상세 글은 `Article` JSON-LD를 사용한다.
 - 존재하지 않는 문서는 `noindex, follow`로 표시한다.
-- canonical URL은 배포된 현재 origin과 pathname을 기준으로 만들고, 상세 글은 `?page=<slug>`, 분야 보기는 `?desk=<분야>`를 사용한다.
+- canonical URL은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKA/`를 기준으로 만들고, 상세 글은 `pages/<slug>.html`, 분야 보기는 `?desk=<분야>`를 사용한다.
 - `robots.txt`와 `sitemap.xml`은 루트에 둔다.
-- `sitemap.xml`의 도메인 placeholder(`https://example.com`)는 실제 배포 도메인으로 교체한 뒤 Search Console에 제출해야 한다.
-- manifest에 글을 추가하거나 slug를 바꾸면 같은 변경에서 `sitemap.xml`도 함께 갱신한다.
+- `sitemap.xml`은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKA/` 기준의 홈, 분야, 정적 글 페이지 URL을 담는다.
+- manifest에 글을 추가하거나 slug를 바꾸면 같은 변경에서 `pages/<slug>.html`과 `sitemap.xml`도 함께 갱신한다.
 
 ## 뉴스레터 규칙
 - 이 사이트의 유일한 상호작용은 뉴스레터 신청이다.
@@ -133,9 +134,9 @@ agents/
 ```
 
 ## pages 폴더 규칙
-- 각 페이지는 `pages/<slug>.md` 한 파일이다.
+- 각 페이지는 원본 `pages/<slug>.md`와 검색엔진용 생성 결과 `pages/<slug>.html` 한 쌍으로 유지한다.
 - 한 파일은 최소 3천자 이상의 장문 본문을 가진다.
-- 분야는 파일 안이 아니라 `app.js`의 manifest에서 관리한다.
+- 분야와 메타데이터는 파일 안이 아니라 `app.js`의 manifest에서 관리하고, 생성된 HTML의 head 메타데이터도 이 manifest를 기준으로 맞춘다.
 - 본문은 기사문/블로그문 형식의 읽기 쉬운 한국어 문단으로 작성한다.
 - 한 문단이 지나치게 길어지지 않도록 빈 줄로 구분한다.
 
@@ -153,9 +154,9 @@ agents/
   ↓
 `topicPages`가 각 토픽을 페이지 메타데이터로 변환
   ↓
-`createTopicSlug(desk, topicIndex)`로 `pages/<slug>.md` 파일명 결정
+`createTopicSlug(desk, topicIndex)`로 `pages/<slug>.md`와 `pages/<slug>.html` 파일명 결정
   ↓
-각 slug에 대응하는 장문 본문을 `pages/<slug>.md`로 작성
+각 slug에 대응하는 장문 본문을 `pages/<slug>.md`로 작성하고 `pages/<slug>.html` 정적 글 페이지를 생성
   ↓
 `pages = [...featuredPages, ...topicPages]`에 합쳐져 게시 목록에 노출
   ↓
@@ -167,7 +168,7 @@ agents/
 - `hotTopicsByDesk`는 토픽 문장 저장소이고, 실제 화면 표시 분야는 `normalizeDesk()` 기준을 따른다.
 - `topicPages`는 `hotTopicsByDesk`를 순회해 `slug`, `title`, `desk`, `publishedAt`, `summary`를 가진 manifest 항목을 만든다.
 - `createTopicPublishedAt(deskIndex, topicIndex)`는 토픽 페이지의 발행일을 자동 배정하며, 최신순 정렬과 상단 인기 주제 슬라이더의 기준이 된다.
-- 게시가 완료되려면 manifest 항목뿐 아니라 같은 slug의 `pages/<slug>.md` 본문 파일이 반드시 존재해야 한다.
+- 게시가 완료되려면 manifest 항목뿐 아니라 같은 slug의 `pages/<slug>.md` 본문 원본과 `pages/<slug>.html` 정적 글 페이지가 반드시 존재해야 한다.
 - 상단 `🔥 지금 사람들이 많이 궁금해하는 주제` 슬라이더는 전체 게시 목록에서 분야별 최신 발행 페이지 한 개씩을 가져와 구성한다.
 
 ## app.js 구현 규칙
@@ -175,7 +176,7 @@ agents/
 - 각 항목은 최소 `slug`, `title`, `desk`, `summary`를 가진다.
 - 현재 manifest는 `featuredPages`, `hotTopicsByDesk`에서 생성하는 `topicPages`, 그리고 `pages = [...featuredPages, ...topicPages]` 구조를 사용한다.
 - 기존 파일명과 토픽 slug 호환을 위해 `hotTopicsByDesk`, `deskSlugs`, `deskEmoji`에는 예전 분야 키가 남을 수 있지만, 화면 표시와 뉴스레터 저장값은 `normalizeDesk()` 기준이어야 한다.
-- 홈 카드 렌더링, 검색 필터, 상세 페이지 전환, `pages/*.md` fetch, 뉴스레터 저장은 모두 `app.js`에서 처리한다.
+- 홈 카드 렌더링, 검색 필터, 정적 글 페이지 호환, `pages/*.md` fetch, 뉴스레터 저장은 모두 `app.js`에서 처리한다.
 - 라우트별 SEO 메타데이터 갱신도 `app.js`에서 처리한다.
 - 카드 슬라이더의 실제 이동 거리 계산은 `refreshSliderLoops()`에서 처리한다.
 - 외부 라이브러리 없이 바닐라 JavaScript만 사용한다.
@@ -201,7 +202,7 @@ agents/
 - 코드 변경이 있는 작업을 완료하면 변경사항을 의미 있는 단위로 한글 커밋 메시지를 사용해 git commit하고 GitHub 원격 저장소에 push한다. 단, 사용자가 해당 작업에서 커밋 또는 푸시 금지를 명시한 경우에는 그 지시를 우선한다.
 
 ## 완료 기준
-- 루트에는 `AGENTS.md`, `README.md`, `index.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만 남아 있어야 한다.
+- 루트에는 `AGENTS.md`, `README.md`, `index.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만 남아 있어야 하며, 글별 HTML은 `pages/` 안에 둔다.
 - 홈 카드와 상세 보기, 상세 페이지 뉴스레터 신청이 동작해야 한다.
 - `pages/` 안의 각 문서는 장문이어야 한다.
 - 문서와 실제 코드가 서로 충돌하지 않아야 한다.

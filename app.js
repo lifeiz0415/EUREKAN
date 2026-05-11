@@ -315,6 +315,7 @@ const SLIDER_SEQUENCE_REPEAT_COUNT = 16;
 const TRANSLATE_TEXT_LIMIT = 4800;
 const SITE_NAME = "Eureka";
 const DEFAULT_SEO_DESCRIPTION = "Eureka는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
+const APP_BASE_URL = new URL("./", import.meta.url);
 const translationLanguages = [
   { code: "ko", translateCode: "ko", label: "한국어", flag: "🇰🇷" },
   { code: "en", translateCode: "en", label: "영어", flag: "🇺🇸" },
@@ -375,8 +376,8 @@ function createTopicSlug(desk, topicIndex) {
 }
 
 function createTopicPublishedAt(deskIndex, topicIndex) {
-  const date = new Date(Date.UTC(2026, 4, 12));
-  date.setUTCDate(date.getUTCDate() + (deskIndex * topicDateBlockSize) + topicIndex);
+  const date = new Date(Date.UTC(2026, 4, 1));
+  date.setUTCDate(date.getUTCDate() - (deskIndex * topicDateBlockSize) - topicIndex);
   return date.toISOString().slice(0, 10);
 }
 
@@ -426,11 +427,29 @@ function getDeskDescription(desk, count = 0) {
   return `${desk} 분야의 최신 관심 주제 ${count}개를 장문 기사로 모았습니다.`;
 }
 
+function getAssetUrl(path) {
+  return new URL(path, APP_BASE_URL).toString();
+}
+
+function getHomeUrl() {
+  return getAssetUrl("./");
+}
+
+function getArticleUrl(slug) {
+  return getAssetUrl(`pages/${encodeURIComponent(slug)}.html`);
+}
+
+function getStaticArticleSlugFromPath() {
+  const match = decodeURIComponent(window.location.pathname).match(/\/pages\/([^/]+)\.html$/);
+  return match ? match[1] : "";
+}
+
 function getRouteUrl(routeType = "home", value = "") {
-  const url = new URL(window.location.pathname || "./", window.location.href);
+  if (routeType === "page" && value) return getArticleUrl(value);
+
+  const url = new URL(getHomeUrl());
   url.hash = "";
   url.search = "";
-  if (routeType === "page" && value) url.searchParams.set("page", value);
   if (routeType === "desk" && value) url.searchParams.set("desk", value);
   return url.toString();
 }
@@ -452,6 +471,10 @@ function setMeta(name, content) {
 
 function setPropertyMeta(property, content) {
   getOrCreateMeta("property", property).setAttribute("content", content);
+}
+
+function removePropertyMeta(property) {
+  document.head.querySelectorAll(`meta[property="${property}"]`).forEach((node) => node.remove());
 }
 
 function setCanonical(url) {
@@ -481,10 +504,16 @@ function updateSeo({ title, description, url, type = "website", robots = "index,
   setMeta("robots", robots);
   setCanonical(url);
   setPropertyMeta("og:type", type);
+  setPropertyMeta("og:locale", "ko_KR");
   setPropertyMeta("og:site_name", SITE_NAME);
   setPropertyMeta("og:title", title);
   setPropertyMeta("og:description", description);
   setPropertyMeta("og:url", url);
+  if (type !== "article") {
+    removePropertyMeta("article:section");
+    removePropertyMeta("article:published_time");
+    removePropertyMeta("article:modified_time");
+  }
   setMeta("twitter:card", "summary");
   setMeta("twitter:title", title);
   setMeta("twitter:description", description);
@@ -547,11 +576,15 @@ function updateArticleSeo(page) {
       dateModified: page.publishedAt,
       articleSection: page.desk,
       inLanguage: "ko-KR",
+      mainEntityOfPage: { "@type": "WebPage", "@id": url },
       author: { "@type": "Organization", name: SITE_NAME },
       publisher: { "@type": "Organization", name: SITE_NAME },
       isPartOf: { "@type": "WebSite", name: SITE_NAME },
     },
   });
+  setPropertyMeta("article:section", page.desk);
+  setPropertyMeta("article:published_time", page.publishedAt);
+  setPropertyMeta("article:modified_time", page.publishedAt);
 }
 
 function updateMissingSeo(slug) {
@@ -605,6 +638,9 @@ function getCurrentRoute() {
   const queryDesk = queryParams.get("desk");
   if (queryDesk) return { type: "desk", value: queryDesk };
 
+  const staticSlug = getStaticArticleSlugFromPath();
+  if (staticSlug) return { type: "page", value: staticSlug };
+
   return { type: "home", value: "" };
 }
 
@@ -622,7 +658,7 @@ function formatCountLabel(count) {
 
 function renderDeskMenu() {
   deskMenuNode.innerHTML = getDeskList()
-    .map((desk) => `<a class="desk-menu__link" href="?desk=${encodeURIComponent(desk)}">${escapeHtml(getDeskLabel(desk))}</a>`)
+    .map((desk) => `<a class="desk-menu__link" href="${escapeHtml(getRouteUrl("desk", desk))}">${escapeHtml(getDeskLabel(desk))}</a>`)
     .join("");
 }
 
@@ -718,7 +754,7 @@ function getPublishedTime(page, index) {
 
 function renderCard(page, extraClass = "", duplicate = false) {
   return `
-    <a class="page-card ${extraClass}" href="?page=${encodeURIComponent(page.slug)}" data-page-slug="${encodeURIComponent(page.slug)}"${duplicate ? " aria-hidden=\"true\" tabindex=\"-1\"" : ""}>
+    <a class="page-card ${extraClass}" href="${escapeHtml(getArticleUrl(page.slug))}" data-page-slug="${encodeURIComponent(page.slug)}"${duplicate ? " aria-hidden=\"true\" tabindex=\"-1\"" : ""}>
       <p class="eyebrow">${escapeHtml(page.desk)}</p>
       <h3>${escapeHtml(page.title)}</h3>
     </a>
@@ -747,7 +783,7 @@ function renderDeskSections(items) {
             <div>
               <h3 id="${deskId}">${escapeHtml(`${getDeskLabel(desk)} ${formatCountLabel(deskPages.length)}`)}</h3>
             </div>
-            <a class="more-link" href="?desk=${encodeURIComponent(desk)}">+ 더보기</a>
+            <a class="more-link" href="${escapeHtml(getRouteUrl("desk", desk))}">+ 더보기</a>
           </div>
           <div class="card-grid card-grid--compact">
             ${visiblePages.map((page) => renderCard(page)).join("")}
@@ -961,14 +997,18 @@ function showListView() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function showArticleShell(page) {
+function hasStaticArticleBody(page) {
+  return getStaticArticleSlugFromPath() === page.slug && articleBodyNode.textContent.trim().length > 0;
+}
+
+function showArticleShell(page, { preserveBody = false } = {}) {
   const pageSummary = String(page.summary || "").trim();
   stopArticleSpeech(true);
   articleDeskNode.textContent = page.desk;
   articleTitleNode.textContent = page.title;
   articleSummaryNode.textContent = pageSummary;
   articleSummaryNode.hidden = !pageSummary;
-  articleBodyNode.innerHTML = "<p>문서를 불러오는 중입니다.</p>";
+  if (!preserveBody) articleBodyNode.innerHTML = "<p>문서를 불러오는 중입니다.</p>";
   newsletterPanelNode.hidden = false;
   newsletterTitleNode.textContent = "";
   newsletterCopyNode.textContent = "";
@@ -1010,17 +1050,21 @@ async function renderArticle(slug) {
     return;
   }
 
-  showArticleShell(page);
+  const preserveStaticBody = hasStaticArticleBody(page);
+  const staticArticleText = preserveStaticBody ? articleBodyNode.textContent.trim() : "";
+  showArticleShell(page, { preserveBody: preserveStaticBody });
 
   try {
-    const response = await fetch(`./pages/${encodeURIComponent(page.slug)}.md`, { cache: "no-store" });
+    const response = await fetch(getAssetUrl(`pages/${encodeURIComponent(page.slug)}.md`), { cache: "no-store" });
     if (!response.ok) throw new Error("본문 파일을 읽지 못했습니다.");
     const markdown = normalizeArticleMarkdown(await response.text());
     renderArticleContent(markdown, page);
     setVoiceReady([page.title, page.summary, markdown].filter(Boolean).join("\n\n"));
   } catch (error) {
-    articleBodyNode.innerHTML = `<p>${escapeHtml(error.message || "본문을 불러오는 중 문제가 발생했습니다.")}</p>`;
-    setVoiceReady([page.title, page.summary].filter(Boolean).join("\n\n"));
+    if (!preserveStaticBody) {
+      articleBodyNode.innerHTML = `<p>${escapeHtml(error.message || "본문을 불러오는 중 문제가 발생했습니다.")}</p>`;
+    }
+    setVoiceReady([page.title, page.summary, staticArticleText].filter(Boolean).join("\n\n"));
   }
 }
 
@@ -1041,11 +1085,13 @@ function syncViewFromLocation() {
 
 function handleRouteLinkClick(event) {
   if (!(event.target instanceof Element)) return;
-  const link = event.target.closest('a[href^="?page="], a[href^="?desk="]');
+  const link = event.target.closest("a[href]");
   if (!link || event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
   const url = new URL(link.getAttribute("href"), window.location.href);
-  if (url.origin !== window.location.origin || url.pathname !== window.location.pathname) return;
+  const homePath = new URL(getHomeUrl()).pathname;
+  const isRoutedSearch = url.searchParams.has("page") || url.searchParams.has("desk");
+  if (url.origin !== window.location.origin || url.pathname !== homePath || !isRoutedSearch) return;
 
   event.preventDefault();
   history.pushState(null, "", `${url.pathname}${url.search}`);
@@ -1054,7 +1100,7 @@ function handleRouteLinkClick(event) {
 
 async function loadDataStore() {
   try {
-    const response = await fetch("./data.json", { cache: "no-store" });
+    const response = await fetch(getAssetUrl("data.json"), { cache: "no-store" });
     if (!response.ok) throw new Error("data.json을 읽지 못했습니다.");
     dataStore = normalizeDataStore(await response.json());
   } catch {
@@ -1143,7 +1189,7 @@ async function handleNewsletterSubmit(event) {
 
 searchNode.addEventListener("input", () => {
   if (!articleViewNode.hidden) {
-    history.pushState(null, "", window.location.pathname);
+    history.pushState(null, "", getHomeUrl());
     showListView();
     return;
   }

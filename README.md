@@ -2,14 +2,14 @@
 
 위키, 블로그, 뉴스.
 
-Eureka는 지금 사람들이 많이 궁금해하는 이슈를 분야별 장문 글로 보여주는 정적 단일 페이지 위키/매거진입니다. 별도 백엔드, 데이터베이스, 프레임워크 없이 `index.html`, `style.css`, `app.js`, `pages/*.md`만으로 읽기 중심 사이트를 구성합니다.
+Eureka는 지금 사람들이 많이 궁금해하는 이슈를 분야별 장문 글로 보여주는 정적 단일 페이지 위키/매거진입니다. 별도 백엔드, 데이터베이스, 프레임워크 없이 `index.html`, `style.css`, `app.js`, `pages/*.md`, `pages/*.html`만으로 읽기 중심 사이트를 구성합니다.
 
 ## 프로젝트 성격
 
 - **제품 형태**: 정적 단일 페이지형 위키/매거진
 - **핵심 목표**: 최신 관심 주제를 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠 등 분야별 장문 페이지로 제공
 - **구현 방식**: 바닐라 자바스크립트 기반 단일 페이지 앱
-- **콘텐츠 원천**: `app.js`의 매니페스트와 `pages/<slug>.md` 본문 파일
+- **콘텐츠 원천**: `app.js`의 매니페스트와 `pages/<slug>.md` 본문 원본, `pages/<slug>.html` 정적 글 페이지
 - **유일한 사용자 상호작용**: 상세 페이지 뉴스레터 신청
 
 ## 주요 기능
@@ -17,10 +17,10 @@ Eureka는 지금 사람들이 많이 궁금해하는 이슈를 분야별 장문 
 - 홈 상단 인기 주제 무한 카드 슬라이더
 - 분야별 최신 글 카드 섹션과 `+ 더보기` 전체 보기
 - 제목, 요약, 분야 기반 검색
-- `?page=<slug>` 상세 페이지 라우팅
+- `pages/<slug>.html` 정적 상세 페이지 라우팅
 - `?desk=<분야>` 분야별 전체 보기 라우팅
-- 기존 `#page`, `#desk` 해시 주소 호환
-- 상세 본문 마크다운 파일 불러오기 및 문단 단위 렌더링
+- 기존 `?page`, `#page`, `#desk` 주소 호환
+- 정적 HTML 상세 페이지 제공 및 마크다운 원본 기반 상호작용 보강
 - 상세 페이지 음성 읽기 버튼
 - 한국어, 영어, 일본어, 중국어, 프랑스어, 스페인어, 러시아어, 힌디어 번역 버튼
 - 상세 페이지 전용 뉴스레터 신청 UI
@@ -40,6 +40,7 @@ robots.txt
 sitemap.xml
 pages/
   <slug>.md
+  <slug>.html
 agents/
   README.md
   *.md
@@ -52,7 +53,8 @@ agents/
 | `index.html` | 정적 단일 페이지 앱 껍데기, 기본 검색엔진 최적화 head, 화면 DOM 구조 |
 | `style.css` | 전체 레이아웃, 카드, 상세 페이지, 뉴스레터, 슬라이더 스타일 |
 | `app.js` | 매니페스트, 라우팅, 렌더링, 검색, 음성 읽기, 번역, 뉴스레터 저장, 검색엔진 최적화 메타 갱신 |
-| `pages/*.md` | 각 글의 장문 본문 |
+| `pages/*.md` | 각 글의 장문 본문 원본 |
+| `pages/*.html` | 글별 title, description, canonical, Open Graph, Twitter 카드, Article JSON-LD를 포함한 검색엔진용 정적 페이지 |
 | `data.json` | 뉴스레터 구독자 저장용 정적 JSON 데이터 |
 | `robots.txt` | 검색엔진 크롤링 정책 |
 | `sitemap.xml` | 검색엔진 제출용 URL 목록 |
@@ -73,15 +75,16 @@ python3 -m http.server 8000
 http://localhost:8000/
 ```
 
-파일을 직접 열어도 일부 화면은 보일 수 있지만, `pages/*.md`와 `data.json` fetch 동작을 확인하려면 정적 서버 사용을 권장합니다.
+파일을 직접 열어도 일부 화면은 보일 수 있지만, `pages/*.md`, `pages/*.html`, `data.json` fetch 동작을 확인하려면 정적 서버 사용을 권장합니다.
 
 ## 콘텐츠 추가 절차
 
 1. `app.js`의 `featuredPages` 또는 `hotTopicsByDesk`에 페이지 메타데이터를 등록합니다.
 2. 매니페스트의 `slug`와 같은 이름으로 `pages/<slug>.md` 본문 파일을 작성합니다.
 3. 본문은 빈 줄 기준 문단으로 렌더링되므로 문단 사이를 빈 줄로 구분합니다.
-4. 자동 토픽 페이지는 `hotTopicsByDesk`의 토픽 문장 하나가 페이지 하나가 됩니다.
-5. 매니페스트의 글을 추가하거나 slug를 바꾸면 같은 변경에서 `sitemap.xml`도 갱신합니다.
+4. 같은 slug의 `pages/<slug>.html` 정적 글 페이지를 생성해 글별 SEO 메타데이터를 포함합니다.
+5. 자동 토픽 페이지는 `hotTopicsByDesk`의 토픽 문장 하나가 페이지 하나가 됩니다.
+6. 매니페스트의 글을 추가하거나 slug를 바꾸면 같은 변경에서 `pages/<slug>.html`과 `sitemap.xml`도 갱신합니다.
 
 ## 뉴스레터 데이터 저장
 
@@ -100,14 +103,14 @@ http://localhost:8000/
 
 ## 검색엔진 최적화 배포 전 확인
 
-현재 앱은 검색엔진이 읽을 수 있도록 카드와 분야 링크에 `?page=<slug>`, `?desk=<분야>` 쿼리 라우팅을 사용합니다. 라우트별 검색엔진 최적화 메타데이터와 구조화 데이터는 `app.js`가 화면 상태에 맞게 갱신합니다.
+현재 앱은 검색엔진이 글 본문과 메타데이터를 바로 읽을 수 있도록 카드 링크에 `pages/<slug>.html` 정적 글 페이지를 사용합니다. 분야 링크는 `?desk=<분야>` 쿼리 라우팅을 사용하며, 기존 `?page`, `#page`, `#desk` 주소도 호환합니다. 글별 정적 HTML에는 title, description, canonical, Open Graph, Twitter 카드, Article JSON-LD가 포함됩니다.
 
 배포 전에는 반드시 아래 항목을 확인합니다.
 
-- `robots.txt`의 sitemap URL을 실제 운영 도메인으로 교체
-- `sitemap.xml`의 `https://example.com` 임시 도메인을 실제 운영 도메인으로 교체
+- `robots.txt`의 sitemap URL이 `https://lifeiz0415.github.io/EUREKA/sitemap.xml`인지 확인
+- `sitemap.xml`에 홈, 분야, `pages/<slug>.html` 글 URL이 포함됐는지 확인
 - Google Search Console에 실제 `sitemap.xml` 제출
-- 새 글 또는 slug 변경 시 `sitemap.xml` 갱신
+- 새 글 또는 slug 변경 시 `pages/<slug>.html`과 `sitemap.xml` 갱신
 
 ## 개발 제약
 
