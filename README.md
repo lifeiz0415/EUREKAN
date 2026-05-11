@@ -1,2 +1,0 @@
-# EUREKA
-Wiki, Blog, News
