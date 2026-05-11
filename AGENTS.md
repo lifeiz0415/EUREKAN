@@ -137,6 +137,8 @@ agents/
 - 각 페이지는 원본 `pages/<slug>.md`와 검색엔진용 생성 결과 `pages/<slug>.html` 한 쌍으로 유지한다.
 - 한 파일은 최소 3천자 이상의 장문 본문을 가진다.
 - 분야와 메타데이터는 파일 안이 아니라 `app.js`의 manifest에서 관리하고, 생성된 HTML의 head 메타데이터도 이 manifest를 기준으로 맞춘다.
+- 글 발행시각은 날짜만 쓰지 않고 `YYYY-MM-DDTHH:mm:ss+09:00` 형식으로 시분초와 시간대까지 기록한다.
+- 상세 화면과 정적 글 페이지는 글 제목 바로 아래에 해당 분야 에이전트 이름을 작성자로 표시하고, 같은 위치에 발행시각도 함께 표시한다.
 - 본문은 기사문/블로그문 형식의 읽기 쉬운 한국어 문단으로 작성한다.
 - 한 문단이 지나치게 길어지지 않도록 빈 줄로 구분한다.
 
@@ -164,6 +166,7 @@ agents/
 ```
 
 - 분야별 최신 토픽 문장은 각 분야마다 10개를 기본 단위로 만든다.
+- 사용자가 여러 개의 글 작성을 요청하면 한 번에 묶어 처리하지 않고, 글 1개마다 분야 에이전트 선택, 주제 확정, slug 확정, 본문 작성, 정적 HTML 생성, manifest 반영, sitemap 반영, 검증 루틴을 순서대로 반복한다.
 - 토픽 문장 하나는 페이지 하나가 되며, 카드 제목과 상세 페이지 제목의 원천이다.
 - `hotTopicsByDesk`는 토픽 문장 저장소이고, 실제 화면 표시 분야는 `normalizeDesk()` 기준을 따른다.
 - `topicPages`는 `hotTopicsByDesk`를 순회해 `slug`, `title`, `desk`, `publishedAt`, `summary`를 가진 manifest 항목을 만든다.
@@ -174,6 +177,7 @@ agents/
 ## app.js 구현 규칙
 - 페이지 manifest 배열이 있어야 한다.
 - 각 항목은 최소 `slug`, `title`, `desk`, `summary`를 가진다.
+- 각 항목의 `publishedAt`은 `YYYY-MM-DDTHH:mm:ss+09:00` 형식을 사용한다.
 - 현재 manifest는 `featuredPages`, `hotTopicsByDesk`에서 생성하는 `topicPages`, 그리고 `pages = [...featuredPages, ...topicPages]` 구조를 사용한다.
 - 기존 파일명과 토픽 slug 호환을 위해 `hotTopicsByDesk`, `deskSlugs`, `deskEmoji`에는 예전 분야 키가 남을 수 있지만, 화면 표시와 뉴스레터 저장값은 `normalizeDesk()` 기준이어야 한다.
 - 홈 카드 렌더링, 검색 필터, 정적 글 페이지 호환, `pages/*.md` fetch, 뉴스레터 저장은 모두 `app.js`에서 처리한다.

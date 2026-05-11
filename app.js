@@ -3,70 +3,91 @@ const featuredPages = [
     slug: "ai-agent-platform-war-2026",
     title: "AI 에이전트 전쟁: 2026년 누가 차세대 플랫폼을 지배할까",
     desk: "기술",
-    publishedAt: "2026-05-11",
+    publishedAt: "2026-05-11T10:00:00+09:00",
     summary: "에이전트형 AI가 검색, 업무 자동화, 개인 비서, 기업용 소프트웨어의 경계를 어떻게 바꾸는지 정리한 장문 분석입니다.",
   },
   {
     slug: "ai-semiconductor-power-race-2026",
     title: "AI 반도체 패권 경쟁: 엔비디아 이후의 승자는 누구인가",
     desk: "반도체",
-    publishedAt: "2026-05-10",
+    publishedAt: "2026-05-10T10:00:00+09:00",
     summary: "GPU 중심 시장이 커스텀 칩, 메모리, 패키징, 전력 효율 경쟁으로 확장되는 구조를 풀어낸 장문 분석입니다.",
+  },
+  {
+    slug: "hbm-memory-bandwidth-bottleneck-2026",
+    title: "HBM은 왜 AI 시대의 새로운 병목이 되었나: 메모리 대역폭 전쟁의 구조",
+    desk: "반도체",
+    publishedAt: "2026-05-12T10:00:00+09:00",
+    summary: "AI 연산 성능을 좌우하는 메모리 대역폭, HBM 공급 제약, 패키징 병목을 함께 정리한 장문 분석입니다.",
+  },
+  {
+    slug: "chiplet-advanced-packaging-era-2026",
+    title: "칩렛과 2.5D·3D 패키징: 반도체 성능을 조립이 키우는 시대",
+    desk: "반도체",
+    publishedAt: "2026-05-11T09:00:00+09:00",
+    summary: "미세공정만으로 성능을 높이기 어려워진 상황에서 칩렛과 첨단 패키징이 왜 핵심 경쟁력이 됐는지 설명합니다.",
+  },
+  {
+    slug: "ai-data-center-power-efficiency-chip-2026",
+    title: "전력 효율이 반도체 경쟁력인 이유: AI 데이터센터가 바꾼 칩 설계 기준",
+    desk: "반도체",
+    publishedAt: "2026-05-10T09:00:00+09:00",
+    summary: "AI 데이터센터의 전력비와 발열, 냉각 문제가 칩 설계와 공정 선택의 우선순위를 어떻게 바꾸는지 다룹니다.",
   },
   {
     slug: "us-china-tariff-war-2026",
     title: "미중 관세전쟁 2라운드, 2026년 물가와 소비는 어떻게 변하나",
     desk: "경제",
-    publishedAt: "2026-05-09",
+    publishedAt: "2026-05-09T09:00:00+09:00",
     summary: "관세, 환율, 공급망, 소비심리의 연결이 생활비와 투자 흐름을 어떻게 흔드는지 정리한 장문 분석입니다.",
   },
   {
     slug: "hormuz-crisis-global-economy-2026",
     title: "호르무즈 해협 위기: 이란 충돌이 세계 경제를 얼마나 흔들 수 있나",
     desk: "글로벌",
-    publishedAt: "2026-05-08",
+    publishedAt: "2026-05-08T09:00:00+09:00",
     summary: "중동 긴장이 유가, 해운, 안보, 외교 구도에 어떤 파급을 만드는지 다룬 장문 분석입니다.",
   },
   {
     slug: "gaza-reconstruction-middle-east-order-2026",
     title: "가자 재건은 가능한가: 전쟁 이후 중동 질서의 새 변수",
     desk: "글로벌",
-    publishedAt: "2026-05-07",
+    publishedAt: "2026-05-07T09:00:00+09:00",
     summary: "가자 재건 논의가 인도주의와 지정학, 국제 원조, 지역 권력 균형에 미치는 영향을 정리한 장문 분석입니다.",
   },
   {
     slug: "korea-local-election-2026",
     title: "2026 지방선거 판세 분석: 지금 유권자들이 가장 민감하게 보는 이슈는 무엇인가",
     desk: "정치",
-    publishedAt: "2026-05-06",
+    publishedAt: "2026-05-06T09:00:00+09:00",
     summary: "유권자 관심이 생활물가, 지역 개발, 세대별 이동, 정당 피로감과 어떻게 연결되는지 살펴본 장문 분석입니다.",
   },
   {
     slug: "data-center-power-war-2026",
     title: "데이터센터 붐과 전력 전쟁: AI 시대에 가장 부족해지는 자원은 무엇인가",
     desk: "산업",
-    publishedAt: "2026-05-05",
+    publishedAt: "2026-05-05T09:00:00+09:00",
     summary: "AI 인프라 확대가 전력, 냉각, 토지, 송전, 정책 인허가 경쟁으로 번지는 흐름을 다룬 장문 분석입니다.",
   },
   {
     slug: "ai-medical-diagnosis-2026",
     title: "AI는 의사보다 정확할까: 2026년 의료 진단 혁신의 실제 수준",
     desk: "과학",
-    publishedAt: "2026-05-04",
+    publishedAt: "2026-05-04T09:00:00+09:00",
     summary: "의료 AI의 진단 성능과 책임 문제, 현장 도입 조건을 균형 있게 정리한 장문 분석입니다.",
   },
   {
     slug: "creator-economy-news-consumption-2026",
     title: "유튜브 이후의 뉴스 소비: 사람들은 왜 언론보다 크리에이터를 더 찾을까",
     desk: "문화",
-    publishedAt: "2026-05-03",
+    publishedAt: "2026-05-03T09:00:00+09:00",
     summary: "영상 중심 소비와 신뢰 변화, 알고리즘 배분, 언론 브랜드 약화를 한 번에 보는 장문 분석입니다.",
   },
   {
     slug: "world-cup-2026-scale-2026",
     title: "2026 북중미 월드컵은 왜 역대 가장 거대한 월드컵이 될까",
     desk: "스포츠",
-    publishedAt: "2026-05-02",
+    publishedAt: "2026-05-02T09:00:00+09:00",
     summary: "월드컵 확대가 흥행과 이동, 중계권, 지역 경제, 국가 브랜드 경쟁에 미치는 영향을 풀어낸 장문 분석입니다.",
   },
 ];
@@ -308,6 +329,22 @@ const deskEmoji = {
   "스포츠": "🏆",
 };
 
+const deskAgentNames = {
+  "기술": "Ada",
+  "반도체": "Grace",
+  "경제": "Warren",
+  "글로벌": "Sophia",
+  "국제정치": "Sophia",
+  "세계": "Sophia",
+  "정치": "Logan",
+  "한국 정치": "Logan",
+  "산업": "Mason",
+  "과학": "Marie",
+  "문화": "Stella",
+  "문화·미디어": "Stella",
+  "스포츠": "Serena",
+};
+
 const CARD_MIN_WIDTH = 280;
 const CARD_GAP = 16;
 const MAX_SECTION_ROWS = 1;
@@ -349,6 +386,7 @@ const listViewNode = document.querySelector("#list-view");
 const articleViewNode = document.querySelector("#article-view");
 const articleDeskNode = document.querySelector("#article-desk");
 const articleTitleNode = document.querySelector("#article-title");
+const articleMetaNode = document.querySelector("#article-meta");
 const articleSummaryNode = document.querySelector("#article-summary");
 const articleBodyNode = document.querySelector("#article-body");
 const voiceButtonNode = document.querySelector("#voice-button");
@@ -378,7 +416,7 @@ function createTopicSlug(desk, topicIndex) {
 function createTopicPublishedAt(deskIndex, topicIndex) {
   const date = new Date(Date.UTC(2026, 4, 1));
   date.setUTCDate(date.getUTCDate() - (deskIndex * topicDateBlockSize) - topicIndex);
-  return date.toISOString().slice(0, 10);
+  return `${date.toISOString().slice(0, 10)}T09:00:00+09:00`;
 }
 
 function normalizeDesk(desk = "") {
@@ -577,7 +615,7 @@ function updateArticleSeo(page) {
       articleSection: page.desk,
       inLanguage: "ko-KR",
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
-      author: { "@type": "Organization", name: SITE_NAME },
+      author: { "@type": "Person", name: getDeskAgentName(page.desk) },
       publisher: { "@type": "Organization", name: SITE_NAME },
       isPartOf: { "@type": "WebSite", name: SITE_NAME },
     },
@@ -650,6 +688,21 @@ function getDeskList() {
 
 function getDeskLabel(desk) {
   return `${deskEmoji[desk] || "📌"} ${desk}`;
+}
+
+function getDeskAgentName(desk) {
+  return deskAgentNames[desk] || deskAgentNames[normalizeDesk(desk)] || "Eureka";
+}
+
+function formatPublishedAt(value = "") {
+  const match = String(value).match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})/);
+  if (!match) return value;
+  const [, year, month, day, hour, minute, second] = match;
+  return `${year}.${month}.${day} ${hour}:${minute}:${second} KST`;
+}
+
+function getArticleMetaText(page) {
+  return `작성자 ${getDeskAgentName(page.desk)} · 발행시각 ${formatPublishedAt(page.publishedAt)}`;
 }
 
 function formatCountLabel(count) {
@@ -1006,6 +1059,7 @@ function showArticleShell(page, { preserveBody = false } = {}) {
   stopArticleSpeech(true);
   articleDeskNode.textContent = page.desk;
   articleTitleNode.textContent = page.title;
+  articleMetaNode.textContent = getArticleMetaText(page);
   articleSummaryNode.textContent = pageSummary;
   articleSummaryNode.hidden = !pageSummary;
   if (!preserveBody) articleBodyNode.innerHTML = "<p>문서를 불러오는 중입니다.</p>";
@@ -1027,6 +1081,7 @@ function showMissingArticle(slug) {
   stopArticleSpeech(true);
   articleDeskNode.textContent = "오류";
   articleTitleNode.textContent = "문서를 찾을 수 없습니다";
+  articleMetaNode.textContent = "";
   articleSummaryNode.textContent = slug ? `요청한 문서(${slug})가 manifest에 없습니다.` : "선택한 페이지 정보가 없습니다.";
   articleSummaryNode.hidden = false;
   articleBodyNode.innerHTML = "<p>목록으로 돌아가 다시 선택해 주세요.</p>";
