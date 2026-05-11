@@ -10,11 +10,12 @@
 - 프로젝트명: Eureka
 - 제품 형태: 정적 단일 페이지형 위키/매거진
 - 핵심 목표: 지금 사람들이 가장 궁금해하는 주제를 분야별 장문 페이지로 보여주는 읽기 중심 사이트
-- 현재 구현 원칙: 백엔드 없이 `index.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만으로 동작한다.
+- 현재 구현 원칙: 백엔드 없이 `README.md`, `index.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만으로 동작한다.
 
 ## 현재 파일 구조
 ```text
 AGENTS.md
+README.md
 index.html
 style.css
 app.js
@@ -29,6 +30,7 @@ agents/
 ```
 
 - 위 구조 외의 프로젝트 파일/폴더는 유지하지 않는다.
+- `README.md`는 공개 저장소용 프로젝트 소개 문서로 유지한다.
 - `agents/` 폴더는 역할 문서 저장용으로 남긴다.
 - 실제 사용자-facing 사이트는 루트의 `index.html`, `style.css`, `app.js`만 사용한다.
 - 검색엔진 수집 보조 파일은 루트의 `robots.txt`, `sitemap.xml`만 사용한다.
@@ -194,7 +196,7 @@ agents/
 - 코드 변경이 있는 작업을 완료하면 변경사항을 의미 있는 단위로 git commit하고 GitHub 원격 저장소에 push한다. 단, 사용자가 해당 작업에서 커밋 또는 푸시 금지를 명시한 경우에는 그 지시를 우선한다.
 
 ## 완료 기준
-- 루트에는 `AGENTS.md`, `index.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만 남아 있어야 한다.
+- 루트에는 `AGENTS.md`, `README.md`, `index.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만 남아 있어야 한다.
 - 홈 카드와 상세 보기, 상세 페이지 뉴스레터 신청이 동작해야 한다.
 - `pages/` 안의 각 문서는 장문이어야 한다.
 - 문서와 실제 코드가 서로 충돌하지 않아야 한다.
