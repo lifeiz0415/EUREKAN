@@ -552,7 +552,6 @@ const CARD_MIN_WIDTH = 280;
 const CARD_GAP = 16;
 const MAX_SECTION_ROWS = 1;
 const SLIDER_SEQUENCE_REPEAT_COUNT = 16;
-const TRANSLATE_TEXT_LIMIT = 4800;
 const SITE_NAME = "Eureka";
 const SCHEMA_CONTEXT = "https://schema.org";
 const SEO_LANGUAGE = "ko-KR";
@@ -1214,18 +1213,12 @@ function updateTranslateButtons() {
   });
 }
 
-function createTranslateUrl(language, text) {
-  const translateUrl = new URL("https://translate.google.com/");
+function createTranslateUrl(language) {
+  const translateUrl = new URL("https://translate.google.com/translate");
   translateUrl.searchParams.set("sl", "ko");
   translateUrl.searchParams.set("tl", language.translateCode);
-  translateUrl.searchParams.set("text", text);
-  translateUrl.searchParams.set("op", "translate");
+  translateUrl.searchParams.set("u", activePage?.slug ? getArticleUrl(activePage.slug) : window.location.href);
   return translateUrl.toString();
-}
-
-function getTranslateText() {
-  const sourceText = activeArticleSpeechText || [articleTitleNode.textContent, articleBodyNode.textContent].filter(Boolean).join("\n\n");
-  return sourceText.trim().slice(0, TRANSLATE_TEXT_LIMIT);
 }
 
 function handleTranslateLanguage(code) {
@@ -1240,16 +1233,8 @@ function handleTranslateLanguage(code) {
     return;
   }
 
-  const translateText = getTranslateText();
-  if (!translateText) {
-    translateStatusNode.textContent = "번역할 본문을 아직 불러오지 못했습니다.";
-    return;
-  }
-
-  translateStatusNode.textContent = activeArticleSpeechText.length > TRANSLATE_TEXT_LIMIT
-    ? `${language.label} 번역을 새 탭에서 엽니다. 긴 본문은 앞부분부터 번역합니다.`
-    : `${language.label} 번역을 새 탭에서 엽니다.`;
-  window.open(createTranslateUrl(language, translateText), "_blank", "noopener,noreferrer");
+  translateStatusNode.textContent = `${language.label} 번역 페이지를 새 탭에서 엽니다.`;
+  window.open(createTranslateUrl(language), "_blank", "noopener,noreferrer");
 }
 
 function showListView() {
