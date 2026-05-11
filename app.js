@@ -554,6 +554,10 @@ const MAX_SECTION_ROWS = 1;
 const SLIDER_SEQUENCE_REPEAT_COUNT = 16;
 const TRANSLATE_TEXT_LIMIT = 4800;
 const SITE_NAME = "Eureka";
+const SCHEMA_CONTEXT = "https://schema.org";
+const SEO_LANGUAGE = "ko-KR";
+const DEFAULT_ROBOTS = "index, follow";
+const TWITTER_CARD_TYPE = "summary";
 const DEFAULT_SEO_DESCRIPTION = "Eureka는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
 const translationLanguages = [
@@ -739,23 +743,39 @@ function setStructuredData(data) {
   script.textContent = JSON.stringify(data);
 }
 
-function updateSeo({ title, description, url, type = "website", robots = "index, follow", structuredData }) {
+function createStructuredData(schemaType, fields = {}) {
+  return {
+    ...fields,
+    "@context": SCHEMA_CONTEXT,
+    "@type": schemaType,
+  };
+}
+
+function clearArticleMeta() {
+  removePropertyMeta("article:section");
+  removePropertyMeta("article:published_time");
+  removePropertyMeta("article:modified_time");
+}
+
+function setArticleMeta(page) {
+  setPropertyMeta("article:section", page.desk);
+  setPropertyMeta("article:published_time", page.publishedAt);
+  setPropertyMeta("article:modified_time", page.publishedAt);
+}
+
+function updateSeo({ title, description, url, ogType = "website", robots = DEFAULT_ROBOTS, structuredData }) {
   document.title = title;
   setMeta("description", description);
   setMeta("robots", robots);
   setCanonical(url);
-  setPropertyMeta("og:type", type);
+  setPropertyMeta("og:type", ogType);
   setPropertyMeta("og:locale", "ko_KR");
   setPropertyMeta("og:site_name", SITE_NAME);
   setPropertyMeta("og:title", title);
   setPropertyMeta("og:description", description);
   setPropertyMeta("og:url", url);
-  if (type !== "article") {
-    removePropertyMeta("article:section");
-    removePropertyMeta("article:published_time");
-    removePropertyMeta("article:modified_time");
-  }
-  setMeta("twitter:card", "summary");
+  if (ogType !== "article") clearArticleMeta();
+  setMeta("twitter:card", TWITTER_CARD_TYPE);
   setMeta("twitter:title", title);
   setMeta("twitter:description", description);
   setStructuredData(structuredData);
@@ -767,14 +787,12 @@ function updateHomeSeo() {
     title: SITE_NAME,
     description: DEFAULT_SEO_DESCRIPTION,
     url,
-    structuredData: {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
+    structuredData: createStructuredData("WebSite", {
       name: SITE_NAME,
       url,
       description: DEFAULT_SEO_DESCRIPTION,
-      inLanguage: "ko-KR",
-    },
+      inLanguage: SEO_LANGUAGE,
+    }),
   });
 }
 
@@ -786,15 +804,13 @@ function updateDeskSeo(desk, count) {
     title,
     description,
     url,
-    structuredData: {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
+    structuredData: createStructuredData("CollectionPage", {
       name: title,
       url,
       description,
-      inLanguage: "ko-KR",
+      inLanguage: SEO_LANGUAGE,
       isPartOf: { "@type": "WebSite", name: SITE_NAME },
-    },
+    }),
   });
 }
 
@@ -806,26 +822,22 @@ function updateArticleSeo(page) {
     title,
     description,
     url,
-    type: "article",
-    structuredData: {
-      "@context": "https://schema.org",
-      "@type": "Article",
+    ogType: "article",
+    structuredData: createStructuredData("Article", {
       headline: page.title,
       description,
       url,
       datePublished: page.publishedAt,
       dateModified: page.publishedAt,
       articleSection: page.desk,
-      inLanguage: "ko-KR",
+      inLanguage: SEO_LANGUAGE,
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
       author: { "@type": "Person", name: getDeskAgentName(page.desk) },
       publisher: { "@type": "Organization", name: SITE_NAME },
       isPartOf: { "@type": "WebSite", name: SITE_NAME },
-    },
+    }),
   });
-  setPropertyMeta("article:section", page.desk);
-  setPropertyMeta("article:published_time", page.publishedAt);
-  setPropertyMeta("article:modified_time", page.publishedAt);
+  setArticleMeta(page);
 }
 
 function updateMissingSeo(slug) {
@@ -835,13 +847,11 @@ function updateMissingSeo(slug) {
     description,
     url: getRouteUrl(),
     robots: "noindex, follow",
-    structuredData: {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
+    structuredData: createStructuredData("WebPage", {
       name: "문서를 찾을 수 없습니다",
       description,
-      inLanguage: "ko-KR",
-    },
+      inLanguage: SEO_LANGUAGE,
+    }),
   });
 }
 
