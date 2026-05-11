@@ -135,12 +135,15 @@ agents/
 
 ## pages 폴더 규칙
 - 각 페이지는 원본 `pages/<slug>.md`와 검색엔진용 생성 결과 `pages/<slug>.html` 한 쌍으로 유지한다.
+- 토픽 페이지 파일명은 `분야-hot-topic-번호` 형식을 쓰지 않고, 글 제목을 영어로 요약한 kebab-case slug를 사용한다.
 - 한 파일은 최소 3천자 이상의 장문 본문을 가진다.
 - 분야와 메타데이터는 파일 안이 아니라 `app.js`의 manifest에서 관리하고, 생성된 HTML의 head 메타데이터도 이 manifest를 기준으로 맞춘다.
 - 글 발행시각은 날짜만 쓰지 않고 `YYYY-MM-DDTHH:mm:ss+09:00` 형식으로 시분초와 시간대까지 기록한다.
 - 상세 화면과 정적 글 페이지는 글 제목 바로 아래에 해당 분야 에이전트 이름을 작성자로 표시하고, 같은 위치에 발행시각도 함께 표시한다.
 - 본문은 기사문/블로그문 형식의 읽기 쉬운 한국어 문단으로 작성한다.
 - 한 문단이 지나치게 길어지지 않도록 빈 줄로 구분한다.
+- 제목에는 AI 생성 문장처럼 보이는 콜론식 부제 구조를 쓰지 않고, 필요한 의미를 자연스러운 한국어 제목 문장으로 풀어 쓴다.
+- 마지막 문단은 `결론적으로`, `결국`, `요컨대`, `정리하면`, `종합하면`, `한마디로` 같은 공식적 마무리 표지어로 시작하지 않고, 글의 실제 함의와 다음 판단 기준을 자연스럽게 남기며 끝낸다.
 
 ## 분야별 페이지 생성 플로우 규칙
 - 이 사이트의 자동 토픽 페이지는 아래 플로우를 따른다.
@@ -156,7 +159,7 @@ agents/
   ↓
 `topicPages`가 각 토픽을 페이지 메타데이터로 변환
   ↓
-`createTopicSlug(desk, topicIndex)`로 `pages/<slug>.md`와 `pages/<slug>.html` 파일명 결정
+글 제목을 영어로 요약한 slug를 `topicSlugsByDesk`에 등록하고 `pages/<slug>.md`와 `pages/<slug>.html` 파일명 결정
   ↓
 각 slug에 대응하는 장문 본문을 `pages/<slug>.md`로 작성하고 `pages/<slug>.html` 정적 글 페이지를 생성
   ↓
@@ -170,7 +173,7 @@ agents/
 - 토픽 문장 하나는 페이지 하나가 되며, 카드 제목과 상세 페이지 제목의 원천이다.
 - `hotTopicsByDesk`는 토픽 문장 저장소이고, 실제 화면 표시 분야는 `normalizeDesk()` 기준을 따른다.
 - `topicPages`는 `hotTopicsByDesk`를 순회해 `slug`, `title`, `desk`, `publishedAt`, `summary`를 가진 manifest 항목을 만든다.
-- `createTopicPublishedAt(deskIndex, topicIndex)`는 토픽 페이지의 발행일을 자동 배정하며, 최신순 정렬과 상단 인기 주제 슬라이더의 기준이 된다.
+- `topicSlugsByDesk`는 각 토픽 제목을 영어로 요약한 파일명 저장소이며, `createTopicPublishedAt(deskIndex, topicIndex)`는 토픽 페이지의 발행일을 자동 배정하고 최신순 정렬과 상단 인기 주제 슬라이더의 기준이 된다.
 - 게시가 완료되려면 manifest 항목뿐 아니라 같은 slug의 `pages/<slug>.md` 본문 원본과 `pages/<slug>.html` 정적 글 페이지가 반드시 존재해야 한다.
 - 상단 `🔥 지금 사람들이 많이 궁금해하는 주제` 슬라이더는 전체 게시 목록에서 분야별 최신 발행 페이지 한 개씩을 가져와 구성한다.
 
@@ -179,7 +182,7 @@ agents/
 - 각 항목은 최소 `slug`, `title`, `desk`, `summary`를 가진다.
 - 각 항목의 `publishedAt`은 `YYYY-MM-DDTHH:mm:ss+09:00` 형식을 사용한다.
 - 현재 manifest는 `featuredPages`, `hotTopicsByDesk`에서 생성하는 `topicPages`, 그리고 `pages = [...featuredPages, ...topicPages]` 구조를 사용한다.
-- 기존 파일명과 토픽 slug 호환을 위해 `hotTopicsByDesk`, `deskSlugs`, `deskEmoji`에는 예전 분야 키가 남을 수 있지만, 화면 표시와 뉴스레터 저장값은 `normalizeDesk()` 기준이어야 한다.
+- 제목 기반 토픽 slug 관리를 위해 `topicSlugsByDesk`를 사용하며, `hotTopicsByDesk`, `deskSlugs`, `deskEmoji`에는 예전 분야 키가 남을 수 있지만 화면 표시와 뉴스레터 저장값은 `normalizeDesk()` 기준이어야 한다.
 - 홈 카드 렌더링, 검색 필터, 정적 글 페이지 호환, `pages/*.md` fetch, 뉴스레터 저장은 모두 `app.js`에서 처리한다.
 - 라우트별 SEO 메타데이터 갱신도 `app.js`에서 처리한다.
 - 카드 슬라이더의 실제 이동 거리 계산은 `refreshSliderLoops()`에서 처리한다.
