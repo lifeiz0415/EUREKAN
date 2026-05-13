@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EA%B8%B0%EC%88%A0</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EB%B0%98%EB%8F%84%EC%B2%B4</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EA%B2%BD%EC%A0%9C</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EA%B8%80%EB%A1%9C%EB%B2%8C</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EC%A0%95%EC%B9%98</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EC%82%B0%EC%97%85</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EA%B3%BC%ED%95%99</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EB%AC%B8%ED%99%94</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EC%8A%A4%ED%8F%AC%EC%B8%A0</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -58,11 +58,6 @@
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/pages/ai-semiconductor-power-race-2026.html</loc>
     <lastmod>2026-05-10T10:00:00+09:00</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lifeiz0415.github.io/EUREKA/pages/hbm-memory-bandwidth-bottleneck-2026.html</loc>
-    <lastmod>2026-05-12T10:00:00+09:00</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -1013,6 +1008,456 @@
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-short-form-streaming-broadcasting-2026.html</loc>
     <lastmod>2025-11-03T09:00:00+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-ai-office-memory-permissions-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-small-language-models-enterprise-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-ai-pc-local-inference-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-spatial-computing-workplace-collaboration-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-cybersecurity-agent-defense-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-personal-ai-operating-system-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-synthetic-data-model-training-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-edge-ai-factory-robots-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-ai-regulation-compliance-tools-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/technology-open-source-model-governance-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-hbm4-supply-chain-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-glass-substrate-ai-packaging-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-backside-power-delivery-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-ai-chip-export-license-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-automotive-chip-software-defined-car-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-memory-price-cycle-ai-servers-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-domestic-fab-water-power-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-chiplet-standards-ecosystem-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-advanced-packaging-equipment-bottleneck-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/semiconductor-foundry-customer-risk-diversification-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-household-consumption-debt-squeeze-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-ai-productivity-wage-gap-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-rent-burden-young-households-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-energy-prices-small-business-margin-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-digital-currency-bank-deposits-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-korea-export-ai-cycle-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-silver-economy-healthcare-consumption-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-platform-fee-inflation-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-climate-disaster-insurance-gap-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/economy-global-tax-minimum-digital-business-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-red-sea-logistics-costs-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-us-china-tech-standards-competition-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-eu-ai-act-business-compliance-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-gulf-ai-energy-investment-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-india-manufacturing-supply-chain-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-africa-critical-minerals-bargaining-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-climate-migration-city-pressure-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-arctic-security-resource-route-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-election-disinformation-ai-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/global-food-export-controls-inflation-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-local-housing-youth-voters-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-ai-public-service-accountability-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-climate-adaptation-local-budget-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-elderly-care-public-burden-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-platform-labor-rights-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-region-university-crisis-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-healthcare-access-regional-gap-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-data-transparency-budget-trust-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-security-alliance-cost-sharing-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/politics-generational-tax-welfare-contract-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-humanoid-robots-factory-pilot-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-battery-recycling-supply-security-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-shipbuilding-ammonia-fuel-safety-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-smart-farm-climate-food-supply-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-defense-drones-export-market-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-airport-logistics-automation-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-renewable-grid-storage-investment-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-cold-chain-pharma-food-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-content-ip-merchandise-tourism-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/industry-green-cement-construction-emissions-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-microbiome-mental-health-evidence-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-fusion-energy-materials-tritium-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-ai-drug-discovery-clinical-failure-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-climate-tipping-points-policy-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-space-debris-satellite-safety-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-precision-nutrition-metabolic-health-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-ocean-carbon-removal-ecosystem-risk-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-long-covid-biomarkers-treatment-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-quantum-sensors-navigation-medicine-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/science-planetary-defense-asteroid-monitoring-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-ai-music-rights-platforms-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-korean-webtoon-global-studio-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-short-form-news-trust-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-fandom-governance-platform-voting-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-streaming-bundles-subscription-fatigue-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-local-bookstores-community-media-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-virtual-idol-real-fandom-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-documentary-true-crime-ethics-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-language-learning-ai-companions-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/culture-museum-digital-experience-tourism-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-ai-referee-var-trust-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-athlete-load-management-data-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-women-league-investment-media-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-esports-team-finance-sustainability-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-club-ownership-fan-trust-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-youth-academy-global-transfer-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-stadium-smart-experience-security-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-marathon-city-health-tourism-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-media-rights-fragmentation-fans-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-mental-health-elite-athletes-2026.html</loc>
+    <lastmod>2026-05-13T02:33:01+09:00</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>

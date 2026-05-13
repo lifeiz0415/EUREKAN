@@ -77,6 +77,34 @@ const featuredPages = [
     summary: "의료 AI의 진단 성능과 책임 문제, 현장 도입 조건을 균형 있게 정리한 장문 분석입니다.",
   },
   {
+    slug: "science-antibiotic-resistance-new-drugs-2026",
+    title: "항생제 내성균 확산은 신약 개발보다 진단과 사용 관리의 속도를 먼저 묻고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T09:00:00+09:00",
+    summary: "항생제 내성균 확산을 신약 개발, 빠른 진단, 병원 감염 관리, 축산·지역사회 사용 조절까지 연결해 살펴봅니다.",
+  },
+  {
+    slug: "science-alzheimer-biomarkers-blood-tests-2026",
+    title: "알츠하이머 혈액 바이오마커는 조기진단의 문턱을 낮추지만 해석 책임을 키우고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-14T09:00:00+09:00",
+    summary: "알츠하이머 혈액 바이오마커가 조기진단과 치료 접근성을 넓히는 동시에 오진, 상담, 데이터 해석 책임을 키우는 구조를 설명합니다.",
+  },
+  {
+    slug: "science-aging-cell-senescence-longevity-2026",
+    title: "세포 노화 연구는 장수보다 건강하게 늙는 시간을 어떻게 늘릴지 묻고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-15T09:00:00+09:00",
+    summary: "세포 노화와 장수 과학이 수명 연장보다 건강수명, 만성질환 예방, 안전성 검증의 문제로 이동하는 흐름을 정리합니다.",
+  },
+  {
+    slug: "science-organoid-regenerative-medicine-transplant-2026",
+    title: "오가노이드와 재생의학은 장기 이식의 미래를 넓히지만 검증의 문턱도 높이고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-16T09:00:00+09:00",
+    summary: "오가노이드와 재생의학이 질병 모델, 약물 시험, 이식 대안으로 확장되는 과정과 안전성·윤리·표준화 과제를 다룹니다.",
+  },
+  {
     slug: "creator-economy-news-consumption-2026",
     title: "유튜브 이후의 뉴스 소비에서 사람들이 언론보다 크리에이터를 찾는 이유",
     desk: "문화",
@@ -89,6 +117,635 @@ const featuredPages = [
     desk: "스포츠",
     publishedAt: "2026-05-02T09:00:00+09:00",
     summary: "월드컵 확대가 흥행과 이동, 중계권, 지역 경제, 국가 브랜드 경쟁에 미치는 영향을 풀어낸 장문 분석입니다.",
+  },  {
+    slug: "technology-ai-office-memory-permissions-2026",
+    title: "업무 AI가 회사 기억을 연결할수록 권한 관리가 핵심 경쟁력이 되고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 업무 AI가 회사 기억을 연결할수록 권한 관리가 핵심 경쟁력이 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "technology-small-language-models-enterprise-2026",
+    title: "소형 언어모델은 기업 내부 업무에서 비용과 보안을 동시에 줄이는 선택지가 되고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 소형 언어모델은 기업 내부 업무에서 비용과 보안을 동시에 줄이는 선택지가 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "technology-ai-pc-local-inference-2026",
+    title: "AI PC는 클라우드보다 빠른 개인화와 오프라인 추론을 앞세워 경쟁하고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 AI PC는 클라우드보다 빠른 개인화와 오프라인 추론을 앞세워 경쟁하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "technology-spatial-computing-workplace-collaboration-2026",
+    title: "공간 컴퓨팅은 원격 협업을 화면 공유에서 함께 조작하는 업무 환경으로 넓히고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 공간 컴퓨팅은 원격 협업을 화면 공유에서 함께 조작하는 업무 환경으로 넓히고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "technology-cybersecurity-agent-defense-2026",
+    title: "사이버보안은 사람만 대응하는 구조에서 AI 에이전트와 함께 방어하는 체계로 이동하고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 사이버보안은 사람만 대응하는 구조에서 AI 에이전트와 함께 방어하는 체계로 이동하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "technology-personal-ai-operating-system-2026",
+    title: "개인 AI 운영체제 경쟁은 앱을 여는 방식보다 일을 끝내는 순서를 바꾸고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 개인 AI 운영체제 경쟁은 앱을 여는 방식보다 일을 끝내는 순서를 바꾸고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "technology-synthetic-data-model-training-2026",
+    title: "합성 데이터는 AI 학습의 새 연료가 되지만 현실 왜곡과 품질 검증 부담도 키우고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 합성 데이터는 AI 학습의 새 연료가 되지만 현실 왜곡과 품질 검증 부담도 키우고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "technology-edge-ai-factory-robots-2026",
+    title: "엣지 AI는 공장 로봇이 클라우드 지연 없이 현장에서 판단하게 만드는 조건이 되고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 엣지 AI는 공장 로봇이 클라우드 지연 없이 현장에서 판단하게 만드는 조건이 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "technology-ai-regulation-compliance-tools-2026",
+    title: "AI 규제 대응 도구는 모델 성능만큼 기업의 출시 속도를 좌우하는 요소가 되고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 AI 규제 대응 도구는 모델 성능만큼 기업의 출시 속도를 좌우하는 요소가 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "technology-open-source-model-governance-2026",
+    title: "오픈소스 AI 모델 확산은 혁신 속도와 안전 거버넌스 사이의 균형을 다시 묻고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "기술 분야에서 오픈소스 AI 모델 확산은 혁신 속도와 안전 거버넌스 사이의 균형을 다시 묻고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-hbm4-supply-chain-2026",
+    title: "HBM4 경쟁은 메모리 성능보다 패키징과 장비 공급망의 준비도를 먼저 시험하고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 HBM4 경쟁은 메모리 성능보다 패키징과 장비 공급망의 준비도를 먼저 시험하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-glass-substrate-ai-packaging-2026",
+    title: "유리기판은 AI 반도체 패키징의 병목을 줄일 후보로 주목받고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 유리기판은 AI 반도체 패키징의 병목을 줄일 후보로 주목받고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-backside-power-delivery-2026",
+    title: "후면 전력공급 기술은 미세공정 한계를 넘기 위한 새 경쟁축으로 떠오르고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 후면 전력공급 기술은 미세공정 한계를 넘기 위한 새 경쟁축으로 떠오르고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-ai-chip-export-license-2026",
+    title: "AI 칩 수출 허가 체계는 반도체 매출보다 고객 전략을 먼저 바꾸고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 AI 칩 수출 허가 체계는 반도체 매출보다 고객 전략을 먼저 바꾸고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-automotive-chip-software-defined-car-2026",
+    title: "소프트웨어 정의 자동차는 차량용 반도체를 부품 공급에서 플랫폼 경쟁으로 바꾸고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 소프트웨어 정의 자동차는 차량용 반도체를 부품 공급에서 플랫폼 경쟁으로 바꾸고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-memory-price-cycle-ai-servers-2026",
+    title: "AI 서버 수요는 메모리 가격 사이클을 전통적인 PC 경기와 다르게 움직이게 만들고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 AI 서버 수요는 메모리 가격 사이클을 전통적인 PC 경기와 다르게 움직이게 만들고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-domestic-fab-water-power-2026",
+    title: "국내 반도체 팹 유치는 세제보다 물과 전력, 인력 확보가 더 큰 조건이 되고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 국내 반도체 팹 유치는 세제보다 물과 전력, 인력 확보가 더 큰 조건이 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-chiplet-standards-ecosystem-2026",
+    title: "칩렛 표준 경쟁은 개별 칩 성능보다 생태계 주도권을 가르는 기준이 되고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 칩렛 표준 경쟁은 개별 칩 성능보다 생태계 주도권을 가르는 기준이 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-advanced-packaging-equipment-bottleneck-2026",
+    title: "첨단 패키징 장비 병목은 AI 칩 출하량을 제한하는 숨은 변수로 떠오르고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 첨단 패키징 장비 병목은 AI 칩 출하량을 제한하는 숨은 변수로 떠오르고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "semiconductor-foundry-customer-risk-diversification-2026",
+    title: "파운드리 고객 다변화는 기술력만큼 지정학 리스크 관리 능력을 요구하고 있습니다",
+    desk: "반도체",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "반도체 분야에서 파운드리 고객 다변화는 기술력만큼 지정학 리스크 관리 능력을 요구하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-household-consumption-debt-squeeze-2026",
+    title: "가계 소비 둔화는 소득보다 부채 상환과 필수 지출 압박에서 더 뚜렷하게 드러나고 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 가계 소비 둔화는 소득보다 부채 상환과 필수 지출 압박에서 더 뚜렷하게 드러나고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-ai-productivity-wage-gap-2026",
+    title: "AI 생산성 논쟁은 임금 격차와 직무 전환 속도를 함께 봐야 이해할 수 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 AI 생산성 논쟁은 임금 격차와 직무 전환 속도를 함께 봐야 이해할 수 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-rent-burden-young-households-2026",
+    title: "청년 가구의 주거비 부담은 소비 여력과 결혼, 지역 이동 선택을 동시에 흔들고 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 청년 가구의 주거비 부담은 소비 여력과 결혼, 지역 이동 선택을 동시에 흔들고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-energy-prices-small-business-margin-2026",
+    title: "에너지 가격 변동은 자영업자의 마진과 지역 물가를 가장 빠르게 압박하고 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 에너지 가격 변동은 자영업자의 마진과 지역 물가를 가장 빠르게 압박하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-digital-currency-bank-deposits-2026",
+    title: "디지털 화폐 논의는 결제 혁신보다 은행 예금과 금융 안정성의 문제로 확장되고 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 디지털 화폐 논의는 결제 혁신보다 은행 예금과 금융 안정성의 문제로 확장되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-korea-export-ai-cycle-2026",
+    title: "한국 수출 회복은 AI 반도체 호황과 일반 제조업 수요 사이의 온도차를 보여주고 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 한국 수출 회복은 AI 반도체 호황과 일반 제조업 수요 사이의 온도차를 보여주고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-silver-economy-healthcare-consumption-2026",
+    title: "고령층 소비 시장은 의료비 부담과 여가 수요가 동시에 커지는 방향으로 재편되고 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 고령층 소비 시장은 의료비 부담과 여가 수요가 동시에 커지는 방향으로 재편되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-platform-fee-inflation-2026",
+    title: "플랫폼 수수료 논쟁은 물가와 자영업 생존, 소비자 편의 사이의 균형을 묻고 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 플랫폼 수수료 논쟁은 물가와 자영업 생존, 소비자 편의 사이의 균형을 묻고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-climate-disaster-insurance-gap-2026",
+    title: "기후 재난이 잦아질수록 보험 공백은 가계와 지방재정의 새 위험으로 떠오르고 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 기후 재난이 잦아질수록 보험 공백은 가계와 지방재정의 새 위험으로 떠오르고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "economy-global-tax-minimum-digital-business-2026",
+    title: "글로벌 최저한세는 디지털 기업의 세금 전략과 국가 투자 유치 방식을 바꾸고 있습니다",
+    desk: "경제",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "경제 분야에서 글로벌 최저한세는 디지털 기업의 세금 전략과 국가 투자 유치 방식을 바꾸고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-red-sea-logistics-costs-2026",
+    title: "홍해 물류 불안은 운임보다 재고 전략과 납기 신뢰를 먼저 흔들고 있습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 홍해 물류 불안은 운임보다 재고 전략과 납기 신뢰를 먼저 흔들고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-us-china-tech-standards-competition-2026",
+    title: "미중 기술 표준 경쟁은 제품 수출보다 어느 규칙을 따를지의 문제로 번지고 있습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 미중 기술 표준 경쟁은 제품 수출보다 어느 규칙을 따를지의 문제로 번지고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-eu-ai-act-business-compliance-2026",
+    title: "유럽 AI 규제는 글로벌 기업의 제품 설계와 책임 문서를 바꾸는 기준이 되고 있습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 유럽 AI 규제는 글로벌 기업의 제품 설계와 책임 문서를 바꾸는 기준이 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-gulf-ai-energy-investment-2026",
+    title: "걸프 국가의 AI 투자는 석유 이후 성장 전략과 데이터센터 전력 경쟁을 함께 보여줍니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 걸프 국가의 AI 투자는 석유 이후 성장 전략과 데이터센터 전력 경쟁을 함께 보여줍니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-india-manufacturing-supply-chain-2026",
+    title: "인도 제조업 부상은 중국 대체보다 다중 공급망의 한 축으로 읽어야 합니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 인도 제조업 부상은 중국 대체보다 다중 공급망의 한 축으로 읽어야 합니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-africa-critical-minerals-bargaining-2026",
+    title: "아프리카 핵심 광물 협상력은 자원 수출을 넘어 가공과 인프라 요구로 커지고 있습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 아프리카 핵심 광물 협상력은 자원 수출을 넘어 가공과 인프라 요구로 커지고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-climate-migration-city-pressure-2026",
+    title: "기후 이주는 국경 문제가 아니라 도시 주거와 일자리 압박으로 먼저 나타나고 있습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 기후 이주는 국경 문제가 아니라 도시 주거와 일자리 압박으로 먼저 나타나고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-arctic-security-resource-route-2026",
+    title: "북극 항로 논의는 운송 단축보다 안보와 자원 개발의 긴장을 키우고 있습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 북극 항로 논의는 운송 단축보다 안보와 자원 개발의 긴장을 키우고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-election-disinformation-ai-2026",
+    title: "선거 허위정보는 AI 생성 콘텐츠 확산으로 국경을 넘는 정치 리스크가 되고 있습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 선거 허위정보는 AI 생성 콘텐츠 확산으로 국경을 넘는 정치 리스크가 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "global-food-export-controls-inflation-2026",
+    title: "식량 수출 제한은 자국 물가 방어와 세계 식량 불안을 동시에 키우고 있습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "글로벌 분야에서 식량 수출 제한은 자국 물가 방어와 세계 식량 불안을 동시에 키우고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-local-housing-youth-voters-2026",
+    title: "지역 주거 정책은 청년 유권자가 지방정치를 체감하는 가장 직접적인 기준이 되고 있습니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 지역 주거 정책은 청년 유권자가 지방정치를 체감하는 가장 직접적인 기준이 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-ai-public-service-accountability-2026",
+    title: "공공서비스 AI 도입은 효율보다 설명 책임과 민원 대응 체계를 먼저 요구하고 있습니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 공공서비스 AI 도입은 효율보다 설명 책임과 민원 대응 체계를 먼저 요구하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-climate-adaptation-local-budget-2026",
+    title: "기후 적응 정책은 중앙 구호보다 지방 예산과 현장 실행 능력에서 성패가 갈립니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 기후 적응 정책은 중앙 구호보다 지방 예산과 현장 실행 능력에서 성패가 갈립니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-elderly-care-public-burden-2026",
+    title: "돌봄 공백은 복지 공약을 넘어 지방정부와 가족의 부담 구조를 바꾸고 있습니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 돌봄 공백은 복지 공약을 넘어 지방정부와 가족의 부담 구조를 바꾸고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-platform-labor-rights-2026",
+    title: "플랫폼 노동권 논쟁은 유연한 일자리와 사회보장 사이의 새 타협을 요구하고 있습니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 플랫폼 노동권 논쟁은 유연한 일자리와 사회보장 사이의 새 타협을 요구하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-region-university-crisis-2026",
+    title: "지역 대학 위기는 교육 문제가 아니라 청년 유출과 도시 생존 전략의 문제가 됐습니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 지역 대학 위기는 교육 문제가 아니라 청년 유출과 도시 생존 전략의 문제가 됐다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-healthcare-access-regional-gap-2026",
+    title: "의료 접근성 격차는 지역 민심이 공공투자를 판단하는 핵심 기준으로 커지고 있습니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 의료 접근성 격차는 지역 민심이 공공투자를 판단하는 핵심 기준으로 커지고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-data-transparency-budget-trust-2026",
+    title: "예산 데이터 공개는 공약 경쟁보다 행정 신뢰를 회복하는 실질 도구가 되고 있습니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 예산 데이터 공개는 공약 경쟁보다 행정 신뢰를 회복하는 실질 도구가 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-security-alliance-cost-sharing-2026",
+    title: "안보비용 분담 논쟁은 외교 의제이면서 동시에 국내 재정과 여론의 문제가 되고 있습니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 안보비용 분담 논쟁은 외교 의제이면서 동시에 국내 재정과 여론의 문제가 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "politics-generational-tax-welfare-contract-2026",
+    title: "세대 간 조세와 복지 계약은 선거 때마다 반복되는 분배 갈등의 중심으로 이동하고 있습니다",
+    desk: "정치",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "정치 분야에서 세대 간 조세와 복지 계약은 선거 때마다 반복되는 분배 갈등의 중심으로 이동하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-humanoid-robots-factory-pilot-2026",
+    title: "휴머노이드 로봇은 홍보 영상보다 공장 파일럿의 반복 작업에서 먼저 검증받고 있습니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 휴머노이드 로봇은 홍보 영상보다 공장 파일럿의 반복 작업에서 먼저 검증받고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-battery-recycling-supply-security-2026",
+    title: "배터리 재활용은 친환경 명분보다 핵심 광물 공급 안정의 전략 산업으로 커지고 있습니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 배터리 재활용은 친환경 명분보다 핵심 광물 공급 안정의 전략 산업으로 커지고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-shipbuilding-ammonia-fuel-safety-2026",
+    title: "암모니아 추진선 경쟁은 친환경 선박 시장에서 안전 검증을 가장 큰 변수로 만들고 있습니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 암모니아 추진선 경쟁은 친환경 선박 시장에서 안전 검증을 가장 큰 변수로 만들고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-smart-farm-climate-food-supply-2026",
+    title: "스마트팜은 농업 자동화보다 기후 불안 속 식량 공급 안정의 문제로 주목받고 있습니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 스마트팜은 농업 자동화보다 기후 불안 속 식량 공급 안정의 문제로 주목받고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-defense-drones-export-market-2026",
+    title: "방산 드론 수출은 가격 경쟁보다 실전 데이터와 유지보수 능력에서 갈리고 있습니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 방산 드론 수출은 가격 경쟁보다 실전 데이터와 유지보수 능력에서 갈리고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-airport-logistics-automation-2026",
+    title: "공항 물류 자동화는 여행 수요 회복 이후 인력난과 보안 절차를 동시에 해결하려 합니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 공항 물류 자동화는 여행 수요 회복 이후 인력난과 보안 절차를 동시에 해결하려 합니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-renewable-grid-storage-investment-2026",
+    title: "재생에너지 투자는 발전소보다 전력망과 저장장치 확충 속도에서 성패가 갈립니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 재생에너지 투자는 발전소보다 전력망과 저장장치 확충 속도에서 성패가 갈립니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-cold-chain-pharma-food-2026",
+    title: "콜드체인 산업은 의약품과 신선식품 소비가 늘수록 품질 신뢰의 핵심 인프라가 되고 있습니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 콜드체인 산업은 의약품과 신선식품 소비가 늘수록 품질 신뢰의 핵심 인프라가 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-content-ip-merchandise-tourism-2026",
+    title: "콘텐츠 IP 산업은 영상 흥행을 굿즈와 관광, 게임 매출로 확장하는 전략을 강화하고 있습니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 콘텐츠 IP 산업은 영상 흥행을 굿즈와 관광, 게임 매출로 확장하는 전략을 강화하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "industry-green-cement-construction-emissions-2026",
+    title: "저탄소 시멘트 경쟁은 건설비와 탄소 규제가 만나는 지점에서 커지고 있습니다",
+    desk: "산업",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "산업 분야에서 저탄소 시멘트 경쟁은 건설비와 탄소 규제가 만나는 지점에서 커지고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-microbiome-mental-health-evidence-2026",
+    title: "마이크로바이옴 연구는 정신건강 개선 기대와 임상 근거의 간격을 좁혀야 합니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 마이크로바이옴 연구는 정신건강 개선 기대와 임상 근거의 간격을 좁혀야 합니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-fusion-energy-materials-tritium-2026",
+    title: "핵융합 에너지 기대는 플라즈마보다 소재와 삼중수소 공급 문제에서 현실성을 시험받고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 핵융합 에너지 기대는 플라즈마보다 소재와 삼중수소 공급 문제에서 현실성을 시험받고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-ai-drug-discovery-clinical-failure-2026",
+    title: "AI 신약개발은 후보물질 발굴보다 임상 실패율을 얼마나 낮추는지가 핵심입니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 AI 신약개발은 후보물질 발굴보다 임상 실패율을 얼마나 낮추는지가 핵심이라는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-climate-tipping-points-policy-2026",
+    title: "기후 임계점 연구는 미래 예측보다 지금 정책의 시간표를 앞당기는 경고로 읽힙니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 기후 임계점 연구는 미래 예측보다 지금 정책의 시간표를 앞당기는 경고로 읽힙니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-space-debris-satellite-safety-2026",
+    title: "우주 쓰레기 문제는 위성 산업 성장의 안전한 교통 규칙을 먼저 요구하고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 우주 쓰레기 문제는 위성 산업 성장의 안전한 교통 규칙을 먼저 요구하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-precision-nutrition-metabolic-health-2026",
+    title: "정밀 영양 연구는 다이어트 유행보다 개인의 대사 건강 데이터를 어떻게 해석할지 묻고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 정밀 영양 연구는 다이어트 유행보다 개인의 대사 건강 데이터를 어떻게 해석할지 묻고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-ocean-carbon-removal-ecosystem-risk-2026",
+    title: "해양 탄소 제거 기술은 기후 해법이면서 생태계 위험 평가를 함께 요구하고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 해양 탄소 제거 기술은 기후 해법이면서 생태계 위험 평가를 함께 요구하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-long-covid-biomarkers-treatment-2026",
+    title: "롱코비드 연구는 증상 호소를 넘어 바이오마커와 치료 기준을 찾는 단계로 이동하고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 롱코비드 연구는 증상 호소를 넘어 바이오마커와 치료 기준을 찾는 단계로 이동하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-quantum-sensors-navigation-medicine-2026",
+    title: "양자센서는 컴퓨터보다 먼저 항법과 의료 측정에서 실용성을 보여줄 가능성이 큽니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 양자센서는 컴퓨터보다 먼저 항법과 의료 측정에서 실용성을 보여줄 가능성이 큽니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "science-planetary-defense-asteroid-monitoring-2026",
+    title: "소행성 방어 연구는 우주 이벤트가 아니라 지구 안전 인프라의 일부로 다뤄지고 있습니다",
+    desk: "과학",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "과학 분야에서 소행성 방어 연구는 우주 이벤트가 아니라 지구 안전 인프라의 일부로 다뤄지고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-ai-music-rights-platforms-2026",
+    title: "AI 음악 확산은 창작 도구보다 원저작자 보상과 플랫폼 책임을 먼저 묻고 있습니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 AI 음악 확산은 창작 도구보다 원저작자 보상과 플랫폼 책임을 먼저 묻고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-korean-webtoon-global-studio-2026",
+    title: "한국 웹툰의 글로벌 확장은 작가 개인보다 스튜디오 제작 체계의 경쟁을 키우고 있습니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 한국 웹툰의 글로벌 확장은 작가 개인보다 스튜디오 제작 체계의 경쟁을 키우고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-short-form-news-trust-2026",
+    title: "숏폼 뉴스는 빠른 이해를 돕지만 맥락 부족과 신뢰 검증의 부담을 키우고 있습니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 숏폼 뉴스는 빠른 이해를 돕지만 맥락 부족과 신뢰 검증의 부담을 키우고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-fandom-governance-platform-voting-2026",
+    title: "팬덤 거버넌스는 응원 문화를 넘어 플랫폼 투표와 소비 결정의 힘으로 커지고 있습니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 팬덤 거버넌스는 응원 문화를 넘어 플랫폼 투표와 소비 결정의 힘으로 커지고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-streaming-bundles-subscription-fatigue-2026",
+    title: "스트리밍 번들 경쟁은 구독 피로를 줄이려 하지만 콘텐츠 선택권 논쟁도 키우고 있습니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 스트리밍 번들 경쟁은 구독 피로를 줄이려 하지만 콘텐츠 선택권 논쟁도 키우고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-local-bookstores-community-media-2026",
+    title: "지역 서점은 책 판매보다 커뮤니티 미디어와 문화 거점의 역할로 다시 주목받고 있습니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 지역 서점은 책 판매보다 커뮤니티 미디어와 문화 거점의 역할로 다시 주목받고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-virtual-idol-real-fandom-2026",
+    title: "버추얼 아이돌 팬덤은 가상 캐릭터와 실제 노동, 감정 투자의 경계를 흐리고 있습니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 버추얼 아이돌 팬덤은 가상 캐릭터와 실제 노동, 감정 투자의 경계를 흐리고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-documentary-true-crime-ethics-2026",
+    title: "범죄 다큐멘터리 인기는 사실 재구성과 피해자 윤리 사이의 긴장을 키우고 있습니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 범죄 다큐멘터리 인기는 사실 재구성과 피해자 윤리 사이의 긴장을 키우고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-language-learning-ai-companions-2026",
+    title: "AI 언어 학습 동반자는 회화 연습의 장벽을 낮추지만 문화 맥락 교육을 새 과제로 남깁니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 AI 언어 학습 동반자는 회화 연습의 장벽을 낮추지만 문화 맥락 교육을 새 과제로 남깁니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "culture-museum-digital-experience-tourism-2026",
+    title: "박물관의 디지털 경험은 전시 관람을 지역 관광과 교육 콘텐츠로 확장하고 있습니다",
+    desk: "문화",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "문화 분야에서 박물관의 디지털 경험은 전시 관람을 지역 관광과 교육 콘텐츠로 확장하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-ai-referee-var-trust-2026",
+    title: "AI 심판 보조와 VAR 확대는 판정 정확도보다 팬이 납득하는 설명을 더 중요하게 만들고 있습니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 AI 심판 보조와 VAR 확대는 판정 정확도보다 팬이 납득하는 설명을 더 중요하게 만들고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-athlete-load-management-data-2026",
+    title: "선수 부하 관리 데이터는 경기력보다 부상 예방과 리그 일정의 균형을 먼저 묻고 있습니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 선수 부하 관리 데이터는 경기력보다 부상 예방과 리그 일정의 균형을 먼저 묻고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-women-league-investment-media-2026",
+    title: "여자 프로리그 투자는 중계 노출과 유소년 참여가 함께 움직일 때 지속성이 커집니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 여자 프로리그 투자는 중계 노출과 유소년 참여가 함께 움직일 때 지속성이 커집니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-esports-team-finance-sustainability-2026",
+    title: "e스포츠 팀 재정 논쟁은 인기보다 지속 가능한 리그 수익 구조를 먼저 요구하고 있습니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 e스포츠 팀 재정 논쟁은 인기보다 지속 가능한 리그 수익 구조를 먼저 요구하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-club-ownership-fan-trust-2026",
+    title: "구단 소유 구조 변화는 투자 확대와 팬 신뢰 사이의 긴장을 키우고 있습니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 구단 소유 구조 변화는 투자 확대와 팬 신뢰 사이의 긴장을 키우고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-youth-academy-global-transfer-2026",
+    title: "유소년 아카데미 경쟁은 선수 육성보다 글로벌 이적 시장의 조기 연결을 강화하고 있습니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 유소년 아카데미 경쟁은 선수 육성보다 글로벌 이적 시장의 조기 연결을 강화하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-stadium-smart-experience-security-2026",
+    title: "스마트 경기장은 입장과 결제, 안전 관리를 하나의 팬 경험으로 묶고 있습니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 스마트 경기장은 입장과 결제, 안전 관리를 하나의 팬 경험으로 묶고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-marathon-city-health-tourism-2026",
+    title: "도시 마라톤 붐은 건강 트렌드와 지역 관광, 안전 운영 능력을 동시에 시험하고 있습니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 도시 마라톤 붐은 건강 트렌드와 지역 관광, 안전 운영 능력을 동시에 시험하고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-media-rights-fragmentation-fans-2026",
+    title: "스포츠 중계권 분산은 팬에게 선택지를 늘리지만 시청 비용과 접근성 부담도 키웁니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 스포츠 중계권 분산은 팬에게 선택지를 늘리지만 시청 비용과 접근성 부담도 키웁니다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
+  },
+  {
+    slug: "sports-mental-health-elite-athletes-2026",
+    title: "엘리트 선수의 정신건강 관리는 성적 관리가 아니라 장기 커리어 보호의 기준이 되고 있습니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-13T02:33:01+09:00",
+    summary: "스포츠 분야에서 엘리트 선수의 정신건강 관리는 성적 관리가 아니라 장기 커리어 보호의 기준이 되고 있다는 흐름을 배경, 작동 방식, 제약, 앞으로 볼 기준으로 정리합니다.",
   },
 ];
 
@@ -533,24 +1190,25 @@ const deskEmoji = {
 };
 
 const deskAgentNames = {
-  "기술": "Ada",
-  "반도체": "Grace",
-  "경제": "Warren",
-  "글로벌": "Sophia",
-  "국제정치": "Sophia",
-  "세계": "Sophia",
-  "정치": "Logan",
-  "한국 정치": "Logan",
-  "산업": "Mason",
-  "과학": "Marie",
-  "문화": "Stella",
-  "문화·미디어": "Stella",
-  "스포츠": "Serena",
+  "기술": ["Ada", "Turing", "Linus"],
+  "반도체": ["Grace", "Hedy", "Gordon"],
+  "경제": ["Warren", "Keynes", "Elinor"],
+  "글로벌": ["Sophia", "Nadia", "Amara"],
+  "국제정치": ["Sophia", "Nadia", "Amara"],
+  "세계": ["Sophia", "Nadia", "Amara"],
+  "정치": ["Logan", "Hannah", "Theodore"],
+  "한국 정치": ["Logan", "Hannah", "Theodore"],
+  "산업": ["Mason", "Ingrid", "Rowan"],
+  "과학": ["Marie", "Darwin", "Rosalind"],
+  "문화": ["Stella", "Iris", "Victor"],
+  "문화·미디어": ["Stella", "Iris", "Victor"],
+  "스포츠": ["Serena", "Diego", "Naomi"],
 };
 
 const CARD_MIN_WIDTH = 280;
 const CARD_GAP = 16;
 const MAX_SECTION_ROWS = 1;
+const PAGINATION_WINDOW_SIZE = 10;
 const SLIDER_SEQUENCE_REPEAT_COUNT = 16;
 const SITE_NAME = "Eureka";
 const SCHEMA_CONTEXT = "https://schema.org";
@@ -559,16 +1217,6 @@ const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
 const DEFAULT_SEO_DESCRIPTION = "Eureka는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
-const translationLanguages = [
-  { code: "ko", translateCode: "ko", label: "한국어", flag: "🇰🇷" },
-  { code: "en", translateCode: "en", label: "영어", flag: "🇺🇸" },
-  { code: "ja", translateCode: "ja", label: "일본어", flag: "🇯🇵" },
-  { code: "zh-CN", translateCode: "zh-CN", label: "중국어", flag: "🇨🇳" },
-  { code: "fr", translateCode: "fr", label: "프랑스어", flag: "🇫🇷" },
-  { code: "es", translateCode: "es", label: "스페인어", flag: "🇪🇸" },
-  { code: "ru", translateCode: "ru", label: "러시아어", flag: "🇷🇺" },
-  { code: "hi", translateCode: "hi", label: "힌디어", flag: "🇮🇳" },
-];
 
 const topicPages = Object.entries(hotTopicsByDesk).flatMap(([desk, topics], deskIndex) =>
   topics.map((title, topicIndex) => ({
@@ -593,12 +1241,9 @@ const articleViewNode = document.querySelector("#article-view");
 const articleDeskNode = document.querySelector("#article-desk");
 const articleTitleNode = document.querySelector("#article-title");
 const articleMetaNode = document.querySelector("#article-meta");
-const articleSummaryNode = document.querySelector("#article-summary");
 const articleBodyNode = document.querySelector("#article-body");
 const voiceButtonNode = document.querySelector("#voice-button");
 const voiceStatusNode = document.querySelector("#voice-status");
-const translateButtonsNode = document.querySelector("#translate-buttons");
-const translateStatusNode = document.querySelector("#translate-status");
 const newsletterTitleNode = document.querySelector("#newsletter-title");
 const newsletterCopyNode = document.querySelector("#newsletter-copy");
 const newsletterPanelNode = document.querySelector(".article-newsletter");
@@ -611,8 +1256,8 @@ let dataStore = createEmptyDataStore();
 let activePage = null;
 let activeArticleSpeechText = "";
 let activeUtterance = null;
-let activeTranslationLanguage = translationLanguages[0];
 let resizeRenderTimer = 0;
+let publishRefreshTimer = 0;
 const sectionPageState = new Map();
 
 function createTopicSlug(desk, topicIndex) {
@@ -831,12 +1476,29 @@ function updateArticleSeo(page) {
       articleSection: page.desk,
       inLanguage: SEO_LANGUAGE,
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
-      author: { "@type": "Person", name: getDeskAgentName(page.desk) },
+      author: { "@type": "Person", name: getDeskAgentName(page) },
       publisher: { "@type": "Organization", name: SITE_NAME },
       isPartOf: { "@type": "WebSite", name: SITE_NAME },
     }),
   });
   setArticleMeta(page);
+}
+
+function updateScheduledSeo(page) {
+  const title = `예약 글입니다 | ${SITE_NAME}`;
+  const description = `${page.title} 문서는 ${formatPublishedAt(page.publishedAt)} 이후 공개됩니다.`;
+  updateSeo({
+    title,
+    description,
+    url: getRouteUrl("page", page.slug),
+    robots: "noindex, follow",
+    structuredData: createStructuredData("WebPage", {
+      name: "예약 글입니다",
+      description,
+      inLanguage: SEO_LANGUAGE,
+      isPartOf: { "@type": "WebSite", name: SITE_NAME },
+    }),
+  });
 }
 
 function updateMissingSeo(slug) {
@@ -895,15 +1557,29 @@ function getCurrentRoute() {
 }
 
 function getDeskList() {
-  return [...new Set(pages.map((page) => page.desk))];
+  return [...new Set(getPublishedPages().map((page) => page.desk))];
 }
 
 function getDeskLabel(desk) {
   return `${deskEmoji[desk] || "📌"} ${desk}`;
 }
 
-function getDeskAgentName(desk) {
-  return deskAgentNames[desk] || deskAgentNames[normalizeDesk(desk)] || "Eureka";
+function getDeskAgentName(pageOrDesk) {
+  const desk = typeof pageOrDesk === "object" && pageOrDesk !== null ? pageOrDesk.desk : pageOrDesk;
+  const agents = deskAgentNames[desk] || deskAgentNames[normalizeDesk(desk)] || [];
+  if (!agents.length) return "Eureka";
+  if (typeof pageOrDesk !== "object" || pageOrDesk === null) return agents[0];
+
+  const normalizedDesk = normalizeDesk(desk);
+  const deskPages = pages
+    .filter((page) => page.desk === normalizedDesk)
+    .sort((left, right) => {
+      const timeDiff = getPublishedTime(left, 0) - getPublishedTime(right, 0);
+      if (timeDiff !== 0) return timeDiff;
+      return left.slug.localeCompare(right.slug);
+    });
+  const pageIndex = Math.max(0, deskPages.findIndex((page) => page.slug === pageOrDesk.slug));
+  return agents[pageIndex % agents.length];
 }
 
 function formatPublishedAt(value = "") {
@@ -914,7 +1590,36 @@ function formatPublishedAt(value = "") {
 }
 
 function getArticleMetaText(page) {
-  return `작성자 ${getDeskAgentName(page.desk)} · 발행시각 ${formatPublishedAt(page.publishedAt)}`;
+  return `작성자 ${getDeskAgentName(page)} · 발행시각 ${formatPublishedAt(page.publishedAt)}`;
+}
+
+function isPagePublished(page, now = Date.now()) {
+  return getPublishedTime(page, 0) <= now;
+}
+
+function getPublishedPages(items = pages, now = Date.now()) {
+  return items.filter((page) => isPagePublished(page, now));
+}
+
+function getNextPublishTime(now = Date.now()) {
+  return pages.reduce((nextTime, page) => {
+    const publishTime = getPublishedTime(page, 0);
+    if (publishTime <= now) return nextTime;
+    return Math.min(nextTime, publishTime);
+  }, Number.POSITIVE_INFINITY);
+}
+
+function scheduleNextPublishRefresh() {
+  window.clearTimeout(publishRefreshTimer);
+  const now = Date.now();
+  const nextPublishTime = getNextPublishTime(now);
+  if (!Number.isFinite(nextPublishTime)) return;
+  const delay = Math.min(Math.max(nextPublishTime - now + 1000, 1000), 2147483647);
+  publishRefreshTimer = window.setTimeout(() => {
+    renderDeskMenu();
+    syncViewFromLocation();
+    scheduleNextPublishRefresh();
+  }, delay);
 }
 
 function formatCountLabel(count) {
@@ -929,10 +1634,11 @@ function renderDeskMenu() {
 
 function renderCards(query = "") {
   const normalized = query.trim().toLowerCase();
+  const visiblePages = getPublishedPages();
   const filtered = normalized
-    ? pages.filter((page) => `${page.desk} ${page.title} ${page.summary}`.toLowerCase().includes(normalized))
-    : pages;
-  const latestByDesk = getLatestPagesByDesk(pages);
+    ? visiblePages.filter((page) => `${page.desk} ${page.title} ${page.summary}`.toLowerCase().includes(normalized))
+    : visiblePages;
+  const latestByDesk = getLatestPagesByDesk(visiblePages);
 
   listHeadingNode.textContent = normalized
     ? `🔎 검색 결과 ${formatCountLabel(filtered.length)}`
@@ -1002,19 +1708,25 @@ function getLatestPagesByDesk(items) {
 
   items.forEach((page, index) => {
     const current = latestByDesk.get(page.desk);
-    if (!current || getPublishedTime(page, index) > getPublishedTime(current.page, current.index)) {
+    if (!current || comparePagesByPublishedTime(page, current.page, index, current.index) < 0) {
       latestByDesk.set(page.desk, { page, index });
     }
   });
 
   return [...latestByDesk.values()]
-    .sort((left, right) => getPublishedTime(right.page, right.index) - getPublishedTime(left.page, left.index))
+    .sort((left, right) => comparePagesByPublishedTime(left.page, right.page, left.index, right.index))
     .map((item) => item.page);
 }
 
 function getPublishedTime(page, index) {
   const time = Date.parse(page.publishedAt || "");
   return Number.isNaN(time) ? -index : time;
+}
+
+function comparePagesByPublishedTime(left, right, leftIndex = 0, rightIndex = 0) {
+  const timeDiff = getPublishedTime(right, rightIndex) - getPublishedTime(left, leftIndex);
+  if (timeDiff !== 0) return timeDiff;
+  return String(left.slug || "").localeCompare(String(right.slug || ""));
 }
 
 function renderCard(page, extraClass = "", duplicate = false) {
@@ -1029,12 +1741,13 @@ function renderCard(page, extraClass = "", duplicate = false) {
 function renderDeskSections(items) {
   const desks = getDeskList();
   const sectionPageSize = getSectionPageSize();
+  const visibleItems = getPublishedPages(items);
   return desks
     .map((desk) => {
       const deskId = `desk-${encodeURIComponent(desk)}`;
-      const deskPages = items
+      const deskPages = visibleItems
         .filter((page) => page.desk === desk)
-        .sort((left, right) => getPublishedTime(right, 0) - getPublishedTime(left, 0));
+        .sort(comparePagesByPublishedTime);
       const totalPages = Math.ceil(deskPages.length / sectionPageSize);
       const currentPage = Math.min(sectionPageState.get(desk) || 0, Math.max(totalPages - 1, 0));
       const visiblePages = deskPages.slice(
@@ -1063,9 +1776,9 @@ function renderDeskSections(items) {
 function renderDeskDetail(desk) {
   stopArticleSpeech(true);
   const normalizedDesk = normalizeDesk(desk);
-  const deskPages = pages
+  const deskPages = getPublishedPages()
     .filter((page) => page.desk === normalizedDesk)
-    .sort((left, right) => getPublishedTime(right, 0) - getPublishedTime(left, 0));
+    .sort(comparePagesByPublishedTime);
 
   updateDeskSeo(normalizedDesk, deskPages.length);
   searchFieldNode.hidden = false;
@@ -1085,14 +1798,35 @@ function renderDeskDetail(desk) {
 
 function renderSectionPagination(desk, currentPage, totalPages) {
   if (totalPages <= 1) return "";
+  const pageGroupStart = Math.floor(currentPage / PAGINATION_WINDOW_SIZE) * PAGINATION_WINDOW_SIZE;
+  const pageGroupEnd = Math.min(pageGroupStart + PAGINATION_WINDOW_SIZE, totalPages);
+  const previousGroupButton = pageGroupStart > 0
+    ? `
+        <button class="pagination-button pagination-button--step" type="button" data-desk-page="${encodeURIComponent(desk)}" data-page-index="${Math.max(0, pageGroupStart - PAGINATION_WINDOW_SIZE)}" aria-label="이전 페이지 묶음">
+          &lt;
+        </button>
+      `
+    : "";
+  const nextGroupButton = pageGroupEnd < totalPages
+    ? `
+        <button class="pagination-button pagination-button--step" type="button" data-desk-page="${encodeURIComponent(desk)}" data-page-index="${pageGroupEnd}" aria-label="다음 페이지 묶음">
+          &gt;
+        </button>
+      `
+    : "";
 
   return `
     <nav class="section-pagination" aria-label="${escapeHtml(desk)} 페이지 이동">
-      ${Array.from({ length: totalPages }, (_, pageIndex) => `
+      ${previousGroupButton}
+      ${Array.from({ length: pageGroupEnd - pageGroupStart }, (_, offset) => {
+        const pageIndex = pageGroupStart + offset;
+        return `
         <button class="pagination-button${pageIndex === currentPage ? " pagination-button--active" : ""}" type="button" data-desk-page="${encodeURIComponent(desk)}" data-page-index="${pageIndex}" aria-current="${pageIndex === currentPage ? "page" : "false"}">
           ${pageIndex + 1}
         </button>
-      `).join("")}
+      `;
+      }).join("")}
+      ${nextGroupButton}
     </nav>
   `;
 }
@@ -1104,12 +1838,13 @@ function renderArticleContent(markdown, page) {
     .filter(Boolean);
 
   const middleIndex = Math.max(1, Math.floor(paragraphs.length / 2));
-  const before = paragraphs.slice(0, middleIndex).map(renderParagraph).join("");
-  const after = paragraphs.slice(middleIndex).map(renderParagraph).join("");
+  const before = paragraphs.slice(0, middleIndex).map(renderArticleBlock).join("");
+  const after = paragraphs.slice(middleIndex).map(renderArticleBlock).join("");
   const relatedPages = pages
+    .filter((item) => isPagePublished(item))
     .filter((item) => item.desk === page.desk && item.slug !== page.slug)
-    .sort((left, right) => getPublishedTime(right, 0) - getPublishedTime(left, 0));
-  const trendingPages = getLatestPagesByDesk(pages).filter((item) => item.slug !== page.slug);
+    .sort(comparePagesByPublishedTime);
+  const trendingPages = getLatestPagesByDesk(getPublishedPages()).filter((item) => item.slug !== page.slug);
 
   articleBodyNode.innerHTML = `
     ${before}
@@ -1120,7 +1855,10 @@ function renderArticleContent(markdown, page) {
   refreshSliderLoops();
 }
 
-function renderParagraph(paragraph) {
+function renderArticleBlock(paragraph) {
+  const headingMatch = paragraph.match(/^##\s+(.+)$/);
+  if (headingMatch) return `<h3 class="article-subheading">${escapeHtml(headingMatch[1].trim())}</h3>`;
+
   return `<p>${escapeHtml(paragraph)}</p>`;
 }
 
@@ -1195,48 +1933,6 @@ function toggleArticleSpeech() {
   window.speechSynthesis.speak(utterance);
 }
 
-function renderTranslateButtons() {
-  translateButtonsNode.innerHTML = translationLanguages
-    .map((language) => `
-      <button class="translate-language-button" type="button" data-translate-code="${escapeHtml(language.code)}" aria-pressed="${language.code === activeTranslationLanguage.code ? "true" : "false"}" title="${escapeHtml(language.label)}">
-        <span aria-hidden="true">${escapeHtml(language.flag)}</span>
-        <span class="visually-hidden">${escapeHtml(language.label)}</span>
-      </button>
-    `)
-    .join("");
-  updateTranslateButtons();
-}
-
-function updateTranslateButtons() {
-  translateButtonsNode.querySelectorAll("[data-translate-code]").forEach((button) => {
-    button.setAttribute("aria-pressed", button.dataset.translateCode === activeTranslationLanguage.code ? "true" : "false");
-  });
-}
-
-function createTranslateUrl(language) {
-  const translateUrl = new URL("https://translate.google.com/translate");
-  translateUrl.searchParams.set("sl", "ko");
-  translateUrl.searchParams.set("tl", language.translateCode);
-  translateUrl.searchParams.set("u", activePage?.slug ? getArticleUrl(activePage.slug) : window.location.href);
-  return translateUrl.toString();
-}
-
-function handleTranslateLanguage(code) {
-  const language = translationLanguages.find((item) => item.code === code);
-  if (!language) return;
-
-  activeTranslationLanguage = language;
-  updateTranslateButtons();
-
-  if (language.code === "ko") {
-    translateStatusNode.textContent = "한국어 원문을 유지합니다.";
-    return;
-  }
-
-  translateStatusNode.textContent = `${language.label} 번역 페이지를 새 탭에서 엽니다.`;
-  window.open(createTranslateUrl(language), "_blank", "noopener,noreferrer");
-}
-
 function showListView() {
   stopArticleSpeech(true);
   updateHomeSeo();
@@ -1249,17 +1945,16 @@ function showListView() {
 }
 
 function hasStaticArticleBody(page) {
-  return getStaticArticleSlugFromPath() === page.slug && articleBodyNode.textContent.trim().length > 0;
+  return getStaticArticleSlugFromPath() === page.slug
+    && !articleBodyNode.dataset.scheduledPlaceholder
+    && articleBodyNode.textContent.trim().length > 0;
 }
 
 function showArticleShell(page, { preserveBody = false } = {}) {
-  const pageSummary = String(page.summary || "").trim();
   stopArticleSpeech(true);
   articleDeskNode.textContent = page.desk;
   articleTitleNode.textContent = page.title;
   articleMetaNode.textContent = getArticleMetaText(page);
-  articleSummaryNode.textContent = pageSummary;
-  articleSummaryNode.hidden = !pageSummary;
   if (!preserveBody) articleBodyNode.innerHTML = "<p>문서를 불러오는 중입니다.</p>";
   newsletterPanelNode.hidden = false;
   newsletterTitleNode.textContent = "";
@@ -1280,9 +1975,8 @@ function showMissingArticle(slug) {
   articleDeskNode.textContent = "오류";
   articleTitleNode.textContent = "문서를 찾을 수 없습니다";
   articleMetaNode.textContent = "";
-  articleSummaryNode.textContent = slug ? `요청한 문서(${slug})가 manifest에 없습니다.` : "선택한 페이지 정보가 없습니다.";
-  articleSummaryNode.hidden = false;
-  articleBodyNode.innerHTML = "<p>목록으로 돌아가 다시 선택해 주세요.</p>";
+  const missingMessage = slug ? `요청한 문서(${slug})가 manifest에 없습니다.` : "선택한 페이지 정보가 없습니다.";
+  articleBodyNode.innerHTML = `<p>${escapeHtml(missingMessage)}</p><p>목록으로 돌아가 다시 선택해 주세요.</p>`;
   newsletterPanelNode.hidden = true;
   newsletterTitleNode.textContent = "";
   newsletterCopyNode.textContent = "";
@@ -1296,10 +1990,35 @@ function showMissingArticle(slug) {
   articleViewNode.hidden = false;
 }
 
+function showScheduledArticle(page) {
+  stopArticleSpeech(true);
+  articleDeskNode.textContent = page.desk;
+  articleTitleNode.textContent = "예약 글입니다";
+  articleMetaNode.textContent = `공개 예정시각 ${formatPublishedAt(page.publishedAt)}`;
+  articleBodyNode.innerHTML = `<p>${escapeHtml(page.title)} 문서는 발행시각 이후 공개됩니다.</p>`;
+  newsletterPanelNode.hidden = true;
+  newsletterTitleNode.textContent = "";
+  newsletterCopyNode.textContent = "";
+  newsletterMessageNode.textContent = "";
+  activePage = null;
+  setVoiceReady("");
+
+  updateScheduledSeo(page);
+  searchFieldNode.hidden = false;
+  listViewNode.hidden = true;
+  articleViewNode.hidden = false;
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 async function renderArticle(slug) {
   const page = pages.find((item) => item.slug === slug);
   if (!page) {
     showMissingArticle(slug);
+    return;
+  }
+
+  if (!isPagePublished(page)) {
+    showScheduledArticle(page);
     return;
   }
 
@@ -1312,12 +2031,12 @@ async function renderArticle(slug) {
     if (!response.ok) throw new Error("본문 파일을 읽지 못했습니다.");
     const markdown = normalizeArticleMarkdown(await response.text());
     renderArticleContent(markdown, page);
-    setVoiceReady([page.title, page.summary, markdown].filter(Boolean).join("\n\n"));
+    setVoiceReady([page.title, markdown].filter(Boolean).join("\n\n"));
   } catch (error) {
     if (!preserveStaticBody) {
       articleBodyNode.innerHTML = `<p>${escapeHtml(error.message || "본문을 불러오는 중 문제가 발생했습니다.")}</p>`;
     }
-    setVoiceReady([page.title, page.summary, staticArticleText].filter(Boolean).join("\n\n"));
+    setVoiceReady([page.title, staticArticleText].filter(Boolean).join("\n\n"));
   }
 }
 
@@ -1456,12 +2175,6 @@ pageListNode.addEventListener("click", (event) => {
   renderCards(searchNode.value);
 });
 voiceButtonNode.addEventListener("click", toggleArticleSpeech);
-translateButtonsNode.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-translate-code]");
-  if (!button) return;
-
-  handleTranslateLanguage(button.dataset.translateCode || "ko");
-});
 window.addEventListener("hashchange", syncViewFromLocation);
 window.addEventListener("popstate", syncViewFromLocation);
 document.addEventListener("click", handleRouteLinkClick);
@@ -1483,5 +2196,5 @@ newsletterFormNode.addEventListener("submit", (event) => {
 });
 
 renderDeskMenu();
-renderTranslateButtons();
+scheduleNextPublishRefresh();
 loadDataStore().finally(syncViewFromLocation);
