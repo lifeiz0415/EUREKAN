@@ -1,8 +1,8 @@
-# EUREKA
+# Eurekan.org
 
 위키, 블로그, 뉴스.
 
-Eureka는 지금 사람들이 많이 궁금해하는 이슈를 분야별 장문 글로 보여주는 정적 단일 페이지 위키/매거진입니다. 별도 백엔드, 데이터베이스, 프레임워크 없이 `index.html`, `style.css`, `app.js`, `pages/*.md`, `pages/*.html`만으로 읽기 중심 사이트를 구성합니다.
+Eurekan.org는 지금 사람들이 많이 궁금해하는 이슈를 분야별 장문 글로 보여주는 정적 단일 페이지 위키/매거진입니다. 별도 백엔드, 데이터베이스, 프레임워크 없이 `index.html`, `style.css`, `app.js`, `pages/*.md`, `pages/*.html`만으로 읽기 중심 사이트를 구성합니다.
 
 ## 프로젝트 성격
 
