@@ -51,6 +51,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/?desk=%ED%95%9C%EA%B5%AD%EC%A3%BC%EC%8B%9D</loc>
+    <lastmod>2026-05-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EB%AF%B8%EA%B5%AD%EC%A3%BC%EC%8B%9D</loc>
+    <lastmod>2026-05-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/?desk=%ED%81%AC%EB%A6%BD%ED%86%A0</loc>
+    <lastmod>2026-05-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://lifeiz0415.github.io/EUREKA/pages/ai-agent-platform-war-2026.html</loc>
     <lastmod>2026-05-11T10:00:00+09:00</lastmod>
     <priority>0.7</priority>
@@ -1594,5 +1609,98 @@
     <loc>https://lifeiz0415.github.io/EUREKA/pages/sports-training-data-performance-2026.html</loc>
     <lastmod>2026-05-13T10:46:46+09:00</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/korean-stocks-trading-value-stock-flow-2026.html</loc>
+    <lastmod>2026-05-13T22:09:29+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/korean-stocks-new-listing-float-lockup-2026.html</loc>
+    <lastmod>2026-05-13T22:09:30+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/korean-stocks-disclosure-earnings-volume-2026.html</loc>
+    <lastmod>2026-05-13T22:09:31+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/us-stocks-trading-value-guidance-rates-2026.html</loc>
+    <lastmod>2026-05-13T22:09:32+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/us-stocks-ipo-lockup-cash-burn-2026.html</loc>
+    <lastmod>2026-05-13T22:09:33+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/us-stocks-after-hours-volume-2026.html</loc>
+    <lastmod>2026-05-13T22:09:34+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/crypto-trading-volume-liquidity-quality-2026.html</loc>
+    <lastmod>2026-05-13T22:09:35+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/crypto-new-listing-float-lockup-2026.html</loc>
+    <lastmod>2026-05-13T22:09:36+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/crypto-altcoin-onchain-leverage-2026.html</loc>
+    <lastmod>2026-05-13T22:09:37+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/korean-stocks-samsung-electronics-hbm-foundry-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/korean-stocks-sk-hynix-hbm-ai-memory-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/korean-stocks-hyundai-motor-ev-tariff-shareholder-return-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/us-stocks-intel-foundry-ai-pc-turnaround-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/us-stocks-spacex-private-starship-starlink-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/us-stocks-nvidia-ai-gpu-capex-export-control-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/us-stocks-google-ai-search-cloud-antitrust-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/us-stocks-meta-ai-capex-ads-reality-labs-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/us-stocks-amazon-aws-ai-retail-margin-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/crypto-bitcoin-etf-institutional-flow-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/crypto-ethereum-layer2-staking-tokenization-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/crypto-solana-etf-network-revenue-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
   </url>
 </urlset>

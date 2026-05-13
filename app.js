@@ -1882,7 +1882,301 @@ const SPORTS_SHORT_FORM_STREAMING_BROADCAST_IMAGE = {
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Newegg-gamer-zone-1.jpg",
 };
 
+const KOREAN_STOCKS_TRADING_VALUE_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Korea_exchange.JPG?width=1280",
+  alt: "한국거래소 건물을 배경으로 한국주식 거래대금 흐름을 떠올리게 하는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korea_exchange.JPG",
+};
+
+const KOREAN_STOCKS_NEW_LISTING_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%EC%97%AC%EC%9D%98%EB%8F%84_%EC%A6%9D%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%86%8C_%ED%94%8C%EB%A1%9C%EC%96%B4_(1984).jpg?width=1280",
+  alt: "한국 증권거래소 플로어에서 신규상장 종목의 첫 거래를 떠올리게 하는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:%EC%97%AC%EC%9D%98%EB%8F%84_%EC%A6%9D%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%86%8C_%ED%94%8C%EB%A1%9C%EC%96%B4_(1984).jpg",
+};
+
+const KOREAN_STOCKS_DISCLOSURE_EARNINGS_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Stock_market_charts_illustration.jpg?width=1280",
+  alt: "공시와 실적 발표 뒤 종목별 거래대금 변화를 살펴보는 주식 차트 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Stock_market_charts_illustration.jpg",
+};
+
+const US_STOCKS_TRADING_VALUE_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NY_stock_exchange_traders_floor_LC-U9-10548-6.jpg?width=1280",
+  alt: "뉴욕증권거래소 플로어에서 미국주식 거래대금 집중을 떠올리게 하는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:NY_stock_exchange_traders_floor_LC-U9-10548-6.jpg",
+};
+
+const US_STOCKS_IPO_LOCKUP_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nasdaq_MarketSite_(51494550508).jpg?width=1280",
+  alt: "나스닥 마켓사이트 외관을 배경으로 미국 신규상장주와 IPO 시장을 떠올리게 하는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg",
+};
+
+const US_STOCKS_AFTER_HOURS_VOLUME_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NASDAQ_studio.jpg?width=1280",
+  alt: "미국주식 실적 발표와 시간외 거래 흐름을 떠올리게 하는 나스닥 스튜디오 화면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:NASDAQ_studio.jpg",
+};
+
+const CRYPTO_TRADING_VOLUME_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bitcoin_on_Laptop_Keyboard.jpg?width=1280",
+  alt: "노트북 키보드 위 비트코인 이미지로 크립토 거래대금과 유동성을 떠올리게 하는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bitcoin_on_Laptop_Keyboard.jpg",
+};
+
+const CRYPTO_NEW_LISTING_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Blockchain_Currency_Examples.jpg?width=1280",
+  alt: "여러 디지털 자산 예시가 놓인 이미지로 신규상장 코인과 토큰 유통량을 떠올리게 하는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Blockchain_Currency_Examples.jpg",
+};
+
+const CRYPTO_ALTCOIN_ONCHAIN_LEVERAGE_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cryptocurrency_(38747838010).jpg?width=1280",
+  alt: "여러 암호화폐 코인이 놓인 이미지로 알트코인 거래대금과 레버리지 흐름을 떠올리게 하는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cryptocurrency_(38747838010).jpg",
+};
+
+const KOREAN_STOCKS_SAMSUNG_HBM_FOUNDRY_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_headquarters.jpg?width=1280",
+  alt: "삼성전자 주식의 HBM과 파운드리 회복 기대를 떠올리게 하는 삼성 본사 건물",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Samsung_headquarters.jpg",
+};
+
+const KOREAN_STOCKS_SK_HYNIX_HBM_AI_MEMORY_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mainboard_C5V01_LA-E892P_-_SKhynixH5AN8G6NAFR-UHC-5921.jpg?width=1280",
+  alt: "SK하이닉스 메모리 칩이 실장된 회로기판으로 AI 메모리 수요를 떠올리게 하는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Mainboard_C5V01_LA-E892P_-_SKhynixH5AN8G6NAFR-UHC-5921.jpg",
+};
+
+const KOREAN_STOCKS_HYUNDAI_EV_TARIFF_RETURN_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hyundai_Ioniq_5.jpg?width=1280",
+  alt: "현대차 전기차 전략과 수익성 논쟁을 떠올리게 하는 현대 아이오닉 5 차량",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg",
+};
+
+const US_STOCKS_INTEL_FOUNDRY_AI_PC_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Intel_Headquarters_in_2023.jpg?width=1280",
+  alt: "인텔 파운드리 전환과 AI PC 회복 이슈를 떠올리게 하는 인텔 본사 건물",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Intel_Headquarters_in_2023.jpg",
+};
+
+const US_STOCKS_SPACEX_STARSHIP_STARLINK_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_launch_of_the_SpaceX_Starship_6_rocket_seen_from_the_space_station_(iss072e220043).jpg?width=1280",
+  alt: "스페이스X 스타십 발사가 우주 인프라와 스타링크 기대를 키우는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:The_launch_of_the_SpaceX_Starship_6_rocket_seen_from_the_space_station_(iss072e220043).jpg",
+};
+
+const US_STOCKS_NVIDIA_AI_GPU_CAPEX_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NVIDIA_Headquarters.jpg?width=1280",
+  alt: "엔비디아 AI GPU 수요와 빅테크 설비투자 이슈를 떠올리게 하는 엔비디아 본사",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:NVIDIA_Headquarters.jpg",
+};
+
+const US_STOCKS_GOOGLE_AI_SEARCH_CLOUD_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Google_Campus%2C_Mountain_View%2C_CA.jpg?width=1280",
+  alt: "구글 AI 검색과 클라우드, 반독점 이슈를 떠올리게 하는 구글 캠퍼스 전경",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Google_Campus,_Mountain_View,_CA.jpg",
+};
+
+const US_STOCKS_META_AI_CAPEX_ADS_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Meta_HQ_2023.png?width=1280",
+  alt: "메타의 AI 설비투자와 광고 플랫폼, 리얼리티랩스 비용 논쟁을 떠올리게 하는 본사 표지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Meta_HQ_2023.png",
+};
+
+const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Amazon_Spheres_05.jpg?width=1280",
+  alt: "아마존의 AWS AI 성장과 리테일 마진 개선 이슈를 떠올리게 하는 아마존 스피어스 건물",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Amazon_Spheres_05.jpg",
+};
+
+const CRYPTO_BITCOIN_ETF_INSTITUTIONAL_FLOW_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bitcoin_currency_stack.jpg?width=1280",
+  alt: "비트코인 ETF 자금 유입과 기관 보유 변화를 떠올리게 하는 비트코인 모형 동전",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bitcoin_currency_stack.jpg",
+};
+
+const CRYPTO_ETHEREUM_LAYER2_STAKING_TOKENIZATION_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ethereum_Crypto_Winter.jpg?width=1280",
+  alt: "이더리움 네트워크 가치와 레이어2, 스테이킹 논쟁을 떠올리게 하는 이더리움 모형 동전",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Ethereum_Crypto_Winter.jpg",
+};
+
+const CRYPTO_SOLANA_ETF_NETWORK_REVENUE_IMAGE = {
+  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Solana-sol-logo-horizontal-2025.svg?width=1280",
+  alt: "솔라나 ETF 기대와 네트워크 수익성 논쟁을 보여주는 솔라나 로고 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Solana-sol-logo-horizontal-2025.svg",
+};
+
 const featuredPages = [
+  {
+    slug: "korean-stocks-trading-value-stock-flow-2026",
+    title: "한국주식 거래대금 상위 종목은 왜 가격보다 자금의 방향을 먼저 보여주나",
+    desk: "한국주식",
+    publishedAt: "2026-05-13T22:09:29+09:00",
+    summary: "한국주식에서 거래대금이 몰린 종목을 볼 때는 상승률보다 자금이 왜 이동했는지와 그 흐름이 지속될 조건을 먼저 확인해야 합니다.",
+    image: KOREAN_STOCKS_TRADING_VALUE_IMAGE,
+  },
+  {
+    slug: "korean-stocks-new-listing-float-lockup-2026",
+    title: "신규상장 한국주식은 첫날 상승률보다 유통가능 물량을 먼저 확인해야 합니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-13T22:09:30+09:00",
+    summary: "신규상장 한국주식은 공모가 대비 상승률만으로 판단하기 어렵고 상장일 유통가능 물량, 보호예수, 기관 의무보유 확약을 함께 보아야 합니다.",
+    image: KOREAN_STOCKS_NEW_LISTING_IMAGE,
+  },
+  {
+    slug: "korean-stocks-disclosure-earnings-volume-2026",
+    title: "공시와 실적 뒤 거래대금이 몰린 한국주식은 기대와 확인을 나눠 봐야 합니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-13T22:09:31+09:00",
+    summary: "공시와 실적 발표 뒤 거래대금이 급증한 한국주식은 headline보다 이익의 질, 현금흐름, 후속 공시 가능성을 나누어 살펴야 합니다.",
+    image: KOREAN_STOCKS_DISCLOSURE_EARNINGS_IMAGE,
+  },
+  {
+    slug: "us-stocks-trading-value-guidance-rates-2026",
+    title: "미국주식 거래대금 상위 종목은 실적보다 가이던스와 금리를 함께 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-13T22:09:32+09:00",
+    summary: "미국주식에서 거래대금이 몰린 종목은 실적 headline뿐 아니라 다음 분기 가이던스, 금리, 달러, 옵션 수급이 함께 만든 결과로 읽어야 합니다.",
+    image: US_STOCKS_TRADING_VALUE_IMAGE,
+  },
+  {
+    slug: "us-stocks-ipo-lockup-cash-burn-2026",
+    title: "미국 신규상장주는 성장 서사보다 보호예수와 현금 소진 속도를 먼저 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-13T22:09:33+09:00",
+    summary: "미국 신규상장주는 IPO 첫날 반응보다 락업 해제, 매출 성장의 질, 현금 소진 속도, 추가 증자 가능성을 함께 확인해야 합니다.",
+    image: US_STOCKS_IPO_LOCKUP_IMAGE,
+  },
+  {
+    slug: "us-stocks-after-hours-volume-2026",
+    title: "시간외 거래대금이 터진 미국주식은 다음 날 본장 수급까지 확인해야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-13T22:09:34+09:00",
+    summary: "미국주식은 실적 발표 뒤 시간외 거래에서 먼저 움직이지만 진짜 확인은 다음 날 본장 거래대금, 스프레드, 기관 수급에서 이뤄집니다.",
+    image: US_STOCKS_AFTER_HOURS_VOLUME_IMAGE,
+  },
+  {
+    slug: "crypto-trading-volume-liquidity-quality-2026",
+    title: "크립토 거래대금 상위 코인은 가격 상승보다 유동성의 질을 먼저 봐야 합니다",
+    desk: "크립토",
+    publishedAt: "2026-05-13T22:09:35+09:00",
+    summary: "크립토에서 거래대금이 몰린 코인은 상승률보다 현물과 선물의 비중, 거래소 분산, 스테이블코인 유동성, 온체인 이동을 함께 확인해야 합니다.",
+    image: CRYPTO_TRADING_VOLUME_IMAGE,
+  },
+  {
+    slug: "crypto-new-listing-float-lockup-2026",
+    title: "신규상장 코인은 상장가보다 유통량과 락업 해제가 더 중요합니다",
+    desk: "크립토",
+    publishedAt: "2026-05-13T22:09:36+09:00",
+    summary: "신규상장 코인은 첫 거래 가격보다 초기 유통량, FDV, 락업 해제, 거래소 상장 구조, 컨트랙트 검증을 먼저 확인해야 합니다.",
+    image: CRYPTO_NEW_LISTING_IMAGE,
+  },
+  {
+    slug: "crypto-altcoin-onchain-leverage-2026",
+    title: "알트코인 급등은 온체인 사용과 파생상품 레버리지를 나눠 봐야 합니다",
+    desk: "크립토",
+    publishedAt: "2026-05-13T22:09:37+09:00",
+    summary: "알트코인 급등은 실제 네트워크 사용 증가인지 파생상품 레버리지 과열인지에 따라 지속성이 크게 달라집니다.",
+    image: CRYPTO_ALTCOIN_ONCHAIN_LEVERAGE_IMAGE,
+  },
+  {
+    slug: "korean-stocks-samsung-electronics-hbm-foundry-2026",
+    title: "삼성전자 주식은 HBM 회복과 파운드리 신뢰 회복을 동시에 증명해야 합니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-13T22:32:00+09:00",
+    summary: "삼성전자 주식은 메모리 업황 회복만으로 설명하기 어렵고 HBM 고객 검증, 파운드리 수율, 주주환원 신뢰가 함께 확인되어야 합니다.",
+    image: KOREAN_STOCKS_SAMSUNG_HBM_FOUNDRY_IMAGE,
+  },
+  {
+    slug: "korean-stocks-sk-hynix-hbm-ai-memory-2026",
+    title: "SK하이닉스 주식은 HBM 호황이 메모리 사이클 전체로 번질 수 있는지를 묻고 있습니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-13T22:32:01+09:00",
+    summary: "SK하이닉스 주식의 핵심은 HBM 선도 기대가 DRAM, NAND, 설비투자 부담까지 감당할 만큼 넓은 이익으로 확산되는지입니다.",
+    image: KOREAN_STOCKS_SK_HYNIX_HBM_AI_MEMORY_IMAGE,
+  },
+  {
+    slug: "korean-stocks-hyundai-motor-ev-tariff-shareholder-return-2026",
+    title: "현대차 주식은 전기차 둔화와 관세 부담 속 주주환원 신뢰를 시험받고 있습니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-13T22:32:02+09:00",
+    summary: "현대차 주식은 전기차 성장 둔화, 미국 관세 부담, 하이브리드 판매, 배당과 자사주 정책이 함께 주가를 움직이는 국면입니다.",
+    image: KOREAN_STOCKS_HYUNDAI_EV_TARIFF_RETURN_IMAGE,
+  },
+  {
+    slug: "us-stocks-intel-foundry-ai-pc-turnaround-2026",
+    title: "인텔 주식은 파운드리 전환과 AI PC 회복을 동시에 증명해야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-13T22:32:03+09:00",
+    summary: "인텔 주식은 파운드리 적자 축소, 18A 공정 신뢰, AI PC 교체 수요, 데이터센터 경쟁력 회복이 같은 방향으로 움직여야 재평가될 수 있습니다.",
+    image: US_STOCKS_INTEL_FOUNDRY_AI_PC_IMAGE,
+  },
+  {
+    slug: "us-stocks-spacex-private-starship-starlink-2026",
+    title: "스페이스X 이슈는 비상장 기업이어도 미국주식 시장의 우주·통신 기대를 흔듭니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-13T22:32:04+09:00",
+    summary: "스페이스X는 비상장 기업이지만 Starship, Starlink, IPO 기대가 미국 상장 우주·통신·방산 관련주와 성장주 심리에 큰 영향을 줍니다.",
+    image: US_STOCKS_SPACEX_STARSHIP_STARLINK_IMAGE,
+  },
+  {
+    slug: "us-stocks-nvidia-ai-gpu-capex-export-control-2026",
+    title: "엔비디아 주식은 AI GPU 수요보다 빅테크 설비투자의 지속성을 먼저 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-13T22:32:05+09:00",
+    summary: "엔비디아 주식은 Blackwell과 Rubin 수요, hyperscaler 설비투자, 수출통제, 고객 집중도가 함께 움직이는 고기대 종목입니다.",
+    image: US_STOCKS_NVIDIA_AI_GPU_CAPEX_IMAGE,
+  },
+  {
+    slug: "us-stocks-google-ai-search-cloud-antitrust-2026",
+    title: "구글 주식은 AI 검색 전환과 클라우드 성장, 반독점 리스크가 함께 움직입니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-13T22:32:06+09:00",
+    summary: "알파벳 구글 주식은 검색 광고의 방어력, Gemini 기반 AI 전환, Google Cloud 성장, 반독점 소송 리스크를 한 화면에서 봐야 합니다.",
+    image: US_STOCKS_GOOGLE_AI_SEARCH_CLOUD_IMAGE,
+  },
+  {
+    slug: "us-stocks-meta-ai-capex-ads-reality-labs-2026",
+    title: "메타 주식은 AI 설비투자와 광고 회복, 리얼리티랩스 비용을 같이 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-13T22:32:07+09:00",
+    summary: "메타 주식은 광고 현금창출력이 AI 인프라 투자와 리얼리티랩스 손실을 얼마나 감당하는지에 따라 평가가 달라집니다.",
+    image: US_STOCKS_META_AI_CAPEX_ADS_IMAGE,
+  },
+  {
+    slug: "us-stocks-amazon-aws-ai-retail-margin-2026",
+    title: "아마존 주식은 AWS AI 수요와 리테일 마진 개선이 같은 방향인지 묻고 있습니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-13T22:32:08+09:00",
+    summary: "아마존 주식은 AWS의 AI 인프라 성장, Trainium과 Bedrock 수요, 광고 사업, 리테일 비용 효율이 함께 이익률을 끌어올리는지 확인해야 합니다.",
+    image: US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_IMAGE,
+  },
+  {
+    slug: "crypto-bitcoin-etf-institutional-flow-2026",
+    title: "비트코인은 ETF 자금 유입이 가격보다 투자자 구성을 바꾸는지 봐야 합니다",
+    desk: "크립토",
+    publishedAt: "2026-05-13T22:32:09+09:00",
+    summary: "비트코인 이슈의 핵심은 현물 ETF와 기관 수요가 가격만 밀어 올리는지, 보유자 구성과 유동성 구조까지 바꾸는지입니다.",
+    image: CRYPTO_BITCOIN_ETF_INSTITUTIONAL_FLOW_IMAGE,
+  },
+  {
+    slug: "crypto-ethereum-layer2-staking-tokenization-2026",
+    title: "이더리움은 레이어2와 스테이킹, 토큰화가 네트워크 가치 논쟁을 키우고 있습니다",
+    desk: "크립토",
+    publishedAt: "2026-05-13T22:32:10+09:00",
+    summary: "이더리움은 레이어2 확장, 스테이킹 수익, 실물자산 토큰화가 커질수록 ETH 가치 포착과 수수료 구조를 둘러싼 논쟁이 더 중요해집니다.",
+    image: CRYPTO_ETHEREUM_LAYER2_STAKING_TOKENIZATION_IMAGE,
+  },
+  {
+    slug: "crypto-solana-etf-network-revenue-2026",
+    title: "솔라나는 ETF 기대보다 네트워크 수익과 안정성을 함께 증명해야 합니다",
+    desk: "크립토",
+    publishedAt: "2026-05-13T22:32:11+09:00",
+    summary: "솔라나는 ETF와 스테이킹 상품 기대가 커질수록 거래대금, 앱 수익, 네트워크 안정성, 검증자 분산을 함께 증명해야 하는 코인입니다.",
+    image: CRYPTO_SOLANA_ETF_NETWORK_REVENUE_IMAGE,
+  },
   {
     slug: "ai-agent-platform-war-2026",
     title: "AI 에이전트 전쟁에서 2026년 차세대 플랫폼을 지배할 주체는 누구일까",
@@ -3175,6 +3469,9 @@ const deskSlugs = {
   "문화": "culture",
   "문화·미디어": "culture-media",
   "스포츠": "sports",
+  "한국주식": "korean-stocks",
+  "미국주식": "us-stocks",
+  "크립토": "crypto",
 };
 
 const topicSlugsByDesk = {
@@ -3649,6 +3946,9 @@ const deskEmoji = {
   "문화": "🎬",
   "문화·미디어": "🎬",
   "스포츠": "🏆",
+  "한국주식": "🇰🇷",
+  "미국주식": "🇺🇸",
+  "크립토": "₿",
 };
 
 const deskAgentNames = {
@@ -3665,6 +3965,9 @@ const deskAgentNames = {
   "문화": ["Stella", "Iris", "Victor"],
   "문화·미디어": ["Stella", "Iris", "Victor"],
   "스포츠": ["Serena", "Diego", "Naomi"],
+  "한국주식": ["Mirae", "Jisoo", "Dohyun"],
+  "미국주식": ["Morgan", "Catherine", "Howard"],
+  "크립토": ["Satoshi", "Vitalik", "Hal"],
 };
 
 const CARD_MIN_WIDTH = 280;
@@ -3677,7 +3980,7 @@ const SCHEMA_CONTEXT = "https://schema.org";
 const SEO_LANGUAGE = "ko-KR";
 const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
-const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
+const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠, 한국주식, 미국주식, 크립토 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
 
 const topicPages = Object.entries(hotTopicsByDesk).flatMap(([desk, topics], deskIndex) =>
@@ -3702,6 +4005,7 @@ const listHeadingNode = document.querySelector("#list-heading");
 const searchNode = document.querySelector("#page-search");
 const searchFieldNode = document.querySelector(".search-field");
 const deskMenuNode = document.querySelector("#desk-menu");
+let deskMenuToggleNode = document.querySelector("#desk-menu-toggle");
 const listViewNode = document.querySelector("#list-view");
 const articleViewNode = document.querySelector("#article-view");
 const articleDeskNode = document.querySelector("#article-desk");
@@ -3717,6 +4021,23 @@ const newsletterFormNode = document.querySelector("#newsletter-form");
 const newsletterEmailNode = document.querySelector("#newsletter-email");
 const newsletterMessageNode = document.querySelector("#newsletter-message");
 
+if (!deskMenuToggleNode && deskMenuNode) {
+  const heroInnerNode = document.querySelector(".hero__inner");
+  deskMenuToggleNode = document.createElement("button");
+  deskMenuToggleNode.id = "desk-menu-toggle";
+  deskMenuToggleNode.className = "desk-menu-toggle";
+  deskMenuToggleNode.type = "button";
+  deskMenuToggleNode.setAttribute("aria-controls", "desk-menu");
+  deskMenuToggleNode.setAttribute("aria-expanded", "false");
+  deskMenuToggleNode.setAttribute("aria-label", "분야별 메뉴 열기");
+  deskMenuToggleNode.innerHTML = `
+    <span class="desk-menu-toggle__bar"></span>
+    <span class="desk-menu-toggle__bar"></span>
+    <span class="desk-menu-toggle__bar"></span>
+  `;
+  heroInnerNode?.append(deskMenuToggleNode);
+}
+
 let dataFileHandle = null;
 let dataStore = createEmptyDataStore();
 let activePage = null;
@@ -3724,6 +4045,7 @@ let activeArticleSpeechText = "";
 let activeUtterance = null;
 let resizeRenderTimer = 0;
 let publishRefreshTimer = 0;
+let deskMenuMeasureTimer = 0;
 const sectionPageState = new Map();
 
 function createTopicSlug(desk, topicIndex) {
@@ -4159,6 +4481,38 @@ function renderDeskMenu() {
   deskMenuNode.innerHTML = getDeskList()
     .map((desk) => `<a class="desk-menu__link" href="${escapeHtml(getRouteUrl("desk", desk))}">${escapeHtml(getDeskLabel(desk))}</a>`)
     .join("");
+  scheduleDeskMenuModeUpdate();
+}
+
+function setDeskMenuOpen(isOpen) {
+  if (!deskMenuNode || !deskMenuToggleNode) return;
+  deskMenuNode.classList.toggle("desk-menu--open", isOpen);
+  deskMenuToggleNode.setAttribute("aria-expanded", String(isOpen));
+  deskMenuToggleNode.setAttribute("aria-label", isOpen ? "분야별 메뉴 닫기" : "분야별 메뉴 열기");
+}
+
+function updateDeskMenuMode() {
+  if (!deskMenuNode || !deskMenuToggleNode) return;
+  window.cancelAnimationFrame(deskMenuMeasureTimer);
+  document.body.classList.remove("is-desk-menu-collapsed");
+  deskMenuNode.classList.remove("desk-menu--open");
+
+  const firstMenuItem = deskMenuNode.querySelector(".desk-menu__link");
+  if (!firstMenuItem) {
+    setDeskMenuOpen(false);
+    return;
+  }
+
+  const singleRowHeight = firstMenuItem.getBoundingClientRect().height;
+  const shouldCollapse = deskMenuNode.scrollHeight > singleRowHeight + 10;
+  document.body.classList.toggle("is-desk-menu-collapsed", shouldCollapse);
+  setDeskMenuOpen(false);
+}
+
+function scheduleDeskMenuModeUpdate() {
+  if (!deskMenuNode || !deskMenuToggleNode) return;
+  window.cancelAnimationFrame(deskMenuMeasureTimer);
+  deskMenuMeasureTimer = window.requestAnimationFrame(updateDeskMenuMode);
 }
 
 function renderCards(query = "") {
@@ -4603,6 +4957,7 @@ function handleRouteLinkClick(event) {
   event.preventDefault();
   history.pushState(null, "", `${url.pathname}${url.search}`);
   syncViewFromLocation();
+  setDeskMenuOpen(false);
 }
 
 async function loadDataStore() {
@@ -4710,12 +5065,16 @@ pageListNode.addEventListener("click", (event) => {
   renderCards(searchNode.value);
 });
 voiceButtonNode.addEventListener("click", toggleArticleSpeech);
+deskMenuToggleNode?.addEventListener("click", () => {
+  setDeskMenuOpen(!deskMenuNode.classList.contains("desk-menu--open"));
+});
 window.addEventListener("hashchange", syncViewFromLocation);
 window.addEventListener("popstate", syncViewFromLocation);
 document.addEventListener("click", handleRouteLinkClick);
 window.addEventListener("resize", () => {
   clearTimeout(resizeRenderTimer);
   resizeRenderTimer = window.setTimeout(() => {
+    scheduleDeskMenuModeUpdate();
     if (!listViewNode.hidden && !searchNode.value.trim()) {
       renderCards(searchNode.value);
       return;
