@@ -4669,19 +4669,35 @@ function renderDeskSections(items) {
     .join("");
 }
 
+function setMainView(view) {
+  searchFieldNode.hidden = false;
+  listViewNode.hidden = view !== "list";
+  articleViewNode.hidden = view !== "article";
+}
+
+function clearArticleContext() {
+  hideArticleToc();
+  activePage = null;
+  setVoiceReady("");
+}
+
+function resetNewsletterPanel(isVisible = false) {
+  newsletterPanelNode.hidden = !isVisible;
+  newsletterTitleNode.textContent = "";
+  newsletterCopyNode.textContent = "";
+  newsletterMessageNode.textContent = "";
+}
+
 function renderDeskDetail(desk) {
   stopArticleSpeech(true);
-  hideArticleToc();
+  clearArticleContext();
   const normalizedDesk = normalizeDesk(desk);
   const deskPages = getPublishedPages()
     .filter((page) => page.desk === normalizedDesk)
     .sort(comparePagesByPublishedTime);
 
   updateDeskSeo(normalizedDesk, deskPages.length);
-  searchFieldNode.hidden = false;
-  listViewNode.hidden = false;
-  articleViewNode.hidden = true;
-  activePage = null;
+  setMainView("list");
   listHeadingNode.textContent = `${getDeskLabel(normalizedDesk)} 전체 보기 ${formatCountLabel(deskPages.length)}`;
   emptyStateNode.hidden = deskPages.length > 0;
   pageListNode.innerHTML = `
@@ -4905,12 +4921,9 @@ function toggleArticleSpeech() {
 
 function showListView() {
   stopArticleSpeech(true);
-  hideArticleToc();
+  clearArticleContext();
   updateHomeSeo();
-  searchFieldNode.hidden = false;
-  listViewNode.hidden = false;
-  articleViewNode.hidden = true;
-  activePage = null;
+  setMainView("list");
   renderCards(searchNode.value);
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -4929,59 +4942,40 @@ function showArticleShell(page, { preserveBody = false } = {}) {
   if (!preserveBody) articleBodyNode.innerHTML = "<p>문서를 불러오는 중입니다.</p>";
   if (preserveBody) renderArticleTocFromBody();
   else hideArticleToc();
-  newsletterPanelNode.hidden = false;
-  newsletterTitleNode.textContent = "";
-  newsletterCopyNode.textContent = "";
-  newsletterMessageNode.textContent = "";
+  resetNewsletterPanel(true);
   activePage = page;
   setVoiceReady("");
 
   updateArticleSeo(page);
-  searchFieldNode.hidden = false;
-  listViewNode.hidden = true;
-  articleViewNode.hidden = false;
+  setMainView("article");
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function showMissingArticle(slug) {
   stopArticleSpeech(true);
-  hideArticleToc();
+  clearArticleContext();
   articleDeskNode.textContent = "오류";
   articleTitleNode.textContent = "문서를 찾을 수 없습니다";
   articleMetaNode.textContent = "";
   const missingMessage = slug ? `요청한 문서(${slug})가 manifest에 없습니다.` : "선택한 페이지 정보가 없습니다.";
   articleBodyNode.innerHTML = `<p>${escapeHtml(missingMessage)}</p><p>목록으로 돌아가 다시 선택해 주세요.</p>`;
-  newsletterPanelNode.hidden = true;
-  newsletterTitleNode.textContent = "";
-  newsletterCopyNode.textContent = "";
-  newsletterMessageNode.textContent = "";
-  activePage = null;
-  setVoiceReady("");
+  resetNewsletterPanel(false);
 
   updateMissingSeo(slug);
-  searchFieldNode.hidden = false;
-  listViewNode.hidden = true;
-  articleViewNode.hidden = false;
+  setMainView("article");
 }
 
 function showScheduledArticle(page) {
   stopArticleSpeech(true);
-  hideArticleToc();
+  clearArticleContext();
   articleDeskNode.textContent = page.desk;
   articleTitleNode.textContent = "예약 글입니다";
   articleMetaNode.textContent = `공개 예정시각 ${formatPublishedAt(page.publishedAt)}`;
   articleBodyNode.innerHTML = `<p>${escapeHtml(page.title)} 문서는 발행시각 이후 공개됩니다.</p>`;
-  newsletterPanelNode.hidden = true;
-  newsletterTitleNode.textContent = "";
-  newsletterCopyNode.textContent = "";
-  newsletterMessageNode.textContent = "";
-  activePage = null;
-  setVoiceReady("");
+  resetNewsletterPanel(false);
 
   updateScheduledSeo(page);
-  searchFieldNode.hidden = false;
-  listViewNode.hidden = true;
-  articleViewNode.hidden = false;
+  setMainView("article");
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 

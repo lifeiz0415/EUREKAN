@@ -228,6 +228,7 @@ agents/
 - 홈 카드 렌더링, 검색 필터, 정적 글 페이지 호환, `pages/*.md` fetch, 뉴스레터 저장은 모두 `app.js`에서 처리한다.
 - 라우트별 SEO 메타데이터 갱신도 `app.js`에서 처리한다.
 - 카드 슬라이더의 실제 이동 거리 계산은 `refreshSliderLoops()`에서 처리한다.
+- 목록/상세 화면 전환, 상세 문맥 초기화, 뉴스레터 패널 초기화처럼 여러 라우트에서 반복되는 UI 상태 변경은 `setMainView()`, `clearArticleContext()`, `resetNewsletterPanel()` 같은 공유 헬퍼를 우선 사용한다.
 - 외부 라이브러리 없이 바닐라 JavaScript만 사용한다.
 
 ## style.css 구현 규칙
