@@ -5030,10 +5030,40 @@ function syncViewFromLocation() {
   showListView();
 }
 
+function isRouteHash() {
+  const hash = window.location.hash.replace(/^#/, "");
+  if (!hash) return false;
+  const hashParams = new URLSearchParams(hash);
+  return hashParams.has("page") || hashParams.has("desk");
+}
+
+function handleHashChange() {
+  if (!isRouteHash()) {
+    scheduleArticleTocActiveUpdate();
+    return;
+  }
+
+  syncViewFromLocation();
+}
+
+function handleArticleTocClick(event, link) {
+  const targetId = link.dataset.tocTarget;
+  if (!targetId) return false;
+  const targetNode = document.getElementById(targetId);
+  if (!targetNode) return false;
+
+  event.preventDefault();
+  targetNode.scrollIntoView({ behavior: "smooth", block: "start" });
+  scheduleArticleTocActiveUpdate();
+  return true;
+}
+
 function handleRouteLinkClick(event) {
   if (!(event.target instanceof Element)) return;
   const link = event.target.closest("a[href]");
   if (!link || event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+  if (link.classList.contains("article-toc__link") && handleArticleTocClick(event, link)) return;
 
   const url = new URL(link.getAttribute("href"), window.location.href);
   const homePath = new URL(getHomeUrl()).pathname;
@@ -5154,7 +5184,7 @@ voiceButtonNode.addEventListener("click", toggleArticleSpeech);
 deskMenuToggleNode?.addEventListener("click", () => {
   setDeskMenuOpen(!deskMenuNode.classList.contains("desk-menu--open"));
 });
-window.addEventListener("hashchange", syncViewFromLocation);
+window.addEventListener("hashchange", handleHashChange);
 window.addEventListener("popstate", syncViewFromLocation);
 document.addEventListener("click", handleRouteLinkClick);
 window.addEventListener("scroll", scheduleArticleTocActiveUpdate, { passive: true });
