@@ -4012,6 +4012,7 @@ const articleDeskNode = document.querySelector("#article-desk");
 const articleTitleNode = document.querySelector("#article-title");
 const articleMetaNode = document.querySelector("#article-meta");
 const articleBodyNode = document.querySelector("#article-body");
+let articleTocNode = document.querySelector("#article-toc");
 const voiceButtonNode = document.querySelector("#voice-button");
 const voiceStatusNode = document.querySelector("#voice-status");
 const newsletterTitleNode = document.querySelector("#newsletter-title");
@@ -4038,6 +4039,15 @@ if (!deskMenuToggleNode && deskMenuNode) {
   heroInnerNode?.append(deskMenuToggleNode);
 }
 
+if (!articleTocNode && articleViewNode && articleBodyNode) {
+  articleTocNode = document.createElement("nav");
+  articleTocNode.id = "article-toc";
+  articleTocNode.className = "article-toc";
+  articleTocNode.hidden = true;
+  articleTocNode.setAttribute("aria-label", "글 목차");
+  articleViewNode.insertBefore(articleTocNode, articleBodyNode);
+}
+
 let dataFileHandle = null;
 let dataStore = createEmptyDataStore();
 let activePage = null;
@@ -4046,6 +4056,8 @@ let activeUtterance = null;
 let resizeRenderTimer = 0;
 let publishRefreshTimer = 0;
 let deskMenuMeasureTimer = 0;
+let articleTocScrollTimer = 0;
+let articleTocItems = [];
 const sectionPageState = new Map();
 
 function createTopicSlug(desk, topicIndex) {
@@ -4659,6 +4671,7 @@ function renderDeskSections(items) {
 
 function renderDeskDetail(desk) {
   stopArticleSpeech(true);
+  hideArticleToc();
   const normalizedDesk = normalizeDesk(desk);
   const deskPages = getPublishedPages()
     .filter((page) => page.desk === normalizedDesk)
@@ -4721,7 +4734,8 @@ function renderArticleContent(markdown, page) {
     .map((item) => item.trim())
     .filter(Boolean);
 
-  const blocks = paragraphs.map(renderArticleBlock);
+  const articleHeadings = [];
+  const blocks = paragraphs.map((paragraph) => renderArticleBlock(paragraph, articleHeadings));
   const firstHeadingIndex = paragraphs.findIndex((paragraph) => /^##\s+/.test(paragraph));
   const articleImage = renderArticleImage(page);
   if (articleImage && firstHeadingIndex >= 0) blocks.splice(firstHeadingIndex + 1, 0, articleImage);
@@ -4741,14 +4755,81 @@ function renderArticleContent(markdown, page) {
     ${after}
     ${renderArticleSliderSection("🔥 지금 사람들이 많이 보는 주제", trendingPages)}
   `;
+  renderArticleToc(articleHeadings);
   refreshSliderLoops();
 }
 
-function renderArticleBlock(paragraph) {
+function renderArticleBlock(paragraph, articleHeadings = []) {
   const headingMatch = paragraph.match(/^##\s+(.+)$/);
-  if (headingMatch) return `<h3 class="article-subheading">${escapeHtml(headingMatch[1].trim())}</h3>`;
+  if (headingMatch) {
+    const text = headingMatch[1].trim();
+    const id = `article-section-${articleHeadings.length + 1}`;
+    articleHeadings.push({ id, text });
+    return `<h3 id="${id}" class="article-subheading">${escapeHtml(text)}</h3>`;
+  }
 
   return `<p>${escapeHtml(paragraph)}</p>`;
+}
+
+function renderArticleToc(headings = []) {
+  if (!articleTocNode) return;
+  articleTocItems = headings;
+  if (!articleTocItems.length) {
+    hideArticleToc();
+    return;
+  }
+
+  articleTocNode.hidden = false;
+  articleTocNode.innerHTML = `
+    <p class="article-toc__title">목차</p>
+    <ol class="article-toc__list">
+      ${articleTocItems.map((heading) => `
+        <li>
+          <a class="article-toc__link" href="#${escapeHtml(heading.id)}" data-toc-target="${escapeHtml(heading.id)}">${escapeHtml(heading.text)}</a>
+        </li>
+      `).join("")}
+    </ol>
+  `;
+  scheduleArticleTocActiveUpdate();
+}
+
+function renderArticleTocFromBody() {
+  const headings = [...articleBodyNode.querySelectorAll(".article-subheading")]
+    .map((heading, index) => {
+      if (!heading.id) heading.id = `article-section-${index + 1}`;
+      return { id: heading.id, text: heading.textContent.trim() };
+    })
+    .filter((heading) => heading.text);
+  renderArticleToc(headings);
+}
+
+function hideArticleToc() {
+  articleTocItems = [];
+  if (!articleTocNode) return;
+  articleTocNode.hidden = true;
+  articleTocNode.innerHTML = "";
+}
+
+function scheduleArticleTocActiveUpdate() {
+  window.cancelAnimationFrame(articleTocScrollTimer);
+  articleTocScrollTimer = window.requestAnimationFrame(updateArticleTocActiveLink);
+}
+
+function updateArticleTocActiveLink() {
+  if (!articleTocNode || articleTocNode.hidden || !articleTocItems.length) return;
+  const activationTop = 160;
+  const activeHeading = articleTocItems.reduce((active, heading) => {
+    const headingNode = document.getElementById(heading.id);
+    if (!headingNode) return active;
+    return headingNode.getBoundingClientRect().top <= activationTop ? heading : active;
+  }, articleTocItems[0]);
+
+  articleTocNode.querySelectorAll(".article-toc__link").forEach((link) => {
+    const isActive = link.dataset.tocTarget === activeHeading.id;
+    link.classList.toggle("article-toc__link--active", isActive);
+    if (isActive) link.setAttribute("aria-current", "true");
+    else link.removeAttribute("aria-current");
+  });
 }
 
 function renderArticleSliderSection(title, items) {
@@ -4824,6 +4905,7 @@ function toggleArticleSpeech() {
 
 function showListView() {
   stopArticleSpeech(true);
+  hideArticleToc();
   updateHomeSeo();
   searchFieldNode.hidden = false;
   listViewNode.hidden = false;
@@ -4845,6 +4927,8 @@ function showArticleShell(page, { preserveBody = false } = {}) {
   articleTitleNode.textContent = page.title;
   articleMetaNode.textContent = getArticleMetaText(page);
   if (!preserveBody) articleBodyNode.innerHTML = "<p>문서를 불러오는 중입니다.</p>";
+  if (preserveBody) renderArticleTocFromBody();
+  else hideArticleToc();
   newsletterPanelNode.hidden = false;
   newsletterTitleNode.textContent = "";
   newsletterCopyNode.textContent = "";
@@ -4861,6 +4945,7 @@ function showArticleShell(page, { preserveBody = false } = {}) {
 
 function showMissingArticle(slug) {
   stopArticleSpeech(true);
+  hideArticleToc();
   articleDeskNode.textContent = "오류";
   articleTitleNode.textContent = "문서를 찾을 수 없습니다";
   articleMetaNode.textContent = "";
@@ -4881,6 +4966,7 @@ function showMissingArticle(slug) {
 
 function showScheduledArticle(page) {
   stopArticleSpeech(true);
+  hideArticleToc();
   articleDeskNode.textContent = page.desk;
   articleTitleNode.textContent = "예약 글입니다";
   articleMetaNode.textContent = `공개 예정시각 ${formatPublishedAt(page.publishedAt)}`;
@@ -5071,10 +5157,12 @@ deskMenuToggleNode?.addEventListener("click", () => {
 window.addEventListener("hashchange", syncViewFromLocation);
 window.addEventListener("popstate", syncViewFromLocation);
 document.addEventListener("click", handleRouteLinkClick);
+window.addEventListener("scroll", scheduleArticleTocActiveUpdate, { passive: true });
 window.addEventListener("resize", () => {
   clearTimeout(resizeRenderTimer);
   resizeRenderTimer = window.setTimeout(() => {
     scheduleDeskMenuModeUpdate();
+    scheduleArticleTocActiveUpdate();
     if (!listViewNode.hidden && !searchNode.value.trim()) {
       renderCards(searchNode.value);
       return;

@@ -351,7 +351,20 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 .page-card h3 { margin: 0; line-height: 1.35; }
 .page-card p, .empty-state { color: var(--muted); }
 
-.article-view { max-width: 980px; }
+.article-view {
+  max-width: 1180px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  gap: 0 24px;
+  align-items: start;
+}
+
+.article-view > .eyebrow,
+.article-view > h2,
+.article-view > .article-tools,
+.article-view > .article-newsletter {
+  grid-column: 1 / -1;
+}
 
 .newsletter-panel {
   display: grid;
@@ -498,7 +511,58 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   gap: 12px;
 }
 
+.article-toc {
+  position: sticky;
+  top: 132px;
+  grid-column: 2;
+  grid-row: 5;
+  max-height: calc(100vh - 156px);
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  background: rgba(255, 252, 246, 0.92);
+  box-shadow: 0 14px 34px rgba(43, 33, 18, 0.1);
+}
+
+.article-toc__title {
+  margin: 0 0 10px;
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.article-toc__list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.article-toc__link {
+  display: block;
+  border-left: 3px solid transparent;
+  border-radius: 0 10px 10px 0;
+  padding: 7px 9px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.article-toc__link:hover,
+.article-toc__link:focus-visible,
+.article-toc__link--active {
+  border-left-color: var(--accent);
+  background: rgba(73, 107, 57, 0.1);
+  color: var(--accent-dark);
+}
+
 .article-body {
+  grid-column: 1;
+  grid-row: 5;
   display: grid;
   gap: 18px;
 }
@@ -516,6 +580,7 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 }
 
 .article-subheading {
+  scroll-margin-top: 150px;
   margin: 10px 0 -4px;
   font-size: 1.18rem;
   line-height: 1.45;
@@ -557,4 +622,23 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
     max-width: none;
   }
 
+}
+
+@media (max-width: 960px) {
+  .article-view {
+    max-width: 980px;
+    grid-template-columns: 1fr;
+  }
+
+  .article-toc,
+  .article-body {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .article-toc {
+    top: 96px;
+    max-height: 42vh;
+    margin-bottom: 18px;
+  }
 }
