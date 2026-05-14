@@ -2056,8 +2056,8 @@ const CRYPTO_ETHEREUM_LAYER2_STAKING_TOKENIZATION_IMAGE = {
 
 const CRYPTO_SOLANA_ETF_NETWORK_REVENUE_IMAGE = {
   src: "images/crypto-solana-etf-network-revenue-2026.webp",
-  alt: "고성능 블록체인 검증자 노드와 네트워크 안정성을 점검하는 운영실",
-  credit: "생성 이미지 : Eurekan.org",
+  alt: "솔라나 로고 배지와 함께 고성능 블록체인 검증자 노드와 네트워크 안정성을 점검하는 운영실",
+  credit: "생성 이미지 : Eurekan.org · 로고 : Solana",
   width: 1600,
   height: 800,
 };
