@@ -1887,21 +1887,27 @@ const SPORTS_SHORT_FORM_STREAMING_BROADCAST_IMAGE = {
 };
 
 const KOREAN_STOCKS_TRADING_VALUE_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Korea_exchange.JPG?width=1280",
-  alt: "한국거래소 건물을 배경으로 한국주식 거래대금 흐름을 떠올리게 하는 장면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korea_exchange.JPG",
+  src: "images/korean-stocks-trading-value-stock-flow-2026.webp",
+  alt: "한국주식 거래대금 흐름을 확인하기 위해 주문장과 차트를 함께 보는 분석 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const KOREAN_STOCKS_NEW_LISTING_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%EC%97%AC%EC%9D%98%EB%8F%84_%EC%A6%9D%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%86%8C_%ED%94%8C%EB%A1%9C%EC%96%B4_(1984).jpg?width=1280",
-  alt: "한국 증권거래소 플로어에서 신규상장 종목의 첫 거래를 떠올리게 하는 장면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:%EC%97%AC%EC%9D%98%EB%8F%84_%EC%A6%9D%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%86%8C_%ED%94%8C%EB%A1%9C%EC%96%B4_(1984).jpg",
+  src: "images/korean-stocks-new-listing-float-lockup-2026.webp",
+  alt: "신규상장 주식의 유통가능 물량과 보호예수 일정을 검토하는 분석 책상",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const KOREAN_STOCKS_DISCLOSURE_EARNINGS_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Stock_market_charts_illustration.jpg?width=1280",
-  alt: "공시와 실적 발표 뒤 종목별 거래대금 변화를 살펴보는 주식 차트 이미지",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Stock_market_charts_illustration.jpg",
+  src: "images/korean-stocks-disclosure-earnings-volume-2026.webp",
+  alt: "공시와 실적 자료, 현금흐름 표를 대조하며 거래대금 변화를 확인하는 분석 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const US_STOCKS_TRADING_VALUE_IMAGE = {
@@ -1941,21 +1947,27 @@ const CRYPTO_ALTCOIN_ONCHAIN_LEVERAGE_IMAGE = {
 };
 
 const KOREAN_STOCKS_SAMSUNG_HBM_FOUNDRY_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_headquarters.jpg?width=1280",
-  alt: "삼성전자 주식의 HBM과 파운드리 회복 기대를 떠올리게 하는 삼성 본사 건물",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Samsung_headquarters.jpg",
+  src: "images/korean-stocks-samsung-electronics-hbm-foundry-2026.webp",
+  alt: "반도체 검사실에서 HBM 패키지와 웨이퍼 수율을 확인하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const KOREAN_STOCKS_SK_HYNIX_HBM_AI_MEMORY_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mainboard_C5V01_LA-E892P_-_SKhynixH5AN8G6NAFR-UHC-5921.jpg?width=1280",
-  alt: "SK하이닉스 메모리 칩이 실장된 회로기판으로 AI 메모리 수요를 떠올리게 하는 장면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Mainboard_C5V01_LA-E892P_-_SKhynixH5AN8G6NAFR-UHC-5921.jpg",
+  src: "images/korean-stocks-sk-hynix-hbm-ai-memory-2026.webp",
+  alt: "AI 서버 보드 위 적층 메모리 패키지를 검사하며 HBM 수요를 점검하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const KOREAN_STOCKS_HYUNDAI_EV_TARIFF_RETURN_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hyundai_Ioniq_5.jpg?width=1280",
-  alt: "현대차 전기차 전략과 수익성 논쟁을 떠올리게 하는 현대 아이오닉 5 차량",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg",
+  src: "images/korean-stocks-hyundai-motor-ev-tariff-shareholder-return-2026.webp",
+  alt: "자동차 수출 야적장에서 차량과 재무 자료를 함께 확인하는 분석 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const US_STOCKS_INTEL_FOUNDRY_AI_PC_IMAGE = {
