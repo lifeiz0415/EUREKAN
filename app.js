@@ -1960,8 +1960,8 @@ const CRYPTO_ALTCOIN_ONCHAIN_LEVERAGE_IMAGE = {
 
 const KOREAN_STOCKS_SAMSUNG_HBM_FOUNDRY_IMAGE = {
   src: "images/korean-stocks-samsung-electronics-hbm-foundry-2026.webp",
-  alt: "반도체 검사실에서 HBM 패키지와 웨이퍼 수율을 확인하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
+  alt: "삼성 로고가 표시된 반도체 검사실에서 HBM 패키지와 웨이퍼 수율을 확인하는 장면",
+  credit: "생성 이미지 : Eurekan.org · 로고 : Samsung 공식 PNG",
   width: 1600,
   height: 800,
 };
