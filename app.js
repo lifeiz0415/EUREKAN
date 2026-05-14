@@ -1015,9 +1015,11 @@ const POLITICS_MIDDLE_AGED_TRANSPORT_HEALTHCARE_IMAGE = {
 };
 
 const POLITICS_PARTY_FATIGUE_CANDIDATES_IMAGE = {
-  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Candidates_and_election_campaigner_in_the_Iksan_joint_campaign_of_Party_for_Democracy_and_Peace_appealing_for_support_by_marking_the_fourth_symbol_with_hands.jpg/1280px-thumbnail.jpg",
-  alt: "익산 지역 선거 유세에서 후보자와 선거운동원들이 지지를 호소하는 모습",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Candidates_and_election_campaigner_in_the_Iksan_joint_campaign_of_Party_for_Democracy_and_Peace_appealing_for_support_by_marking_the_fourth_symbol_with_hands.jpg",
+  src: "images/politics-party-fatigue-candidates-2026.webp",
+  alt: "시장 골목에서 지역 정치인이 주민의 생활 민원을 들으며 수첩에 적는 모습",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const POLITICS_VIDEO_ELECTIONS_SHORT_COMMUNITIES_IMAGE = {
