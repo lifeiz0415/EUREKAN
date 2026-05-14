@@ -983,9 +983,11 @@ const POLITICS_ELECTION_FATIGUE_TRUST_IMAGE = {
 };
 
 const POLITICS_PENSION_WELFARE_POLICY_CLASH_IMAGE = {
-  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Rally_against_raising_the_retirement_age_%282018-09-09%3B_Moscow%29_05.jpg/1280px-Rally_against_raising_the_retirement_age_%282018-09-09%3B_Moscow%29_05.jpg",
-  alt: "연금 개편에 반대하는 시민들이 거리 집회에 모인 모습",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Rally_against_raising_the_retirement_age_(2018-09-09;_Moscow)_05.jpg",
+  src: "images/politics-pension-welfare-policy-clash-2026.webp",
+  alt: "청년의 보험료 부담과 노년의 복지 필요가 예산 벽 앞에서 저울처럼 맞서는 일러스트",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const POLITICS_LOCAL_ELECTION_LIVING_COSTS_HOUSING_IMAGE = {
@@ -4137,6 +4139,9 @@ function getPageImage(page) {
     src: getAssetUrl(src),
     alt: String(image.alt || `${page.title} 대표 이미지`).trim(),
     sourceUrl: String(image.sourceUrl || "").trim(),
+    credit: String(image.credit || "").trim(),
+    width: Number(image.width || 1600),
+    height: Number(image.height || 800),
   };
 }
 
@@ -4156,12 +4161,14 @@ function renderArticleImage(page) {
   if (!image) return "";
   const sourceCaption = image.sourceUrl
     ? `<figcaption>출처 : <a href="${escapeHtml(image.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(image.sourceUrl)}</a></figcaption>`
+    : image.credit
+      ? `<figcaption>${escapeHtml(image.credit)}</figcaption>`
     : "";
 
   return `
     <figure class="article-media">
       <div class="article-media__frame">
-        <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="2129" height="2655" loading="eager" decoding="async" />
+        <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="eager" decoding="async" />
       </div>
       ${sourceCaption}
     </figure>

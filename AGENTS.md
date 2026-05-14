@@ -72,7 +72,7 @@ agents/
 - 헤더에는 왼쪽 정렬된 `💡 Eurekan.org` 브랜드, 검색창, 분야별 메뉴가 있다.
 - 분야별 메뉴가 화면 폭 안에서 한 줄로 표시되지 않는 경우에는 햄버거 박스 버튼으로 접고, 버튼을 눌렀을 때 같은 분야별 메뉴를 펼쳐 보여준다.
 - 사이트 favicon은 `💡` 이모지 기반 SVG 데이터 URI를 사용한다.
-- 홈에서는 카드 안에 분야 라벨과 제목만 보여주되, 외부 이미지가 등록된 글은 카드 상단에 해당 이미지를 썸네일로 보여준다.
+- 홈에서는 카드 안에 분야 라벨과 제목만 보여주되, 외부 이미지 URL 또는 `images/` 자산이 등록된 글은 카드 상단에 해당 이미지를 썸네일로 보여준다.
 - 카드 썸네일과 정적 글 본문 이미지는 원본 크기를 그대로 노출하지 않고 표시 영역의 가로 폭에 맞춘 뒤 가로 2:세로 1 비율로 크롭해 보여준다.
 - 페이지 카드는 요약 문단을 표시하지 않고 콘텐츠 높이에 맞게 빈 공간 없이 보여준다.
 - 화면에 표시하는 분야명은 `app.js`에서 정규화하며, `국제정치`와 `세계`는 `글로벌`, `한국 정치`는 `정치`, `문화·미디어`와 `문화미디어`는 `문화`로 보여준다.
@@ -81,7 +81,7 @@ agents/
 - 카드 클릭 시 검색엔진이 바로 읽을 수 있는 `pages/<slug>.html` 정적 글 페이지로 이동한다.
 - 카드 링크는 검색엔진이 읽을 수 있도록 `pages/<slug>.html` 정적 글 페이지를 우선 사용하며, 분야 링크는 `?desk=<분야>` 쿼리 라우팅을 사용한다. 기존 `?page=<slug>`, `#page`, `#desk` 주소도 `app.js`에서 호환한다.
 - 정적 글 페이지는 `pages/<slug>.html`에 전체 본문과 글별 SEO 메타데이터를 포함하며, `app.js`는 같은 slug의 `pages/<slug>.md` 원본을 fetch해 상호작용용 상세 화면을 보강한다.
-- 이미지가 꼭 필요한 글은 `pages/<slug>.html` 정적 글 페이지 안에서 외부 이미지 URL을 직접 링크한다.
+- 이미지가 꼭 필요한 글은 `pages/<slug>.html` 정적 글 페이지 안에서 외부 이미지 URL 또는 `images/` 자산을 직접 링크한다.
 - 상세 본문 렌더링 시 본문 첫 줄의 `한 줄 요약:` 문장 전체와 예전 분야 표현도 `app.js`에서 제거·정규화해 보여준다.
 - 상세 본문은 빈 줄 기준으로 블록을 나누며, `## 소제목` 블록만 본문 소제목으로 해석해 표시한다.
 - 홈 상단에는 `🔥 지금 사람들이 많이 궁금해하는 주제` 무한 카드 슬라이더가 있다.
@@ -103,7 +103,7 @@ agents/
 - 기본 SEO 메타 태그는 `index.html`의 `<head>`에 둔다.
 - 라우트별 제목, 설명, canonical, Open Graph, Twitter 카드, JSON-LD 구조화 데이터는 `app.js`에서 현재 화면 상태에 맞게 갱신한다.
 - 홈은 `WebSite`, 분야별 전체 보기는 `CollectionPage`, 상세 글은 `Article` JSON-LD를 사용한다.
-- 외부 이미지를 직접 링크한 정적 글은 Open Graph, Twitter 카드, `Article` JSON-LD의 `image` 메타데이터를 함께 제공한다.
+- 이미지가 등록된 정적 글은 Open Graph, Twitter 카드, `Article` JSON-LD의 `image` 메타데이터를 함께 제공한다.
 - 존재하지 않는 문서는 `noindex, follow`로 표시한다.
 - canonical URL은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKA/`를 기준으로 만들고, 상세 글은 `pages/<slug>.html`, 분야 보기는 `?desk=<분야>`를 사용한다.
 - `robots.txt`와 `sitemap.xml`은 루트에 둔다.
@@ -218,13 +218,13 @@ agents/
 - `hotTopicsByDesk`는 토픽 문장 저장소이고, 실제 화면 표시 분야는 `normalizeDesk()` 기준을 따른다.
 - `topicPages`는 `hotTopicsByDesk`를 순회해 `slug`, `title`, `desk`, `publishedAt`, `summary`, 선택적 `image`를 가진 manifest 항목을 만든다.
 - `topicSlugsByDesk`는 각 토픽 제목을 영어로 요약한 파일명 저장소이며, 기존 자동 토픽의 `createTopicPublishedAt(deskIndex, topicIndex)` 결과는 과거 항목 호환용으로만 취급한다. 새 글을 추가할 때는 자동 배정 시각을 그대로 쓰지 말고 최종 생성 시점의 실제 한국시간을 manifest와 정적 HTML, sitemap에 직접 반영한다.
-- `topicImagesBySlug`는 자동 토픽 페이지 중 외부 이미지가 필요한 slug와 `image` 객체 상수를 연결하는 선택 매핑이다.
+- `topicImagesBySlug`는 자동 토픽 페이지 중 이미지가 필요한 slug와 `image` 객체 상수를 연결하는 선택 매핑이다.
 - 게시가 완료되려면 manifest 항목뿐 아니라 같은 slug의 `pages/<slug>.md` 본문 원본과 `pages/<slug>.html` 정적 글 페이지가 반드시 존재해야 한다.
 - 상단 `🔥 지금 사람들이 많이 궁금해하는 주제` 슬라이더는 전체 게시 목록에서 분야별 최신 발행 페이지 한 개씩을 가져와 구성한다.
 
 ## app.js 구현 규칙
 - 페이지 manifest 배열이 있어야 한다.
-- 각 항목은 최소 `slug`, `title`, `desk`, `summary`를 가지며, 외부 이미지가 필요한 글은 `image.src`, `image.alt`, `image.sourceUrl`을 함께 가진다.
+- 각 항목은 최소 `slug`, `title`, `desk`, `summary`를 가지며, 외부 이미지가 필요한 글은 `image.src`, `image.alt`, `image.sourceUrl`을 함께 가진다. 생성형 이미지나 직접 관리 이미지 자산은 `image.src`, `image.alt`, `image.credit`, 필요한 경우 `image.width`, `image.height`를 함께 가진다.
 - 각 항목의 `publishedAt`은 `YYYY-MM-DDTHH:mm:ss+09:00` 형식을 사용한다.
 - 현재 manifest는 `featuredPages`, `hotTopicsByDesk`에서 생성하는 `topicPages`, 그리고 `pages = [...featuredPages, ...topicPages]` 구조를 사용한다.
 - 제목 기반 토픽 slug 관리를 위해 `topicSlugsByDesk`를 사용하고, 자동 토픽 이미지 연결에는 `topicImagesBySlug`를 사용한다. `hotTopicsByDesk`, `deskSlugs`, `deskEmoji`에는 예전 분야 키가 남을 수 있지만 화면 표시와 뉴스레터 저장값은 `normalizeDesk()` 기준이어야 한다.
