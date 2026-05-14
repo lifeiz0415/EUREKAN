@@ -1911,39 +1911,51 @@ const KOREAN_STOCKS_DISCLOSURE_EARNINGS_IMAGE = {
 };
 
 const US_STOCKS_TRADING_VALUE_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NY_stock_exchange_traders_floor_LC-U9-10548-6.jpg?width=1280",
-  alt: "뉴욕증권거래소 플로어에서 미국주식 거래대금 집중을 떠올리게 하는 장면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:NY_stock_exchange_traders_floor_LC-U9-10548-6.jpg",
+  src: "images/us-stocks-trading-value-guidance-rates-2026.webp",
+  alt: "미국주식 거래대금 급증을 가이던스와 금리 자료로 함께 점검하는 분석 책상",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const US_STOCKS_IPO_LOCKUP_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nasdaq_MarketSite_(51494550508).jpg?width=1280",
-  alt: "나스닥 마켓사이트 외관을 배경으로 미국 신규상장주와 IPO 시장을 떠올리게 하는 장면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg",
+  src: "images/us-stocks-ipo-lockup-cash-burn-2026.webp",
+  alt: "미국 신규상장주의 락업 해제와 현금 소진 속도를 검토하는 회의실 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const US_STOCKS_AFTER_HOURS_VOLUME_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NASDAQ_studio.jpg?width=1280",
-  alt: "미국주식 실적 발표와 시간외 거래 흐름을 떠올리게 하는 나스닥 스튜디오 화면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:NASDAQ_studio.jpg",
+  src: "images/us-stocks-after-hours-volume-2026.webp",
+  alt: "실적 발표 뒤 시간외 거래 움직임을 다음 본장 수급으로 확인하는 야간 트레이딩 데스크",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const CRYPTO_TRADING_VOLUME_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bitcoin_on_Laptop_Keyboard.jpg?width=1280",
-  alt: "노트북 키보드 위 비트코인 이미지로 크립토 거래대금과 유동성을 떠올리게 하는 장면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bitcoin_on_Laptop_Keyboard.jpg",
+  src: "images/crypto-trading-volume-liquidity-quality-2026.webp",
+  alt: "디지털 자산 거래대금의 현물과 선물 유동성을 분석하는 리스크 데스크",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const CRYPTO_NEW_LISTING_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Blockchain_Currency_Examples.jpg?width=1280",
-  alt: "여러 디지털 자산 예시가 놓인 이미지로 신규상장 코인과 토큰 유통량을 떠올리게 하는 장면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Blockchain_Currency_Examples.jpg",
+  src: "images/crypto-new-listing-float-lockup-2026.webp",
+  alt: "신규상장 코인의 유통량과 락업 일정을 점검하는 디지털 자산 분석 책상",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const CRYPTO_ALTCOIN_ONCHAIN_LEVERAGE_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cryptocurrency_(38747838010).jpg?width=1280",
-  alt: "여러 암호화폐 코인이 놓인 이미지로 알트코인 거래대금과 레버리지 흐름을 떠올리게 하는 장면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cryptocurrency_(38747838010).jpg",
+  src: "images/crypto-altcoin-onchain-leverage-2026.webp",
+  alt: "알트코인 온체인 사용과 파생상품 레버리지를 나누어 확인하는 분석 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const KOREAN_STOCKS_SAMSUNG_HBM_FOUNDRY_IMAGE = {
@@ -1970,58 +1982,84 @@ const KOREAN_STOCKS_HYUNDAI_EV_TARIFF_RETURN_IMAGE = {
   height: 800,
 };
 
+const KOREAN_STOCKS_DOOSAN_ENERBILITY_NUCLEAR_GAS_TURBINE_IMAGE = {
+  src: "images/korean-stocks-doosan-enerbility-nuclear-gas-turbine-2026.webp",
+  alt: "대형 에너지 설비 제작 현장에서 원전 기자재와 가스터빈 부품을 점검하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
+};
+
 const US_STOCKS_INTEL_FOUNDRY_AI_PC_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Intel_Headquarters_in_2023.jpg?width=1280",
-  alt: "인텔 파운드리 전환과 AI PC 회복 이슈를 떠올리게 하는 인텔 본사 건물",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Intel_Headquarters_in_2023.jpg",
+  src: "images/us-stocks-intel-foundry-ai-pc-turnaround-2026.webp",
+  alt: "반도체 클린룸에서 웨이퍼와 AI PC 부품을 점검하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const US_STOCKS_SPACEX_STARSHIP_STARLINK_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_launch_of_the_SpaceX_Starship_6_rocket_seen_from_the_space_station_(iss072e220043).jpg?width=1280",
-  alt: "스페이스X 스타십 발사가 우주 인프라와 스타링크 기대를 키우는 장면",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:The_launch_of_the_SpaceX_Starship_6_rocket_seen_from_the_space_station_(iss072e220043).jpg",
+  src: "images/us-stocks-spacex-private-starship-starlink-2026.webp",
+  alt: "우주 인프라 조립 시설에서 로켓 부품과 위성 장비를 점검하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const US_STOCKS_NVIDIA_AI_GPU_CAPEX_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NVIDIA_Headquarters.jpg?width=1280",
-  alt: "엔비디아 AI GPU 수요와 빅테크 설비투자 이슈를 떠올리게 하는 엔비디아 본사",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:NVIDIA_Headquarters.jpg",
+  src: "images/us-stocks-nvidia-ai-gpu-capex-export-control-2026.webp",
+  alt: "AI 데이터센터 서버 랙에서 가속기 보드를 장착하며 설비투자 수요를 확인하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const US_STOCKS_GOOGLE_AI_SEARCH_CLOUD_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Google_Campus%2C_Mountain_View%2C_CA.jpg?width=1280",
-  alt: "구글 AI 검색과 클라우드, 반독점 이슈를 떠올리게 하는 구글 캠퍼스 전경",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Google_Campus,_Mountain_View,_CA.jpg",
+  src: "images/us-stocks-google-ai-search-cloud-antitrust-2026.webp",
+  alt: "클라우드 운영실에서 AI 검색 전환과 규제 리스크 문서를 함께 검토하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const US_STOCKS_META_AI_CAPEX_ADS_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Meta_HQ_2023.png?width=1280",
-  alt: "메타의 AI 설비투자와 광고 플랫폼, 리얼리티랩스 비용 논쟁을 떠올리게 하는 본사 표지",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Meta_HQ_2023.png",
+  src: "images/us-stocks-meta-ai-capex-ads-reality-labs-2026.webp",
+  alt: "AI 인프라 투자 자료와 VR 기기를 함께 놓고 광고 현금흐름을 검토하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Amazon_Spheres_05.jpg?width=1280",
-  alt: "아마존의 AWS AI 성장과 리테일 마진 개선 이슈를 떠올리게 하는 아마존 스피어스 건물",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Amazon_Spheres_05.jpg",
+  src: "images/us-stocks-amazon-aws-ai-retail-margin-2026.webp",
+  alt: "물류 운영 현장과 서버 인프라를 함께 보며 AWS와 리테일 마진을 확인하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const CRYPTO_BITCOIN_ETF_INSTITUTIONAL_FLOW_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bitcoin_currency_stack.jpg?width=1280",
-  alt: "비트코인 ETF 자금 유입과 기관 보유 변화를 떠올리게 하는 비트코인 모형 동전",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bitcoin_currency_stack.jpg",
+  src: "images/crypto-bitcoin-etf-institutional-flow-2026.webp",
+  alt: "기관 수탁실에서 하드웨어 지갑과 보관 절차를 점검하는 장면",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const CRYPTO_ETHEREUM_LAYER2_STAKING_TOKENIZATION_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ethereum_Crypto_Winter.jpg?width=1280",
-  alt: "이더리움 네트워크 가치와 레이어2, 스테이킹 논쟁을 떠올리게 하는 이더리움 모형 동전",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Ethereum_Crypto_Winter.jpg",
+  src: "images/crypto-ethereum-layer2-staking-tokenization-2026.webp",
+  alt: "검증자 장비와 토큰화 문서를 함께 확인하는 블록체인 인프라 운영실",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const CRYPTO_SOLANA_ETF_NETWORK_REVENUE_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Solana-sol-logo-horizontal-2025.svg?width=1280",
-  alt: "솔라나 ETF 기대와 네트워크 수익성 논쟁을 보여주는 솔라나 로고 이미지",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Solana-sol-logo-horizontal-2025.svg",
+  src: "images/crypto-solana-etf-network-revenue-2026.webp",
+  alt: "고성능 블록체인 검증자 노드와 네트워크 안정성을 점검하는 운영실",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
 };
 
 const featuredPages = [
@@ -2120,6 +2158,14 @@ const featuredPages = [
     publishedAt: "2026-05-13T22:32:02+09:00",
     summary: "현대차 주식은 전기차 성장 둔화, 미국 관세 부담, 하이브리드 판매, 배당과 자사주 정책이 함께 주가를 움직이는 국면입니다.",
     image: KOREAN_STOCKS_HYUNDAI_EV_TARIFF_RETURN_IMAGE,
+  },
+  {
+    slug: "korean-stocks-doosan-enerbility-nuclear-gas-turbine-2026",
+    title: "두산에너빌리티 주식은 원전 기대와 가스터빈 수주를 현금흐름으로 확인해야 합니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-14T17:48:52+09:00",
+    summary: "두산에너빌리티 주식은 원전, SMR, 가스터빈 수주 기대가 실제 수주잔고, 마진, 현금흐름, 재무 체력으로 이어지는지 확인해야 합니다.",
+    image: KOREAN_STOCKS_DOOSAN_ENERBILITY_NUCLEAR_GAS_TURBINE_IMAGE,
   },
   {
     slug: "us-stocks-intel-foundry-ai-pc-turnaround-2026",
@@ -4558,7 +4604,7 @@ function renderCards(query = "") {
 
   listHeadingNode.textContent = normalized
     ? `🔎 검색 결과 ${formatCountLabel(filtered.length)}`
-    : `🔥 지금 사람들이 많이 궁금해하는 주제 ${formatCountLabel(latestByDesk.length)}`;
+    : `최신 콘텐츠 ${formatCountLabel(latestByDesk.length)}`;
   emptyStateNode.hidden = filtered.length > 0;
   if (normalized) {
     pageListNode.innerHTML = `
@@ -4570,7 +4616,7 @@ function renderCards(query = "") {
   }
 
   pageListNode.innerHTML = `
-    <section class="trending-section" aria-label="지금 사람들이 많이 궁금해하는 주제">
+    <section class="trending-section" aria-label="최신 콘텐츠">
       ${renderTrendingSlider(latestByDesk)}
     </section>
     <div class="desk-sections">
