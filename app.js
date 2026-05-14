@@ -1968,8 +1968,8 @@ const KOREAN_STOCKS_SAMSUNG_HBM_FOUNDRY_IMAGE = {
 
 const KOREAN_STOCKS_SK_HYNIX_HBM_AI_MEMORY_IMAGE = {
   src: "images/korean-stocks-sk-hynix-hbm-ai-memory-2026.webp",
-  alt: "AI 서버 보드 위 적층 메모리 패키지를 검사하며 HBM 수요를 점검하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
+  alt: "SK하이닉스 로고와 HBM 독주, 메모리 전체로 문구가 표시된 AI 메모리 주식 썸네일",
+  credit: "생성 이미지 : Eurekan.org · 로고 : Wikimedia Commons PNG 미리보기",
   width: 1600,
   height: 800,
 };
