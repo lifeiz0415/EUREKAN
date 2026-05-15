@@ -4046,6 +4046,8 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁�
 const APP_BASE_URL = new URL("./", import.meta.url);
 const COMMENTS_STORAGE_PREFIX = "eurekan-comments:";
 const COMMENT_MAX_LENGTH = 600;
+const ARTICLE_COMMENTS_TOC_TARGET = "article-comments";
+const ARTICLE_COMMENTS_INLINE_QUERY = "(max-width: 1180px)";
 
 const topicPages = Object.entries(hotTopicsByDesk).flatMap(([desk, topics], deskIndex) =>
   topics.map((title, topicIndex) => {
@@ -4197,6 +4199,7 @@ let publishRefreshTimer = 0;
 let deskMenuMeasureTimer = 0;
 let articleTocScrollTimer = 0;
 let articleTocItems = [];
+let articleTocHeadings = [];
 const sectionPageState = new Map();
 const DESK_MENU_COLLAPSE_QUERY = "(max-width: 520px)";
 
@@ -4940,7 +4943,7 @@ function renderArticleContent(markdown, page) {
     ${after}
     ${renderArticleSliderSection("🔥 지금 사람들이 많이 보는 주제", trendingPages)}
   `;
-  renderArticleToc(articleHeadings);
+  renderArticleToc(articleHeadings, page);
   refreshSliderLoops();
 }
 
@@ -4956,9 +4959,42 @@ function renderArticleBlock(paragraph, articleHeadings = []) {
   return `<p>${escapeHtml(paragraph)}</p>`;
 }
 
-function renderArticleToc(headings = []) {
+function getArticleCommentCount(page = activePage) {
+  return page?.slug ? getStoredComments(page.slug).length : 0;
+}
+
+function shouldShowArticleCommentsTocItem(page = activePage) {
+  return Boolean(
+    page?.slug
+    && articleCommentsNode
+    && !articleCommentsNode.hidden
+    && window.matchMedia(ARTICLE_COMMENTS_INLINE_QUERY).matches,
+  );
+}
+
+function createArticleCommentsTocItem(page = activePage) {
+  return {
+    id: ARTICLE_COMMENTS_TOC_TARGET,
+    text: `댓글 반응 (${getArticleCommentCount(page)})`,
+    isCommentTarget: true,
+  };
+}
+
+function getArticleTocItems(headings = [], page = activePage) {
+  const headingItems = headings
+    .filter((heading) => heading.id !== ARTICLE_COMMENTS_TOC_TARGET && !heading.isCommentTarget);
+
+  if (!headingItems.length) return [];
+  return shouldShowArticleCommentsTocItem(page)
+    ? [...headingItems, createArticleCommentsTocItem(page)]
+    : headingItems;
+}
+
+function renderArticleToc(headings = [], page = activePage) {
   if (!articleTocNode) return;
-  articleTocItems = headings;
+  articleTocHeadings = headings
+    .filter((heading) => heading.id !== ARTICLE_COMMENTS_TOC_TARGET && !heading.isCommentTarget);
+  articleTocItems = getArticleTocItems(articleTocHeadings, page);
   if (!articleTocItems.length) {
     hideArticleToc();
     return;
@@ -4985,11 +5021,17 @@ function renderArticleTocFromBody() {
       return { id: heading.id, text: heading.textContent.trim() };
     })
     .filter((heading) => heading.text);
-  renderArticleToc(headings);
+  renderArticleToc(headings, activePage);
+}
+
+function refreshArticleTocForCurrentPage() {
+  if (!activePage || articleViewNode.hidden) return;
+  renderArticleTocFromBody();
 }
 
 function hideArticleToc() {
   articleTocItems = [];
+  articleTocHeadings = [];
   if (!articleTocNode) return;
   articleTocNode.hidden = true;
   articleTocNode.innerHTML = "";
@@ -5094,6 +5136,7 @@ function renderArticleComments(page) {
         : '<p class="comment-empty">아직 남겨진 댓글이 없습니다.</p>'}
     </div>
   `;
+  refreshArticleTocForCurrentPage();
 }
 
 function hideArticleComments() {
@@ -5213,15 +5256,15 @@ function hasStaticArticleBody(page) {
 
 function showArticleShell(page, { preserveBody = false } = {}) {
   stopArticleSpeech(true);
+  activePage = page;
   articleDeskNode.textContent = page.desk;
   articleTitleNode.textContent = page.title;
   articleMetaNode.textContent = getArticleMetaText(page);
   if (!preserveBody) articleBodyNode.innerHTML = "<p>문서를 불러오는 중입니다.</p>";
+  resetNewsletterPanel(true);
+  renderArticleComments(page);
   if (preserveBody) renderArticleTocFromBody();
   else hideArticleToc();
-  resetNewsletterPanel(true);
-  activePage = page;
-  renderArticleComments(page);
   setVoiceReady("");
 
   updateArticleSeo(page);
@@ -5545,6 +5588,7 @@ window.addEventListener("resize", () => {
   clearTimeout(resizeRenderTimer);
   resizeRenderTimer = window.setTimeout(() => {
     scheduleDeskMenuModeUpdate();
+    refreshArticleTocForCurrentPage();
     scheduleArticleTocActiveUpdate();
     if (!listViewNode.hidden && !searchNode.value.trim()) {
       renderCards(searchNode.value);
