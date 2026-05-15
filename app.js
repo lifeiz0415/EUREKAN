@@ -4044,6 +4044,8 @@ const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
 const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠, 한국주식, 미국주식, 크립토 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
+const COMMENTS_STORAGE_PREFIX = "eurekan-comments:";
+const COMMENT_MAX_LENGTH = 600;
 
 const topicPages = Object.entries(hotTopicsByDesk).flatMap(([desk, topics], deskIndex) =>
   topics.map((title, topicIndex) => {
@@ -4075,6 +4077,7 @@ const articleTitleNode = document.querySelector("#article-title");
 const articleMetaNode = document.querySelector("#article-meta");
 const articleBodyNode = document.querySelector("#article-body");
 let articleTocNode = document.querySelector("#article-toc");
+let articleCommentsNode = document.querySelector("#article-comments");
 const voiceButtonNode = document.querySelector("#voice-button");
 const voiceStatusNode = document.querySelector("#voice-status");
 const newsletterTitleNode = document.querySelector("#newsletter-title");
@@ -4108,6 +4111,14 @@ if (!articleTocNode && articleViewNode && articleBodyNode) {
   articleTocNode.hidden = true;
   articleTocNode.setAttribute("aria-label", "글 목차");
   articleViewNode.insertBefore(articleTocNode, articleBodyNode);
+}
+
+if (!articleCommentsNode && articleViewNode && articleBodyNode) {
+  articleCommentsNode = document.createElement("section");
+  articleCommentsNode.id = "article-comments";
+  articleCommentsNode.className = "article-comments";
+  articleCommentsNode.hidden = true;
+  articleViewNode.insertBefore(articleCommentsNode, articleBodyNode.nextSibling);
 }
 
 let dataFileHandle = null;
@@ -4773,6 +4784,7 @@ function setMainView(view) {
 
 function clearArticleContext() {
   hideArticleToc();
+  hideArticleComments();
   activePage = null;
   setVoiceReady("");
 }
@@ -4922,6 +4934,114 @@ function hideArticleToc() {
   articleTocNode.innerHTML = "";
 }
 
+function getCommentStorageKey(slug = "") {
+  return `${COMMENTS_STORAGE_PREFIX}${slug}`;
+}
+
+function getStoredComments(slug = "") {
+  if (!slug) return [];
+
+  try {
+    const rawComments = window.localStorage.getItem(getCommentStorageKey(slug));
+    const parsedComments = rawComments ? JSON.parse(rawComments) : [];
+    if (!Array.isArray(parsedComments)) return [];
+
+    return parsedComments
+      .map((comment) => ({
+        id: String(comment.id || ""),
+        body: String(comment.body || "").trim(),
+        createdAt: String(comment.createdAt || ""),
+      }))
+      .filter((comment) => comment.id && comment.body && comment.createdAt);
+  } catch {
+    return [];
+  }
+}
+
+function setStoredComments(slug = "", comments = []) {
+  if (!slug) return false;
+
+  try {
+    window.localStorage.setItem(getCommentStorageKey(slug), JSON.stringify(comments));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function createCommentId() {
+  if (window.crypto?.randomUUID) return window.crypto.randomUUID();
+  return `comment-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function formatCommentTime(value = "") {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+
+  return new Intl.DateTimeFormat("ko-KR", {
+    dateStyle: "medium",
+    timeStyle: "short",
+  }).format(date);
+}
+
+function renderCommentItem(comment) {
+  return `
+    <article class="comment-item" data-comment-id="${escapeHtml(comment.id)}">
+      <div class="comment-item__meta">
+        <strong>익명</strong>
+        <time datetime="${escapeHtml(comment.createdAt)}">${escapeHtml(formatCommentTime(comment.createdAt))}</time>
+      </div>
+      <p>${escapeHtml(comment.body)}</p>
+      <button class="comment-delete" type="button" data-comment-action="delete">삭제</button>
+    </article>
+  `;
+}
+
+function setCommentStatus(message = "", isError = false) {
+  const statusNode = articleCommentsNode?.querySelector("[data-comment-status]");
+  if (!statusNode) return;
+  statusNode.textContent = message;
+  statusNode.classList.toggle("comment-status--error", Boolean(isError));
+}
+
+function renderArticleComments(page) {
+  if (!articleCommentsNode || !page?.slug) return;
+
+  const comments = getStoredComments(page.slug);
+  const commentCountLabel = comments.length ? ` ${comments.length}` : "";
+  articleCommentsNode.hidden = false;
+  articleCommentsNode.dataset.pageSlug = page.slug;
+  articleCommentsNode.innerHTML = `
+    <div class="article-comments__head">
+      <div>
+        <h3>댓글${escapeHtml(commentCountLabel)}</h3>
+        <p>무기명으로 의견을 남겨주세요.</p>
+      </div>
+    </div>
+    <form class="comment-form">
+      <label class="visually-hidden" for="comment-input">댓글 내용</label>
+      <textarea id="comment-input" name="comment" maxlength="${COMMENT_MAX_LENGTH}" rows="4" placeholder="댓글을 입력하세요" required></textarea>
+      <div class="comment-form__footer">
+        <span class="comment-counter" data-comment-counter>0/${COMMENT_MAX_LENGTH}</span>
+        <button class="primary-button" type="submit">댓글 남기기</button>
+      </div>
+      <p class="comment-status" data-comment-status role="status"></p>
+    </form>
+    <div class="comment-list" data-comment-list>
+      ${comments.length
+        ? comments.map(renderCommentItem).join("")
+        : '<p class="comment-empty">아직 남겨진 댓글이 없습니다.</p>'}
+    </div>
+  `;
+}
+
+function hideArticleComments() {
+  if (!articleCommentsNode) return;
+  articleCommentsNode.hidden = true;
+  articleCommentsNode.dataset.pageSlug = "";
+  articleCommentsNode.innerHTML = "";
+}
+
 function scheduleArticleTocActiveUpdate() {
   window.cancelAnimationFrame(articleTocScrollTimer);
   articleTocScrollTimer = window.requestAnimationFrame(updateArticleTocActiveLink);
@@ -5040,6 +5160,7 @@ function showArticleShell(page, { preserveBody = false } = {}) {
   else hideArticleToc();
   resetNewsletterPanel(true);
   activePage = page;
+  renderArticleComments(page);
   setVoiceReady("");
 
   updateArticleSeo(page);
@@ -5255,6 +5376,87 @@ async function handleNewsletterSubmit(event) {
   newsletterFormNode.reset();
 }
 
+function handleArticleCommentInput(event) {
+  const targetNode = event.target;
+  if (!(targetNode instanceof Element)) return;
+
+  const inputNode = targetNode.closest(".comment-form textarea");
+  if (!inputNode || !articleCommentsNode?.contains(inputNode)) return;
+
+  const counterNode = articleCommentsNode.querySelector("[data-comment-counter]");
+  if (counterNode) counterNode.textContent = `${inputNode.value.length}/${COMMENT_MAX_LENGTH}`;
+}
+
+function handleArticleCommentSubmit(event) {
+  const targetNode = event.target;
+  if (!(targetNode instanceof Element)) return;
+
+  const formNode = targetNode.closest(".comment-form");
+  if (!formNode || !articleCommentsNode?.contains(formNode)) return;
+  event.preventDefault();
+
+  const slug = articleCommentsNode.dataset.pageSlug || activePage?.slug || "";
+  const inputNode = formNode.elements.comment;
+  const body = String(inputNode?.value || "").trim();
+  const page = activePage?.slug === slug ? activePage : pages.find((item) => item.slug === slug);
+
+  if (!slug || !page) {
+    setCommentStatus("댓글을 연결할 문서를 찾지 못했습니다.", true);
+    return;
+  }
+
+  if (!body) {
+    setCommentStatus("댓글 내용을 입력해 주세요.", true);
+    return;
+  }
+
+  if (body.length > COMMENT_MAX_LENGTH) {
+    setCommentStatus(`${COMMENT_MAX_LENGTH}자 이내로 입력해 주세요.`, true);
+    return;
+  }
+
+  const comments = getStoredComments(slug);
+  const nextComments = [{
+    id: createCommentId(),
+    body,
+    createdAt: new Date().toISOString(),
+  }, ...comments].slice(0, 100);
+
+  if (!setStoredComments(slug, nextComments)) {
+    setCommentStatus("이 브라우저에서는 댓글을 저장하지 못했습니다.", true);
+    return;
+  }
+
+  renderArticleComments(page);
+  setCommentStatus("댓글이 저장되었습니다.");
+}
+
+function handleArticleCommentClick(event) {
+  const targetNode = event.target;
+  if (!(targetNode instanceof Element)) return;
+
+  const actionButton = targetNode.closest("[data-comment-action]");
+  if (!actionButton || !articleCommentsNode?.contains(actionButton)) return;
+
+  const slug = articleCommentsNode.dataset.pageSlug || activePage?.slug || "";
+  const commentNode = actionButton.closest("[data-comment-id]");
+  const page = activePage?.slug === slug ? activePage : pages.find((item) => item.slug === slug);
+  if (!slug || !commentNode || !page) return;
+
+  if (actionButton.dataset.commentAction === "delete") {
+    const nextComments = getStoredComments(slug)
+      .filter((comment) => comment.id !== commentNode.dataset.commentId);
+
+    if (!setStoredComments(slug, nextComments)) {
+      setCommentStatus("댓글을 삭제하지 못했습니다.", true);
+      return;
+    }
+
+    renderArticleComments(page);
+    setCommentStatus("댓글을 삭제했습니다.");
+  }
+}
+
 searchNode.addEventListener("input", () => {
   if (!articleViewNode.hidden) {
     history.pushState(null, "", getHomeUrl());
@@ -5296,6 +5498,9 @@ newsletterFormNode.addEventListener("submit", (event) => {
     newsletterMessageNode.textContent = error.message || "뉴스레터 저장에 실패했습니다.";
   });
 });
+articleCommentsNode?.addEventListener("input", handleArticleCommentInput);
+articleCommentsNode?.addEventListener("submit", handleArticleCommentSubmit);
+articleCommentsNode?.addEventListener("click", handleArticleCommentClick);
 
 renderDeskMenu();
 scheduleNextPublishRefresh();
