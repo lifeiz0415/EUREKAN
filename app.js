@@ -2062,6 +2062,30 @@ const CRYPTO_SOLANA_ETF_NETWORK_REVENUE_IMAGE = {
   height: 800,
 };
 
+const RECIPE_TOMATO_BASIL_PASTA_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tomato_and_basil_pasta_%284925750112%29.jpg?width=1280",
+  alt: "토마토와 바질을 올린 파스타 접시",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Tomato_and_basil_pasta_(4925750112).jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_ANDONG_JJIMDAK_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Andong-jjimdak.jpg?width=1280",
+  alt: "간장 양념으로 조린 닭고기와 채소가 담긴 안동찜닭",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Andong-jjimdak.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_DOENJANG_JJIGAE_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Doenjang-jjigae.jpg?width=1280",
+  alt: "뚝배기에 담긴 된장찌개와 두부, 채소가 보이는 한식 찌개",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Doenjang-jjigae.jpg",
+  width: 1600,
+  height: 800,
+};
+
 const featuredPages = [
   {
     slug: "korean-stocks-trading-value-stock-flow-2026",
@@ -3310,6 +3334,30 @@ const featuredPages = [
     summary: "센서와 분석이 훈련 계획을 정교하게 만들지만 해석이 여전히 중요하다는 점을 짚습니다.",
     image: SPORTS_TRAINING_DATA_IMAGE,
   },
+  {
+    slug: "recipe-tomato-basil-pasta-emulsion-2026",
+    title: "토마토 바질 파스타는 면수와 유화만 잡아도 집에서 충분히 깊어집니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T13:42:07+09:00",
+    summary: "토마토 바질 파스타를 집에서 만들 때 필요한 재료 손질, 면수 농도, 팬 안에서 소스와 면을 묶는 순서를 자세히 정리합니다.",
+    image: RECIPE_TOMATO_BASIL_PASTA_IMAGE,
+  },
+  {
+    slug: "recipe-soy-braised-chicken-pan-sauce-2026",
+    title: "닭다리살 간장조림은 팬 하나로 단짠 양념과 촉촉한 식감을 함께 잡습니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T13:42:08+09:00",
+    summary: "닭다리살 간장조림을 팬 하나로 완성하기 위해 밑간, 굽기, 양념 졸임, 채소 투입 순서를 나누어 설명합니다.",
+    image: RECIPE_ANDONG_JJIMDAK_IMAGE,
+  },
+  {
+    slug: "recipe-mushroom-doenjang-jjigae-depth-2026",
+    title: "버섯 된장찌개는 육수보다 재료 볶는 순서가 국물의 깊이를 만듭니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T13:42:09+09:00",
+    summary: "버섯 된장찌개의 깊은 맛을 내기 위해 된장 풀기 전 재료를 볶는 순서, 물 조절, 두부와 대파를 넣는 타이밍을 정리합니다.",
+    image: RECIPE_DOENJANG_JJIGAE_IMAGE,
+  },
 ];
 
 const hotTopicsByDesk = {
@@ -3534,6 +3582,7 @@ const deskSlugs = {
   "한국주식": "korean-stocks",
   "미국주식": "us-stocks",
   "크립토": "crypto",
+  "레시피": "recipe",
 };
 
 const topicSlugsByDesk = {
@@ -4011,6 +4060,7 @@ const deskEmoji = {
   "한국주식": "🇰🇷",
   "미국주식": "🇺🇸",
   "크립토": "₿",
+  "레시피": "🍳",
 };
 
 const deskAgentNames = {
@@ -4030,6 +4080,7 @@ const deskAgentNames = {
   "한국주식": ["Mirae", "Jisoo", "Dohyun"],
   "미국주식": ["Morgan", "Catherine", "Howard"],
   "크립토": ["Satoshi", "Vitalik", "Hal"],
+  "레시피": ["Mina", "Soren", "Yuna"],
 };
 
 const CARD_MIN_WIDTH = 280;
@@ -4042,7 +4093,7 @@ const SCHEMA_CONTEXT = "https://schema.org";
 const SEO_LANGUAGE = "ko-KR";
 const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
-const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠, 한국주식, 미국주식, 크립토 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
+const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠, 한국주식, 미국주식, 크립토, 레시피 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
 const COMMENTS_STORAGE_PREFIX = "eurekan-comments:";
 const COMMENT_MAX_LENGTH = 600;
