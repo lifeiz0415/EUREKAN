@@ -24,21 +24,30 @@
     <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/National_Assembly_Building_of_the_Republic_of_Korea.png/1280px-National_Assembly_Building_of_the_Republic_of_Korea.png" />
     <meta name="twitter:image:alt" content="서울 여의도 대한민국 국회의사당 전경" />
     <script id="structured-data" type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"이번 지방선거는 차기 전국 정치 흐름을 미리 보여주는 중간 점검 성격이 강합니다.","description":"정치 분야에서 이번 지방선거는 차기 전국 정치 흐름을 미리 보여주는 중간 점검 성격이 강합니다.라는 주제를 깊이 있게 정리한 Eurekan.org 장문 분석입니다.","url":"https://lifeiz0415.github.io/EUREKA/pages/politics-elections-local-election-national-2026.html","datePublished":"2026-01-24T09:00:00+09:00","dateModified":"2026-01-24T09:00:00+09:00","articleSection":"정치","inLanguage":"ko-KR","mainEntityOfPage":{"@type":"WebPage","@id":"https://lifeiz0415.github.io/EUREKA/pages/politics-elections-local-election-national-2026.html"},"author":{"@type":"Person","name":"Hannah"},"publisher":{"@type":"Organization","name":"Eurekan.org"},"isPartOf":{"@type":"WebSite","name":"Eurekan.org","url":"https://lifeiz0415.github.io/EUREKA/"},"image":["https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/National_Assembly_Building_of_the_Republic_of_Korea.png/1280px-National_Assembly_Building_of_the_Republic_of_Korea.png"]}</script>
-    <link rel="stylesheet" href="../style.css?v=20260515-comments-panel" />
+    <link rel="stylesheet" href="../style.css?v=20260515-header-scroll-menu" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f7e7a4'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='38'%3E%F0%9F%92%A1%3C/text%3E%3C/svg%3E" />
   </head>
   <body>
     <header class="hero">
       <div class="hero__inner">
-        <h1 class="brand"><a class="brand-link" href="../" aria-label="Eurekan.org 메인으로 이동">💡 Eurekan.org</a></h1>
+        <div class="hero__brand-row">
+          <h1 class="brand"><a class="brand-link" href="../" aria-label="Eurekan.org 메인으로 이동">💡 Eurekan.org</a></h1>
+          <button id="desk-menu-toggle" class="desk-menu-toggle" type="button" aria-controls="desk-menu" aria-expanded="false" aria-label="분야별 메뉴 열기">
+          <span class="desk-menu-toggle__bar"></span>
+          <span class="desk-menu-toggle__bar"></span>
+          <span class="desk-menu-toggle__bar"></span>
+          </button>
+        </div>
+        <nav id="desk-menu" class="desk-menu" aria-label="분야별 메뉴"></nav>
+      </div>
+    </header>
+    <main class="layout">
+      <div class="search-bar">
         <label class="search-field" for="page-search">
           <input id="page-search" type="search" placeholder="관심 있는 주제를 검색하세요" aria-label="페이지 검색" />
         </label>
       </div>
-      <nav id="desk-menu" class="desk-menu" aria-label="분야별 메뉴"></nav>
-    </header>
 
-    <main class="layout">
       <section id="list-view" class="panel" hidden>
         <div class="section-head">
           <div>
@@ -94,6 +103,6 @@
       </article>
     </main>
 
-    <script type="module" src="../app.js?v=20260515-comments-panel"></script>
+    <script type="module" src="../app.js?v=20260515-header-scroll-menu"></script>
   </body>
 </html>

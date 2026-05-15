@@ -41,19 +41,32 @@ a { color: inherit; }
 .hero__inner {
   width: min(1440px, calc(100% - 32px));
   margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+}
+
+.hero__brand-row {
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 16px;
 }
 
 .desk-menu {
-  width: min(1440px, calc(100% - 32px));
-  margin: 12px auto 0;
+  min-width: 0;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
   gap: 8px;
-  overflow: hidden;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
 }
 
 .desk-menu-toggle {
@@ -86,16 +99,23 @@ a { color: inherit; }
 }
 
 body.is-desk-menu-collapsed .desk-menu-toggle {
-  display: inline-flex;
+  display: none;
 }
 
 body.is-desk-menu-collapsed .desk-menu {
-  display: none;
-  padding: 10px;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: rgba(255, 250, 241, 0.96);
-  box-shadow: 0 16px 34px rgba(43, 33, 18, 0.1);
+  display: flex;
+  position: static;
+  transform: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  box-shadow: none;
 }
 
 body.is-desk-menu-collapsed .desk-menu.desk-menu--open {
@@ -111,6 +131,7 @@ body.is-desk-menu-collapsed .desk-menu.desk-menu--open {
   background: rgba(255, 255, 255, 0.55);
   font-size: 0.86rem;
   font-weight: 700;
+  white-space: nowrap;
   padding: 7px 11px;
 }
 
@@ -141,9 +162,10 @@ body.is-desk-menu-collapsed .desk-menu.desk-menu--open {
 }
 
 .search-field {
-  flex: 0 1 50%;
-  width: min(50%, 480px);
-  max-width: 480px;
+  display: block;
+  width: min(720px, calc(100% - 32px));
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .search-field input {
@@ -153,6 +175,10 @@ body.is-desk-menu-collapsed .desk-menu.desk-menu--open {
   padding: 14px 16px;
   font: inherit;
   background: rgba(255, 255, 255, 0.82);
+}
+
+.search-bar {
+  width: 100%;
 }
 
 .layout {
@@ -746,8 +772,6 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 
 @media (max-width: 640px) {
   .hero__inner {
-    display: grid;
-    grid-template-columns: 1fr auto;
     align-items: center;
   }
 
@@ -756,7 +780,6 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   }
 
   .search-field {
-    grid-column: 1 / -1;
     width: 100%;
     max-width: none;
   }

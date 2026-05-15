@@ -4068,6 +4068,12 @@ const emptyStateNode = document.querySelector("#empty-state");
 const listHeadingNode = document.querySelector("#list-heading");
 const searchNode = document.querySelector("#page-search");
 const searchFieldNode = document.querySelector(".search-field");
+const heroNode = document.querySelector(".hero");
+const heroInnerNode = document.querySelector(".hero__inner");
+const brandNode = document.querySelector(".brand");
+let heroBrandRowNode = document.querySelector(".hero__brand-row");
+const layoutNode = document.querySelector(".layout");
+let searchBarNode = document.querySelector(".search-bar");
 const deskMenuNode = document.querySelector("#desk-menu");
 let deskMenuToggleNode = document.querySelector("#desk-menu-toggle");
 const listViewNode = document.querySelector("#list-view");
@@ -4089,7 +4095,6 @@ const newsletterEmailNode = document.querySelector("#newsletter-email");
 const newsletterMessageNode = document.querySelector("#newsletter-message");
 
 if (!deskMenuToggleNode && deskMenuNode) {
-  const heroInnerNode = document.querySelector(".hero__inner");
   deskMenuToggleNode = document.createElement("button");
   deskMenuToggleNode.id = "desk-menu-toggle";
   deskMenuToggleNode.className = "desk-menu-toggle";
@@ -4104,6 +4109,43 @@ if (!deskMenuToggleNode && deskMenuNode) {
   `;
   heroInnerNode?.append(deskMenuToggleNode);
 }
+
+function ensureHeaderLayout() {
+  if (!heroNode || !heroInnerNode || !brandNode || !layoutNode || !searchFieldNode || !deskMenuNode) return;
+
+  if (!heroBrandRowNode) {
+    heroBrandRowNode = document.createElement("div");
+    heroBrandRowNode.className = "hero__brand-row";
+    heroInnerNode.prepend(heroBrandRowNode);
+  }
+
+  if (brandNode.parentElement !== heroBrandRowNode) {
+    heroBrandRowNode.prepend(brandNode);
+  }
+
+  if (deskMenuToggleNode && deskMenuToggleNode.parentElement !== heroBrandRowNode) {
+    heroBrandRowNode.append(deskMenuToggleNode);
+  }
+
+  if (deskMenuNode.parentElement !== heroInnerNode) {
+    heroInnerNode.append(deskMenuNode);
+  }
+
+  if (!searchBarNode) {
+    searchBarNode = document.createElement("div");
+    searchBarNode.className = "search-bar";
+  }
+
+  if (searchBarNode.parentElement !== layoutNode) {
+    layoutNode.prepend(searchBarNode);
+  }
+
+  if (searchFieldNode.parentElement !== searchBarNode) {
+    searchBarNode.append(searchFieldNode);
+  }
+}
+
+ensureHeaderLayout();
 
 if (!articleTocNode && articleViewNode && articleBodyNode) {
   articleTocNode = document.createElement("nav");
@@ -4624,7 +4666,7 @@ function renderDeskMenu() {
   deskMenuNode.innerHTML = getDeskList()
     .map((desk) => `<a class="desk-menu__link" href="${escapeHtml(getRouteUrl("desk", desk))}">${escapeHtml(getDeskLabel(desk))}</a>`)
     .join("");
-  scheduleDeskMenuModeUpdate();
+  setDeskMenuOpen(false);
 }
 
 function setDeskMenuOpen(isOpen) {
@@ -4639,16 +4681,6 @@ function updateDeskMenuMode() {
   window.cancelAnimationFrame(deskMenuMeasureTimer);
   document.body.classList.remove("is-desk-menu-collapsed");
   deskMenuNode.classList.remove("desk-menu--open");
-
-  const firstMenuItem = deskMenuNode.querySelector(".desk-menu__link");
-  if (!firstMenuItem) {
-    setDeskMenuOpen(false);
-    return;
-  }
-
-  const singleRowHeight = firstMenuItem.getBoundingClientRect().height;
-  const shouldCollapse = deskMenuNode.scrollHeight > singleRowHeight + 10;
-  document.body.classList.toggle("is-desk-menu-collapsed", shouldCollapse);
   setDeskMenuOpen(false);
 }
 

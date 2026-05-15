@@ -24,21 +24,30 @@
     <meta name="twitter:image" content="https://commons.wikimedia.org/wiki/Special:Redirect/file/Big_Wow_2013_crowd_of_cosplayers_(8845260009).jpg?width=1280" />
     <meta name="twitter:image:alt" content="팬 커뮤니티가 오프라인 행사장에서 모여 교류하는 모습" />
     <script id="structured-data" type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"팬덤은 왜 더 작고 더 단단해졌나","description":"대중문화 소비가 넓은 유행보다 깊은 결속으로 이동하는 흐름을 읽습니다.","url":"https://lifeiz0415.github.io/EUREKA/pages/culture-fandom-community-shift-2026.html","datePublished":"2026-05-13T10:46:41+09:00","dateModified":"2026-05-13T10:46:41+09:00","articleSection":"문화","inLanguage":"ko-KR","mainEntityOfPage":{"@type":"WebPage","@id":"https://lifeiz0415.github.io/EUREKA/pages/culture-fandom-community-shift-2026.html"},"author":{"@type":"Person","name":"Victor"},"publisher":{"@type":"Organization","name":"Eurekan.org"},"isPartOf":{"@type":"WebSite","name":"Eurekan.org","url":"https://lifeiz0415.github.io/EUREKA/"},"image":["https://commons.wikimedia.org/wiki/Special:Redirect/file/Big_Wow_2013_crowd_of_cosplayers_(8845260009).jpg?width=1280"]}</script>
-    <link rel="stylesheet" href="../style.css?v=20260515-comments-panel" />
+    <link rel="stylesheet" href="../style.css?v=20260515-header-scroll-menu" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f7e7a4'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='38'%3E%F0%9F%92%A1%3C/text%3E%3C/svg%3E" />
   </head>
   <body>
     <header class="hero">
       <div class="hero__inner">
-        <h1 class="brand"><a class="brand-link" href="../" aria-label="Eurekan.org 메인으로 이동">💡 Eurekan.org</a></h1>
+        <div class="hero__brand-row">
+          <h1 class="brand"><a class="brand-link" href="../" aria-label="Eurekan.org 메인으로 이동">💡 Eurekan.org</a></h1>
+          <button id="desk-menu-toggle" class="desk-menu-toggle" type="button" aria-controls="desk-menu" aria-expanded="false" aria-label="분야별 메뉴 열기">
+          <span class="desk-menu-toggle__bar"></span>
+          <span class="desk-menu-toggle__bar"></span>
+          <span class="desk-menu-toggle__bar"></span>
+          </button>
+        </div>
+        <nav id="desk-menu" class="desk-menu" aria-label="분야별 메뉴"></nav>
+      </div>
+    </header>
+    <main class="layout">
+      <div class="search-bar">
         <label class="search-field" for="page-search">
           <input id="page-search" type="search" placeholder="관심 있는 주제를 검색하세요" aria-label="페이지 검색" />
         </label>
       </div>
-      <nav id="desk-menu" class="desk-menu" aria-label="분야별 메뉴"></nav>
-    </header>
 
-    <main class="layout">
       <section id="list-view" class="panel" hidden>
         <div class="section-head">
           <div>
@@ -98,6 +107,6 @@
       </article>
     </main>
 
-    <script type="module" src="../app.js?v=20260515-comments-panel"></script>
+    <script type="module" src="../app.js?v=20260515-header-scroll-menu"></script>
   </body>
 </html>
