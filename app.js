@@ -4190,19 +4190,35 @@ function getArticleUrl(slug) {
   return getAssetUrl(`pages/${encodeURIComponent(slug)}.html`);
 }
 
+function getImagePrimarySrc(image = {}) {
+  return String(image.externalSrc || image.src || image.generatedSrc || "").trim();
+}
+
+function getImageFallbackSrc(image = {}, primarySrc = "") {
+  const fallbackSrc = String(image.fallbackSrc || image.generatedSrc || "").trim();
+  if (!fallbackSrc || fallbackSrc === primarySrc) return "";
+  return fallbackSrc;
+}
+
 function getPageImage(page) {
   const image = page?.image || {};
-  const src = String(image.src || "").trim();
+  const src = getImagePrimarySrc(image);
   if (!src) return null;
 
+  const fallbackSrc = getImageFallbackSrc(image, src);
   return {
     src: getAssetUrl(src),
+    fallbackSrc: fallbackSrc ? getAssetUrl(fallbackSrc) : "",
     alt: String(image.alt || `${page.title} 대표 이미지`).trim(),
-    sourceUrl: String(image.sourceUrl || "").trim(),
-    credit: String(image.credit || "").trim(),
+    sourceUrl: String(image.sourceUrl || image.externalSourceUrl || "").trim(),
+    credit: String(image.credit || image.generatedCredit || "").trim(),
     width: Number(image.width || 1600),
     height: Number(image.height || 800),
   };
+}
+
+function getImageFallbackAttribute(image) {
+  return image.fallbackSrc ? ` data-fallback-src="${escapeHtml(image.fallbackSrc)}"` : "";
 }
 
 function renderPageCardImage(page) {
@@ -4211,7 +4227,7 @@ function renderPageCardImage(page) {
 
   return `
     <figure class="page-card__media">
-      <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async" />
+      <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async"${getImageFallbackAttribute(image)} />
     </figure>
   `;
 }
@@ -4228,12 +4244,25 @@ function renderArticleImage(page) {
   return `
     <figure class="article-media">
       <div class="article-media__frame">
-        <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="eager" decoding="async" />
+        <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="eager" decoding="async"${getImageFallbackAttribute(image)} />
       </div>
       ${sourceCaption}
     </figure>
   `;
 }
+
+function handleImageFallback(event) {
+  const imageNode = event.target;
+  if (!imageNode || imageNode.tagName !== "IMG") return;
+
+  const fallbackSrc = imageNode.dataset?.fallbackSrc;
+  if (!fallbackSrc || imageNode.dataset.fallbackUsed === "true") return;
+
+  imageNode.dataset.fallbackUsed = "true";
+  imageNode.src = fallbackSrc;
+}
+
+document.addEventListener("error", handleImageFallback, true);
 
 function getStaticArticleSlugFromPath() {
   const match = decodeURIComponent(window.location.pathname).match(/\/pages\/([^/]+)\.html$/);
