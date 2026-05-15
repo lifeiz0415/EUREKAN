@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-05-15T14:15:38+09:00</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -67,7 +67,7 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/?desk=%EB%A0%88%EC%8B%9C%ED%94%BC</loc>
-    <lastmod>2026-05-15T13:42:09+09:00</lastmod>
+    <lastmod>2026-05-15T14:15:38+09:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -1714,17 +1714,67 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-tomato-basil-pasta-emulsion-2026.html</loc>
-    <lastmod>2026-05-15T13:42:07+09:00</lastmod>
+    <lastmod>2026-05-15T14:08:28+09:00</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-soy-braised-chicken-pan-sauce-2026.html</loc>
-    <lastmod>2026-05-15T13:42:08+09:00</lastmod>
+    <lastmod>2026-05-15T14:08:28+09:00</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-mushroom-doenjang-jjigae-depth-2026.html</loc>
-    <lastmod>2026-05-15T13:42:09+09:00</lastmod>
+    <lastmod>2026-05-15T14:08:28+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-kimchi-fried-rice-cold-rice-2026.html</loc>
+    <lastmod>2026-05-15T14:15:29+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-gyeran-jjim-steam-heat-2026.html</loc>
+    <lastmod>2026-05-15T14:15:30+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-gamja-jorim-potato-simmer-2026.html</loc>
+    <lastmod>2026-05-15T14:15:31+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-jeyuk-bokkeum-dry-pan-2026.html</loc>
+    <lastmod>2026-05-15T14:15:32+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-beef-miyeokguk-seaweed-broth-2026.html</loc>
+    <lastmod>2026-05-15T14:15:33+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-buchu-pajeon-crispy-edge-2026.html</loc>
+    <lastmod>2026-05-15T14:15:34+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-oi-muchim-salt-drain-2026.html</loc>
+    <lastmod>2026-05-15T14:15:35+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-tteokbokki-rice-cake-sauce-2026.html</loc>
+    <lastmod>2026-05-15T14:15:36+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-japchae-noodle-vegetable-moisture-2026.html</loc>
+    <lastmod>2026-05-15T14:15:37+09:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKA/pages/recipe-bulgogi-pan-juice-2026.html</loc>
+    <lastmod>2026-05-15T14:15:38+09:00</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>

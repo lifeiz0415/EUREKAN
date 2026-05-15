@@ -2079,9 +2079,89 @@ const RECIPE_ANDONG_JJIMDAK_IMAGE = {
 };
 
 const RECIPE_DOENJANG_JJIGAE_IMAGE = {
-  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Doenjang-jjigae.jpg?width=1280",
-  alt: "뚝배기에 담긴 된장찌개와 두부, 채소가 보이는 한식 찌개",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Doenjang-jjigae.jpg",
+  src: "images/recipe-mushroom-doenjang-jjigae-depth-2026.webp",
+  alt: "표고버섯과 느타리버섯, 두부와 애호박이 보이는 버섯 된장찌개 뚝배기",
+  credit: "생성 이미지 : Eurekan.org",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_KIMCHI_FRIED_RICE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Kimchi_fried_rice.jpg",
+  alt: "팬에 담긴 김치볶음밥과 달걀이 보이는 한식 볶음밥",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Kimchi_fried_rice.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_GYERAN_JJIM_STEAM_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Korean.Banchan-Gyeran.jjim-01.jpg",
+  alt: "뚝배기에 담긴 부드러운 계란찜",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korean.Banchan-Gyeran.jjim-01.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_GAMJA_JORIM_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Kkwari-gochu-gamja-jorim.jpg",
+  alt: "꽈리고추와 함께 조린 감자조림 반찬",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Kkwari-gochu-gamja-jorim.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_JEYUK_BOKKEUM_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/8/89/Korean_cuisine-Jeyuk_bokkeum-01.jpg",
+  alt: "매콤한 양념에 볶은 제육볶음 접시",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Jeyuk_bokkeum-01.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_BEEF_MIYEOKGUK_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/3/3f/So-gogi-miyeok-guk_2.jpg",
+  alt: "소고기와 미역이 들어간 미역국 그릇",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:So-gogi-miyeok-guk_2.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_BUCHU_PAJEON_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/9/97/Pajeon.jpg",
+  alt: "접시에 담긴 노릇한 한국식 전",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Pajeon.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_OI_MUCHIM_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Oi_Muchim_%EC%98%A4%EC%9D%B4%EB%AC%B4%EC%B9%A81.jpg",
+  alt: "빨간 양념에 버무린 오이무침 반찬",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Oi_Muchim_%EC%98%A4%EC%9D%B4%EB%AC%B4%EC%B9%A81.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_TTEOKBOKKI_SAUCE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/5/56/Korean.snacks-Tteokbokki-08.jpg",
+  alt: "빨간 양념에 졸인 떡볶이와 어묵",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korean.snacks-Tteokbokki-08.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_JAPCHAE_MOISTURE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Korean.food-Chapchae-01.jpg",
+  alt: "당면과 채소가 섞인 잡채 접시",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korean.food-Chapchae-01.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_BULGOGI_PAN_JUICE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Korean.cuisine-Bulgogi-01.jpg",
+  alt: "양념에 볶은 불고기와 채소가 담긴 접시",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Bulgogi-01.jpg",
   width: 1600,
   height: 800,
 };
@@ -3358,6 +3438,86 @@ const featuredPages = [
     summary: "버섯 된장찌개의 깊은 맛을 내기 위해 된장 풀기 전 재료를 볶는 순서, 물 조절, 두부와 대파를 넣는 타이밍을 정리합니다.",
     image: RECIPE_DOENJANG_JJIGAE_IMAGE,
   },
+  {
+    slug: "recipe-kimchi-fried-rice-cold-rice-2026",
+    title: "김치볶음밥은 김치 국물보다 밥을 식히는 시간이 식감을 좌우합니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:29+09:00",
+    summary: "김치볶음밥을 질척하지 않게 만들기 위해 밥 온도, 김치 볶는 시간, 달걀과 참기름을 넣는 순서를 정리합니다.",
+    image: RECIPE_KIMCHI_FRIED_RICE_IMAGE,
+  },
+  {
+    slug: "recipe-gyeran-jjim-steam-heat-2026",
+    title: "계란찜은 센 불보다 거품을 걷고 잔열을 쓰는 시간이 부드러움을 만듭니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:30+09:00",
+    summary: "계란찜을 부드럽게 만들기 위해 달걀물 비율, 거품 제거, 불 조절, 뚝배기 잔열을 쓰는 순서를 설명합니다.",
+    image: RECIPE_GYERAN_JJIM_STEAM_IMAGE,
+  },
+  {
+    slug: "recipe-gamja-jorim-potato-simmer-2026",
+    title: "감자조림은 간장보다 감자 겉면을 먼저 익히는 순서가 부서짐을 막습니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:31+09:00",
+    summary: "감자조림을 부서지지 않게 만들기 위해 감자 크기, 초벌 볶기, 간장 양념을 넣는 시점과 졸임 농도를 정리합니다.",
+    image: RECIPE_GAMJA_JORIM_IMAGE,
+  },
+  {
+    slug: "recipe-jeyuk-bokkeum-dry-pan-2026",
+    title: "제육볶음은 양념보다 고기 물기를 날리는 첫 볶음이 불맛을 살립니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:32+09:00",
+    summary: "제육볶음을 물기 없이 만들기 위해 고기 두께, 양념 재우기, 팬 예열, 채소를 넣는 시점을 설명합니다.",
+    image: RECIPE_JEYUK_BOKKEUM_IMAGE,
+  },
+  {
+    slug: "recipe-beef-miyeokguk-seaweed-broth-2026",
+    title: "소고기 미역국은 오래 끓이기보다 미역과 고기를 먼저 볶는 향이 국물을 깊게 합니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:33+09:00",
+    summary: "소고기 미역국의 깊은 맛을 위해 미역 불리기, 고기 볶기, 물 붓는 시점, 국간장과 참기름 사용량을 정리합니다.",
+    image: RECIPE_BEEF_MIYEOKGUK_IMAGE,
+  },
+  {
+    slug: "recipe-buchu-pajeon-crispy-edge-2026",
+    title: "부추전은 반죽보다 팬 온도와 가장자리 기름이 바삭함을 결정합니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:34+09:00",
+    summary: "부추전을 눅눅하지 않게 굽기 위해 반죽 농도, 부추 길이, 팬 예열, 뒤집는 시점과 가장자리 기름 사용을 설명합니다.",
+    image: RECIPE_BUCHU_PAJEON_IMAGE,
+  },
+  {
+    slug: "recipe-oi-muchim-salt-drain-2026",
+    title: "오이무침은 양념보다 소금에 절이는 시간이 물 생김을 줄입니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:35+09:00",
+    summary: "오이무침을 싱겁거나 물컹하지 않게 만들기 위해 오이 써는 두께, 소금 절임, 물기 제거, 양념 넣는 순서를 정리합니다.",
+    image: RECIPE_OI_MUCHIM_IMAGE,
+  },
+  {
+    slug: "recipe-tteokbokki-rice-cake-sauce-2026",
+    title: "떡볶이는 양념장보다 떡을 불리는 시간과 국물 농도가 식감을 가릅니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:36+09:00",
+    summary: "떡볶이를 집에서 만들 때 떡 불리기, 어묵 넣는 순서, 고추장 양념 농도, 졸이는 시간을 단계별로 설명합니다.",
+    image: RECIPE_TTEOKBOKKI_SAUCE_IMAGE,
+  },
+  {
+    slug: "recipe-japchae-noodle-vegetable-moisture-2026",
+    title: "잡채는 당면 삶기보다 볶은 채소의 물기를 따로 잡아야 탱글합니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:37+09:00",
+    summary: "잡채를 질척하지 않게 만들기 위해 당면 삶기, 채소 따로 볶기, 간장 양념 흡수와 참기름 마무리 순서를 정리합니다.",
+    image: RECIPE_JAPCHAE_MOISTURE_IMAGE,
+  },
+  {
+    slug: "recipe-bulgogi-pan-juice-2026",
+    title: "불고기는 양념에 오래 재우기보다 얇은 고기의 물기를 빠르게 날려야 촉촉합니다",
+    desk: "레시피",
+    publishedAt: "2026-05-15T14:15:38+09:00",
+    summary: "불고기를 촉촉하지만 질척하지 않게 만들기 위해 고기 두께, 양념 재우기, 팬에 나누어 굽기와 채소 투입 시점을 설명합니다.",
+    image: RECIPE_BULGOGI_PAN_JUICE_IMAGE,
+  },
 ];
 
 const hotTopicsByDesk = {
@@ -4253,6 +4413,7 @@ let articleTocItems = [];
 let articleTocHeadings = [];
 const sectionPageState = new Map();
 const DESK_MENU_COLLAPSE_QUERY = "(max-width: 520px)";
+const HOME_DESK_PRIORITY = ["레시피"];
 
 function createTopicSlug(desk, topicIndex) {
   return topicSlugsByDesk[desk]?.[topicIndex] || `${deskSlugs[desk] || "topic"}-${String(topicIndex + 1).padStart(2, "0")}`;
@@ -4857,7 +5018,7 @@ function renderCard(page, extraClass = "", duplicate = false) {
 }
 
 function renderDeskSections(items) {
-  const desks = getDeskList();
+  const desks = prioritizeHomeDesks(getDeskList());
   const sectionPageSize = getSectionPageSize();
   const visibleItems = getPublishedPages(items);
   return desks
@@ -4889,6 +5050,14 @@ function renderDeskSections(items) {
       `;
     })
     .join("");
+}
+
+function prioritizeHomeDesks(desks = []) {
+  const priority = new Set(HOME_DESK_PRIORITY);
+  return [
+    ...HOME_DESK_PRIORITY.filter((desk) => desks.includes(desk)),
+    ...desks.filter((desk) => !priority.has(desk)),
+  ];
 }
 
 function setMainView(view) {
@@ -5007,7 +5176,59 @@ function renderArticleBlock(paragraph, articleHeadings = []) {
     return `<h3 id="${id}" class="article-subheading">${escapeHtml(text)}</h3>`;
   }
 
+  const table = renderMarkdownTableBlock(paragraph);
+  if (table) return table;
+
   return `<p>${escapeHtml(paragraph)}</p>`;
+}
+
+function renderMarkdownTableBlock(block = "") {
+  const lines = String(block)
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+  if (lines.length < 3 || !lines[0].includes("|") || !isMarkdownTableSeparator(lines[1])) return "";
+
+  const headers = splitMarkdownTableRow(lines[0]);
+  if (!headers.length) return "";
+
+  const rows = lines
+    .slice(2)
+    .map(splitMarkdownTableRow)
+    .filter((row) => row.length);
+  if (!rows.length) return "";
+
+  const headerHtml = headers.map((cell) => `<th>${escapeHtml(cell)}</th>`).join("");
+  const bodyHtml = rows
+    .map((row) => {
+      const cells = headers.map((_, index) => `<td>${escapeHtml(row[index] || "")}</td>`).join("");
+      return `<tr>${cells}</tr>`;
+    })
+    .join("");
+
+  return `
+    <div class="article-table" role="region" aria-label="재료 표">
+      <table>
+        <thead><tr>${headerHtml}</tr></thead>
+        <tbody>${bodyHtml}</tbody>
+      </table>
+    </div>
+  `;
+}
+
+function isMarkdownTableSeparator(line = "") {
+  const cells = splitMarkdownTableRow(line);
+  return cells.length > 1 && cells.every((cell) => /^:?-{3,}:?$/.test(cell));
+}
+
+function splitMarkdownTableRow(line = "") {
+  return String(line)
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((cell) => cell.trim())
+    .filter(Boolean);
 }
 
 function getArticleCommentCount(page = activePage) {
