@@ -4198,6 +4198,7 @@ let deskMenuMeasureTimer = 0;
 let articleTocScrollTimer = 0;
 let articleTocItems = [];
 const sectionPageState = new Map();
+const DESK_MENU_COLLAPSE_QUERY = "(max-width: 520px)";
 
 function createTopicSlug(desk, topicIndex) {
   return topicSlugsByDesk[desk]?.[topicIndex] || `${deskSlugs[desk] || "topic"}-${String(topicIndex + 1).padStart(2, "0")}`;
@@ -4667,6 +4668,7 @@ function renderDeskMenu() {
     .map((desk) => `<a class="desk-menu__link" href="${escapeHtml(getRouteUrl("desk", desk))}">${escapeHtml(getDeskLabel(desk))}</a>`)
     .join("");
   setDeskMenuOpen(false);
+  scheduleDeskMenuModeUpdate();
 }
 
 function setDeskMenuOpen(isOpen) {
@@ -4679,9 +4681,12 @@ function setDeskMenuOpen(isOpen) {
 function updateDeskMenuMode() {
   if (!deskMenuNode || !deskMenuToggleNode) return;
   window.cancelAnimationFrame(deskMenuMeasureTimer);
-  document.body.classList.remove("is-desk-menu-collapsed");
-  deskMenuNode.classList.remove("desk-menu--open");
-  setDeskMenuOpen(false);
+  const shouldCollapse = window.matchMedia(DESK_MENU_COLLAPSE_QUERY).matches;
+  document.body.classList.toggle("is-desk-menu-collapsed", shouldCollapse);
+
+  if (!shouldCollapse) {
+    setDeskMenuOpen(false);
+  }
 }
 
 function scheduleDeskMenuModeUpdate() {

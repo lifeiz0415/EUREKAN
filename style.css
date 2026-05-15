@@ -29,8 +29,7 @@ body {
 a { color: inherit; }
 
 .hero {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 20;
   padding: 18px 24px;
   border-bottom: 1px solid var(--line);
@@ -42,6 +41,7 @@ a { color: inherit; }
 .hero__inner {
   width: min(1440px, calc(100% - 32px));
   margin: 0 auto;
+  position: relative;
   display: grid;
   justify-items: center;
   gap: 12px;
@@ -66,8 +66,13 @@ a { color: inherit; }
   overflow-x: auto;
   overflow-y: hidden;
   flex-wrap: nowrap;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
+}
+
+.desk-menu::-webkit-scrollbar {
+  display: none;
 }
 
 .desk-menu-toggle {
@@ -100,23 +105,33 @@ a { color: inherit; }
 }
 
 body.is-desk-menu-collapsed .desk-menu-toggle {
-  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  transform: translateY(-50%);
+}
+
+body.is-desk-menu-collapsed .hero__brand-row {
+  padding: 0 54px;
 }
 
 body.is-desk-menu-collapsed .desk-menu {
-  display: flex;
-  position: static;
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
   transform: none;
-  width: 100%;
+  width: min(320px, calc(100vw - 48px));
   margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  overflow-x: auto;
-  overflow-y: hidden;
-  flex-wrap: nowrap;
-  box-shadow: none;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #ffffff;
+  overflow: visible;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-shadow: var(--shadow);
 }
 
 body.is-desk-menu-collapsed .desk-menu.desk-menu--open {
@@ -185,9 +200,9 @@ body.is-desk-menu-collapsed .desk-menu.desk-menu--open {
 
 .layout {
   width: min(1440px, calc(100% - 32px));
-  margin: 24px auto 48px;
+  margin: 12px auto 48px;
   display: grid;
-  gap: 24px;
+  gap: 12px;
 }
 
 .panel {
@@ -777,8 +792,8 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
     align-items: center;
   }
 
-  .brand {
-    align-self: flex-start;
+  .hero__brand-row {
+    min-height: 44px;
   }
 
   .search-field {
