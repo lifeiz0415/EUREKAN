@@ -4076,6 +4076,7 @@ const articleDeskNode = document.querySelector("#article-desk");
 const articleTitleNode = document.querySelector("#article-title");
 const articleMetaNode = document.querySelector("#article-meta");
 const articleBodyNode = document.querySelector("#article-body");
+let articleMainNode = articleViewNode?.querySelector(".article-main");
 let articleTocNode = document.querySelector("#article-toc");
 let articleCommentsNode = document.querySelector("#article-comments");
 const voiceButtonNode = document.querySelector("#voice-button");
@@ -4120,6 +4121,29 @@ if (!articleCommentsNode && articleViewNode && articleBodyNode) {
   articleCommentsNode.hidden = true;
   articleViewNode.insertBefore(articleCommentsNode, articleBodyNode.nextSibling);
 }
+
+function ensureArticleLayout() {
+  if (!articleViewNode || !articleBodyNode) return;
+
+  articleViewNode.classList.add("article-view--with-comments");
+  articleViewNode.classList.remove("panel");
+
+  if (!articleMainNode) {
+    articleMainNode = document.createElement("div");
+    articleMainNode.className = "panel article-main";
+
+    const contentNodes = [...articleViewNode.childNodes]
+      .filter((node) => node !== articleCommentsNode && node !== articleMainNode);
+    articleViewNode.prepend(articleMainNode);
+    contentNodes.forEach((node) => articleMainNode.append(node));
+  }
+
+  if (articleCommentsNode && articleCommentsNode.parentElement !== articleViewNode) {
+    articleViewNode.append(articleCommentsNode);
+  }
+}
+
+ensureArticleLayout();
 
 let dataFileHandle = null;
 let dataStore = createEmptyDataStore();

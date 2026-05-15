@@ -46,31 +46,33 @@
         <p id="empty-state" class="empty-state" hidden>검색 결과가 없습니다.</p>
       </section>
 
-      <article id="article-view" class="panel article-view" hidden>
-        <p id="article-desk" class="eyebrow"></p>
-        <h2 id="article-title"></h2>
-        <div class="article-tools">
-          <div class="article-tools__voice">
-            <button id="voice-button" class="secondary-button" type="button">음성으로 읽어주기</button>
-            <span id="voice-status" class="muted" role="status"></span>
-          </div>
-          <p id="article-meta" class="article-meta"></p>
-        </div>
-        <section class="newsletter-panel article-newsletter article-newsletter--top">
-          <div class="section-head" hidden>
-            <div>
-              <h2 id="newsletter-title"></h2>
+      <article id="article-view" class="article-view article-view--with-comments" hidden>
+        <div class="panel article-main">
+          <p id="article-desk" class="eyebrow"></p>
+          <h2 id="article-title"></h2>
+          <div class="article-tools">
+            <div class="article-tools__voice">
+              <button id="voice-button" class="secondary-button" type="button">음성으로 읽어주기</button>
+              <span id="voice-status" class="muted" role="status"></span>
             </div>
+            <p id="article-meta" class="article-meta"></p>
           </div>
-          <p id="newsletter-copy" class="newsletter-copy" hidden></p>
-          <form id="newsletter-form" class="newsletter-form">
-            <input id="newsletter-email" name="email" type="email" placeholder="귀하의 이메일 주소로 최신 무료 뉴스레터를 신청하세요 ( you@email.com)" required />
-            <button class="primary-button" type="submit">뉴스레터 신청</button>
-          </form>
-          <p id="newsletter-message" class="muted"></p>
-        </section>
-        <nav id="article-toc" class="article-toc" aria-label="글 목차" hidden></nav>
-        <div id="article-body" class="article-body"></div>
+          <section class="newsletter-panel article-newsletter article-newsletter--top">
+            <div class="section-head" hidden>
+              <div>
+                <h2 id="newsletter-title"></h2>
+              </div>
+            </div>
+            <p id="newsletter-copy" class="newsletter-copy" hidden></p>
+            <form id="newsletter-form" class="newsletter-form">
+              <input id="newsletter-email" name="email" type="email" placeholder="귀하의 이메일 주소로 최신 무료 뉴스레터를 신청하세요 ( you@email.com)" required />
+              <button class="primary-button" type="submit">뉴스레터 신청</button>
+            </form>
+            <p id="newsletter-message" class="muted"></p>
+          </section>
+          <nav id="article-toc" class="article-toc" aria-label="글 목차" hidden></nav>
+          <div id="article-body" class="article-body"></div>
+        </div>
         <section id="article-comments" class="article-comments" aria-label="댓글" hidden></section>
       </article>
     </main>
