@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" role="img" aria-labelledby="title desc">
+  <title>Salmon Beurre Blanc</title>
+  <desc>Cold butter · bright finish</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20323e"/>
+      <stop offset="100%" stop-color="#e58c63"/>
+    </linearGradient>
+    <radialGradient id="plate" cx="50%" cy="42%" r="42%">
+      <stop offset="0%" stop-color="#fffdf7"/>
+      <stop offset="100%" stop-color="#f6e8d9"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="800" fill="url(#bg)"/>
+  <circle cx="820" cy="360" r="250" fill="url(#plate)" opacity="0.96"/>
+  <ellipse cx="820" cy="360" rx="210" ry="120" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="6"/>
+  <ellipse cx="820" cy="360" rx="165" ry="86" fill="none" stroke="#e58c63" stroke-opacity="0.55" stroke-width="10"/>
+  <path d="M660 350c80-70 300-70 360 0-65 55-290 55-360 0Z" fill="#ffffff" fill-opacity="0.20"/>
+  <circle cx="710" cy="335" r="18" fill="#ffffff" fill-opacity="0.45"/>
+  <circle cx="915" cy="385" r="14" fill="#ffffff" fill-opacity="0.35"/>
+  <text x="110" y="180" fill="#f9f5ec" font-family="'Apple SD Gothic Neo','Pretendard',sans-serif" font-size="78" font-weight="700">Salmon Beurre Blanc</text>
+  <text x="110" y="250" fill="#f3e7d4" font-family="'Helvetica Neue',Arial,sans-serif" font-size="34" letter-spacing="3">COLD BUTTER · BRIGHT FINISH</text>
+  <text x="110" y="650" fill="#f6ead8" font-family="'Apple SD Gothic Neo','Pretendard',sans-serif" font-size="28">Eurekan.org recipe collection</text>
+  <text x="110" y="700" fill="#f2dfc3" font-family="'Apple SD Gothic Neo','Pretendard',sans-serif" font-size="44" font-weight="600">럭셔리 홈 다이닝 가이드</text>
+</svg>

@@ -2166,6 +2166,96 @@ const RECIPE_BULGOGI_PAN_JUICE_IMAGE = {
   height: 800,
 };
 
+const RECIPE_MUSHROOM_RISOTTO_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mushroom_Risotto_%284789415965%29.jpg?width=1280",
+  fallbackSrc: "images/recipe-mushroom-risotto-stock-swirl-2026.svg",
+  alt: "크리미한 버섯 리소토를 접시에 담고 볶은 버섯과 파르메산을 올린 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Mushroom_Risotto_%284789415965%29.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_BEEF_WELLINGTON_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beef_Wellington_2019.jpg?width=1280",
+  fallbackSrc: "images/recipe-beef-wellington-crust-rest-2026.svg",
+  alt: "황금빛 파이지를 입힌 비프 웰링턴 단면과 분홍빛 안심이 보이는 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Beef_Wellington_2019.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_BOUILLABAISSE_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bouillabaisse_08.jpg?width=1280",
+  fallbackSrc: "images/recipe-bouillabaisse-saffron-shell-broth-2026.svg",
+  alt: "홍합과 생선, 새우가 담긴 부야베스 볼과 사프란 빛 국물",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bouillabaisse_08.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_SCALLOP_BUTTER_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Seared_Scallops_%2814620330273%29.jpg?width=1280",
+  fallbackSrc: "images/recipe-seared-scallop-butter-baste-2026.svg",
+  alt: "노릇하게 구운 관자와 레몬 버터 소스를 얹은 흰 접시",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Seared_Scallops_%2814620330273%29.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_OSSO_BUCO_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osso_buco%2C_Breckenheim.jpg?width=1280",
+  fallbackSrc: "images/recipe-osso-buco-braise-gremolata-2026.svg",
+  alt: "토마토 브레이즈 소스에 익힌 송아지 정강이와 그레몰라타를 올린 접시",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Osso_buco%2C_Breckenheim.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_LOBSTER_BISQUE_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lobster_Bisque_%288246875626%29.jpg?width=1280",
+  fallbackSrc: "images/recipe-lobster-bisque-shell-reduction-2026.svg",
+  alt: "진한 주황빛 랍스터 비스크 그릇 위에 크림을 살짝 올린 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Lobster_Bisque_%288246875626%29.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_DUCK_CONFIT_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Duck_Confit_%283375036024%29.jpg?width=1280",
+  fallbackSrc: "images/recipe-duck-confit-crispy-rest-2026.svg",
+  alt: "바삭한 오리다리 콩피와 감자 곁들이가 담긴 접시",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Duck_Confit_%283375036024%29.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_TAGLIATELLE_RAGU_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tagliatelle_al_ragu_Bolognese.jpg?width=1280",
+  fallbackSrc: "images/recipe-tagliatelle-ragu-milk-reduction-2026.svg",
+  alt: "넓은 탈리아텔레에 진한 볼로네제 라구를 얹은 파스타 접시",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Tagliatelle_al_ragu_Bolognese.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_CREME_BRULEE_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Creme_brulee%2C_Paris_%28IMG_20220101_125448%29.jpg?width=1280",
+  fallbackSrc: "images/recipe-creme-brulee-water-bath-2026.svg",
+  alt: "바닐라 빈이 보이는 크렘 브륄레와 얇은 캐러멜 설탕층",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Creme_brulee%2C_Paris_%28IMG_20220101_125448%29.jpg",
+  width: 1600,
+  height: 800,
+};
+
+const RECIPE_SALMON_BEURRE_BLANC_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Grilled_plated_salmon_fillet_%28cropped%29.jpg?width=1280",
+  fallbackSrc: "images/recipe-salmon-beurre-blanc-emulsion-2026.svg",
+  alt: "연어 필레와 흰 버터 소스를 곁들인 접시",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Grilled_plated_salmon_fillet_%28cropped%29.jpg",
+  width: 1600,
+  height: 800,
+};
+
 const featuredPages = [
   {
     slug: "korean-stocks-trading-value-stock-flow-2026",
@@ -3517,6 +3607,86 @@ const featuredPages = [
     publishedAt: "2026-05-15T14:15:38+09:00",
     summary: "불고기를 촉촉하지만 질척하지 않게 만들기 위해 고기 두께, 양념 재우기, 팬에 나누어 굽기와 채소 투입 시점을 설명합니다.",
     image: RECIPE_BULGOGI_PAN_JUICE_IMAGE,
+  },
+  {
+    slug: "recipe-mushroom-risotto-stock-swirl-2026",
+    title: "버섯 리소토는 치즈보다 뜨거운 육수와 마지막 3분의 저어 주는 리듬이 농도를 만듭니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:00+09:00",
+    summary: "버섯 리소토를 퍼지지 않게 만들기 위해 쌀 볶기, 육수 온도, 버섯 수분 관리, 버터와 치즈를 넣는 마무리 순서를 정리합니다.",
+    image: RECIPE_MUSHROOM_RISOTTO_IMAGE,
+  },
+  {
+    slug: "recipe-beef-wellington-crust-rest-2026",
+    title: "비프 웰링턴은 안심보다 버섯 뒤셀의 수분과 휴지 시간이 파이지를 지켜 줍니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:01+09:00",
+    summary: "비프 웰링턴을 집에서 바삭하게 완성하기 위해 안심 시어링, 버섯 뒤셀 수분 제거, 생햄 감싸기, 굽기 전 휴지 시간을 정리합니다.",
+    image: RECIPE_BEEF_WELLINGTON_IMAGE,
+  },
+  {
+    slug: "recipe-bouillabaisse-saffron-shell-broth-2026",
+    title: "부야베스는 해산물보다 향채와 사프란을 먼저 여는 국물이 식탁의 깊이를 만듭니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:02+09:00",
+    summary: "부야베스를 집에서 품위 있게 끓이기 위해 향채 볶기, 생선 뼈와 새우 껍질 사용, 사프란 우림, 해산물 투입 순서를 정리합니다.",
+    image: RECIPE_BOUILLABAISSE_IMAGE,
+  },
+  {
+    slug: "recipe-seared-scallop-butter-baste-2026",
+    title: "관자 버터 소테는 버터보다 표면 물기와 첫 1분의 팬 온도가 단맛을 살립니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:03+09:00",
+    summary: "관자 소테를 고급스럽게 완성하기 위해 표면 건조, 팬 예열, 버터 바스팅, 산미 있는 마무리 순서를 설명합니다.",
+    image: RECIPE_SCALLOP_BUTTER_IMAGE,
+  },
+  {
+    slug: "recipe-osso-buco-braise-gremolata-2026",
+    title: "오소부코는 토마토보다 정강이의 갈색 자국과 마지막 그레몰라다가 맛의 층을 만듭니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:04+09:00",
+    summary: "오소부코를 집에서 깊게 완성하기 위해 정강이 시어링, 향채 볶기, 낮은 온도 브레이즈, 그레몰라타 마무리 순서를 설명합니다.",
+    image: RECIPE_OSSO_BUCO_IMAGE,
+  },
+  {
+    slug: "recipe-lobster-bisque-shell-reduction-2026",
+    title: "랍스터 비스크는 크림보다 껍질을 눌러 볶고 체에 거르는 시간이 밀도를 만듭니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:05+09:00",
+    summary: "랍스터 비스크를 집에서 깊게 만들기 위해 갑각 볶기, 브랜디와 토마토 페이스트 사용, 믹싱과 체 거르기, 크림 마무리 순서를 정리합니다.",
+    image: RECIPE_LOBSTER_BISQUE_IMAGE,
+  },
+  {
+    slug: "recipe-duck-confit-crispy-rest-2026",
+    title: "오리 콩피는 기름 속 익힘보다 마지막에 껍질을 말리는 휴지 시간이 바삭함을 남깁니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:06+09:00",
+    summary: "오리 콩피를 집에서 만들 때 필요한 소금 절임, 낮은 기름 온도, 보관, 마지막 껍질 크리스핑 순서를 정리합니다.",
+    image: RECIPE_DUCK_CONFIT_IMAGE,
+  },
+  {
+    slug: "recipe-tagliatelle-ragu-milk-reduction-2026",
+    title: "탈리아텔레 볼로네제는 토마토보다 소프리토와 우유를 줄이는 시간이 소스의 깊이를 만듭니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:07+09:00",
+    summary: "탈리아텔레 볼로네제를 집에서 깊게 만들기 위해 소프리토 볶기, 고기 수분 조절, 우유와 와인 순서, 긴 졸임을 설명합니다.",
+    image: RECIPE_TAGLIATELLE_RAGU_IMAGE,
+  },
+  {
+    slug: "recipe-creme-brulee-water-bath-2026",
+    title: "크렘 브륄레는 바닐라보다 중탕 온도와 하루 숙성이 커스터드의 결을 지켜 줍니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:08+09:00",
+    summary: "크렘 브륄레를 매끈하게 만들기 위해 노른자 섞기, 생크림 데우기, 중탕 온도, 냉장 숙성, 설탕 캐러멜라이징 순서를 설명합니다.",
+    image: RECIPE_CREME_BRULEE_IMAGE,
+  },
+  {
+    slug: "recipe-salmon-beurre-blanc-emulsion-2026",
+    title: "연어 뵈르 블랑은 레몬보다 차가운 버터를 나눠 넣는 유화가 접시의 품격을 살립니다",
+    desk: "레시피",
+    publishedAt: "2026-05-17T19:10:09+09:00",
+    summary: "연어와 뵈르 블랑을 집에서 안정적으로 완성하기 위해 연어 표면 건조, 샬롯 리덕션, 차가운 버터 유화, 접시 위 조립 순서를 설명합니다.",
+    image: RECIPE_SALMON_BEURRE_BLANC_IMAGE,
   },
 ];
 
