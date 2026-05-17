@@ -983,11 +983,11 @@ const POLITICS_ELECTION_FATIGUE_TRUST_IMAGE = {
 };
 
 const POLITICS_PENSION_WELFARE_POLICY_CLASH_IMAGE = {
-  src: "images/politics-pension-welfare-policy-clash-2026.webp",
-  alt: "청년의 보험료 부담과 노년의 복지 필요가 예산 벽 앞에서 저울처럼 맞서는 일러스트",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/6/60/South_Korea_National_Tax_Service%28NTS%29.jpg",
+  alt: "연금과 복지 재원 논쟁을 떠올리게 하는 한국 국세청 건물 외관",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:South_Korea_National_Tax_Service(NTS).jpg",
+  width: 4152,
+  height: 2508,
 };
 
 const POLITICS_LOCAL_ELECTION_LIVING_COSTS_HOUSING_IMAGE = {
@@ -1015,11 +1015,11 @@ const POLITICS_MIDDLE_AGED_TRANSPORT_HEALTHCARE_IMAGE = {
 };
 
 const POLITICS_PARTY_FATIGUE_CANDIDATES_IMAGE = {
-  src: "images/politics-party-fatigue-candidates-2026.webp",
-  alt: "시장 골목에서 지역 정치인이 주민의 생활 민원을 들으며 수첩에 적는 모습",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/7/73/Korean_Voting_Stamp.svg",
+  alt: "정당보다 후보 선택의 실질 기준을 상징하는 한국 투표 도장 아이콘",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korean_Voting_Stamp.svg",
+  width: 1000,
+  height: 1000,
 };
 
 const POLITICS_VIDEO_ELECTIONS_SHORT_COMMUNITIES_IMAGE = {
@@ -1887,179 +1887,179 @@ const SPORTS_SHORT_FORM_STREAMING_BROADCAST_IMAGE = {
 };
 
 const KOREAN_STOCKS_TRADING_VALUE_IMAGE = {
-  src: "images/korean-stocks-trading-value-stock-flow-2026.webp",
-  alt: "한국주식 거래대금 흐름을 확인하기 위해 주문장과 차트를 함께 보는 분석 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/3/34/Market_data_on_display_at_Taiwan_Stock_Exchange_20210208.jpg",
+  alt: "거래대금 흐름을 보여주는 증권거래소 전광판의 시장 데이터",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Market_data_on_display_at_Taiwan_Stock_Exchange_20210208.jpg",
+  width: 2048,
+  height: 1299,
 };
 
 const KOREAN_STOCKS_NEW_LISTING_IMAGE = {
-  src: "images/korean-stocks-new-listing-float-lockup-2026.webp",
-  alt: "신규상장 주식의 유통가능 물량과 보호예수 일정을 검토하는 분석 책상",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Teladoc_IPO.jpg",
+  alt: "신규상장과 보호예수 이슈를 떠올리게 하는 뉴욕증권거래소 IPO 기념 화면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Teladoc_IPO.jpg",
+  width: 1004,
+  height: 670,
 };
 
 const KOREAN_STOCKS_DISCLOSURE_EARNINGS_IMAGE = {
-  src: "images/korean-stocks-disclosure-earnings-volume-2026.webp",
-  alt: "공시와 실적 자료, 현금흐름 표를 대조하며 거래대금 변화를 확인하는 분석 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/4/4c/E-ticker.jpg",
+  alt: "공시와 실적 발표 뒤 가격과 거래 흐름을 확인하는 전자 시세 표시기",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:E-ticker.jpg",
+  width: 1024,
+  height: 768,
 };
 
 const US_STOCKS_TRADING_VALUE_IMAGE = {
-  src: "images/us-stocks-trading-value-guidance-rates-2026.webp",
-  alt: "미국주식 거래대금 급증을 가이던스와 금리 자료로 함께 점검하는 분석 책상",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/4/4e/NYSE_Advanced_Trading_Floor.jpg",
+  alt: "미국주식 거래대금과 가이던스를 함께 읽게 하는 뉴욕증권거래소 거래 현장",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:NYSE_Advanced_Trading_Floor.jpg",
+  width: 3009,
+  height: 2344,
 };
 
 const US_STOCKS_IPO_LOCKUP_IMAGE = {
-  src: "images/us-stocks-ipo-lockup-cash-burn-2026.webp",
-  alt: "미국 신규상장주의 락업 해제와 현금 소진 속도를 검토하는 회의실 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg",
+  alt: "미국 신규상장 기대와 락업 일정을 떠올리게 하는 나스닥 마켓사이트 전광판",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg",
+  width: 3731,
+  height: 3731,
 };
 
 const US_STOCKS_AFTER_HOURS_VOLUME_IMAGE = {
-  src: "images/us-stocks-after-hours-volume-2026.webp",
-  alt: "실적 발표 뒤 시간외 거래 움직임을 다음 본장 수급으로 확인하는 야간 트레이딩 데스크",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/2/24/Stock_Price_%2815269892187%29.jpg",
+  alt: "시간외 거래 이후 가격 변화를 확인하는 주식 시세 화면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Stock_Price_(15269892187).jpg",
+  width: 3672,
+  height: 4896,
 };
 
 const CRYPTO_TRADING_VOLUME_IMAGE = {
-  src: "images/crypto-trading-volume-liquidity-quality-2026.webp",
-  alt: "디지털 자산 거래대금의 현물과 선물 유동성을 분석하는 리스크 데스크",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/2/23/Bitcoin_Price.webp",
+  alt: "크립토 거래대금과 유동성 변화를 보여주는 비트코인 가격 차트",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bitcoin_Price.webp",
+  width: 4827,
+  height: 1644,
 };
 
 const CRYPTO_NEW_LISTING_IMAGE = {
-  src: "images/crypto-new-listing-float-lockup-2026.webp",
-  alt: "신규상장 코인의 유통량과 락업 일정을 점검하는 디지털 자산 분석 책상",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Holding_Bitcoin_cryptocurrency_coin.jpg",
+  alt: "신규상장 코인의 초기 유통량과 락업 구조를 떠올리게 하는 암호화폐 코인 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Holding_Bitcoin_cryptocurrency_coin.jpg",
+  width: 4596,
+  height: 3112,
 };
 
 const CRYPTO_ALTCOIN_ONCHAIN_LEVERAGE_IMAGE = {
-  src: "images/crypto-altcoin-onchain-leverage-2026.webp",
-  alt: "알트코인 온체인 사용과 파생상품 레버리지를 나누어 확인하는 분석 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/5/55/Ethereum_Crypto_Laws_in_the_EU.jpg",
+  alt: "알트코인 온체인 사용과 레버리지 리스크를 떠올리게 하는 이더리움 규제 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Ethereum_Crypto_Laws_in_the_EU.jpg",
+  width: 4000,
+  height: 2666,
 };
 
 const KOREAN_STOCKS_SAMSUNG_HBM_FOUNDRY_IMAGE = {
-  src: "images/korean-stocks-samsung-electronics-hbm-foundry-2026.webp",
-  alt: "삼성 로고가 표시된 반도체 검사실에서 HBM 패키지와 웨이퍼 수율을 확인하는 장면",
-  credit: "생성 이미지 : Eurekan.org · 로고 : Samsung 공식 PNG",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Wafer_20110212.jpg",
+  alt: "HBM과 파운드리 수율 확인을 떠올리게 하는 반도체 웨이퍼",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Wafer_20110212.jpg",
+  width: 1535,
+  height: 1157,
 };
 
 const KOREAN_STOCKS_SK_HYNIX_HBM_AI_MEMORY_IMAGE = {
-  src: "images/korean-stocks-sk-hynix-hbm-ai-memory-2026.webp",
-  alt: "SK하이닉스 로고와 HBM 독주, 메모리 전체로 문구가 표시된 AI 메모리 주식 썸네일",
-  credit: "생성 이미지 : Eurekan.org · 로고 : Wikimedia Commons PNG 미리보기",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/6/6f/ITracker_mini0806-S_-_board_1_-_SK_Hynix_H27U1G8F2BFR-7218.jpg",
+  alt: "SK하이닉스 메모리 칩이 보이는 회로 기판",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:ITracker_mini0806-S_-_board_1_-_SK_Hynix_H27U1G8F2BFR-7218.jpg",
+  width: 2901,
+  height: 2176,
 };
 
 const KOREAN_STOCKS_HYUNDAI_EV_TARIFF_RETURN_IMAGE = {
-  src: "images/korean-stocks-hyundai-motor-ev-tariff-shareholder-return-2026.webp",
-  alt: "자동차 수출 야적장에서 차량과 재무 자료를 함께 확인하는 분석 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/5/58/Hyundai_Lafesta_EV_002.jpg",
+  alt: "전기차 둔화와 관세 부담을 떠올리게 하는 현대 전기차",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Hyundai_Lafesta_EV_002.jpg",
+  width: 2433,
+  height: 1825,
 };
 
 const KOREAN_STOCKS_DOOSAN_ENERBILITY_NUCLEAR_GAS_TURBINE_IMAGE = {
-  src: "images/korean-stocks-doosan-enerbility-nuclear-gas-turbine-2026.webp",
-  alt: "대형 에너지 설비 제작 현장에서 원전 기자재와 가스터빈 부품을 점검하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/9/93/Gas_Turbine_1.jpg",
+  alt: "원전과 가스터빈 수주 기대를 함께 떠올리게 하는 대형 가스터빈 설비",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Gas_Turbine_1.jpg",
+  width: 2048,
+  height: 1536,
 };
 
 const US_STOCKS_INTEL_FOUNDRY_AI_PC_IMAGE = {
-  src: "images/us-stocks-intel-foundry-ai-pc-turnaround-2026.webp",
-  alt: "반도체 클린룸에서 웨이퍼와 AI PC 부품을 점검하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Intel_D1X_Development_Fab_Hillsboro_Oregon.png",
+  alt: "인텔 파운드리 전환과 공정 신뢰 회복을 떠올리게 하는 D1X 팹 건설 현장",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Intel_D1X_Development_Fab_Hillsboro_Oregon.png",
+  width: 1024,
+  height: 683,
 };
 
 const US_STOCKS_SPACEX_STARSHIP_STARLINK_IMAGE = {
-  src: "images/us-stocks-spacex-private-starship-starlink-2026.webp",
-  alt: "우주 인프라 조립 시설에서 로켓 부품과 위성 장비를 점검하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/d/da/SpaceX_Starhopper.jpg",
+  alt: "스페이스X 스타십과 스타링크 기대를 떠올리게 하는 스타호퍼 시험체",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:SpaceX_Starhopper.jpg",
+  width: 3888,
+  height: 4680,
 };
 
 const US_STOCKS_NVIDIA_AI_GPU_CAPEX_IMAGE = {
-  src: "images/us-stocks-nvidia-ai-gpu-capex-export-control-2026.webp",
-  alt: "AI 데이터센터 서버 랙에서 가속기 보드를 장착하며 설비투자 수요를 확인하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/2/2b/NVIDIA-GPU_GM107-400A-2.jpg",
+  alt: "AI GPU 수요와 설비투자 지속성을 떠올리게 하는 엔비디아 GPU 칩",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:NVIDIA-GPU_GM107-400A-2.jpg",
+  width: 4032,
+  height: 2268,
 };
 
 const US_STOCKS_GOOGLE_AI_SEARCH_CLOUD_IMAGE = {
-  src: "images/us-stocks-google-ai-search-cloud-antitrust-2026.webp",
-  alt: "클라우드 운영실에서 AI 검색 전환과 규제 리스크 문서를 함께 검토하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/9/95/Google_data_center.jpg",
+  alt: "AI 검색 전환과 클라우드 성장을 떠올리게 하는 구글 데이터센터",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Google_data_center.jpg",
+  width: 3296,
+  height: 2408,
 };
 
 const US_STOCKS_META_AI_CAPEX_ADS_IMAGE = {
-  src: "images/us-stocks-meta-ai-capex-ads-reality-labs-2026.webp",
-  alt: "AI 인프라 투자 자료와 VR 기기를 함께 놓고 광고 현금흐름을 검토하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/0/09/Oculus-Rift-CV1-Headset-Front.jpg",
+  alt: "리얼리티랩스 비용과 AI 설비투자 부담을 떠올리게 하는 VR 헤드셋",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Oculus-Rift-CV1-Headset-Front.jpg",
+  width: 4200,
+  height: 2900,
 };
 
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_IMAGE = {
-  src: "images/us-stocks-amazon-aws-ai-retail-margin-2026.webp",
-  alt: "물류 운영 현장과 서버 인프라를 함께 보며 AWS와 리테일 마진을 확인하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Amazon_Distribution_Center%2C_Port_Wentworth.jpg",
+  alt: "리테일 마진 개선과 물류 효율을 떠올리게 하는 아마존 물류센터",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Amazon_Distribution_Center,_Port_Wentworth.jpg",
+  width: 5184,
+  height: 3456,
 };
 
 const CRYPTO_BITCOIN_ETF_INSTITUTIONAL_FLOW_IMAGE = {
-  src: "images/crypto-bitcoin-etf-institutional-flow-2026.webp",
-  alt: "기관 수탁실에서 하드웨어 지갑과 보관 절차를 점검하는 장면",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Bitcoin_BTC_golden_coin_with_the_symbol.jpg",
+  alt: "ETF 자금 유입과 기관 수요를 떠올리게 하는 비트코인 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bitcoin_BTC_golden_coin_with_the_symbol.jpg",
+  width: 10000,
+  height: 4286,
 };
 
 const CRYPTO_ETHEREUM_LAYER2_STAKING_TOKENIZATION_IMAGE = {
-  src: "images/crypto-ethereum-layer2-staking-tokenization-2026.webp",
-  alt: "검증자 장비와 토큰화 문서를 함께 확인하는 블록체인 인프라 운영실",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ethereum_Cryptocurrency_Laws_%26_Regulations.jpg",
+  alt: "레이어2와 스테이킹, 토큰화 논쟁을 떠올리게 하는 이더리움 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Ethereum_Cryptocurrency_Laws_%26_Regulations.jpg",
+  width: 4000,
+  height: 2667,
 };
 
 const CRYPTO_SOLANA_ETF_NETWORK_REVENUE_IMAGE = {
-  src: "images/crypto-solana-etf-network-revenue-2026.webp",
-  alt: "솔라나 로고 배지와 함께 고성능 블록체인 검증자 노드와 네트워크 안정성을 점검하는 운영실",
-  credit: "생성 이미지 : Eurekan.org · 로고 : Solana 공식 PNG",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Solana-sol-logo-horizontal-2025.svg",
+  alt: "ETF 기대와 네트워크 수익 논쟁을 떠올리게 하는 솔라나 로고",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Solana-sol-logo-horizontal-2025.svg",
+  width: 646,
+  height: 96,
 };
 
 const RECIPE_TOMATO_BASIL_PASTA_IMAGE = {
@@ -2079,11 +2079,11 @@ const RECIPE_ANDONG_JJIMDAK_IMAGE = {
 };
 
 const RECIPE_DOENJANG_JJIGAE_IMAGE = {
-  src: "images/recipe-mushroom-doenjang-jjigae-depth-2026.webp",
-  alt: "표고버섯과 느타리버섯, 두부와 애호박이 보이는 버섯 된장찌개 뚝배기",
-  credit: "생성 이미지 : Eurekan.org",
-  width: 1600,
-  height: 800,
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Doenjang_jjigae.jpg",
+  alt: "두부와 채소가 담긴 된장찌개 그릇",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Doenjang_jjigae.jpg",
+  width: 640,
+  height: 480,
 };
 
 const RECIPE_KIMCHI_FRIED_RICE_IMAGE = {
@@ -4627,13 +4627,7 @@ function getArticleUrl(slug) {
 }
 
 function getImagePrimarySrc(image = {}) {
-  return String(image.externalSrc || image.src || image.generatedSrc || "").trim();
-}
-
-function getImageFallbackSrc(image = {}, primarySrc = "") {
-  const fallbackSrc = String(image.fallbackSrc || image.generatedSrc || "").trim();
-  if (!fallbackSrc || fallbackSrc === primarySrc) return "";
-  return fallbackSrc;
+  return String(image.externalSrc || image.src || "").trim();
 }
 
 function getPageImage(page) {
@@ -4641,20 +4635,14 @@ function getPageImage(page) {
   const src = getImagePrimarySrc(image);
   if (!src) return null;
 
-  const fallbackSrc = getImageFallbackSrc(image, src);
   return {
     src: getAssetUrl(src),
-    fallbackSrc: fallbackSrc ? getAssetUrl(fallbackSrc) : "",
     alt: String(image.alt || `${page.title} 대표 이미지`).trim(),
     sourceUrl: String(image.sourceUrl || image.externalSourceUrl || "").trim(),
-    credit: String(image.credit || image.generatedCredit || "").trim(),
+    credit: String(image.credit || "").trim(),
     width: Number(image.width || 1600),
     height: Number(image.height || 800),
   };
-}
-
-function getImageFallbackAttribute(image) {
-  return image.fallbackSrc ? ` data-fallback-src="${escapeHtml(image.fallbackSrc)}"` : "";
 }
 
 function renderPageCardImage(page, { priority = false } = {}) {
@@ -4665,7 +4653,7 @@ function renderPageCardImage(page, { priority = false } = {}) {
 
   return `
     <figure class="page-card__media">
-      <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="${loading}" decoding="async"${priorityAttributes}${getImageFallbackAttribute(image)} />
+      <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="${loading}" decoding="async"${priorityAttributes} />
     </figure>
   `;
 }
@@ -4682,25 +4670,12 @@ function renderArticleImage(page) {
   return `
     <figure class="article-media">
       <div class="article-media__frame">
-        <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="eager" decoding="async"${getImageFallbackAttribute(image)} />
+        <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="eager" decoding="async" />
       </div>
       ${sourceCaption}
     </figure>
   `;
 }
-
-function handleImageFallback(event) {
-  const imageNode = event.target;
-  if (!imageNode || imageNode.tagName !== "IMG") return;
-
-  const fallbackSrc = imageNode.dataset?.fallbackSrc;
-  if (!fallbackSrc || imageNode.dataset.fallbackUsed === "true") return;
-
-  imageNode.dataset.fallbackUsed = "true";
-  imageNode.src = fallbackSrc;
-}
-
-document.addEventListener("error", handleImageFallback, true);
 
 function getStaticArticleSlugFromPath() {
   const match = decodeURIComponent(window.location.pathname).match(/\/pages\/([^/]+)\.html$/);
