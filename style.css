@@ -261,10 +261,12 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   max-width: 100%;
   overflow: hidden;
   padding: 2px 0 10px;
-  mask-image: linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
 }
 
 .trending-track {
+  --slide-distance: 0px;
   --slide-duration: 58s;
   display: flex;
   width: max-content;
@@ -664,7 +666,7 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 
 @keyframes seamless-slide {
   from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
+  to { transform: translate3d(calc(-1 * var(--slide-distance)), 0, 0); }
 }
 
 @media (prefers-reduced-motion: reduce) {

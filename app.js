@@ -5117,7 +5117,7 @@ function renderTrendingSlider(items) {
 
   return `
       <div class="trending-window">
-        <div class="trending-track" data-slider-ready="true" style="--slide-duration: ${duration}s">
+        <div class="trending-track" data-slider-ready="false" style="--slide-duration: ${duration}s">
           ${groups}
         </div>
       </div>
@@ -5125,8 +5125,20 @@ function renderTrendingSlider(items) {
 }
 
 function refreshSliderLoops() {
-  document.querySelectorAll(".trending-track").forEach((track) => {
-    track.dataset.sliderReady = "true";
+  window.requestAnimationFrame(() => {
+    document.querySelectorAll(".trending-track").forEach((track) => {
+      const groups = [...track.querySelectorAll(".trending-group")];
+      const firstGroup = groups[0];
+      const nextGroup = groups[1];
+      const distance = firstGroup && nextGroup
+        ? nextGroup.getBoundingClientRect().left - firstGroup.getBoundingClientRect().left
+        : 0;
+      if (!distance) return;
+
+      track.style.setProperty("--slide-distance", `${distance}px`);
+      track.style.setProperty("--slide-duration", `${Math.max(36, distance / 62)}s`);
+      track.dataset.sliderReady = "true";
+    });
   });
 }
 
