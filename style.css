@@ -265,13 +265,18 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 }
 
 .trending-track {
-  --slide-distance: 0px;
   --slide-duration: 58s;
   display: flex;
   width: max-content;
-  gap: 16px;
   animation: seamless-slide var(--slide-duration) linear infinite;
   will-change: transform;
+}
+
+.trending-group {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  padding-right: 16px;
 }
 
 .trending-track:not([data-slider-ready="true"]) {
@@ -659,7 +664,7 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 
 @keyframes seamless-slide {
   from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(calc(-1 * var(--slide-distance)), 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
 }
 
 @media (prefers-reduced-motion: reduce) {

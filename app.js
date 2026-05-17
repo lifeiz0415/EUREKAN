@@ -2168,7 +2168,6 @@ const RECIPE_BULGOGI_PAN_JUICE_IMAGE = {
 
 const RECIPE_MUSHROOM_RISOTTO_IMAGE = {
   externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mushroom_Risotto_%284789415965%29.jpg?width=1280",
-  fallbackSrc: "images/recipe-mushroom-risotto-stock-swirl-2026.svg",
   alt: "크리미한 버섯 리소토를 접시에 담고 볶은 버섯과 파르메산을 올린 장면",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Mushroom_Risotto_%284789415965%29.jpg",
   width: 1600,
@@ -2177,7 +2176,6 @@ const RECIPE_MUSHROOM_RISOTTO_IMAGE = {
 
 const RECIPE_BEEF_WELLINGTON_IMAGE = {
   externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beef_Wellington_2019.jpg?width=1280",
-  fallbackSrc: "images/recipe-beef-wellington-crust-rest-2026.svg",
   alt: "황금빛 파이지를 입힌 비프 웰링턴 단면과 분홍빛 안심이 보이는 장면",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Beef_Wellington_2019.jpg",
   width: 1600,
@@ -2186,7 +2184,6 @@ const RECIPE_BEEF_WELLINGTON_IMAGE = {
 
 const RECIPE_BOUILLABAISSE_IMAGE = {
   externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bouillabaisse_08.jpg?width=1280",
-  fallbackSrc: "images/recipe-bouillabaisse-saffron-shell-broth-2026.svg",
   alt: "홍합과 생선, 새우가 담긴 부야베스 볼과 사프란 빛 국물",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Bouillabaisse_08.jpg",
   width: 1600,
@@ -2195,7 +2192,6 @@ const RECIPE_BOUILLABAISSE_IMAGE = {
 
 const RECIPE_SCALLOP_BUTTER_IMAGE = {
   externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Seared_Scallops_%2814620330273%29.jpg?width=1280",
-  fallbackSrc: "images/recipe-seared-scallop-butter-baste-2026.svg",
   alt: "노릇하게 구운 관자와 레몬 버터 소스를 얹은 흰 접시",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Seared_Scallops_%2814620330273%29.jpg",
   width: 1600,
@@ -2204,7 +2200,6 @@ const RECIPE_SCALLOP_BUTTER_IMAGE = {
 
 const RECIPE_OSSO_BUCO_IMAGE = {
   externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osso_buco%2C_Breckenheim.jpg?width=1280",
-  fallbackSrc: "images/recipe-osso-buco-braise-gremolata-2026.svg",
   alt: "토마토 브레이즈 소스에 익힌 송아지 정강이와 그레몰라타를 올린 접시",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Osso_buco%2C_Breckenheim.jpg",
   width: 1600,
@@ -2213,7 +2208,6 @@ const RECIPE_OSSO_BUCO_IMAGE = {
 
 const RECIPE_LOBSTER_BISQUE_IMAGE = {
   externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lobster_Bisque_%288246875626%29.jpg?width=1280",
-  fallbackSrc: "images/recipe-lobster-bisque-shell-reduction-2026.svg",
   alt: "진한 주황빛 랍스터 비스크 그릇 위에 크림을 살짝 올린 장면",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Lobster_Bisque_%288246875626%29.jpg",
   width: 1600,
@@ -2222,7 +2216,6 @@ const RECIPE_LOBSTER_BISQUE_IMAGE = {
 
 const RECIPE_DUCK_CONFIT_IMAGE = {
   externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Duck_Confit_%283375036024%29.jpg?width=1280",
-  fallbackSrc: "images/recipe-duck-confit-crispy-rest-2026.svg",
   alt: "바삭한 오리다리 콩피와 감자 곁들이가 담긴 접시",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Duck_Confit_%283375036024%29.jpg",
   width: 1600,
@@ -2231,7 +2224,6 @@ const RECIPE_DUCK_CONFIT_IMAGE = {
 
 const RECIPE_TAGLIATELLE_RAGU_IMAGE = {
   externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tagliatelle_al_ragu_Bolognese.jpg?width=1280",
-  fallbackSrc: "images/recipe-tagliatelle-ragu-milk-reduction-2026.svg",
   alt: "넓은 탈리아텔레에 진한 볼로네제 라구를 얹은 파스타 접시",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Tagliatelle_al_ragu_Bolognese.jpg",
   width: 1600,
@@ -2240,7 +2232,6 @@ const RECIPE_TAGLIATELLE_RAGU_IMAGE = {
 
 const RECIPE_CREME_BRULEE_IMAGE = {
   externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Creme_brulee%2C_Paris_%28IMG_20220101_125448%29.jpg?width=1280",
-  fallbackSrc: "images/recipe-creme-brulee-water-bath-2026.svg",
   alt: "바닐라 빈이 보이는 크렘 브륄레와 얇은 캐러멜 설탕층",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Creme_brulee%2C_Paris_%28IMG_20220101_125448%29.jpg",
   width: 1600,
@@ -2248,8 +2239,7 @@ const RECIPE_CREME_BRULEE_IMAGE = {
 };
 
 const RECIPE_SALMON_BEURRE_BLANC_IMAGE = {
-  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Grilled_plated_salmon_fillet_%28cropped%29.jpg?width=1280",
-  fallbackSrc: "images/recipe-salmon-beurre-blanc-emulsion-2026.svg",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Grilled_plated_salmon_fillet_%28cropped%29.jpg",
   alt: "연어 필레와 흰 버터 소스를 곁들인 접시",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Grilled_plated_salmon_fillet_%28cropped%29.jpg",
   width: 1600,
@@ -4417,7 +4407,8 @@ const CARD_MIN_WIDTH = 280;
 const CARD_GAP = 16;
 const MAX_SECTION_ROWS = 1;
 const PAGINATION_WINDOW_SIZE = 10;
-const SLIDER_SEQUENCE_REPEAT_COUNT = 16;
+const SLIDER_GROUP_REPEAT_COUNT = 2;
+const SLIDER_MIN_GROUP_ITEM_COUNT = 6;
 const SITE_NAME = "Eurekan.org";
 const SCHEMA_CONTEXT = "https://schema.org";
 const SEO_LANGUAGE = "ko-KR";
@@ -4666,13 +4657,15 @@ function getImageFallbackAttribute(image) {
   return image.fallbackSrc ? ` data-fallback-src="${escapeHtml(image.fallbackSrc)}"` : "";
 }
 
-function renderPageCardImage(page) {
+function renderPageCardImage(page, { priority = false } = {}) {
   const image = getPageImage(page);
   if (!image) return "";
+  const loading = priority ? "eager" : "lazy";
+  const priorityAttributes = priority ? ' fetchpriority="high"' : "";
 
   return `
     <figure class="page-card__media">
-      <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async"${getImageFallbackAttribute(image)} />
+      <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="${loading}" decoding="async"${priorityAttributes}${getImageFallbackAttribute(image)} />
     </figure>
   `;
 }
@@ -5120,36 +5113,45 @@ function getSectionPageSize() {
   return columns * MAX_SECTION_ROWS;
 }
 
+function getSliderGroupItems(items = []) {
+  if (!items.length) return [];
+  const minCount = Math.max(items.length, SLIDER_MIN_GROUP_ITEM_COUNT);
+  return Array.from({ length: minCount }, (_, index) => ({
+    page: items[index % items.length],
+    duplicate: index >= items.length,
+  }));
+}
+
 function renderTrendingSlider(items) {
-  const cards = Array.from({ length: SLIDER_SEQUENCE_REPEAT_COUNT }, (_, sequenceIndex) =>
-    items.map((page) => renderCard(page, "page-card--rail", sequenceIndex > 0)).join(""),
-  ).join("");
+  const groupItems = getSliderGroupItems(items);
+  const duration = Math.max(36, groupItems.length * 7);
+  const groups = Array.from({ length: SLIDER_GROUP_REPEAT_COUNT }, (_, groupIndex) => {
+    const isDuplicateGroup = groupIndex > 0;
+    const cards = groupItems
+      .map(({ page, duplicate }, itemIndex) => renderCard(page, "page-card--rail", isDuplicateGroup || duplicate, {
+        priority: groupIndex === 0 && !duplicate && itemIndex === 0,
+      }))
+      .join("");
+
+    return `
+      <div class="trending-group"${isDuplicateGroup ? ' aria-hidden="true"' : ""}>
+        ${cards}
+      </div>
+    `;
+  }).join("");
 
   return `
       <div class="trending-window">
-        <div class="trending-track" data-slider-ready="false" data-slider-item-count="${items.length}">
-          ${cards}
+        <div class="trending-track" data-slider-ready="true" style="--slide-duration: ${duration}s">
+          ${groups}
         </div>
       </div>
   `;
 }
 
 function refreshSliderLoops() {
-  window.requestAnimationFrame(() => {
-    document.querySelectorAll(".trending-track").forEach((track) => {
-      const itemCount = Number(track.dataset.sliderItemCount || 0);
-      const cards = [...track.querySelectorAll(".page-card--rail")];
-      const firstCard = cards[0];
-      const nextCycleFirstCard = cards[itemCount];
-      const distance = firstCard && nextCycleFirstCard
-        ? nextCycleFirstCard.getBoundingClientRect().left - firstCard.getBoundingClientRect().left
-        : 0;
-      if (!distance) return;
-
-      track.style.setProperty("--slide-distance", `${distance}px`);
-      track.style.setProperty("--slide-duration", `${Math.max(36, distance / 62)}s`);
-      track.dataset.sliderReady = "true";
-    });
+  document.querySelectorAll(".trending-track").forEach((track) => {
+    track.dataset.sliderReady = "true";
   });
 }
 
@@ -5179,10 +5181,10 @@ function comparePagesByPublishedTime(left, right, leftIndex = 0, rightIndex = 0)
   return String(left.slug || "").localeCompare(String(right.slug || ""));
 }
 
-function renderCard(page, extraClass = "", duplicate = false) {
+function renderCard(page, extraClass = "", duplicate = false, { priority = false } = {}) {
   return `
     <a class="page-card ${extraClass}" href="${escapeHtml(getArticleUrl(page.slug))}" data-page-slug="${encodeURIComponent(page.slug)}"${duplicate ? " aria-hidden=\"true\" tabindex=\"-1\"" : ""}>
-      ${renderPageCardImage(page)}
+      ${renderPageCardImage(page, { priority })}
       <p class="eyebrow">${escapeHtml(page.desk)}</p>
       <h3>${escapeHtml(page.title)}</h3>
     </a>

@@ -89,6 +89,8 @@ agents/
 - 카드 링크는 검색엔진이 읽을 수 있도록 `pages/<slug>.html` 정적 글 페이지를 우선 사용하며, 분야 링크는 `?desk=<분야>` 쿼리 라우팅을 사용한다. 기존 `?page=<slug>`, `#page`, `#desk` 주소도 `app.js`에서 호환한다.
 - 정적 글 페이지는 `pages/<slug>.html`에 전체 본문과 글별 SEO 메타데이터를 포함하며, `app.js`는 이 최종 HTML의 본문을 기준으로 상호작용용 상세 화면을 보강한다.
 - `app.js`나 `style.css`처럼 모든 페이지에 영향을 주는 공용 자산을 바꾸면 브라우저 캐시 때문에 배포 직후 변경이 안 보일 수 있으므로, 같은 변경에서 `index.html`과 `pages/*.html`의 해당 자산 URL 버전 쿼리를 함께 갱신한다.
+- 홈 첫 화면에서 LCP 후보가 되는 대표 이미지는 리다이렉트가 없는 직접 이미지 URL을 우선 사용하고, `index.html`의 `preconnect`와 `preload`도 같은 URL 기준으로 맞춘다.
+- 홈 최신 콘텐츠 슬라이더는 렌더 후 카드 위치를 측정해 이동 거리를 계산하지 않고, 동일 카드 그룹을 CSS로 반복해 강제 리플로우를 줄인다.
 - 이미지가 꼭 필요한 글은 `pages/<slug>.html` 정적 글 페이지 안에서 외부 이미지 URL 또는 `images/` 자산을 직접 링크한다.
 - 새 글의 대표 이미지는 글 내용을 실제로 설명하는 무료 이미지로 우선 고른다. 음식·레시피 글은 텍스트만 있는 생성 SVG나 추상 플레이스홀더를 대표 썸네일로 쓰지 않고, Wikimedia Commons 같은 무료 출처의 실제 음식 사진을 우선 사용한다.
 - 외부 무료 이미지를 쓸 때는 `app.js` manifest에 `externalSrc`, `sourceUrl`, `alt`를 함께 넣고, 정적 글 페이지의 본문 이미지·Open Graph·Twitter 카드·JSON-LD도 같은 이미지 주소로 맞춘다. 로컬 `images/` 자산은 외부 이미지 실패 대비 fallback 또는 대체재가 없을 때만 대표 이미지로 쓴다.
@@ -116,9 +118,9 @@ agents/
 - 홈은 `WebSite`, 분야별 전체 보기는 `CollectionPage`, 상세 글은 `Article` JSON-LD를 사용한다.
 - 이미지가 등록된 정적 글은 Open Graph, Twitter 카드, `Article` JSON-LD의 `image` 메타데이터를 함께 제공한다.
 - 존재하지 않는 문서는 `noindex, follow`로 표시한다.
-- canonical URL은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKA/`를 기준으로 만들고, 상세 글은 `pages/<slug>.html`, 분야 보기는 `?desk=<분야>`를 사용한다.
+- canonical URL은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKAN/`를 기준으로 만들고, 상세 글은 `pages/<slug>.html`, 분야 보기는 `?desk=<분야>`를 사용한다.
 - `robots.txt`와 `sitemap.xml`은 루트에 둔다.
-- `sitemap.xml`은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKA/` 기준의 홈, 분야, 정적 글 페이지 URL을 담는다.
+- `sitemap.xml`은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKAN/` 기준의 홈, 분야, 정적 글 페이지 URL을 담는다.
 - manifest에 글을 추가하거나 slug를 바꾸면 같은 변경에서 `pages/<slug>.html`과 `sitemap.xml`도 함께 갱신한다.
 
 ## 뉴스레터 규칙

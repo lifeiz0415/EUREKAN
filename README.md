@@ -108,8 +108,9 @@ http://localhost:8000/
 
 배포 전에는 반드시 아래 항목을 확인합니다.
 
-- `robots.txt`의 sitemap URL이 `https://lifeiz0415.github.io/EUREKA/sitemap.xml`인지 확인
+- `robots.txt`의 sitemap URL이 `https://lifeiz0415.github.io/EUREKAN/sitemap.xml`인지 확인
 - `sitemap.xml`에 홈, 분야, `pages/<slug>.html` 글 URL이 포함됐는지 확인
+- 홈 첫 화면 대표 이미지가 바뀌면 `index.html`의 `preconnect`와 `preload` URL도 함께 갱신
 - Google Search Console에 실제 `sitemap.xml` 제출
 - 새 글 또는 slug 변경 시 `pages/<slug>.html`과 `sitemap.xml` 갱신
 
