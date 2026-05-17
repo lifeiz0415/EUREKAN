@@ -4425,10 +4425,6 @@ const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
 const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠, 한국주식, 미국주식, 크립토, 레시피 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
-const COMMENTS_STORAGE_PREFIX = "eurekan-comments:";
-const COMMENT_MAX_LENGTH = 600;
-const ARTICLE_COMMENTS_TOC_TARGET = "article-comments";
-const ARTICLE_COMMENTS_INLINE_QUERY = "(max-width: 1180px)";
 
 const topicPages = Object.entries(hotTopicsByDesk).flatMap(([desk, topics], deskIndex) =>
   topics.map((title, topicIndex) => {
@@ -4467,7 +4463,6 @@ const articleMetaNode = document.querySelector("#article-meta");
 const articleBodyNode = document.querySelector("#article-body");
 let articleMainNode = articleViewNode?.querySelector(".article-main");
 let articleTocNode = document.querySelector("#article-toc");
-let articleCommentsNode = document.querySelector("#article-comments");
 const voiceButtonNode = document.querySelector("#voice-button");
 const voiceStatusNode = document.querySelector("#voice-status");
 const newsletterTitleNode = document.querySelector("#newsletter-title");
@@ -4539,18 +4534,9 @@ if (!articleTocNode && articleViewNode && articleBodyNode) {
   articleViewNode.insertBefore(articleTocNode, articleBodyNode);
 }
 
-if (!articleCommentsNode && articleViewNode && articleBodyNode) {
-  articleCommentsNode = document.createElement("section");
-  articleCommentsNode.id = "article-comments";
-  articleCommentsNode.className = "article-comments";
-  articleCommentsNode.hidden = true;
-  articleViewNode.insertBefore(articleCommentsNode, articleBodyNode.nextSibling);
-}
-
 function ensureArticleLayout() {
   if (!articleViewNode || !articleBodyNode) return;
 
-  articleViewNode.classList.add("article-view--with-comments");
   articleViewNode.classList.remove("panel");
 
   if (!articleMainNode) {
@@ -4558,13 +4544,9 @@ function ensureArticleLayout() {
     articleMainNode.className = "panel article-main";
 
     const contentNodes = [...articleViewNode.childNodes]
-      .filter((node) => node !== articleCommentsNode && node !== articleMainNode);
+      .filter((node) => node !== articleMainNode);
     articleViewNode.prepend(articleMainNode);
     contentNodes.forEach((node) => articleMainNode.append(node));
-  }
-
-  if (articleCommentsNode && articleCommentsNode.parentElement !== articleViewNode) {
-    articleViewNode.append(articleCommentsNode);
   }
 }
 
@@ -4584,6 +4566,17 @@ let articleTocHeadings = [];
 const sectionPageState = new Map();
 const DESK_MENU_COLLAPSE_QUERY = "(max-width: 520px)";
 const HOME_DESK_PRIORITY = ["레시피"];
+const BASE_OPEN_GRAPH_META = {
+  "og:locale": "ko_KR",
+  "og:site_name": SITE_NAME,
+};
+const ARTICLE_META_PROPERTIES = ["article:section", "article:published_time", "article:modified_time"];
+const IMAGE_PROPERTY_META = ["og:image", "og:image:alt"];
+const IMAGE_NAME_META = ["twitter:image", "twitter:image:alt"];
+const ARTICLE_BODY_SELECTOR = "#article-body";
+const ARTICLE_BODY_ASSET_ATTRIBUTES = ["src", "href", "poster"];
+const ARTICLE_BODY_ASSET_SELECTOR = ARTICLE_BODY_ASSET_ATTRIBUTES.map((attributeName) => `[${attributeName}]`).join(", ");
+const ARTICLE_BODY_ENHANCEMENT_SELECTOR = "script, .article-slider-section";
 
 function createTopicSlug(desk, topicIndex) {
   return topicSlugsByDesk[desk]?.[topicIndex] || `${deskSlugs[desk] || "topic"}-${String(topicIndex + 1).padStart(2, "0")}`;
@@ -4758,6 +4751,22 @@ function removePropertyMeta(property) {
   document.head.querySelectorAll(`meta[property="${property}"]`).forEach((node) => node.remove());
 }
 
+function setNameMetaEntries(entries = {}) {
+  Object.entries(entries).forEach(([name, content]) => setMeta(name, content));
+}
+
+function setPropertyMetaEntries(entries = {}) {
+  Object.entries(entries).forEach(([property, content]) => setPropertyMeta(property, content));
+}
+
+function removeNameMetas(names = []) {
+  names.forEach(removeNameMeta);
+}
+
+function removePropertyMetas(properties = []) {
+  properties.forEach(removePropertyMeta);
+}
+
 function setCanonical(url) {
   let canonical = document.head.querySelector('link[rel="canonical"]');
   if (!canonical) {
@@ -4788,48 +4797,52 @@ function createStructuredData(schemaType, fields = {}) {
 }
 
 function clearArticleMeta() {
-  removePropertyMeta("article:section");
-  removePropertyMeta("article:published_time");
-  removePropertyMeta("article:modified_time");
+  removePropertyMetas(ARTICLE_META_PROPERTIES);
 }
 
 function clearImageMeta() {
-  removePropertyMeta("og:image");
-  removePropertyMeta("og:image:alt");
-  removeNameMeta("twitter:image");
-  removeNameMeta("twitter:image:alt");
+  removePropertyMetas(IMAGE_PROPERTY_META);
+  removeNameMetas(IMAGE_NAME_META);
 }
 
 function setArticleMeta(page) {
-  setPropertyMeta("article:section", page.desk);
-  setPropertyMeta("article:published_time", page.publishedAt);
-  setPropertyMeta("article:modified_time", page.publishedAt);
+  setPropertyMetaEntries({
+    "article:section": page.desk,
+    "article:published_time": page.publishedAt,
+    "article:modified_time": page.publishedAt,
+  });
 }
 
 function updateSeo({ title, description, url, ogType = "website", robots = DEFAULT_ROBOTS, image = null, structuredData }) {
   document.title = title;
-  setMeta("description", description);
-  setMeta("robots", robots);
+  setNameMetaEntries({ description, robots });
   setCanonical(url);
-  setPropertyMeta("og:type", ogType);
-  setPropertyMeta("og:locale", "ko_KR");
-  setPropertyMeta("og:site_name", SITE_NAME);
-  setPropertyMeta("og:title", title);
-  setPropertyMeta("og:description", description);
-  setPropertyMeta("og:url", url);
+  setPropertyMetaEntries({
+    ...BASE_OPEN_GRAPH_META,
+    "og:type": ogType,
+    "og:title": title,
+    "og:description": description,
+    "og:url": url,
+  });
   if (ogType !== "article") clearArticleMeta();
   if (image) {
-    setPropertyMeta("og:image", image.src);
-    setPropertyMeta("og:image:alt", image.alt);
-    setMeta("twitter:card", "summary_large_image");
-    setMeta("twitter:image", image.src);
-    setMeta("twitter:image:alt", image.alt);
+    setPropertyMetaEntries({
+      "og:image": image.src,
+      "og:image:alt": image.alt,
+    });
+    setNameMetaEntries({
+      "twitter:card": "summary_large_image",
+      "twitter:image": image.src,
+      "twitter:image:alt": image.alt,
+    });
   } else {
     clearImageMeta();
     setMeta("twitter:card", TWITTER_CARD_TYPE);
   }
-  setMeta("twitter:title", title);
-  setMeta("twitter:description", description);
+  setNameMetaEntries({
+    "twitter:title": title,
+    "twitter:description": description,
+  });
   setStructuredData(structuredData);
 }
 
@@ -5227,7 +5240,6 @@ function setMainView(view) {
 
 function clearArticleContext() {
   hideArticleToc();
-  hideArticleComments();
   activePage = null;
   setVoiceReady("");
 }
@@ -5325,8 +5337,8 @@ function rebaseArticleBodySrcset(value = "", baseUrl = getHomeUrl()) {
 }
 
 function rebaseArticleBodyAssetUrls(rootNode, baseUrl = getHomeUrl()) {
-  rootNode.querySelectorAll("[src], [href], [poster]").forEach((node) => {
-    ["src", "href", "poster"].forEach((attributeName) => {
+  rootNode.querySelectorAll(ARTICLE_BODY_ASSET_SELECTOR).forEach((node) => {
+    ARTICLE_BODY_ASSET_ATTRIBUTES.forEach((attributeName) => {
       if (!node.hasAttribute(attributeName)) return;
       node.setAttribute(attributeName, rebaseArticleBodyUrl(node.getAttribute(attributeName), baseUrl));
     });
@@ -5339,7 +5351,7 @@ function rebaseArticleBodyAssetUrls(rootNode, baseUrl = getHomeUrl()) {
 
 function extractArticleBodyHtml(html = "", baseUrl = getHomeUrl()) {
   const documentFragment = new DOMParser().parseFromString(String(html), "text/html");
-  const bodyNode = documentFragment.querySelector("#article-body");
+  const bodyNode = documentFragment.querySelector(ARTICLE_BODY_SELECTOR);
   if (!bodyNode) throw new Error("정적 HTML 본문을 찾지 못했습니다.");
   rebaseArticleBodyAssetUrls(bodyNode, baseUrl);
   return bodyNode.innerHTML.trim();
@@ -5352,31 +5364,43 @@ async function loadArticleBodyHtml(page) {
   return extractArticleBodyHtml(await response.text(), articleUrl);
 }
 
-function renderArticleEnhancements(page) {
-  const relatedPages = pages
+function getRelatedArticlePages(page) {
+  return pages
     .filter((item) => isPagePublished(item))
     .filter((item) => item.desk === page.desk && item.slug !== page.slug)
     .sort(comparePagesByPublishedTime);
-  const trendingPages = getLatestPagesByDesk(getPublishedPages()).filter((item) => item.slug !== page.slug);
+}
+
+function getTrendingArticlePages(page) {
+  return getLatestPagesByDesk(getPublishedPages()).filter((item) => item.slug !== page.slug);
+}
+
+function insertArticleBodySection(html = "", anchorIndex = null) {
+  if (!html) return;
+
+  const bodyChildren = [...articleBodyNode.children];
+  const anchorNode = Number.isInteger(anchorIndex) ? bodyChildren[anchorIndex] : null;
+  if (anchorNode) anchorNode.insertAdjacentHTML("beforebegin", html);
+  else articleBodyNode.insertAdjacentHTML("beforeend", html);
+}
+
+function renderArticleEnhancements(page) {
+  const relatedPages = getRelatedArticlePages(page);
+  const trendingPages = getTrendingArticlePages(page);
   const relatedSection = renderArticleSliderSection(`${deskEmoji[page.desk] || "📌"} 같은 분야 더 보기`, relatedPages);
   const trendingSection = renderArticleSliderSection("🔥 지금 사람들이 많이 보는 주제", trendingPages);
   const bodyChildren = [...articleBodyNode.children];
   const middleIndex = Math.max(1, Math.floor(bodyChildren.length / 2));
 
-  if (relatedSection) {
-    const anchorNode = bodyChildren[middleIndex] || null;
-    if (anchorNode) anchorNode.insertAdjacentHTML("beforebegin", relatedSection);
-    else articleBodyNode.insertAdjacentHTML("beforeend", relatedSection);
-  }
-
-  if (trendingSection) articleBodyNode.insertAdjacentHTML("beforeend", trendingSection);
+  insertArticleBodySection(relatedSection, middleIndex);
+  insertArticleBodySection(trendingSection);
   renderArticleTocFromBody();
   refreshSliderLoops();
 }
 
 function renderArticleHtmlContent(articleHtml, page) {
   articleBodyNode.innerHTML = String(articleHtml || "").trim();
-  articleBodyNode.querySelectorAll("script, .article-slider-section").forEach((node) => node.remove());
+  articleBodyNode.querySelectorAll(ARTICLE_BODY_ENHANCEMENT_SELECTOR).forEach((node) => node.remove());
   renderArticleEnhancements(page);
 }
 
@@ -5384,42 +5408,23 @@ function getArticleSpeechText() {
   return articleBodyNode.textContent.trim();
 }
 
-function getArticleCommentCount(page = activePage) {
-  return page?.slug ? getStoredComments(page.slug).length : 0;
+function getArticleSpeechPayload(page) {
+  return [page?.title, getArticleSpeechText()].filter(Boolean).join("\n\n");
 }
 
-function shouldShowArticleCommentsTocItem(page = activePage) {
-  return Boolean(
-    page?.slug
-    && articleCommentsNode
-    && !articleCommentsNode.hidden
-    && window.matchMedia(ARTICLE_COMMENTS_INLINE_QUERY).matches,
-  );
+function renderArticleBodyAndVoice(articleHtml, page) {
+  renderArticleHtmlContent(articleHtml, page);
+  setVoiceReady(getArticleSpeechPayload(page));
 }
 
-function createArticleCommentsTocItem(page = activePage) {
-  return {
-    id: ARTICLE_COMMENTS_TOC_TARGET,
-    text: `댓글 반응 (${getArticleCommentCount(page)})`,
-    isCommentTarget: true,
-  };
+function getArticleTocItems(headings = []) {
+  return headings.filter((heading) => heading.id && heading.text);
 }
 
-function getArticleTocItems(headings = [], page = activePage) {
-  const headingItems = headings
-    .filter((heading) => heading.id !== ARTICLE_COMMENTS_TOC_TARGET && !heading.isCommentTarget);
-
-  if (!headingItems.length) return [];
-  return shouldShowArticleCommentsTocItem(page)
-    ? [...headingItems, createArticleCommentsTocItem(page)]
-    : headingItems;
-}
-
-function renderArticleToc(headings = [], page = activePage) {
+function renderArticleToc(headings = []) {
   if (!articleTocNode) return;
-  articleTocHeadings = headings
-    .filter((heading) => heading.id !== ARTICLE_COMMENTS_TOC_TARGET && !heading.isCommentTarget);
-  articleTocItems = getArticleTocItems(articleTocHeadings, page);
+  articleTocHeadings = getArticleTocItems(headings);
+  articleTocItems = articleTocHeadings;
   if (!articleTocItems.length) {
     hideArticleToc();
     return;
@@ -5446,7 +5451,7 @@ function renderArticleTocFromBody() {
       return { id: heading.id, text: heading.textContent.trim() };
     })
     .filter((heading) => heading.text);
-  renderArticleToc(headings, activePage);
+  renderArticleToc(headings);
 }
 
 function refreshArticleTocForCurrentPage() {
@@ -5460,115 +5465,6 @@ function hideArticleToc() {
   if (!articleTocNode) return;
   articleTocNode.hidden = true;
   articleTocNode.innerHTML = "";
-}
-
-function getCommentStorageKey(slug = "") {
-  return `${COMMENTS_STORAGE_PREFIX}${slug}`;
-}
-
-function getStoredComments(slug = "") {
-  if (!slug) return [];
-
-  try {
-    const rawComments = window.localStorage.getItem(getCommentStorageKey(slug));
-    const parsedComments = rawComments ? JSON.parse(rawComments) : [];
-    if (!Array.isArray(parsedComments)) return [];
-
-    return parsedComments
-      .map((comment) => ({
-        id: String(comment.id || ""),
-        body: String(comment.body || "").trim(),
-        createdAt: String(comment.createdAt || ""),
-      }))
-      .filter((comment) => comment.id && comment.body && comment.createdAt);
-  } catch {
-    return [];
-  }
-}
-
-function setStoredComments(slug = "", comments = []) {
-  if (!slug) return false;
-
-  try {
-    window.localStorage.setItem(getCommentStorageKey(slug), JSON.stringify(comments));
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-function createCommentId() {
-  if (window.crypto?.randomUUID) return window.crypto.randomUUID();
-  return `comment-${Date.now()}-${Math.random().toString(16).slice(2)}`;
-}
-
-function formatCommentTime(value = "") {
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return "";
-
-  return new Intl.DateTimeFormat("ko-KR", {
-    dateStyle: "medium",
-    timeStyle: "short",
-  }).format(date);
-}
-
-function renderCommentItem(comment) {
-  return `
-    <article class="comment-item" data-comment-id="${escapeHtml(comment.id)}">
-      <div class="comment-item__meta">
-        <strong>익명</strong>
-        <time datetime="${escapeHtml(comment.createdAt)}">${escapeHtml(formatCommentTime(comment.createdAt))}</time>
-      </div>
-      <p>${escapeHtml(comment.body)}</p>
-      <button class="comment-delete" type="button" data-comment-action="delete">삭제</button>
-    </article>
-  `;
-}
-
-function setCommentStatus(message = "", isError = false) {
-  const statusNode = articleCommentsNode?.querySelector("[data-comment-status]");
-  if (!statusNode) return;
-  statusNode.textContent = message;
-  statusNode.classList.toggle("comment-status--error", Boolean(isError));
-}
-
-function renderArticleComments(page) {
-  if (!articleCommentsNode || !page?.slug) return;
-
-  const comments = getStoredComments(page.slug);
-  const commentCountLabel = comments.length ? ` ${comments.length}` : "";
-  articleCommentsNode.hidden = false;
-  articleCommentsNode.dataset.pageSlug = page.slug;
-  articleCommentsNode.innerHTML = `
-    <div class="article-comments__head">
-      <div>
-        <h3>댓글${escapeHtml(commentCountLabel)}</h3>
-        <p>무기명으로 의견을 남겨주세요.</p>
-      </div>
-    </div>
-    <form class="comment-form">
-      <label class="visually-hidden" for="comment-input">댓글 내용</label>
-      <textarea id="comment-input" name="comment" maxlength="${COMMENT_MAX_LENGTH}" rows="4" placeholder="댓글을 입력하세요" required></textarea>
-      <div class="comment-form__footer">
-        <span class="comment-counter" data-comment-counter>0/${COMMENT_MAX_LENGTH}</span>
-        <button class="primary-button" type="submit">댓글 남기기</button>
-      </div>
-      <p class="comment-status" data-comment-status role="status"></p>
-    </form>
-    <div class="comment-list" data-comment-list>
-      ${comments.length
-        ? comments.map(renderCommentItem).join("")
-        : '<p class="comment-empty">아직 남겨진 댓글이 없습니다.</p>'}
-    </div>
-  `;
-  refreshArticleTocForCurrentPage();
-}
-
-function hideArticleComments() {
-  if (!articleCommentsNode) return;
-  articleCommentsNode.hidden = true;
-  articleCommentsNode.dataset.pageSlug = "";
-  articleCommentsNode.innerHTML = "";
 }
 
 function scheduleArticleTocActiveUpdate() {
@@ -5687,7 +5583,6 @@ function showArticleShell(page, { preserveBody = false } = {}) {
   articleMetaNode.textContent = getArticleMetaText(page);
   if (!preserveBody) articleBodyNode.innerHTML = "<p>문서를 불러오는 중입니다.</p>";
   resetNewsletterPanel(true);
-  renderArticleComments(page);
   if (preserveBody) renderArticleTocFromBody();
   else hideArticleToc();
   setVoiceReady("");
@@ -5743,12 +5638,10 @@ async function renderArticle(slug) {
 
   try {
     const articleHtml = staticArticleHtml || await loadArticleBodyHtml(page);
-    renderArticleHtmlContent(articleHtml, page);
-    setVoiceReady([page.title, getArticleSpeechText()].filter(Boolean).join("\n\n"));
+    renderArticleBodyAndVoice(articleHtml, page);
   } catch (error) {
     if (staticArticleHtml) {
-      renderArticleHtmlContent(staticArticleHtml, page);
-      setVoiceReady([page.title, getArticleSpeechText()].filter(Boolean).join("\n\n"));
+      renderArticleBodyAndVoice(staticArticleHtml, page);
       return;
     }
 
@@ -5868,6 +5761,35 @@ async function persistDataStore() {
   return false;
 }
 
+function findSubscriberByEmail(subscribers = [], email = "") {
+  return subscribers.find((item) => String(item.email || "").toLowerCase() === email);
+}
+
+function upsertNewsletterSubscriber(email, page) {
+  const subscribers = Array.isArray(dataStore.newsletter_subscribers) ? dataStore.newsletter_subscribers : [];
+  const activeDesk = normalizeDesk(page.desk);
+  const now = new Date().toISOString();
+  const existing = findSubscriberByEmail(subscribers, email);
+
+  if (existing) {
+    const interests = Array.isArray(existing.interests) ? existing.interests : [];
+    if (!interests.includes(activeDesk)) interests.push(activeDesk);
+    existing.interests = interests;
+    existing.last_page_slug = page.slug;
+    existing.updated_at = now;
+  } else {
+    subscribers.push({
+      email,
+      interests: [activeDesk],
+      last_page_slug: page.slug,
+      subscribed_at: now,
+      updated_at: now,
+    });
+  }
+
+  dataStore.newsletter_subscribers = subscribers;
+}
+
 async function handleNewsletterSubmit(event) {
   event.preventDefault();
   if (!activePage) {
@@ -5880,113 +5802,12 @@ async function handleNewsletterSubmit(event) {
 
   await prepareWritableDataStore();
 
-  const subscribers = Array.isArray(dataStore.newsletter_subscribers) ? dataStore.newsletter_subscribers : [];
-  const existing = subscribers.find((item) => String(item.email || "").toLowerCase() === email);
-
-  if (existing) {
-    const nextInterests = Array.isArray(existing.interests) ? existing.interests : [];
-    const activeDesk = normalizeDesk(activePage.desk);
-    if (!nextInterests.includes(activeDesk)) nextInterests.push(activeDesk);
-    existing.interests = nextInterests;
-    existing.last_page_slug = activePage.slug;
-    existing.updated_at = new Date().toISOString();
-  } else {
-    subscribers.push({
-      email,
-      interests: [normalizeDesk(activePage.desk)],
-      last_page_slug: activePage.slug,
-      subscribed_at: new Date().toISOString(),
-      updated_at: new Date().toISOString(),
-    });
-  }
-
-  dataStore.newsletter_subscribers = subscribers;
+  upsertNewsletterSubscriber(email, activePage);
   const savedToFile = await persistDataStore();
   newsletterMessageNode.textContent = savedToFile
     ? "뉴스레터 신청이 완료되었습니다."
     : "신청이 완료되었습니다. 내려받은 data.json 파일로 기존 파일을 교체해 주세요.";
   newsletterFormNode.reset();
-}
-
-function handleArticleCommentInput(event) {
-  const targetNode = event.target;
-  if (!(targetNode instanceof Element)) return;
-
-  const inputNode = targetNode.closest(".comment-form textarea");
-  if (!inputNode || !articleCommentsNode?.contains(inputNode)) return;
-
-  const counterNode = articleCommentsNode.querySelector("[data-comment-counter]");
-  if (counterNode) counterNode.textContent = `${inputNode.value.length}/${COMMENT_MAX_LENGTH}`;
-}
-
-function handleArticleCommentSubmit(event) {
-  const targetNode = event.target;
-  if (!(targetNode instanceof Element)) return;
-
-  const formNode = targetNode.closest(".comment-form");
-  if (!formNode || !articleCommentsNode?.contains(formNode)) return;
-  event.preventDefault();
-
-  const slug = articleCommentsNode.dataset.pageSlug || activePage?.slug || "";
-  const inputNode = formNode.elements.comment;
-  const body = String(inputNode?.value || "").trim();
-  const page = activePage?.slug === slug ? activePage : pages.find((item) => item.slug === slug);
-
-  if (!slug || !page) {
-    setCommentStatus("댓글을 연결할 문서를 찾지 못했습니다.", true);
-    return;
-  }
-
-  if (!body) {
-    setCommentStatus("댓글 내용을 입력해 주세요.", true);
-    return;
-  }
-
-  if (body.length > COMMENT_MAX_LENGTH) {
-    setCommentStatus(`${COMMENT_MAX_LENGTH}자 이내로 입력해 주세요.`, true);
-    return;
-  }
-
-  const comments = getStoredComments(slug);
-  const nextComments = [{
-    id: createCommentId(),
-    body,
-    createdAt: new Date().toISOString(),
-  }, ...comments].slice(0, 100);
-
-  if (!setStoredComments(slug, nextComments)) {
-    setCommentStatus("이 브라우저에서는 댓글을 저장하지 못했습니다.", true);
-    return;
-  }
-
-  renderArticleComments(page);
-  setCommentStatus("댓글이 저장되었습니다.");
-}
-
-function handleArticleCommentClick(event) {
-  const targetNode = event.target;
-  if (!(targetNode instanceof Element)) return;
-
-  const actionButton = targetNode.closest("[data-comment-action]");
-  if (!actionButton || !articleCommentsNode?.contains(actionButton)) return;
-
-  const slug = articleCommentsNode.dataset.pageSlug || activePage?.slug || "";
-  const commentNode = actionButton.closest("[data-comment-id]");
-  const page = activePage?.slug === slug ? activePage : pages.find((item) => item.slug === slug);
-  if (!slug || !commentNode || !page) return;
-
-  if (actionButton.dataset.commentAction === "delete") {
-    const nextComments = getStoredComments(slug)
-      .filter((comment) => comment.id !== commentNode.dataset.commentId);
-
-    if (!setStoredComments(slug, nextComments)) {
-      setCommentStatus("댓글을 삭제하지 못했습니다.", true);
-      return;
-    }
-
-    renderArticleComments(page);
-    setCommentStatus("댓글을 삭제했습니다.");
-  }
 }
 
 searchNode.addEventListener("input", () => {
@@ -6031,9 +5852,6 @@ newsletterFormNode.addEventListener("submit", (event) => {
     newsletterMessageNode.textContent = error.message || "뉴스레터 저장에 실패했습니다.";
   });
 });
-articleCommentsNode?.addEventListener("input", handleArticleCommentInput);
-articleCommentsNode?.addEventListener("submit", handleArticleCommentSubmit);
-articleCommentsNode?.addEventListener("click", handleArticleCommentClick);
 
 renderDeskMenu();
 scheduleNextPublishRefresh();
