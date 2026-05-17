@@ -4603,17 +4603,6 @@ function normalizeDesk(desk = "") {
   return normalizedDesk;
 }
 
-function normalizeArticleMarkdown(markdown = "") {
-  return String(markdown)
-    .replace(/^한 줄 요약:.*(?:\r?\n\s*\r?\n)?/gm, "")
-    .replaceAll("공개 위키 항목", "기준점")
-    .replaceAll("국제정치", "글로벌")
-    .replaceAll("세계 분야", "글로벌 분야")
-    .replaceAll("세계 이슈", "글로벌 이슈")
-    .replaceAll("문화·미디어", "문화")
-    .replaceAll("문화미디어", "문화");
-}
-
 function createEmptyDataStore() {
   return { newsletter_subscribers: [], updated_at: new Date().toISOString() };
 }
@@ -5306,99 +5295,93 @@ function renderSectionPagination(desk, currentPage, totalPages) {
   `;
 }
 
-function renderArticleContent(markdown, page) {
-  const paragraphs = markdown
-    .split(/\n\s*\n/g)
-    .map((item) => item.trim())
-    .filter(Boolean);
+function shouldRebaseArticleBodyUrl(value = "") {
+  const trimmedValue = String(value).trim();
+  return Boolean(trimmedValue && !trimmedValue.startsWith("#") && !/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(trimmedValue));
+}
 
-  const articleHeadings = [];
-  const blocks = paragraphs.map((paragraph) => renderArticleBlock(paragraph, articleHeadings));
-  const firstHeadingIndex = paragraphs.findIndex((paragraph) => /^##\s+/.test(paragraph));
-  const articleImage = renderArticleImage(page);
-  if (articleImage && firstHeadingIndex >= 0) blocks.splice(firstHeadingIndex + 1, 0, articleImage);
+function rebaseArticleBodyUrl(value = "", baseUrl = getHomeUrl()) {
+  const trimmedValue = String(value).trim();
+  if (!shouldRebaseArticleBodyUrl(trimmedValue)) return value;
 
-  const middleIndex = Math.max(1, Math.floor(blocks.length / 2));
-  const before = blocks.slice(0, middleIndex).join("");
-  const after = blocks.slice(middleIndex).join("");
+  try {
+    return new URL(trimmedValue, baseUrl).toString();
+  } catch {
+    return value;
+  }
+}
+
+function rebaseArticleBodySrcset(value = "", baseUrl = getHomeUrl()) {
+  return String(value)
+    .split(",")
+    .map((candidate) => {
+      const parts = candidate.trim().split(/\s+/).filter(Boolean);
+      if (!parts.length) return "";
+      const [url, ...descriptors] = parts;
+      return [rebaseArticleBodyUrl(url, baseUrl), ...descriptors].join(" ");
+    })
+    .filter(Boolean)
+    .join(", ");
+}
+
+function rebaseArticleBodyAssetUrls(rootNode, baseUrl = getHomeUrl()) {
+  rootNode.querySelectorAll("[src], [href], [poster]").forEach((node) => {
+    ["src", "href", "poster"].forEach((attributeName) => {
+      if (!node.hasAttribute(attributeName)) return;
+      node.setAttribute(attributeName, rebaseArticleBodyUrl(node.getAttribute(attributeName), baseUrl));
+    });
+  });
+
+  rootNode.querySelectorAll("[srcset]").forEach((node) => {
+    node.setAttribute("srcset", rebaseArticleBodySrcset(node.getAttribute("srcset"), baseUrl));
+  });
+}
+
+function extractArticleBodyHtml(html = "", baseUrl = getHomeUrl()) {
+  const documentFragment = new DOMParser().parseFromString(String(html), "text/html");
+  const bodyNode = documentFragment.querySelector("#article-body");
+  if (!bodyNode) throw new Error("정적 HTML 본문을 찾지 못했습니다.");
+  rebaseArticleBodyAssetUrls(bodyNode, baseUrl);
+  return bodyNode.innerHTML.trim();
+}
+
+async function loadArticleBodyHtml(page) {
+  const articleUrl = getArticleUrl(page.slug);
+  const response = await fetch(articleUrl, { cache: "no-store" });
+  if (!response.ok) throw new Error("정적 HTML 본문을 불러오지 못했습니다.");
+  return extractArticleBodyHtml(await response.text(), articleUrl);
+}
+
+function renderArticleEnhancements(page) {
   const relatedPages = pages
     .filter((item) => isPagePublished(item))
     .filter((item) => item.desk === page.desk && item.slug !== page.slug)
     .sort(comparePagesByPublishedTime);
   const trendingPages = getLatestPagesByDesk(getPublishedPages()).filter((item) => item.slug !== page.slug);
+  const relatedSection = renderArticleSliderSection(`${deskEmoji[page.desk] || "📌"} 같은 분야 더 보기`, relatedPages);
+  const trendingSection = renderArticleSliderSection("🔥 지금 사람들이 많이 보는 주제", trendingPages);
+  const bodyChildren = [...articleBodyNode.children];
+  const middleIndex = Math.max(1, Math.floor(bodyChildren.length / 2));
 
-  articleBodyNode.innerHTML = `
-    ${before}
-    ${renderArticleSliderSection(`${deskEmoji[page.desk] || "📌"} 같은 분야 더 보기`, relatedPages)}
-    ${after}
-    ${renderArticleSliderSection("🔥 지금 사람들이 많이 보는 주제", trendingPages)}
-  `;
-  renderArticleToc(articleHeadings, page);
+  if (relatedSection) {
+    const anchorNode = bodyChildren[middleIndex] || null;
+    if (anchorNode) anchorNode.insertAdjacentHTML("beforebegin", relatedSection);
+    else articleBodyNode.insertAdjacentHTML("beforeend", relatedSection);
+  }
+
+  if (trendingSection) articleBodyNode.insertAdjacentHTML("beforeend", trendingSection);
+  renderArticleTocFromBody();
   refreshSliderLoops();
 }
 
-function renderArticleBlock(paragraph, articleHeadings = []) {
-  const headingMatch = paragraph.match(/^##\s+(.+)$/);
-  if (headingMatch) {
-    const text = headingMatch[1].trim();
-    const id = `article-section-${articleHeadings.length + 1}`;
-    articleHeadings.push({ id, text });
-    return `<h3 id="${id}" class="article-subheading">${escapeHtml(text)}</h3>`;
-  }
-
-  const table = renderMarkdownTableBlock(paragraph);
-  if (table) return table;
-
-  return `<p>${escapeHtml(paragraph)}</p>`;
+function renderArticleHtmlContent(articleHtml, page) {
+  articleBodyNode.innerHTML = String(articleHtml || "").trim();
+  articleBodyNode.querySelectorAll("script, .article-slider-section").forEach((node) => node.remove());
+  renderArticleEnhancements(page);
 }
 
-function renderMarkdownTableBlock(block = "") {
-  const lines = String(block)
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean);
-  if (lines.length < 3 || !lines[0].includes("|") || !isMarkdownTableSeparator(lines[1])) return "";
-
-  const headers = splitMarkdownTableRow(lines[0]);
-  if (!headers.length) return "";
-
-  const rows = lines
-    .slice(2)
-    .map(splitMarkdownTableRow)
-    .filter((row) => row.length);
-  if (!rows.length) return "";
-
-  const headerHtml = headers.map((cell) => `<th>${escapeHtml(cell)}</th>`).join("");
-  const bodyHtml = rows
-    .map((row) => {
-      const cells = headers.map((_, index) => `<td>${escapeHtml(row[index] || "")}</td>`).join("");
-      return `<tr>${cells}</tr>`;
-    })
-    .join("");
-
-  return `
-    <div class="article-table" role="region" aria-label="재료 표">
-      <table>
-        <thead><tr>${headerHtml}</tr></thead>
-        <tbody>${bodyHtml}</tbody>
-      </table>
-    </div>
-  `;
-}
-
-function isMarkdownTableSeparator(line = "") {
-  const cells = splitMarkdownTableRow(line);
-  return cells.length > 1 && cells.every((cell) => /^:?-{3,}:?$/.test(cell));
-}
-
-function splitMarkdownTableRow(line = "") {
-  return String(line)
-    .trim()
-    .replace(/^\|/, "")
-    .replace(/\|$/, "")
-    .split("|")
-    .map((cell) => cell.trim())
-    .filter(Boolean);
+function getArticleSpeechText() {
+  return articleBodyNode.textContent.trim();
 }
 
 function getArticleCommentCount(page = activePage) {
@@ -5755,20 +5738,23 @@ async function renderArticle(slug) {
   }
 
   const preserveStaticBody = hasStaticArticleBody(page);
-  const staticArticleText = preserveStaticBody ? articleBodyNode.textContent.trim() : "";
+  const staticArticleHtml = preserveStaticBody ? articleBodyNode.innerHTML.trim() : "";
   showArticleShell(page, { preserveBody: preserveStaticBody });
 
   try {
-    const response = await fetch(getAssetUrl(`pages/${encodeURIComponent(page.slug)}.md`), { cache: "no-store" });
-    if (!response.ok) throw new Error("본문 파일을 읽지 못했습니다.");
-    const markdown = normalizeArticleMarkdown(await response.text());
-    renderArticleContent(markdown, page);
-    setVoiceReady([page.title, markdown].filter(Boolean).join("\n\n"));
+    const articleHtml = staticArticleHtml || await loadArticleBodyHtml(page);
+    renderArticleHtmlContent(articleHtml, page);
+    setVoiceReady([page.title, getArticleSpeechText()].filter(Boolean).join("\n\n"));
   } catch (error) {
-    if (!preserveStaticBody) {
-      articleBodyNode.innerHTML = `<p>${escapeHtml(error.message || "본문을 불러오는 중 문제가 발생했습니다.")}</p>`;
+    if (staticArticleHtml) {
+      renderArticleHtmlContent(staticArticleHtml, page);
+      setVoiceReady([page.title, getArticleSpeechText()].filter(Boolean).join("\n\n"));
+      return;
     }
-    setVoiceReady([page.title, staticArticleText].filter(Boolean).join("\n\n"));
+
+    articleBodyNode.innerHTML = `<p>${escapeHtml(error.message || "본문을 불러오는 중 문제가 발생했습니다.")}</p>`;
+    hideArticleToc();
+    setVoiceReady("");
   }
 }
 
