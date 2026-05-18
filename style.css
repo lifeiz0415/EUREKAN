@@ -261,24 +261,22 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   max-width: 100%;
   overflow: hidden;
   padding: 2px 0 10px;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
 }
 
 .trending-track {
-  --slide-distance: 0px;
+  --slide-distance: 25%;
   --slide-duration: 58s;
   display: flex;
+  gap: 16px;
   width: max-content;
   animation: seamless-slide var(--slide-duration) linear infinite;
   will-change: transform;
 }
 
-.trending-group {
+.trending-sequence {
   display: flex;
   flex: 0 0 auto;
   gap: 16px;
-  padding-right: 16px;
 }
 
 .trending-track:not([data-slider-ready="true"]) {
@@ -662,6 +660,91 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 
 .article-table tbody tr:last-child td {
   border-bottom: 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.site-footer__inner {
+  width: min(1440px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 30px;
+  display: grid;
+  gap: 10px;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+}
+
+.site-footer__links a {
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.site-footer__links a:hover,
+.site-footer__links a:focus-visible {
+  text-decoration: underline;
+}
+
+.site-footer__notice {
+  max-width: 920px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.legal-layout {
+  max-width: 980px;
+}
+
+.legal-page {
+  display: grid;
+  gap: 20px;
+}
+
+.legal-page h2 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  line-height: 1.25;
+}
+
+.legal-page h3 {
+  margin: 8px 0 0;
+  font-size: 1.12rem;
+  line-height: 1.45;
+  color: var(--accent-dark);
+}
+
+.legal-page p,
+.legal-page li {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.9;
+}
+
+.legal-page ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.legal-note {
+  border: 1px solid rgba(73, 107, 57, 0.2);
+  border-radius: 18px;
+  padding: 14px 16px;
+  background: rgba(73, 107, 57, 0.08);
+  color: var(--accent-dark);
+  font-weight: 700;
 }
 
 @keyframes seamless-slide {

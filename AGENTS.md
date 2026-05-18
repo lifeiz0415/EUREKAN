@@ -10,13 +10,17 @@
 - 프로젝트명: Eurekan.org
 - 제품 형태: 정적 단일 페이지형 위키/매거진
 - 핵심 목표: 지금 사람들이 가장 궁금해하는 주제를 분야별 장문 페이지로 보여주는 읽기 중심 사이트
-- 현재 구현 원칙: 백엔드 없이 `README.md`, `index.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만으로 동작한다.
+- 현재 구현 원칙: 백엔드 없이 `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만으로 동작한다.
 
 ## 현재 파일 구조
 ```text
 AGENTS.md
 README.md
 index.html
+about.html
+contact.html
+privacy.html
+disclaimer.html
 style.css
 app.js
 data.json
@@ -32,8 +36,9 @@ agents/
 - 위 구조 외의 프로젝트 파일/폴더는 유지하지 않는다.
 - `README.md`는 공개 저장소용 프로젝트 소개 문서로 유지한다.
 - `agents/` 폴더는 분야별 전문가 페르소나 문서 저장용으로 남긴다.
-- 실제 사용자-facing 사이트는 루트의 `index.html`, `style.css`, `app.js`와 `pages/<slug>.html` 정적 글 페이지를 사용한다.
-- 검색엔진 수집 보조 파일은 루트의 `robots.txt`, `sitemap.xml`만 사용한다.
+- 실제 사용자-facing 사이트는 루트의 `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`와 `pages/<slug>.html` 정적 글 페이지를 사용한다.
+- `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`은 애드센스 신청과 사이트 신뢰 확보를 위한 루트 정적 안내 페이지로 유지한다.
+- 검색엔진 수집 보조 파일은 루트의 `robots.txt`, `sitemap.xml`을 사용하며, 루트 안내 페이지도 `sitemap.xml`에 포함한다.
 - 정적 파일 경로는 배포 위치에 덜 민감하도록 상대 경로를 우선 사용한다.
 
 ## 진실의 원천 우선순위
@@ -57,6 +62,8 @@ agents/
 - 새 글을 만들 때 `pages/<slug>.md` 파일은 생성하지 않는다.
 - 글을 추가하거나 수정할 때는 최종 HTML만 생성하고, `app.js` manifest와 `sitemap.xml`만 함께 맞춘다.
 - 페이지 메타데이터 목록은 `app.js` 내부 manifest 배열에서 관리한다.
+- 현재 애드센스 신청 준비 상태에서는 13개 분야별 공개 글을 각각 3개씩, 총 39개로 유지한다.
+- 사이트 신뢰 페이지인 소개, 문의, 개인정보처리방침, 면책고지는 루트 정적 HTML로 유지하고, 모든 공개 화면의 공통 하단에서 접근할 수 있어야 한다.
 
 ## 금지 사항
 - React, Vue, Svelte 같은 프레임워크 도입 금지
@@ -87,7 +94,7 @@ agents/
 - 정적 글 페이지는 `pages/<slug>.html`에 전체 본문과 글별 SEO 메타데이터를 포함하며, `app.js`는 이 최종 HTML의 본문을 기준으로 상호작용용 상세 화면을 보강한다.
 - `app.js`나 `style.css`처럼 모든 페이지에 영향을 주는 공용 자산을 바꾸면 브라우저 캐시 때문에 배포 직후 변경이 안 보일 수 있으므로, 같은 변경에서 `index.html`과 `pages/*.html`의 해당 자산 URL 버전 쿼리를 함께 갱신한다.
 - 홈 첫 화면에서 LCP 후보가 되는 대표 이미지는 리다이렉트가 없는 직접 이미지 URL을 우선 사용하고, `index.html`의 `preconnect`와 `preload`도 같은 URL 기준으로 맞춘다.
-- 홈 최신 콘텐츠 슬라이더는 동일 카드 그룹을 반복 렌더링하되, 렌더 후 첫 그룹과 다음 그룹의 실제 위치 차이를 측정해 `--slide-distance`를 설정하고 마지막 카드 다음에 첫 카드가 끊김 없이 이어지게 한다.
+- 홈 최신 콘텐츠 슬라이더는 동일 카드 시퀀스를 반복 렌더링하되, 시퀀스 폭이 화면보다 짧아지지 않게 필요한 만큼 카드를 보강하고 렌더 후 첫 시퀀스의 첫 카드와 다음 시퀀스의 첫 카드 사이 실제 거리를 측정해 `--slide-distance`를 설정한다.
 - 이미지가 꼭 필요한 글은 `pages/<slug>.html` 정적 글 페이지 안에서 공개 외부 이미지 URL을 직접 링크한다.
 - 새 글의 대표 이미지는 글 내용을 실제로 설명하는 무료 이미지로 우선 고른다. 음식·레시피 글은 텍스트만 있는 생성 SVG나 추상 플레이스홀더를 대표 썸네일로 쓰지 않고, Wikimedia Commons 같은 무료 출처의 실제 음식 사진을 우선 사용한다.
 - 외부 무료 이미지를 쓸 때는 `app.js` manifest에 `externalSrc`, `sourceUrl`, `alt`를 함께 넣고, 정적 글 페이지의 본문 이미지·Open Graph·Twitter 카드·JSON-LD도 같은 이미지 주소로 맞춘다.
@@ -95,7 +102,7 @@ agents/
 - 상세 본문 소제목은 최종 HTML 안의 `<h3 class="article-subheading">` 요소로 표시한다.
 - 홈 상단에는 `최신 콘텐츠` 무한 카드 슬라이더가 있다.
 - 홈 상단 최신 콘텐츠 제목에는 분야별 최신 대표글 수를 괄호 안 숫자로 함께 표시한다.
-- 무한 카드 슬라이더는 카드 단위 반복 레일을 만들고, 첫 카드와 다음 반복의 첫 카드 사이 실제 렌더 거리를 계산해 마지막 카드 뒤에 첫 카드가 바로 이어지도록 동작한다.
+- 무한 카드 슬라이더는 카드 단위 반복 레일을 만들고, 첫 카드와 다음 반복의 첫 카드 사이 실제 렌더 거리를 계산해 마지막 카드 뒤에 다음 반복의 첫 카드가 빈 구간 없이 바로 이어지도록 동작한다.
 - 홈의 분야별 섹션은 한 줄만 보여주고, 섹션별 페이지네이션과 `+ 더보기` 링크를 제공한다.
 - 홈의 분야별 섹션 페이지네이션 숫자 버튼은 한 번에 최대 10개만 표시하고, 10개를 초과하면 `>`와 `<` 버튼으로 다음·이전 묶음으로 이동한다.
 - 홈의 분야별 섹션 제목과 분야별 전체 보기 제목에는 해당 분야의 전체 페이지 수를 괄호 안 숫자로 함께 표시한다.
@@ -108,6 +115,8 @@ agents/
 - 정적 글 페이지에서 외부 이미지를 직접 링크하는 경우 이미지는 첫 번째 본문 소제목 바로 아래에 표시하고, 캡션에 `출처 : 도메인 주소` 형식으로 출처를 표기한다.
 - manifest의 `summary`는 검색과 SEO 메타데이터용으로만 사용하고 상세 화면 본문 UI에는 표시하지 않는다.
 - 음성 기본 버튼 문구는 `음성으로 읽어주기`, 재생 중 버튼 문구는 `음성읽기 중지하기`로 표시하고, 본문 로딩 중/읽는 중 상태 문구는 별도로 표시하지 않는다.
+- 홈, 정적 글 페이지, 루트 안내 페이지 하단에는 `소개`, `문의`, `개인정보처리방침`, `면책고지` 링크를 포함한 공통 푸터를 둔다.
+- 공통 푸터에는 금융·크립토·건강 관련 글이 일반 정보이며 투자·의료 조언이 아니라는 짧은 고지를 표시한다.
 
 ## SEO 규칙
 - 기본 SEO 메타 태그는 `index.html`의 `<head>`에 둔다.
@@ -117,8 +126,17 @@ agents/
 - 존재하지 않는 문서는 `noindex, follow`로 표시한다.
 - canonical URL은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKAN/`를 기준으로 만들고, 상세 글은 `pages/<slug>.html`, 분야 보기는 `?desk=<분야>`를 사용한다.
 - `robots.txt`와 `sitemap.xml`은 루트에 둔다.
-- `sitemap.xml`은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKAN/` 기준의 홈, 분야, 정적 글 페이지 URL을 담는다.
+- `sitemap.xml`은 실제 배포 주소 `https://lifeiz0415.github.io/EUREKAN/` 기준의 홈, 루트 안내 페이지, 분야, 정적 글 페이지 URL을 담는다.
 - manifest에 글을 추가하거나 slug를 바꾸면 같은 변경에서 `pages/<slug>.html`과 `sitemap.xml`도 함께 갱신한다.
+
+## 사이트 신뢰와 애드센스 준비 규칙
+- 애드센스 신청 전후로 `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`은 삭제하지 않는다.
+- `about.html`은 사이트 목적, 콘텐츠 범위, 운영 방식을 독자가 이해할 수 있게 설명한다.
+- `contact.html`은 오류 제보, 저작권, 개인정보, 광고 관련 문의 채널을 명확히 안내한다.
+- `privacy.html`은 뉴스레터 이메일 수집 항목, 이용 목적, 보관·삭제 요청 방법, 외부 이미지 요청, Google 광고 쿠키와 개인 맞춤 광고 가능성을 함께 고지한다.
+- `disclaimer.html`은 금융·크립토 글이 투자 조언이 아니며 과학·건강 글이 의료 조언이 아니라는 점을 별도 페이지로 안내한다.
+- 뉴스레터 UI, Google 광고 코드, 외부 분석 도구, 새로운 제3자 스크립트를 추가하거나 변경하면 같은 변경에서 `privacy.html`과 공통 푸터 고지를 함께 검토한다.
+- 애드센스 코드가 발급되어 삽입될 때는 사이트 전체 `<head>` 적용 범위, 개인정보처리방침의 광고·쿠키 고지, 검색엔진 메타데이터 충돌 여부를 함께 확인한다.
 
 ## 뉴스레터 규칙
 - 이 사이트의 상세 화면 상호작용은 뉴스레터 신청만 제공한다.
@@ -166,7 +184,7 @@ agents/
 - slug 끝에는 글의 시의성을 구분할 수 있도록 필요한 경우 `2026` 같은 연도 토큰을 붙인다.
 - `hot-topic`, `topic`, `issue`, 번호만 붙인 이름, 의미가 빈약한 임시 이름은 파일명으로 쓰지 않는다.
 - 제목이 비슷해 slug가 겹치면 단순 번호를 먼저 붙이지 말고 제목의 차이를 드러내는 영어 핵심어를 추가해 구분한다.
-- slug를 정하면 같은 slug로 `pages/<slug>.html`, `app.js`의 `topicSlugsByDesk` 또는 manifest 항목, 정적 HTML 내부 canonical/OG/JSON-LD URL, `sitemap.xml`을 모두 함께 갱신한다.
+- slug를 정하면 같은 slug로 `pages/<slug>.html`, `app.js`의 manifest 항목, 정적 HTML 내부 canonical/OG/JSON-LD URL, `sitemap.xml`을 모두 함께 갱신한다.
 - 한 파일은 최소 3천자 이상의 장문 본문을 가진다.
 - 분야와 메타데이터는 파일 안이 아니라 `app.js`의 manifest에서 관리하고, 생성된 HTML의 head 메타데이터도 이 manifest를 기준으로 맞춘다.
 - 글 발행시각은 날짜만 쓰지 않고 `YYYY-MM-DDTHH:mm:ss+09:00` 형식으로 시분초와 시간대까지 기록한다.
@@ -184,6 +202,8 @@ agents/
 - `Ada는`, `Iris는`, `작성자는`, `이 에이전트는`, `문체는`, `관점에서는`, `자료의 문장을 흉내 내지 않습니다`처럼 내부 작성 방식이나 페르소나 설정을 독자에게 드러내는 문장은 본문에 쓰지 않는다.
 - 에이전트별 개성은 본문 밖에서 설명하지 않고, 문장 리듬·비유·질문 순서·사례 선택의 차이로만 자연스럽게 드러낸다.
 - 글은 공통 템플릿을 채운 흔적이 보이지 않게 주제별 고유 장면과 용어를 중심으로 개별 작성하며, 여러 글에 같은 문단 구조와 문장을 반복하지 않는다.
+- 동일한 도입부, 동일한 설명 문장, 동일한 결론 문단, 동일한 소제목 세트가 여러 글에 반복되는 페이지는 애드센스 심사와 검색 품질에 맞지 않는 반복 콘텐츠로 보고 게시 목록, sitemap, `pages/`에서 제거한다.
+- `이 문서는 그 신호가 어디서 나왔고`, `중요한 것은 이 흐름을 하나의 유행어로 소비하지 않고`, `앞으로의 관전 포인트는 세 가지입니다`, `좋은 위키 문서는 복잡한 변화를 독자의 일상 언어로`처럼 여러 글에 그대로 들어갈 수 있는 범용 문장은 본문에 쓰지 않는다.
 - 본문 문장 끝은 `~입니다`, `~합니다`, `~습니다`처럼 독자에게 설명하는 존댓말을 기본으로 하며, `~이다`, `~다`로 끝나는 반말·평서체 문장을 피한다.
 - 한 문단이 지나치게 길어지지 않도록 HTML의 `<p>` 단위로 자연스럽게 구분한다.
 - 각 글은 첫 본문 문단을 도입부로 두고, 그 이후 흐름을 기준으로 3~4개의 `<h3 class="article-subheading">` 소제목을 배치한다.
@@ -202,45 +222,22 @@ agents/
 - 마지막 문단은 `결론적으로`, `결국`, `요컨대`, `정리하면`, `종합하면`, `한마디로` 같은 공식적 마무리 표지어로 시작하지 않고, 글의 실제 함의와 다음 판단 기준을 자연스럽게 남기며 끝낸다.
 
 ## 분야별 페이지 생성 플로우 규칙
-- 이 사이트의 자동 토픽 페이지는 아래 플로우를 따른다.
-
-```text
-분야 확정
-  ↓
-분야별 최신 토픽 문장 10개 생성
-  ↓
-각 토픽 문장을 페이지 제목으로 사용
-  ↓
-`hotTopicsByDesk`에 분야별 토픽 문장 배열 등록
-  ↓
-`topicPages`가 각 토픽을 페이지 메타데이터로 변환
-  ↓
-글 제목을 영어로 요약한 slug를 `topicSlugsByDesk`에 등록하고 `pages/<slug>.html` 파일명 결정
-  ↓
-각 slug에 대응하는 장문 본문과 SEO 메타데이터를 담은 `pages/<slug>.html` 정적 글 페이지를 생성
-  ↓
-`pages = [...featuredPages, ...topicPages]`에 합쳐져 게시 목록에 노출
-  ↓
-홈 카드, 분야별 섹션, 검색, 상세 페이지에서 게시 완료 상태로 표시
-```
-
-- 분야별 최신 토픽 문장은 각 분야마다 10개를 기본 단위로 만든다.
+- 자동 토픽 문장 배열에서 대량으로 페이지를 생성하는 방식은 반복 콘텐츠를 만들 수 있으므로 사용하지 않는다.
+- 현재 `topicPages`는 반복 콘텐츠 재발행을 막기 위해 빈 배열로 유지한다.
+- `hotTopicsByDesk`, `topicSlugsByDesk`, `topicImagesBySlug` 같은 자동 토픽 생성용 배열과 매핑은 유지하지 않는다.
+- 새 글은 자동 대량 생성이 아니라 글 1개 단위로 기획, 작성, 이미지 선정, 정적 HTML 생성, manifest 반영, sitemap 반영, 검증을 끝낸 뒤 게시한다.
 - 사용자가 여러 개의 글 작성을 요청하면 한 번에 묶어 처리하지 않고, 글 1개마다 분야 에이전트 선택, 주제 확정, slug 확정, 본문 작성, 정적 HTML 생성, manifest 반영, sitemap 반영, 검증 루틴을 순서대로 반복한다.
 - 같은 분야의 글은 해당 분야 3명 에이전트가 발행 순서 기준으로 한 명씩 돌아가며 맡는다.
-- 토픽 문장 하나는 페이지 하나가 되며, 카드 제목과 상세 페이지 제목의 원천이다.
-- `hotTopicsByDesk`는 토픽 문장 저장소이고, 실제 화면 표시 분야는 `normalizeDesk()` 기준을 따른다.
-- `topicPages`는 `hotTopicsByDesk`를 순회해 `slug`, `title`, `desk`, `publishedAt`, `summary`, 선택적 `image`를 가진 manifest 항목을 만든다.
-- `topicSlugsByDesk`는 각 토픽 제목을 영어로 요약한 파일명 저장소이며, 기존 자동 토픽의 `createTopicPublishedAt(deskIndex, topicIndex)` 결과는 과거 항목 호환용으로만 취급한다. 새 글을 추가할 때는 자동 배정 시각을 그대로 쓰지 말고 최종 생성 시점의 실제 한국시간을 manifest와 정적 HTML, sitemap에 직접 반영한다.
-- `topicImagesBySlug`는 자동 토픽 페이지 중 이미지가 필요한 slug와 `image` 객체 상수를 연결하는 선택 매핑이다.
 - 게시가 완료되려면 manifest 항목과 같은 slug의 `pages/<slug>.html` 정적 글 페이지, 그리고 `sitemap.xml` URL이 반드시 함께 존재해야 한다.
+- 사용자가 별도로 요청하지 않는 한 분야별 공개 글 수가 3개를 초과하지 않게 관리하며, 새 글을 추가해 초과할 때는 같은 분야의 오래되었거나 품질이 낮은 글을 먼저 제거한다.
 - 상단 `최신 콘텐츠` 슬라이더는 전체 게시 목록에서 분야별 최신 발행 페이지 한 개씩을 가져와 구성한다.
 
 ## app.js 구현 규칙
 - 페이지 manifest 배열이 있어야 한다.
 - 각 항목은 최소 `slug`, `title`, `desk`, `summary`를 가진다. 대표 이미지는 웹검색으로 찾은 공개 사용 가능 외부 이미지만 사용하며, 이 경우 `image.externalSrc`, `image.alt`, `image.sourceUrl`, 필요한 경우 `image.width`, `image.height`를 함께 가진다. 기존 호환을 위해 `image.src`도 사용할 수 있으나, 새 글에서는 외부 이미지 URL을 `externalSrc`에 두는 것을 우선한다.
 - 각 항목의 `publishedAt`은 `YYYY-MM-DDTHH:mm:ss+09:00` 형식을 사용한다.
-- 현재 manifest는 `featuredPages`, `hotTopicsByDesk`에서 생성하는 `topicPages`, 그리고 `pages = [...featuredPages, ...topicPages]` 구조를 사용한다.
-- 제목 기반 토픽 slug 관리를 위해 `topicSlugsByDesk`를 사용하고, 자동 토픽 이미지 연결에는 `topicImagesBySlug`를 사용한다. `hotTopicsByDesk`, `deskSlugs`, `deskEmoji`에는 예전 분야 키가 남을 수 있지만 화면 표시와 뉴스레터 저장값은 `normalizeDesk()` 기준이어야 한다.
+- 현재 게시 manifest는 `featuredPages`를 주 원천으로 사용하며, 반복 콘텐츠 재발행 방지를 위해 `topicPages`는 빈 배열로 유지한다.
+- 자동 토픽 생성용 `hotTopicsByDesk`, `topicSlugsByDesk`, `topicImagesBySlug`, `deskSlugs`는 다시 추가하지 않고, 화면 표시와 뉴스레터 저장값은 `normalizeDesk()` 기준이어야 한다.
 - 홈 카드 렌더링, 검색 필터, 정적 글 페이지 본문 보강, 뉴스레터 저장은 모두 `app.js`에서 처리한다.
 - `app.js`는 `pages/*.md`에 의존하지 않고, 필요한 경우 `pages/<slug>.html`에서 `#article-body`를 읽어 상호작용용 상세 화면을 구성한다.
 - 라우트별 SEO 메타데이터 갱신도 `app.js`에서 처리한다.
@@ -250,7 +247,7 @@ agents/
 
 ## style.css 구현 규칙
 - 전역 스타일 파일은 `style.css` 하나만 유지한다.
-- 전역 배경과 헤더 배경은 흰색으로 맞추고, 패널·카드는 흰색 면 위에 낮은 대비의 경계선과 그림자로만 층위를 만든다.
+- 전역 배경과 헤더 배경은 흰색으로 맞추고, 패널·카드·공통 푸터는 흰색 면 위에 낮은 대비의 경계선과 그림자로만 층위를 만든다.
 - 홈 헤더는 브랜드명을 첫 줄에 두고, 분야별 메뉴를 같은 헤더 안의 다음 줄에 1줄 가로 스크롤 메뉴로 둔다.
 - 분야별 메뉴의 좌우 스크롤 동작은 유지하되, `scrollbar-width: none`과 WebKit 스크롤바 숨김 스타일로 화면에 스크롤바가 보이지 않게 한다.
 - `app.js`는 `520px` 이하 화면에서 `is-desk-menu-collapsed` 클래스를 적용해 햄버거 버튼 모드로 전환하고, 그보다 넓은 화면에서는 햄버거 버튼을 숨긴 뒤 분야별 메뉴를 즉시 보여준다.
@@ -258,6 +255,7 @@ agents/
 - 카드 상단에는 분야 라벨이 표시된다.
 - 뉴스레터 UI는 상세 페이지에만 표시된다.
 - 뉴스레터 박스는 제목/설명 제거 상태에 맞게 상하 여백을 같은 값으로 유지하며, 빈 상태 메시지는 공간을 차지하지 않는다.
+- 루트 안내 페이지는 `.legal-page` 스타일을 사용해 장문 고지를 읽기 좋게 배치한다.
 
 ## 종목 이슈 분야 규칙
 - 한국주식, 미국주식, 크립토 분야의 글은 특정 종목만 고정해서 반복하지 않고 거래대금이 많이 몰린 종목, 거래대금이 평소 대비 급증한 종목, 신규상장 종목, 공시·실적·락업·보호예수·유통량·온체인·파생상품 수급 변화가 큰 종목을 우선 후보로 삼는다.
@@ -355,7 +353,8 @@ agents/
 - 코드 변경이 있는 작업을 완료하면 변경사항을 의미 있는 단위로 한글 커밋 메시지를 사용해 git commit하고 GitHub 원격 저장소에 push한다. 단, 사용자가 해당 작업에서 커밋 또는 푸시 금지를 명시한 경우에는 그 지시를 우선한다.
 
 ## 완료 기준
-- 루트에는 `AGENTS.md`, `README.md`, `index.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만 남아 있어야 하며, 글별 HTML은 `pages/` 안에 둔다.
+- 루트에는 `AGENTS.md`, `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만 남아 있어야 하며, 글별 HTML은 `pages/` 안에 둔다.
 - 홈 카드와 상세 보기, 상세 페이지 뉴스레터 신청이 동작해야 한다.
 - `pages/` 안의 각 문서는 장문이어야 한다.
+- 소개, 문의, 개인정보처리방침, 면책고지 페이지는 홈과 모든 글 페이지의 공통 푸터에서 접근 가능해야 한다.
 - 문서와 실제 코드가 서로 충돌하지 않아야 한다.
