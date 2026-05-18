@@ -1934,12 +1934,12 @@ const US_STOCKS_AFTER_HOURS_VOLUME_IMAGE = {
   height: 4896,
 };
 
-const CRYPTO_TRADING_VOLUME_IMAGE = {
-  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/2/23/Bitcoin_Price.webp",
-  alt: "크립토 거래대금과 유동성 변화를 보여주는 비트코인 가격 차트",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bitcoin_Price.webp",
-  width: 4827,
-  height: 1644,
+const CRYPTO_BLOX_ETF_INCOME_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Trading_Floor_at_the_New_York_Stock_Exchange.jpg/960px-Trading_Floor_at_the_New_York_Stock_Exchange.jpg",
+  alt: "상장 ETF가 거래되는 금융시장 구조를 떠올리게 하는 뉴욕증권거래소 거래장 내부",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Trading_Floor_at_the_New_York_Stock_Exchange.jpg",
+  width: 960,
+  height: 640,
 };
 
 const CRYPTO_NEW_LISTING_IMAGE = {
@@ -2296,12 +2296,12 @@ const featuredPages = [
     image: US_STOCKS_AFTER_HOURS_VOLUME_IMAGE,
   },
   {
-    slug: "crypto-trading-volume-liquidity-quality-2026",
-    title: "크립토 거래대금 상위 코인은 가격 상승보다 유동성의 질을 먼저 봐야 합니다",
+    slug: "crypto-blox-etf-income-structure-2026",
+    title: "BLOX ETF는 높은 분배율보다 비트코인·이더 노출과 옵션 구조를 먼저 봐야 합니다",
     desk: "크립토",
-    publishedAt: "2026-05-13T22:09:35+09:00",
-    summary: "크립토에서 거래대금이 몰린 코인은 상승률보다 현물과 선물의 비중, 거래소 분산, 스테이블코인 유동성, 온체인 이동을 함께 확인해야 합니다.",
-    image: CRYPTO_TRADING_VOLUME_IMAGE,
+    publishedAt: "2026-05-18T23:29:44+09:00",
+    summary: "BLOX ETF를 볼 때는 분배율 숫자보다 비트코인·이더 관련 상장상품, 크립토 기업 주식, 옵션 전략, 순자산가치 변동을 함께 확인해야 합니다.",
+    image: CRYPTO_BLOX_ETF_INCOME_IMAGE,
   },
   {
     slug: "crypto-new-listing-float-lockup-2026",
