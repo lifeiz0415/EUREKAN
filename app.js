@@ -2246,7 +2246,167 @@ const RECIPE_SALMON_BEURRE_BLANC_IMAGE = {
   height: 800,
 };
 
+const TECHNOLOGY_AI_BROWSER_WORKFLOW_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Beaker_Browser_screenshot_of_Wikipedia.png/1280px-Beaker_Browser_screenshot_of_Wikipedia.png",
+  alt: "검색과 작업 실행이 한 화면에서 이어지는 AI 브라우저 흐름을 떠올리게 하는 웹 브라우저 화면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Beaker_Browser_screenshot_of_Wikipedia.png",
+  width: 1280,
+  height: 703,
+};
+
+const SEMICONDUCTOR_GLASS_SUBSTRATE_PACKAGING_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/GLASS_RESIN_COATED_SILICON_WAFERS_AND_SOLAR_CELLS_-_NARA_-_17468440.jpg/960px-GLASS_RESIN_COATED_SILICON_WAFERS_AND_SOLAR_CELLS_-_NARA_-_17468440.jpg",
+  alt: "유리 기판과 반도체 패키징 소재 변화를 떠올리게 하는 유리 코팅 웨이퍼 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:GLASS_RESIN_COATED_SILICON_WAFERS_AND_SOLAR_CELLS_-_NARA_-_17468440.jpg",
+  width: 960,
+  height: 1239,
+};
+
+const ECONOMY_LONG_RATE_MORTGAGE_PAYMENT_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Driveway_and_house_for_sale_sign_-_geograph.org.uk_-_4901404.jpg",
+  alt: "장기금리와 주택 구매 부담을 떠올리게 하는 주택 매매 표지판",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Driveway_and_house_for_sale_sign_-_geograph.org.uk_-_4901404.jpg",
+  width: 640,
+  height: 480,
+};
+
+const GLOBAL_ARCTIC_SHIPPING_INSURANCE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/120110-G-IA163-068-Healy-escorts-Renda.jpg/1280px-120110-G-IA163-068-Healy-escorts-Renda.jpg",
+  alt: "북극 항로의 쇄빙과 구조 인프라 중요성을 보여주는 해상 작전 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:120110-G-IA163-068-Healy-escorts-Renda.jpg",
+  width: 1280,
+  height: 914,
+};
+
+const POLITICS_ONLINE_POLLING_SAMPLE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Overview_of_Ballot_box_of_Czech_regional_election_2024_at_Z%C5%A0_Bene%C5%A1ova_in_T%C5%99eb%C3%AD%C4%8D%2C_T%C5%99eb%C3%AD%C4%8D_District.jpg/960px-Overview_of_Ballot_box_of_Czech_regional_election_2024_at_Z%C5%A0_Bene%C5%A1ova_in_T%C5%99eb%C3%AD%C4%8D%2C_T%C5%99eb%C3%AD%C4%8D_District.jpg",
+  alt: "온라인 여론조사의 표본과 실제 투표 행동 사이 차이를 떠올리게 하는 투표함",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Overview_of_Ballot_box_of_Czech_regional_election_2024_at_Z%C5%A0_Bene%C5%A1ova_in_T%C5%99eb%C3%AD%C4%8D,_T%C5%99eb%C3%AD%C4%8D_District.jpg",
+  width: 960,
+  height: 1440,
+};
+
+const INDUSTRY_TRANSFORMER_GRID_DELAY_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Electrical_Substation.JPG",
+  alt: "전력망 증설과 변압기 공급 병목을 떠올리게 하는 변전 설비",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Electrical_Substation.JPG",
+  width: 640,
+  height: 480,
+};
+
+const SCIENCE_OCEAN_CARBON_REMOVAL_MONITORING_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Oa-buoy-enrique-reef.jpg/1280px-Oa-buoy-enrique-reef.jpg",
+  alt: "해양 탄소와 산성화 데이터를 측정하는 관측 부이를 보여주는 바다 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Oa-buoy-enrique-reef.jpg",
+  width: 1280,
+  height: 746,
+};
+
+const CULTURE_WEBTOON_IP_ADAPTATION_RIGHTS_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/TPL_Zhonglun_Branch_comic_book_tags_intro_20200726.jpg/960px-TPL_Zhonglun_Branch_comic_book_tags_intro_20200726.jpg",
+  alt: "웹툰 원작과 2차 판권 확장을 떠올리게 하는 만화책 큐레이션 공간",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:TPL_Zhonglun_Branch_comic_book_tags_intro_20200726.jpg",
+  width: 960,
+  height: 1280,
+};
+
+const US_STOCKS_ORACLE_AI_CLOUD_CAPEX_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Oracle_Corporation_headquarters_1_2018-12-09.jpg/1280px-Oracle_Corporation_headquarters_1_2018-12-09.jpg",
+  alt: "오라클 AI 클라우드 투자와 현금흐름을 함께 떠올리게 하는 오라클 본사 건물",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Oracle_Corporation_headquarters_1_2018-12-09.jpg",
+  width: 1280,
+  height: 960,
+};
+
+const CRYPTO_TOKENIZED_TREASURIES_CUSTODY_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/United_States_Treasury_Building.JPG/1280px-United_States_Treasury_Building.JPG",
+  alt: "토큰화 국채와 수탁 구조를 떠올리게 하는 미국 재무부 건물",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:United_States_Treasury_Building.JPG",
+  width: 1280,
+  height: 526,
+};
+
 const featuredPages = [
+  {
+    slug: "technology-ai-browser-workflow-permission-2026",
+    title: "AI 브라우저는 검색창보다 권한과 업무 흐름을 먼저 바꾸고 있습니다",
+    desk: "기술",
+    publishedAt: "2026-05-19T15:25:00+09:00",
+    summary: "AI 브라우저가 검색, 비교, 예약, 문서 작성을 한 화면에서 이어 갈수록 성능보다 권한 확인과 실행 경계가 더 중요해지고 있습니다.",
+    image: TECHNOLOGY_AI_BROWSER_WORKFLOW_IMAGE,
+  },
+  {
+    slug: "semiconductor-glass-substrate-packaging-yield-2026",
+    title: "유리 기판 패키징은 미세공정보다 열과 뒤틀림 관리가 먼저입니다",
+    desk: "반도체",
+    publishedAt: "2026-05-19T15:25:01+09:00",
+    summary: "AI 칩 패키지가 커질수록 유리 기판은 배선 밀도와 평탄도 가능성을 보여 주지만, 양산에서는 열·뒤틀림·검사 공정이 먼저 검증되어야 합니다.",
+    image: SEMICONDUCTOR_GLASS_SUBSTRATE_PACKAGING_IMAGE,
+  },
+  {
+    slug: "economy-long-rate-mortgage-payment-2026",
+    title: "장기금리 재상승은 집값보다 월 상환액을 먼저 흔듭니다",
+    desk: "경제",
+    publishedAt: "2026-05-19T15:25:02+09:00",
+    summary: "주택 시장을 볼 때 집값 방향만큼 중요한 것은 장기금리와 대출 조건이 만드는 월 상환액이며, 가계의 체감 부담은 그 숫자에서 먼저 움직입니다.",
+    image: ECONOMY_LONG_RATE_MORTGAGE_PAYMENT_IMAGE,
+  },
+  {
+    slug: "global-arctic-shipping-insurance-rescue-2026",
+    title: "북극 항로 경쟁은 짧은 거리보다 보험과 구조 인프라를 먼저 묻습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-19T15:25:03+09:00",
+    summary: "북극 항로는 아시아와 유럽의 거리를 줄일 가능성을 보여 주지만, 실제 상업화는 쇄빙, 보험, 구조 체계, 항만 인프라가 좌우합니다.",
+    image: GLOBAL_ARCTIC_SHIPPING_INSURANCE_IMAGE,
+  },
+  {
+    slug: "politics-online-polling-sample-fatigue-2026",
+    title: "온라인 여론조사는 민심보다 표본과 응답 피로를 먼저 봐야 합니다",
+    desk: "정치",
+    publishedAt: "2026-05-19T15:25:04+09:00",
+    summary: "온라인 여론조사가 늘어날수록 수치 자체보다 표본을 어떻게 모집했는지, 응답 피로와 가중치가 결과를 어떻게 바꾸는지 확인해야 합니다.",
+    image: POLITICS_ONLINE_POLLING_SAMPLE_IMAGE,
+  },
+  {
+    slug: "industry-transformer-shortage-grid-delay-2026",
+    title: "변압기 부족은 데이터센터보다 전력망 증설 일정을 먼저 막고 있습니다",
+    desk: "산업",
+    publishedAt: "2026-05-19T15:25:05+09:00",
+    summary: "AI 데이터센터와 재생에너지 설비가 늘면서 전력망 장비, 특히 변압기 납기가 산업 프로젝트의 숨은 병목으로 떠오르고 있습니다.",
+    image: INDUSTRY_TRANSFORMER_GRID_DELAY_IMAGE,
+  },
+  {
+    slug: "science-ocean-carbon-removal-monitoring-2026",
+    title: "해양 탄소 제거는 제거량보다 생태계 측정을 먼저 증명해야 합니다",
+    desk: "과학",
+    publishedAt: "2026-05-19T15:25:06+09:00",
+    summary: "해양 기반 탄소 제거 기술은 큰 잠재력을 말하지만, 실제 기후 해법이 되려면 탄소가 얼마나 오래 저장되는지와 생태계 영향 측정이 먼저 필요합니다.",
+    image: SCIENCE_OCEAN_CARBON_REMOVAL_MONITORING_IMAGE,
+  },
+  {
+    slug: "culture-webtoon-ip-adaptation-rights-2026",
+    title: "웹툰 원작 경쟁은 조회수보다 2차 판권 설계가 더 중요해졌습니다",
+    desk: "문화",
+    publishedAt: "2026-05-19T15:25:07+09:00",
+    summary: "웹툰 원작이 드라마, 영화, 게임, 굿즈로 확장될수록 단순 조회수보다 캐릭터 권리와 각색 가능성, 글로벌 판권 구조가 핵심 경쟁력이 됩니다.",
+    image: CULTURE_WEBTOON_IP_ADAPTATION_RIGHTS_IMAGE,
+  },
+  {
+    slug: "us-stocks-oracle-ai-cloud-capex-cashflow-2026",
+    title: "오라클 주식은 AI 클라우드 수주보다 설비투자와 현금흐름을 함께 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-19T15:25:08+09:00",
+    summary: "오라클은 AI 클라우드 수요와 데이터센터 계약 기대가 커졌지만, 투자자는 수주잔고뿐 아니라 설비투자, 부채, 자유현금흐름 전환 속도를 함께 봐야 합니다.",
+    image: US_STOCKS_ORACLE_AI_CLOUD_CAPEX_IMAGE,
+  },
+  {
+    slug: "crypto-tokenized-treasuries-custody-settlement-2026",
+    title: "토큰화 국채는 수익률보다 수탁과 결제 구조를 먼저 봐야 합니다",
+    desk: "크립토",
+    publishedAt: "2026-05-19T15:25:09+09:00",
+    summary: "토큰화 국채 상품은 온체인에서 달러 수익률을 보여 주지만, 투자자는 발행 주체, 수탁 구조, 환매 조건, 허가형 지갑과 결제 경로를 먼저 확인해야 합니다.",
+    image: CRYPTO_TOKENIZED_TREASURIES_CUSTODY_IMAGE,
+  },
   {
     slug: "korean-stocks-trading-value-stock-flow-2026",
     title: "한국주식 거래대금 상위 종목은 왜 가격보다 자금의 방향을 먼저 보여주나",
