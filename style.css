@@ -273,12 +273,6 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   will-change: transform;
 }
 
-.trending-sequence {
-  display: flex;
-  flex: 0 0 auto;
-  gap: 16px;
-}
-
 .trending-track:not([data-slider-ready="true"]) {
   animation: none;
 }

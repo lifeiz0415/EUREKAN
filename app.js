@@ -3280,26 +3280,20 @@ function getSliderGroupItems(items = []) {
 function renderTrendingSlider(items) {
   const groupItems = getSliderGroupItems(items);
   const duration = Math.max(36, groupItems.length * 7);
-  const sequences = Array.from({ length: SLIDER_SEQUENCE_REPEAT_COUNT }, (_, sequenceIndex) => {
+  const cards = Array.from({ length: SLIDER_SEQUENCE_REPEAT_COUNT }, (_, sequenceIndex) => {
     const isDuplicateSequence = sequenceIndex > 0;
-    const cards = groupItems
+    return groupItems
       .map(({ page, duplicate }, itemIndex) => renderCard(page, "page-card--rail", isDuplicateSequence || duplicate, {
         priority: sequenceIndex === 0 && !duplicate && itemIndex === 0,
         eagerImage: sequenceIndex === 0 || (sequenceIndex === 1 && itemIndex < 4),
       }))
       .join("");
-
-    return `
-      <div class="trending-sequence" data-slider-sequence="${sequenceIndex}"${isDuplicateSequence ? ' aria-hidden="true"' : ""}>
-        ${cards}
-      </div>
-    `;
   }).join("");
 
   return `
       <div class="trending-window">
-        <div class="trending-track" style="--slide-duration: ${duration}s">
-          ${sequences}
+        <div class="trending-track" data-slider-group-size="${groupItems.length}" style="--slide-duration: ${duration}s">
+          ${cards}
         </div>
       </div>
   `;
@@ -3317,21 +3311,17 @@ function refreshSliderLoops() {
 }
 
 function refreshSliderLoop(track, attempt = 0) {
-  const sequences = [...track.querySelectorAll(".trending-sequence")];
-  const firstSequence = sequences[0];
-  const nextSequence = sequences[1];
-  const firstCard = firstSequence?.querySelector(".page-card");
-  const nextFirstCard = nextSequence?.querySelector(".page-card");
-  const layoutDistance = firstCard && nextFirstCard
-    ? nextFirstCard.offsetLeft - firstCard.offsetLeft
-    : 0;
-  const sequenceDistance = firstSequence && nextSequence
-    ? nextSequence.offsetLeft - firstSequence.offsetLeft
-    : 0;
+  const groupSize = Number(track.dataset.sliderGroupSize || 0);
+  const cards = [...track.querySelectorAll(".page-card--rail")];
+  const firstCard = cards[0];
+  const nextFirstCard = groupSize > 0 ? cards[groupSize] : null;
   const rectDistance = firstCard && nextFirstCard
     ? nextFirstCard.getBoundingClientRect().left - firstCard.getBoundingClientRect().left
     : 0;
-  const distance = Math.round(layoutDistance || sequenceDistance || rectDistance || firstSequence?.scrollWidth || 0);
+  const layoutDistance = firstCard && nextFirstCard
+    ? nextFirstCard.offsetLeft - firstCard.offsetLeft
+    : 0;
+  const distance = Math.round(rectDistance || layoutDistance || 0);
 
   if (!distance) {
     if (attempt < 6) window.setTimeout(() => refreshSliderLoop(track, attempt + 1), 80);
