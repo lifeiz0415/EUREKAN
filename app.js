@@ -1658,12 +1658,6 @@ const CULTURE_SPORTS_DOCUMENTARY_CAMERA_IMAGE = {
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Cameraman_football.jpg",
 };
 
-const CULTURE_IP_VIDEO_WEBTOON_IMAGE = {
-  src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Webtoon_second_generation.png?width=1280",
-  alt: "웹툰 원작 IP가 영상과 플랫폼으로 확장되는 흐름을 보여주는 웹툰 형식 이미지",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Webtoon_second_generation.png",
-};
-
 const CULTURE_NEWSLETTER_INDEPENDENT_MEDIA_IMAGE = {
   src: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Working_from_home_laptop_and_notepad.jpg?width=1280",
   alt: "노트와 노트북으로 독립 미디어 글을 작성하는 작업 공간",
@@ -2303,11 +2297,11 @@ const SCIENCE_OCEAN_CARBON_REMOVAL_MONITORING_IMAGE = {
 };
 
 const CULTURE_WEBTOON_IP_ADAPTATION_RIGHTS_IMAGE = {
-  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/TPL_Zhonglun_Branch_comic_book_tags_intro_20200726.jpg/960px-TPL_Zhonglun_Branch_comic_book_tags_intro_20200726.jpg",
-  alt: "웹툰 원작과 2차 판권 확장을 떠올리게 하는 만화책 큐레이션 공간",
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:TPL_Zhonglun_Branch_comic_book_tags_intro_20200726.jpg",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Webtoon_second_generation.png/960px-Webtoon_second_generation.png",
+  alt: "웹툰 원작 IP가 영상과 플랫폼으로 확장되는 흐름을 보여주는 웹툰 형식 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Webtoon_second_generation.png",
   width: 960,
-  height: 1280,
+  height: 720,
 };
 
 const US_STOCKS_ORACLE_AI_CLOUD_CAPEX_IMAGE = {
