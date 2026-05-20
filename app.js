@@ -2320,7 +2320,87 @@ const CRYPTO_TOKENIZED_TREASURIES_CUSTODY_IMAGE = {
   height: 526,
 };
 
+const KOREAN_STOCKS_TRANSFORMER_EXPORT_BACKLOG_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Transzformator.jpg/1280px-Transzformator.jpg",
+  alt: "전력기기 수주잔고와 변압기 공급 병목을 떠올리게 하는 대형 변압기",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Transzformator.jpg",
+  width: 1280,
+  height: 853,
+};
+
+const SPORTS_STREAMING_RIGHTS_CHURN_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TVCamera-Sideline-Action.jpg/960px-TVCamera-Sideline-Action.jpg",
+  alt: "스포츠 중계권과 스트리밍 시청 경험을 떠올리게 하는 경기장 방송 카메라",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:TVCamera-Sideline-Action.jpg",
+  width: 960,
+  height: 768,
+};
+
+const RECIPE_OI_NAENGGUK_SALT_BALANCE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Korean_cold_cucumber_soup-Oi_naengguk-01.jpg/1280px-Korean_cold_cucumber_soup-Oi_naengguk-01.jpg",
+  alt: "절임과 국물 간 균형을 설명하는 오이냉국 완성 사진",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korean_cold_cucumber_soup-Oi_naengguk-01.jpg",
+  width: 1280,
+  height: 960,
+};
+
+const SEMICONDUCTOR_HBM4_POWER_TEST_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Silicon_wafer_close_view.jpg/1280px-Silicon_wafer_close_view.jpg",
+  alt: "HBM4 양산에서 전력과 테스트 병목을 떠올리게 하는 반도체 웨이퍼 근접 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Silicon_wafer_close_view.jpg",
+  width: 1280,
+  height: 960,
+};
+
+const SCIENCE_GLP1_MUSCLE_MAINTENANCE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Adult_body_composition_through_air_displacement_plethysmography.jpg/1280px-Adult_body_composition_through_air_displacement_plethysmography.jpg",
+  alt: "비만 치료 이후 근손실과 체성분 관리를 떠올리게 하는 체성분 측정 장비",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Adult_body_composition_through_air_displacement_plethysmography.jpg",
+  width: 1280,
+  height: 960,
+};
+
 const featuredPages = [
+  {
+    slug: "korean-stocks-transformer-export-backlog-2026",
+    title: "전력기기 한국주식은 변압기 수출보다 수주잔고와 증설 비용을 함께 봐야 합니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-21T01:09:20+09:00",
+    summary: "AI 데이터센터와 전력망 투자가 커지면서 한국 전력기기주는 변압기 수출 기대를 받지만, 투자자는 수주잔고, 납기, 증설 투자, 원재료 비용을 함께 확인해야 합니다.",
+    image: KOREAN_STOCKS_TRANSFORMER_EXPORT_BACKLOG_IMAGE,
+  },
+  {
+    slug: "sports-streaming-rights-churn-advertising-2026",
+    title: "스포츠 스트리밍 중계권은 경기 수보다 해지율과 광고 단가를 함께 봐야 합니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-21T01:09:19+09:00",
+    summary: "스포츠 중계가 스트리밍으로 옮겨가면서 플랫폼은 독점 경기 수만큼 해지율, 광고 단가, 번들 전략, 팬의 시청 피로를 함께 관리해야 합니다.",
+    image: SPORTS_STREAMING_RIGHTS_CHURN_IMAGE,
+  },
+  {
+    slug: "recipe-oi-naengguk-salt-balance-2026",
+    title: "오이냉국은 얼음보다 절임과 국물 간을 먼저 맞춰야 시원합니다",
+    desk: "레시피",
+    publishedAt: "2026-05-21T01:09:18+09:00",
+    summary: "오이냉국을 싱겁거나 물컹하지 않게 만들기 위해 오이 절임, 식초와 소금의 균형, 얼음 넣는 시점, 보관 기준을 나누어 정리합니다.",
+    image: RECIPE_OI_NAENGGUK_SALT_BALANCE_IMAGE,
+  },
+  {
+    slug: "semiconductor-hbm4-power-test-bottleneck-2026",
+    title: "HBM4 경쟁은 대역폭보다 전력과 테스트 시간이 먼저 병목이 됩니다",
+    desk: "반도체",
+    publishedAt: "2026-05-21T01:09:17+09:00",
+    summary: "HBM4가 AI 가속기 성능을 끌어올리지만, 실제 양산 경쟁은 대역폭 발표보다 전력, 발열, 패키지 신뢰성, 테스트 시간이 좌우합니다.",
+    image: SEMICONDUCTOR_HBM4_POWER_TEST_IMAGE,
+  },
+  {
+    slug: "science-glp1-muscle-loss-maintenance-2026",
+    title: "비만약 이후 관리는 체중보다 근손실과 지속 치료 기준을 먼저 묻습니다",
+    desk: "과학",
+    publishedAt: "2026-05-21T01:09:16+09:00",
+    summary: "GLP-1 계열 비만 치료가 넓어질수록 감량 수치만큼 근손실, 운동, 영양, 중단 뒤 체중 유지 기준을 함께 봐야 합니다.",
+    image: SCIENCE_GLP1_MUSCLE_MAINTENANCE_IMAGE,
+  },
   {
     slug: "technology-ai-browser-workflow-permission-2026",
     title: "AI 브라우저는 검색창보다 권한과 업무 흐름을 먼저 바꾸고 있습니다",
