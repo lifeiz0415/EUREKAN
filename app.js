@@ -2360,7 +2360,215 @@ const SCIENCE_GLP1_MUSCLE_MAINTENANCE_IMAGE = {
   height: 960,
 };
 
+const TECHNOLOGY_AI_SEARCH_AGENTS_SOURCE_TRUST_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mountain_View_%28CA%2C_USA%29%2C_Charleston_Road%2C_Google-Schild_--_2022_--_2896.jpg/1280px-Mountain_View_%28CA%2C_USA%29%2C_Charleston_Road%2C_Google-Schild_--_2022_--_2896.jpg",
+  alt: "AI 검색 에이전트와 검색 플랫폼 변화를 떠올리게 하는 구글 표지판",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Mountain_View_(CA,_USA),_Charleston_Road,_Google-Schild_--_2022_--_2896.jpg",
+  width: 1280,
+  height: 853
+};
+
+const SEMICONDUCTOR_BACKSIDE_POWER_PACKAGING_YIELD_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Silicon_wafer.jpg/1280px-Silicon_wafer.jpg",
+  alt: "후면전력과 첨단 패키징 경쟁을 떠올리게 하는 실리콘 웨이퍼",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Silicon_wafer.jpg",
+  width: 1280,
+  height: 960
+};
+
+const ECONOMY_APRIL_CPI_RATE_DELAY_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Seal_of_the_United_States_Federal_Reserve_Board.svg/1280px-Seal_of_the_United_States_Federal_Reserve_Board.svg.png",
+  alt: "물가와 금리 판단을 떠올리게 하는 미국 연방준비제도 이사회 인장",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Seal_of_the_United_States_Federal_Reserve_Board.svg",
+  width: 1280,
+  height: 1280
+};
+
+const GLOBAL_HORMUZ_ENERGY_RISK_INSURANCE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/d/db/Crude_oil%2C_condensate%2C_and_petroleum_products_transported_through_the_Strait_of_Hormuz_in_2014_through_2018_%2848097472312%29.png",
+  alt: "호르무즈 해협을 통한 원유와 석유제품 운송량을 보여주는 지도와 막대그래프",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Crude_oil,_condensate,_and_petroleum_products_transported_through_the_Strait_of_Hormuz_in_2014_through_2018_(48097472312).png",
+  width: 778,
+  height: 366
+};
+
+const POLITICS_LOCAL_ELECTION_POLICY_VERIFICATION_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/9/99/Cardboard_ballot_box_-_Smithsonian.jpg",
+  alt: "지방선거 공약 검증을 떠올리게 하는 사람 얼굴이 없는 투표함",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cardboard_ballot_box_-_Smithsonian.jpg",
+  width: 485,
+  height: 600
+};
+
+const INDUSTRY_AI_DATA_CENTER_GRID_COST_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Servers_in_a_Rack.jpg/1280px-Servers_in_a_Rack.jpg",
+  alt: "AI 데이터센터의 전력 접속과 냉각 병목을 보여주는 서버 랙",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Servers_in_a_Rack.jpg",
+  width: 1280,
+  height: 1924
+};
+
+const SCIENCE_BIRD_FLU_WASTEWATER_SURVEILLANCE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/H5N1_Influenza_A_Virus.jpg/1280px-H5N1_Influenza_A_Virus.jpg",
+  alt: "조류인플루엔자 감시와 바이러스 변이를 떠올리게 하는 H5N1 바이러스 전자현미경 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:H5N1_Influenza_A_Virus.jpg",
+  width: 1280,
+  height: 996
+};
+
+const CULTURE_AI_FILM_RIGHTS_CANNES_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/5/50/35mmProjectorUnknown.jpg",
+  alt: "AI 영화와 창작 권리 논쟁을 떠올리게 하는 35mm 영화 영사기",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:35mmProjectorUnknown.jpg",
+  width: 1195,
+  height: 839
+};
+
+const SPORTS_WORLD_CUP_TICKETS_DYNAMIC_PRICING_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/2/24/MetLife_Stadium_Exterior.jpg",
+  alt: "월드컵 티켓과 경기장 접근 비용을 떠올리게 하는 메트라이프 스타디움 외관",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:MetLife_Stadium_Exterior.jpg",
+  width: 1024,
+  height: 765
+};
+
+const KOREAN_STOCKS_DEFENSE_BACKLOG_CASHFLOW_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Coordinated_thunder_-_1_of_7.jpg/1280px-Coordinated_thunder_-_1_of_7.jpg",
+  alt: "방산 수출 계약과 납품 일정을 떠올리게 하는 자주포 훈련 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Coordinated_thunder_-_1_of_7.jpg",
+  width: 1280,
+  height: 776
+};
+
+const US_STOCKS_NVIDIA_AI_FACTORY_MARGIN_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Nvidia_logo.svg/1280px-Nvidia_logo.svg.png",
+  alt: "엔비디아 AI 인프라 수요와 주가 판단을 떠올리게 하는 엔비디아 로고",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Nvidia_logo.svg",
+  width: 1280,
+  height: 720
+};
+
+const CRYPTO_ETHEREUM_GLAMSTERDAM_GASLIMIT_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/960px-Ethereum_logo_2014.svg.png",
+  alt: "이더리움 업그레이드와 가스 한도 논의를 떠올리게 하는 이더리움 로고",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Ethereum_logo_2014.svg",
+  width: 960,
+  height: 1563
+};
+
+const RECIPE_BIBIM_GUKSU_NOODLE_RINSE_SAUCE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bibim-guksu.jpg/1280px-Bibim-guksu.jpg",
+  alt: "면 헹굼과 양념장 농도가 중요한 비빔국수 완성 사진",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bibim-guksu.jpg",
+  width: 1280,
+  height: 853
+};
+
 const featuredPages = [
+  {
+    slug: "technology-ai-search-agents-source-trust-2026",
+    title: "AI 검색 에이전트는 답변 속도보다 출처와 실행 권한을 먼저 묻습니다",
+    desk: "기술",
+    publishedAt: "2026-05-23T02:05:19+09:00",
+    summary: "Google I/O 2026 이후 AI 검색은 답변을 보여주는 단계를 넘어 에이전트가 정보를 추적하고 예약과 쇼핑까지 연결하는 방향으로 바뀌고 있습니다.",
+    image: TECHNOLOGY_AI_SEARCH_AGENTS_SOURCE_TRUST_IMAGE,
+  },
+  {
+    slug: "semiconductor-backside-power-packaging-yield-2026",
+    title: "후면전력 반도체 경쟁은 선폭보다 전력망과 패키징 수율을 먼저 봐야 합니다",
+    desk: "반도체",
+    publishedAt: "2026-05-23T02:05:18+09:00",
+    summary: "TSMC와 Intel이 후면전력과 첨단 패키징을 앞세우면서 반도체 경쟁은 미세공정 숫자보다 전력 공급, 열, 수율, 고객 검증으로 옮겨가고 있습니다.",
+    image: SEMICONDUCTOR_BACKSIDE_POWER_PACKAGING_YIELD_IMAGE,
+  },
+  {
+    slug: "economy-april-cpi-rate-delay-2026",
+    title: "미국 물가 재가열은 금리 인하보다 생활비와 기업 마진을 먼저 흔듭니다",
+    desk: "경제",
+    publishedAt: "2026-05-23T02:05:17+09:00",
+    summary: "2026년 4월 미국 CPI가 다시 부담을 키우면서 시장은 금리 인하 시점보다 생활비, 임금, 기업 마진이 받는 압박을 함께 봐야 합니다.",
+    image: ECONOMY_APRIL_CPI_RATE_DELAY_IMAGE,
+  },
+  {
+    slug: "global-hormuz-energy-risk-insurance-2026",
+    title: "호르무즈 긴장은 유가보다 보험료와 에너지 운송 시간을 먼저 흔듭니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-23T02:05:16+09:00",
+    summary: "중동 긴장이 커질 때 시장은 유가 급등만 보지만 실제 부담은 해상 보험료, 우회 운송, 정제 마진, 각국 비축 정책에서 먼저 나타납니다.",
+    image: GLOBAL_HORMUZ_ENERGY_RISK_INSURANCE_IMAGE,
+  },
+  {
+    slug: "politics-local-election-policy-verification-2026",
+    title: "지방선거 막판 공약은 구호보다 재원과 집행 순서를 먼저 봐야 합니다",
+    desk: "정치",
+    publishedAt: "2026-05-23T02:05:15+09:00",
+    summary: "2026년 지방선거 공식 선거운동이 시작되면서 유권자는 후보의 구호보다 예산 출처, 조례 권한, 집행 순서, 사후 평가 방식을 확인해야 합니다.",
+    image: POLITICS_LOCAL_ELECTION_POLICY_VERIFICATION_IMAGE,
+  },
+  {
+    slug: "industry-ai-data-center-grid-cost-2026",
+    title: "AI 데이터센터 산업은 서버보다 전력 접속과 지역 비용이 먼저 병목이 됩니다",
+    desk: "산업",
+    publishedAt: "2026-05-23T02:05:14+09:00",
+    summary: "AI 데이터센터 투자가 늘수록 산업 경쟁력은 GPU 확보만이 아니라 전력망 접속, 냉각, 물 사용, 지역 전기요금 부담을 함께 관리하는 능력에서 갈립니다.",
+    image: INDUSTRY_AI_DATA_CENTER_GRID_COST_IMAGE,
+  },
+  {
+    slug: "science-bird-flu-wastewater-surveillance-2026",
+    title: "조류인플루엔자 감시는 확진자 수보다 농장과 폐수 신호를 함께 봐야 합니다",
+    desk: "과학",
+    publishedAt: "2026-05-23T02:05:13+09:00",
+    summary: "H5 조류인플루엔자 감시는 사람 확진 사례만으로는 부족하며, 가금류 농장, 젖소, 야생 조류, 폐수 감시 데이터를 함께 읽어야 위험을 더 일찍 볼 수 있습니다.",
+    image: SCIENCE_BIRD_FLU_WASTEWATER_SURVEILLANCE_IMAGE,
+  },
+  {
+    slug: "culture-ai-film-rights-cannes-2026",
+    title: "AI 영화 논쟁은 기술 시연보다 저작권과 창작자 보상이 먼저입니다",
+    desk: "문화",
+    publishedAt: "2026-05-23T02:05:12+09:00",
+    summary: "칸 영화제와 글로벌 콘텐츠 시장에서 생성형 AI가 창작 도구로 올라오면서 문화 산업은 제작비 절감보다 권리, 보상, 표시 기준을 먼저 정해야 합니다.",
+    image: CULTURE_AI_FILM_RIGHTS_CANNES_IMAGE,
+  },
+  {
+    slug: "sports-world-cup-tickets-dynamic-pricing-2026",
+    title: "월드컵 티켓 열기는 가격보다 공식 재판매와 이동 비용을 먼저 봐야 합니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-23T02:05:11+09:00",
+    summary: "2026 북중미 월드컵 티켓 수요가 커질수록 팬은 표값뿐 아니라 공식 재판매, 숙박, 도시 간 이동, 경기장 접근 비용을 함께 계산해야 합니다.",
+    image: SPORTS_WORLD_CUP_TICKETS_DYNAMIC_PRICING_IMAGE,
+  },
+  {
+    slug: "korean-stocks-defense-backlog-cashflow-2026",
+    title: "방산 한국주식은 수출 계약보다 납품 속도와 현금흐름을 먼저 봐야 합니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-23T02:05:10+09:00",
+    summary: "방산주가 해외 수주와 안보 수요로 주목받지만 투자자는 계약 규모보다 납품 일정, 운전자본, 환율, 현금흐름을 함께 확인해야 합니다.",
+    image: KOREAN_STOCKS_DEFENSE_BACKLOG_CASHFLOW_IMAGE,
+  },
+  {
+    slug: "us-stocks-nvidia-ai-factory-margin-2026",
+    title: "엔비디아 주식은 AI 공장 수요보다 마진과 공급 제약을 함께 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-23T02:05:09+09:00",
+    summary: "엔비디아 실적은 AI 인프라 수요를 보여 주지만 투자자는 데이터센터 매출 성장만큼 공급 제약, 매출총이익률, 고객 집중, 차세대 제품 전환을 확인해야 합니다.",
+    image: US_STOCKS_NVIDIA_AI_FACTORY_MARGIN_IMAGE,
+  },
+  {
+    slug: "crypto-ethereum-glamsterdam-gaslimit-2026",
+    title: "이더리움 다음 업그레이드는 가스 한도보다 사용자 체감 비용을 먼저 봐야 합니다",
+    desk: "크립토",
+    publishedAt: "2026-05-23T02:05:08+09:00",
+    summary: "이더리움 생태계는 Fusaka 이후 Glamsterdam 준비와 가스 한도 논의로 이동했지만, 투자자와 사용자는 처리량 숫자보다 지갑 UX, 롤업 비용, 검증자 리스크를 함께 봐야 합니다.",
+    image: CRYPTO_ETHEREUM_GLAMSTERDAM_GASLIMIT_IMAGE,
+  },
+  {
+    slug: "recipe-bibim-guksu-noodle-rinse-sauce-2026",
+    title: "비빔국수는 양념장보다 면 헹굼과 물기 제거가 먼저입니다",
+    desk: "레시피",
+    publishedAt: "2026-05-23T02:05:07+09:00",
+    summary: "비빔국수를 집에서 만들 때 양념장이 겉돌지 않게 하려면 소면 삶기, 찬물 헹굼, 물기 제거, 마지막 참기름 타이밍을 나누어 봐야 합니다.",
+    image: RECIPE_BIBIM_GUKSU_NOODLE_RINSE_SAUCE_IMAGE,
+  },
   {
     slug: "korean-stocks-transformer-export-backlog-2026",
     title: "전력기기 한국주식은 변압기 수출보다 수주잔고와 증설 비용을 함께 봐야 합니다",
