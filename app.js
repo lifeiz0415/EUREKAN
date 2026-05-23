@@ -3294,7 +3294,7 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁�
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260523-mstr-strategy";
+const AUDIO_ASSET_VERSION = "20260523-speech-highlight";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
 const CARD_IMAGE_WIDTHS = [330, 500, 960];
 const ARTICLE_IMAGE_WIDTHS = [500, 960, 1280];
@@ -3465,6 +3465,8 @@ let activePage = null;
 let activeArticleSpeechText = "";
 let activeArticleAudioSrc = "";
 let activeArticleAudioReady = false;
+let activeSpeechHighlightSegments = [];
+let activeSpeechHighlightNode = null;
 let activeUtterance = null;
 let activeSpeechChunks = [];
 let activeSpeechChunkIndex = 0;
@@ -3503,6 +3505,8 @@ const ARTICLE_BODY_SELECTOR = "#article-body";
 const ARTICLE_BODY_ASSET_ATTRIBUTES = ["src", "href", "poster"];
 const ARTICLE_BODY_ASSET_SELECTOR = ARTICLE_BODY_ASSET_ATTRIBUTES.map((attributeName) => `[${attributeName}]`).join(", ");
 const ARTICLE_BODY_ENHANCEMENT_SELECTOR = "script, .article-slider-section";
+const SPEECH_HIGHLIGHT_SELECTOR = "p, .article-subheading";
+const SPEECH_HIGHLIGHT_EXCLUDE_SELECTOR = "figcaption, script, noscript, iframe, .article-slider-section, .article-video, .article-media";
 
 
 function normalizeDesk(desk = "") {
@@ -4591,12 +4595,75 @@ function renderArticleHtmlContent(articleHtml, page) {
   renderArticleEnhancements(page);
 }
 
+function getNormalizedSpeechText(value = "") {
+  return String(value || "").replace(/\s+/g, " ").trim();
+}
+
+function getArticleSpeechBlocks() {
+  if (!articleBodyNode) return [];
+  return [...articleBodyNode.querySelectorAll(SPEECH_HIGHLIGHT_SELECTOR)]
+    .filter((node) => !node.closest(SPEECH_HIGHLIGHT_EXCLUDE_SELECTOR))
+    .map((node) => ({ node, text: getNormalizedSpeechText(node.textContent) }))
+    .filter((item) => item.text);
+}
+
+function clearActiveSpeechHighlight() {
+  if (activeSpeechHighlightNode) {
+    activeSpeechHighlightNode.classList.remove("article-speech-highlight");
+    activeSpeechHighlightNode.removeAttribute("aria-current");
+  }
+  activeSpeechHighlightNode = null;
+}
+
+function buildSpeechHighlightSegments(pageTitle = "") {
+  clearActiveSpeechHighlight();
+  activeSpeechHighlightSegments = [];
+
+  let cursor = getNormalizedSpeechText(pageTitle).length + 2;
+  getArticleSpeechBlocks().forEach(({ node, text }) => {
+    const start = cursor;
+    const end = start + text.length;
+    activeSpeechHighlightSegments.push({ node, start, end });
+    cursor = end + 2;
+  });
+}
+
+function getSpeechHighlightIndex(progressIndex = activeSpeechCurrentIndex) {
+  const safeIndex = Number(progressIndex);
+  if (!Number.isFinite(safeIndex)) return 0;
+  if (!isArticleAudioMode()) return getNormalizedSpeechIndex(safeIndex);
+
+  const duration = Number(voiceAudioNode?.duration) || 0;
+  if (!duration || !activeArticleSpeechText) return 0;
+  const progressRatio = Math.max(0, Math.min(1, safeIndex / duration));
+  return Math.round(progressRatio * activeArticleSpeechText.length);
+}
+
+function updateSpeechHighlight(progressIndex = activeSpeechCurrentIndex) {
+  if (!isArticleSpeechActive() && !isVoiceProgressSeeking) {
+    clearActiveSpeechHighlight();
+    return;
+  }
+
+  if (!activeSpeechHighlightSegments.length) {
+    clearActiveSpeechHighlight();
+    return;
+  }
+
+  const highlightIndex = getSpeechHighlightIndex(progressIndex);
+  const segment = activeSpeechHighlightSegments.find((item) => highlightIndex >= item.start && highlightIndex < item.end)
+    || activeSpeechHighlightSegments.find((item) => highlightIndex < item.end)
+    || activeSpeechHighlightSegments[activeSpeechHighlightSegments.length - 1];
+
+  if (!segment || activeSpeechHighlightNode === segment.node) return;
+  clearActiveSpeechHighlight();
+  activeSpeechHighlightNode = segment.node;
+  activeSpeechHighlightNode.classList.add("article-speech-highlight");
+  activeSpeechHighlightNode.setAttribute("aria-current", "true");
+}
+
 function getArticleSpeechText() {
-  const speechNode = articleBodyNode.cloneNode(true);
-  speechNode
-    .querySelectorAll("figcaption, script, noscript, iframe, .article-slider-section, .article-video")
-    .forEach((node) => node.remove());
-  return speechNode.textContent.trim();
+  return getArticleSpeechBlocks().map((item) => item.text).join("\n\n");
 }
 
 function getArticleSpeechPayload(page) {
@@ -4605,6 +4672,7 @@ function getArticleSpeechPayload(page) {
 
 function renderArticleBodyAndVoice(articleHtml, page) {
   renderArticleHtmlContent(articleHtml, page);
+  buildSpeechHighlightSegments(page?.title);
   setVoiceReady(getArticleSpeechPayload(page), page);
 }
 
@@ -4837,6 +4905,7 @@ function updateVoiceProgress(index = activeSpeechCurrentIndex) {
     voiceProgressNode.value = String(nextTime);
     voiceProgressNode.setAttribute("aria-valuetext", `${formatAudioTime(nextTime)} / ${formatAudioTime(displayDuration)}`);
     if (voiceProgressLabelNode) voiceProgressLabelNode.textContent = `${formatAudioTime(nextTime)} / ${formatAudioTime(displayDuration)}`;
+    updateSpeechHighlight(nextTime);
     return;
   }
 
@@ -4850,6 +4919,7 @@ function updateVoiceProgress(index = activeSpeechCurrentIndex) {
   voiceProgressNode.value = String(nextIndex);
   voiceProgressNode.setAttribute("aria-valuetext", `${percent}%`);
   if (voiceProgressLabelNode) voiceProgressLabelNode.textContent = `${percent}%`;
+  updateSpeechHighlight(nextIndex);
 }
 
 function getVoiceProgressTime() {
@@ -4919,6 +4989,7 @@ function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) 
     activeSpeechStartOffset = 0;
     updateVoiceProgress(0);
   }
+  if (clearStatus || resetProgress) clearActiveSpeechHighlight();
   if (clearStatus) voiceStatusNode.textContent = "";
 }
 
