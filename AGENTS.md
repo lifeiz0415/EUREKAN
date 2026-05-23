@@ -125,6 +125,7 @@ agents/
 
 ## SEO 규칙
 - 기본 SEO 메타 태그는 `index.html`의 `<head>`에 둔다.
+- Google Search Console 소유권 확인용 `google-site-verification` 메타 태그는 홈페이지 `index.html`의 `<head>` 안에 유지한다.
 - 라우트별 제목, 설명, canonical, Open Graph, Twitter 카드, JSON-LD 구조화 데이터는 `app.js`에서 현재 화면 상태에 맞게 갱신한다.
 - 홈은 `WebSite`, 분야별 전체 보기는 `CollectionPage`, 상세 글은 `Article` JSON-LD를 사용한다.
 - 이미지가 등록된 정적 글은 Open Graph, Twitter 카드, `Article` JSON-LD의 `image` 메타데이터를 함께 제공한다.
