@@ -10,7 +10,7 @@
 - 프로젝트명: Eurekan.org
 - 제품 형태: 정적 단일 페이지형 위키/매거진
 - 핵심 목표: 지금 사람들이 가장 궁금해하는 주제를 분야별 장문 페이지로 보여주는 읽기 중심 사이트
-- 현재 구현 원칙: 백엔드 없이 `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만으로 동작한다.
+- 현재 구현 원칙: 백엔드 없이 `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `agents/`만으로 동작한다.
 
 ## 현재 파일 구조
 ```text
@@ -25,6 +25,7 @@ style.css
 app.js
 data.json
 robots.txt
+ads.txt
 sitemap.xml
 pages/
   <slug>.html
@@ -39,6 +40,7 @@ agents/
 - 실제 사용자-facing 사이트는 루트의 `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`와 `pages/<slug>.html` 정적 글 페이지를 사용한다.
 - `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`은 애드센스 신청과 사이트 신뢰 확보를 위한 루트 정적 안내 페이지로 유지한다.
 - 검색엔진 수집 보조 파일은 루트의 `robots.txt`, `sitemap.xml`을 사용하며, 루트 안내 페이지도 `sitemap.xml`에 포함한다.
+- Google AdSense 판매자 인증 파일은 루트의 `ads.txt`로 유지한다.
 - 정적 파일 경로는 배포 위치에 덜 민감하도록 상대 경로를 우선 사용한다.
 
 ## 진실의 원천 우선순위
@@ -126,6 +128,9 @@ agents/
 ## SEO 규칙
 - 기본 SEO 메타 태그는 `index.html`의 `<head>`에 둔다.
 - Google Search Console 소유권 확인용 `google-site-verification` 메타 태그는 홈페이지 `index.html`의 `<head>` 안에 유지한다.
+- Google AdSense 자동 광고 스크립트는 홈, 루트 안내 페이지, 모든 정적 글 페이지의 `<head>` 안에 유지한다.
+- Google AdSense 사이트 연결용 `google-adsense-account` 메타 태그는 홈, 루트 안내 페이지, 모든 정적 글 페이지의 `<head>` 안에 유지한다.
+- Google AdSense용 `ads.txt`에는 `google.com, pub-2425701206768506, DIRECT, f08c47fec0942fa0` 레코드를 유지한다.
 - 라우트별 제목, 설명, canonical, Open Graph, Twitter 카드, JSON-LD 구조화 데이터는 `app.js`에서 현재 화면 상태에 맞게 갱신한다.
 - 홈은 `WebSite`, 분야별 전체 보기는 `CollectionPage`, 상세 글은 `Article` JSON-LD를 사용한다.
 - 이미지가 등록된 정적 글은 Open Graph, Twitter 카드, `Article` JSON-LD의 `image` 메타데이터를 함께 제공한다.
@@ -366,7 +371,7 @@ agents/
 - 코드 변경이 있는 작업을 완료하면 변경사항을 의미 있는 단위로 한글 커밋 메시지를 사용해 git commit하고 GitHub 원격 저장소에 push한다. 단, 사용자가 해당 작업에서 커밋 또는 푸시 금지를 명시한 경우에는 그 지시를 우선한다.
 
 ## 완료 기준
-- 루트에는 `AGENTS.md`, `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `sitemap.xml`, `pages/`, `agents/`만 남아 있어야 하며, 글별 HTML은 `pages/` 안에 둔다.
+- 루트에는 `AGENTS.md`, `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `agents/`만 남아 있어야 하며, 글별 HTML은 `pages/` 안에 둔다.
 - 홈 카드와 상세 보기, 상세 페이지 뉴스레터 신청이 동작해야 한다.
 - `pages/` 안의 각 문서는 장문이어야 한다.
 - 소개, 문의, 개인정보처리방침, 면책고지 페이지는 홈과 모든 글 페이지의 공통 푸터에서 접근 가능해야 한다.
