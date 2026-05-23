@@ -2464,6 +2464,14 @@ const RECIPE_BIBIM_GUKSU_NOODLE_RINSE_SAUCE_IMAGE = {
   height: 853
 };
 
+const RECIPE_GAMJAJEON_STARCH_PAN_HEAT_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Korean_potato_pancake-Gamjajeon-01.jpg",
+  alt: "감자전의 전분과 팬 온도 조절을 설명하는 노릇한 감자전 사진",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Korean_potato_pancake-Gamjajeon-01.jpg",
+  width: 800,
+  height: 598
+};
+
 const SCIENCE_STORIE_RING_CURRENT_SPACE_WEATHER_IMAGE = {
   externalSrc: "https://svs.gsfc.nasa.gov/vis/a010000/a015000/a015011/ISS_RENA_Magnetic_Field.00001_print.jpg",
   alt: "국제우주정거장에서 STORIE가 지구 자기장과 링 커런트를 관측하는 방식을 보여주는 NASA 시각화",
@@ -2497,6 +2505,22 @@ const INDUSTRY_RARE_EARTH_MAGNET_SUPPLY_CHAIN_IMAGE = {
 };
 
 const featuredPages = [
+  {
+    slug: "recipe-gamjajeon-starch-pan-heat-2026",
+    title: "감자전은 물을 넣기보다 전분과 팬 온도를 먼저 맞춰야 합니다",
+    desk: "레시피",
+    publishedAt: "2026-05-23T15:28:27+09:00",
+    summary: "감자전이 눅눅하거나 찢어지지 않게 만들려면 감자를 간 뒤 전분을 가라앉히고 수분을 조절하며 팬 온도와 기름 양을 단계별로 맞춰야 합니다.",
+    image: RECIPE_GAMJAJEON_STARCH_PAN_HEAT_IMAGE,
+    video: {
+      youtubeId: "N82hJpl5cMM",
+      title: "겉바속촉 초간단 감자전",
+      channel: "백종원 PAIK JONG WON",
+      sourceUrl: "https://www.youtube.com/watch?v=N82hJpl5cMM",
+      thumbnailUrl: "https://i.ytimg.com/vi/N82hJpl5cMM/hqdefault.jpg",
+      description: "감자전을 간단하게 부치는 방법을 한국어로 설명하는 백종원 PAIK JONG WON 채널 영상입니다.",
+    },
+  },
   {
     slug: "industry-rare-earth-magnet-supply-chain-2026",
     title: "희토류 자석 공급망은 광산보다 분리와 자석 공장 시간을 먼저 봐야 합니다",
@@ -3153,7 +3177,7 @@ const CARD_MIN_WIDTH = 280;
 const CARD_GAP = 16;
 const MAX_SECTION_ROWS = 1;
 const PAGINATION_WINDOW_SIZE = 10;
-const SLIDER_SEQUENCE_REPEAT_COUNT = 4;
+const SLIDER_SEQUENCE_REPEAT_COUNT = 2;
 const SLIDER_MIN_GROUP_ITEM_COUNT = 6;
 const SITE_NAME = "Eurekan.org";
 const SCHEMA_CONTEXT = "https://schema.org";
@@ -3162,6 +3186,11 @@ const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
 const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠, 한국주식, 미국주식, 크립토, 레시피 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
+const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
+const CARD_IMAGE_WIDTHS = [330, 500, 960];
+const ARTICLE_IMAGE_WIDTHS = [500, 960, 1280];
+const CARD_IMAGE_SIZES = "(max-width: 640px) 44vw, (max-width: 960px) 30vw, 320px";
+const ARTICLE_IMAGE_SIZES = "(max-width: 760px) calc(100vw - 48px), 900px";
 
 const topicPages = [];
 
@@ -3191,6 +3220,8 @@ let articleMainNode = articleViewNode?.querySelector(".article-main");
 let articleTocNode = document.querySelector("#article-toc");
 const voiceButtonNode = document.querySelector("#voice-button");
 const voiceStatusNode = document.querySelector("#voice-status");
+let voiceProgressNode = document.querySelector("#voice-progress");
+let voiceProgressLabelNode = document.querySelector("#voice-progress-label");
 const newsletterTitleNode = document.querySelector("#newsletter-title");
 const newsletterCopyNode = document.querySelector("#newsletter-copy");
 const newsletterPanelNode = document.querySelector(".article-newsletter");
@@ -3273,6 +3304,19 @@ if (!articleTocNode && articleViewNode && articleBodyNode) {
   articleViewNode.insertBefore(articleTocNode, articleBodyNode);
 }
 
+if (voiceButtonNode && !voiceProgressNode) {
+  const progressWrapper = document.createElement("label");
+  progressWrapper.className = "voice-progress";
+  progressWrapper.innerHTML = `
+    <span class="visually-hidden">음성 재생 위치</span>
+    <input id="voice-progress" class="voice-progress__range" type="range" min="0" max="100" value="0" step="1" disabled aria-label="음성 재생 위치" aria-valuetext="0%" />
+    <span id="voice-progress-label" class="voice-progress__label" aria-hidden="true">0%</span>
+  `;
+  voiceButtonNode.insertAdjacentElement("afterend", progressWrapper);
+  voiceProgressNode = progressWrapper.querySelector("#voice-progress");
+  voiceProgressLabelNode = progressWrapper.querySelector("#voice-progress-label");
+}
+
 function ensureArticleLayout() {
   if (!articleViewNode || !articleBodyNode) return;
 
@@ -3296,6 +3340,14 @@ let dataStore = createEmptyDataStore();
 let activePage = null;
 let activeArticleSpeechText = "";
 let activeUtterance = null;
+let activeSpeechStartOffset = 0;
+let activeSpeechCurrentIndex = 0;
+let isArticleSpeechPlaying = false;
+let isArticleSpeechStopping = false;
+let speechProgressTimer = 0;
+let speechSeekTimer = 0;
+let speechRunId = 0;
+let speechStartedAt = 0;
 let resizeRenderTimer = 0;
 let publishRefreshTimer = 0;
 let deskMenuMeasureTimer = 0;
@@ -3370,6 +3422,79 @@ function getImagePrimarySrc(image = {}) {
   return String(image.externalSrc || image.src || "").trim();
 }
 
+function getWikimediaUploadUrl(value = "") {
+  const rawValue = String(value || "").trim();
+  if (!rawValue) return null;
+
+  try {
+    const url = new URL(rawValue, APP_BASE_URL);
+    return url.hostname === "upload.wikimedia.org" ? url : null;
+  } catch {
+    return null;
+  }
+}
+
+function canResizeImageSrc(value = "") {
+  const url = getWikimediaUploadUrl(value);
+  if (!url) return false;
+
+  const pathParts = url.pathname.split("/").filter(Boolean);
+  const filename = pathParts[pathParts.length - 1] || "";
+  const isDirectSvg = pathParts[2] !== "thumb" && /\.svg$/i.test(filename);
+  return pathParts[0] === "wikipedia" && pathParts[1] === "commons" && !isDirectSvg;
+}
+
+function getResizedImageSrc(value = "", width = 640) {
+  const rawValue = String(value || "").trim();
+  const url = getWikimediaUploadUrl(rawValue);
+  if (!url || !canResizeImageSrc(rawValue)) return rawValue;
+
+  const pathParts = url.pathname.split("/").filter(Boolean);
+  const safeWidth = Math.max(160, Math.round(Number(width) || 640));
+
+  if (pathParts[2] === "thumb") {
+    const thumbParts = pathParts.slice(0, -1);
+    const lastSegment = pathParts[pathParts.length - 1] || "";
+    const resizedSegment = lastSegment.replace(/^\d+px-/, `${safeWidth}px-`);
+    if (!resizedSegment || resizedSegment === lastSegment && !/^\d+px-/.test(lastSegment)) return rawValue;
+    url.pathname = `/${[...thumbParts, resizedSegment].join("/")}`;
+    return url.toString();
+  }
+
+  const filename = pathParts[pathParts.length - 1] || "";
+  if (!filename) return rawValue;
+  url.pathname = `/${["wikipedia", "commons", "thumb", ...pathParts.slice(2), `${safeWidth}px-${filename}`].join("/")}`;
+  return url.toString();
+}
+
+function getResponsiveImageWidths(image = {}, preferredWidths = CARD_IMAGE_WIDTHS) {
+  const sourceWidth = Number(image.width || 0);
+  const widths = preferredWidths.filter((width) => !sourceWidth || width <= sourceWidth);
+  const fallbackWidth = sourceWidth || preferredWidths[0] || 640;
+  return [...new Set(widths.length ? widths : [fallbackWidth])];
+}
+
+function buildImageSrcSet(src = "", image = {}, preferredWidths = CARD_IMAGE_WIDTHS) {
+  if (!canResizeImageSrc(src)) return "";
+
+  const seen = new Set();
+  return getResponsiveImageWidths(image, preferredWidths)
+    .map((width) => ({ width, src: getResizedImageSrc(src, width) }))
+    .filter((candidate) => {
+      if (!candidate.src || seen.has(candidate.src)) return false;
+      seen.add(candidate.src);
+      return true;
+    })
+    .map((candidate) => `${escapeHtml(candidate.src)} ${candidate.width}w`)
+    .join(", ");
+}
+
+function getPreferredImageSrc(src = "", image = {}, preferredWidths = CARD_IMAGE_WIDTHS) {
+  if (!canResizeImageSrc(src)) return src;
+  const widths = getResponsiveImageWidths(image, preferredWidths);
+  return getResizedImageSrc(src, widths[Math.min(widths.length - 1, 1)] || widths[0]);
+}
+
 function getPageImage(page) {
   const image = page?.image || {};
   const src = getImagePrimarySrc(image);
@@ -3435,11 +3560,16 @@ function renderPageCardImage(page, { priority = false, eager = false } = {}) {
   const image = getPageImage(page);
   if (!image) return "";
   const loading = priority || eager ? "eager" : "lazy";
-  const priorityAttributes = priority ? ' fetchpriority="high"' : "";
+  const fetchPriority = priority ? "high" : "low";
+  const src = getPreferredImageSrc(image.src, image, CARD_IMAGE_WIDTHS);
+  const srcset = buildImageSrcSet(image.src, image, CARD_IMAGE_WIDTHS);
+  const responsiveAttributes = srcset
+    ? ` srcset="${srcset}" sizes="${escapeHtml(CARD_IMAGE_SIZES)}"`
+    : "";
 
   return `
     <figure class="page-card__media">
-      <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="${loading}" decoding="async"${priorityAttributes} />
+      <img src="${escapeHtml(src)}"${responsiveAttributes} alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="${loading}" decoding="async" fetchpriority="${fetchPriority}" />
     </figure>
   `;
 }
@@ -3447,6 +3577,11 @@ function renderPageCardImage(page, { priority = false, eager = false } = {}) {
 function renderArticleImage(page) {
   const image = getPageImage(page);
   if (!image) return "";
+  const src = getPreferredImageSrc(image.src, image, ARTICLE_IMAGE_WIDTHS);
+  const srcset = buildImageSrcSet(image.src, image, ARTICLE_IMAGE_WIDTHS);
+  const responsiveAttributes = srcset
+    ? ` srcset="${srcset}" sizes="${escapeHtml(ARTICLE_IMAGE_SIZES)}"`
+    : "";
   const sourceCaption = image.sourceUrl
     ? `<figcaption>출처 : <a href="${escapeHtml(image.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(image.sourceUrl)}</a></figcaption>`
     : image.credit
@@ -3456,7 +3591,7 @@ function renderArticleImage(page) {
   return `
     <figure class="article-media">
       <div class="article-media__frame">
-        <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="eager" decoding="async" />
+        <img src="${escapeHtml(src)}"${responsiveAttributes} alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="eager" decoding="async" fetchpriority="high" />
       </div>
       ${sourceCaption}
     </figure>
@@ -3959,7 +4094,7 @@ function renderTrendingSlider(items) {
     return groupItems
       .map(({ page, duplicate }, itemIndex) => renderCard(page, "page-card--rail", isDuplicateSequence || duplicate, {
         priority: sequenceIndex === 0 && !duplicate && itemIndex === 0,
-        eagerImage: sequenceIndex === 0 || (sequenceIndex === 1 && itemIndex < 4),
+        eagerImage: sequenceIndex === 0 && !duplicate && itemIndex === 0,
       }))
       .join("");
   }).join("");
@@ -3974,14 +4109,11 @@ function renderTrendingSlider(items) {
 }
 
 function refreshSliderLoops() {
-  const refreshTracks = () => {
+  window.requestAnimationFrame(() => {
     document.querySelectorAll(".trending-track").forEach((track) => {
       refreshSliderLoop(track);
     });
-  };
-
-  refreshTracks();
-  window.requestAnimationFrame(refreshTracks);
+  });
 }
 
 function refreshSliderLoop(track, attempt = 0) {
@@ -4364,32 +4496,100 @@ function renderArticleSliderSection(title, items) {
 
 function setVoiceReady(text = "") {
   activeArticleSpeechText = text;
+  activeSpeechStartOffset = 0;
+  activeSpeechCurrentIndex = 0;
+  clearTimeout(speechSeekTimer);
   if (!isSpeechSupported()) {
     voiceButtonNode.disabled = true;
     voiceStatusNode.textContent = "이 브라우저는 음성 읽기를 지원하지 않습니다.";
+    setVoiceProgressEnabled(false);
+    updateVoiceProgress(0);
     return;
   }
 
   voiceButtonNode.disabled = !activeArticleSpeechText;
   voiceButtonNode.textContent = "음성으로 읽어주기";
+  setVoiceProgressEnabled(Boolean(activeArticleSpeechText));
+  updateVoiceProgress(0);
   if (!activeArticleSpeechText) voiceStatusNode.textContent = "";
 }
 
-function stopArticleSpeech(clearStatus = false) {
+function setVoiceProgressEnabled(isEnabled) {
+  if (!voiceProgressNode) return;
+  voiceProgressNode.disabled = !isEnabled;
+}
+
+function getNormalizedSpeechIndex(value = 0) {
+  const maxIndex = activeArticleSpeechText.length;
+  const nextIndex = Number(value);
+  if (!Number.isFinite(nextIndex)) return 0;
+  return Math.max(0, Math.min(maxIndex, Math.round(nextIndex)));
+}
+
+function updateVoiceProgress(index = activeSpeechCurrentIndex) {
+  if (!voiceProgressNode) return;
+  const maxIndex = Math.max(1, activeArticleSpeechText.length);
+  const nextIndex = getNormalizedSpeechIndex(index);
+  const percent = Math.round((nextIndex / maxIndex) * 100);
+
+  activeSpeechCurrentIndex = nextIndex;
+  voiceProgressNode.max = String(maxIndex);
+  voiceProgressNode.value = String(nextIndex);
+  voiceProgressNode.setAttribute("aria-valuetext", `${percent}%`);
+  if (voiceProgressLabelNode) voiceProgressLabelNode.textContent = `${percent}%`;
+}
+
+function stopSpeechProgressTimer() {
+  clearInterval(speechProgressTimer);
+  speechProgressTimer = 0;
+}
+
+function startSpeechProgressTimer(runId) {
+  stopSpeechProgressTimer();
+  speechStartedAt = Date.now();
+  speechProgressTimer = window.setInterval(() => {
+    if (runId !== speechRunId || !isArticleSpeechPlaying || !activeArticleSpeechText) return;
+    const elapsedSeconds = Math.max(0, (Date.now() - speechStartedAt) / 1000);
+    const estimatedIndex = Math.min(
+      Math.max(0, activeArticleSpeechText.length - 1),
+      activeSpeechStartOffset + Math.floor(elapsedSeconds * SPEECH_ESTIMATED_CHARS_PER_SECOND),
+    );
+    if (estimatedIndex > activeSpeechCurrentIndex) updateVoiceProgress(estimatedIndex);
+  }, 500);
+}
+
+function isArticleSpeechActive() {
+  return Boolean(activeUtterance || isArticleSpeechPlaying || (!isArticleSpeechStopping && isSpeechSupported() && window.speechSynthesis.speaking));
+}
+
+function getSpeechStartOffset(index = 0) {
+  let startOffset = getNormalizedSpeechIndex(index);
+  if (startOffset >= activeArticleSpeechText.length) return 0;
+  while (startOffset < activeArticleSpeechText.length && /\s/.test(activeArticleSpeechText[startOffset])) {
+    startOffset += 1;
+  }
+  return startOffset >= activeArticleSpeechText.length ? 0 : startOffset;
+}
+
+function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) {
+  clearTimeout(speechSeekTimer);
+  speechRunId += 1;
+  isArticleSpeechStopping = true;
+  isArticleSpeechPlaying = false;
+  stopSpeechProgressTimer();
   if (isSpeechSupported()) window.speechSynthesis.cancel();
   activeUtterance = null;
   voiceButtonNode.textContent = "음성으로 읽어주기";
+  if (resetProgress) {
+    activeSpeechStartOffset = 0;
+    updateVoiceProgress(0);
+  }
   if (clearStatus) voiceStatusNode.textContent = "";
 }
 
-function toggleArticleSpeech() {
+function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
   if (!isSpeechSupported()) {
     voiceStatusNode.textContent = "이 브라우저는 음성 읽기를 지원하지 않습니다.";
-    return;
-  }
-
-  if (activeUtterance) {
-    stopArticleSpeech(true);
     return;
   }
 
@@ -4398,28 +4598,83 @@ function toggleArticleSpeech() {
     return;
   }
 
-  const utterance = new SpeechSynthesisUtterance(activeArticleSpeechText);
+  const startOffset = getSpeechStartOffset(startIndex);
+  const spokenText = activeArticleSpeechText.slice(startOffset);
+  const utterance = new SpeechSynthesisUtterance(spokenText);
+  const runId = speechRunId + 1;
+
+  speechRunId = runId;
+  isArticleSpeechStopping = false;
+  isArticleSpeechPlaying = true;
+  activeUtterance = utterance;
+  activeSpeechStartOffset = startOffset;
+  updateVoiceProgress(startOffset);
+
   utterance.lang = "ko-KR";
   utterance.rate = 1;
   utterance.pitch = 1;
   utterance.onstart = () => {
+    if (runId !== speechRunId) return;
     activeUtterance = utterance;
+    isArticleSpeechPlaying = true;
     voiceButtonNode.textContent = "음성읽기 중지하기";
     voiceStatusNode.textContent = "";
+    startSpeechProgressTimer(runId);
+  };
+  utterance.onboundary = (event) => {
+    if (runId !== speechRunId || isArticleSpeechStopping) return;
+    updateVoiceProgress(activeSpeechStartOffset + Number(event.charIndex || 0));
   };
   utterance.onend = () => {
+    if (runId !== speechRunId || isArticleSpeechStopping) return;
     activeUtterance = null;
+    isArticleSpeechPlaying = false;
+    stopSpeechProgressTimer();
+    updateVoiceProgress(activeArticleSpeechText.length);
     voiceButtonNode.textContent = "음성으로 읽어주기";
     voiceStatusNode.textContent = "읽기가 끝났습니다.";
   };
   utterance.onerror = () => {
+    if (runId !== speechRunId) return;
     activeUtterance = null;
+    isArticleSpeechPlaying = false;
+    stopSpeechProgressTimer();
     voiceButtonNode.textContent = "음성으로 읽어주기";
-    voiceStatusNode.textContent = "음성 읽기를 중단했습니다.";
+    if (!isArticleSpeechStopping) voiceStatusNode.textContent = "음성 읽기를 중단했습니다.";
   };
 
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(utterance);
+  voiceButtonNode.textContent = "음성읽기 중지하기";
+  startSpeechProgressTimer(runId);
+}
+
+function toggleArticleSpeech() {
+  if (isArticleSpeechActive()) {
+    stopArticleSpeech(true);
+    return;
+  }
+
+  startArticleSpeech(activeSpeechCurrentIndex);
+}
+
+function handleVoiceProgressInput() {
+  if (!voiceProgressNode || !activeArticleSpeechText) return;
+  updateVoiceProgress(voiceProgressNode.value);
+  if (!isArticleSpeechActive()) return;
+
+  const seekIndex = activeSpeechCurrentIndex;
+  clearTimeout(speechSeekTimer);
+  speechSeekTimer = window.setTimeout(() => {
+    startArticleSpeech(seekIndex);
+  }, 250);
+}
+
+function handleVoiceProgressChange() {
+  if (!voiceProgressNode || !activeArticleSpeechText || !isArticleSpeechActive()) return;
+  const seekIndex = getNormalizedSpeechIndex(voiceProgressNode.value);
+  clearTimeout(speechSeekTimer);
+  startArticleSpeech(seekIndex);
 }
 
 function showListView() {
@@ -4715,6 +4970,8 @@ pageListNode.addEventListener("click", (event) => {
   renderCards(searchNode.value);
 });
 voiceButtonNode.addEventListener("click", toggleArticleSpeech);
+voiceProgressNode?.addEventListener("input", handleVoiceProgressInput);
+voiceProgressNode?.addEventListener("change", handleVoiceProgressChange);
 deskMenuToggleNode?.addEventListener("click", () => {
   setDeskMenuOpen(!deskMenuNode.classList.contains("desk-menu--open"));
 });

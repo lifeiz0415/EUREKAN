@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/</loc>
-    <lastmod>2026-05-23T14:53:14+09:00</lastmod>
+    <lastmod>2026-05-23T15:28:27+09:00</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -87,8 +87,13 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/?desk=%EB%A0%88%EC%8B%9C%ED%94%BC</loc>
-    <lastmod>2026-05-23T14:17:10+09:00</lastmod>
+    <lastmod>2026-05-23T15:28:27+09:00</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKAN/pages/recipe-gamjajeon-starch-pan-heat-2026.html</loc>
+    <lastmod>2026-05-23T15:28:27+09:00</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/pages/industry-rare-earth-magnet-supply-chain-2026.html</loc>
