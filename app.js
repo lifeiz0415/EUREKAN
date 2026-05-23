@@ -2488,7 +2488,32 @@ const GLOBAL_ATLANTIC_HURRICANE_READINESS_IMAGE = {
   height: 720
 };
 
+const INDUSTRY_RARE_EARTH_MAGNET_SUPPLY_CHAIN_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Neodymium_magnet_-_19-11-2010.JPG/1280px-Neodymium_magnet_-_19-11-2010.JPG",
+  alt: "하드디스크에서 분리한 네오디뮴 자석으로 희토류 영구자석 공급망을 설명하는 사진",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Neodymium_magnet_-_19-11-2010.JPG",
+  width: 1280,
+  height: 853
+};
+
 const featuredPages = [
+  {
+    slug: "industry-rare-earth-magnet-supply-chain-2026",
+    title: "희토류 자석 공급망은 광산보다 분리와 자석 공장 시간을 먼저 봐야 합니다",
+    desk: "산업",
+    publishedAt: "2026-05-23T14:53:14+09:00",
+    summary: "IEA의 2026년 희토류 보고서와 미국의 공급망 지원 발표는 전기차, 로봇, 풍력, 방산 산업의 병목이 광산 확보만이 아니라 분리·금속화·영구자석 제조와 인증 시간에 있다는 점을 보여줍니다.",
+    image: INDUSTRY_RARE_EARTH_MAGNET_SUPPLY_CHAIN_IMAGE,
+    video: {
+      youtubeId: "RIuGbHb_b-s",
+      title: "The Hunt for a New Kind of Magnet to Power the Future | Bloomberg Primer",
+      channel: "Bloomberg Originals",
+      sourceUrl: "https://www.youtube.com/watch?v=RIuGbHb_b-s",
+      thumbnailUrl: "https://i.ytimg.com/vi/RIuGbHb_b-s/hqdefault.jpg",
+      description: "희토류 자석 의존도와 대체 자석 개발이 에너지·모빌리티 산업에 주는 의미를 설명하는 Bloomberg Originals 영상입니다.",
+      uploadDate: "2025-03-20",
+    },
+  },
   {
     slug: "technology-pqc-crypto-inventory-migration-2026",
     title: "양자내성 암호 전환은 새 알고리즘보다 시스템 목록을 먼저 묻습니다",
