@@ -3147,6 +3147,7 @@ const emptyStateNode = document.querySelector("#empty-state");
 const listHeadingNode = document.querySelector("#list-heading");
 const searchNode = document.querySelector("#page-search");
 const searchFieldNode = document.querySelector(".search-field");
+let contentCountNode = document.querySelector(".content-count");
 const heroNode = document.querySelector(".hero");
 const heroInnerNode = document.querySelector(".hero__inner");
 const brandNode = document.querySelector(".brand");
@@ -3218,9 +3219,22 @@ function ensureHeaderLayout() {
     layoutNode.prepend(searchBarNode);
   }
 
+  if (!contentCountNode) {
+    contentCountNode = document.createElement("p");
+    contentCountNode.className = "content-count";
+  }
+
+  contentCountNode.setAttribute("aria-live", "polite");
+
   if (searchFieldNode.parentElement !== searchBarNode) {
     searchBarNode.append(searchFieldNode);
   }
+
+  if (contentCountNode.parentElement !== searchBarNode || contentCountNode.nextElementSibling !== searchFieldNode) {
+    searchBarNode.insertBefore(contentCountNode, searchFieldNode);
+  }
+
+  updateContentCount();
 }
 
 ensureHeaderLayout();
@@ -3811,6 +3825,7 @@ function scheduleNextPublishRefresh() {
   if (!Number.isFinite(nextPublishTime)) return;
   const delay = Math.min(Math.max(nextPublishTime - now + 1000, 1000), 2147483647);
   publishRefreshTimer = window.setTimeout(() => {
+    updateContentCount();
     renderDeskMenu();
     syncViewFromLocation();
     scheduleNextPublishRefresh();
@@ -3821,7 +3836,16 @@ function formatCountLabel(count) {
   return `(${count})`;
 }
 
+function updateContentCount() {
+  if (!contentCountNode) return;
+  const count = getPublishedPages().length;
+  const formattedCount = String(count).padStart(3, "0");
+  contentCountNode.textContent = `총 콘텐츠 ${formattedCount}개`;
+  contentCountNode.setAttribute("aria-label", `총 콘텐츠 ${count}개`);
+}
+
 function renderDeskMenu() {
+  updateContentCount();
   deskMenuNode.innerHTML = getDeskList()
     .map((desk) => `<a class="desk-menu__link" href="${escapeHtml(getRouteUrl("desk", desk))}">${escapeHtml(getDeskLabel(desk))}</a>`)
     .join("");
