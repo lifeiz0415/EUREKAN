@@ -2464,7 +2464,81 @@ const RECIPE_BIBIM_GUKSU_NOODLE_RINSE_SAUCE_IMAGE = {
   height: 853
 };
 
+const SCIENCE_STORIE_RING_CURRENT_SPACE_WEATHER_IMAGE = {
+  externalSrc: "https://svs.gsfc.nasa.gov/vis/a010000/a015000/a015011/ISS_RENA_Magnetic_Field.00001_print.jpg",
+  alt: "국제우주정거장에서 STORIE가 지구 자기장과 링 커런트를 관측하는 방식을 보여주는 NASA 시각화",
+  sourceUrl: "https://svs.gsfc.nasa.gov/15011",
+  width: 1024,
+  height: 791
+};
+
+const TECHNOLOGY_PQC_CRYPTO_INVENTORY_MIGRATION_IMAGE = {
+  externalSrc: "https://www.nist.gov/sites/default/files/styles/960_x_960_limit/public/images/2023/08/22/PQC_Algo_Pre-standardization-vid.jpg?itok=tpUkOrYt",
+  alt: "기존 암호 표준과 새 양자내성 암호 표준의 전환을 설명하는 NIST 일러스트",
+  sourceUrl: "https://www.nist.gov/cybersecurity/what-post-quantum-cryptography",
+  width: 960,
+  height: 540
+};
+
+const GLOBAL_ATLANTIC_HURRICANE_READINESS_IMAGE = {
+  externalSrc: "https://www.cpc.ncep.noaa.gov/products/outlooks/hurricane2026/May/Slide1.JPG",
+  alt: "NOAA가 공개한 2026년 북대서양 허리케인 시즌 전망 지도와 확률 안내 그래픽",
+  sourceUrl: "https://www.cpc.ncep.noaa.gov/products/outlooks/hurricane2026/May/hurricane.shtml",
+  width: 1280,
+  height: 720
+};
+
 const featuredPages = [
+  {
+    slug: "technology-pqc-crypto-inventory-migration-2026",
+    title: "양자내성 암호 전환은 새 알고리즘보다 시스템 목록을 먼저 묻습니다",
+    desk: "기술",
+    publishedAt: "2026-05-23T14:17:10+09:00",
+    summary: "NIST가 추가 디지털 서명 후보 9개를 다음 평가 단계로 넘기면서 양자내성 암호 전환은 알고리즘 이름보다 조직이 쓰는 인증서, 서명, 장비 목록을 먼저 정리하는 일이 됐습니다.",
+    image: TECHNOLOGY_PQC_CRYPTO_INVENTORY_MIGRATION_IMAGE,
+    video: {
+      youtubeId: "_MoRcYLN-7U",
+      title: "Post Quantum Cryptography - Computerphile",
+      channel: "Computerphile",
+      sourceUrl: "https://www.youtube.com/watch?v=_MoRcYLN-7U",
+      thumbnailUrl: "https://i.ytimg.com/vi/_MoRcYLN-7U/hqdefault.jpg",
+      description: "양자컴퓨터 시대의 암호 전환이 왜 필요한지 설명하는 Computerphile의 교육 영상입니다.",
+    },
+  },
+  {
+    slug: "global-atlantic-hurricane-season-readiness-2026",
+    title: "대서양 허리케인 전망은 낮은 확률보다 지역 대비 시간을 먼저 묻습니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-23T14:17:09+09:00",
+    summary: "NOAA는 2026년 대서양 허리케인 시즌이 평년보다 낮을 가능성을 더 크게 봤지만, 해안 도시와 보험·전력·물류 시스템에는 한 번의 상륙이 충분히 큰 시험이 됩니다.",
+    image: GLOBAL_ATLANTIC_HURRICANE_READINESS_IMAGE,
+    video: {
+      youtubeId: "AdrEXUFE4cw",
+      title: "NOAA gives 2026 Atlantic hurricane season forecast: Full video",
+      channel: "News 19 WLTX",
+      sourceUrl: "https://www.youtube.com/watch?v=AdrEXUFE4cw",
+      thumbnailUrl: "https://i.ytimg.com/vi/AdrEXUFE4cw/hqdefault.jpg",
+      description: "NOAA의 2026년 대서양 허리케인 시즌 전망 발표를 전한 전체 영상입니다.",
+      uploadDate: "2026-05-21",
+    },
+  },
+  {
+    slug: "science-storie-ring-current-space-weather-2026",
+    title: "우주 날씨 관측은 태양폭풍보다 지구 둘레 입자 흐름을 먼저 봐야 합니다",
+    desk: "과학",
+    publishedAt: "2026-05-23T13:34:23+09:00",
+    summary: "NASA의 STORIE 임무는 국제우주정거장 바깥에서 지구 둘레 링 커런트를 관측해 태양폭풍이 위성과 전력망에 주는 영향을 더 일찍 이해하려 합니다.",
+    image: SCIENCE_STORIE_RING_CURRENT_SPACE_WEATHER_IMAGE,
+    video: {
+      youtubeId: "aMu8p_LX6i8",
+      title: "NASA Experiment to Track Space ‘Doughnut’ Encircling Earth",
+      channel: "NASA Goddard",
+      sourceUrl: "https://www.youtube.com/watch?v=aMu8p_LX6i8",
+      thumbnailUrl: "https://i.ytimg.com/vi/aMu8p_LX6i8/hqdefault.jpg",
+      description: "NASA Goddard가 STORIE 임무와 지구 둘레 링 커런트 관측 방식을 설명한 공식 영상입니다.",
+      uploadDate: "2026-05-01",
+    },
+  },
   {
     slug: "technology-ai-search-agents-source-trust-2026",
     title: "AI 검색 에이전트는 답변 속도보다 출처와 실행 권한을 먼저 묻습니다",
@@ -2472,6 +2546,13 @@ const featuredPages = [
     publishedAt: "2026-05-23T02:05:19+09:00",
     summary: "Google I/O 2026 이후 AI 검색은 답변을 보여주는 단계를 넘어 에이전트가 정보를 추적하고 예약과 쇼핑까지 연결하는 방향으로 바뀌고 있습니다.",
     image: TECHNOLOGY_AI_SEARCH_AGENTS_SOURCE_TRUST_IMAGE,
+    video: {
+      youtubeId: "p6EBMG8OEBI",
+      title: "What's New in Search",
+      channel: "Google",
+      sourceUrl: "https://www.youtube.com/watch?v=p6EBMG8OEBI",
+      thumbnailUrl: "https://i.ytimg.com/vi/p6EBMG8OEBI/hqdefault.jpg",
+    },
   },
   {
     slug: "semiconductor-backside-power-packaging-yield-2026",
@@ -3192,6 +3273,7 @@ const BASE_OPEN_GRAPH_META = {
 const ARTICLE_META_PROPERTIES = ["article:section", "article:published_time", "article:modified_time"];
 const IMAGE_PROPERTY_META = ["og:image", "og:image:alt"];
 const IMAGE_NAME_META = ["twitter:image", "twitter:image:alt"];
+const VIDEO_PROPERTY_META = ["og:video", "og:video:url", "og:video:secure_url", "og:video:type", "og:video:width", "og:video:height"];
 const ARTICLE_BODY_SELECTOR = "#article-body";
 const ARTICLE_BODY_ASSET_ATTRIBUTES = ["src", "href", "poster"];
 const ARTICLE_BODY_ASSET_SELECTOR = ARTICLE_BODY_ASSET_ATTRIBUTES.map((attributeName) => `[${attributeName}]`).join(", ");
@@ -3264,6 +3346,52 @@ function getPageImage(page) {
   };
 }
 
+function getYouTubeIdFromValue(value = "") {
+  const rawValue = String(value || "").trim();
+  if (/^[a-zA-Z0-9_-]{11}$/.test(rawValue)) return rawValue;
+
+  try {
+    const url = new URL(rawValue);
+    const videoId = url.searchParams.get("v");
+    if (/^[a-zA-Z0-9_-]{11}$/.test(videoId || "")) return videoId;
+
+    const pathParts = url.pathname.split("/").filter(Boolean);
+    const shortVideoId = url.hostname.includes("youtu.be") ? pathParts[0] : "";
+    if (/^[a-zA-Z0-9_-]{11}$/.test(shortVideoId || "")) return shortVideoId;
+
+    const embeddedVideoId = pathParts.find((part, index) => ["embed", "shorts", "live"].includes(pathParts[index - 1]));
+    if (/^[a-zA-Z0-9_-]{11}$/.test(embeddedVideoId || "")) return embeddedVideoId;
+  } catch {
+    return "";
+  }
+
+  return "";
+}
+
+function getPageVideo(page) {
+  const video = page?.video || page?.youtube || {};
+  const youtubeId = getYouTubeIdFromValue(video.youtubeId || video.id || video.url || video.sourceUrl);
+  if (!youtubeId) return null;
+
+  const title = String(video.title || `${page.title} 관련 영상`).trim();
+  const sourceUrl = String(video.sourceUrl || video.url || `https://www.youtube.com/watch?v=${youtubeId}`).trim();
+  const embedUrl = `https://www.youtube-nocookie.com/embed/${youtubeId}`;
+  const thumbnailUrl = String(video.thumbnailUrl || `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`).trim();
+
+  return {
+    youtubeId,
+    title,
+    description: String(video.description || getPageDescription(page)).trim(),
+    channel: String(video.channel || "").trim(),
+    sourceUrl,
+    embedUrl,
+    thumbnailUrl,
+    width: Number(video.width || 1280),
+    height: Number(video.height || 720),
+    uploadDate: String(video.uploadDate || "").trim(),
+  };
+}
+
 function renderPageCardImage(page, { priority = false, eager = false } = {}) {
   const image = getPageImage(page);
   if (!image) return "";
@@ -3293,6 +3421,27 @@ function renderArticleImage(page) {
       </div>
       ${sourceCaption}
     </figure>
+  `;
+}
+
+function renderArticleVideo(page) {
+  const video = getPageVideo(page);
+  if (!video) return "";
+  const channelText = video.channel ? `채널 ${video.channel}` : "YouTube";
+
+  return `
+    <section class="article-video" data-enhancement="true" data-youtube-id="${escapeHtml(video.youtubeId)}" aria-label="관련 영상">
+      <div class="article-video__content">
+        <p class="article-video__eyebrow">관련 영상</p>
+        <p class="article-video__title">${escapeHtml(video.title)}</p>
+        <p class="article-video__meta">${escapeHtml(channelText)}</p>
+      </div>
+      <button class="article-video__poster" type="button" data-video-play data-youtube-id="${escapeHtml(video.youtubeId)}" data-video-title="${escapeHtml(video.title)}" aria-label="관련 영상 재생: ${escapeHtml(video.title)}">
+        <img src="${escapeHtml(video.thumbnailUrl)}" alt="" width="${escapeHtml(video.width)}" height="${escapeHtml(video.height)}" loading="lazy" decoding="async" />
+        <span class="article-video__play" aria-hidden="true">▶</span>
+      </button>
+      <p class="article-video__source"><a href="${escapeHtml(video.sourceUrl)}" target="_blank" rel="noopener noreferrer">YouTube에서 보기</a></p>
+    </section>
   `;
 }
 
@@ -3392,6 +3541,10 @@ function clearImageMeta() {
   removeNameMetas(IMAGE_NAME_META);
 }
 
+function clearVideoMeta() {
+  removePropertyMetas(VIDEO_PROPERTY_META);
+}
+
 function setArticleMeta(page) {
   setPropertyMetaEntries({
     "article:section": page.desk,
@@ -3400,7 +3553,7 @@ function setArticleMeta(page) {
   });
 }
 
-function updateSeo({ title, description, url, ogType = "website", robots = DEFAULT_ROBOTS, image = null, structuredData }) {
+function updateSeo({ title, description, url, ogType = "website", robots = DEFAULT_ROBOTS, image = null, video = null, structuredData }) {
   document.title = title;
   setNameMetaEntries({ description, robots });
   setCanonical(url);
@@ -3425,6 +3578,18 @@ function updateSeo({ title, description, url, ogType = "website", robots = DEFAU
   } else {
     clearImageMeta();
     setMeta("twitter:card", TWITTER_CARD_TYPE);
+  }
+  if (video) {
+    setPropertyMetaEntries({
+      "og:video": video.embedUrl,
+      "og:video:url": video.embedUrl,
+      "og:video:secure_url": video.embedUrl,
+      "og:video:type": "text/html",
+      "og:video:width": String(video.width),
+      "og:video:height": String(video.height),
+    });
+  } else {
+    clearVideoMeta();
   }
   setNameMetaEntries({
     "twitter:title": title,
@@ -3471,17 +3636,36 @@ function updateArticleSeo(page) {
   const description = getPageDescription(page);
   const url = getRouteUrl("page", page.slug);
   const image = getPageImage(page);
+  const video = getPageVideo(page);
+  const videoStructuredData = video
+    ? {
+        subjectOf: {
+          "@type": "VideoObject",
+          name: video.title,
+          description: video.description,
+          thumbnailUrl: [video.thumbnailUrl],
+          embedUrl: video.embedUrl,
+          contentUrl: video.sourceUrl,
+          ...(video.uploadDate ? { uploadDate: video.uploadDate } : {}),
+          publisher: { "@type": "Organization", name: video.channel || "YouTube" },
+          inLanguage: SEO_LANGUAGE,
+        },
+      }
+    : {};
+
   updateSeo({
     title,
     description,
     url,
     ogType: "article",
     image,
+    video,
     structuredData: createStructuredData("Article", {
       headline: page.title,
       description,
       url,
       ...(image ? { image: [image.src] } : {}),
+      ...videoStructuredData,
       datePublished: page.publishedAt,
       dateModified: page.publishedAt,
       articleSection: page.desk,
@@ -4009,11 +4193,15 @@ function insertArticleBodySection(html = "", anchorIndex = null) {
 function renderArticleEnhancements(page) {
   const relatedPages = getRelatedArticlePages(page);
   const trendingPages = getTrendingArticlePages(page);
+  const videoSection = articleBodyNode.querySelector(".article-video")
+    ? ""
+    : renderArticleVideo(page);
   const relatedSection = renderArticleSliderSection(`${deskEmoji[page.desk] || "📌"} 같은 분야 더 보기`, relatedPages);
   const trendingSection = renderArticleSliderSection("🔥 지금 사람들이 많이 보는 주제", trendingPages);
   const bodyChildren = [...articleBodyNode.children];
   const middleIndex = Math.max(1, Math.floor(bodyChildren.length / 2));
 
+  insertArticleBodySection(videoSection);
   insertArticleBodySection(relatedSection, middleIndex);
   insertArticleBodySection(trendingSection);
   renderArticleTocFromBody();
@@ -4027,7 +4215,11 @@ function renderArticleHtmlContent(articleHtml, page) {
 }
 
 function getArticleSpeechText() {
-  return articleBodyNode.textContent.trim();
+  const speechNode = articleBodyNode.cloneNode(true);
+  speechNode
+    .querySelectorAll("figcaption, script, noscript, iframe, .article-slider-section, .article-video")
+    .forEach((node) => node.remove());
+  return speechNode.textContent.trim();
 }
 
 function getArticleSpeechPayload(page) {
@@ -4316,6 +4508,33 @@ function handleArticleTocClick(event, link) {
   return true;
 }
 
+function handleArticleVideoPlay(event) {
+  if (!(event.target instanceof Element)) return;
+  const playButton = event.target.closest("[data-video-play]");
+  if (!playButton || !articleBodyNode.contains(playButton)) return;
+
+  const youtubeId = getYouTubeIdFromValue(playButton.dataset.youtubeId || "");
+  if (!youtubeId) return;
+
+  event.preventDefault();
+  const title = String(playButton.dataset.videoTitle || "관련 영상").trim();
+  const frame = document.createElement("iframe");
+  frame.className = "article-video__iframe";
+  frame.src = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1`;
+  frame.title = title;
+  frame.width = "1280";
+  frame.height = "720";
+  frame.loading = "lazy";
+  frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+  frame.referrerPolicy = "strict-origin-when-cross-origin";
+  frame.setAttribute("allowfullscreen", "");
+
+  const frameWrap = document.createElement("div");
+  frameWrap.className = "article-video__frame";
+  frameWrap.append(frame);
+  playButton.replaceWith(frameWrap);
+}
+
 function handleRouteLinkClick(event) {
   if (!(event.target instanceof Element)) return;
   const link = event.target.closest("a[href]");
@@ -4454,6 +4673,7 @@ deskMenuToggleNode?.addEventListener("click", () => {
 window.addEventListener("hashchange", handleHashChange);
 window.addEventListener("popstate", syncViewFromLocation);
 document.addEventListener("click", handleRouteLinkClick);
+document.addEventListener("click", handleArticleVideoPlay);
 window.addEventListener("scroll", scheduleArticleTocActiveUpdate, { passive: true });
 window.addEventListener("resize", () => {
   clearTimeout(resizeRenderTimer);
