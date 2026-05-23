@@ -3839,8 +3839,7 @@ function formatCountLabel(count) {
 function updateContentCount() {
   if (!contentCountNode) return;
   const count = getPublishedPages().length;
-  const formattedCount = String(count).padStart(3, "0");
-  contentCountNode.textContent = `총 콘텐츠 ${formattedCount}개`;
+  contentCountNode.textContent = `총 콘텐츠 ${count}개`;
   contentCountNode.setAttribute("aria-label", `총 콘텐츠 ${count}개`);
 }
 
