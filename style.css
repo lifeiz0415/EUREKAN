@@ -691,11 +691,20 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 }
 
 .voice-progress__label {
-  min-width: 42px;
+  min-width: 88px;
   color: var(--muted);
   font-size: 0.86rem;
   font-weight: 750;
   text-align: right;
+}
+
+.voice-audio {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+  inset: auto auto 0 0;
 }
 
 .article-toc {

@@ -2472,6 +2472,14 @@ const RECIPE_GAMJAJEON_STARCH_PAN_HEAT_IMAGE = {
   height: 598
 };
 
+const SCIENCE_BISMARCK_SEA_SUBMARINE_VOLCANO_IMAGE = {
+  externalSrc: "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/new-eruption-in-the-bismarck-sea/bismarckeruption_oli2_20260511_th.jpg?w=720&h=480&fit=clip&crop=faces%2Cfocalpoint",
+  alt: "비스마르크해 해저 화산 분화가 만든 수증기 기둥과 바다 표면 변색을 위성으로 포착한 사진",
+  sourceUrl: "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/",
+  width: 720,
+  height: 480
+};
+
 const SCIENCE_STORIE_RING_CURRENT_SPACE_WEATHER_IMAGE = {
   externalSrc: "https://svs.gsfc.nasa.gov/vis/a010000/a015000/a015011/ISS_RENA_Magnetic_Field.00001_print.jpg",
   alt: "국제우주정거장에서 STORIE가 지구 자기장과 링 커런트를 관측하는 방식을 보여주는 NASA 시각화",
@@ -2505,6 +2513,48 @@ const INDUSTRY_RARE_EARTH_MAGNET_SUPPLY_CHAIN_IMAGE = {
 };
 
 const featuredPages = [
+  {
+    slug: "us-stocks-spacex-ipo-starlink-starship-2026",
+    title: "스페이스X 상장은 공모가보다 스타링크와 스타십의 비용 구조를 먼저 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-23T17:49:12+09:00",
+    summary: "스페이스X S-1 제출로 상장 기대가 커졌지만 투자자는 SPCX 티커와 공모가보다 스타링크 현금창출력, 스타십 일정, AI 설비투자, 의결권 구조를 함께 확인해야 합니다.",
+    image: US_STOCKS_SPACEX_STARSHIP_STARLINK_IMAGE,
+    audio: {
+      src: "audios/us-stocks-spacex-ipo-starlink-starship-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "Ke_V1Dlw_lI",
+      title: "SpaceX Starship launch coverage",
+      channel: "Space.com",
+      sourceUrl: "https://www.youtube.com/watch?v=Ke_V1Dlw_lI",
+      thumbnailUrl: "https://i.ytimg.com/vi/Ke_V1Dlw_lI/hqdefault.jpg",
+      description: "스페이스X 스타십 발사 장면을 통해 상장 서사의 핵심 변수인 스타십 개발과 재사용 전략을 함께 볼 수 있는 영상입니다.",
+      uploadDate: "2026-05-22",
+    },
+  },
+  {
+    slug: "science-bismarck-sea-submarine-volcano-satellite-2026",
+    title: "비스마르크해 해저 화산은 현장보다 위성 신호를 먼저 봐야 합니다",
+    desk: "과학",
+    publishedAt: "2026-05-23T17:32:30+09:00",
+    summary: "비스마르크해 해저 화산 분화는 바다 표면의 변색과 부석, 수증기 기둥을 위성으로 먼저 읽어 항로와 해양 환경 위험을 판단해야 하는 과학 관측 사례입니다.",
+    image: SCIENCE_BISMARCK_SEA_SUBMARINE_VOLCANO_IMAGE,
+    audio: {
+      src: "audios/science-bismarck-sea-submarine-volcano-satellite-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "-OdqtbSl4R0",
+      title: "A Major Explosive Eruption is Ongoing; The Media is Missing It",
+      channel: "GeologyHub",
+      sourceUrl: "https://www.youtube.com/watch?v=-OdqtbSl4R0",
+      thumbnailUrl: "https://i.ytimg.com/vi/-OdqtbSl4R0/hqdefault.jpg",
+      description: "비스마르크해 해저 화산 분화와 파푸아뉴기니 인근 화산 활동의 배경을 설명하는 GeologyHub 영상입니다.",
+      uploadDate: "2026-05-13",
+    },
+  },
   {
     slug: "recipe-gamjajeon-starch-pan-heat-2026",
     title: "감자전은 물을 넣기보다 전분과 팬 온도를 먼저 맞춰야 합니다",
@@ -3186,6 +3236,9 @@ const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
 const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠, 한국주식, 미국주식, 크립토, 레시피 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
+const AUDIO_DIRECTORY = "audios";
+const AUDIO_EXTENSION = "mp3";
+const AUDIO_ASSET_VERSION = "20260523-chrome-mp3-all";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
 const CARD_IMAGE_WIDTHS = [330, 500, 960];
 const ARTICLE_IMAGE_WIDTHS = [500, 960, 1280];
@@ -3222,6 +3275,7 @@ const voiceButtonNode = document.querySelector("#voice-button");
 const voiceStatusNode = document.querySelector("#voice-status");
 let voiceProgressNode = document.querySelector("#voice-progress");
 let voiceProgressLabelNode = document.querySelector("#voice-progress-label");
+let voiceAudioNode = document.querySelector("#voice-audio");
 const newsletterTitleNode = document.querySelector("#newsletter-title");
 const newsletterCopyNode = document.querySelector("#newsletter-copy");
 const newsletterPanelNode = document.querySelector(".article-newsletter");
@@ -3317,6 +3371,20 @@ if (voiceButtonNode && !voiceProgressNode) {
   voiceProgressLabelNode = progressWrapper.querySelector("#voice-progress-label");
 }
 
+if (!voiceAudioNode) {
+  voiceAudioNode = document.createElement("audio");
+  voiceAudioNode.id = "voice-audio";
+  voiceAudioNode.className = "voice-audio";
+  voiceAudioNode.controls = false;
+  voiceAudioNode.defaultMuted = false;
+  voiceAudioNode.muted = false;
+  voiceAudioNode.playsInline = true;
+  voiceAudioNode.preload = "none";
+  voiceAudioNode.volume = 1;
+  voiceAudioNode.setAttribute("aria-hidden", "true");
+  document.body.append(voiceAudioNode);
+}
+
 function ensureArticleLayout() {
   if (!articleViewNode || !articleBodyNode) return;
 
@@ -3339,14 +3407,20 @@ let dataFileHandle = null;
 let dataStore = createEmptyDataStore();
 let activePage = null;
 let activeArticleSpeechText = "";
+let activeArticleAudioSrc = "";
+let activeArticleAudioReady = false;
 let activeUtterance = null;
+let activeSpeechChunks = [];
+let activeSpeechChunkIndex = 0;
 let activeSpeechStartOffset = 0;
 let activeSpeechCurrentIndex = 0;
+let isVoiceProgressSeeking = false;
 let isArticleSpeechPlaying = false;
 let isArticleSpeechStopping = false;
 let speechProgressTimer = 0;
 let speechSeekTimer = 0;
 let speechRunId = 0;
+let audioCheckRunId = 0;
 let speechStartedAt = 0;
 let resizeRenderTimer = 0;
 let publishRefreshTimer = 0;
@@ -3365,6 +3439,7 @@ const ARTICLE_META_PROPERTIES = ["article:section", "article:published_time", "a
 const IMAGE_PROPERTY_META = ["og:image", "og:image:alt"];
 const IMAGE_NAME_META = ["twitter:image", "twitter:image:alt"];
 const VIDEO_PROPERTY_META = ["og:video", "og:video:url", "og:video:secure_url", "og:video:type", "og:video:width", "og:video:height"];
+const AUDIO_PROPERTY_META = ["og:audio", "og:audio:type"];
 const ARTICLE_BODY_SELECTOR = "#article-body";
 const ARTICLE_BODY_ASSET_ATTRIBUTES = ["src", "href", "poster"];
 const ARTICLE_BODY_ASSET_SELECTOR = ARTICLE_BODY_ASSET_ATTRIBUTES.map((attributeName) => `[${attributeName}]`).join(", ");
@@ -3385,6 +3460,27 @@ function createEmptyDataStore() {
 
 function isSpeechSupported() {
   return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+}
+
+function isSafariBrowser() {
+  const userAgent = window.navigator.userAgent;
+  const vendor = window.navigator.vendor || "";
+  return /Safari/i.test(userAgent)
+    && /Apple/i.test(vendor)
+    && !/Chrome|CriOS|Chromium|Edg|OPR|Firefox|FxiOS/i.test(userAgent);
+}
+
+function shouldUseStoredAudio() {
+  return !isSafariBrowser();
+}
+
+function getPreferredSpeechVoice() {
+  if (!isSpeechSupported()) return null;
+  const voices = window.speechSynthesis.getVoices();
+  return voices.find((voice) => voice.lang === "ko-KR" && /Yuna|유나/i.test(voice.name))
+    || voices.find((voice) => voice.lang === "ko-KR")
+    || voices.find((voice) => voice.lang?.toLowerCase().startsWith("ko"))
+    || null;
 }
 
 function escapeHtml(value = "") {
@@ -3556,6 +3652,26 @@ function getPageVideo(page) {
   };
 }
 
+function getPageAudioSrc(page) {
+  if (!page?.slug) return "";
+  const audio = page.audio || {};
+  const src = String(audio.src || audio.url || `${AUDIO_DIRECTORY}/${page.slug}.${AUDIO_EXTENSION}`).trim();
+  if (!src) return "";
+  const audioUrl = getAssetUrl(src);
+  return audioUrl.includes("?") ? `${audioUrl}&v=${AUDIO_ASSET_VERSION}` : `${audioUrl}?v=${AUDIO_ASSET_VERSION}`;
+}
+
+function getPageAudio(page) {
+  if (!page?.audio) return null;
+  const src = getPageAudioSrc(page);
+  if (!src) return null;
+  return {
+    src,
+    type: String(page.audio.type || "audio/mpeg").trim(),
+    name: String(page.audio.name || `${page.title} 음성 읽기`).trim(),
+  };
+}
+
 function renderPageCardImage(page, { priority = false, eager = false } = {}) {
   const image = getPageImage(page);
   if (!image) return "";
@@ -3719,6 +3835,10 @@ function clearVideoMeta() {
   removePropertyMetas(VIDEO_PROPERTY_META);
 }
 
+function clearAudioMeta() {
+  removePropertyMetas(AUDIO_PROPERTY_META);
+}
+
 function setArticleMeta(page) {
   setPropertyMetaEntries({
     "article:section": page.desk,
@@ -3727,7 +3847,7 @@ function setArticleMeta(page) {
   });
 }
 
-function updateSeo({ title, description, url, ogType = "website", robots = DEFAULT_ROBOTS, image = null, video = null, structuredData }) {
+function updateSeo({ title, description, url, ogType = "website", robots = DEFAULT_ROBOTS, image = null, video = null, audio = null, structuredData }) {
   document.title = title;
   setNameMetaEntries({ description, robots });
   setCanonical(url);
@@ -3764,6 +3884,14 @@ function updateSeo({ title, description, url, ogType = "website", robots = DEFAU
     });
   } else {
     clearVideoMeta();
+  }
+  if (audio) {
+    setPropertyMetaEntries({
+      "og:audio": audio.src,
+      "og:audio:type": audio.type,
+    });
+  } else {
+    clearAudioMeta();
   }
   setNameMetaEntries({
     "twitter:title": title,
@@ -3811,6 +3939,7 @@ function updateArticleSeo(page) {
   const url = getRouteUrl("page", page.slug);
   const image = getPageImage(page);
   const video = getPageVideo(page);
+  const audio = getPageAudio(page);
   const videoStructuredData = video
     ? {
         subjectOf: {
@@ -3834,11 +3963,20 @@ function updateArticleSeo(page) {
     ogType: "article",
     image,
     video,
+    audio,
     structuredData: createStructuredData("Article", {
       headline: page.title,
       description,
       url,
       ...(image ? { image: [image.src] } : {}),
+      ...(audio ? {
+        audio: {
+          "@type": "AudioObject",
+          contentUrl: audio.src,
+          encodingFormat: audio.type,
+          name: audio.name,
+        },
+      } : {}),
       ...videoStructuredData,
       datePublished: page.publishedAt,
       dateModified: page.publishedAt,
@@ -4408,7 +4546,7 @@ function getArticleSpeechPayload(page) {
 
 function renderArticleBodyAndVoice(articleHtml, page) {
   renderArticleHtmlContent(articleHtml, page);
-  setVoiceReady(getArticleSpeechPayload(page));
+  setVoiceReady(getArticleSpeechPayload(page), page);
 }
 
 function getArticleTocItems(headings = []) {
@@ -4494,12 +4632,94 @@ function renderArticleSliderSection(title, items) {
   `;
 }
 
-function setVoiceReady(text = "") {
+function setVoiceReady(text = "", page = activePage) {
   activeArticleSpeechText = text;
+  activeArticleAudioSrc = getPageAudioSrc(page);
+  activeArticleAudioReady = Boolean(activeArticleAudioSrc && shouldUseStoredAudio());
   activeSpeechStartOffset = 0;
   activeSpeechCurrentIndex = 0;
+  isVoiceProgressSeeking = false;
+  audioCheckRunId += 1;
   clearTimeout(speechSeekTimer);
-  if (!isSpeechSupported()) {
+
+  if (voiceAudioNode) {
+    voiceAudioNode.pause();
+    voiceAudioNode.removeAttribute("src");
+    voiceAudioNode.removeAttribute("hidden");
+    voiceAudioNode.controls = false;
+    voiceAudioNode.defaultMuted = false;
+    voiceAudioNode.muted = false;
+    voiceAudioNode.volume = 1;
+    voiceAudioNode.load();
+  }
+
+  voiceButtonNode.disabled = !activeArticleSpeechText && !activeArticleAudioSrc;
+  voiceButtonNode.textContent = "음성으로 읽어주기";
+  setVoiceProgressEnabled(Boolean(activeArticleSpeechText || activeArticleAudioSrc));
+  updateVoiceProgress(0);
+  if (!activeArticleSpeechText && !activeArticleAudioSrc) voiceStatusNode.textContent = "";
+}
+
+function setVoiceProgressEnabled(isEnabled) {
+  if (!voiceProgressNode) return;
+  voiceProgressNode.disabled = !isEnabled;
+}
+
+function isArticleAudioMode() {
+  return Boolean(activeArticleAudioReady && activeArticleAudioSrc && voiceAudioNode);
+}
+
+function seekVoiceAudio(timeValue = 0) {
+  if (!voiceAudioNode || !activeArticleAudioSrc) return 0;
+  const duration = Number.isFinite(voiceAudioNode.duration) && voiceAudioNode.duration > 0
+    ? voiceAudioNode.duration
+    : Number(voiceProgressNode?.max) || 0;
+  const requestedTime = Number(timeValue);
+  const nextTime = Math.max(0, Math.min(
+    duration > 0 ? duration : Math.max(0, requestedTime || 0),
+    Number.isFinite(requestedTime) ? requestedTime : 0,
+  ));
+
+  activeSpeechCurrentIndex = nextTime;
+  if (voiceAudioNode.readyState >= 1) {
+    try {
+      voiceAudioNode.currentTime = nextTime;
+    } catch {
+      // 일부 브라우저는 메타데이터 준비 직후 seek를 거부할 수 있으므로 UI 상태만 유지합니다.
+    }
+  }
+  updateVoiceProgress(nextTime);
+  return nextTime;
+}
+
+function formatAudioTime(value = 0) {
+  const safeValue = Math.max(0, Math.floor(Number.isFinite(value) ? value : 0));
+  const minutes = Math.floor(safeValue / 60);
+  const seconds = String(safeValue % 60).padStart(2, "0");
+  return `${minutes}:${seconds}`;
+}
+
+async function checkArticleAudioAvailability(src = activeArticleAudioSrc, runId = audioCheckRunId) {
+  if (!src || !voiceAudioNode || !shouldUseStoredAudio()) {
+    activeArticleAudioReady = false;
+    if (!isSpeechSupported() && !activeArticleSpeechText) {
+      voiceButtonNode.disabled = true;
+      voiceStatusNode.textContent = "이 브라우저는 음성 읽기를 지원하지 않습니다.";
+      setVoiceProgressEnabled(false);
+    }
+    return;
+  }
+
+  try {
+    const response = await fetch(src, { method: "HEAD", cache: "no-store" });
+    if (runId !== audioCheckRunId || src !== activeArticleAudioSrc) return;
+    activeArticleAudioReady = response.ok;
+  } catch {
+    if (runId !== audioCheckRunId || src !== activeArticleAudioSrc) return;
+    activeArticleAudioReady = false;
+  }
+
+  if (!activeArticleAudioReady && !isSpeechSupported()) {
     voiceButtonNode.disabled = true;
     voiceStatusNode.textContent = "이 브라우저는 음성 읽기를 지원하지 않습니다.";
     setVoiceProgressEnabled(false);
@@ -4507,16 +4727,12 @@ function setVoiceReady(text = "") {
     return;
   }
 
-  voiceButtonNode.disabled = !activeArticleSpeechText;
-  voiceButtonNode.textContent = "음성으로 읽어주기";
-  setVoiceProgressEnabled(Boolean(activeArticleSpeechText));
-  updateVoiceProgress(0);
-  if (!activeArticleSpeechText) voiceStatusNode.textContent = "";
-}
-
-function setVoiceProgressEnabled(isEnabled) {
-  if (!voiceProgressNode) return;
-  voiceProgressNode.disabled = !isEnabled;
+  voiceButtonNode.disabled = !activeArticleAudioReady && !activeArticleSpeechText;
+  setVoiceProgressEnabled(Boolean(activeArticleAudioReady || activeArticleSpeechText));
+  if (!isArticleSpeechActive() && !isVoiceProgressSeeking) updateVoiceProgress(0);
+  if (voiceStatusNode.textContent === "이 브라우저는 음성 읽기를 지원하지 않습니다." && activeArticleAudioReady) {
+    voiceStatusNode.textContent = "";
+  }
 }
 
 function getNormalizedSpeechIndex(value = 0) {
@@ -4528,15 +4744,38 @@ function getNormalizedSpeechIndex(value = 0) {
 
 function updateVoiceProgress(index = activeSpeechCurrentIndex) {
   if (!voiceProgressNode) return;
+  if (isArticleAudioMode()) {
+    const hasDuration = Number.isFinite(voiceAudioNode.duration) && voiceAudioNode.duration > 0;
+    const duration = hasDuration ? voiceAudioNode.duration : Math.max(1, Number(voiceProgressNode.max) || 1);
+    const displayDuration = hasDuration ? duration : 0;
+    const nextTime = Math.max(0, Math.min(duration, Number(index) || 0));
+
+    activeSpeechCurrentIndex = nextTime;
+    voiceProgressNode.max = String(duration);
+    voiceProgressNode.step = "0.1";
+    voiceProgressNode.value = String(nextTime);
+    voiceProgressNode.setAttribute("aria-valuetext", `${formatAudioTime(nextTime)} / ${formatAudioTime(displayDuration)}`);
+    if (voiceProgressLabelNode) voiceProgressLabelNode.textContent = `${formatAudioTime(nextTime)} / ${formatAudioTime(displayDuration)}`;
+    return;
+  }
+
   const maxIndex = Math.max(1, activeArticleSpeechText.length);
   const nextIndex = getNormalizedSpeechIndex(index);
   const percent = Math.round((nextIndex / maxIndex) * 100);
 
   activeSpeechCurrentIndex = nextIndex;
   voiceProgressNode.max = String(maxIndex);
+  voiceProgressNode.step = "1";
   voiceProgressNode.value = String(nextIndex);
   voiceProgressNode.setAttribute("aria-valuetext", `${percent}%`);
   if (voiceProgressLabelNode) voiceProgressLabelNode.textContent = `${percent}%`;
+}
+
+function getVoiceProgressTime() {
+  const progressTime = Number(voiceProgressNode?.value);
+  if (!Number.isFinite(progressTime)) return 0;
+  const maxTime = Number(voiceProgressNode?.max);
+  return Math.max(0, Math.min(Number.isFinite(maxTime) && maxTime > 0 ? maxTime : progressTime, progressTime));
 }
 
 function stopSpeechProgressTimer() {
@@ -4559,7 +4798,8 @@ function startSpeechProgressTimer(runId) {
 }
 
 function isArticleSpeechActive() {
-  return Boolean(activeUtterance || isArticleSpeechPlaying || (!isArticleSpeechStopping && isSpeechSupported() && window.speechSynthesis.speaking));
+  const isAudioPlaying = Boolean(voiceAudioNode && !voiceAudioNode.paused && !voiceAudioNode.ended);
+  return Boolean(isAudioPlaying || activeUtterance || isArticleSpeechPlaying || (!isArticleSpeechStopping && isSpeechSupported() && window.speechSynthesis.speaking));
 }
 
 function getSpeechStartOffset(index = 0) {
@@ -4577,8 +4817,14 @@ function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) 
   isArticleSpeechStopping = true;
   isArticleSpeechPlaying = false;
   stopSpeechProgressTimer();
+  if (voiceAudioNode) {
+    voiceAudioNode.pause();
+    if (resetProgress) voiceAudioNode.currentTime = 0;
+  }
   if (isSpeechSupported()) window.speechSynthesis.cancel();
   activeUtterance = null;
+  activeSpeechChunks = [];
+  activeSpeechChunkIndex = 0;
   voiceButtonNode.textContent = "음성으로 읽어주기";
   if (resetProgress) {
     activeSpeechStartOffset = 0;
@@ -4587,7 +4833,136 @@ function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) 
   if (clearStatus) voiceStatusNode.textContent = "";
 }
 
-function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
+function startArticleAudio(startTime = activeSpeechCurrentIndex) {
+  if (!voiceAudioNode || !activeArticleAudioSrc) return false;
+
+  activeArticleAudioReady = true;
+  if (voiceAudioNode.src !== activeArticleAudioSrc) {
+    voiceAudioNode.src = activeArticleAudioSrc;
+    voiceAudioNode.preload = "metadata";
+  }
+  voiceAudioNode.controls = false;
+  voiceAudioNode.defaultMuted = false;
+  voiceAudioNode.removeAttribute("hidden");
+  voiceAudioNode.muted = false;
+  voiceAudioNode.playsInline = true;
+  voiceAudioNode.volume = 1;
+
+  const seekTo = () => {
+    if (Number.isFinite(Number(startTime)) && Number(startTime) > 0 && Number.isFinite(voiceAudioNode.duration)) {
+      const requestedTime = Number(startTime);
+      voiceAudioNode.currentTime = requestedTime >= voiceAudioNode.duration - 0.25
+        ? 0
+        : Math.max(0, Math.min(voiceAudioNode.duration, requestedTime));
+    }
+  };
+
+  if (voiceAudioNode.readyState >= 1) seekTo();
+  else voiceAudioNode.addEventListener("loadedmetadata", seekTo, { once: true });
+
+  isArticleSpeechStopping = false;
+  isArticleSpeechPlaying = true;
+  voiceButtonNode.textContent = "음성읽기 중지하기";
+  voiceStatusNode.textContent = "";
+  voiceAudioNode.play().then(() => {
+    voiceAudioNode.muted = false;
+    voiceAudioNode.volume = 1;
+  }).catch(() => {
+    isArticleSpeechPlaying = false;
+    if (activeArticleSpeechText && isSpeechSupported()) startArticleSpeech(activeSpeechCurrentIndex, { preferAudio: false });
+    else voiceStatusNode.textContent = "음성 파일을 재생하지 못했습니다.";
+  });
+  return true;
+}
+
+function createSpeechChunks(text = "", startOffset = 0) {
+  const maxChunkLength = 520;
+  const chunks = [];
+  let cursor = Math.max(0, Math.min(text.length, Number(startOffset) || 0));
+
+  while (cursor < text.length) {
+    while (cursor < text.length && /\s/.test(text[cursor])) cursor += 1;
+    if (cursor >= text.length) break;
+
+    let end = Math.min(text.length, cursor + maxChunkLength);
+    if (end < text.length) {
+      const slice = text.slice(cursor, end);
+      const punctuationBreak = Math.max(
+        slice.lastIndexOf("."),
+        slice.lastIndexOf("?"),
+        slice.lastIndexOf("!"),
+        slice.lastIndexOf("\n"),
+      );
+      const fallbackBreak = slice.lastIndexOf(" ");
+      const breakAt = punctuationBreak > maxChunkLength * 0.35 ? punctuationBreak : fallbackBreak;
+      if (breakAt > 80) end = cursor + breakAt + 1;
+    }
+
+    const chunkText = text.slice(cursor, end).trim();
+    if (chunkText) chunks.push({ start: cursor, text: chunkText });
+    cursor = end;
+  }
+
+  return chunks;
+}
+
+function speakSpeechChunk(runId, chunkIndex = 0) {
+  if (runId !== speechRunId || isArticleSpeechStopping) return;
+  const chunk = activeSpeechChunks[chunkIndex];
+  if (!chunk) {
+    activeUtterance = null;
+    isArticleSpeechPlaying = false;
+    stopSpeechProgressTimer();
+    updateVoiceProgress(activeArticleSpeechText.length);
+    voiceButtonNode.textContent = "음성으로 읽어주기";
+    voiceStatusNode.textContent = "읽기가 끝났습니다.";
+    return;
+  }
+
+  const utterance = new SpeechSynthesisUtterance(chunk.text);
+  activeUtterance = utterance;
+  activeSpeechChunkIndex = chunkIndex;
+  activeSpeechStartOffset = chunk.start;
+
+  utterance.lang = "ko-KR";
+  utterance.rate = 1;
+  utterance.pitch = 1;
+  const preferredVoice = getPreferredSpeechVoice();
+  if (preferredVoice) utterance.voice = preferredVoice;
+
+  utterance.onstart = () => {
+    if (runId !== speechRunId || isArticleSpeechStopping) return;
+    activeUtterance = utterance;
+    isArticleSpeechPlaying = true;
+    voiceButtonNode.textContent = "음성읽기 중지하기";
+    voiceStatusNode.textContent = "";
+    startSpeechProgressTimer(runId);
+  };
+  utterance.onboundary = (event) => {
+    if (runId !== speechRunId || isArticleSpeechStopping) return;
+    updateVoiceProgress(chunk.start + Number(event.charIndex || 0));
+  };
+  utterance.onend = () => {
+    if (runId !== speechRunId || isArticleSpeechStopping) return;
+    stopSpeechProgressTimer();
+    updateVoiceProgress(chunk.start + chunk.text.length);
+    window.setTimeout(() => speakSpeechChunk(runId, chunkIndex + 1), 80);
+  };
+  utterance.onerror = () => {
+    if (runId !== speechRunId) return;
+    activeUtterance = null;
+    isArticleSpeechPlaying = false;
+    stopSpeechProgressTimer();
+    voiceButtonNode.textContent = "음성으로 읽어주기";
+    if (!isArticleSpeechStopping) voiceStatusNode.textContent = "음성 읽기를 시작하지 못했습니다.";
+  };
+
+  window.speechSynthesis.speak(utterance);
+}
+
+function startArticleSpeech(startIndex = activeSpeechCurrentIndex, { preferAudio = true } = {}) {
+  if (preferAudio && shouldUseStoredAudio() && activeArticleAudioSrc && startArticleAudio(startIndex)) return;
+
   if (!isSpeechSupported()) {
     voiceStatusNode.textContent = "이 브라우저는 음성 읽기를 지원하지 않습니다.";
     return;
@@ -4599,54 +4974,36 @@ function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
   }
 
   const startOffset = getSpeechStartOffset(startIndex);
-  const spokenText = activeArticleSpeechText.slice(startOffset);
-  const utterance = new SpeechSynthesisUtterance(spokenText);
+  const chunks = createSpeechChunks(activeArticleSpeechText, startOffset);
   const runId = speechRunId + 1;
+  if (!chunks.length) return;
 
   speechRunId = runId;
   isArticleSpeechStopping = false;
   isArticleSpeechPlaying = true;
-  activeUtterance = utterance;
+  activeSpeechChunks = chunks;
+  activeSpeechChunkIndex = 0;
+  activeUtterance = null;
   activeSpeechStartOffset = startOffset;
   updateVoiceProgress(startOffset);
 
-  utterance.lang = "ko-KR";
-  utterance.rate = 1;
-  utterance.pitch = 1;
-  utterance.onstart = () => {
-    if (runId !== speechRunId) return;
-    activeUtterance = utterance;
-    isArticleSpeechPlaying = true;
-    voiceButtonNode.textContent = "음성읽기 중지하기";
-    voiceStatusNode.textContent = "";
-    startSpeechProgressTimer(runId);
-  };
-  utterance.onboundary = (event) => {
-    if (runId !== speechRunId || isArticleSpeechStopping) return;
-    updateVoiceProgress(activeSpeechStartOffset + Number(event.charIndex || 0));
-  };
-  utterance.onend = () => {
-    if (runId !== speechRunId || isArticleSpeechStopping) return;
-    activeUtterance = null;
-    isArticleSpeechPlaying = false;
-    stopSpeechProgressTimer();
-    updateVoiceProgress(activeArticleSpeechText.length);
-    voiceButtonNode.textContent = "음성으로 읽어주기";
-    voiceStatusNode.textContent = "읽기가 끝났습니다.";
-  };
-  utterance.onerror = () => {
-    if (runId !== speechRunId) return;
-    activeUtterance = null;
-    isArticleSpeechPlaying = false;
-    stopSpeechProgressTimer();
-    voiceButtonNode.textContent = "음성으로 읽어주기";
-    if (!isArticleSpeechStopping) voiceStatusNode.textContent = "음성 읽기를 중단했습니다.";
-  };
-
   window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(utterance);
   voiceButtonNode.textContent = "음성읽기 중지하기";
-  startSpeechProgressTimer(runId);
+  const beginSpeaking = () => speakSpeechChunk(runId, 0);
+  if (window.speechSynthesis.getVoices().length) {
+    window.setTimeout(beginSpeaking, 80);
+    return;
+  }
+
+  let hasBegunSpeaking = false;
+  const beginWhenVoicesReady = () => {
+    if (hasBegunSpeaking) return;
+    hasBegunSpeaking = true;
+    window.speechSynthesis.removeEventListener?.("voiceschanged", beginWhenVoicesReady);
+    beginSpeaking();
+  };
+  window.speechSynthesis.addEventListener?.("voiceschanged", beginWhenVoicesReady, { once: true });
+  window.setTimeout(beginWhenVoicesReady, 500);
 }
 
 function toggleArticleSpeech() {
@@ -4659,7 +5016,12 @@ function toggleArticleSpeech() {
 }
 
 function handleVoiceProgressInput() {
-  if (!voiceProgressNode || !activeArticleSpeechText) return;
+  if (!voiceProgressNode || (!activeArticleSpeechText && !isArticleAudioMode())) return;
+  if (isArticleAudioMode() && voiceAudioNode) {
+    isVoiceProgressSeeking = true;
+    seekVoiceAudio(getVoiceProgressTime());
+    return;
+  }
   updateVoiceProgress(voiceProgressNode.value);
   if (!isArticleSpeechActive()) return;
 
@@ -4671,10 +5033,26 @@ function handleVoiceProgressInput() {
 }
 
 function handleVoiceProgressChange() {
-  if (!voiceProgressNode || !activeArticleSpeechText || !isArticleSpeechActive()) return;
+  if (!voiceProgressNode || (!activeArticleSpeechText && !isArticleAudioMode())) return;
+  if (isArticleAudioMode() && voiceAudioNode) {
+    const seekTime = seekVoiceAudio(getVoiceProgressTime());
+    window.setTimeout(() => {
+      isVoiceProgressSeeking = false;
+      if (isArticleAudioMode()) updateVoiceProgress(voiceAudioNode.currentTime || seekTime);
+    }, 250);
+    return;
+  }
+  if (!isArticleSpeechActive()) return;
   const seekIndex = getNormalizedSpeechIndex(voiceProgressNode.value);
   clearTimeout(speechSeekTimer);
   startArticleSpeech(seekIndex);
+}
+
+function handleVoiceProgressSeekEnd() {
+  if (!isArticleAudioMode() || !isVoiceProgressSeeking) return;
+  const seekTime = seekVoiceAudio(getVoiceProgressTime());
+  isVoiceProgressSeeking = false;
+  updateVoiceProgress(voiceAudioNode?.currentTime || seekTime);
 }
 
 function showListView() {
@@ -4972,6 +5350,41 @@ pageListNode.addEventListener("click", (event) => {
 voiceButtonNode.addEventListener("click", toggleArticleSpeech);
 voiceProgressNode?.addEventListener("input", handleVoiceProgressInput);
 voiceProgressNode?.addEventListener("change", handleVoiceProgressChange);
+voiceProgressNode?.addEventListener("pointerup", handleVoiceProgressSeekEnd);
+voiceProgressNode?.addEventListener("pointercancel", handleVoiceProgressSeekEnd);
+voiceProgressNode?.addEventListener("keyup", handleVoiceProgressSeekEnd);
+voiceAudioNode?.addEventListener("loadedmetadata", () => {
+  if (!isArticleAudioMode()) return;
+  updateVoiceProgress(voiceAudioNode.currentTime || 0);
+});
+voiceAudioNode?.addEventListener("timeupdate", () => {
+  if (!isArticleAudioMode() || isVoiceProgressSeeking) return;
+  updateVoiceProgress(voiceAudioNode.currentTime || 0);
+});
+voiceAudioNode?.addEventListener("seeked", () => {
+  if (!isArticleAudioMode()) return;
+  isVoiceProgressSeeking = false;
+  updateVoiceProgress(voiceAudioNode.currentTime || 0);
+});
+voiceAudioNode?.addEventListener("ended", () => {
+  if (!isArticleAudioMode()) return;
+  isVoiceProgressSeeking = false;
+  isArticleSpeechPlaying = false;
+  voiceButtonNode.textContent = "음성으로 읽어주기";
+  updateVoiceProgress(voiceAudioNode.duration || 0);
+  voiceStatusNode.textContent = "읽기가 끝났습니다.";
+});
+voiceAudioNode?.addEventListener("error", () => {
+  if (!activeArticleAudioSrc) return;
+  activeArticleAudioReady = false;
+  isArticleSpeechPlaying = false;
+  voiceButtonNode.textContent = "음성으로 읽어주기";
+  if (activeArticleSpeechText && isSpeechSupported()) {
+    startArticleSpeech(activeSpeechCurrentIndex, { preferAudio: false });
+    return;
+  }
+  voiceStatusNode.textContent = "음성 파일을 불러오지 못했습니다.";
+});
 deskMenuToggleNode?.addEventListener("click", () => {
   setDeskMenuOpen(!deskMenuNode.classList.contains("desk-menu--open"));
 });
