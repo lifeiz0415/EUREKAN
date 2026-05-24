@@ -271,6 +271,7 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 
 .trending-section {
   min-width: 0;
+  contain: layout paint;
 }
 
 .trending-window {
@@ -393,6 +394,10 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   max-width: none;
   object-fit: cover;
   object-position: center;
+}
+
+.page-card__image--deferred {
+  opacity: 0;
 }
 
 .page-card:hover,
@@ -761,6 +766,8 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   margin: 10px 0;
   border-block: 1px solid var(--line);
   padding: 18px 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 460px;
 }
 
 .article-slider-section h3 {
@@ -967,6 +974,19 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 
   .voice-progress {
     flex-basis: 100%;
+  }
+
+  .panel {
+    border-radius: 18px;
+    padding: 18px;
+  }
+
+  .page-card--rail {
+    flex-basis: clamp(240px, 68vw, 300px);
+  }
+
+  .card-grid--compact {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   }
 
 }

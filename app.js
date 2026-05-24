@@ -3826,15 +3826,17 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan은 지금 사람들이 가장 궁금해
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260524-site-name-eurekan";
+const AUDIO_ASSET_VERSION = "20260524-mobile-speed";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
 const AUDIO_RECOVERY_SIGNAL_THRESHOLD = 0.0005;
 const AUDIO_RECOVERY_SILENCE_SECONDS = 7;
 const AUDIO_RECOVERY_MIN_PLAY_SECONDS = 3;
-const CARD_IMAGE_WIDTHS = [330, 500, 960];
+const CARD_IMAGE_WIDTHS = [220, 330, 500];
 const ARTICLE_IMAGE_WIDTHS = [500, 960, 1280];
-const CARD_IMAGE_SIZES = "(max-width: 640px) 44vw, (max-width: 960px) 30vw, 320px";
+const CARD_IMAGE_SIZES = "(max-width: 640px) 42vw, (max-width: 960px) 28vw, 300px";
 const ARTICLE_IMAGE_SIZES = "(max-width: 760px) calc(100vw - 48px), 900px";
+const HOME_IMAGE_HYDRATION_DELAY_MS = 1800;
+const DEFERRED_CARD_IMAGE_SELECTOR = "img[data-deferred-src]";
 
 const topicPages = [];
 
@@ -4033,6 +4035,8 @@ let deskMenuMeasureTimer = 0;
 let articleTocScrollTimer = 0;
 let articleTocItems = [];
 let articleTocHeadings = [];
+let deferredCardImageTimer = 0;
+let isDeferredCardImageLoadListenerQueued = false;
 const sectionPageState = new Map();
 const DESK_MENU_COLLAPSE_QUERY = "(max-width: 520px)";
 const HOME_DESK_PRIORITY = ["레시피"];
@@ -4279,22 +4283,73 @@ function getPageAudio(page) {
   };
 }
 
-function renderPageCardImage(page, { priority = false, eager = false } = {}) {
+function renderPageCardImage(page, { priority = false, eager = false, defer = false } = {}) {
   const image = getPageImage(page);
   if (!image) return "";
   const loading = priority || eager ? "eager" : "lazy";
   const fetchPriority = priority ? "high" : "low";
   const src = getPreferredImageSrc(image.src, image, CARD_IMAGE_WIDTHS);
   const srcset = buildImageSrcSet(image.src, image, CARD_IMAGE_WIDTHS);
+  const shouldDefer = defer && !priority && !eager;
+  const imageClass = shouldDefer ? "page-card__image page-card__image--deferred" : "page-card__image";
   const responsiveAttributes = srcset
-    ? ` srcset="${srcset}" sizes="${escapeHtml(CARD_IMAGE_SIZES)}"`
+    ? `${shouldDefer ? " data-deferred-srcset" : " srcset"}="${srcset}"${shouldDefer ? " data-deferred-sizes" : " sizes"}="${escapeHtml(CARD_IMAGE_SIZES)}"`
     : "";
+  const sourceAttributes = shouldDefer
+    ? `data-deferred-src="${escapeHtml(src)}"${responsiveAttributes ? ` ${responsiveAttributes}` : ""}`
+    : `src="${escapeHtml(src)}"${responsiveAttributes ? ` ${responsiveAttributes}` : ""}`;
 
   return `
     <figure class="page-card__media">
-      <img src="${escapeHtml(src)}"${responsiveAttributes} alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="${loading}" decoding="async" fetchpriority="${fetchPriority}" />
+      <img class="${imageClass}" ${sourceAttributes} alt="${escapeHtml(image.alt)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="${loading}" decoding="async" fetchpriority="${fetchPriority}" />
     </figure>
   `;
+}
+
+function hydrateDeferredCardImages() {
+  window.clearTimeout(deferredCardImageTimer);
+  document.querySelectorAll(DEFERRED_CARD_IMAGE_SELECTOR).forEach((imageNode) => {
+    const src = imageNode.dataset.deferredSrc || "";
+    if (!src) return;
+
+    const srcset = imageNode.dataset.deferredSrcset || "";
+    const sizes = imageNode.dataset.deferredSizes || "";
+    imageNode.src = src;
+    if (srcset) imageNode.srcset = srcset;
+    if (sizes) imageNode.sizes = sizes;
+    imageNode.classList.remove("page-card__image--deferred");
+    delete imageNode.dataset.deferredSrc;
+    delete imageNode.dataset.deferredSrcset;
+    delete imageNode.dataset.deferredSizes;
+  });
+}
+
+function scheduleDeferredCardImageHydration() {
+  window.clearTimeout(deferredCardImageTimer);
+
+  const hydrateWhenIdle = () => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(hydrateDeferredCardImages, { timeout: 1200 });
+      return;
+    }
+    window.setTimeout(hydrateDeferredCardImages, 0);
+  };
+
+  const scheduleAfterDelay = () => {
+    window.clearTimeout(deferredCardImageTimer);
+    isDeferredCardImageLoadListenerQueued = false;
+    deferredCardImageTimer = window.setTimeout(hydrateWhenIdle, HOME_IMAGE_HYDRATION_DELAY_MS);
+  };
+
+  if (document.readyState === "complete") {
+    scheduleAfterDelay();
+    return;
+  }
+
+  if (!isDeferredCardImageLoadListenerQueued) {
+    isDeferredCardImageLoadListenerQueued = true;
+    window.addEventListener("load", scheduleAfterDelay, { once: true });
+  }
 }
 
 function renderArticleImage(page) {
@@ -4811,6 +4866,7 @@ function renderCards(query = "") {
     </div>
   `;
   refreshSliderLoops();
+  scheduleDeferredCardImageHydration();
 }
 
 function getSectionPageSize() {
@@ -4837,10 +4893,14 @@ function renderTrendingSlider(items) {
   const cards = Array.from({ length: SLIDER_SEQUENCE_REPEAT_COUNT }, (_, sequenceIndex) => {
     const isDuplicateSequence = sequenceIndex > 0;
     return groupItems
-      .map(({ page, duplicate }, itemIndex) => renderCard(page, "page-card--rail", isDuplicateSequence || duplicate, {
-        priority: sequenceIndex === 0 && !duplicate && itemIndex === 0,
-        eagerImage: sequenceIndex === 0 && !duplicate && itemIndex === 0,
-      }))
+      .map(({ page, duplicate }, itemIndex) => {
+        const isPriorityCard = sequenceIndex === 0 && !duplicate && itemIndex === 0;
+        return renderCard(page, "page-card--rail", isDuplicateSequence || duplicate, {
+          priority: isPriorityCard,
+          eagerImage: isPriorityCard,
+          deferImage: !isPriorityCard,
+        });
+      })
       .join("");
   }).join("");
 
@@ -4910,10 +4970,10 @@ function comparePagesByPublishedTime(left, right, leftIndex = 0, rightIndex = 0)
   return String(left.slug || "").localeCompare(String(right.slug || ""));
 }
 
-function renderCard(page, extraClass = "", duplicate = false, { priority = false, eagerImage = false } = {}) {
+function renderCard(page, extraClass = "", duplicate = false, { priority = false, eagerImage = false, deferImage = false } = {}) {
   return `
     <a class="page-card ${extraClass}" href="${escapeHtml(getArticleUrl(page.slug))}" data-page-slug="${encodeURIComponent(page.slug)}"${duplicate ? " aria-hidden=\"true\" tabindex=\"-1\"" : ""}>
-      ${renderPageCardImage(page, { priority, eager: eagerImage })}
+      ${renderPageCardImage(page, { priority, eager: eagerImage, defer: deferImage })}
       <p class="eyebrow">${escapeHtml(page.desk)}</p>
       <h3>${escapeHtml(page.title)}</h3>
     </a>
@@ -4946,7 +5006,7 @@ function renderDeskSections(items) {
             <a class="more-link" href="${escapeHtml(getRouteUrl("desk", desk))}">+ 더보기</a>
           </div>
           <div class="card-grid card-grid--compact">
-            ${visiblePages.map((page) => renderCard(page)).join("")}
+            ${visiblePages.map((page) => renderCard(page, "", false, { deferImage: true })).join("")}
           </div>
           ${renderSectionPagination(desk, currentPage, totalPages)}
         </section>
