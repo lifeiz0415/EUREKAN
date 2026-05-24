@@ -1,13 +1,13 @@
-# Eurekan.org 프로젝트 실행 지식 베이스
+# Eurekan 프로젝트 실행 지식 베이스
 
 ## 문서 목적
-- 이 문서는 Eurekan.org 프로젝트의 최상위 실행 규칙이다.
+- 이 문서는 Eurekan 프로젝트의 최상위 실행 규칙이다.
 - 이 문서의 모든 내용은 반드시 한글로 유지한다.
 - 현재 저장소의 진실은 실제 파일 구조와 실제 코드다.
 - 코드가 바뀌면 같은 변경에서 이 문서도 함께 갱신한다.
 
 ## 현재 프로젝트 정체성
-- 프로젝트명: Eurekan.org
+- 프로젝트명: Eurekan
 - 제품 형태: 정적 단일 페이지형 위키/매거진
 - 핵심 목표: 지금 사람들이 가장 궁금해하는 주제를 분야별 장문 페이지로 보여주는 읽기 중심 사이트
 - 현재 구현 원칙: 백엔드 없이 `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `audios/`, `agents/`만으로 동작한다.

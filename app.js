@@ -3817,16 +3817,16 @@ const MAX_SECTION_ROWS = 1;
 const PAGINATION_WINDOW_SIZE = 10;
 const SLIDER_SEQUENCE_REPEAT_COUNT = 2;
 const SLIDER_MIN_GROUP_ITEM_COUNT = 6;
-const SITE_NAME = "Eurekan.org";
+const SITE_NAME = "Eurekan";
 const SCHEMA_CONTEXT = "https://schema.org";
 const SEO_LANGUAGE = "ko-KR";
 const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
-const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠, 한국주식, 미국주식, 크립토, 레시피 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
+const DEFAULT_SEO_DESCRIPTION = "Eurekan은 지금 사람들이 가장 궁금해하는 기술, 경제, 글로벌, 정치, 산업, 과학, 문화, 스포츠, 한국주식, 미국주식, 크립토, 레시피 이슈를 장문으로 정리하는 정적 위키 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260524-five-random-articles";
+const AUDIO_ASSET_VERSION = "20260524-site-name-eurekan";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
 const AUDIO_RECOVERY_SIGNAL_THRESHOLD = 0.0005;
 const AUDIO_RECOVERY_SILENCE_SECONDS = 7;
@@ -4102,7 +4102,7 @@ function escapeHtml(value = "") {
 function getPageDescription(page) {
   const summary = String(page.summary || "").trim();
   if (summary) return summary;
-  return `${page.desk} 분야에서 ${page.title}라는 주제를 깊이 있게 정리한 Eurekan.org 장문 분석입니다.`;
+  return `${page.desk} 분야에서 ${page.title}라는 주제를 깊이 있게 정리한 Eurekan 장문 분석입니다.`;
 }
 
 function getDeskDescription(desk, count = 0) {
@@ -4681,7 +4681,7 @@ function getDeskLabel(desk) {
 function getDeskAgentName(pageOrDesk) {
   const desk = typeof pageOrDesk === "object" && pageOrDesk !== null ? pageOrDesk.desk : pageOrDesk;
   const agents = deskAgentNames[desk] || deskAgentNames[normalizeDesk(desk)] || [];
-  if (!agents.length) return "Eurekan.org";
+  if (!agents.length) return "Eurekan";
   if (typeof pageOrDesk !== "object" || pageOrDesk === null) return agents[0];
 
   const normalizedDesk = normalizeDesk(desk);
