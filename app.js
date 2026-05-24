@@ -3686,8 +3686,11 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan.org는 지금 사람들이 가장 궁�
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260524-tenbagger-us-stocks";
+const AUDIO_ASSET_VERSION = "20260524-audio-recovery";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
+const AUDIO_RECOVERY_SIGNAL_THRESHOLD = 0.0005;
+const AUDIO_RECOVERY_SILENCE_SECONDS = 7;
+const AUDIO_RECOVERY_MIN_PLAY_SECONDS = 3;
 const CARD_IMAGE_WIDTHS = [330, 500, 960];
 const ARTICLE_IMAGE_WIDTHS = [500, 960, 1280];
 const CARD_IMAGE_SIZES = "(max-width: 640px) 44vw, (max-width: 960px) 30vw, 320px";
@@ -3871,6 +3874,15 @@ let isArticleSpeechStopping = false;
 let speechProgressTimer = 0;
 let speechSeekTimer = 0;
 let audioSeekReleaseTimer = 0;
+let voiceAudioContext = null;
+let voiceAudioSourceNode = null;
+let voiceAudioAnalyserNode = null;
+let voiceAudioSignalBuffer = null;
+let voiceAudioWatchTimer = 0;
+let voiceAudioSilentSince = 0;
+let voiceAudioLastMonitorTime = 0;
+let voiceAudioRecovering = false;
+let voiceAudioRecoveryRunId = 0;
 let speechRunId = 0;
 let audioCheckRunId = 0;
 let speechStartedAt = 0;
@@ -5159,6 +5171,7 @@ function setVoiceReady(text = "", page = activePage) {
   activeSpeechCurrentIndex = 0;
   isVoiceProgressSeeking = false;
   pendingAudioSeekTime = null;
+  stopVoiceAudioWatchdog();
   audioCheckRunId += 1;
   clearTimeout(speechSeekTimer);
   clearTimeout(audioSeekReleaseTimer);
@@ -5188,6 +5201,166 @@ function setVoiceProgressEnabled(isEnabled) {
 
 function isArticleAudioMode() {
   return Boolean(activeArticleAudioReady && activeArticleAudioSrc && voiceAudioNode);
+}
+
+function getAudioContextConstructor() {
+  return window.AudioContext || window.webkitAudioContext || null;
+}
+
+async function ensureVoiceAudioOutputMonitor() {
+  if (!voiceAudioNode || !isArticleAudioMode()) return false;
+  const AudioContextConstructor = getAudioContextConstructor();
+  if (!AudioContextConstructor) return false;
+
+  try {
+    if (!voiceAudioContext) voiceAudioContext = new AudioContextConstructor();
+
+    if (!voiceAudioSourceNode || !voiceAudioAnalyserNode) {
+      const sourceNode = voiceAudioSourceNode || voiceAudioContext.createMediaElementSource(voiceAudioNode);
+      const analyserNode = voiceAudioContext.createAnalyser();
+      analyserNode.fftSize = 2048;
+      sourceNode.connect(analyserNode);
+      analyserNode.connect(voiceAudioContext.destination);
+      voiceAudioSourceNode = sourceNode;
+      voiceAudioAnalyserNode = analyserNode;
+      voiceAudioSignalBuffer = new Float32Array(analyserNode.fftSize);
+    }
+
+    if (voiceAudioContext.state === "suspended") await voiceAudioContext.resume();
+    return voiceAudioContext.state === "running";
+  } catch {
+    voiceAudioAnalyserNode = null;
+    voiceAudioSignalBuffer = null;
+    return false;
+  }
+}
+
+function getVoiceAudioSignalLevel() {
+  if (!voiceAudioAnalyserNode || !voiceAudioSignalBuffer) return null;
+  voiceAudioAnalyserNode.getFloatTimeDomainData(voiceAudioSignalBuffer);
+  const signalSum = voiceAudioSignalBuffer.reduce((sum, sample) => sum + (sample * sample), 0);
+  return Math.sqrt(signalSum / voiceAudioSignalBuffer.length);
+}
+
+function getSpeechIndexFromAudioTime(timeValue = activeSpeechCurrentIndex) {
+  const duration = Number(voiceAudioNode?.duration) || 0;
+  const time = Number(timeValue) || 0;
+  if (!duration || !activeArticleSpeechText) return getNormalizedSpeechIndex(time);
+  return getNormalizedSpeechIndex((Math.max(0, Math.min(duration, time)) / duration) * activeArticleSpeechText.length);
+}
+
+function stopVoiceAudioWatchdog() {
+  clearInterval(voiceAudioWatchTimer);
+  voiceAudioWatchTimer = 0;
+  voiceAudioSilentSince = 0;
+  voiceAudioLastMonitorTime = 0;
+  voiceAudioRecovering = false;
+  voiceAudioRecoveryRunId += 1;
+}
+
+function restoreVoiceAudioOutputState() {
+  if (!voiceAudioNode) return;
+  voiceAudioNode.defaultMuted = false;
+  voiceAudioNode.muted = false;
+  voiceAudioNode.volume = 1;
+}
+
+function recoverVoiceAudioPlayback() {
+  if (!voiceAudioNode || !activeArticleAudioSrc || voiceAudioRecovering) return;
+  if (voiceAudioNode.paused || voiceAudioNode.ended) return;
+
+  voiceAudioRecovering = true;
+  const recoveryRunId = voiceAudioRecoveryRunId + 1;
+  voiceAudioRecoveryRunId = recoveryRunId;
+  const duration = Number(voiceAudioNode.duration) || 0;
+  const currentTime = Number(voiceAudioNode.currentTime) || 0;
+  const resumeTime = duration > 0
+    ? Math.max(0, Math.min(duration - 0.25, currentTime))
+    : Math.max(0, currentTime);
+
+  const resumePlayback = () => {
+    if (recoveryRunId !== voiceAudioRecoveryRunId || isArticleSpeechStopping || !isArticleSpeechPlaying) {
+      voiceAudioRecovering = false;
+      return;
+    }
+    if (!voiceAudioNode || !activeArticleAudioSrc) return;
+    try {
+      if (Number.isFinite(resumeTime) && resumeTime > 0) voiceAudioNode.currentTime = resumeTime;
+    } catch {
+      // 일부 브라우저는 재로드 직후 currentTime 설정을 한 번 거부할 수 있습니다.
+    }
+    restoreVoiceAudioOutputState();
+    voiceAudioNode.play()
+      .then(() => {
+        voiceAudioRecovering = false;
+        voiceAudioSilentSince = 0;
+      })
+      .catch(() => {
+        voiceAudioRecovering = false;
+        if (activeArticleSpeechText && isSpeechSupported()) {
+          startArticleSpeech(getSpeechIndexFromAudioTime(resumeTime), { preferAudio: false });
+        }
+      });
+  };
+
+  restoreVoiceAudioOutputState();
+  voiceAudioNode.pause();
+  voiceAudioNode.src = activeArticleAudioSrc;
+  voiceAudioNode.preload = "auto";
+  voiceAudioNode.load();
+
+  if (voiceAudioNode.readyState >= 1) {
+    resumePlayback();
+    return;
+  }
+
+  voiceAudioNode.addEventListener("loadedmetadata", resumePlayback, { once: true });
+  window.setTimeout(() => {
+    if (voiceAudioRecovering && voiceAudioNode.readyState >= 1) resumePlayback();
+  }, 1200);
+}
+
+function monitorVoiceAudioOutput() {
+  if (!isArticleAudioMode() || !voiceAudioNode || voiceAudioNode.paused || voiceAudioNode.ended) {
+    voiceAudioSilentSince = 0;
+    return;
+  }
+
+  restoreVoiceAudioOutputState();
+  ensureVoiceAudioOutputMonitor();
+
+  const currentTime = Number(voiceAudioNode.currentTime) || 0;
+  const hasProgressed = currentTime > voiceAudioLastMonitorTime + 0.2;
+  voiceAudioLastMonitorTime = Math.max(voiceAudioLastMonitorTime, currentTime);
+
+  if (voiceAudioNode.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) {
+    recoverVoiceAudioPlayback();
+    return;
+  }
+
+  const signalLevel = getVoiceAudioSignalLevel();
+  if (signalLevel === null || currentTime < AUDIO_RECOVERY_MIN_PLAY_SECONDS) {
+    voiceAudioSilentSince = 0;
+    return;
+  }
+
+  if (hasProgressed && signalLevel < AUDIO_RECOVERY_SIGNAL_THRESHOLD) {
+    if (!voiceAudioSilentSince) voiceAudioSilentSince = Date.now();
+    if (Date.now() - voiceAudioSilentSince >= AUDIO_RECOVERY_SILENCE_SECONDS * 1000) {
+      recoverVoiceAudioPlayback();
+    }
+    return;
+  }
+
+  voiceAudioSilentSince = 0;
+}
+
+function startVoiceAudioWatchdog() {
+  if (!isArticleAudioMode() || !voiceAudioNode) return;
+  clearInterval(voiceAudioWatchTimer);
+  voiceAudioSilentSince = 0;
+  voiceAudioLastMonitorTime = Number(voiceAudioNode.currentTime) || 0;
+  voiceAudioWatchTimer = window.setInterval(monitorVoiceAudioOutput, 1000);
 }
 
 function seekVoiceAudio(timeValue = 0, { commit = true } = {}) {
@@ -5367,6 +5540,7 @@ function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) 
   isArticleSpeechStopping = true;
   isArticleSpeechPlaying = false;
   stopSpeechProgressTimer();
+  stopVoiceAudioWatchdog();
   if (voiceAudioNode) {
     voiceAudioNode.pause();
     if (resetProgress) voiceAudioNode.currentTime = 0;
@@ -5399,6 +5573,7 @@ function startArticleAudio(startTime = activeSpeechCurrentIndex) {
   voiceAudioNode.muted = false;
   voiceAudioNode.playsInline = true;
   voiceAudioNode.volume = 1;
+  ensureVoiceAudioOutputMonitor();
 
   const seekTo = () => {
     if (Number.isFinite(Number(startTime)) && Number(startTime) > 0 && Number.isFinite(voiceAudioNode.duration)) {
@@ -5417,11 +5592,12 @@ function startArticleAudio(startTime = activeSpeechCurrentIndex) {
   voiceButtonNode.textContent = "음성읽기 중지하기";
   voiceStatusNode.textContent = "";
   voiceAudioNode.play().then(() => {
-    voiceAudioNode.muted = false;
-    voiceAudioNode.volume = 1;
+    restoreVoiceAudioOutputState();
+    ensureVoiceAudioOutputMonitor();
+    startVoiceAudioWatchdog();
   }).catch(() => {
     isArticleSpeechPlaying = false;
-    if (activeArticleSpeechText && isSpeechSupported()) startArticleSpeech(activeSpeechCurrentIndex, { preferAudio: false });
+    if (activeArticleSpeechText && isSpeechSupported()) startArticleSpeech(getSpeechIndexFromAudioTime(startTime), { preferAudio: false });
     else voiceStatusNode.textContent = "음성 파일을 재생하지 못했습니다.";
   });
   return true;
@@ -5930,10 +6106,32 @@ voiceAudioNode?.addEventListener("seeked", () => {
   if (!isArticleAudioMode()) return;
   isVoiceProgressSeeking = false;
   pendingAudioSeekTime = null;
+  restoreVoiceAudioOutputState();
   updateVoiceProgress(voiceAudioNode.currentTime || 0);
+});
+voiceAudioNode?.addEventListener("playing", () => {
+  if (!isArticleAudioMode()) return;
+  restoreVoiceAudioOutputState();
+  ensureVoiceAudioOutputMonitor();
+  startVoiceAudioWatchdog();
+});
+voiceAudioNode?.addEventListener("waiting", () => {
+  if (!isArticleAudioMode() || voiceAudioNode.paused || voiceAudioNode.ended) return;
+  window.setTimeout(() => {
+    if (isArticleAudioMode() && !voiceAudioNode.paused && !voiceAudioNode.ended && voiceAudioNode.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) {
+      recoverVoiceAudioPlayback();
+    }
+  }, 1200);
+});
+voiceAudioNode?.addEventListener("stalled", () => {
+  if (!isArticleAudioMode() || voiceAudioNode.paused || voiceAudioNode.ended) return;
+  window.setTimeout(() => {
+    if (isArticleAudioMode() && !voiceAudioNode.paused && !voiceAudioNode.ended) recoverVoiceAudioPlayback();
+  }, 1500);
 });
 voiceAudioNode?.addEventListener("ended", () => {
   if (!isArticleAudioMode()) return;
+  stopVoiceAudioWatchdog();
   isVoiceProgressSeeking = false;
   pendingAudioSeekTime = null;
   isArticleSpeechPlaying = false;
@@ -5943,11 +6141,13 @@ voiceAudioNode?.addEventListener("ended", () => {
 });
 voiceAudioNode?.addEventListener("error", () => {
   if (!activeArticleAudioSrc) return;
+  stopVoiceAudioWatchdog();
+  const fallbackIndex = getSpeechIndexFromAudioTime(voiceAudioNode.currentTime || activeSpeechCurrentIndex);
   activeArticleAudioReady = false;
   isArticleSpeechPlaying = false;
   voiceButtonNode.textContent = "음성으로 읽어주기";
   if (activeArticleSpeechText && isSpeechSupported()) {
-    startArticleSpeech(activeSpeechCurrentIndex, { preferAudio: false });
+    startArticleSpeech(fallbackIndex, { preferAudio: false });
     return;
   }
   voiceStatusNode.textContent = "음성 파일을 불러오지 못했습니다.";
