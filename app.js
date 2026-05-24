@@ -2456,6 +2456,14 @@ const US_STOCKS_NVIDIA_AI_FACTORY_MARGIN_IMAGE = {
   height: 720
 };
 
+const US_STOCKS_NVIDIA_NET_INCOME_AI_FACTORY_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/NVIDIA_Headquarters.jpg/1280px-NVIDIA_Headquarters.jpg",
+  alt: "엔비디아 순이익과 AI 인프라 투자를 떠올리게 하는 산타클라라 본사 외관",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:NVIDIA_Headquarters.jpg",
+  width: 1280,
+  height: 783
+};
+
 const CRYPTO_ETHEREUM_GLAMSTERDAM_GASLIMIT_IMAGE = {
   externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/960px-Ethereum_logo_2014.svg.png",
   alt: "이더리움 업그레이드와 가스 한도 논의를 떠올리게 하는 이더리움 로고",
@@ -3027,6 +3035,26 @@ const featuredPages = [
       sourceUrl: "https://www.youtube.com/watch?v=BDLSY1wKv64",
       thumbnailUrl: "https://i.ytimg.com/vi/BDLSY1wKv64/hqdefault.jpg",
       description: "삼성전자 HBM4와 AI 메모리 흐름을 공식 채널에서 설명한 한국어 영상입니다.",
+    },
+  },
+  {
+    slug: "us-stocks-nvidia-net-income-ai-factory-2026",
+    title: "엔비디아 순이익은 2027년까지 강하지만 2028년에는 마진 방어를 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-24T19:12:55+09:00",
+    summary: "엔비디아는 2027회계연도 1분기에 순이익 583억 달러를 기록했지만 반복 가능한 이익 체력은 기타수익을 제외한 분기 450억~520억 달러 구간으로 보는 편이 안전합니다.",
+    image: US_STOCKS_NVIDIA_NET_INCOME_AI_FACTORY_IMAGE,
+    audio: {
+      src: "audios/us-stocks-nvidia-net-income-ai-factory-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "jw_o0xr8MWU",
+      title: "NVIDIA GTC Keynote 2026",
+      channel: "NVIDIA",
+      sourceUrl: "https://www.youtube.com/watch?v=jw_o0xr8MWU",
+      thumbnailUrl: "https://i.ytimg.com/vi/jw_o0xr8MWU/hqdefault.jpg",
+      description: "엔비디아가 AI 팩토리와 차세대 인프라 방향을 공식 키노트에서 설명한 영상입니다.",
     },
   },
   {
@@ -3854,7 +3882,7 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan은 지금 사람들이 가장 궁금해
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260524-samsung-profit";
+const AUDIO_ASSET_VERSION = "20260524-nvidia-net-income";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
 const AUDIO_RECOVERY_SIGNAL_THRESHOLD = 0.0005;
 const AUDIO_RECOVERY_SILENCE_SECONDS = 7;
