@@ -2,7 +2,7 @@
 
 위키, 블로그, 뉴스.
 
-Eurekan은 지금 사람들이 많이 궁금해하는 이슈를 분야별 장문 글로 보여주는 정적 단일 페이지 위키/매거진입니다. 별도 백엔드, 데이터베이스, 프레임워크 없이 `index.html`, `style.css`, `app.js`, 루트 안내 페이지, `pages/*.html`만으로 읽기 중심 사이트를 구성합니다.
+Eurekan은 지금 사람들이 많이 궁금해하는 이슈를 분야별 장문 글로 보여주는 정적 단일 페이지 위키/매거진입니다. 별도 백엔드, 데이터베이스, 프레임워크 없이 `index.html`, `style.css`, `app.js`, 루트 안내 페이지, `pages/*.html`, `images/*.webp`, `audios/*.mp3`만으로 읽기 중심 사이트를 구성합니다.
 
 ## 프로젝트 성격
 
@@ -22,7 +22,7 @@ Eurekan은 지금 사람들이 많이 궁금해하는 이슈를 분야별 장문
 - `?desk=<분야>` 분야별 전체 보기 라우팅
 - 기존 `?page`, `#page`, `#desk` 주소 호환
 - 정적 HTML 상세 페이지 제공 및 최종 HTML 본문 기반 상호작용 보강
-- 필요한 글의 공개 외부 이미지 URL 기반 카드 썸네일과 검색엔진용 이미지 메타데이터 제공
+- 공개 외부 이미지를 원본으로 삼은 로컬 WebP 카드 썸네일과 검색엔진용 이미지 메타데이터 제공
 - 상세 페이지 음성 읽기 버튼
 - 상세 페이지 전용 뉴스레터 신청 UI
 - 공통 하단의 소개, 문의, 개인정보처리방침, 면책고지 링크
@@ -44,8 +44,17 @@ app.js
 data.json
 robots.txt
 sitemap.xml
+ads.txt
 pages/
   <slug>.html
+images/
+  <slug>-220.webp
+  <slug>-330.webp
+  <slug>-500.webp
+  <slug>-960.webp
+  <slug>-1280.webp
+audios/
+  <slug>.mp3
 agents/
   README.md
   <desk>-agent-<name>.md
@@ -66,6 +75,9 @@ agents/
 | `data.json` | 뉴스레터 구독자 저장용 정적 JSON 데이터 |
 | `robots.txt` | 검색엔진 크롤링 정책 |
 | `sitemap.xml` | 검색엔진 제출용 URL 목록 |
+| `ads.txt` | Google AdSense 판매자 인증 파일 |
+| `images/*.webp` | 글별 대표 이미지를 로컬 전송량에 맞게 변환한 WebP 후보 |
+| `audios/*.mp3` | 글별 음성 읽기용 MP3 파일 |
 | `AGENTS.md` | 프로젝트 운영 규칙과 구현 제약 |
 | `agents/<desk>-agent-<name>.md` | 글 생성과 검토에 참고하는 분야별 전문가 페르소나 문서 |
 
@@ -90,9 +102,10 @@ http://localhost:8000/
 1. `app.js`의 `featuredPages`에 페이지 메타데이터를 등록합니다.
 2. 매니페스트의 `slug`와 같은 이름으로 `pages/<slug>.html` 최종 정적 글 페이지를 생성합니다.
 3. 정적 글 페이지에는 전체 본문과 글별 SEO 메타데이터를 함께 포함합니다.
-4. 글에 이미지가 꼭 필요하면 저작권과 접근성을 확인한 공개 외부 이미지 URL을 `app.js` 매니페스트의 `image` 객체와 `pages/<slug>.html`의 본문 이미지, Open Graph, Twitter 카드, JSON-LD에 직접 반영합니다. 화면에 보이는 카드와 본문 이미지는 가로 2:세로 1 비율로 표시합니다.
-5. 매니페스트의 글을 추가하거나 slug를 바꾸면 같은 변경에서 `pages/<slug>.html`, 필요한 이미지 메타데이터, `sitemap.xml`도 갱신합니다.
-6. 애드센스, 뉴스레터, 외부 분석 도구처럼 개인정보·광고 고지와 연결되는 기능을 바꾸면 `privacy.html`, `disclaimer.html`, 공통 푸터도 함께 확인합니다.
+4. 글에 이미지가 꼭 필요하면 저작권과 접근성을 확인한 공개 외부 이미지를 고르고, `images/<slug>-220.webp`, `images/<slug>-330.webp`, `images/<slug>-500.webp`, `images/<slug>-960.webp`, `images/<slug>-1280.webp` 로컬 후보로 변환합니다.
+5. `app.js` 매니페스트에는 원본 추적용 `image.externalSrc`, `image.sourceUrl`, `image.alt`를 남기고, `pages/<slug>.html`의 본문 이미지, Open Graph, Twitter 카드, JSON-LD에는 로컬 WebP 대표 경로를 반영합니다.
+6. 매니페스트의 글을 추가하거나 slug를 바꾸면 같은 변경에서 `pages/<slug>.html`, 필요한 이미지 메타데이터, `audios/<slug>.mp3`, `sitemap.xml`도 갱신합니다.
+7. 애드센스, 뉴스레터, 외부 분석 도구처럼 개인정보·광고 고지와 연결되는 기능을 바꾸면 `privacy.html`, `disclaimer.html`, 공통 푸터도 함께 확인합니다.
 
 ## 뉴스레터 데이터 저장
 
@@ -119,7 +132,7 @@ http://localhost:8000/
 - `sitemap.xml`에 홈, 소개, 문의, 개인정보처리방침, 면책고지, 분야, `pages/<slug>.html` 글 URL이 포함됐는지 확인
 - 모든 공개 화면 하단에서 소개, 문의, 개인정보처리방침, 면책고지로 이동할 수 있는지 확인
 - 뉴스레터 이메일 수집과 Google 광고 쿠키·개인 맞춤 광고 고지가 개인정보처리방침에 반영됐는지 확인
-- 홈 첫 화면 대표 이미지가 바뀌면 `index.html`의 `preconnect`와 `preload` URL도 함께 갱신
+- 홈 첫 화면 대표 이미지가 바뀌면 `index.html`의 로컬 WebP `preload` URL도 함께 갱신
 - Google Search Console에 실제 `sitemap.xml` 제출
 - 새 글 또는 slug 변경 시 `pages/<slug>.html`과 `sitemap.xml` 갱신
 

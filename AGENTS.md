@@ -10,7 +10,7 @@
 - 프로젝트명: Eurekan
 - 제품 형태: 정적 단일 페이지형 위키/매거진
 - 핵심 목표: 지금 사람들이 가장 궁금해하는 주제를 분야별 장문 페이지로 보여주는 읽기 중심 사이트
-- 현재 구현 원칙: 백엔드 없이 `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `audios/`, `agents/`만으로 동작한다.
+- 현재 구현 원칙: 백엔드 없이 `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `audios/`, `images/`, `agents/`만으로 동작한다.
 
 ## 현재 파일 구조
 ```text
@@ -31,6 +31,12 @@ pages/
   <slug>.html
 audios/
   <slug>.mp3
+images/
+  <slug>-220.webp
+  <slug>-330.webp
+  <slug>-500.webp
+  <slug>-960.webp
+  <slug>-1280.webp
 agents/
   README.md
   <desk>-agent-<name>.md
@@ -40,6 +46,7 @@ agents/
 - `README.md`는 공개 저장소용 프로젝트 소개 문서로 유지한다.
 - `agents/` 폴더는 분야별 전문가 페르소나 문서 저장용으로 남긴다.
 - `audios/` 폴더는 글별 음성 읽기용 MP3 파일 저장용으로 유지한다.
+- `images/` 폴더는 외부 공개 원본 이미지를 글별 로컬 WebP 후보로 최적화해 저장하는 폴더로 유지한다.
 - 실제 사용자-facing 사이트는 루트의 `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`와 `pages/<slug>.html` 정적 글 페이지를 사용한다.
 - `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`은 애드센스 신청과 사이트 신뢰 확보를 위한 루트 정적 안내 페이지로 유지한다.
 - 검색엔진 수집 보조 파일은 루트의 `robots.txt`, `sitemap.xml`을 사용하며, 루트 안내 페이지도 `sitemap.xml`에 포함한다.
@@ -119,11 +126,11 @@ agents/
 - 카드 링크는 검색엔진이 읽을 수 있도록 `pages/<slug>.html` 정적 글 페이지를 우선 사용하며, 분야 링크는 `?desk=<분야>` 쿼리 라우팅을 사용한다. 기존 `?page=<slug>`, `#page`, `#desk` 주소도 `app.js`에서 호환한다.
 - 정적 글 페이지는 `pages/<slug>.html`에 전체 본문과 글별 SEO 메타데이터를 포함하며, `app.js`는 이 최종 HTML의 본문을 기준으로 상호작용용 상세 화면을 보강한다.
 - `app.js`나 `style.css`처럼 모든 페이지에 영향을 주는 공용 자산을 바꾸면 브라우저 캐시 때문에 배포 직후 변경이 안 보일 수 있으므로, 같은 변경에서 `index.html`과 `pages/*.html`의 해당 자산 URL 버전 쿼리를 함께 갱신한다.
-- 홈 첫 화면에서 LCP 후보가 되는 대표 이미지는 리다이렉트가 없는 직접 이미지 URL을 우선 사용하고, `index.html`의 `preconnect`와 `preload`도 같은 URL 기준으로 맞춘다.
+- 홈 첫 화면에서 LCP 후보가 되는 대표 이미지는 외부 URL을 직접 로드하지 않고 `images/<slug>-330.webp` 같은 로컬 WebP 후보를 우선 사용하며, `index.html`의 `preload`도 같은 로컬 후보 기준으로 맞춘다.
 - 홈 최신 콘텐츠 슬라이더는 시퀀스 래퍼 없이 동일 카드 묶음을 단일 레일 안에 반복 렌더링하되, 한 묶음의 폭이 화면보다 짧아지지 않게 필요한 만큼 카드를 보강하고 렌더 후 첫 카드와 다음 반복 묶음의 첫 카드 사이 실제 거리를 측정해 `--slide-distance`를 설정한다.
-- 이미지가 꼭 필요한 글은 `pages/<slug>.html` 정적 글 페이지 안에서 공개 외부 이미지 URL을 직접 링크한다.
+- 이미지가 꼭 필요한 글은 공개 외부 원본 이미지를 먼저 고른 뒤, `images/<slug>-220.webp`, `images/<slug>-330.webp`, `images/<slug>-500.webp`, `images/<slug>-960.webp`, `images/<slug>-1280.webp` 로컬 WebP 후보로 변환해 사용한다.
 - 새 글의 대표 이미지는 글 내용을 실제로 설명하는 무료 이미지로 우선 고른다. 음식·레시피 글은 텍스트만 있는 생성 SVG나 추상 플레이스홀더를 대표 썸네일로 쓰지 않고, Wikimedia Commons 같은 무료 출처의 실제 음식 사진을 우선 사용한다.
-- 외부 무료 이미지를 쓸 때는 `app.js` manifest에 `externalSrc`, `sourceUrl`, `alt`를 함께 넣고, 정적 글 페이지의 본문 이미지·Open Graph·Twitter 카드·JSON-LD도 같은 이미지 주소로 맞춘다.
+- 외부 무료 이미지를 쓸 때는 `app.js` manifest에 원본 확인용 `externalSrc`, `sourceUrl`, `alt`를 함께 넣고, 정적 글 페이지의 본문 이미지·Open Graph·Twitter 카드·JSON-LD는 같은 글의 로컬 WebP 대표 경로로 맞춘다.
 - 상세 본문 렌더링은 최종 HTML의 `#article-body`를 기준으로 하며, 예전 분야 표현은 `app.js`에서 정규화해 보여준다.
 - 상세 본문 소제목은 최종 HTML 안의 `<h3 class="article-subheading">` 요소로 표시한다.
 - 홈 상단에는 `최신 콘텐츠` 무한 카드 슬라이더가 있다.
@@ -145,7 +152,7 @@ agents/
 - 댓글 컴포넌트, 댓글 입력창, 댓글 목록, 댓글 저장 로직은 제공하지 않는다.
 - 상세 화면과 정적 글 페이지에서 글 제목과 음성으로 읽어주기 버튼 사이에는 요약 디스크립션이나 설명 문단을 표시하지 않는다.
 - 상세 화면과 정적 글 페이지에서 작성자와 발행시각은 음성으로 읽어주기 버튼과 같은 줄에 두고 오른쪽 정렬로 표시한다.
-- 정적 글 페이지에서 외부 이미지를 직접 링크하는 경우 이미지는 첫 번째 본문 소제목 바로 아래에 표시하고, 캡션에 `출처 : 도메인 주소` 형식으로 출처를 표기한다.
+- 정적 글 페이지의 대표 이미지는 첫 번째 본문 소제목 바로 아래에 로컬 WebP 경로로 표시하고, 캡션에는 원본 확인 페이지를 `출처 : 도메인 주소` 형식으로 표기한다.
 - manifest의 `summary`는 검색과 SEO 메타데이터용으로만 사용하고 상세 화면 본문 UI에는 표시하지 않는다.
 - 음성 기본 버튼 문구는 `음성으로 읽어주기`, 재생 중 버튼 문구는 `음성읽기 중지하기`로 표시하고, 같은 버튼을 다시 누르면 즉시 음성 재생을 중지해야 한다.
 - 음성 버튼 오른쪽에는 항상 보이는 재생 위치 플레이바를 두고, 사용자가 플레이바를 클릭하거나 드래그하면 해당 위치부터 다시 읽을 수 있게 한다.
@@ -239,7 +246,8 @@ agents/
 - 새 글 대표 이미지는 같은 분야라는 이유만으로 공용 이미지를 재사용하지 않고, 해당 글의 제목·요약·첫 본문 문단·소제목이 가리키는 구체적 장면이나 대상에 맞는 이미지로 고른다.
 - 새 글 대표 이미지는 이미 게시된 다른 글과 같은 이미지를 다시 쓰지 않는 것을 원칙으로 하며, 부득이하게 비슷한 대상을 다루더라도 다른 이미지 파일을 선택한다.
 - 새 글 대표 이미지는 저작권 문제가 없는 공개 사용 가능 이미지여야 하며, 라이선스와 핫링크 가능 여부를 확인한 뒤 사용한다.
-- 새 글은 대표 이미지가 `app.js` manifest의 `image` 객체, `pages/<slug>.html` 본문 이미지, Open Graph, Twitter 카드, JSON-LD `image`, 출처 캡션까지 함께 반영되기 전에는 게시 완료로 보지 않는다.
+- 새 글 대표 이미지는 외부 원본 URL을 그대로 노출하는 데서 끝내지 않고, 같은 변경에서 `images/<slug>-220.webp`, `images/<slug>-330.webp`, `images/<slug>-500.webp`, `images/<slug>-960.webp`, `images/<slug>-1280.webp` 후보를 모두 생성한다.
+- 새 글은 대표 이미지가 `app.js` manifest의 `image` 객체, `images/<slug>-*.webp` 로컬 후보, `pages/<slug>.html` 본문 이미지, Open Graph, Twitter 카드, JSON-LD `image`, 출처 캡션까지 함께 반영되기 전에는 게시 완료로 보지 않는다.
 - 상세 화면과 정적 글 페이지는 글 제목 아래 도구 줄에서 음성으로 읽어주기 버튼과 같은 줄 오른쪽에 해당 분야의 순환 에이전트 이름과 발행시각을 표시한다.
 - 본문은 기사문/블로그문 형식의 읽기 쉬운 한국어 존댓말 문단으로 작성한다.
 - 본문은 온전히 해당 주제의 장면, 이해관계, 비용, 변화, 판단 기준만 다루며 글을 쓰는 에이전트·작성자·페르소나의 관점이나 문체를 직접 설명하지 않는다.
@@ -278,7 +286,7 @@ agents/
 
 ## app.js 구현 규칙
 - 페이지 manifest 배열이 있어야 한다.
-- 각 항목은 최소 `slug`, `title`, `desk`, `summary`를 가진다. 대표 이미지는 웹검색으로 찾은 공개 사용 가능 외부 이미지만 사용하며, 이 경우 `image.externalSrc`, `image.alt`, `image.sourceUrl`, 필요한 경우 `image.width`, `image.height`를 함께 가진다. 기존 호환을 위해 `image.src`도 사용할 수 있으나, 새 글에서는 외부 이미지 URL을 `externalSrc`에 두는 것을 우선한다.
+- 각 항목은 최소 `slug`, `title`, `desk`, `summary`를 가진다. 대표 이미지는 웹검색으로 찾은 공개 사용 가능 외부 이미지를 원본으로 삼되, 사용자에게 표시되는 이미지는 `images/<slug>-*.webp` 로컬 후보를 우선 사용한다. manifest의 `image` 객체는 원본 추적과 출처 표기를 위해 `image.externalSrc`, `image.alt`, `image.sourceUrl`, 필요한 경우 `image.width`, `image.height`를 함께 가진다. 기존 호환을 위해 `image.src`도 사용할 수 있으나, 새 글에서는 외부 이미지 URL을 `externalSrc`에 두는 것을 우선한다.
 - 새 글의 manifest 항목은 반드시 `video` 객체를 가진다. `video` 객체는 `youtubeId`, `title`, `channel`, `sourceUrl`, 필요한 경우 `description`, `thumbnailUrl`, `uploadDate`를 함께 가진다.
 - `video.youtubeId`는 11자 유튜브 ID로 저장하는 것을 우선하며, `sourceUrl`은 `https://www.youtube.com/watch?v=<id>` 형식의 원본 보기 URL로 둔다.
 - 관련 영상은 한국어 콘텐츠를 먼저 검색하고, 주제 적합도와 신뢰도가 충분한 한국어 영상이 없을 때만 외국어 콘텐츠를 보조 후보로 검토한다.
@@ -290,6 +298,7 @@ agents/
 - 자동 토픽 생성용 `hotTopicsByDesk`, `topicSlugsByDesk`, `topicImagesBySlug`, `deskSlugs`는 다시 추가하지 않고, 화면 표시와 뉴스레터 저장값은 `normalizeDesk()` 기준이어야 한다.
 - 홈 카드 렌더링, 검색 필터, 정적 글 페이지 본문 보강, 뉴스레터 저장은 모두 `app.js`에서 처리한다.
 - `app.js`는 `pages/*.md`에 의존하지 않고, 필요한 경우 `pages/<slug>.html`에서 `#article-body`를 읽어 상호작용용 상세 화면을 구성한다.
+- `app.js`는 manifest의 `slug`를 기준으로 `images/<slug>-1280.webp` 대표 이미지와 카드·본문용 `srcset`을 자동 구성하며, 외부 이미지 URL은 로컬 후보가 없는 비상 fallback과 출처 확인용으로만 사용한다.
 - `app.js`는 manifest의 `video` 객체가 있는 글에 관련 영상 블록을 추가하고, 영상 재생 버튼을 눌렀을 때만 `youtube-nocookie.com` iframe을 생성한다.
 - 라우트별 SEO 메타데이터 갱신도 `app.js`에서 처리한다.
 - 카드 슬라이더의 실제 이동 거리 계산은 `refreshSliderLoops()`에서 처리한다.
@@ -333,17 +342,17 @@ agents/
 - 이미지 작업은 품질과 저작권 안정성을 위해 아래 `웹검색 우선 모드`를 기본 플로우로 삼는다.
 - `웹검색 우선 모드`는 글 1개마다 `제목·slug 확인 → pages/<slug>.html 본문 핵심 3줄 추출 → 첫 본문 문단과 소제목 확인 → 이미지 장면 한 문장 확정 → 공개 사용 가능 외부 이미지 웹검색 → 라이선스·원출처·핫링크 가능성 확인 → app.js/정적 HTML 메타데이터 치환 → sitemap.xml 갱신 → 빠른 검증 → 커밋·푸시` 순서로 처리한다.
 - 앞으로 정치 분야 대표 이미지와 본문 이미지를 새로 고르거나 교체할 때는 인물 사진, 사람 얼굴이 선명하게 드러나는 사진, 특정 정치인을 중심에 둔 이미지를 선택하지 않는다. 정치 글에는 투표 도구, 공공기관 건물, 의회·회의장 전경, 문서, 예산·정책을 상징하는 사물처럼 사람 얼굴이 드러나지 않는 이미지를 우선한다.
-- 한국주식·미국주식·크립토 글의 대표 이미지는 기본적으로 로고·텍스트 합성 없이 공개 사용 가능한 실제 이미지 URL을 우선한다. 사용자가 명시적으로 로고형 썸네일을 원해도 새 이미지를 생성하거나 저장하지 않고, 공식 또는 공개 라이선스 이미지 URL 중에서 선택한다.
+- 한국주식·미국주식·크립토 글의 대표 이미지는 기본적으로 로고·텍스트 합성 없이 공개 사용 가능한 실제 이미지를 우선한다. 사용자가 명시적으로 로고형 썸네일을 원해도 새 이미지를 생성하지 않고, 공식 또는 공개 라이선스 이미지 중에서 선택한 뒤 로컬 WebP 후보로 최적화한다.
 - 빠른 검증은 최소 `node --check app.js`, 정적 HTML JSON-LD 파싱, `git diff --check`를 포함한다. 화면 깨짐이 의심되거나 레이아웃·이미지 로딩을 바꾼 경우에는 브라우저 검증까지 추가한다.
 - 여러 글을 연속 처리할 때도 본문 분석과 이미지 장면 확정은 글 1개씩 순차적으로 수행한다. 다만 검증과 커밋은 사용자가 허용하면 3~5개 단위로 묶을 수 있다.
-- 외부 이미지는 저작권과 핫링크 가능성, 검색엔진 접근성을 확인한 뒤 사용한다.
+- 외부 이미지는 저작권과 원출처, 검색엔진 접근성을 확인한 뒤 사용하며, 실제 화면에서는 로컬 WebP 후보를 우선 로드한다.
 - 외부 이미지는 독자가 보는 이미지 안에 텍스트, 숫자, 로고, 워터마크가 없는 후보를 우선한다.
 - 외부 이미지는 글 제목이나 분야만 보고 대충 고르지 않고, 해당 글의 핵심 사건·장소·제품·행위·이해관계자를 먼저 좁힌 뒤 그 장면에 맞는 후보를 선택한다.
 - 외부 이미지는 이미 다른 글에 쓴 동일 URL을 다시 쓰지 않는 것을 원칙으로 하며, 새 글마다 다른 이미지 파일을 배정한다.
 - 외부 이미지 후보가 여러 개일 때는 저작권이 더 명확하고, 글 내용과 연결이 더 직접적이며, 카드 썸네일로 잘 보이는 후보를 우선한다.
 - 외부 이미지의 `sourceUrl`은 가능하면 썸네일 파일 주소가 아니라 저작자, 원출처, 라이선스를 확인할 수 있는 파일 설명 페이지 또는 공식 원출처 페이지를 사용한다.
 - 라이선스, 원출처, 저작자 정보가 불분명한 이미지는 주제 적합도가 높아도 사용하지 않는다.
-- 이미지를 추가하면 같은 변경에서 `app.js`의 manifest 이미지 정보, 카드 썸네일, 정적 HTML 본문 이미지, 출처 캡션, Open Graph 이미지, Twitter 이미지, JSON-LD `image`, 접근성용 `alt`를 함께 갱신한다.
+- 이미지를 추가하면 같은 변경에서 `app.js`의 manifest 이미지 정보, `images/<slug>-*.webp` 후보, 카드 썸네일, 정적 HTML 본문 이미지, 출처 캡션, Open Graph 이미지, Twitter 이미지, JSON-LD `image`, 접근성용 `alt`를 함께 갱신한다.
 - `app.js` 매니페스트에는 `thumbnail` 메타데이터를 넣지 않고, 이미지가 필요한 경우 `image` 객체만 사용한다. 웹검색 이미지는 `externalSrc`와 `sourceUrl`을 우선 사용한다.
 
 ## agents 폴더 규칙

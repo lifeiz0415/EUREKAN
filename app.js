@@ -191,13 +191,13 @@ const AI_SEMICONDUCTOR_POWER_RACE_IMAGE = {
 };
 
 const HBM_MEMORY_BANDWIDTH_IMAGE = {
-  src: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Amiga_1000_-_memory_expansion_module_-_National_Semiconductor_GAL16V8-25LNC-7731.jpg",
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Amiga_1000_-_memory_expansion_module_-_National_Semiconductor_GAL16V8-25LNC-7731.jpg?width=1280",
   alt: "메모리 확장 모듈과 반도체 칩이 장착된 회로 기판",
   sourceUrl: "https://commons.wikimedia.org/w/index.php?curid=121166788",
 };
 
 const CHIPLET_ADVANCED_PACKAGING_IMAGE = {
-  src: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Tesla_Autopilot_HW2.5_and_Infotainment_Boards_%2850938493268%29.jpg",
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tesla_Autopilot_HW2.5_and_Infotainment_Boards_(50938493268).jpg?width=1280",
   alt: "여러 반도체 패키지와 칩이 배치된 고성능 회로 보드",
   sourceUrl: "https://commons.wikimedia.org/w/index.php?curid=105132764",
 };
@@ -419,7 +419,7 @@ const ECONOMY_US_CHINA_TARIFF_PORT_IMAGE = {
 };
 
 const ECONOMY_HOUSEHOLD_DEBT_SQUEEZE_IMAGE = {
-  src: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Calculator_and_Money.jpg",
+  externalSrc: "https://commons.wikimedia.org/w/thumb.php?f=Calculator_and_Money.jpg&w=1280",
   alt: "가계 소비 둔화가 부채 상환과 필수 지출 압박으로 드러나는 흐름을 보여주는 계산기와 현금",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Calculator_and_Money.jpg",
 };
@@ -431,7 +431,7 @@ const ECONOMY_AI_PRODUCTIVITY_WAGE_GAP_IMAGE = {
 };
 
 const ECONOMY_RENT_BURDEN_YOUNG_HOUSEHOLDS_IMAGE = {
-  src: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Small_Apartment.jpg",
+  externalSrc: "https://commons.wikimedia.org/w/thumb.php?f=Small_Apartment.jpg&w=1280",
   alt: "청년 가구의 주거비 부담이 소비 여력과 결혼, 지역 이동 선택을 흔드는 현실을 보여주는 작은 임대 아파트",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Small_Apartment.jpg",
 };
@@ -1905,7 +1905,7 @@ const KOREAN_STOCKS_DISCLOSURE_EARNINGS_IMAGE = {
 };
 
 const US_STOCKS_TRADING_VALUE_IMAGE = {
-  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/4/4e/NYSE_Advanced_Trading_Floor.jpg",
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NYSE_Advanced_Trading_Floor.jpg?width=1280",
   alt: "미국주식 거래대금과 가이던스를 함께 읽게 하는 뉴욕증권거래소 거래 현장",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:NYSE_Advanced_Trading_Floor.jpg",
   width: 3009,
@@ -1913,7 +1913,7 @@ const US_STOCKS_TRADING_VALUE_IMAGE = {
 };
 
 const US_STOCKS_IPO_LOCKUP_IMAGE = {
-  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg",
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nasdaq_MarketSite_(51494550508).jpg?width=1280",
   alt: "미국 신규상장 기대와 락업 일정을 떠올리게 하는 나스닥 마켓사이트 전광판",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg",
   width: 3731,
@@ -1921,7 +1921,7 @@ const US_STOCKS_IPO_LOCKUP_IMAGE = {
 };
 
 const US_STOCKS_AFTER_HOURS_VOLUME_IMAGE = {
-  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/2/24/Stock_Price_%2815269892187%29.jpg",
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Stock_Price_(15269892187).jpg?width=1280",
   alt: "시간외 거래 이후 가격 변화를 확인하는 주식 시세 화면",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Stock_Price_(15269892187).jpg",
   width: 3672,
@@ -1937,7 +1937,7 @@ const CRYPTO_BLOX_ETF_INCOME_IMAGE = {
 };
 
 const CRYPTO_NEW_LISTING_IMAGE = {
-  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Holding_Bitcoin_cryptocurrency_coin.jpg",
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Holding_Bitcoin_cryptocurrency_coin.jpg?width=1280",
   alt: "신규상장 코인의 초기 유통량과 락업 구조를 떠올리게 하는 암호화폐 코인 이미지",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Holding_Bitcoin_cryptocurrency_coin.jpg",
   width: 4596,
@@ -1945,7 +1945,7 @@ const CRYPTO_NEW_LISTING_IMAGE = {
 };
 
 const CRYPTO_ALTCOIN_ONCHAIN_LEVERAGE_IMAGE = {
-  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/5/55/Ethereum_Crypto_Laws_in_the_EU.jpg",
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ethereum_Crypto_Laws_in_the_EU.jpg?width=1280",
   alt: "알트코인 온체인 사용과 레버리지 리스크를 떠올리게 하는 이더리움 규제 이미지",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Ethereum_Crypto_Laws_in_the_EU.jpg",
   width: 4000,
@@ -2065,7 +2065,7 @@ const CRYPTO_SOLANA_ETF_NETWORK_REVENUE_IMAGE = {
 };
 
 const RECIPE_TOMATO_BASIL_PASTA_IMAGE = {
-  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tomato_and_basil_pasta_%284925750112%29.jpg?width=1280",
+  externalSrc: "https://commons.wikimedia.org/w/thumb.php?f=Tomato_and_basil_pasta_%284925750112%29.jpg&w=1280",
   alt: "토마토와 바질을 올린 파스타 접시",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Tomato_and_basil_pasta_(4925750112).jpg",
   width: 1600,
@@ -2073,7 +2073,7 @@ const RECIPE_TOMATO_BASIL_PASTA_IMAGE = {
 };
 
 const RECIPE_ANDONG_JJIMDAK_IMAGE = {
-  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Andong-jjimdak.jpg?width=1280",
+  externalSrc: "https://commons.wikimedia.org/w/thumb.php?f=Andong-jjimdak.jpg&w=1280",
   alt: "간장 양념으로 조린 닭고기와 채소가 담긴 안동찜닭",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Andong-jjimdak.jpg",
   width: 1600,
@@ -3882,7 +3882,9 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan은 지금 사람들이 가장 궁금해
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260524-nvidia-net-income";
+const AUDIO_ASSET_VERSION = "20260524-local-images";
+const IMAGE_DIRECTORY = "images";
+const IMAGE_EXTENSION = "webp";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
 const AUDIO_RECOVERY_SIGNAL_THRESHOLD = 0.0005;
 const AUDIO_RECOVERY_SILENCE_SECONDS = 7;
@@ -4185,6 +4187,18 @@ function getImagePrimarySrc(image = {}) {
   return String(image.externalSrc || image.src || "").trim();
 }
 
+function getLocalImageBase(page) {
+  const slug = String(page?.slug || "").trim();
+  if (!slug) return "";
+  return `${IMAGE_DIRECTORY}/${slug}`;
+}
+
+function getLocalImageSrc(page, width = 1280) {
+  const localBase = getLocalImageBase(page);
+  const safeWidth = Math.max(1, Math.round(Number(width) || 1280));
+  return localBase ? getAssetUrl(`${localBase}-${safeWidth}.${IMAGE_EXTENSION}`) : "";
+}
+
 function getWikimediaUploadUrl(value = "") {
   const rawValue = String(value || "").trim();
   if (!rawValue) return null;
@@ -4231,6 +4245,8 @@ function getResizedImageSrc(value = "", width = 640) {
 }
 
 function getResponsiveImageWidths(image = {}, preferredWidths = CARD_IMAGE_WIDTHS) {
+  if (image.localBase) return [...new Set(preferredWidths)];
+
   const sourceWidth = Number(image.width || 0);
   const widths = preferredWidths.filter((width) => !sourceWidth || width <= sourceWidth);
   const fallbackWidth = sourceWidth || preferredWidths[0] || 640;
@@ -4238,6 +4254,19 @@ function getResponsiveImageWidths(image = {}, preferredWidths = CARD_IMAGE_WIDTH
 }
 
 function buildImageSrcSet(src = "", image = {}, preferredWidths = CARD_IMAGE_WIDTHS) {
+  if (image.localBase) {
+    const seen = new Set();
+    return getResponsiveImageWidths(image, preferredWidths)
+      .map((width) => ({ width, src: getAssetUrl(`${image.localBase}-${width}.${IMAGE_EXTENSION}`) }))
+      .filter((candidate) => {
+        if (!candidate.src || seen.has(candidate.src)) return false;
+        seen.add(candidate.src);
+        return true;
+      })
+      .map((candidate) => `${escapeHtml(candidate.src)} ${candidate.width}w`)
+      .join(", ");
+  }
+
   if (!canResizeImageSrc(src)) return "";
 
   const seen = new Set();
@@ -4253,6 +4282,12 @@ function buildImageSrcSet(src = "", image = {}, preferredWidths = CARD_IMAGE_WID
 }
 
 function getPreferredImageSrc(src = "", image = {}, preferredWidths = CARD_IMAGE_WIDTHS) {
+  if (image.localBase) {
+    const widths = getResponsiveImageWidths(image, preferredWidths);
+    const selectedWidth = widths[Math.min(widths.length - 1, 1)] || widths[0] || 1280;
+    return getAssetUrl(`${image.localBase}-${selectedWidth}.${IMAGE_EXTENSION}`);
+  }
+
   if (!canResizeImageSrc(src)) return src;
   const widths = getResponsiveImageWidths(image, preferredWidths);
   return getResizedImageSrc(src, widths[Math.min(widths.length - 1, 1)] || widths[0]);
@@ -4262,9 +4297,12 @@ function getPageImage(page) {
   const image = page?.image || {};
   const src = getImagePrimarySrc(image);
   if (!src) return null;
+  const localBase = getLocalImageBase(page);
 
   return {
-    src: getAssetUrl(src),
+    src: localBase ? getLocalImageSrc(page, 1280) : getAssetUrl(src),
+    externalSrc: getAssetUrl(src),
+    localBase,
     alt: String(image.alt || `${page.title} 대표 이미지`).trim(),
     sourceUrl: String(image.sourceUrl || image.externalSourceUrl || "").trim(),
     credit: String(image.credit || "").trim(),
