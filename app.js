@@ -2608,6 +2608,14 @@ const KOREAN_STOCKS_ROBOTICS_PARTS_ORDER_QUALITY_IMAGE = {
   height: 1920
 };
 
+const KOREAN_STOCKS_SAMSUNG_NET_PROFIT_CYCLE_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Samsung_Electronics_Suwon.JPG/1280px-Samsung_Electronics_Suwon.JPG",
+  alt: "삼성전자 순이익과 반도체 사이클을 떠올리게 하는 삼성전자 수원 사업장 외관",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Samsung_Electronics_Suwon.JPG",
+  width: 1280,
+  height: 1707
+};
+
 const US_STOCKS_APPLE_AI_UPGRADE_CYCLE_IMAGE = {
   externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HK_%E9%A6%99%E6%B8%AF_CWB_Apple_Store_shop_interior_Jan_2017_Apple_iPhone_testing_02.jpg/1280px-HK_%E9%A6%99%E6%B8%AF_CWB_Apple_Store_shop_interior_Jan_2017_Apple_iPhone_testing_02.jpg",
   alt: "애플 AI 기능과 아이폰 교체 주기를 떠올리게 하는 애플 스토어 내부 전시 장면",
@@ -2999,6 +3007,26 @@ const featuredPages = [
       sourceUrl: "https://www.youtube.com/watch?v=ACIq6EzLcJw",
       thumbnailUrl: "https://i.ytimg.com/vi/ACIq6EzLcJw/hqdefault.jpg",
       description: "한국 로봇 부품 기업과 감속기 경쟁력을 다룬 한국어 투자 해설 영상입니다.",
+    },
+  },
+  {
+    slug: "korean-stocks-samsung-net-profit-cycle-2026",
+    title: "삼성전자 순이익은 2026년 고점 유지보다 2027년 둔화 속도를 봐야 합니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-24T19:03:50+09:00",
+    summary: "삼성전자는 2026년 1분기에 순이익 47.2조원을 기록했지만 투자자는 HBM, 범용 메모리 가격, 파운드리 적자, 설비투자와 환율을 함께 보며 순이익 유지 기간을 판단해야 합니다.",
+    image: KOREAN_STOCKS_SAMSUNG_NET_PROFIT_CYCLE_IMAGE,
+    audio: {
+      src: "audios/korean-stocks-samsung-net-profit-cycle-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "BDLSY1wKv64",
+      title: "인포그래픽으로 보는 HBM4",
+      channel: "삼성전자 반도체 뉴스룸",
+      sourceUrl: "https://www.youtube.com/watch?v=BDLSY1wKv64",
+      thumbnailUrl: "https://i.ytimg.com/vi/BDLSY1wKv64/hqdefault.jpg",
+      description: "삼성전자 HBM4와 AI 메모리 흐름을 공식 채널에서 설명한 한국어 영상입니다.",
     },
   },
   {
@@ -3826,7 +3854,7 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan은 지금 사람들이 가장 궁금해
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260524-mobile-speed";
+const AUDIO_ASSET_VERSION = "20260524-samsung-profit";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
 const AUDIO_RECOVERY_SIGNAL_THRESHOLD = 0.0005;
 const AUDIO_RECOVERY_SILENCE_SECONDS = 7;
