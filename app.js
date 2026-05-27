@@ -2696,7 +2696,35 @@ const CRYPTO_BITCOIN_MINING_POWER_CONTRACT_HASHPRICE_IMAGE = {
   height: 720
 };
 
+const US_STOCKS_REDWIRE_SPACE_DEFENSE_OUTLOOK_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/9/9c/ISS_new_iROSA_deployed.jpg",
+  alt: "레드와이어의 우주 인프라 사업을 떠올리게 하는 국제우주정거장 롤아웃 태양전지판",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:ISS_new_iROSA_deployed.jpg",
+  width: 1280,
+  height: 719
+};
+
 const featuredPages = [
+  {
+    slug: "us-stocks-redwire-space-defense-outlook-2026",
+    title: "레드와이어 전망은 우주 인프라보다 방산 드론 통합 성과가 먼저입니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-27T15:52:07+09:00",
+    summary: "레드와이어는 2026년 1분기 매출과 수주잔고가 빠르게 늘었지만 순손실, 현금흐름, Edge Autonomy 통합, 정부 계약 전환 속도를 함께 확인해야 하는 미국 우주·방산 성장주입니다.",
+    image: US_STOCKS_REDWIRE_SPACE_DEFENSE_OUTLOOK_IMAGE,
+    audio: {
+      src: "audios/us-stocks-redwire-space-defense-outlook-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "WpLzwGPHQTg",
+      title: "Redwire Enables Multi-Domain Operations",
+      channel: "Redwire",
+      sourceUrl: "https://www.youtube.com/watch?v=WpLzwGPHQTg",
+      thumbnailUrl: "https://i.ytimg.com/vi/WpLzwGPHQTg/hqdefault.jpg",
+      description: "레드와이어가 우주 인프라와 방산 자율 시스템을 하나의 멀티도메인 전략으로 묶는 방향을 설명하는 공식 영상입니다.",
+    },
+  },
   {
     slug: "economy-bnpl-credit-card-delinquency-consumption-2026",
     title: "후불결제와 카드 연체는 소비가 식어가는 속도를 보여줍니다",
@@ -3882,7 +3910,7 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan은 지금 사람들이 가장 궁금해
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260524-local-images";
+const AUDIO_ASSET_VERSION = "20260527-redwire-outlook";
 const IMAGE_DIRECTORY = "images";
 const IMAGE_EXTENSION = "webp";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
