@@ -396,10 +396,6 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   object-position: center;
 }
 
-.page-card__image--deferred {
-  opacity: 0;
-}
-
 .page-card:hover,
 .page-card:focus-visible {
   transform: translateY(-2px);
