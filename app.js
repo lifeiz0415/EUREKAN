@@ -2704,7 +2704,371 @@ const US_STOCKS_REDWIRE_SPACE_DEFENSE_OUTLOOK_IMAGE = {
   height: 719
 };
 
+const ECONOMY_FED_TARIFF_INFLATION_RATE_PATH_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Federal%20reserve%20building%201160435.jpg?width=1280",
+  alt: "관세와 물가 판단을 둘러싼 연준의 금리 결정을 떠올리게 하는 연방준비제도 건물",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Federal_reserve_building_1160435.jpg",
+  width: 1280,
+  height: 961
+};
+
+const TECHNOLOGY_AI_PC_NPU_MEMORY_ROLLOUT_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Old%20Laptop%20Mainboard%20(Bottom)%20(49875627288).jpg?width=1280",
+  alt: "AI PC 교체 수요와 온디바이스 연산을 떠올리게 하는 노트북 메인보드",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Old_Laptop_Mainboard_(Bottom)_(49875627288).jpg",
+  width: 1280,
+  height: 563
+};
+
+const INDUSTRY_AIRCRAFT_ENGINE_MRO_BOTTLENECK_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Multi-capable%20maintainers%20compete%20for%20a%20spot%20at%20MRO%20Americas%20(8237803).jpg?width=1280",
+  alt: "항공기 정비 병목과 MRO 인력 수요를 보여주는 정비 현장",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Multi-capable_maintainers_compete_for_a_spot_at_MRO_Americas_(8237803).jpg",
+  width: 1280,
+  height: 852
+};
+
+const CRYPTO_ETHEREUM_STAKING_ETF_CUSTODY_VALIDATOR_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Close-up%20of%20a%20physical%20Ethereum%20coin%20(51002904687).jpg?width=1280",
+  alt: "이더리움 스테이킹 ETF의 보상과 수탁 구조를 떠올리게 하는 이더리움 코인",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Close-up_of_a_physical_Ethereum_coin_(51002904687).jpg",
+  width: 1280,
+  height: 852
+};
+
+const GLOBAL_WATER_SCARCITY_CITY_DIPLOMACY_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Critically%20low%20water%20levels%20in%20Morocco%E2%80%99s%20reservoirs.jpg?width=1280",
+  alt: "물 부족 외교와 도시 물 사용권 갈등을 보여주는 낮아진 저수지 수위",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Critically_low_water_levels_in_Morocco%E2%80%99s_reservoirs.jpg",
+  width: 1280,
+  height: 812
+};
+
+const SCIENCE_PFAS_DRINKING_WATER_TESTING_COST_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Water%20Testing%20(6406482).jpg?width=1280",
+  alt: "PFAS 식수 기준과 수질 검사를 떠올리게 하는 물 시료 검사 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Water_Testing_(6406482).jpg",
+  width: 1280,
+  height: 914
+};
+
+const SEMICONDUCTOR_CXL_MEMORY_POOLING_SOFTWARE_LATENCY_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Data%20center%20infrastructure%20in%20the%20United%20States.jpg?width=1280",
+  alt: "CXL 메모리 풀링과 데이터센터 서버 확장을 떠올리게 하는 데이터센터 인프라",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Data_center_infrastructure_in_the_United_States.jpg",
+  width: 1280,
+  height: 828
+};
+
+const CULTURE_SHORTFORM_DRAMA_IP_PAYMENT_LOOP_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20V10.jpg?width=1280",
+  alt: "숏폼 드라마와 모바일 영상 소비를 떠올리게 하는 스마트폰 화면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:LG_V10.jpg",
+  width: 1280,
+  height: 685
+};
+
+const SPORTS_WORLDCUP_HEAT_HYDRATION_RECOVERY_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Arrowhead%20world%20cup%20prep%2C%20May%202025.jpg?width=1280",
+  alt: "2026 월드컵 경기 운영과 폭염 대비를 떠올리게 하는 경기장 준비 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Arrowhead_world_cup_prep%2C_May_2025.jpg",
+  width: 1280,
+  height: 960
+};
+
+const POLITICS_POLLING_PLACE_RECORD_TRANSPARENCY_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Wahlkabine%20in%20Potsdam%20(2025).jpg?width=1280",
+  alt: "투표소 신뢰와 절차 투명성을 떠올리게 하는 빈 투표 부스",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Wahlkabine_in_Potsdam_(2025).jpg",
+  width: 1280,
+  height: 960
+};
+
+const US_STOCKS_PALANTIR_AIP_CONTRACT_EXPANSION_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Palantir%202022.jpg?width=1280",
+  alt: "팔란티어 AIP와 데이터 플랫폼 사업을 떠올리게 하는 팔란티어 로고",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Palantir_2022.jpg",
+  width: 1280,
+  height: 817
+};
+
+const KOREAN_STOCKS_SAMSUNG_BIOLOGICS_CDMO_BACKLOG_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Metropolitan%20City%20Mayor%20Yoo%20Jeong-bok%20visits%20Samsung%20BioLogics%20Incheon%20plant%2020230822.png?width=1280",
+  alt: "삼성바이오로직스 CDMO 생산능력과 공장 가동률을 떠올리게 하는 인천 생산시설 방문 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Incheon_Metropolitan_City_Mayor_Yoo_Jeong-bok_visits_Samsung_BioLogics_Incheon_plant_20230822.png",
+  width: 1280,
+  height: 865
+};
+
+const RECIPE_PERILLA_OIL_MAKGUKSU_NOODLE_AROMA_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Deul-gireum-mak-guksu.jpg?width=1280",
+  alt: "들기름 막국수의 면 온도와 김가루 향을 보여주는 막국수 한 그릇",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Deul-gireum-mak-guksu.jpg",
+  width: 1280,
+  height: 960
+};
+
 const featuredPages = [
+  {
+    slug: "economy-fed-tariff-inflation-rate-path-2026",
+    title: "연준의 물가 판단은 금리 인하보다 관세 전가 속도를 먼저 봐야 합니다",
+    desk: "경제",
+    publishedAt: "2026-05-28T21:54:12+09:00",
+    summary: "연준의 금리 경로는 물가 지표 한 번보다 관세가 소비자 가격과 기업 마진으로 얼마나 빨리 전가되는지, 고용 둔화가 이를 얼마나 상쇄하는지에 달려 있습니다.",
+    image: ECONOMY_FED_TARIFF_INFLATION_RATE_PATH_2026_IMAGE,
+    audio: {
+      src: "audios/economy-fed-tariff-inflation-rate-path-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "m-q7ZAurLmE",
+      title: "연준 \"관세로 미국 기업들 감원·물가 상승\"...금리 인하 고심 / YTN",
+      channel: "YTN",
+      sourceUrl: "https://www.youtube.com/watch?v=m-q7ZAurLmE",
+      thumbnailUrl: "https://i.ytimg.com/vi/m-q7ZAurLmE/hqdefault.jpg",
+      description: "미국 관세와 물가 압력이 연준 금리 판단에 미치는 영향을 한국어 뉴스로 정리한 영상입니다.",
+    },
+  },
+  {
+    slug: "technology-ai-pc-npu-memory-rollout-2026",
+    title: "AI PC 교체 수요는 NPU보다 메모리 가격과 업무 배포가 가릅니다",
+    desk: "기술",
+    publishedAt: "2026-05-28T21:54:11+09:00",
+    summary: "AI PC는 NPU 성능만으로 교체 수요가 생기지 않습니다. 기업 배포 속도, 온디바이스 업무, 메모리 가격, 보안 정책이 함께 맞아야 실제 구매 이유가 됩니다.",
+    image: TECHNOLOGY_AI_PC_NPU_MEMORY_ROLLOUT_2026_IMAGE,
+    audio: {
+      src: "audios/technology-ai-pc-npu-memory-rollout-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "lOQstDa28JQ",
+      title: "AI PC에서 NPU의 역할은 무엇인가?",
+      channel: "토크아이티(Talk IT)",
+      sourceUrl: "https://www.youtube.com/watch?v=lOQstDa28JQ",
+      thumbnailUrl: "https://i.ytimg.com/vi/lOQstDa28JQ/hqdefault.jpg",
+      description: "AI PC와 NPU의 역할을 한국어로 설명하는 기술 해설 영상입니다.",
+    },
+  },
+  {
+    slug: "industry-aircraft-engine-mro-bottleneck-2026",
+    title: "항공기 정비 병목은 항공권보다 엔진 대기 시간을 먼저 올립니다",
+    desk: "산업",
+    publishedAt: "2026-05-28T21:54:10+09:00",
+    summary: "항공기 공급 부족은 새 비행기 인도 지연만의 문제가 아닙니다. 엔진 정비와 MRO 대기 시간이 길어지면 항공사는 노선, 운임, 리스 비용을 함께 조정해야 합니다.",
+    image: INDUSTRY_AIRCRAFT_ENGINE_MRO_BOTTLENECK_2026_IMAGE,
+    audio: {
+      src: "audios/industry-aircraft-engine-mro-bottleneck-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "N926v9m-bDo",
+      title: "항공 정비 사업, 황금알 낳는 거위 기대 / YTN",
+      channel: "YTN",
+      sourceUrl: "https://www.youtube.com/watch?v=N926v9m-bDo",
+      thumbnailUrl: "https://i.ytimg.com/vi/N926v9m-bDo/hqdefault.jpg",
+      description: "항공 정비 산업의 성장성과 병목을 한국어 뉴스로 설명하는 영상입니다.",
+    },
+  },
+  {
+    slug: "crypto-ethereum-staking-etf-custody-validator-2026",
+    title: "이더리움 스테이킹 ETF는 분배율보다 수탁과 검증인 구조가 먼저입니다",
+    desk: "크립토",
+    publishedAt: "2026-05-28T21:54:09+09:00",
+    summary: "이더리움 스테이킹 ETF는 보유한 이더에서 보상이 생길 수 있지만 투자자는 분배율보다 수탁, 검증인 운영, 슬래싱 위험, 유동성 관리 방식을 먼저 확인해야 합니다.",
+    image: CRYPTO_ETHEREUM_STAKING_ETF_CUSTODY_VALIDATOR_2026_IMAGE,
+    audio: {
+      src: "audios/crypto-ethereum-staking-etf-custody-validator-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "EngNPj3ZqO8",
+      title: "블랙록의 승부수 이더리움 스테이킹 ETF 미국 상륙 초읽기",
+      channel: "서울경제 엔터",
+      sourceUrl: "https://www.youtube.com/watch?v=EngNPj3ZqO8",
+      thumbnailUrl: "https://i.ytimg.com/vi/EngNPj3ZqO8/hqdefault.jpg",
+      description: "이더리움 스테이킹 ETF 논의를 한국어로 다룬 영상입니다.",
+    },
+  },
+  {
+    slug: "global-water-scarcity-city-diplomacy-2026",
+    title: "물 부족 외교는 댐보다 도시의 사용권과 누수에서 먼저 흔들립니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-28T21:54:08+09:00",
+    summary: "물 부족은 기후 문제이면서 도시 운영과 외교 문제입니다. 저수지 수위, 농업 배분, 누수율, 국경을 넘는 하천 협상이 함께 흔들릴 때 갈등이 커집니다.",
+    image: GLOBAL_WATER_SCARCITY_CITY_DIPLOMACY_2026_IMAGE,
+    audio: {
+      src: "audios/global-water-scarcity-city-diplomacy-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "aalVn2bFXE0",
+      title: "물은 국경을 모른다? 한국과 중앙아시아의 스마트 물관리 협력 이야기",
+      channel: "외교부 서포터스 모파랑TV",
+      sourceUrl: "https://www.youtube.com/watch?v=aalVn2bFXE0",
+      thumbnailUrl: "https://i.ytimg.com/vi/aalVn2bFXE0/hqdefault.jpg",
+      description: "물 관리와 국제 협력의 의미를 한국어로 설명하는 영상입니다.",
+    },
+  },
+  {
+    slug: "science-pfas-drinking-water-testing-cost-2026",
+    title: "PFAS 식수 논쟁은 공포보다 측정과 제거 비용을 먼저 봐야 합니다",
+    desk: "과학",
+    publishedAt: "2026-05-28T21:54:07+09:00",
+    summary: "PFAS는 오래 남는 화학물질이지만 대응은 공포가 아니라 측정, 기준, 제거 기술, 비용 부담을 차례로 세우는 일입니다. 식수 안전은 숫자와 운영 능력에서 갈립니다.",
+    image: SCIENCE_PFAS_DRINKING_WATER_TESTING_COST_2026_IMAGE,
+    audio: {
+      src: "audios/science-pfas-drinking-water-testing-cost-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "PPfAASASbuM",
+      title: "PFAS, explained",
+      channel: "Grist",
+      sourceUrl: "https://www.youtube.com/watch?v=PPfAASASbuM",
+      thumbnailUrl: "https://i.ytimg.com/vi/PPfAASASbuM/hqdefault.jpg",
+      description: "PFAS가 왜 문제가 되는지 설명하는 해외 해설 영상입니다.",
+    },
+  },
+  {
+    slug: "semiconductor-cxl-memory-pooling-software-latency-2026",
+    title: "CXL 메모리는 서버 증설보다 소프트웨어와 지연시간을 먼저 증명해야 합니다",
+    desk: "반도체",
+    publishedAt: "2026-05-28T21:54:06+09:00",
+    summary: "CXL 메모리 풀링은 데이터센터의 메모리 낭비를 줄일 수 있지만 실제 확산은 표준보다 운영체제, 지연시간, 장애 격리, 워크로드 배치가 좌우합니다.",
+    image: SEMICONDUCTOR_CXL_MEMORY_POOLING_SOFTWARE_LATENCY_2026_IMAGE,
+    audio: {
+      src: "audios/semiconductor-cxl-memory-pooling-software-latency-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "1hJi2OoJLpM",
+      title: "데이터 처리의 신세계를 보여줄게, 차세대 메모리 CXL",
+      channel: "삼성전자 반도체 뉴스룸",
+      sourceUrl: "https://www.youtube.com/watch?v=1hJi2OoJLpM",
+      thumbnailUrl: "https://i.ytimg.com/vi/1hJi2OoJLpM/hqdefault.jpg",
+      description: "CXL 메모리의 개념과 데이터 처리 변화를 한국어로 설명하는 영상입니다.",
+    },
+  },
+  {
+    slug: "culture-shortform-drama-ip-payment-loop-2026",
+    title: "숏폼 드라마 경쟁은 조회수보다 회차 결제와 IP 확장이 중요합니다",
+    desk: "문화",
+    publishedAt: "2026-05-28T21:54:05+09:00",
+    summary: "숏폼 드라마는 짧은 영상이 아니라 결제와 반복 시청을 설계한 이야기 상품입니다. 제작사는 조회수보다 회차 구매, 해외 플랫폼, 2차 판권을 함께 봐야 합니다.",
+    image: CULTURE_SHORTFORM_DRAMA_IP_PAYMENT_LOOP_2026_IMAGE,
+    audio: {
+      src: "audios/culture-shortform-drama-ip-payment-loop-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "I_fiwKlpzEM",
+      title: "1분 30초에 5억 원? 중국 숏폼 드라마 열풍에 한국 제작사도 들썩",
+      channel: "YTN star",
+      sourceUrl: "https://www.youtube.com/watch?v=I_fiwKlpzEM",
+      thumbnailUrl: "https://i.ytimg.com/vi/I_fiwKlpzEM/hqdefault.jpg",
+      description: "숏폼 드라마 시장의 성장과 제작사 움직임을 한국어로 다룬 영상입니다.",
+    },
+  },
+  {
+    slug: "sports-worldcup-heat-hydration-recovery-2026",
+    title: "월드컵 폭염 관리는 휴식 시간보다 이동과 회복 설계가 먼저입니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-28T21:54:04+09:00",
+    summary: "2026 월드컵은 개최 도시가 넓고 더위 부담이 큽니다. 수분 보충 휴식은 필요하지만 선수 보호의 핵심은 이동 거리, 회복일, 훈련 시간, 경기장 운영입니다.",
+    image: SPORTS_WORLDCUP_HEAT_HYDRATION_RECOVERY_2026_IMAGE,
+    audio: {
+      src: "audios/sports-worldcup-heat-hydration-recovery-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "5PYnp0b6C6k",
+      title: "북중미 월드컵, 수분 공급 휴식 적용…전·후반 3분씩 / 연합뉴스TV",
+      channel: "연합뉴스TV",
+      sourceUrl: "https://www.youtube.com/watch?v=5PYnp0b6C6k",
+      thumbnailUrl: "https://i.ytimg.com/vi/5PYnp0b6C6k/hqdefault.jpg",
+      description: "2026 월드컵 수분 공급 휴식 적용 소식을 한국어로 전한 영상입니다.",
+    },
+  },
+  {
+    slug: "politics-polling-place-record-transparency-2026",
+    title: "투표소 신뢰는 개표 방송보다 현장 기록 공개에서 나옵니다",
+    desk: "정치",
+    publishedAt: "2026-05-28T21:54:03+09:00",
+    summary: "선거 신뢰는 결과 발표 속도보다 투표함 이동, 참관, 개표 기록, 이의 제기 절차가 투명하게 남는지에서 생깁니다. 현장 기록이 곧 정치적 안전장치입니다.",
+    image: POLITICS_POLLING_PLACE_RECORD_TRANSPARENCY_2026_IMAGE,
+    audio: {
+      src: "audios/politics-polling-place-record-transparency-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "c0rFfRzgQKI",
+      title: "개표과정 중 투표지 확인 절차",
+      channel: "중앙선거관리위원회",
+      sourceUrl: "https://www.youtube.com/watch?v=c0rFfRzgQKI",
+      thumbnailUrl: "https://i.ytimg.com/vi/c0rFfRzgQKI/hqdefault.jpg",
+      description: "개표 과정과 투표지 확인 절차를 공식적으로 설명하는 한국어 영상입니다.",
+    },
+  },
+  {
+    slug: "us-stocks-palantir-aip-contract-expansion-2026",
+    title: "팔란티어 주식은 AI 데모보다 고객 확장과 계약 전환율을 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-28T21:54:02+09:00",
+    summary: "팔란티어는 AIP 기대가 큰 회사이지만 주가가 오래 버티려면 시연보다 상업 고객 확대, 정부 계약의 지속성, 잔여 계약가치의 매출 전환을 증명해야 합니다.",
+    image: US_STOCKS_PALANTIR_AIP_CONTRACT_EXPANSION_2026_IMAGE,
+    audio: {
+      src: "audios/us-stocks-palantir-aip-contract-expansion-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "23Xu8QGOMcg",
+      title: "팔란티어 PLTR: AI 소프트웨어 거인 분석",
+      channel: "머니 리포트룸",
+      sourceUrl: "https://www.youtube.com/watch?v=23Xu8QGOMcg",
+      thumbnailUrl: "https://i.ytimg.com/vi/23Xu8QGOMcg/hqdefault.jpg",
+      description: "팔란티어의 AI 플랫폼과 주식 관점을 한국어로 설명하는 영상입니다.",
+    },
+  },
+  {
+    slug: "korean-stocks-samsung-biologics-cdmo-backlog-2026",
+    title: "삼성바이오로직스 주식은 실적보다 공장 가동률과 수주 공백을 먼저 봐야 합니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-28T21:54:01+09:00",
+    summary: "삼성바이오로직스는 2026년 1분기 높은 매출과 이익을 냈지만 주가 관점에서는 공장 가동률, 신규 수주, ADC 준비, 미국 생산 거점의 매출 인식 시점이 핵심입니다.",
+    image: KOREAN_STOCKS_SAMSUNG_BIOLOGICS_CDMO_BACKLOG_2026_IMAGE,
+    audio: {
+      src: "audios/korean-stocks-samsung-biologics-cdmo-backlog-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "t22Gw1gaoUY",
+      title: "인적분할 끝낸 삼성바이오로직스, 앞으로 분석은?",
+      channel: "공부하는투자 케빈쌤",
+      sourceUrl: "https://www.youtube.com/watch?v=t22Gw1gaoUY",
+      thumbnailUrl: "https://i.ytimg.com/vi/t22Gw1gaoUY/hqdefault.jpg",
+      description: "삼성바이오로직스의 사업 구조와 투자 관점을 한국어로 설명하는 영상입니다.",
+    },
+  },
+  {
+    slug: "recipe-perilla-oil-makguksu-noodle-aroma-2026",
+    title: "들기름 막국수는 양념보다 면 온도와 김가루 향이 먼저입니다",
+    desk: "레시피",
+    publishedAt: "2026-05-28T21:54:00+09:00",
+    summary: "들기름 막국수는 재료가 단순할수록 면 삶기, 물기 제거, 간장 비율, 김가루와 깨의 향이 중요합니다. 차갑게만 만들지 말고 향이 살아나는 온도를 맞춰야 합니다.",
+    image: RECIPE_PERILLA_OIL_MAKGUKSU_NOODLE_AROMA_2026_IMAGE,
+    audio: {
+      src: "audios/recipe-perilla-oil-makguksu-noodle-aroma-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "Twki6YM0tH0",
+      title: "맛집보다 더 맛있는 메밀 들기름 막국수",
+      channel: "빅마마 이혜정",
+      sourceUrl: "https://www.youtube.com/watch?v=Twki6YM0tH0",
+      thumbnailUrl: "https://i.ytimg.com/vi/Twki6YM0tH0/hqdefault.jpg",
+      description: "들기름 막국수 조리 과정을 한국어로 보여주는 레시피 영상입니다.",
+    },
+  },
   {
     slug: "us-stocks-redwire-space-defense-outlook-2026",
     title: "레드와이어 전망은 우주 인프라보다 방산 드론 통합 성과가 먼저입니다",
@@ -3910,7 +4274,7 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan은 지금 사람들이 가장 궁금해
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260527-redwire-outlook";
+const AUDIO_ASSET_VERSION = "20260528-field-articles";
 const IMAGE_DIRECTORY = "images";
 const IMAGE_EXTENSION = "webp";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
