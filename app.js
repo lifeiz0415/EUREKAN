@@ -2808,7 +2808,371 @@ const RECIPE_PERILLA_OIL_MAKGUKSU_NOODLE_AROMA_2026_IMAGE = {
   height: 960
 };
 
+const ECONOMY_TREASURY_AUCTION_TERM_PREMIUM_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/1979%20%2410%2C000%20Treasury%20Bond%20.jpg?width=1280",
+  alt: "미국 장기 국채 발행과 기간 프리미엄을 떠올리게 하는 미국 재무부 채권 증서",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:1979_%2410%2C000_Treasury_Bond_.jpg",
+  width: 1280,
+  height: 1076
+};
+
+const TECHNOLOGY_AI_PHONE_RAM_PRIVACY_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Business%20and%20technology%20concept%20hand%20holding%20smartphone%20and%20search%20bar%20(52917310335).jpg?width=1280",
+  alt: "AI 스마트폰의 개인정보 처리와 온디바이스 검색 기능을 떠올리게 하는 손안의 스마트폰 화면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Business_and_technology_concept_hand_holding_smartphone_and_search_bar_(52917310335).jpg",
+  width: 1280,
+  height: 889
+};
+
+const INDUSTRY_SUBSEA_CABLE_DATA_CENTER_ROUTE_RISK_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Submarine%20cable%20terminus%20building%20at%20Skewjack%20-%20geograph.org.uk%20-%201302332.jpg?width=1280",
+  alt: "해저 케이블이 육지 네트워크로 연결되는 병목을 보여주는 케이블 육양국 건물",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Submarine_cable_terminus_building_at_Skewjack_-_geograph.org.uk_-_1302332.jpg",
+  width: 1280,
+  height: 854
+};
+
+const CRYPTO_STABLECOIN_YIELD_PAYMENT_REGULATION_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Contactless%20Payment%20Card%20opened%20to%20show%20RF%20antenna.jpg?width=1280",
+  alt: "스테이블코인이 실물 결제망과 만나는 장면을 떠올리게 하는 결제 카드 내부 안테나",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Contactless_Payment_Card_opened_to_show_RF_antenna.jpg",
+  width: 1280,
+  height: 863
+};
+
+const GLOBAL_HORMUZ_SUBSEA_CABLE_DATA_RISK_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Underwater%20Cable%20of%20Hydroacoustic%20Station%20HA03%20-%20Flickr%20-%20The%20Official%20CTBTO%20Photostream.jpg?width=1280",
+  alt: "지정학적 리스크가 데이터 이동에 영향을 줄 수 있음을 보여주는 해저 케이블 장면",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Underwater_Cable_of_Hydroacoustic_Station_HA03_-_Flickr_-_The_Official_CTBTO_Photostream.jpg",
+  width: 1280,
+  height: 960
+};
+
+const SCIENCE_MRNA_CANCER_VACCINE_TRIAL_READOUT_2026_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/6/64/Solo-mrna-vaccine-10.jpg",
+  alt: "mRNA 암 백신 개발과 임상시험을 떠올리게 하는 mRNA 백신 바이알",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Solo-mrna-vaccine-10.jpg",
+  width: 1280,
+  height: 1933
+};
+
+const SEMICONDUCTOR_PANEL_LEVEL_PACKAGING_YIELD_WARPAGE_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Chips%20on%206-Inch-Wafer%2001.jpg?width=1280",
+  alt: "패널레벨 패키징과 반도체 기판 공정의 면적 경쟁을 떠올리게 하는 반도체 웨이퍼",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Chips_on_6-Inch-Wafer_01.jpg",
+  width: 1280,
+  height: 853
+};
+
+const CULTURE_AI_VOICE_MUSIC_RIGHTS_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Microphone%20studio.jpg?width=1280",
+  alt: "AI 보컬 음악과 목소리 권리 계약을 떠올리게 하는 녹음 스튜디오 마이크",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Microphone_studio.jpg",
+  width: 1280,
+  height: 1051
+};
+
+const SPORTS_CLUB_WORLD_CUP_PLAYER_LOAD_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Windsor%20Park%20football%20stadium%20-%20Empty.JPG?width=1280",
+  alt: "클럽월드컵 확대와 선수 회복 부담을 떠올리게 하는 텅 빈 축구 경기장",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Windsor_Park_football_stadium_-_Empty.JPG",
+  width: 1280,
+  height: 964
+};
+
+const POLITICS_LOCAL_ELECTION_PLEDGE_COSTING_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Wahlkabinen%20(Rogi).jpeg?width=1280",
+  alt: "지방선거 공약 검증과 투표의 의미를 떠올리게 하는 사람이 없는 투표 부스",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Wahlkabinen_(Rogi).jpeg",
+  width: 1280,
+  height: 720
+};
+
+const US_STOCKS_BROADCOM_AI_ASIC_CUSTOMER_RISK_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Broadcom%20BCM1103%20V.jpg?width=1280",
+  alt: "브로드컴의 맞춤형 AI ASIC과 네트워킹 반도체 사업을 떠올리게 하는 Broadcom 칩",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Broadcom_BCM1103_V.jpg",
+  width: 1280,
+  height: 993
+};
+
+const KOREAN_STOCKS_HYUNDAI_HYBRID_MARGIN_2026_IMAGE = {
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Hyundai%20Sonata%20Hybrid.JPG?width=1280",
+  alt: "현대차 하이브리드 판매와 마진 지속성을 떠올리게 하는 현대 쏘나타 하이브리드 차량",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Hyundai_Sonata_Hybrid.JPG",
+  width: 1280,
+  height: 721
+};
+
+const RECIPE_SWEET_CORN_RICE_BUTTER_SOY_2026_IMAGE = {
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/0/04/Boiled_Sweet_Corn.jpg",
+  alt: "초당옥수수 솥밥의 단맛과 식감을 떠올리게 하는 노란 옥수수 사진",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Boiled_Sweet_Corn.jpg",
+  width: 1280,
+  height: 576
+};
+
 const featuredPages = [
+  {
+    slug: "economy-treasury-auction-term-premium-2026",
+    title: "미국 국채 입찰은 금리 인하보다 기간 프리미엄을 먼저 흔듭니다",
+    desk: "경제",
+    publishedAt: "2026-05-29T20:13:12+09:00",
+    summary: "미국 장기 국채 입찰은 기준금리 전망보다 재정 부담, 만기 구조, 해외 수요, 기간 프리미엄을 먼저 흔들 수 있습니다.",
+    image: ECONOMY_TREASURY_AUCTION_TERM_PREMIUM_2026_IMAGE,
+    audio: {
+      src: "audios/economy-treasury-auction-term-premium-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "JWbEZxykQ9c",
+      title: "미국 10년물 국채금리와 장기금리 부담 해설",
+      channel: "KBS 1라디오",
+      sourceUrl: "https://www.youtube.com/watch?v=JWbEZxykQ9c",
+      thumbnailUrl: "https://i.ytimg.com/vi/JWbEZxykQ9c/hqdefault.jpg",
+      description: "미국 장기금리와 국채 수요 부담을 한국어로 정리한 경제 해설 영상입니다.",
+    },
+  },
+  {
+    slug: "technology-ai-phone-ram-privacy-2026",
+    title: "AI 스마트폰 업그레이드는 카메라보다 램과 개인정보 처리에서 갈립니다",
+    desk: "기술",
+    publishedAt: "2026-05-29T20:13:11+09:00",
+    summary: "AI 스마트폰 교체 수요는 카메라 화소보다 온디바이스 처리, 램 용량, 발열, 개인정보 통제 방식에서 갈릴 가능성이 큽니다.",
+    image: TECHNOLOGY_AI_PHONE_RAM_PRIVACY_2026_IMAGE,
+    audio: {
+      src: "audios/technology-ai-phone-ram-privacy-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "xx5PzioC6gQ",
+      title: "온디바이스 AI가 다시 주목받는 이유",
+      channel: "안될공학 - IT 테크 신기술",
+      sourceUrl: "https://www.youtube.com/watch?v=xx5PzioC6gQ",
+      thumbnailUrl: "https://i.ytimg.com/vi/xx5PzioC6gQ/hqdefault.jpg",
+      description: "온디바이스 AI와 모바일 기기 성능 조건을 한국어로 설명하는 기술 영상입니다.",
+    },
+  },
+  {
+    slug: "industry-subsea-cable-data-center-route-risk-2026",
+    title: "해저 케이블 투자는 데이터센터보다 선박과 육양국 병목을 먼저 봐야 합니다",
+    desk: "산업",
+    publishedAt: "2026-05-29T20:13:10+09:00",
+    summary: "해저 케이블 투자는 데이터센터 수요만이 아니라 케이블 포설선, 허가, 육양국, 수리 역량이 병목으로 작동하는 산업입니다.",
+    image: INDUSTRY_SUBSEA_CABLE_DATA_CENTER_ROUTE_RISK_2026_IMAGE,
+    audio: {
+      src: "audios/industry-subsea-cable-data-center-route-risk-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "PXjRtyKFaaQ",
+      title: "엔비디아 칩 수만 개 시대, 해저케이블 병목 해설",
+      channel: "코인맨 - 경제를 쉽게",
+      sourceUrl: "https://www.youtube.com/watch?v=PXjRtyKFaaQ",
+      thumbnailUrl: "https://i.ytimg.com/vi/PXjRtyKFaaQ/hqdefault.jpg",
+      description: "AI 데이터센터 확대와 해저 케이블 병목을 한국어로 설명하는 영상입니다.",
+    },
+  },
+  {
+    slug: "crypto-stablecoin-yield-payment-regulation-2026",
+    title: "스테이블코인 결제 경쟁은 이자 금지와 보상 설계가 갈림길입니다",
+    desk: "크립토",
+    publishedAt: "2026-05-29T20:13:09+09:00",
+    summary: "스테이블코인 결제 시장은 준비자산 안정성, 이자 지급 제한, 거래소 보상, 카드 결제망과의 연결 방식이 경쟁력을 가릅니다.",
+    image: CRYPTO_STABLECOIN_YIELD_PAYMENT_REGULATION_2026_IMAGE,
+    audio: {
+      src: "audios/crypto-stablecoin-yield-payment-regulation-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "SNpvRLIHSFM",
+      title: "스테이블코인 이자 전면 금지법의 쟁점",
+      channel: "xrpCoinCrypto",
+      sourceUrl: "https://www.youtube.com/watch?v=SNpvRLIHSFM",
+      thumbnailUrl: "https://i.ytimg.com/vi/SNpvRLIHSFM/hqdefault.jpg",
+      description: "스테이블코인 규제와 이자 지급 제한 논쟁을 한국어로 설명하는 영상입니다.",
+    },
+  },
+  {
+    slug: "global-hormuz-subsea-cable-data-risk-2026",
+    title: "호르무즈 해저 케이블 리스크는 석유보다 데이터 이동을 먼저 흔듭니다",
+    desk: "글로벌",
+    publishedAt: "2026-05-29T20:13:08+09:00",
+    summary: "호르무즈 주변 긴장은 에너지 가격뿐 아니라 해저 케이블, 클라우드 연결, 금융 통신, 우회 노선 비용까지 흔들 수 있습니다.",
+    image: GLOBAL_HORMUZ_SUBSEA_CABLE_DATA_RISK_2026_IMAGE,
+    audio: {
+      src: "audios/global-hormuz-subsea-cable-data-risk-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "3vOuRPs7uS4",
+      title: "이란이 꺼낸 해저 케이블 카드, 또 다른 변수가 될까",
+      channel: "YTN 사이언스 투데이",
+      sourceUrl: "https://www.youtube.com/watch?v=3vOuRPs7uS4",
+      thumbnailUrl: "https://i.ytimg.com/vi/3vOuRPs7uS4/hqdefault.jpg",
+      description: "중동 긴장과 해저 케이블 리스크를 한국어로 다룬 영상입니다.",
+    },
+  },
+  {
+    slug: "science-mrna-cancer-vaccine-trial-readout-2026",
+    title: "mRNA 암 백신은 초기 반응보다 재발률과 병용 치료를 봐야 합니다",
+    desk: "과학",
+    publishedAt: "2026-05-29T20:13:07+09:00",
+    summary: "mRNA 암 백신은 면역 반응 자체보다 재발률, 생존 기간, 병용 면역항암제 효과, 제조 시간과 비용을 함께 봐야 합니다.",
+    image: SCIENCE_MRNA_CANCER_VACCINE_TRIAL_READOUT_2026_IMAGE,
+    audio: {
+      src: "audios/science-mrna-cancer-vaccine-trial-readout-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "Sw2svNTxwGA",
+      title: "암 백신 개발, 어디까지 왔나",
+      channel: "KNN NEWS",
+      sourceUrl: "https://www.youtube.com/watch?v=Sw2svNTxwGA",
+      thumbnailUrl: "https://i.ytimg.com/vi/Sw2svNTxwGA/hqdefault.jpg",
+      description: "암 백신 연구와 임상시험 흐름을 한국어 뉴스로 설명한 영상입니다.",
+    },
+  },
+  {
+    slug: "semiconductor-panel-level-packaging-yield-warpage-2026",
+    title: "패널레벨 패키징은 면적보다 수율과 뒤틀림이 비용을 가릅니다",
+    desk: "반도체",
+    publishedAt: "2026-05-29T20:13:06+09:00",
+    summary: "패널레벨 패키징은 큰 면적의 장점보다 뒤틀림, 정렬, 본딩 수율, 검사 장비와 소재 안정성이 실제 비용을 결정합니다.",
+    image: SEMICONDUCTOR_PANEL_LEVEL_PACKAGING_YIELD_WARPAGE_2026_IMAGE,
+    audio: {
+      src: "audios/semiconductor-panel-level-packaging-yield-warpage-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "s7RTLWCAYFE",
+      title: "유리 기판 강점과 패키징 업체 개발 현황",
+      channel: "월몰",
+      sourceUrl: "https://www.youtube.com/watch?v=s7RTLWCAYFE",
+      thumbnailUrl: "https://i.ytimg.com/vi/s7RTLWCAYFE/hqdefault.jpg",
+      description: "차세대 패키징과 유리 기판 이슈를 한국어로 설명하는 영상입니다.",
+    },
+  },
+  {
+    slug: "culture-ai-voice-music-rights-2026",
+    title: "AI 보컬 음악은 생성 기술보다 목소리 권리 계약이 먼저입니다",
+    desk: "문화",
+    publishedAt: "2026-05-29T20:13:05+09:00",
+    summary: "AI 보컬 음악은 기술 완성도보다 가수의 목소리 권리, 저작권 수익 배분, 팬덤 신뢰, 플랫폼 표시 의무가 먼저 정리돼야 합니다.",
+    image: CULTURE_AI_VOICE_MUSIC_RIGHTS_2026_IMAGE,
+    audio: {
+      src: "audios/culture-ai-voice-music-rights-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "oeW0C3CpXdU",
+      title: "AI 커버곡, 진짜 가수의 목소리일까? 음악 저작권의 미래",
+      channel: "저작권TV",
+      sourceUrl: "https://www.youtube.com/watch?v=oeW0C3CpXdU",
+      thumbnailUrl: "https://i.ytimg.com/vi/oeW0C3CpXdU/hqdefault.jpg",
+      description: "AI 커버곡과 목소리 권리, 음악 저작권 쟁점을 한국어로 설명하는 영상입니다.",
+    },
+  },
+  {
+    slug: "sports-club-world-cup-player-load-2026",
+    title: "클럽월드컵 확대는 흥행보다 선수 부하 관리가 관건입니다",
+    desk: "스포츠",
+    publishedAt: "2026-05-29T20:13:04+09:00",
+    summary: "클럽월드컵 확대는 중계권과 상금보다 선수 휴식, 프리시즌 압축, 부상 위험, 대표팀 일정과의 충돌을 먼저 봐야 합니다.",
+    image: SPORTS_CLUB_WORLD_CUP_PLAYER_LOAD_2026_IMAGE,
+    audio: {
+      src: "audios/sports-club-world-cup-player-load-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "C3I3X7mGk6Q",
+      title: "Player Workload & Financial Sustainability",
+      channel: "FIFPRO",
+      sourceUrl: "https://www.youtube.com/watch?v=C3I3X7mGk6Q",
+      thumbnailUrl: "https://i.ytimg.com/vi/C3I3X7mGk6Q/hqdefault.jpg",
+      description: "프로축구 선수 부하와 경기 일정 문제를 다룬 선수노조 영상입니다.",
+    },
+  },
+  {
+    slug: "politics-local-election-pledge-costing-2026",
+    title: "지방선거 공약은 무상 구호보다 재원표가 먼저입니다",
+    desk: "정치",
+    publishedAt: "2026-05-29T20:13:03+09:00",
+    summary: "지방선거 공약은 이름보다 예산 출처, 법적 권한, 집행 인력, 유지비, 기존 사업과의 충돌을 먼저 검증해야 합니다.",
+    image: POLITICS_LOCAL_ELECTION_PLEDGE_COSTING_2026_IMAGE,
+    audio: {
+      src: "audios/politics-local-election-pledge-costing-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "uoEmUUWv1EA",
+      title: "지방선거 10대 공약 공개, 각 당의 1호 공약은?",
+      channel: "SBS 뉴스",
+      sourceUrl: "https://www.youtube.com/watch?v=uoEmUUWv1EA",
+      thumbnailUrl: "https://i.ytimg.com/vi/uoEmUUWv1EA/hqdefault.jpg",
+      description: "지방선거 공약과 정책 경쟁을 한국어 뉴스로 다룬 영상입니다.",
+    },
+  },
+  {
+    slug: "us-stocks-broadcom-ai-asic-customer-risk-2026",
+    title: "브로드컴 주식은 AI ASIC 성장보다 고객 집중과 공급 계약을 봐야 합니다",
+    desk: "미국주식",
+    publishedAt: "2026-05-29T20:13:02+09:00",
+    summary: "브로드컴의 AI ASIC 성장은 강하지만 투자 판단은 고객 집중, 맞춤형 칩 계약 기간, 네트워킹 매출, 마진 지속성까지 함께 봐야 합니다.",
+    image: US_STOCKS_BROADCOM_AI_ASIC_CUSTOMER_RISK_2026_IMAGE,
+    audio: {
+      src: "audios/us-stocks-broadcom-ai-asic-customer-risk-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "MOEnlucHfq4",
+      title: "ASIC 시장 주도하며 상승 날개 단 브로드컴과 마벨",
+      channel: "뉴스핌TV",
+      sourceUrl: "https://www.youtube.com/watch?v=MOEnlucHfq4",
+      thumbnailUrl: "https://i.ytimg.com/vi/MOEnlucHfq4/hqdefault.jpg",
+      description: "AI ASIC 시장에서 브로드컴과 마벨의 경쟁 구도를 한국어로 정리한 영상입니다.",
+    },
+  },
+  {
+    slug: "korean-stocks-hyundai-hybrid-margin-2026",
+    title: "현대차 주식은 전기차 둔화보다 하이브리드 마진 지속성을 봐야 합니다",
+    desk: "한국주식",
+    publishedAt: "2026-05-29T20:13:01+09:00",
+    summary: "현대차 투자 판단은 전기차 수요 둔화보다 하이브리드 믹스, 미국 판매, 환율, 인센티브, 생산능력 배분을 함께 봐야 합니다.",
+    image: KOREAN_STOCKS_HYUNDAI_HYBRID_MARGIN_2026_IMAGE,
+    audio: {
+      src: "audios/korean-stocks-hyundai-hybrid-margin-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "0EbbV3RWPEI",
+      title: "현대차, 2026년 하반기는 완전히 다른 레벨이 됩니다",
+      channel: "주식 보고서 분석소",
+      sourceUrl: "https://www.youtube.com/watch?v=0EbbV3RWPEI",
+      thumbnailUrl: "https://i.ytimg.com/vi/0EbbV3RWPEI/hqdefault.jpg",
+      description: "현대차 실적과 하이브리드 전략을 한국어로 분석한 영상입니다.",
+    },
+  },
+  {
+    slug: "recipe-sweet-corn-rice-butter-soy-2026",
+    title: "초당옥수수 솥밥은 단맛보다 뜸과 버터간장 타이밍이 중요합니다",
+    desk: "레시피",
+    publishedAt: "2026-05-29T20:13:00+09:00",
+    summary: "초당옥수수 솥밥은 옥수수 단맛, 쌀 불림, 물 조절, 뜸 시간, 버터간장 넣는 타이밍이 맛을 좌우합니다.",
+    image: RECIPE_SWEET_CORN_RICE_BUTTER_SOY_2026_IMAGE,
+    audio: {
+      src: "audios/recipe-sweet-corn-rice-butter-soy-2026.mp3",
+      type: "audio/mpeg",
+    },
+    video: {
+      youtubeId: "IUbvcdOwJOY",
+      title: "옥수수밥 맛있게 짓는 법",
+      channel: "박막례 할머니 Korea_Grandma",
+      sourceUrl: "https://www.youtube.com/watch?v=IUbvcdOwJOY",
+      thumbnailUrl: "https://i.ytimg.com/vi/IUbvcdOwJOY/hqdefault.jpg",
+      description: "옥수수밥을 집에서 쉽게 짓는 과정을 한국어로 보여주는 레시피 영상입니다.",
+    },
+  },
   {
     slug: "economy-fed-tariff-inflation-rate-path-2026",
     title: "연준의 물가 판단은 금리 인하보다 관세 전가 속도를 먼저 봐야 합니다",
@@ -4274,7 +4638,7 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan은 지금 사람들이 가장 궁금해
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260528-field-articles";
+const AUDIO_ASSET_VERSION = "20260529-field-articles";
 const IMAGE_DIRECTORY = "images";
 const IMAGE_EXTENSION = "webp";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
