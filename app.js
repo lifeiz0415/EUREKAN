@@ -2545,9 +2545,12 @@ if (!articleRelatedStocksNode && articleViewNode && articleBodyNode) {
 }
 
 if (articleRelatedStocksNode && articleBodyNode) {
-  const referenceNode = articleTocNode?.nextSibling || articleBodyNode;
-  if (articleRelatedStocksNode.parentElement !== articleViewNode || articleRelatedStocksNode.nextElementSibling !== articleBodyNode) {
-    articleViewNode.insertBefore(articleRelatedStocksNode, referenceNode);
+  const articleContentParentNode = articleBodyNode.parentElement;
+  const referenceNode = articleTocNode?.parentElement === articleContentParentNode
+    ? articleTocNode.nextSibling
+    : articleBodyNode;
+  if (articleContentParentNode && (articleRelatedStocksNode.parentElement !== articleContentParentNode || articleRelatedStocksNode.nextElementSibling !== articleBodyNode)) {
+    articleContentParentNode.insertBefore(articleRelatedStocksNode, referenceNode || articleBodyNode);
   }
 }
 
