@@ -10,13 +10,14 @@
 - 프로젝트명: Eurekan Investment
 - 제품 형태: 정적 단일 페이지형 위키/매거진
 - 핵심 목표: 주식투자에 도움이 되는 39개 산업·기술·소비·금융 테마를 분야별 장문 페이지로 보여주는 읽기 중심 사이트
-- 현재 구현 원칙: 백엔드 없이 `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `audios/`, `images/`, `agents/`만으로 동작한다.
+- 현재 구현 원칙: 백엔드 없이 `README.md`, `STOCK.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `audios/`, `images/`, `agents/`만으로 동작한다.
 - 현재 운영 분야는 아래 39개 투자 테마 분야이며, 이전 broad 분야 체계는 최상위 분야로 사용하지 않는다.
 
 ## 현재 파일 구조
 ```text
 AGENTS.md
 README.md
+STOCK.md
 index.html
 about.html
 contact.html
@@ -45,6 +46,7 @@ agents/
 
 - 위 구조 외의 프로젝트 파일/폴더는 유지하지 않는다.
 - `README.md`는 공개 저장소용 프로젝트 소개 문서로 유지한다.
+- `STOCK.md`는 관련종목 표시에 사용하는 한국·미국 주식 종목명, 티커, 네이버증권 링크 참고 파일로 유지한다.
 - `agents/` 폴더는 분야별 전문가 페르소나 문서 저장용으로 남긴다.
 - `audios/` 폴더는 글별 음성 읽기용 MP3 파일 저장용으로 유지한다.
 - `images/` 폴더는 외부 공개 원본 이미지를 글별 로컬 WebP 후보로 최적화해 저장하는 폴더로 유지한다.
@@ -156,6 +158,7 @@ agents/
 - 한국 종목 티커를 화면에 표시할 때는 `.KS`, `.KQ` 접미사를 노출하지 않고 숫자 코드만 보여준다.
 - 관련종목 블록은 본문 밖에 두어 음성 읽기 본문에 포함하지 않는다.
 - 관련종목 블록을 동적으로 만들 때는 정적 글 페이지와 홈 상세 화면의 DOM 구조가 다를 수 있으므로, 반드시 `#article-body`와 같은 실제 콘텐츠 부모 안에서 목차 다음 위치에 삽입한다.
+- 모든 공개 글은 가능한 경우 `STOCK.md`의 종목명, 티커, 네이버증권 주소를 기준으로 관련종목을 최대 4개까지 연결한다.
 - 댓글 컴포넌트, 댓글 입력창, 댓글 목록, 댓글 저장 로직은 제공하지 않는다.
 - 상세 화면과 정적 글 페이지에서 글 제목과 음성으로 읽어주기 버튼 사이에는 요약 디스크립션이나 설명 문단을 표시하지 않는다.
 - 상세 화면과 정적 글 페이지에서 작성자와 발행시각은 음성으로 읽어주기 버튼과 같은 줄에 두고 오른쪽 정렬로 표시한다.

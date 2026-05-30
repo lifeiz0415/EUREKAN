@@ -961,6 +961,12 @@ const featuredPages = [
     image: ARTIFICIAL_INTELLIGENCE_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/artificial-intelligence-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "7VcdPR8IEnA", title: "인공지능 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7VcdPR8IEnA", thumbnailUrl: "https://i.ytimg.com/vi/7VcdPR8IEnA/hqdefault.jpg", description: "인공지능 테마는 추론 서버와 에이전트 소프트웨어의 성장성만으로 판단하기 어렵고 전력과 GPU 임대료, 매출총이익률과 사용량 유지율, 반복 사용료가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "엔비디아", market: "미국", ticker: "NVDA", url: "https://m.stock.naver.com/worldstock/stock/NVDA.O/total" },
+      { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
+      { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
+      { name: "팔란티어 테크놀로지스", market: "미국", ticker: "PLTR", url: "https://m.stock.naver.com/worldstock/stock/PLTR.O/total" },
+    ],
   },
   {
     slug: "artificial-intelligence-demand-revenue-2026",
@@ -972,6 +978,12 @@ const featuredPages = [
     image: ARTIFICIAL_INTELLIGENCE_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/artificial-intelligence-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "dzCLtKW4Eg8", title: "인공지능 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=dzCLtKW4Eg8", thumbnailUrl: "https://i.ytimg.com/vi/dzCLtKW4Eg8/hqdefault.jpg", description: "인공지능 기업을 볼 때는 업무 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 매출총이익률과 사용량 유지율가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "엔비디아", market: "미국", ticker: "NVDA", url: "https://m.stock.naver.com/worldstock/stock/NVDA.O/total" },
+      { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
+      { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
+      { name: "팔란티어 테크놀로지스", market: "미국", ticker: "PLTR", url: "https://m.stock.naver.com/worldstock/stock/PLTR.O/total" },
+    ],
   },
   {
     slug: "cloud-computing-margin-bottleneck-2026",
@@ -983,6 +995,12 @@ const featuredPages = [
     image: CLOUD_COMPUTING_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/cloud-computing-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "5s9UnfOpSJo", title: "클라우드 컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=5s9UnfOpSJo", thumbnailUrl: "https://i.ytimg.com/vi/5s9UnfOpSJo/hqdefault.jpg", description: "클라우드 컴퓨팅 테마는 AI 클라우드 인프라와 관리형 서비스의 성장성만으로 판단하기 어렵고 전력 계약과 감가상각, 자본지출 대비 매출 전환율, 사용량 기반 매출이 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
+      { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+      { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
+      { name: "데이터도그", market: "미국", ticker: "DDOG", url: "https://m.stock.naver.com/worldstock/stock/DDOG.O/total" },
+    ],
   },
   {
     slug: "cloud-computing-demand-revenue-2026",
@@ -994,6 +1012,12 @@ const featuredPages = [
     image: CLOUD_COMPUTING_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/cloud-computing-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "-7HzQM5E3TA", title: "클라우드 컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=-7HzQM5E3TA", thumbnailUrl: "https://i.ytimg.com/vi/-7HzQM5E3TA/hqdefault.jpg", description: "클라우드 컴퓨팅 기업을 볼 때는 클라우드 이전과 AI 학습 수요의 크기보다 실제 고객 계약, 반복 매출, 자본지출 대비 매출 전환율가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
+      { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+      { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
+      { name: "데이터도그", market: "미국", ticker: "DDOG", url: "https://m.stock.naver.com/worldstock/stock/DDOG.O/total" },
+    ],
   },
   {
     slug: "electric-vehicle-margin-bottleneck-2026",
@@ -1005,6 +1029,12 @@ const featuredPages = [
     image: ELECTRIC_VEHICLE_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/electric-vehicle-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "ueUaCY_swpU", title: "전기차 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ueUaCY_swpU", thumbnailUrl: "https://i.ytimg.com/vi/ueUaCY_swpU/hqdefault.jpg", description: "전기차 테마는 배터리와 전동화 플랫폼의 성장성만으로 판단하기 어렵고 배터리 원가와 충전 인프라, 차량당 마진과 재고 회전, 판매 믹스 개선가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
+      { name: "리비안", market: "미국", ticker: "RIVN", url: "https://m.stock.naver.com/worldstock/stock/RIVN.O/total" },
+      { name: "루시드 그룹", market: "미국", ticker: "LCID", url: "https://m.stock.naver.com/worldstock/stock/LCID.O/total" },
+      { name: "현대차", market: "한국", ticker: "005380.KS", url: "https://m.stock.naver.com/domestic/stock/005380/total" },
+    ],
   },
   {
     slug: "electric-vehicle-demand-revenue-2026",
@@ -1016,6 +1046,12 @@ const featuredPages = [
     image: ELECTRIC_VEHICLE_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/electric-vehicle-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "4vJ-Sak1TeE", title: "전기차 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=4vJ-Sak1TeE", thumbnailUrl: "https://i.ytimg.com/vi/4vJ-Sak1TeE/hqdefault.jpg", description: "전기차 기업을 볼 때는 전기차와 하이브리드 전환 수요의 크기보다 실제 고객 계약, 반복 매출, 차량당 마진과 재고 회전가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
+      { name: "리비안", market: "미국", ticker: "RIVN", url: "https://m.stock.naver.com/worldstock/stock/RIVN.O/total" },
+      { name: "루시드 그룹", market: "미국", ticker: "LCID", url: "https://m.stock.naver.com/worldstock/stock/LCID.O/total" },
+      { name: "현대차", market: "한국", ticker: "005380.KS", url: "https://m.stock.naver.com/domestic/stock/005380/total" },
+    ],
   },
   {
     slug: "transport-logistics-margin-bottleneck-2026",
@@ -1027,6 +1063,12 @@ const featuredPages = [
     image: TRANSPORT_LOGISTICS_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/transport-logistics-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "7E86Y_gXNg4", title: "운송·물류 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7E86Y_gXNg4", thumbnailUrl: "https://i.ytimg.com/vi/7E86Y_gXNg4/hqdefault.jpg", description: "운송·물류 테마는 항만, 창고, 라스트마일 네트워크의 성장성만으로 판단하기 어렵고 운임 변동과 인건비, 가동률과 단위 배송비, 계약 물량과 창고 임대료가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "페덱스", market: "미국", ticker: "FDX", url: "https://m.stock.naver.com/worldstock/stock/FDX/total" },
+      { name: "우버", market: "미국", ticker: "UBER", url: "https://m.stock.naver.com/worldstock/stock/UBER.K/total" },
+      { name: "델타 에어라인스", market: "미국", ticker: "DAL", url: "https://m.stock.naver.com/worldstock/stock/DAL/total" },
+      { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
+    ],
   },
   {
     slug: "space-technology-margin-bottleneck-2026",
@@ -1040,10 +1082,10 @@ const featuredPages = [
     audio: { src: "audios/space-technology-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "8Am8EoBriZs", title: "우주 기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8Am8EoBriZs", thumbnailUrl: "https://i.ytimg.com/vi/8Am8EoBriZs/hqdefault.jpg", description: "우주 기술 테마는 위성, 발사체, 우주 데이터 서비스의 성장성만으로 판단하기 어렵고 발사 일정과 보험 비용, 수주잔고와 반복 서비스 매출, 장기 서비스 계약가 함께 맞아야 합니다." },
     relatedStocks: [
-      { name: "로켓 랩", market: "미국", ticker: "RKLB", url: "https://m.stock.naver.com/worldstock/stock/RKLB.O" },
-      { name: "플래닛 랩스 PBC", market: "미국", ticker: "PL", url: "https://m.stock.naver.com/worldstock/stock/PL" },
+      { name: "로켓 랩", market: "미국", ticker: "RKLB", url: "https://m.stock.naver.com/worldstock/stock/RKLB.O/total" },
+      { name: "플래닛 랩스 PBC", market: "미국", ticker: "PL", url: "https://m.stock.naver.com/worldstock/stock/PL/total" },
+      { name: "AST 스페이스모바일", market: "미국", ticker: "ASTS", url: "https://m.stock.naver.com/worldstock/stock/ASTS.O/total" },
       { name: "한화에어로스페이스", market: "한국", ticker: "012450.KS", url: "https://m.stock.naver.com/domestic/stock/012450/total" },
-      { name: "쎄트렉아이", market: "한국", ticker: "099320.KQ", url: "https://m.stock.naver.com/domestic/stock/099320/total" },
     ],
   },
   {
@@ -1056,6 +1098,12 @@ const featuredPages = [
     image: SPACE_TECHNOLOGY_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/space-technology-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "WXi98XR4A40", title: "우주 기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=WXi98XR4A40", thumbnailUrl: "https://i.ytimg.com/vi/WXi98XR4A40/hqdefault.jpg", description: "우주 기술 기업을 볼 때는 저궤도 통신과 지구 관측 수요의 크기보다 실제 고객 계약, 반복 매출, 수주잔고와 반복 서비스 매출이 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "로켓 랩", market: "미국", ticker: "RKLB", url: "https://m.stock.naver.com/worldstock/stock/RKLB.O/total" },
+      { name: "플래닛 랩스 PBC", market: "미국", ticker: "PL", url: "https://m.stock.naver.com/worldstock/stock/PL/total" },
+      { name: "AST 스페이스모바일", market: "미국", ticker: "ASTS", url: "https://m.stock.naver.com/worldstock/stock/ASTS.O/total" },
+      { name: "한화에어로스페이스", market: "한국", ticker: "012450.KS", url: "https://m.stock.naver.com/domestic/stock/012450/total" },
+    ],
   },
   {
     slug: "space-technology-risk-cycle-2026",
@@ -1067,6 +1115,12 @@ const featuredPages = [
     image: SPACE_TECHNOLOGY_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/space-technology-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "cE3lz7Xai_c", title: "우주 기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=cE3lz7Xai_c", thumbnailUrl: "https://i.ytimg.com/vi/cE3lz7Xai_c/hqdefault.jpg", description: "우주 기술 테마는 성장 기대가 커질수록 발사 실패와 자금 조달가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "로켓 랩", market: "미국", ticker: "RKLB", url: "https://m.stock.naver.com/worldstock/stock/RKLB.O/total" },
+      { name: "플래닛 랩스 PBC", market: "미국", ticker: "PL", url: "https://m.stock.naver.com/worldstock/stock/PL/total" },
+      { name: "AST 스페이스모바일", market: "미국", ticker: "ASTS", url: "https://m.stock.naver.com/worldstock/stock/ASTS.O/total" },
+      { name: "한화에어로스페이스", market: "한국", ticker: "012450.KS", url: "https://m.stock.naver.com/domestic/stock/012450/total" },
+    ],
   },
   {
     slug: "renewable-energy-margin-bottleneck-2026",
@@ -1078,6 +1132,12 @@ const featuredPages = [
     image: RENEWABLE_ENERGY_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/renewable-energy-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "YmHZhpxtneM", title: "재생에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=YmHZhpxtneM", thumbnailUrl: "https://i.ytimg.com/vi/YmHZhpxtneM/hqdefault.jpg", description: "재생에너지 테마는 태양광, 풍력, 저장장치 프로젝트의 성장성만으로 판단하기 어렵고 계통 연결과 금리 부담, 전력구매계약 단가와 프로젝트 수익률, 장기 전력 판매가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "퍼스트 솔라", market: "미국", ticker: "FSLR", url: "https://m.stock.naver.com/worldstock/stock/FSLR.O/total" },
+      { name: "인페이즈 에너지", market: "미국", ticker: "ENPH", url: "https://m.stock.naver.com/worldstock/stock/ENPH.O/total" },
+      { name: "플러그 파워", market: "미국", ticker: "PLUG", url: "https://m.stock.naver.com/worldstock/stock/PLUG.O/total" },
+      { name: "씨에스윈드", market: "한국", ticker: "112610.KS", url: "https://m.stock.naver.com/domestic/stock/112610/total" },
+    ],
   },
   {
     slug: "renewable-energy-demand-revenue-2026",
@@ -1089,6 +1149,12 @@ const featuredPages = [
     image: RENEWABLE_ENERGY_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/renewable-energy-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "hEQTJv0Irgg", title: "재생에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=hEQTJv0Irgg", thumbnailUrl: "https://i.ytimg.com/vi/hEQTJv0Irgg/hqdefault.jpg", description: "재생에너지 기업을 볼 때는 청정 전력 조달 수요의 크기보다 실제 고객 계약, 반복 매출, 전력구매계약 단가와 프로젝트 수익률가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "퍼스트 솔라", market: "미국", ticker: "FSLR", url: "https://m.stock.naver.com/worldstock/stock/FSLR.O/total" },
+      { name: "인페이즈 에너지", market: "미국", ticker: "ENPH", url: "https://m.stock.naver.com/worldstock/stock/ENPH.O/total" },
+      { name: "플러그 파워", market: "미국", ticker: "PLUG", url: "https://m.stock.naver.com/worldstock/stock/PLUG.O/total" },
+      { name: "씨에스윈드", market: "한국", ticker: "112610.KS", url: "https://m.stock.naver.com/domestic/stock/112610/total" },
+    ],
   },
   {
     slug: "renewable-energy-risk-cycle-2026",
@@ -1100,6 +1166,12 @@ const featuredPages = [
     image: RENEWABLE_ENERGY_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/renewable-energy-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "O_CtSpsHVvg", title: "재생에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=O_CtSpsHVvg", thumbnailUrl: "https://i.ytimg.com/vi/O_CtSpsHVvg/hqdefault.jpg", description: "재생에너지 테마는 성장 기대가 커질수록 정책 변경과 원가 상승가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "퍼스트 솔라", market: "미국", ticker: "FSLR", url: "https://m.stock.naver.com/worldstock/stock/FSLR.O/total" },
+      { name: "인페이즈 에너지", market: "미국", ticker: "ENPH", url: "https://m.stock.naver.com/worldstock/stock/ENPH.O/total" },
+      { name: "플러그 파워", market: "미국", ticker: "PLUG", url: "https://m.stock.naver.com/worldstock/stock/PLUG.O/total" },
+      { name: "씨에스윈드", market: "한국", ticker: "112610.KS", url: "https://m.stock.naver.com/domestic/stock/112610/total" },
+    ],
   },
   {
     slug: "traditional-energy-margin-bottleneck-2026",
@@ -1111,6 +1183,12 @@ const featuredPages = [
     image: TRADITIONAL_ENERGY_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/traditional-energy-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "iAj8DEITbe0", title: "전통 에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=iAj8DEITbe0", thumbnailUrl: "https://i.ytimg.com/vi/iAj8DEITbe0/hqdefault.jpg", description: "전통 에너지 테마는 석유, 가스, 정제, 파이프라인의 성장성만으로 판단하기 어렵고 원유 가격과 정제 마진, 잉여현금흐름과 배당 여력, 배당과 자사주 매입이 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "엑슨 모빌", market: "미국", ticker: "XOM", url: "https://m.stock.naver.com/worldstock/stock/XOM/total" },
+      { name: "셰브론", market: "미국", ticker: "CVX", url: "https://m.stock.naver.com/worldstock/stock/CVX/total" },
+      { name: "코노코필립스", market: "미국", ticker: "COP", url: "https://m.stock.naver.com/worldstock/stock/COP/total" },
+      { name: "S-Oil", market: "한국", ticker: "010950.KS", url: "https://m.stock.naver.com/domestic/stock/010950/total" },
+    ],
   },
   {
     slug: "traditional-energy-demand-revenue-2026",
@@ -1122,6 +1200,12 @@ const featuredPages = [
     image: TRADITIONAL_ENERGY_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/traditional-energy-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "wYVfWIGDMDo", title: "전통 에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=wYVfWIGDMDo", thumbnailUrl: "https://i.ytimg.com/vi/wYVfWIGDMDo/hqdefault.jpg", description: "전통 에너지 기업을 볼 때는 운송 연료와 전력용 가스 수요의 크기보다 실제 고객 계약, 반복 매출, 잉여현금흐름과 배당 여력가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "엑슨 모빌", market: "미국", ticker: "XOM", url: "https://m.stock.naver.com/worldstock/stock/XOM/total" },
+      { name: "셰브론", market: "미국", ticker: "CVX", url: "https://m.stock.naver.com/worldstock/stock/CVX/total" },
+      { name: "코노코필립스", market: "미국", ticker: "COP", url: "https://m.stock.naver.com/worldstock/stock/COP/total" },
+      { name: "S-Oil", market: "한국", ticker: "010950.KS", url: "https://m.stock.naver.com/domestic/stock/010950/total" },
+    ],
   },
   {
     slug: "semiconductor-margin-bottleneck-2026",
@@ -1133,6 +1217,12 @@ const featuredPages = [
     image: SEMICONDUCTOR_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/semiconductor-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "KtBiw1BId7M", title: "반도체 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=KtBiw1BId7M", thumbnailUrl: "https://i.ytimg.com/vi/KtBiw1BId7M/hqdefault.jpg", description: "반도체 테마는 HBM, 파운드리, 장비 공급망의 성장성만으로 판단하기 어렵고 수율과 첨단 패키징, ASP와 웨이퍼 투입량, 장기 공급 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "엔비디아", market: "미국", ticker: "NVDA", url: "https://m.stock.naver.com/worldstock/stock/NVDA.O/total" },
+      { name: "브로드컴", market: "미국", ticker: "AVGO", url: "https://m.stock.naver.com/worldstock/stock/AVGO.O/total" },
+      { name: "AMD(어드밴스드 마이크로 디바이시스)", market: "미국", ticker: "AMD", url: "https://m.stock.naver.com/worldstock/stock/AMD.O/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "cybersecurity-margin-bottleneck-2026",
@@ -1144,6 +1234,12 @@ const featuredPages = [
     image: CYBERSECURITY_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/cybersecurity-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "l-oiFQFSdT8", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=l-oiFQFSdT8", thumbnailUrl: "https://i.ytimg.com/vi/l-oiFQFSdT8/hqdefault.jpg", description: "사이버보안 테마는 클라우드 보안과 엔드포인트 방어의 성장성만으로 판단하기 어렵고 보안 예산 승인과 제품 통합, 순매출유지율과 연간반복매출, 구독 매출이 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "크라우드 스트라이크 홀딩스", market: "미국", ticker: "CRWD", url: "https://m.stock.naver.com/worldstock/stock/CRWD.O/total" },
+      { name: "팔로 알토 네트웍스", market: "미국", ticker: "PANW", url: "https://m.stock.naver.com/worldstock/stock/PANW.O/total" },
+      { name: "포티넷", market: "미국", ticker: "FTNT", url: "https://m.stock.naver.com/worldstock/stock/FTNT.O/total" },
+      { name: "옥타", market: "미국", ticker: "OKTA", url: "https://m.stock.naver.com/worldstock/stock/OKTA.O/total" },
+    ],
   },
   {
     slug: "cybersecurity-demand-revenue-2026",
@@ -1155,6 +1251,12 @@ const featuredPages = [
     image: CYBERSECURITY_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/cybersecurity-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "BPAOxEpBwMY", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=BPAOxEpBwMY", thumbnailUrl: "https://i.ytimg.com/vi/BPAOxEpBwMY/hqdefault.jpg", description: "사이버보안 기업을 볼 때는 랜섬웨어 대응과 계정 보호 수요의 크기보다 실제 고객 계약, 반복 매출, 순매출유지율과 연간반복매출이 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "크라우드 스트라이크 홀딩스", market: "미국", ticker: "CRWD", url: "https://m.stock.naver.com/worldstock/stock/CRWD.O/total" },
+      { name: "팔로 알토 네트웍스", market: "미국", ticker: "PANW", url: "https://m.stock.naver.com/worldstock/stock/PANW.O/total" },
+      { name: "포티넷", market: "미국", ticker: "FTNT", url: "https://m.stock.naver.com/worldstock/stock/FTNT.O/total" },
+      { name: "옥타", market: "미국", ticker: "OKTA", url: "https://m.stock.naver.com/worldstock/stock/OKTA.O/total" },
+    ],
   },
   {
     slug: "cybersecurity-risk-cycle-2026",
@@ -1166,6 +1268,12 @@ const featuredPages = [
     image: CYBERSECURITY_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/cybersecurity-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "eqQqo2Z9apA", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=eqQqo2Z9apA", thumbnailUrl: "https://i.ytimg.com/vi/eqQqo2Z9apA/hqdefault.jpg", description: "사이버보안 테마는 성장 기대가 커질수록 플랫폼 통합 경쟁과 고객 이탈가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "크라우드 스트라이크 홀딩스", market: "미국", ticker: "CRWD", url: "https://m.stock.naver.com/worldstock/stock/CRWD.O/total" },
+      { name: "팔로 알토 네트웍스", market: "미국", ticker: "PANW", url: "https://m.stock.naver.com/worldstock/stock/PANW.O/total" },
+      { name: "포티넷", market: "미국", ticker: "FTNT", url: "https://m.stock.naver.com/worldstock/stock/FTNT.O/total" },
+      { name: "옥타", market: "미국", ticker: "OKTA", url: "https://m.stock.naver.com/worldstock/stock/OKTA.O/total" },
+    ],
   },
   {
     slug: "industrial-automation-margin-bottleneck-2026",
@@ -1177,6 +1285,12 @@ const featuredPages = [
     image: INDUSTRIAL_AUTOMATION_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/industrial-automation-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "LcGtLLcOHVc", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LcGtLLcOHVc", thumbnailUrl: "https://i.ytimg.com/vi/LcGtLLcOHVc/hqdefault.jpg", description: "산업 자동화 테마는 공장 제어, 센서, 자동화 장비의 성장성만으로 판단하기 어렵고 설비투자 주기와 설치 인력, 수주잔고와 서비스 매출 비중, 유지보수 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "허니웰 인터내셔널", market: "미국", ticker: "HON", url: "https://m.stock.naver.com/worldstock/stock/HON.O/total" },
+      { name: "로크웰 오토메이션", market: "미국", ticker: "ROK", url: "https://m.stock.naver.com/worldstock/stock/ROK/total" },
+      { name: "에머슨 일렉트릭", market: "미국", ticker: "EMR", url: "https://m.stock.naver.com/worldstock/stock/EMR/total" },
+      { name: "이튼", market: "미국", ticker: "ETN", url: "https://m.stock.naver.com/worldstock/stock/ETN/total" },
+    ],
   },
   {
     slug: "industrial-automation-demand-revenue-2026",
@@ -1188,6 +1302,12 @@ const featuredPages = [
     image: INDUSTRIAL_AUTOMATION_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/industrial-automation-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "RDQ6jiFZNlQ", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RDQ6jiFZNlQ", thumbnailUrl: "https://i.ytimg.com/vi/RDQ6jiFZNlQ/hqdefault.jpg", description: "산업 자동화 기업을 볼 때는 인건비 절감과 품질 안정 수요의 크기보다 실제 고객 계약, 반복 매출, 수주잔고와 서비스 매출 비중가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "허니웰 인터내셔널", market: "미국", ticker: "HON", url: "https://m.stock.naver.com/worldstock/stock/HON.O/total" },
+      { name: "로크웰 오토메이션", market: "미국", ticker: "ROK", url: "https://m.stock.naver.com/worldstock/stock/ROK/total" },
+      { name: "에머슨 일렉트릭", market: "미국", ticker: "EMR", url: "https://m.stock.naver.com/worldstock/stock/EMR/total" },
+      { name: "이튼", market: "미국", ticker: "ETN", url: "https://m.stock.naver.com/worldstock/stock/ETN/total" },
+    ],
   },
   {
     slug: "industrial-automation-risk-cycle-2026",
@@ -1199,6 +1319,12 @@ const featuredPages = [
     image: INDUSTRIAL_AUTOMATION_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/industrial-automation-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "kCbqe0NA_ds", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=kCbqe0NA_ds", thumbnailUrl: "https://i.ytimg.com/vi/kCbqe0NA_ds/hqdefault.jpg", description: "산업 자동화 테마는 성장 기대가 커질수록 경기 둔화와 고객 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "허니웰 인터내셔널", market: "미국", ticker: "HON", url: "https://m.stock.naver.com/worldstock/stock/HON.O/total" },
+      { name: "로크웰 오토메이션", market: "미국", ticker: "ROK", url: "https://m.stock.naver.com/worldstock/stock/ROK/total" },
+      { name: "에머슨 일렉트릭", market: "미국", ticker: "EMR", url: "https://m.stock.naver.com/worldstock/stock/EMR/total" },
+      { name: "이튼", market: "미국", ticker: "ETN", url: "https://m.stock.naver.com/worldstock/stock/ETN/total" },
+    ],
   },
   {
     slug: "robotics-margin-bottleneck-2026",
@@ -1210,6 +1336,12 @@ const featuredPages = [
     image: ROBOTICS_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/robotics-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "ezUnJ3McW9M", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ezUnJ3McW9M", thumbnailUrl: "https://i.ytimg.com/vi/ezUnJ3McW9M/hqdefault.jpg", description: "로보틱스 테마는 협동로봇과 물류 로봇의 성장성만으로 판단하기 어렵고 현장 적용 속도와 안전 인증, 납품 대수와 서비스 매출률, 로봇 판매와 구독형 유지보수가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "인튜이티브 서지컬", market: "미국", ticker: "ISRG", url: "https://m.stock.naver.com/worldstock/stock/ISRG.O/total" },
+      { name: "유아이패스", market: "미국", ticker: "PATH", url: "https://m.stock.naver.com/worldstock/stock/PATH.K/total" },
+      { name: "심보틱", market: "미국", ticker: "SYM", url: "https://m.stock.naver.com/worldstock/stock/SYM.O/total" },
+      { name: "두산로보틱스", market: "한국", ticker: "454910.KS", url: "https://m.stock.naver.com/domestic/stock/454910/total" },
+    ],
   },
   {
     slug: "robotics-demand-revenue-2026",
@@ -1221,6 +1353,12 @@ const featuredPages = [
     image: ROBOTICS_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/robotics-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "0yRYotzohKk", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=0yRYotzohKk", thumbnailUrl: "https://i.ytimg.com/vi/0yRYotzohKk/hqdefault.jpg", description: "로보틱스 기업을 볼 때는 반복 작업 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 납품 대수와 서비스 매출률가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "인튜이티브 서지컬", market: "미국", ticker: "ISRG", url: "https://m.stock.naver.com/worldstock/stock/ISRG.O/total" },
+      { name: "유아이패스", market: "미국", ticker: "PATH", url: "https://m.stock.naver.com/worldstock/stock/PATH.K/total" },
+      { name: "심보틱", market: "미국", ticker: "SYM", url: "https://m.stock.naver.com/worldstock/stock/SYM.O/total" },
+      { name: "두산로보틱스", market: "한국", ticker: "454910.KS", url: "https://m.stock.naver.com/domestic/stock/454910/total" },
+    ],
   },
   {
     slug: "robotics-risk-cycle-2026",
@@ -1232,6 +1370,12 @@ const featuredPages = [
     image: ROBOTICS_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/robotics-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "JQbL991DfGk", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=JQbL991DfGk", thumbnailUrl: "https://i.ytimg.com/vi/JQbL991DfGk/hqdefault.jpg", description: "로보틱스 테마는 성장 기대가 커질수록 파일럿 이후 확산 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "인튜이티브 서지컬", market: "미국", ticker: "ISRG", url: "https://m.stock.naver.com/worldstock/stock/ISRG.O/total" },
+      { name: "유아이패스", market: "미국", ticker: "PATH", url: "https://m.stock.naver.com/worldstock/stock/PATH.K/total" },
+      { name: "심보틱", market: "미국", ticker: "SYM", url: "https://m.stock.naver.com/worldstock/stock/SYM.O/total" },
+      { name: "두산로보틱스", market: "한국", ticker: "454910.KS", url: "https://m.stock.naver.com/domestic/stock/454910/total" },
+    ],
   },
   {
     slug: "nanotechnology-margin-bottleneck-2026",
@@ -1243,6 +1387,12 @@ const featuredPages = [
     image: NANOTECHNOLOGY_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/nanotechnology-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "g8pGiQOScRU", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g8pGiQOScRU", thumbnailUrl: "https://i.ytimg.com/vi/g8pGiQOScRU/hqdefault.jpg", description: "나노기술 테마는 나노 소재와 정밀 공정의 성장성만으로 판단하기 어렵고 양산 수율과 인증 기간, 그램당 단가와 적용처 확대, 소재 공급 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "나노 디멘션 ADR", market: "미국", ticker: "NNDM", url: "https://m.stock.naver.com/worldstock/stock/NNDM.O/total" },
+      { name: "나노 뉴클리어 에너지", market: "미국", ticker: "NNE", url: "https://m.stock.naver.com/worldstock/stock/NNE.O/total" },
+      { name: "나노바이오틱스 ADR", market: "미국", ticker: "NBTX", url: "https://m.stock.naver.com/worldstock/stock/NBTX.O/total" },
+      { name: "나노바이리사이드스", market: "미국", ticker: "NNVC", url: "https://m.stock.naver.com/worldstock/stock/NNVC.K/total" },
+    ],
   },
   {
     slug: "nanotechnology-demand-revenue-2026",
@@ -1254,6 +1404,12 @@ const featuredPages = [
     image: NANOTECHNOLOGY_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/nanotechnology-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "Ho1jTZRog_w", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Ho1jTZRog_w", thumbnailUrl: "https://i.ytimg.com/vi/Ho1jTZRog_w/hqdefault.jpg", description: "나노기술 기업을 볼 때는 소재 성능 개선 수요의 크기보다 실제 고객 계약, 반복 매출, 그램당 단가와 적용처 확대가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "나노 디멘션 ADR", market: "미국", ticker: "NNDM", url: "https://m.stock.naver.com/worldstock/stock/NNDM.O/total" },
+      { name: "나노 뉴클리어 에너지", market: "미국", ticker: "NNE", url: "https://m.stock.naver.com/worldstock/stock/NNE.O/total" },
+      { name: "나노바이오틱스 ADR", market: "미국", ticker: "NBTX", url: "https://m.stock.naver.com/worldstock/stock/NBTX.O/total" },
+      { name: "나노바이리사이드스", market: "미국", ticker: "NNVC", url: "https://m.stock.naver.com/worldstock/stock/NNVC.K/total" },
+    ],
   },
   {
     slug: "nanotechnology-risk-cycle-2026",
@@ -1265,6 +1421,12 @@ const featuredPages = [
     image: NANOTECHNOLOGY_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/nanotechnology-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "CTiFYDDsfKQ", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=CTiFYDDsfKQ", thumbnailUrl: "https://i.ytimg.com/vi/CTiFYDDsfKQ/hqdefault.jpg", description: "나노기술 테마는 성장 기대가 커질수록 실험실 성과와 양산 간격가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "나노 디멘션 ADR", market: "미국", ticker: "NNDM", url: "https://m.stock.naver.com/worldstock/stock/NNDM.O/total" },
+      { name: "나노 뉴클리어 에너지", market: "미국", ticker: "NNE", url: "https://m.stock.naver.com/worldstock/stock/NNE.O/total" },
+      { name: "나노바이오틱스 ADR", market: "미국", ticker: "NBTX", url: "https://m.stock.naver.com/worldstock/stock/NBTX.O/total" },
+      { name: "나노바이리사이드스", market: "미국", ticker: "NNVC", url: "https://m.stock.naver.com/worldstock/stock/NNVC.K/total" },
+    ],
   },
   {
     slug: "internet-of-things-margin-bottleneck-2026",
@@ -1276,6 +1438,12 @@ const featuredPages = [
     image: INTERNET_OF_THINGS_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/internet-of-things-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "tsTq8_hc2p8", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=tsTq8_hc2p8", thumbnailUrl: "https://i.ytimg.com/vi/tsTq8_hc2p8/hqdefault.jpg", description: "사물인터넷 테마는 센서, 게이트웨이, 연결 플랫폼의 성장성만으로 판단하기 어렵고 보안과 표준 통합, 연결 기기 수와 데이터 과금, 플랫폼 사용료가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "삼사라", market: "미국", ticker: "IOT", url: "https://m.stock.naver.com/worldstock/stock/IOT/total" },
+      { name: "시스코 시스템즈", market: "미국", ticker: "CSCO", url: "https://m.stock.naver.com/worldstock/stock/CSCO.O/total" },
+      { name: "퀄컴", market: "미국", ticker: "QCOM", url: "https://m.stock.naver.com/worldstock/stock/QCOM.O/total" },
+      { name: "센서닉스 홀딩스", market: "미국", ticker: "SENS", url: "https://m.stock.naver.com/worldstock/stock/SENS.O/total" },
+    ],
   },
   {
     slug: "internet-of-things-demand-revenue-2026",
@@ -1287,6 +1455,12 @@ const featuredPages = [
     image: INTERNET_OF_THINGS_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/internet-of-things-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "dL0-59LJgyY", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=dL0-59LJgyY", thumbnailUrl: "https://i.ytimg.com/vi/dL0-59LJgyY/hqdefault.jpg", description: "사물인터넷 기업을 볼 때는 설비 데이터 수집 수요의 크기보다 실제 고객 계약, 반복 매출, 연결 기기 수와 데이터 과금가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "삼사라", market: "미국", ticker: "IOT", url: "https://m.stock.naver.com/worldstock/stock/IOT/total" },
+      { name: "시스코 시스템즈", market: "미국", ticker: "CSCO", url: "https://m.stock.naver.com/worldstock/stock/CSCO.O/total" },
+      { name: "퀄컴", market: "미국", ticker: "QCOM", url: "https://m.stock.naver.com/worldstock/stock/QCOM.O/total" },
+      { name: "센서닉스 홀딩스", market: "미국", ticker: "SENS", url: "https://m.stock.naver.com/worldstock/stock/SENS.O/total" },
+    ],
   },
   {
     slug: "internet-of-things-risk-cycle-2026",
@@ -1298,6 +1472,12 @@ const featuredPages = [
     image: INTERNET_OF_THINGS_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/internet-of-things-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "LJdnowFC714", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LJdnowFC714", thumbnailUrl: "https://i.ytimg.com/vi/LJdnowFC714/hqdefault.jpg", description: "사물인터넷 테마는 성장 기대가 커질수록 낮은 단가와 유지관리 비용가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "삼사라", market: "미국", ticker: "IOT", url: "https://m.stock.naver.com/worldstock/stock/IOT/total" },
+      { name: "시스코 시스템즈", market: "미국", ticker: "CSCO", url: "https://m.stock.naver.com/worldstock/stock/CSCO.O/total" },
+      { name: "퀄컴", market: "미국", ticker: "QCOM", url: "https://m.stock.naver.com/worldstock/stock/QCOM.O/total" },
+      { name: "센서닉스 홀딩스", market: "미국", ticker: "SENS", url: "https://m.stock.naver.com/worldstock/stock/SENS.O/total" },
+    ],
   },
   {
     slug: "energy-commodities-margin-bottleneck-2026",
@@ -1309,6 +1489,12 @@ const featuredPages = [
     image: ENERGY_COMMODITIES_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/energy-commodities-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "R1eWgqMW7VY", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=R1eWgqMW7VY", thumbnailUrl: "https://i.ytimg.com/vi/R1eWgqMW7VY/hqdefault.jpg", description: "에너지 원자재 테마는 리튬, 우라늄, 천연가스 원자재의 성장성만으로 판단하기 어렵고 광산 허가와 장기 공급 계약, 생산량과 현물 가격 민감도, 장기 오프테이크 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "우라늄 로열티", market: "미국", ticker: "UROY", url: "https://m.stock.naver.com/worldstock/stock/UROY.O/total" },
+      { name: "카메코", market: "미국", ticker: "CCJ", url: "https://m.stock.naver.com/worldstock/stock/CCJ/total" },
+      { name: "우라늄 에너지", market: "미국", ticker: "UEC", url: "https://m.stock.naver.com/worldstock/stock/UEC/total" },
+      { name: "고려아연", market: "한국", ticker: "010130.KS", url: "https://m.stock.naver.com/domestic/stock/010130/total" },
+    ],
   },
   {
     slug: "energy-commodities-demand-revenue-2026",
@@ -1320,6 +1506,12 @@ const featuredPages = [
     image: ENERGY_COMMODITIES_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/energy-commodities-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "kk2z_WLV6zU", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=kk2z_WLV6zU", thumbnailUrl: "https://i.ytimg.com/vi/kk2z_WLV6zU/hqdefault.jpg", description: "에너지 원자재 기업을 볼 때는 전력화와 저장장치 수요의 크기보다 실제 고객 계약, 반복 매출, 생산량과 현물 가격 민감도가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "우라늄 로열티", market: "미국", ticker: "UROY", url: "https://m.stock.naver.com/worldstock/stock/UROY.O/total" },
+      { name: "카메코", market: "미국", ticker: "CCJ", url: "https://m.stock.naver.com/worldstock/stock/CCJ/total" },
+      { name: "우라늄 에너지", market: "미국", ticker: "UEC", url: "https://m.stock.naver.com/worldstock/stock/UEC/total" },
+      { name: "고려아연", market: "한국", ticker: "010130.KS", url: "https://m.stock.naver.com/domestic/stock/010130/total" },
+    ],
   },
   {
     slug: "energy-commodities-risk-cycle-2026",
@@ -1331,6 +1523,12 @@ const featuredPages = [
     image: ENERGY_COMMODITIES_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/energy-commodities-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "uacYZjKNMug", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=uacYZjKNMug", thumbnailUrl: "https://i.ytimg.com/vi/uacYZjKNMug/hqdefault.jpg", description: "에너지 원자재 테마는 성장 기대가 커질수록 가격 급락과 증설 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "우라늄 로열티", market: "미국", ticker: "UROY", url: "https://m.stock.naver.com/worldstock/stock/UROY.O/total" },
+      { name: "카메코", market: "미국", ticker: "CCJ", url: "https://m.stock.naver.com/worldstock/stock/CCJ/total" },
+      { name: "우라늄 에너지", market: "미국", ticker: "UEC", url: "https://m.stock.naver.com/worldstock/stock/UEC/total" },
+      { name: "고려아연", market: "한국", ticker: "010130.KS", url: "https://m.stock.naver.com/domestic/stock/010130/total" },
+    ],
   },
   {
     slug: "agriculture-food-margin-bottleneck-2026",
@@ -1342,6 +1540,12 @@ const featuredPages = [
     image: AGRICULTURE_FOOD_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/agriculture-food-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "307Y_TuWB8Q", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=307Y_TuWB8Q", thumbnailUrl: "https://i.ytimg.com/vi/307Y_TuWB8Q/hqdefault.jpg", description: "농업·식품 테마는 정밀 농업, 종자, 식품 공급망의 성장성만으로 판단하기 어렵고 날씨와 원재료 가격, 수확량과 원가 전가력, 반복 구매와 브랜드 매출이 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "코르테바", market: "미국", ticker: "CTVA", url: "https://m.stock.naver.com/worldstock/stock/CTVA.K/total" },
+      { name: "디어", market: "미국", ticker: "DE", url: "https://m.stock.naver.com/worldstock/stock/DE/total" },
+      { name: "아처 대니얼스 미들랜드", market: "미국", ticker: "ADM", url: "https://m.stock.naver.com/worldstock/stock/ADM/total" },
+      { name: "CJ제일제당", market: "한국", ticker: "097950.KS", url: "https://m.stock.naver.com/domestic/stock/097950/total" },
+    ],
   },
   {
     slug: "agriculture-food-demand-revenue-2026",
@@ -1353,6 +1557,12 @@ const featuredPages = [
     image: AGRICULTURE_FOOD_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/agriculture-food-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "J5RTUXLSBwM", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=J5RTUXLSBwM", thumbnailUrl: "https://i.ytimg.com/vi/J5RTUXLSBwM/hqdefault.jpg", description: "농업·식품 기업을 볼 때는 생산성 개선과 식량 안정 수요의 크기보다 실제 고객 계약, 반복 매출, 수확량과 원가 전가력가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "코르테바", market: "미국", ticker: "CTVA", url: "https://m.stock.naver.com/worldstock/stock/CTVA.K/total" },
+      { name: "디어", market: "미국", ticker: "DE", url: "https://m.stock.naver.com/worldstock/stock/DE/total" },
+      { name: "아처 대니얼스 미들랜드", market: "미국", ticker: "ADM", url: "https://m.stock.naver.com/worldstock/stock/ADM/total" },
+      { name: "CJ제일제당", market: "한국", ticker: "097950.KS", url: "https://m.stock.naver.com/domestic/stock/097950/total" },
+    ],
   },
   {
     slug: "agriculture-food-risk-cycle-2026",
@@ -1364,6 +1574,12 @@ const featuredPages = [
     image: AGRICULTURE_FOOD_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/agriculture-food-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "LFdUl2aCO3E", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LFdUl2aCO3E", thumbnailUrl: "https://i.ytimg.com/vi/LFdUl2aCO3E/hqdefault.jpg", description: "농업·식품 테마는 성장 기대가 커질수록 곡물 가격 변동과 규제가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "코르테바", market: "미국", ticker: "CTVA", url: "https://m.stock.naver.com/worldstock/stock/CTVA.K/total" },
+      { name: "디어", market: "미국", ticker: "DE", url: "https://m.stock.naver.com/worldstock/stock/DE/total" },
+      { name: "아처 대니얼스 미들랜드", market: "미국", ticker: "ADM", url: "https://m.stock.naver.com/worldstock/stock/ADM/total" },
+      { name: "CJ제일제당", market: "한국", ticker: "097950.KS", url: "https://m.stock.naver.com/domestic/stock/097950/total" },
+    ],
   },
   {
     slug: "software-margin-bottleneck-2026",
@@ -1375,6 +1591,12 @@ const featuredPages = [
     image: SOFTWARE_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/software-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "uSxIdtQSS6w", title: "소프트웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=uSxIdtQSS6w", thumbnailUrl: "https://i.ytimg.com/vi/uSxIdtQSS6w/hqdefault.jpg", description: "소프트웨어 테마는 기업용 SaaS와 개발 도구의 성장성만으로 판단하기 어렵고 고객 획득 비용과 해지율, 순매출유지율과 영업레버리지, 구독 매출이 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "어도비", market: "미국", ticker: "ADBE", url: "https://m.stock.naver.com/worldstock/stock/ADBE.O/total" },
+      { name: "세일즈포스", market: "미국", ticker: "CRM", url: "https://m.stock.naver.com/worldstock/stock/CRM/total" },
+      { name: "서비스나우", market: "미국", ticker: "NOW", url: "https://m.stock.naver.com/worldstock/stock/NOW/total" },
+      { name: "오라클", market: "미국", ticker: "ORCL", url: "https://m.stock.naver.com/worldstock/stock/ORCL.K/total" },
+    ],
   },
   {
     slug: "software-demand-revenue-2026",
@@ -1386,6 +1608,12 @@ const featuredPages = [
     image: SOFTWARE_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/software-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "pofrWxhxn14", title: "소프트웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=pofrWxhxn14", thumbnailUrl: "https://i.ytimg.com/vi/pofrWxhxn14/hqdefault.jpg", description: "소프트웨어 기업을 볼 때는 업무 효율화와 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 순매출유지율과 영업레버리지가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "어도비", market: "미국", ticker: "ADBE", url: "https://m.stock.naver.com/worldstock/stock/ADBE.O/total" },
+      { name: "세일즈포스", market: "미국", ticker: "CRM", url: "https://m.stock.naver.com/worldstock/stock/CRM/total" },
+      { name: "서비스나우", market: "미국", ticker: "NOW", url: "https://m.stock.naver.com/worldstock/stock/NOW/total" },
+      { name: "오라클", market: "미국", ticker: "ORCL", url: "https://m.stock.naver.com/worldstock/stock/ORCL.K/total" },
+    ],
   },
   {
     slug: "quantum-computing-margin-bottleneck-2026",
@@ -1397,6 +1625,12 @@ const featuredPages = [
     image: QUANTUM_COMPUTING_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/quantum-computing-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "igU8KGLoQUo", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=igU8KGLoQUo", thumbnailUrl: "https://i.ytimg.com/vi/igU8KGLoQUo/hqdefault.jpg", description: "양자컴퓨팅 테마는 양자 하드웨어와 알고리즘 서비스의 성장성만으로 판단하기 어렵고 오류 보정과 상용화 시간, 연구 계약과 클라우드 사용량, 정부 연구비와 파일럿 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "아이온큐", market: "미국", ticker: "IONQ", url: "https://m.stock.naver.com/worldstock/stock/IONQ.K/total" },
+      { name: "디 웨이브 퀀텀", market: "미국", ticker: "QBTS", url: "https://m.stock.naver.com/worldstock/stock/QBTS.K/total" },
+      { name: "리게티 컴퓨팅", market: "미국", ticker: "RGTI", url: "https://m.stock.naver.com/worldstock/stock/RGTI.O/total" },
+      { name: "퀀텀 컴퓨팅", market: "미국", ticker: "QUBT", url: "https://m.stock.naver.com/worldstock/stock/QUBT.O/total" },
+    ],
   },
   {
     slug: "quantum-computing-demand-revenue-2026",
@@ -1408,6 +1642,12 @@ const featuredPages = [
     image: QUANTUM_COMPUTING_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/quantum-computing-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "O1cxQqHOrGI", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=O1cxQqHOrGI", thumbnailUrl: "https://i.ytimg.com/vi/O1cxQqHOrGI/hqdefault.jpg", description: "양자컴퓨팅 기업을 볼 때는 복잡한 최적화와 보안 연구 수요의 크기보다 실제 고객 계약, 반복 매출, 연구 계약과 클라우드 사용량가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "아이온큐", market: "미국", ticker: "IONQ", url: "https://m.stock.naver.com/worldstock/stock/IONQ.K/total" },
+      { name: "디 웨이브 퀀텀", market: "미국", ticker: "QBTS", url: "https://m.stock.naver.com/worldstock/stock/QBTS.K/total" },
+      { name: "리게티 컴퓨팅", market: "미국", ticker: "RGTI", url: "https://m.stock.naver.com/worldstock/stock/RGTI.O/total" },
+      { name: "퀀텀 컴퓨팅", market: "미국", ticker: "QUBT", url: "https://m.stock.naver.com/worldstock/stock/QUBT.O/total" },
+    ],
   },
   {
     slug: "quantum-computing-risk-cycle-2026",
@@ -1419,6 +1659,12 @@ const featuredPages = [
     image: QUANTUM_COMPUTING_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/quantum-computing-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "SOdKov0qB-o", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=SOdKov0qB-o", thumbnailUrl: "https://i.ytimg.com/vi/SOdKov0qB-o/hqdefault.jpg", description: "양자컴퓨팅 테마는 성장 기대가 커질수록 기대 과열과 매출 공백가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "아이온큐", market: "미국", ticker: "IONQ", url: "https://m.stock.naver.com/worldstock/stock/IONQ.K/total" },
+      { name: "디 웨이브 퀀텀", market: "미국", ticker: "QBTS", url: "https://m.stock.naver.com/worldstock/stock/QBTS.K/total" },
+      { name: "리게티 컴퓨팅", market: "미국", ticker: "RGTI", url: "https://m.stock.naver.com/worldstock/stock/RGTI.O/total" },
+      { name: "퀀텀 컴퓨팅", market: "미국", ticker: "QUBT", url: "https://m.stock.naver.com/worldstock/stock/QUBT.O/total" },
+    ],
   },
   {
     slug: "defense-aerospace-margin-bottleneck-2026",
@@ -1430,6 +1676,12 @@ const featuredPages = [
     image: DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/defense-aerospace-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "LQcuIPuaZHI", title: "방산·항공우주 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LQcuIPuaZHI", thumbnailUrl: "https://i.ytimg.com/vi/LQcuIPuaZHI/hqdefault.jpg", description: "방산·항공우주 테마는 방산 플랫폼과 항공우주 부품의 성장성만으로 판단하기 어렵고 납품 승인과 원가 상승, 수주잔고와 현금 회수, 장기 방산 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "록히드 마틴", market: "미국", ticker: "LMT", url: "https://m.stock.naver.com/worldstock/stock/LMT/total" },
+      { name: "RTX", market: "미국", ticker: "RTX", url: "https://m.stock.naver.com/worldstock/stock/RTX/total" },
+      { name: "노스롭 그루만", market: "미국", ticker: "NOC", url: "https://m.stock.naver.com/worldstock/stock/NOC/total" },
+      { name: "한국항공우주", market: "한국", ticker: "047810.KS", url: "https://m.stock.naver.com/domestic/stock/047810/total" },
+    ],
   },
   {
     slug: "defense-aerospace-demand-revenue-2026",
@@ -1441,6 +1693,12 @@ const featuredPages = [
     image: DEFENSE_AEROSPACE_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/defense-aerospace-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "txK007bBpYs", title: "방산·항공우주 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=txK007bBpYs", thumbnailUrl: "https://i.ytimg.com/vi/txK007bBpYs/hqdefault.jpg", description: "방산·항공우주 기업을 볼 때는 안보 지출과 교체 수요의 크기보다 실제 고객 계약, 반복 매출, 수주잔고와 현금 회수가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "록히드 마틴", market: "미국", ticker: "LMT", url: "https://m.stock.naver.com/worldstock/stock/LMT/total" },
+      { name: "RTX", market: "미국", ticker: "RTX", url: "https://m.stock.naver.com/worldstock/stock/RTX/total" },
+      { name: "노스롭 그루만", market: "미국", ticker: "NOC", url: "https://m.stock.naver.com/worldstock/stock/NOC/total" },
+      { name: "한국항공우주", market: "한국", ticker: "047810.KS", url: "https://m.stock.naver.com/domestic/stock/047810/total" },
+    ],
   },
   {
     slug: "telecommunications-margin-bottleneck-2026",
@@ -1452,6 +1710,12 @@ const featuredPages = [
     image: TELECOMMUNICATIONS_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/telecommunications-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "38DgsVe7jFc", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=38DgsVe7jFc", thumbnailUrl: "https://i.ytimg.com/vi/38DgsVe7jFc/hqdefault.jpg", description: "통신 테마는 5G, 광망, 데이터 전송 인프라의 성장성만으로 판단하기 어렵고 요금 경쟁과 설비투자 부담, 가입자당매출과 투자 회수율, 통신 요금과 기업 회선가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "버라이존", market: "미국", ticker: "VZ", url: "https://m.stock.naver.com/worldstock/stock/VZ/total" },
+      { name: "T-모바일 US", market: "미국", ticker: "TMUS", url: "https://m.stock.naver.com/worldstock/stock/TMUS.O/total" },
+      { name: "시스코 시스템즈", market: "미국", ticker: "CSCO", url: "https://m.stock.naver.com/worldstock/stock/CSCO.O/total" },
+      { name: "SK텔레콤", market: "한국", ticker: "017670.KS", url: "https://m.stock.naver.com/domestic/stock/017670/total" },
+    ],
   },
   {
     slug: "telecommunications-demand-revenue-2026",
@@ -1463,6 +1727,12 @@ const featuredPages = [
     image: TELECOMMUNICATIONS_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/telecommunications-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "-NjElpiGEpw", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=-NjElpiGEpw", thumbnailUrl: "https://i.ytimg.com/vi/-NjElpiGEpw/hqdefault.jpg", description: "통신 기업을 볼 때는 데이터 트래픽 증가 수요의 크기보다 실제 고객 계약, 반복 매출, 가입자당매출과 투자 회수율가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "버라이존", market: "미국", ticker: "VZ", url: "https://m.stock.naver.com/worldstock/stock/VZ/total" },
+      { name: "T-모바일 US", market: "미국", ticker: "TMUS", url: "https://m.stock.naver.com/worldstock/stock/TMUS.O/total" },
+      { name: "시스코 시스템즈", market: "미국", ticker: "CSCO", url: "https://m.stock.naver.com/worldstock/stock/CSCO.O/total" },
+      { name: "SK텔레콤", market: "한국", ticker: "017670.KS", url: "https://m.stock.naver.com/domestic/stock/017670/total" },
+    ],
   },
   {
     slug: "telecommunications-risk-cycle-2026",
@@ -1474,6 +1744,12 @@ const featuredPages = [
     image: TELECOMMUNICATIONS_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/telecommunications-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "vt4Hdu1-1t4", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=vt4Hdu1-1t4", thumbnailUrl: "https://i.ytimg.com/vi/vt4Hdu1-1t4/hqdefault.jpg", description: "통신 테마는 성장 기대가 커질수록 가격 인하와 규제가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "버라이존", market: "미국", ticker: "VZ", url: "https://m.stock.naver.com/worldstock/stock/VZ/total" },
+      { name: "T-모바일 US", market: "미국", ticker: "TMUS", url: "https://m.stock.naver.com/worldstock/stock/TMUS.O/total" },
+      { name: "시스코 시스템즈", market: "미국", ticker: "CSCO", url: "https://m.stock.naver.com/worldstock/stock/CSCO.O/total" },
+      { name: "SK텔레콤", market: "한국", ticker: "017670.KS", url: "https://m.stock.naver.com/domestic/stock/017670/total" },
+    ],
   },
   {
     slug: "autonomous-systems-margin-bottleneck-2026",
@@ -1485,6 +1761,12 @@ const featuredPages = [
     image: AUTONOMOUS_SYSTEMS_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/autonomous-systems-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "U_jdTk4wkdI", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=U_jdTk4wkdI", thumbnailUrl: "https://i.ytimg.com/vi/U_jdTk4wkdI/hqdefault.jpg", description: "자율 시스템 테마는 자율주행, 드론, 무인 운용 소프트웨어의 성장성만으로 판단하기 어렵고 규제 승인과 센서 비용, 운행 거리와 사고율, 운용 서비스 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "오로라 이노베이션", market: "미국", ticker: "AUR", url: "https://m.stock.naver.com/worldstock/stock/AUR.O/total" },
+      { name: "모빌아이 글로벌", market: "미국", ticker: "MBLY", url: "https://m.stock.naver.com/worldstock/stock/MBLY.O/total" },
+      { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
+      { name: "현대글로비스", market: "한국", ticker: "086280.KS", url: "https://m.stock.naver.com/domestic/stock/086280/total" },
+    ],
   },
   {
     slug: "autonomous-systems-demand-revenue-2026",
@@ -1496,6 +1778,12 @@ const featuredPages = [
     image: AUTONOMOUS_SYSTEMS_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/autonomous-systems-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "GmQ3JimSzEY", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=GmQ3JimSzEY", thumbnailUrl: "https://i.ytimg.com/vi/GmQ3JimSzEY/hqdefault.jpg", description: "자율 시스템 기업을 볼 때는 인력 부족과 안전 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 운행 거리와 사고율가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "오로라 이노베이션", market: "미국", ticker: "AUR", url: "https://m.stock.naver.com/worldstock/stock/AUR.O/total" },
+      { name: "모빌아이 글로벌", market: "미국", ticker: "MBLY", url: "https://m.stock.naver.com/worldstock/stock/MBLY.O/total" },
+      { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
+      { name: "현대글로비스", market: "한국", ticker: "086280.KS", url: "https://m.stock.naver.com/domestic/stock/086280/total" },
+    ],
   },
   {
     slug: "autonomous-systems-risk-cycle-2026",
@@ -1507,6 +1795,12 @@ const featuredPages = [
     image: AUTONOMOUS_SYSTEMS_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/autonomous-systems-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "l6nz__-szV4", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=l6nz__-szV4", thumbnailUrl: "https://i.ytimg.com/vi/l6nz__-szV4/hqdefault.jpg", description: "자율 시스템 테마는 성장 기대가 커질수록 책임 소재와 상용화 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "오로라 이노베이션", market: "미국", ticker: "AUR", url: "https://m.stock.naver.com/worldstock/stock/AUR.O/total" },
+      { name: "모빌아이 글로벌", market: "미국", ticker: "MBLY", url: "https://m.stock.naver.com/worldstock/stock/MBLY.O/total" },
+      { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
+      { name: "현대글로비스", market: "한국", ticker: "086280.KS", url: "https://m.stock.naver.com/domestic/stock/086280/total" },
+    ],
   },
   {
     slug: "metal-commodities-margin-bottleneck-2026",
@@ -1518,6 +1812,12 @@ const featuredPages = [
     image: METAL_COMMODITIES_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/metal-commodities-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "JHK8yCXiKKU", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=JHK8yCXiKKU", thumbnailUrl: "https://i.ytimg.com/vi/JHK8yCXiKKU/hqdefault.jpg", description: "금속 원자재 테마는 구리, 알루미늄, 희토류 공급망의 성장성만으로 판단하기 어렵고 광산 개발과 제련 비용, 생산 원가와 재고 일수, 장기 공급 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "알코아", market: "미국", ticker: "AA", url: "https://m.stock.naver.com/worldstock/stock/AA/total" },
+      { name: "프리포트 맥모란", market: "미국", ticker: "FCX", url: "https://m.stock.naver.com/worldstock/stock/FCX/total" },
+      { name: "서던 코퍼", market: "미국", ticker: "SCCO", url: "https://m.stock.naver.com/worldstock/stock/SCCO.K/total" },
+      { name: "POSCO홀딩스", market: "한국", ticker: "005490.KS", url: "https://m.stock.naver.com/domestic/stock/005490/total" },
+    ],
   },
   {
     slug: "metal-commodities-demand-revenue-2026",
@@ -1529,6 +1829,12 @@ const featuredPages = [
     image: METAL_COMMODITIES_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/metal-commodities-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "tZi5l-KgM2E", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=tZi5l-KgM2E", thumbnailUrl: "https://i.ytimg.com/vi/tZi5l-KgM2E/hqdefault.jpg", description: "금속 원자재 기업을 볼 때는 전력화와 인프라 증설 수요의 크기보다 실제 고객 계약, 반복 매출, 생산 원가와 재고 일수가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "알코아", market: "미국", ticker: "AA", url: "https://m.stock.naver.com/worldstock/stock/AA/total" },
+      { name: "프리포트 맥모란", market: "미국", ticker: "FCX", url: "https://m.stock.naver.com/worldstock/stock/FCX/total" },
+      { name: "서던 코퍼", market: "미국", ticker: "SCCO", url: "https://m.stock.naver.com/worldstock/stock/SCCO.K/total" },
+      { name: "POSCO홀딩스", market: "한국", ticker: "005490.KS", url: "https://m.stock.naver.com/domestic/stock/005490/total" },
+    ],
   },
   {
     slug: "metal-commodities-risk-cycle-2026",
@@ -1540,6 +1846,12 @@ const featuredPages = [
     image: METAL_COMMODITIES_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/metal-commodities-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "TttUC5qVa7o", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=TttUC5qVa7o", thumbnailUrl: "https://i.ytimg.com/vi/TttUC5qVa7o/hqdefault.jpg", description: "금속 원자재 테마는 성장 기대가 커질수록 중국 수요 둔화와 가격 변동가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "알코아", market: "미국", ticker: "AA", url: "https://m.stock.naver.com/worldstock/stock/AA/total" },
+      { name: "프리포트 맥모란", market: "미국", ticker: "FCX", url: "https://m.stock.naver.com/worldstock/stock/FCX/total" },
+      { name: "서던 코퍼", market: "미국", ticker: "SCCO", url: "https://m.stock.naver.com/worldstock/stock/SCCO.K/total" },
+      { name: "POSCO홀딩스", market: "한국", ticker: "005490.KS", url: "https://m.stock.naver.com/domestic/stock/005490/total" },
+    ],
   },
   {
     slug: "environment-sustainability-margin-bottleneck-2026",
@@ -1551,6 +1863,12 @@ const featuredPages = [
     image: ENVIRONMENT_SUSTAINABILITY_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/environment-sustainability-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "jZH0HPVipUU", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jZH0HPVipUU", thumbnailUrl: "https://i.ytimg.com/vi/jZH0HPVipUU/hqdefault.jpg", description: "환경 지속가능성 테마는 탄소 저감, 재활용, 수처리 솔루션의 성장성만으로 판단하기 어렵고 프로젝트 경제성과 인증, 톤당 처리비와 계약 기간, 장기 처리 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "웨이스트 매니지먼트", market: "미국", ticker: "WM", url: "https://m.stock.naver.com/worldstock/stock/WM/total" },
+      { name: "리퍼블릭 서비스", market: "미국", ticker: "RSG", url: "https://m.stock.naver.com/worldstock/stock/RSG/total" },
+      { name: "아메리칸 워터 웍스", market: "미국", ticker: "AWK", url: "https://m.stock.naver.com/worldstock/stock/AWK/total" },
+      { name: "한국전력", market: "한국", ticker: "015760.KS", url: "https://m.stock.naver.com/domestic/stock/015760/total" },
+    ],
   },
   {
     slug: "environment-sustainability-demand-revenue-2026",
@@ -1562,6 +1880,12 @@ const featuredPages = [
     image: ENVIRONMENT_SUSTAINABILITY_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/environment-sustainability-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "mvlCdNPYamI", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=mvlCdNPYamI", thumbnailUrl: "https://i.ytimg.com/vi/mvlCdNPYamI/hqdefault.jpg", description: "환경 지속가능성 기업을 볼 때는 규제 대응과 비용 절감 수요의 크기보다 실제 고객 계약, 반복 매출, 톤당 처리비와 계약 기간가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "웨이스트 매니지먼트", market: "미국", ticker: "WM", url: "https://m.stock.naver.com/worldstock/stock/WM/total" },
+      { name: "리퍼블릭 서비스", market: "미국", ticker: "RSG", url: "https://m.stock.naver.com/worldstock/stock/RSG/total" },
+      { name: "아메리칸 워터 웍스", market: "미국", ticker: "AWK", url: "https://m.stock.naver.com/worldstock/stock/AWK/total" },
+      { name: "한국전력", market: "한국", ticker: "015760.KS", url: "https://m.stock.naver.com/domestic/stock/015760/total" },
+    ],
   },
   {
     slug: "environment-sustainability-risk-cycle-2026",
@@ -1573,6 +1897,12 @@ const featuredPages = [
     image: ENVIRONMENT_SUSTAINABILITY_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/environment-sustainability-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "Apbz0Fmtfb8", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Apbz0Fmtfb8", thumbnailUrl: "https://i.ytimg.com/vi/Apbz0Fmtfb8/hqdefault.jpg", description: "환경 지속가능성 테마는 성장 기대가 커질수록 보조금 의존과 기술 검증가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "웨이스트 매니지먼트", market: "미국", ticker: "WM", url: "https://m.stock.naver.com/worldstock/stock/WM/total" },
+      { name: "리퍼블릭 서비스", market: "미국", ticker: "RSG", url: "https://m.stock.naver.com/worldstock/stock/RSG/total" },
+      { name: "아메리칸 워터 웍스", market: "미국", ticker: "AWK", url: "https://m.stock.naver.com/worldstock/stock/AWK/total" },
+      { name: "한국전력", market: "한국", ticker: "015760.KS", url: "https://m.stock.naver.com/domestic/stock/015760/total" },
+    ],
   },
   {
     slug: "hardware-margin-bottleneck-2026",
@@ -1584,6 +1914,12 @@ const featuredPages = [
     image: HARDWARE_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/hardware-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "EZOWZDB60i4", title: "하드웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=EZOWZDB60i4", thumbnailUrl: "https://i.ytimg.com/vi/EZOWZDB60i4/hqdefault.jpg", description: "하드웨어 테마는 PC, 서버, 디바이스 공급망의 성장성만으로 판단하기 어렵고 부품 재고와 가격 경쟁, 판매량과 평균판매가격, 완제품 판매와 서비스 연결가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "델테크놀로지", market: "미국", ticker: "DELL", url: "https://m.stock.naver.com/worldstock/stock/DELL.K/total" },
+      { name: "HP", market: "미국", ticker: "HPQ", url: "https://m.stock.naver.com/worldstock/stock/HPQ/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "hardware-demand-revenue-2026",
@@ -1595,6 +1931,12 @@ const featuredPages = [
     image: HARDWARE_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/hardware-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "8dFsbFMZA_4", title: "하드웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8dFsbFMZA_4", thumbnailUrl: "https://i.ytimg.com/vi/8dFsbFMZA_4/hqdefault.jpg", description: "하드웨어 기업을 볼 때는 교체 주기와 AI 기기 수요의 크기보다 실제 고객 계약, 반복 매출, 판매량과 평균판매가격가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "델테크놀로지", market: "미국", ticker: "DELL", url: "https://m.stock.naver.com/worldstock/stock/DELL.K/total" },
+      { name: "HP", market: "미국", ticker: "HPQ", url: "https://m.stock.naver.com/worldstock/stock/HPQ/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "virtual-augmented-reality-margin-bottleneck-2026",
@@ -1606,6 +1948,12 @@ const featuredPages = [
     image: VIRTUAL_AUGMENTED_REALITY_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/virtual-augmented-reality-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "8tnMjWcYeBA", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8tnMjWcYeBA", thumbnailUrl: "https://i.ytimg.com/vi/8tnMjWcYeBA/hqdefault.jpg", description: "가상·증강현실 테마는 헤드셋, 공간 컴퓨팅, 산업용 시뮬레이션의 성장성만으로 판단하기 어렵고 착용감과 콘텐츠 부족, 활성 이용자와 기기 마진, 앱스토어와 기업 라이선스가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "메타", market: "미국", ticker: "META", url: "https://m.stock.naver.com/worldstock/stock/META.O/total" },
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
+      { name: "NAVER", market: "한국", ticker: "035420.KS", url: "https://m.stock.naver.com/domestic/stock/035420/total" },
+    ],
   },
   {
     slug: "virtual-augmented-reality-demand-revenue-2026",
@@ -1617,6 +1965,12 @@ const featuredPages = [
     image: VIRTUAL_AUGMENTED_REALITY_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/virtual-augmented-reality-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "da3jX-nmPxw", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=da3jX-nmPxw", thumbnailUrl: "https://i.ytimg.com/vi/da3jX-nmPxw/hqdefault.jpg", description: "가상·증강현실 기업을 볼 때는 몰입형 교육과 원격 협업 수요의 크기보다 실제 고객 계약, 반복 매출, 활성 이용자와 기기 마진가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "메타", market: "미국", ticker: "META", url: "https://m.stock.naver.com/worldstock/stock/META.O/total" },
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
+      { name: "NAVER", market: "한국", ticker: "035420.KS", url: "https://m.stock.naver.com/domestic/stock/035420/total" },
+    ],
   },
   {
     slug: "virtual-augmented-reality-risk-cycle-2026",
@@ -1628,6 +1982,12 @@ const featuredPages = [
     image: VIRTUAL_AUGMENTED_REALITY_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/virtual-augmented-reality-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "Cj2_kSemj2E", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Cj2_kSemj2E", thumbnailUrl: "https://i.ytimg.com/vi/Cj2_kSemj2E/hqdefault.jpg", description: "가상·증강현실 테마는 성장 기대가 커질수록 하드웨어 보급 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "메타", market: "미국", ticker: "META", url: "https://m.stock.naver.com/worldstock/stock/META.O/total" },
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
+      { name: "NAVER", market: "한국", ticker: "035420.KS", url: "https://m.stock.naver.com/domestic/stock/035420/total" },
+    ],
   },
   {
     slug: "ecommerce-margin-bottleneck-2026",
@@ -1639,6 +1999,12 @@ const featuredPages = [
     image: ECOMMERCE_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/ecommerce-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "vU8UEakEHLU", title: "전자상거래 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=vU8UEakEHLU", thumbnailUrl: "https://i.ytimg.com/vi/vU8UEakEHLU/hqdefault.jpg", description: "전자상거래 테마는 온라인 유통과 광고 플랫폼의 성장성만으로 판단하기 어렵고 물류비와 반품 비용, 총거래액과 광고 매출률, 거래 수수료와 광고 매출이 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+      { name: "메르카도리브레", market: "미국", ticker: "MELI", url: "https://m.stock.naver.com/worldstock/stock/MELI.O/total" },
+      { name: "이베이", market: "미국", ticker: "EBAY", url: "https://m.stock.naver.com/worldstock/stock/EBAY.O/total" },
+      { name: "NAVER", market: "한국", ticker: "035420.KS", url: "https://m.stock.naver.com/domestic/stock/035420/total" },
+    ],
   },
   {
     slug: "ecommerce-demand-revenue-2026",
@@ -1650,6 +2016,12 @@ const featuredPages = [
     image: ECOMMERCE_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/ecommerce-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "LEnzU91B-aU", title: "전자상거래 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LEnzU91B-aU", thumbnailUrl: "https://i.ytimg.com/vi/LEnzU91B-aU/hqdefault.jpg", description: "전자상거래 기업을 볼 때는 편의 구매와 디지털 광고 수요의 크기보다 실제 고객 계약, 반복 매출, 총거래액과 광고 매출률가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+      { name: "메르카도리브레", market: "미국", ticker: "MELI", url: "https://m.stock.naver.com/worldstock/stock/MELI.O/total" },
+      { name: "이베이", market: "미국", ticker: "EBAY", url: "https://m.stock.naver.com/worldstock/stock/EBAY.O/total" },
+      { name: "NAVER", market: "한국", ticker: "035420.KS", url: "https://m.stock.naver.com/domestic/stock/035420/total" },
+    ],
   },
   {
     slug: "digital-entertainment-margin-bottleneck-2026",
@@ -1661,6 +2033,12 @@ const featuredPages = [
     image: DIGITAL_ENTERTAINMENT_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/digital-entertainment-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "GViZEwZvnck", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=GViZEwZvnck", thumbnailUrl: "https://i.ytimg.com/vi/GViZEwZvnck/hqdefault.jpg", description: "디지털 엔터테인먼트 테마는 게임, 스트리밍, 디지털 콘텐츠 IP의 성장성만으로 판단하기 어렵고 콘텐츠 제작비와 흥행 변동, 유료 이용자와 IP 확장 매출, 구독료와 라이선스가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "월트 디즈니", market: "미국", ticker: "DIS", url: "https://m.stock.naver.com/worldstock/stock/DIS/total" },
+      { name: "로블록스", market: "미국", ticker: "RBLX", url: "https://m.stock.naver.com/worldstock/stock/RBLX.K/total" },
+      { name: "일렉트로닉 아츠", market: "미국", ticker: "EA", url: "https://m.stock.naver.com/worldstock/stock/EA.O/total" },
+      { name: "크래프톤", market: "한국", ticker: "259960.KS", url: "https://m.stock.naver.com/domestic/stock/259960/total" },
+    ],
   },
   {
     slug: "digital-entertainment-demand-revenue-2026",
@@ -1672,6 +2050,12 @@ const featuredPages = [
     image: DIGITAL_ENTERTAINMENT_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/digital-entertainment-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "HidYPvQ2MOc", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=HidYPvQ2MOc", thumbnailUrl: "https://i.ytimg.com/vi/HidYPvQ2MOc/hqdefault.jpg", description: "디지털 엔터테인먼트 기업을 볼 때는 여가 시간과 팬덤 소비 수요의 크기보다 실제 고객 계약, 반복 매출, 유료 이용자와 IP 확장 매출이 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "월트 디즈니", market: "미국", ticker: "DIS", url: "https://m.stock.naver.com/worldstock/stock/DIS/total" },
+      { name: "로블록스", market: "미국", ticker: "RBLX", url: "https://m.stock.naver.com/worldstock/stock/RBLX.K/total" },
+      { name: "일렉트로닉 아츠", market: "미국", ticker: "EA", url: "https://m.stock.naver.com/worldstock/stock/EA.O/total" },
+      { name: "크래프톤", market: "한국", ticker: "259960.KS", url: "https://m.stock.naver.com/domestic/stock/259960/total" },
+    ],
   },
   {
     slug: "digital-entertainment-risk-cycle-2026",
@@ -1683,6 +2067,12 @@ const featuredPages = [
     image: DIGITAL_ENTERTAINMENT_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/digital-entertainment-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "JxYtfUSyWRU", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=JxYtfUSyWRU", thumbnailUrl: "https://i.ytimg.com/vi/JxYtfUSyWRU/hqdefault.jpg", description: "디지털 엔터테인먼트 테마는 성장 기대가 커질수록 해지율과 제작비 상승가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "월트 디즈니", market: "미국", ticker: "DIS", url: "https://m.stock.naver.com/worldstock/stock/DIS/total" },
+      { name: "로블록스", market: "미국", ticker: "RBLX", url: "https://m.stock.naver.com/worldstock/stock/RBLX.K/total" },
+      { name: "일렉트로닉 아츠", market: "미국", ticker: "EA", url: "https://m.stock.naver.com/worldstock/stock/EA.O/total" },
+      { name: "크래프톤", market: "한국", ticker: "259960.KS", url: "https://m.stock.naver.com/domestic/stock/259960/total" },
+    ],
   },
   {
     slug: "consumer-goods-margin-bottleneck-2026",
@@ -1694,6 +2084,12 @@ const featuredPages = [
     image: CONSUMER_GOODS_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/consumer-goods-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "wd7DnDISJjY", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=wd7DnDISJjY", thumbnailUrl: "https://i.ytimg.com/vi/wd7DnDISJjY/hqdefault.jpg", description: "소비재 테마는 브랜드 소비재와 프리미엄 제품의 성장성만으로 판단하기 어렵고 원재료비와 판촉비, 가격 전가력과 재구매율, 반복 판매가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "P&G(프록터 & 갬블)", market: "미국", ticker: "PG", url: "https://m.stock.naver.com/worldstock/stock/PG/total" },
+      { name: "코카콜라", market: "미국", ticker: "KO", url: "https://m.stock.naver.com/worldstock/stock/KO/total" },
+      { name: "펩시코", market: "미국", ticker: "PEP", url: "https://m.stock.naver.com/worldstock/stock/PEP.O/total" },
+      { name: "LG생활건강", market: "한국", ticker: "051900.KS", url: "https://m.stock.naver.com/domestic/stock/051900/total" },
+    ],
   },
   {
     slug: "consumer-goods-demand-revenue-2026",
@@ -1705,6 +2101,12 @@ const featuredPages = [
     image: CONSUMER_GOODS_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/consumer-goods-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "5N0jh7wDssI", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=5N0jh7wDssI", thumbnailUrl: "https://i.ytimg.com/vi/5N0jh7wDssI/hqdefault.jpg", description: "소비재 기업을 볼 때는 생활 필수품과 프리미엄 교체 수요의 크기보다 실제 고객 계약, 반복 매출, 가격 전가력과 재구매율가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "P&G(프록터 & 갬블)", market: "미국", ticker: "PG", url: "https://m.stock.naver.com/worldstock/stock/PG/total" },
+      { name: "코카콜라", market: "미국", ticker: "KO", url: "https://m.stock.naver.com/worldstock/stock/KO/total" },
+      { name: "펩시코", market: "미국", ticker: "PEP", url: "https://m.stock.naver.com/worldstock/stock/PEP.O/total" },
+      { name: "LG생활건강", market: "한국", ticker: "051900.KS", url: "https://m.stock.naver.com/domestic/stock/051900/total" },
+    ],
   },
   {
     slug: "consumer-goods-risk-cycle-2026",
@@ -1716,6 +2118,12 @@ const featuredPages = [
     image: CONSUMER_GOODS_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/consumer-goods-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "nomXwaka75I", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=nomXwaka75I", thumbnailUrl: "https://i.ytimg.com/vi/nomXwaka75I/hqdefault.jpg", description: "소비재 테마는 성장 기대가 커질수록 소비 둔화와 브랜드 피로가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "P&G(프록터 & 갬블)", market: "미국", ticker: "PG", url: "https://m.stock.naver.com/worldstock/stock/PG/total" },
+      { name: "코카콜라", market: "미국", ticker: "KO", url: "https://m.stock.naver.com/worldstock/stock/KO/total" },
+      { name: "펩시코", market: "미국", ticker: "PEP", url: "https://m.stock.naver.com/worldstock/stock/PEP.O/total" },
+      { name: "LG생활건강", market: "한국", ticker: "051900.KS", url: "https://m.stock.naver.com/domestic/stock/051900/total" },
+    ],
   },
   {
     slug: "smart-home-margin-bottleneck-2026",
@@ -1727,6 +2135,12 @@ const featuredPages = [
     image: SMART_HOME_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/smart-home-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "g7buf6Tg4OE", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g7buf6Tg4OE", thumbnailUrl: "https://i.ytimg.com/vi/g7buf6Tg4OE/hqdefault.jpg", description: "스마트홈 테마는 가전, 보안, 에너지 관리 기기의 성장성만으로 판단하기 어렵고 표준 호환성과 설치 비용, 연결 기기 수와 서비스 이용률, 기기 판매와 구독 서비스가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+      { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
+      { name: "코웨이", market: "한국", ticker: "021240.KS", url: "https://m.stock.naver.com/domestic/stock/021240/total" },
+    ],
   },
   {
     slug: "smart-home-demand-revenue-2026",
@@ -1738,6 +2152,12 @@ const featuredPages = [
     image: SMART_HOME_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/smart-home-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "LbQt4lJpr1A", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LbQt4lJpr1A", thumbnailUrl: "https://i.ytimg.com/vi/LbQt4lJpr1A/hqdefault.jpg", description: "스마트홈 기업을 볼 때는 편의와 에너지 절감 수요의 크기보다 실제 고객 계약, 반복 매출, 연결 기기 수와 서비스 이용률가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+      { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
+      { name: "코웨이", market: "한국", ticker: "021240.KS", url: "https://m.stock.naver.com/domestic/stock/021240/total" },
+    ],
   },
   {
     slug: "smart-home-risk-cycle-2026",
@@ -1749,6 +2169,12 @@ const featuredPages = [
     image: SMART_HOME_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/smart-home-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "xgyfyowcEBY", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=xgyfyowcEBY", thumbnailUrl: "https://i.ytimg.com/vi/xgyfyowcEBY/hqdefault.jpg", description: "스마트홈 테마는 성장 기대가 커질수록 낮은 교체 빈도와 플랫폼 경쟁가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+      { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
+      { name: "코웨이", market: "한국", ticker: "021240.KS", url: "https://m.stock.naver.com/domestic/stock/021240/total" },
+    ],
   },
   {
     slug: "healthcare-biotech-margin-bottleneck-2026",
@@ -1760,6 +2186,12 @@ const featuredPages = [
     image: HEALTHCARE_BIOTECH_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/healthcare-biotech-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "SPCQnkLujKc", title: "헬스케어·바이오테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=SPCQnkLujKc", thumbnailUrl: "https://i.ytimg.com/vi/SPCQnkLujKc/hqdefault.jpg", description: "헬스케어·바이오테크 테마는 신약, 진단, 위탁생산 플랫폼의 성장성만으로 판단하기 어렵고 임상 데이터와 허가, 임상 성공률과 매출 전환, 제품 매출과 로열티가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
+      { name: "애브비", market: "미국", ticker: "ABBV", url: "https://m.stock.naver.com/worldstock/stock/ABBV.K/total" },
+      { name: "애보트 래보라토리", market: "미국", ticker: "ABT", url: "https://m.stock.naver.com/worldstock/stock/ABT/total" },
+      { name: "삼성바이오로직스", market: "한국", ticker: "207940.KS", url: "https://m.stock.naver.com/domestic/stock/207940/total" },
+    ],
   },
   {
     slug: "healthcare-biotech-demand-revenue-2026",
@@ -1771,6 +2203,12 @@ const featuredPages = [
     image: HEALTHCARE_BIOTECH_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/healthcare-biotech-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "GTo4RkFbrjI", title: "헬스케어·바이오테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=GTo4RkFbrjI", thumbnailUrl: "https://i.ytimg.com/vi/GTo4RkFbrjI/hqdefault.jpg", description: "헬스케어·바이오테크 기업을 볼 때는 치료 접근성과 생산 위탁 수요의 크기보다 실제 고객 계약, 반복 매출, 임상 성공률과 매출 전환가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
+      { name: "애브비", market: "미국", ticker: "ABBV", url: "https://m.stock.naver.com/worldstock/stock/ABBV.K/total" },
+      { name: "애보트 래보라토리", market: "미국", ticker: "ABT", url: "https://m.stock.naver.com/worldstock/stock/ABT/total" },
+      { name: "삼성바이오로직스", market: "한국", ticker: "207940.KS", url: "https://m.stock.naver.com/domestic/stock/207940/total" },
+    ],
   },
   {
     slug: "biometrics-margin-bottleneck-2026",
@@ -1782,6 +2220,12 @@ const featuredPages = [
     image: BIOMETRICS_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/biometrics-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "ku3LDxs_054", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ku3LDxs_054", thumbnailUrl: "https://i.ytimg.com/vi/ku3LDxs_054/hqdefault.jpg", description: "생체인식 테마는 얼굴, 지문, 행동 인증 솔루션의 성장성만으로 판단하기 어렵고 개인정보 규제와 오인식률, 인증 성공률과 도입 기관 수, 솔루션 라이선스가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "클리어 시큐어", market: "미국", ticker: "YOU", url: "https://m.stock.naver.com/worldstock/stock/YOU/total" },
+      { name: "티 스탬프", market: "미국", ticker: "IDAI", url: "https://m.stock.naver.com/worldstock/stock/IDAI.O/total" },
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "에스원", market: "한국", ticker: "012750.KS", url: "https://m.stock.naver.com/domestic/stock/012750/total" },
+    ],
   },
   {
     slug: "biometrics-demand-revenue-2026",
@@ -1793,6 +2237,12 @@ const featuredPages = [
     image: BIOMETRICS_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/biometrics-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "5GW-WJ9SGtA", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=5GW-WJ9SGtA", thumbnailUrl: "https://i.ytimg.com/vi/5GW-WJ9SGtA/hqdefault.jpg", description: "생체인식 기업을 볼 때는 비밀번호 대체와 출입 보안 수요의 크기보다 실제 고객 계약, 반복 매출, 인증 성공률과 도입 기관 수가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "클리어 시큐어", market: "미국", ticker: "YOU", url: "https://m.stock.naver.com/worldstock/stock/YOU/total" },
+      { name: "티 스탬프", market: "미국", ticker: "IDAI", url: "https://m.stock.naver.com/worldstock/stock/IDAI.O/total" },
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "에스원", market: "한국", ticker: "012750.KS", url: "https://m.stock.naver.com/domestic/stock/012750/total" },
+    ],
   },
   {
     slug: "biometrics-risk-cycle-2026",
@@ -1804,6 +2254,12 @@ const featuredPages = [
     image: BIOMETRICS_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/biometrics-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "kMZab8f-GnQ", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=kMZab8f-GnQ", thumbnailUrl: "https://i.ytimg.com/vi/kMZab8f-GnQ/hqdefault.jpg", description: "생체인식 테마는 성장 기대가 커질수록 프라이버시 반발과 법적 제한가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "클리어 시큐어", market: "미국", ticker: "YOU", url: "https://m.stock.naver.com/worldstock/stock/YOU/total" },
+      { name: "티 스탬프", market: "미국", ticker: "IDAI", url: "https://m.stock.naver.com/worldstock/stock/IDAI.O/total" },
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "에스원", market: "한국", ticker: "012750.KS", url: "https://m.stock.naver.com/domestic/stock/012750/total" },
+    ],
   },
   {
     slug: "big-data-margin-bottleneck-2026",
@@ -1815,6 +2271,12 @@ const featuredPages = [
     image: BIG_DATA_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/big-data-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "pNb-BM30xu4", title: "빅데이터 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=pNb-BM30xu4", thumbnailUrl: "https://i.ytimg.com/vi/pNb-BM30xu4/hqdefault.jpg", description: "빅데이터 테마는 데이터 플랫폼과 분석 파이프라인의 성장성만으로 판단하기 어렵고 데이터 품질과 통합 비용, 데이터 처리량과 순매출유지율, 플랫폼 구독료가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "팔란티어 테크놀로지스", market: "미국", ticker: "PLTR", url: "https://m.stock.naver.com/worldstock/stock/PLTR.O/total" },
+      { name: "스노우플레이크", market: "미국", ticker: "SNOW", url: "https://m.stock.naver.com/worldstock/stock/SNOW.K/total" },
+      { name: "데이터도그", market: "미국", ticker: "DDOG", url: "https://m.stock.naver.com/worldstock/stock/DDOG.O/total" },
+      { name: "베리스크 애널리틱스", market: "미국", ticker: "VRSK", url: "https://m.stock.naver.com/worldstock/stock/VRSK.O/total" },
+    ],
   },
   {
     slug: "social-media-margin-bottleneck-2026",
@@ -1826,6 +2288,12 @@ const featuredPages = [
     image: SOCIAL_MEDIA_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/social-media-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "IFHJjmXFFEY", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=IFHJjmXFFEY", thumbnailUrl: "https://i.ytimg.com/vi/IFHJjmXFFEY/hqdefault.jpg", description: "소셜미디어 테마는 광고 플랫폼과 크리에이터 생태계의 성장성만으로 판단하기 어렵고 광고 경기와 콘텐츠 안전성, 이용시간과 광고단가, 광고 매출이 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "메타", market: "미국", ticker: "META", url: "https://m.stock.naver.com/worldstock/stock/META.O/total" },
+      { name: "스냅", market: "미국", ticker: "SNAP", url: "https://m.stock.naver.com/worldstock/stock/SNAP.K/total" },
+      { name: "핀터레스트", market: "미국", ticker: "PINS", url: "https://m.stock.naver.com/worldstock/stock/PINS.K/total" },
+      { name: "카카오", market: "한국", ticker: "035720.KS", url: "https://m.stock.naver.com/domestic/stock/035720/total" },
+    ],
   },
   {
     slug: "social-media-demand-revenue-2026",
@@ -1837,6 +2305,12 @@ const featuredPages = [
     image: SOCIAL_MEDIA_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/social-media-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "3mzCteLKdaI", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=3mzCteLKdaI", thumbnailUrl: "https://i.ytimg.com/vi/3mzCteLKdaI/hqdefault.jpg", description: "소셜미디어 기업을 볼 때는 숏폼 소비와 타깃 광고 수요의 크기보다 실제 고객 계약, 반복 매출, 이용시간과 광고단가가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "메타", market: "미국", ticker: "META", url: "https://m.stock.naver.com/worldstock/stock/META.O/total" },
+      { name: "스냅", market: "미국", ticker: "SNAP", url: "https://m.stock.naver.com/worldstock/stock/SNAP.K/total" },
+      { name: "핀터레스트", market: "미국", ticker: "PINS", url: "https://m.stock.naver.com/worldstock/stock/PINS.K/total" },
+      { name: "카카오", market: "한국", ticker: "035720.KS", url: "https://m.stock.naver.com/domestic/stock/035720/total" },
+    ],
   },
   {
     slug: "social-media-risk-cycle-2026",
@@ -1848,6 +2322,12 @@ const featuredPages = [
     image: SOCIAL_MEDIA_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/social-media-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "RDEO7tKznSM", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RDEO7tKznSM", thumbnailUrl: "https://i.ytimg.com/vi/RDEO7tKznSM/hqdefault.jpg", description: "소셜미디어 테마는 성장 기대가 커질수록 규제와 이용자 이탈가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "메타", market: "미국", ticker: "META", url: "https://m.stock.naver.com/worldstock/stock/META.O/total" },
+      { name: "스냅", market: "미국", ticker: "SNAP", url: "https://m.stock.naver.com/worldstock/stock/SNAP.K/total" },
+      { name: "핀터레스트", market: "미국", ticker: "PINS", url: "https://m.stock.naver.com/worldstock/stock/PINS.K/total" },
+      { name: "카카오", market: "한국", ticker: "035720.KS", url: "https://m.stock.naver.com/domestic/stock/035720/total" },
+    ],
   },
   {
     slug: "real-estate-reits-margin-bottleneck-2026",
@@ -1859,6 +2339,12 @@ const featuredPages = [
     image: REAL_ESTATE_REITS_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/real-estate-reits-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "gn2nVZ3V9Ks", title: "부동산·리츠 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=gn2nVZ3V9Ks", thumbnailUrl: "https://i.ytimg.com/vi/gn2nVZ3V9Ks/hqdefault.jpg", description: "부동산·리츠 테마는 물류센터, 데이터센터, 임대형 부동산의 성장성만으로 판단하기 어렵고 금리와 차환 비용, 공실률과 순영업소득, 임대료와 배당가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "프로로지스", market: "미국", ticker: "PLD", url: "https://m.stock.naver.com/worldstock/stock/PLD/total" },
+      { name: "아메리칸 타워", market: "미국", ticker: "AMT", url: "https://m.stock.naver.com/worldstock/stock/AMT/total" },
+      { name: "리얼티 인컴", market: "미국", ticker: "O", url: "https://m.stock.naver.com/worldstock/stock/O/total" },
+      { name: "SK리츠", market: "한국", ticker: "395400.KS", url: "https://m.stock.naver.com/domestic/stock/395400/total" },
+    ],
   },
   {
     slug: "real-estate-reits-demand-revenue-2026",
@@ -1870,6 +2356,12 @@ const featuredPages = [
     image: REAL_ESTATE_REITS_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/real-estate-reits-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "zrAtFec6-80", title: "부동산·리츠 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zrAtFec6-80", thumbnailUrl: "https://i.ytimg.com/vi/zrAtFec6-80/hqdefault.jpg", description: "부동산·리츠 기업을 볼 때는 임대 현금흐름과 인프라 수요의 크기보다 실제 고객 계약, 반복 매출, 공실률과 순영업소득가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "프로로지스", market: "미국", ticker: "PLD", url: "https://m.stock.naver.com/worldstock/stock/PLD/total" },
+      { name: "아메리칸 타워", market: "미국", ticker: "AMT", url: "https://m.stock.naver.com/worldstock/stock/AMT/total" },
+      { name: "리얼티 인컴", market: "미국", ticker: "O", url: "https://m.stock.naver.com/worldstock/stock/O/total" },
+      { name: "SK리츠", market: "한국", ticker: "395400.KS", url: "https://m.stock.naver.com/domestic/stock/395400/total" },
+    ],
   },
   {
     slug: "wearables-margin-bottleneck-2026",
@@ -1881,6 +2373,12 @@ const featuredPages = [
     image: WEARABLES_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/wearables-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "RfKxwbE-pZ8", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RfKxwbE-pZ8", thumbnailUrl: "https://i.ytimg.com/vi/RfKxwbE-pZ8/hqdefault.jpg", description: "웨어러블 테마는 스마트워치와 건강 센서의 성장성만으로 판단하기 어렵고 배터리와 센서 정확도, 활성 사용자와 교체 주기, 기기 판매와 건강 서비스가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "가민", market: "미국", ticker: "GRMN", url: "https://m.stock.naver.com/worldstock/stock/GRMN.K/total" },
+      { name: "웨어러블 디바이시스", market: "미국", ticker: "WLDS", url: "https://m.stock.naver.com/worldstock/stock/WLDS.O/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "wearables-demand-revenue-2026",
@@ -1892,6 +2390,12 @@ const featuredPages = [
     image: WEARABLES_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/wearables-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "ibMgg4xI-mE", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ibMgg4xI-mE", thumbnailUrl: "https://i.ytimg.com/vi/ibMgg4xI-mE/hqdefault.jpg", description: "웨어러블 기업을 볼 때는 건강 모니터링과 피트니스 수요의 크기보다 실제 고객 계약, 반복 매출, 활성 사용자와 교체 주기가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "가민", market: "미국", ticker: "GRMN", url: "https://m.stock.naver.com/worldstock/stock/GRMN.K/total" },
+      { name: "웨어러블 디바이시스", market: "미국", ticker: "WLDS", url: "https://m.stock.naver.com/worldstock/stock/WLDS.O/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "wearables-risk-cycle-2026",
@@ -1903,6 +2407,12 @@ const featuredPages = [
     image: WEARABLES_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/wearables-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "hKp6Rky4hp4", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=hKp6Rky4hp4", thumbnailUrl: "https://i.ytimg.com/vi/hKp6Rky4hp4/hqdefault.jpg", description: "웨어러블 테마는 성장 기대가 커질수록 기기 포화와 개인정보 우려가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "가민", market: "미국", ticker: "GRMN", url: "https://m.stock.naver.com/worldstock/stock/GRMN.K/total" },
+      { name: "웨어러블 디바이시스", market: "미국", ticker: "WLDS", url: "https://m.stock.naver.com/worldstock/stock/WLDS.O/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "edtech-margin-bottleneck-2026",
@@ -1914,6 +2424,12 @@ const featuredPages = [
     image: EDTECH_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/edtech-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "zUdXScyI2MI", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zUdXScyI2MI", thumbnailUrl: "https://i.ytimg.com/vi/zUdXScyI2MI/hqdefault.jpg", description: "에듀테크 테마는 AI 학습 플랫폼과 직무 교육의 성장성만으로 판단하기 어렵고 콘텐츠 품질과 학습 지속률, 유료 전환율과 수강 완료율, 구독료와 기업 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "듀오링고", market: "미국", ticker: "DUOL", url: "https://m.stock.naver.com/worldstock/stock/DUOL.O/total" },
+      { name: "코세라", market: "미국", ticker: "COUR", url: "https://m.stock.naver.com/worldstock/stock/COUR.K/total" },
+      { name: "반스 앤 노블 에듀케이션", market: "미국", ticker: "BNED", url: "https://m.stock.naver.com/worldstock/stock/BNED.K/total" },
+      { name: "뉴 오리엔탈 에듀케이션 & 테크놀로지 ADR", market: "미국", ticker: "EDU", url: "https://m.stock.naver.com/worldstock/stock/EDU/total" },
+    ],
   },
   {
     slug: "edtech-demand-revenue-2026",
@@ -1925,6 +2441,12 @@ const featuredPages = [
     image: EDTECH_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/edtech-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "hr4U4ZiY5i4", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=hr4U4ZiY5i4", thumbnailUrl: "https://i.ytimg.com/vi/hr4U4ZiY5i4/hqdefault.jpg", description: "에듀테크 기업을 볼 때는 맞춤형 학습과 재교육 수요의 크기보다 실제 고객 계약, 반복 매출, 유료 전환율과 수강 완료율가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "듀오링고", market: "미국", ticker: "DUOL", url: "https://m.stock.naver.com/worldstock/stock/DUOL.O/total" },
+      { name: "코세라", market: "미국", ticker: "COUR", url: "https://m.stock.naver.com/worldstock/stock/COUR.K/total" },
+      { name: "반스 앤 노블 에듀케이션", market: "미국", ticker: "BNED", url: "https://m.stock.naver.com/worldstock/stock/BNED.K/total" },
+      { name: "뉴 오리엔탈 에듀케이션 & 테크놀로지 ADR", market: "미국", ticker: "EDU", url: "https://m.stock.naver.com/worldstock/stock/EDU/total" },
+    ],
   },
   {
     slug: "edtech-risk-cycle-2026",
@@ -1936,6 +2458,12 @@ const featuredPages = [
     image: EDTECH_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/edtech-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "UHx-U0YUJgY", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=UHx-U0YUJgY", thumbnailUrl: "https://i.ytimg.com/vi/UHx-U0YUJgY/hqdefault.jpg", description: "에듀테크 테마는 성장 기대가 커질수록 무료 콘텐츠 경쟁과 CAC 상승가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "듀오링고", market: "미국", ticker: "DUOL", url: "https://m.stock.naver.com/worldstock/stock/DUOL.O/total" },
+      { name: "코세라", market: "미국", ticker: "COUR", url: "https://m.stock.naver.com/worldstock/stock/COUR.K/total" },
+      { name: "반스 앤 노블 에듀케이션", market: "미국", ticker: "BNED", url: "https://m.stock.naver.com/worldstock/stock/BNED.K/total" },
+      { name: "뉴 오리엔탈 에듀케이션 & 테크놀로지 ADR", market: "미국", ticker: "EDU", url: "https://m.stock.naver.com/worldstock/stock/EDU/total" },
+    ],
   },
   {
     slug: "aging-margin-bottleneck-2026",
@@ -1947,6 +2475,12 @@ const featuredPages = [
     image: AGING_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/aging-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "1dqJ-TpMiTg", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=1dqJ-TpMiTg", thumbnailUrl: "https://i.ytimg.com/vi/1dqJ-TpMiTg/hqdefault.jpg", description: "고령화 테마는 시니어 케어와 만성질환 관리 서비스의 성장성만으로 판단하기 어렵고 인건비와 보험 수가, 이용자 유지율과 방문당 수익, 서비스 구독과 보험 청구가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
+      { name: "휴마나", market: "미국", ticker: "HUM", url: "https://m.stock.naver.com/worldstock/stock/HUM/total" },
+      { name: "CVS 헬스", market: "미국", ticker: "CVS", url: "https://m.stock.naver.com/worldstock/stock/CVS/total" },
+      { name: "셀트리온", market: "한국", ticker: "068270.KS", url: "https://m.stock.naver.com/domestic/stock/068270/total" },
+    ],
   },
   {
     slug: "aging-demand-revenue-2026",
@@ -1958,6 +2492,12 @@ const featuredPages = [
     image: AGING_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/aging-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "DnEYGC2gGWo", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=DnEYGC2gGWo", thumbnailUrl: "https://i.ytimg.com/vi/DnEYGC2gGWo/hqdefault.jpg", description: "고령화 기업을 볼 때는 돌봄 인력 부족과 건강관리 수요의 크기보다 실제 고객 계약, 반복 매출, 이용자 유지율과 방문당 수익가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
+      { name: "휴마나", market: "미국", ticker: "HUM", url: "https://m.stock.naver.com/worldstock/stock/HUM/total" },
+      { name: "CVS 헬스", market: "미국", ticker: "CVS", url: "https://m.stock.naver.com/worldstock/stock/CVS/total" },
+      { name: "셀트리온", market: "한국", ticker: "068270.KS", url: "https://m.stock.naver.com/domestic/stock/068270/total" },
+    ],
   },
   {
     slug: "aging-risk-cycle-2026",
@@ -1969,6 +2509,12 @@ const featuredPages = [
     image: AGING_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/aging-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "OmyT9rn8XUA", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=OmyT9rn8XUA", thumbnailUrl: "https://i.ytimg.com/vi/OmyT9rn8XUA/hqdefault.jpg", description: "고령화 테마는 성장 기대가 커질수록 규제와 인력 확보가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
+      { name: "휴마나", market: "미국", ticker: "HUM", url: "https://m.stock.naver.com/worldstock/stock/HUM/total" },
+      { name: "CVS 헬스", market: "미국", ticker: "CVS", url: "https://m.stock.naver.com/worldstock/stock/CVS/total" },
+      { name: "셀트리온", market: "한국", ticker: "068270.KS", url: "https://m.stock.naver.com/domestic/stock/068270/total" },
+    ],
   },
   {
     slug: "health-food-margin-bottleneck-2026",
@@ -1980,6 +2526,12 @@ const featuredPages = [
     image: HEALTH_FOOD_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/health-food-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "Qj99w0sfH04", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Qj99w0sfH04", thumbnailUrl: "https://i.ytimg.com/vi/Qj99w0sfH04/hqdefault.jpg", description: "건강식품 테마는 기능성 식품과 영양 브랜드의 성장성만으로 판단하기 어렵고 원료 가격과 효능 신뢰, 재구매율과 채널 마진, 반복 구매가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "셀시어스 홀딩스", market: "미국", ticker: "CELH", url: "https://m.stock.naver.com/worldstock/stock/CELH.O/total" },
+      { name: "더 심플리 굿 푸드", market: "미국", ticker: "SMPL", url: "https://m.stock.naver.com/worldstock/stock/SMPL.O/total" },
+      { name: "허벌라이프", market: "미국", ticker: "HLF", url: "https://m.stock.naver.com/worldstock/stock/HLF/total" },
+      { name: "삼양식품", market: "한국", ticker: "003230.KS", url: "https://m.stock.naver.com/domestic/stock/003230/total" },
+    ],
   },
   {
     slug: "health-food-demand-revenue-2026",
@@ -1991,6 +2543,12 @@ const featuredPages = [
     image: HEALTH_FOOD_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/health-food-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "NZGG_dlGtss", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=NZGG_dlGtss", thumbnailUrl: "https://i.ytimg.com/vi/NZGG_dlGtss/hqdefault.jpg", description: "건강식품 기업을 볼 때는 면역, 장 건강, 단백질 보충 수요의 크기보다 실제 고객 계약, 반복 매출, 재구매율과 채널 마진가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "셀시어스 홀딩스", market: "미국", ticker: "CELH", url: "https://m.stock.naver.com/worldstock/stock/CELH.O/total" },
+      { name: "더 심플리 굿 푸드", market: "미국", ticker: "SMPL", url: "https://m.stock.naver.com/worldstock/stock/SMPL.O/total" },
+      { name: "허벌라이프", market: "미국", ticker: "HLF", url: "https://m.stock.naver.com/worldstock/stock/HLF/total" },
+      { name: "삼양식품", market: "한국", ticker: "003230.KS", url: "https://m.stock.naver.com/domestic/stock/003230/total" },
+    ],
   },
   {
     slug: "health-food-risk-cycle-2026",
@@ -2002,6 +2560,12 @@ const featuredPages = [
     image: HEALTH_FOOD_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/health-food-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "L6RmWWnqH4U", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=L6RmWWnqH4U", thumbnailUrl: "https://i.ytimg.com/vi/L6RmWWnqH4U/hqdefault.jpg", description: "건강식품 테마는 성장 기대가 커질수록 과장 광고와 규제가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "셀시어스 홀딩스", market: "미국", ticker: "CELH", url: "https://m.stock.naver.com/worldstock/stock/CELH.O/total" },
+      { name: "더 심플리 굿 푸드", market: "미국", ticker: "SMPL", url: "https://m.stock.naver.com/worldstock/stock/SMPL.O/total" },
+      { name: "허벌라이프", market: "미국", ticker: "HLF", url: "https://m.stock.naver.com/worldstock/stock/HLF/total" },
+      { name: "삼양식품", market: "한국", ticker: "003230.KS", url: "https://m.stock.naver.com/domestic/stock/003230/total" },
+    ],
   },
   {
     slug: "crypto-blockchain-margin-bottleneck-2026",
@@ -2013,6 +2577,12 @@ const featuredPages = [
     image: CRYPTO_BLOCKCHAIN_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/crypto-blockchain-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "RWtjXO8nvNc", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RWtjXO8nvNc", thumbnailUrl: "https://i.ytimg.com/vi/RWtjXO8nvNc/hqdefault.jpg", description: "암호화폐·블록체인 테마는 비트코인 인프라와 토큰화 플랫폼의 성장성만으로 판단하기 어렵고 규제와 보관 인프라, 거래량과 수탁 잔고, 거래 수수료와 보관 수수료가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "코인베이스 글로벌", market: "미국", ticker: "COIN", url: "https://m.stock.naver.com/worldstock/stock/COIN.O/total" },
+      { name: "스트래티지", market: "미국", ticker: "MSTR", url: "https://m.stock.naver.com/worldstock/stock/MSTR.O/total" },
+      { name: "마라 홀딩스", market: "미국", ticker: "MARA", url: "https://m.stock.naver.com/worldstock/stock/MARA.O/total" },
+      { name: "라이엇 플랫폼즈", market: "미국", ticker: "RIOT", url: "https://m.stock.naver.com/worldstock/stock/RIOT.O/total" },
+    ],
   },
   {
     slug: "crypto-blockchain-demand-revenue-2026",
@@ -2024,6 +2594,12 @@ const featuredPages = [
     image: CRYPTO_BLOCKCHAIN_DEMAND_REVENUE_2026_IMAGE,
     audio: { src: "audios/crypto-blockchain-demand-revenue-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "Yky9UbOsQv4", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Yky9UbOsQv4", thumbnailUrl: "https://i.ytimg.com/vi/Yky9UbOsQv4/hqdefault.jpg", description: "암호화폐·블록체인 기업을 볼 때는 디지털 자산 접근성과 결제 실험 수요의 크기보다 실제 고객 계약, 반복 매출, 거래량과 수탁 잔고가 얼마나 오래 유지되는지 확인해야 합니다." },
+    relatedStocks: [
+      { name: "코인베이스 글로벌", market: "미국", ticker: "COIN", url: "https://m.stock.naver.com/worldstock/stock/COIN.O/total" },
+      { name: "스트래티지", market: "미국", ticker: "MSTR", url: "https://m.stock.naver.com/worldstock/stock/MSTR.O/total" },
+      { name: "마라 홀딩스", market: "미국", ticker: "MARA", url: "https://m.stock.naver.com/worldstock/stock/MARA.O/total" },
+      { name: "라이엇 플랫폼즈", market: "미국", ticker: "RIOT", url: "https://m.stock.naver.com/worldstock/stock/RIOT.O/total" },
+    ],
   },
   {
     slug: "crypto-blockchain-risk-cycle-2026",
@@ -2035,6 +2611,12 @@ const featuredPages = [
     image: CRYPTO_BLOCKCHAIN_RISK_CYCLE_2026_IMAGE,
     audio: { src: "audios/crypto-blockchain-risk-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "9OOYQQkE97c", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=9OOYQQkE97c", thumbnailUrl: "https://i.ytimg.com/vi/9OOYQQkE97c/hqdefault.jpg", description: "암호화폐·블록체인 테마는 성장 기대가 커질수록 가격 변동성과 해킹가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+    relatedStocks: [
+      { name: "코인베이스 글로벌", market: "미국", ticker: "COIN", url: "https://m.stock.naver.com/worldstock/stock/COIN.O/total" },
+      { name: "스트래티지", market: "미국", ticker: "MSTR", url: "https://m.stock.naver.com/worldstock/stock/MSTR.O/total" },
+      { name: "마라 홀딩스", market: "미국", ticker: "MARA", url: "https://m.stock.naver.com/worldstock/stock/MARA.O/total" },
+      { name: "라이엇 플랫폼즈", market: "미국", ticker: "RIOT", url: "https://m.stock.naver.com/worldstock/stock/RIOT.O/total" },
+    ],
   },
   {
     slug: "market-yield-dollar-portfolio-2026",
@@ -2046,6 +2628,12 @@ const featuredPages = [
     image: MARKET_YIELD_DOLLAR_PORTFOLIO_2026_IMAGE,
     audio: { src: "audios/market-yield-dollar-portfolio-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "K-ruTEg3MH4", title: "미국 장기금리와 달러 흐름을 함께 보는 시장 해설", channel: "삼프로TV_경제의신과함께", sourceUrl: "https://www.youtube.com/watch?v=K-ruTEg3MH4", thumbnailUrl: "https://i.ytimg.com/vi/K-ruTEg3MH4/hqdefault.jpg", description: "미국 장기금리와 달러 강세는 성장주 밸류에이션, 원화 환산 수익률, 외국인 자금 흐름을 동시에 바꾸는 핵심 변수입니다." },
+    relatedStocks: [
+      { name: "마스터카드", market: "미국", ticker: "MA", url: "https://m.stock.naver.com/worldstock/stock/MA/total" },
+      { name: "페이팔 홀딩스", market: "미국", ticker: "PYPL", url: "https://m.stock.naver.com/worldstock/stock/PYPL.O/total" },
+      { name: "어펌 홀딩스", market: "미국", ticker: "AFRM", url: "https://m.stock.naver.com/worldstock/stock/AFRM.O/total" },
+      { name: "KB금융", market: "한국", ticker: "105560.KS", url: "https://m.stock.naver.com/domestic/stock/105560/total" },
+    ],
   },
   {
     slug: "market-won-dollar-export-margin-2026",
@@ -2057,6 +2645,12 @@ const featuredPages = [
     image: MARKET_WON_DOLLAR_EXPORT_MARGIN_2026_IMAGE,
     audio: { src: "audios/market-won-dollar-export-margin-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "MzyTcRyIwQM", title: "원달러 환율과 수출기업 이익률을 읽는 방법", channel: "연합뉴스경제TV", sourceUrl: "https://www.youtube.com/watch?v=MzyTcRyIwQM", thumbnailUrl: "https://i.ytimg.com/vi/MzyTcRyIwQM/hqdefault.jpg", description: "원달러 환율 상승은 수출주에 무조건 호재가 아니라 원재료, 달러 부채, 해외 생산 비중에 따라 이익률을 다르게 만듭니다." },
+    relatedStocks: [
+      { name: "페덱스", market: "미국", ticker: "FDX", url: "https://m.stock.naver.com/worldstock/stock/FDX/total" },
+      { name: "우버", market: "미국", ticker: "UBER", url: "https://m.stock.naver.com/worldstock/stock/UBER.K/total" },
+      { name: "현대차", market: "한국", ticker: "005380.KS", url: "https://m.stock.naver.com/domestic/stock/005380/total" },
+      { name: "현대글로비스", market: "한국", ticker: "086280.KS", url: "https://m.stock.naver.com/domestic/stock/086280/total" },
+    ],
   },
   {
     slug: "market-oil-inflation-rate-path-2026",
@@ -2068,6 +2662,12 @@ const featuredPages = [
     image: MARKET_OIL_INFLATION_RATE_PATH_2026_IMAGE,
     audio: { src: "audios/market-oil-inflation-rate-path-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "CIxe1Hhwjew", title: "국제유가와 물가 압력을 함께 보는 시장 해설", channel: "한국경제TV", sourceUrl: "https://www.youtube.com/watch?v=CIxe1Hhwjew", thumbnailUrl: "https://i.ytimg.com/vi/CIxe1Hhwjew/hqdefault.jpg", description: "유가 상승은 에너지 기업 실적보다 소비 여력, 운송비, 중앙은행 금리 판단을 먼저 흔들며 주식시장 할인율을 바꿉니다." },
+    relatedStocks: [
+      { name: "엑슨 모빌", market: "미국", ticker: "XOM", url: "https://m.stock.naver.com/worldstock/stock/XOM/total" },
+      { name: "셰브론", market: "미국", ticker: "CVX", url: "https://m.stock.naver.com/worldstock/stock/CVX/total" },
+      { name: "코노코필립스", market: "미국", ticker: "COP", url: "https://m.stock.naver.com/worldstock/stock/COP/total" },
+      { name: "S-Oil", market: "한국", ticker: "010950.KS", url: "https://m.stock.naver.com/domestic/stock/010950/total" },
+    ],
   },
   {
     slug: "us-stocks-nvidia-ai-margin-2026",
@@ -2079,6 +2679,12 @@ const featuredPages = [
     image: US_STOCKS_NVIDIA_AI_MARGIN_2026_IMAGE,
     audio: { src: "audios/us-stocks-nvidia-ai-margin-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "NASfm-KU9Rs", title: "엔비디아 AI 인프라와 실적을 해설하는 한국어 영상", channel: "한경 글로벌마켓", sourceUrl: "https://www.youtube.com/watch?v=NASfm-KU9Rs", thumbnailUrl: "https://i.ytimg.com/vi/NASfm-KU9Rs/hqdefault.jpg", description: "엔비디아는 AI 데이터센터 매출이 강하지만 주가 판단은 매출 성장률보다 매출총이익률, 고객 집중, 차세대 제품 전환 비용에 달려 있습니다." },
+    relatedStocks: [
+      { name: "엔비디아", market: "미국", ticker: "NVDA", url: "https://m.stock.naver.com/worldstock/stock/NVDA.O/total" },
+      { name: "브로드컴", market: "미국", ticker: "AVGO", url: "https://m.stock.naver.com/worldstock/stock/AVGO.O/total" },
+      { name: "AMD(어드밴스드 마이크로 디바이시스)", market: "미국", ticker: "AMD", url: "https://m.stock.naver.com/worldstock/stock/AMD.O/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "us-stocks-apple-ai-iphone-cycle-2026",
@@ -2090,6 +2696,12 @@ const featuredPages = [
     image: US_STOCKS_APPLE_AI_IPHONE_CYCLE_2026_IMAGE,
     audio: { src: "audios/us-stocks-apple-ai-iphone-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "bTlHT8TzpFY", title: "애플 AI와 아이폰 교체 수요를 분석하는 영상", channel: "ITSub잇섭", sourceUrl: "https://www.youtube.com/watch?v=bTlHT8TzpFY", thumbnailUrl: "https://i.ytimg.com/vi/bTlHT8TzpFY/hqdefault.jpg", description: "애플의 AI 기능은 관심을 끌지만 주가의 핵심은 아이폰 교체 주기, 서비스 매출률, 중국과 프리미엄 시장의 수요 회복입니다." },
+    relatedStocks: [
+      { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
+      { name: "퀄컴", market: "미국", ticker: "QCOM", url: "https://m.stock.naver.com/worldstock/stock/QCOM.O/total" },
+      { name: "브로드컴", market: "미국", ticker: "AVGO", url: "https://m.stock.naver.com/worldstock/stock/AVGO.O/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "us-stocks-amazon-aws-retail-margin-2026",
@@ -2101,6 +2713,12 @@ const featuredPages = [
     image: US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE,
     audio: { src: "audios/us-stocks-amazon-aws-retail-margin-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "7SdKfo2e9IE", title: "아마존 AWS와 리테일 마진을 함께 보는 실적 분석", channel: "한경 글로벌마켓", sourceUrl: "https://www.youtube.com/watch?v=7SdKfo2e9IE", thumbnailUrl: "https://i.ytimg.com/vi/7SdKfo2e9IE/hqdefault.jpg", description: "아마존은 AWS가 이익의 중심이지만 주가 재평가는 리테일 물류 효율, 광고 매출, 소비 둔화 방어력이 함께 맞을 때 강해집니다." },
+    relatedStocks: [
+      { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+      { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
+      { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
+      { name: "NAVER", market: "한국", ticker: "035420.KS", url: "https://m.stock.naver.com/domestic/stock/035420/total" },
+    ],
   },
   {
     slug: "korean-stocks-samsung-memory-cycle-2026",
@@ -2112,6 +2730,12 @@ const featuredPages = [
     image: KOREAN_STOCKS_SAMSUNG_MEMORY_CYCLE_2026_IMAGE,
     audio: { src: "audios/korean-stocks-samsung-memory-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "DexEVaWBVfY", title: "삼성전자 메모리 업황과 HBM 경쟁력을 해설하는 영상", channel: "삼프로TV_경제의신과함께", sourceUrl: "https://www.youtube.com/watch?v=DexEVaWBVfY", thumbnailUrl: "https://i.ytimg.com/vi/DexEVaWBVfY/hqdefault.jpg", description: "삼성전자 주식은 D램과 낸드 가격 회복뿐 아니라 HBM 경쟁력, 설비투자 효율, 재고 정상화와 자유현금흐름 회복을 함께 봐야 합니다." },
+    relatedStocks: [
+      { name: "엔비디아", market: "미국", ticker: "NVDA", url: "https://m.stock.naver.com/worldstock/stock/NVDA.O/total" },
+      { name: "브로드컴", market: "미국", ticker: "AVGO", url: "https://m.stock.naver.com/worldstock/stock/AVGO.O/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+      { name: "SK하이닉스", market: "한국", ticker: "000660.KS", url: "https://m.stock.naver.com/domestic/stock/000660/total" },
+    ],
   },
   {
     slug: "korean-stocks-hyundai-hybrid-export-2026",
@@ -2123,6 +2747,12 @@ const featuredPages = [
     image: KOREAN_STOCKS_HYUNDAI_HYBRID_EXPORT_2026_IMAGE,
     audio: { src: "audios/korean-stocks-hyundai-hybrid-export-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "6RY_9yrMLto", title: "현대차 하이브리드와 미국 판매 흐름을 분석하는 영상", channel: "한국경제TV", sourceUrl: "https://www.youtube.com/watch?v=6RY_9yrMLto", thumbnailUrl: "https://i.ytimg.com/vi/6RY_9yrMLto/hqdefault.jpg", description: "현대차 주식은 전기차 성장률만이 아니라 하이브리드 판매, 미국 시장 인센티브, 환율과 믹스 개선이 이익률을 지키는지 봐야 합니다." },
+    relatedStocks: [
+      { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
+      { name: "리비안", market: "미국", ticker: "RIVN", url: "https://m.stock.naver.com/worldstock/stock/RIVN.O/total" },
+      { name: "현대차", market: "한국", ticker: "005380.KS", url: "https://m.stock.naver.com/domestic/stock/005380/total" },
+      { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
+    ],
   },
   {
     slug: "korean-stocks-skhynix-hbm-customer-risk-2026",
@@ -2134,6 +2764,12 @@ const featuredPages = [
     image: KOREAN_STOCKS_SKHYNIX_HBM_CUSTOMER_RISK_2026_IMAGE,
     audio: { src: "audios/korean-stocks-skhynix-hbm-customer-risk-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "BE4wreiio_o", title: "SK하이닉스 HBM과 AI 메모리 사이클 분석", channel: "이데일리TV", sourceUrl: "https://www.youtube.com/watch?v=BE4wreiio_o", thumbnailUrl: "https://i.ytimg.com/vi/BE4wreiio_o/hqdefault.jpg", description: "SK하이닉스는 HBM 경쟁력이 강하지만 투자 판단은 고객 집중, 차세대 제품 수율, 범용 메모리 회복과 설비투자 부담을 함께 봐야 합니다." },
+    relatedStocks: [
+      { name: "엔비디아", market: "미국", ticker: "NVDA", url: "https://m.stock.naver.com/worldstock/stock/NVDA.O/total" },
+      { name: "AMD(어드밴스드 마이크로 디바이시스)", market: "미국", ticker: "AMD", url: "https://m.stock.naver.com/worldstock/stock/AMD.O/total" },
+      { name: "SK하이닉스", market: "한국", ticker: "000660.KS", url: "https://m.stock.naver.com/domestic/stock/000660/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "theme-ai-data-center-power-grid-2026",
@@ -2145,6 +2781,12 @@ const featuredPages = [
     image: THEME_AI_DATA_CENTER_POWER_GRID_2026_IMAGE,
     audio: { src: "audios/theme-ai-data-center-power-grid-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "DkpEe-yhOmU", title: "AI 데이터센터 전력 수요와 인프라 병목 해설", channel: "안될공학 - IT 테크 신기술", sourceUrl: "https://www.youtube.com/watch?v=DkpEe-yhOmU", thumbnailUrl: "https://i.ytimg.com/vi/DkpEe-yhOmU/hqdefault.jpg", description: "AI 데이터센터 투자는 GPU 수요만이 아니라 전력망, 변압기, 냉각, 부지 인허가와 장기 전력 계약이 수익성을 가르는 테마입니다." },
+    relatedStocks: [
+      { name: "엔비디아", market: "미국", ticker: "NVDA", url: "https://m.stock.naver.com/worldstock/stock/NVDA.O/total" },
+      { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
+      { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
+      { name: "한국전력", market: "한국", ticker: "015760.KS", url: "https://m.stock.naver.com/domestic/stock/015760/total" },
+    ],
   },
   {
     slug: "theme-defense-export-backlog-cashflow-2026",
@@ -2156,6 +2798,12 @@ const featuredPages = [
     image: THEME_DEFENSE_EXPORT_BACKLOG_CASHFLOW_2026_IMAGE,
     audio: { src: "audios/theme-defense-export-backlog-cashflow-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "WY-WNhQbcWM", title: "K방산 수출과 수주잔고를 분석하는 영상", channel: "매일경제TV", sourceUrl: "https://www.youtube.com/watch?v=WY-WNhQbcWM", thumbnailUrl: "https://i.ytimg.com/vi/WY-WNhQbcWM/hqdefault.jpg", description: "방산주는 수출 계약 규모가 커 보여도 실제 납품 일정, 선급금, 원가 상승, 환율과 정부 승인 리스크가 현금흐름을 결정합니다." },
+    relatedStocks: [
+      { name: "록히드 마틴", market: "미국", ticker: "LMT", url: "https://m.stock.naver.com/worldstock/stock/LMT/total" },
+      { name: "RTX", market: "미국", ticker: "RTX", url: "https://m.stock.naver.com/worldstock/stock/RTX/total" },
+      { name: "노스롭 그루만", market: "미국", ticker: "NOC", url: "https://m.stock.naver.com/worldstock/stock/NOC/total" },
+      { name: "한화에어로스페이스", market: "한국", ticker: "012450.KS", url: "https://m.stock.naver.com/domestic/stock/012450/total" },
+    ],
   },
   {
     slug: "theme-biotech-cdmo-order-cycle-2026",
@@ -2167,6 +2815,12 @@ const featuredPages = [
     image: THEME_BIOTECH_CDMO_ORDER_CYCLE_2026_IMAGE,
     audio: { src: "audios/theme-biotech-cdmo-order-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "TqD2_wrcVtY", title: "바이오 CDMO 산업과 수주 구조를 설명하는 영상", channel: "머니투데이방송", sourceUrl: "https://www.youtube.com/watch?v=TqD2_wrcVtY", thumbnailUrl: "https://i.ytimg.com/vi/TqD2_wrcVtY/hqdefault.jpg", description: "바이오 CDMO 기업은 공장 증설 뉴스보다 장기 위탁생산 계약, 가동률, 품질 인증, 고객사의 임상·상업화 일정이 실적을 좌우합니다." },
+    relatedStocks: [
+      { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
+      { name: "애브비", market: "미국", ticker: "ABBV", url: "https://m.stock.naver.com/worldstock/stock/ABBV.K/total" },
+      { name: "삼성바이오로직스", market: "한국", ticker: "207940.KS", url: "https://m.stock.naver.com/domestic/stock/207940/total" },
+      { name: "셀트리온", market: "한국", ticker: "068270.KS", url: "https://m.stock.naver.com/domestic/stock/068270/total" },
+    ],
   },
   {
     slug: "earnings-operating-margin-free-cash-flow-2026",
@@ -2178,6 +2832,12 @@ const featuredPages = [
     image: EARNINGS_OPERATING_MARGIN_FREE_CASH_FLOW_2026_IMAGE,
     audio: { src: "audios/earnings-operating-margin-free-cash-flow-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "COwgFzqpINc", title: "재무제표에서 영업이익과 현금흐름을 읽는 방법", channel: "슈카월드", sourceUrl: "https://www.youtube.com/watch?v=COwgFzqpINc", thumbnailUrl: "https://i.ytimg.com/vi/COwgFzqpINc/hqdefault.jpg", description: "실적 발표에서 매출 성장보다 영업이익률과 자유현금흐름을 함께 보면 일회성 호재와 지속 가능한 이익을 구분할 수 있습니다." },
+    relatedStocks: [
+      { name: "팔란티어 테크놀로지스", market: "미국", ticker: "PLTR", url: "https://m.stock.naver.com/worldstock/stock/PLTR.O/total" },
+      { name: "스노우플레이크", market: "미국", ticker: "SNOW", url: "https://m.stock.naver.com/worldstock/stock/SNOW.K/total" },
+      { name: "데이터도그", market: "미국", ticker: "DDOG", url: "https://m.stock.naver.com/worldstock/stock/DDOG.O/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "earnings-guidance-revenue-quality-2026",
@@ -2189,6 +2849,12 @@ const featuredPages = [
     image: EARNINGS_GUIDANCE_REVENUE_QUALITY_2026_IMAGE,
     audio: { src: "audios/earnings-guidance-revenue-quality-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "Zx0zuDlcQtA", title: "실적 가이던스와 컨센서스를 읽는 방법", channel: "삼프로TV_경제의신과함께", sourceUrl: "https://www.youtube.com/watch?v=Zx0zuDlcQtA", thumbnailUrl: "https://i.ytimg.com/vi/Zx0zuDlcQtA/hqdefault.jpg", description: "기업 가이던스는 다음 분기 매출 숫자보다 수요 가시성, 비용 통제, 재고 조정, 경영진의 표현 변화에서 더 많은 정보를 줍니다." },
+    relatedStocks: [
+      { name: "팔란티어 테크놀로지스", market: "미국", ticker: "PLTR", url: "https://m.stock.naver.com/worldstock/stock/PLTR.O/total" },
+      { name: "스노우플레이크", market: "미국", ticker: "SNOW", url: "https://m.stock.naver.com/worldstock/stock/SNOW.K/total" },
+      { name: "베리스크 애널리틱스", market: "미국", ticker: "VRSK", url: "https://m.stock.naver.com/worldstock/stock/VRSK.O/total" },
+      { name: "삼성전자", market: "한국", ticker: "005930.KS", url: "https://m.stock.naver.com/domestic/stock/005930/total" },
+    ],
   },
   {
     slug: "earnings-inventory-surprise-risk-2026",
@@ -2200,6 +2866,12 @@ const featuredPages = [
     image: EARNINGS_INVENTORY_SURPRISE_RISK_2026_IMAGE,
     audio: { src: "audios/earnings-inventory-surprise-risk-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "LAVRpp3uPAc", title: "재고와 매출채권으로 실적의 질을 확인하는 방법", channel: "이효석아카데미", sourceUrl: "https://www.youtube.com/watch?v=LAVRpp3uPAc", thumbnailUrl: "https://i.ytimg.com/vi/LAVRpp3uPAc/hqdefault.jpg", description: "실적 서프라이즈가 나와도 재고와 매출채권이 빠르게 늘면 수요의 질과 현금 회수에 문제가 생길 수 있어 추가 확인이 필요합니다." },
+    relatedStocks: [
+      { name: "페덱스", market: "미국", ticker: "FDX", url: "https://m.stock.naver.com/worldstock/stock/FDX/total" },
+      { name: "우버", market: "미국", ticker: "UBER", url: "https://m.stock.naver.com/worldstock/stock/UBER.K/total" },
+      { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
+      { name: "현대글로비스", market: "한국", ticker: "086280.KS", url: "https://m.stock.naver.com/domestic/stock/086280/total" },
+    ],
   },
   {
     slug: "etf-covered-call-income-risk-2026",
@@ -2211,6 +2883,12 @@ const featuredPages = [
     image: ETF_COVERED_CALL_INCOME_RISK_2026_IMAGE,
     audio: { src: "audios/etf-covered-call-income-risk-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "f0515oFAXIA", title: "커버드콜 ETF 분배금과 위험 구조를 설명하는 영상", channel: "미국주식에 미치다 TV", sourceUrl: "https://www.youtube.com/watch?v=f0515oFAXIA", thumbnailUrl: "https://i.ytimg.com/vi/f0515oFAXIA/hqdefault.jpg", description: "커버드콜 ETF는 높은 월분배금이 매력적이지만 옵션 매도 구조 때문에 상승 참여가 제한되고 원금 변동과 과세 효과를 함께 봐야 합니다." },
+    relatedStocks: [
+      { name: "마스터카드", market: "미국", ticker: "MA", url: "https://m.stock.naver.com/worldstock/stock/MA/total" },
+      { name: "페이팔 홀딩스", market: "미국", ticker: "PYPL", url: "https://m.stock.naver.com/worldstock/stock/PYPL.O/total" },
+      { name: "어펌 홀딩스", market: "미국", ticker: "AFRM", url: "https://m.stock.naver.com/worldstock/stock/AFRM.O/total" },
+      { name: "미래에셋증권", market: "한국", ticker: "006800.KS", url: "https://m.stock.naver.com/domestic/stock/006800/total" },
+    ],
   },
   {
     slug: "etf-dividend-growth-payout-ratio-2026",
@@ -2222,6 +2900,12 @@ const featuredPages = [
     image: ETF_DIVIDEND_GROWTH_PAYOUT_RATIO_2026_IMAGE,
     audio: { src: "audios/etf-dividend-growth-payout-ratio-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "Fvx9etZsWAc", title: "배당성장주와 배당성향을 읽는 방법", channel: "소수몽키", sourceUrl: "https://www.youtube.com/watch?v=Fvx9etZsWAc", thumbnailUrl: "https://i.ytimg.com/vi/Fvx9etZsWAc/hqdefault.jpg", description: "배당성장 투자는 현재 배당률보다 배당성향, 자유현금흐름, 부채 부담, 이익 변동성을 확인해야 오래 지속될 수 있습니다." },
+    relatedStocks: [
+      { name: "마스터카드", market: "미국", ticker: "MA", url: "https://m.stock.naver.com/worldstock/stock/MA/total" },
+      { name: "페이팔 홀딩스", market: "미국", ticker: "PYPL", url: "https://m.stock.naver.com/worldstock/stock/PYPL.O/total" },
+      { name: "어펌 홀딩스", market: "미국", ticker: "AFRM", url: "https://m.stock.naver.com/worldstock/stock/AFRM.O/total" },
+      { name: "KB금융", market: "한국", ticker: "105560.KS", url: "https://m.stock.naver.com/domestic/stock/105560/total" },
+    ],
   },
   {
     slug: "etf-bond-duration-rate-cycle-2026",
@@ -2233,6 +2917,12 @@ const featuredPages = [
     image: ETF_BOND_DURATION_RATE_CYCLE_2026_IMAGE,
     audio: { src: "audios/etf-bond-duration-rate-cycle-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "uLFFaE_SFBU", title: "채권 ETF 듀레이션과 금리 민감도를 설명하는 영상", channel: "미래에셋 스마트머니", sourceUrl: "https://www.youtube.com/watch?v=uLFFaE_SFBU", thumbnailUrl: "https://i.ytimg.com/vi/uLFFaE_SFBU/hqdefault.jpg", description: "채권 ETF는 금리 인하 기대만 보고 고르면 위험하며 듀레이션, 신용위험, 환율, 분배금과 가격 변동을 함께 확인해야 합니다." },
+    relatedStocks: [
+      { name: "프로로지스", market: "미국", ticker: "PLD", url: "https://m.stock.naver.com/worldstock/stock/PLD/total" },
+      { name: "아메리칸 타워", market: "미국", ticker: "AMT", url: "https://m.stock.naver.com/worldstock/stock/AMT/total" },
+      { name: "리얼티 인컴", market: "미국", ticker: "O", url: "https://m.stock.naver.com/worldstock/stock/O/total" },
+      { name: "SK리츠", market: "한국", ticker: "395400.KS", url: "https://m.stock.naver.com/domestic/stock/395400/total" },
+    ],
   },
   {
     slug: "strategy-portfolio-cash-rebalancing-2026",
@@ -2244,6 +2934,12 @@ const featuredPages = [
     image: STRATEGY_PORTFOLIO_CASH_REBALANCING_2026_IMAGE,
     audio: { src: "audios/strategy-portfolio-cash-rebalancing-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "OhP15WXW7pA", title: "자산배분과 리밸런싱 원칙을 설명하는 영상", channel: "김작가 TV", sourceUrl: "https://www.youtube.com/watch?v=OhP15WXW7pA", thumbnailUrl: "https://i.ytimg.com/vi/OhP15WXW7pA/hqdefault.jpg", description: "리밸런싱은 시장을 맞히는 기술이 아니라 주식, 채권, 현금의 원래 비중을 지키며 위험을 관리하는 반복 절차입니다." },
+    relatedStocks: [
+      { name: "마스터카드", market: "미국", ticker: "MA", url: "https://m.stock.naver.com/worldstock/stock/MA/total" },
+      { name: "페이팔 홀딩스", market: "미국", ticker: "PYPL", url: "https://m.stock.naver.com/worldstock/stock/PYPL.O/total" },
+      { name: "어펌 홀딩스", market: "미국", ticker: "AFRM", url: "https://m.stock.naver.com/worldstock/stock/AFRM.O/total" },
+      { name: "미래에셋증권", market: "한국", ticker: "006800.KS", url: "https://m.stock.naver.com/domestic/stock/006800/total" },
+    ],
   },
   {
     slug: "strategy-tenbagger-quality-checklist-2026",
@@ -2255,6 +2951,12 @@ const featuredPages = [
     image: STRATEGY_TENBAGGER_QUALITY_CHECKLIST_2026_IMAGE,
     audio: { src: "audios/strategy-tenbagger-quality-checklist-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "GwvG8TbSCNE", title: "텐베거 성장주를 고르는 조건을 설명하는 영상", channel: "미국주식에 미치다 TV", sourceUrl: "https://www.youtube.com/watch?v=GwvG8TbSCNE", thumbnailUrl: "https://i.ytimg.com/vi/GwvG8TbSCNE/hqdefault.jpg", description: "텐베거 후보를 찾을 때는 높은 매출 성장률만이 아니라 시장 크기, 가격 결정력, 반복 매출, 이익 전환 속도와 희석 위험을 함께 확인해야 합니다." },
+    relatedStocks: [
+      { name: "어도비", market: "미국", ticker: "ADBE", url: "https://m.stock.naver.com/worldstock/stock/ADBE.O/total" },
+      { name: "세일즈포스", market: "미국", ticker: "CRM", url: "https://m.stock.naver.com/worldstock/stock/CRM/total" },
+      { name: "서비스나우", market: "미국", ticker: "NOW", url: "https://m.stock.naver.com/worldstock/stock/NOW/total" },
+      { name: "NAVER", market: "한국", ticker: "035420.KS", url: "https://m.stock.naver.com/domestic/stock/035420/total" },
+    ],
   },
   {
     slug: "strategy-loss-cut-position-sizing-2026",
@@ -2266,6 +2968,12 @@ const featuredPages = [
     image: STRATEGY_LOSS_CUT_POSITION_SIZING_2026_IMAGE,
     audio: { src: "audios/strategy-loss-cut-position-sizing-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "PB---uMDvlk", title: "손절과 포지션 사이징을 설명하는 투자 원칙 영상", channel: "박곰희TV", sourceUrl: "https://www.youtube.com/watch?v=PB---uMDvlk", thumbnailUrl: "https://i.ytimg.com/vi/PB---uMDvlk/hqdefault.jpg", description: "좋은 종목을 고르는 일보다 먼저 손실 허용 범위, 포지션 크기, 추가 매수 조건, 매도 기준을 정해야 포트폴리오 생존력이 높아집니다." },
+    relatedStocks: [
+      { name: "마스터카드", market: "미국", ticker: "MA", url: "https://m.stock.naver.com/worldstock/stock/MA/total" },
+      { name: "페이팔 홀딩스", market: "미국", ticker: "PYPL", url: "https://m.stock.naver.com/worldstock/stock/PYPL.O/total" },
+      { name: "어펌 홀딩스", market: "미국", ticker: "AFRM", url: "https://m.stock.naver.com/worldstock/stock/AFRM.O/total" },
+      { name: "미래에셋증권", market: "한국", ticker: "006800.KS", url: "https://m.stock.naver.com/domestic/stock/006800/total" },
+    ],
   }
 ];
 
