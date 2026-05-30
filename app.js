@@ -3377,6 +3377,7 @@ let speechSeekTimer = 0;
 let speechRunId = 0;
 let speechStartedAt = 0;
 let speechProgressAnchorIndex = 0;
+let speechProgressEndIndex = 0;
 let resizeRenderTimer = 0;
 let publishRefreshTimer = 0;
 let deskMenuMeasureTimer = 0;
@@ -4790,15 +4791,17 @@ function stopSpeechProgressTimer() {
   speechProgressTimer = 0;
 }
 
-function startSpeechProgressTimer(runId, anchorIndex = activeSpeechStartOffset) {
+function startSpeechProgressTimer(runId, anchorIndex = activeSpeechStartOffset, endIndex = activeArticleSpeechText.length) {
   stopSpeechProgressTimer();
   speechProgressAnchorIndex = getNormalizedSpeechIndex(anchorIndex);
+  speechProgressEndIndex = Math.max(speechProgressAnchorIndex, getNormalizedSpeechIndex(endIndex));
   speechStartedAt = Date.now();
   speechProgressTimer = window.setInterval(() => {
     if (runId !== speechRunId || !isArticleSpeechPlaying || !activeArticleSpeechText || isVoiceProgressSeeking) return;
+    if (isSpeechSupported() && window.speechSynthesis.paused) window.speechSynthesis.resume();
     const elapsedSeconds = Math.max(0, (Date.now() - speechStartedAt) / 1000);
     const estimatedIndex = Math.min(
-      Math.max(0, activeArticleSpeechText.length - 1),
+      Math.max(0, speechProgressEndIndex),
       speechProgressAnchorIndex + Math.floor(elapsedSeconds * SPEECH_ESTIMATED_CHARS_PER_SECOND),
     );
     if (estimatedIndex > activeSpeechCurrentIndex) updateVoiceProgress(estimatedIndex);
@@ -4842,35 +4845,29 @@ function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) 
   if (clearStatus) voiceStatusNode.textContent = "";
 }
 
-function createSpeechChunks(text = "", startOffset = 0) {
-  const maxChunkLength = 520;
+function createSpeechChunks(text = activeArticleSpeechText, startOffset = 0) {
   const chunks = [];
-  let cursor = Math.max(0, Math.min(text.length, Number(startOffset) || 0));
+  let cursor = 0;
+  const title = getNormalizedSpeechText(activePage?.title);
 
-  while (cursor < text.length) {
-    while (cursor < text.length && /\s/.test(text[cursor])) cursor += 1;
-    if (cursor >= text.length) break;
-
-    let end = Math.min(text.length, cursor + maxChunkLength);
-    if (end < text.length) {
-      const slice = text.slice(cursor, end);
-      const punctuationBreak = Math.max(
-        slice.lastIndexOf("."),
-        slice.lastIndexOf("?"),
-        slice.lastIndexOf("!"),
-        slice.lastIndexOf("\n"),
-      );
-      const fallbackBreak = slice.lastIndexOf(" ");
-      const breakAt = punctuationBreak > maxChunkLength * 0.35 ? punctuationBreak : fallbackBreak;
-      if (breakAt > 80) end = cursor + breakAt + 1;
-    }
-
-    const chunkText = text.slice(cursor, end).trim();
-    if (chunkText) chunks.push({ start: cursor, text: chunkText });
-    cursor = end;
+  if (title) {
+    chunks.push({ start: cursor, end: cursor + title.length, text: title });
+    cursor += title.length + 2;
   }
 
-  return chunks;
+  getArticleSpeechBlocks().forEach(({ text: blockText }) => {
+    if (!blockText) return;
+    chunks.push({ start: cursor, end: cursor + blockText.length, text: blockText });
+    cursor += blockText.length + 2;
+  });
+
+  if (!chunks.length && text) {
+    chunks.push({ start: 0, end: text.length, text });
+  }
+
+  const safeStartOffset = getNormalizedSpeechIndex(startOffset);
+  const startChunkIndex = chunks.findIndex((chunk) => safeStartOffset < chunk.end);
+  return startChunkIndex > 0 ? chunks.slice(startChunkIndex) : chunks;
 }
 
 function speakSpeechChunk(runId, chunkIndex = 0) {
@@ -4904,7 +4901,7 @@ function speakSpeechChunk(runId, chunkIndex = 0) {
     isArticleSpeechPlaying = true;
     voiceButtonNode.textContent = "음성읽기 중지하기";
     voiceStatusNode.textContent = "";
-    startSpeechProgressTimer(runId, chunk.start);
+    startSpeechProgressTimer(runId, chunk.start, chunk.end);
   };
   utterance.onboundary = (event) => {
     if (runId !== speechRunId || isArticleSpeechStopping) return;
@@ -4915,7 +4912,7 @@ function speakSpeechChunk(runId, chunkIndex = 0) {
   utterance.onend = () => {
     if (runId !== speechRunId || isArticleSpeechStopping) return;
     stopSpeechProgressTimer();
-    updateVoiceProgress(chunk.start + chunk.text.length);
+    updateVoiceProgress(chunk.end);
     window.setTimeout(() => speakSpeechChunk(runId, chunkIndex + 1), 80);
   };
   utterance.onerror = () => {
@@ -4927,7 +4924,8 @@ function speakSpeechChunk(runId, chunkIndex = 0) {
     if (!isArticleSpeechStopping) voiceStatusNode.textContent = "음성 읽기를 시작하지 못했습니다.";
   };
 
-  startSpeechProgressTimer(runId, chunk.start);
+  startSpeechProgressTimer(runId, chunk.start, chunk.end);
+  window.speechSynthesis.resume();
   window.speechSynthesis.speak(utterance);
 }
 
@@ -4953,8 +4951,8 @@ function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
   activeSpeechChunks = chunks;
   activeSpeechChunkIndex = 0;
   activeUtterance = null;
-  activeSpeechStartOffset = startOffset;
-  updateVoiceProgress(startOffset);
+  activeSpeechStartOffset = chunks[0].start;
+  updateVoiceProgress(chunks[0].start);
 
   window.speechSynthesis.cancel();
   voiceButtonNode.textContent = "음성읽기 중지하기";
