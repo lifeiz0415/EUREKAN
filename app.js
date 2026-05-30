@@ -1,6 +1,6 @@
 const MARKET_YIELD_DOLLAR_PORTFOLIO_2026_IMAGE = {
   src: "images/market-yield-dollar-portfolio-2026-1280.webp",
-  alt: "미국 장기금리와 달러 흐름을 함께 점검하는 시장 브리핑 이미지",
+  alt: "미국 장기금리와 달러 흐름을 함께 점검하는 금융시장 이미지",
   sourceUrl: "https://commons.wikimedia.org/wiki/File:1979_%2410%2C000_Treasury_Bond_.jpg",
   width: 1280,
   height: 720,
@@ -170,7 +170,8 @@ const featuredPages = [
   {
     slug: "market-yield-dollar-portfolio-2026",
     title: "미국 장기금리와 달러는 주식 포트폴리오의 할인율을 먼저 바꿉니다",
-    desk: "시장 브리핑",
+    desk: "핀테크",
+    author: "Ledger",
     publishedAt: "2026-05-30T17:58:00+09:00",
     summary: "미국 장기금리와 달러 강세는 성장주 밸류에이션, 원화 환산 수익률, 외국인 자금 흐름을 동시에 바꾸는 핵심 변수입니다.",
     image: MARKET_YIELD_DOLLAR_PORTFOLIO_2026_IMAGE,
@@ -180,7 +181,8 @@ const featuredPages = [
   {
     slug: "market-won-dollar-export-margin-2026",
     title: "원달러 환율은 수출주 이익보다 비용 구조를 먼저 확인하게 만듭니다",
-    desk: "시장 브리핑",
+    desk: "운송·물류",
+    author: "Harbor",
     publishedAt: "2026-05-30T17:57:00+09:00",
     summary: "원달러 환율 상승은 수출주에 무조건 호재가 아니라 원재료, 달러 부채, 해외 생산 비중에 따라 이익률을 다르게 만듭니다.",
     image: MARKET_WON_DOLLAR_EXPORT_MARGIN_2026_IMAGE,
@@ -190,7 +192,8 @@ const featuredPages = [
   {
     slug: "market-oil-inflation-rate-path-2026",
     title: "유가 상승은 에너지주보다 물가와 금리 경로를 먼저 흔듭니다",
-    desk: "시장 브리핑",
+    desk: "전통 에너지",
+    author: "Flint",
     publishedAt: "2026-05-30T17:56:00+09:00",
     summary: "유가 상승은 에너지 기업 실적보다 소비 여력, 운송비, 중앙은행 금리 판단을 먼저 흔들며 주식시장 할인율을 바꿉니다.",
     image: MARKET_OIL_INFLATION_RATE_PATH_2026_IMAGE,
@@ -200,7 +203,8 @@ const featuredPages = [
   {
     slug: "us-stocks-nvidia-ai-margin-2026",
     title: "엔비디아 주식은 AI 매출보다 마진과 고객 투자 속도를 함께 봐야 합니다",
-    desk: "미국주식",
+    desk: "인공지능",
+    author: "Aiden",
     publishedAt: "2026-05-30T17:55:00+09:00",
     summary: "엔비디아는 AI 데이터센터 매출이 강하지만 주가 판단은 매출 성장률보다 매출총이익률, 고객 집중, 차세대 제품 전환 비용에 달려 있습니다.",
     image: US_STOCKS_NVIDIA_AI_MARGIN_2026_IMAGE,
@@ -210,7 +214,8 @@ const featuredPages = [
   {
     slug: "us-stocks-apple-ai-iphone-cycle-2026",
     title: "애플 주식은 AI 기능보다 아이폰 교체 주기가 실제 매출을 만듭니다",
-    desk: "미국주식",
+    desk: "하드웨어",
+    author: "Circuit",
     publishedAt: "2026-05-30T17:54:00+09:00",
     summary: "애플의 AI 기능은 관심을 끌지만 주가의 핵심은 아이폰 교체 주기, 서비스 매출률, 중국과 프리미엄 시장의 수요 회복입니다.",
     image: US_STOCKS_APPLE_AI_IPHONE_CYCLE_2026_IMAGE,
@@ -220,7 +225,8 @@ const featuredPages = [
   {
     slug: "us-stocks-amazon-aws-retail-margin-2026",
     title: "아마존 주식은 AWS 성장률보다 리테일 마진 회복을 같이 봐야 합니다",
-    desk: "미국주식",
+    desk: "전자상거래",
+    author: "Cart",
     publishedAt: "2026-05-30T17:53:00+09:00",
     summary: "아마존은 AWS가 이익의 중심이지만 주가 재평가는 리테일 물류 효율, 광고 매출, 소비 둔화 방어력이 함께 맞을 때 강해집니다.",
     image: US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE,
@@ -230,7 +236,8 @@ const featuredPages = [
   {
     slug: "korean-stocks-samsung-memory-cycle-2026",
     title: "삼성전자 주식은 메모리 가격보다 현금흐름 회복 속도를 봐야 합니다",
-    desk: "한국주식",
+    desk: "반도체",
+    author: "Silica",
     publishedAt: "2026-05-30T17:52:00+09:00",
     summary: "삼성전자 주식은 D램과 낸드 가격 회복뿐 아니라 HBM 경쟁력, 설비투자 효율, 재고 정상화와 자유현금흐름 회복을 함께 봐야 합니다.",
     image: KOREAN_STOCKS_SAMSUNG_MEMORY_CYCLE_2026_IMAGE,
@@ -240,7 +247,8 @@ const featuredPages = [
   {
     slug: "korean-stocks-hyundai-hybrid-export-2026",
     title: "현대차 주식은 하이브리드 판매와 미국 인센티브를 같이 봐야 합니다",
-    desk: "한국주식",
+    desk: "전기차",
+    author: "Volt",
     publishedAt: "2026-05-30T17:51:00+09:00",
     summary: "현대차 주식은 전기차 성장률만이 아니라 하이브리드 판매, 미국 시장 인센티브, 환율과 믹스 개선이 이익률을 지키는지 봐야 합니다.",
     image: KOREAN_STOCKS_HYUNDAI_HYBRID_EXPORT_2026_IMAGE,
@@ -250,7 +258,8 @@ const featuredPages = [
   {
     slug: "korean-stocks-skhynix-hbm-customer-risk-2026",
     title: "SK하이닉스 주식은 HBM 성장보다 고객 집중 리스크를 함께 봐야 합니다",
-    desk: "한국주식",
+    desk: "반도체",
+    author: "Silica",
     publishedAt: "2026-05-30T17:50:00+09:00",
     summary: "SK하이닉스는 HBM 경쟁력이 강하지만 투자 판단은 고객 집중, 차세대 제품 수율, 범용 메모리 회복과 설비투자 부담을 함께 봐야 합니다.",
     image: KOREAN_STOCKS_SKHYNIX_HBM_CUSTOMER_RISK_2026_IMAGE,
@@ -260,7 +269,8 @@ const featuredPages = [
   {
     slug: "theme-ai-data-center-power-grid-2026",
     title: "AI 데이터센터 테마는 GPU보다 전력망과 냉각 병목을 먼저 봐야 합니다",
-    desk: "산업·테마",
+    desk: "클라우드 컴퓨팅",
+    author: "Nimbus",
     publishedAt: "2026-05-30T17:49:00+09:00",
     summary: "AI 데이터센터 투자는 GPU 수요만이 아니라 전력망, 변압기, 냉각, 부지 인허가와 장기 전력 계약이 수익성을 가르는 테마입니다.",
     image: THEME_AI_DATA_CENTER_POWER_GRID_2026_IMAGE,
@@ -270,7 +280,8 @@ const featuredPages = [
   {
     slug: "theme-defense-export-backlog-cashflow-2026",
     title: "방산주는 수출 수주잔고보다 납품과 현금 회수 속도가 중요합니다",
-    desk: "산업·테마",
+    desk: "방산·항공우주",
+    author: "Vector",
     publishedAt: "2026-05-30T17:48:00+09:00",
     summary: "방산주는 수출 계약 규모가 커 보여도 실제 납품 일정, 선급금, 원가 상승, 환율과 정부 승인 리스크가 현금흐름을 결정합니다.",
     image: THEME_DEFENSE_EXPORT_BACKLOG_CASHFLOW_2026_IMAGE,
@@ -280,7 +291,8 @@ const featuredPages = [
   {
     slug: "theme-biotech-cdmo-order-cycle-2026",
     title: "바이오 CDMO 테마는 공장 증설보다 장기 수주와 가동률이 핵심입니다",
-    desk: "산업·테마",
+    desk: "헬스케어·바이오테크",
+    author: "Genome",
     publishedAt: "2026-05-30T17:47:00+09:00",
     summary: "바이오 CDMO 기업은 공장 증설 뉴스보다 장기 위탁생산 계약, 가동률, 품질 인증, 고객사의 임상·상업화 일정이 실적을 좌우합니다.",
     image: THEME_BIOTECH_CDMO_ORDER_CYCLE_2026_IMAGE,
@@ -290,7 +302,8 @@ const featuredPages = [
   {
     slug: "earnings-operating-margin-free-cash-flow-2026",
     title: "영업이익률과 자유현금흐름은 좋은 실적과 비싼 실적을 가릅니다",
-    desk: "실적분석",
+    desk: "빅데이터",
+    author: "Delta",
     publishedAt: "2026-05-30T17:46:00+09:00",
     summary: "실적 발표에서 매출 성장보다 영업이익률과 자유현금흐름을 함께 보면 일회성 호재와 지속 가능한 이익을 구분할 수 있습니다.",
     image: EARNINGS_OPERATING_MARGIN_FREE_CASH_FLOW_2026_IMAGE,
@@ -300,7 +313,8 @@ const featuredPages = [
   {
     slug: "earnings-guidance-revenue-quality-2026",
     title: "가이던스는 매출 성장률보다 경영진의 자신감을 읽는 자료입니다",
-    desk: "실적분석",
+    desk: "빅데이터",
+    author: "Delta",
     publishedAt: "2026-05-30T17:45:00+09:00",
     summary: "기업 가이던스는 다음 분기 매출 숫자보다 수요 가시성, 비용 통제, 재고 조정, 경영진의 표현 변화에서 더 많은 정보를 줍니다.",
     image: EARNINGS_GUIDANCE_REVENUE_QUALITY_2026_IMAGE,
@@ -310,7 +324,8 @@ const featuredPages = [
   {
     slug: "earnings-inventory-surprise-risk-2026",
     title: "실적 서프라이즈 뒤에는 재고와 매출채권을 반드시 확인해야 합니다",
-    desk: "실적분석",
+    desk: "운송·물류",
+    author: "Harbor",
     publishedAt: "2026-05-30T17:44:00+09:00",
     summary: "실적 서프라이즈가 나와도 재고와 매출채권이 빠르게 늘면 수요의 질과 현금 회수에 문제가 생길 수 있어 추가 확인이 필요합니다.",
     image: EARNINGS_INVENTORY_SURPRISE_RISK_2026_IMAGE,
@@ -320,7 +335,8 @@ const featuredPages = [
   {
     slug: "etf-covered-call-income-risk-2026",
     title: "커버드콜 ETF는 월분배금보다 상승 제한과 원금 변동을 먼저 봐야 합니다",
-    desk: "ETF·배당",
+    desk: "핀테크",
+    author: "Ledger",
     publishedAt: "2026-05-30T17:43:00+09:00",
     summary: "커버드콜 ETF는 높은 월분배금이 매력적이지만 옵션 매도 구조 때문에 상승 참여가 제한되고 원금 변동과 과세 효과를 함께 봐야 합니다.",
     image: ETF_COVERED_CALL_INCOME_RISK_2026_IMAGE,
@@ -330,7 +346,8 @@ const featuredPages = [
   {
     slug: "etf-dividend-growth-payout-ratio-2026",
     title: "배당성장주는 배당률보다 배당성향과 현금흐름이 먼저입니다",
-    desk: "ETF·배당",
+    desk: "핀테크",
+    author: "Ledger",
     publishedAt: "2026-05-30T17:42:00+09:00",
     summary: "배당성장 투자는 현재 배당률보다 배당성향, 자유현금흐름, 부채 부담, 이익 변동성을 확인해야 오래 지속될 수 있습니다.",
     image: ETF_DIVIDEND_GROWTH_PAYOUT_RATIO_2026_IMAGE,
@@ -340,7 +357,8 @@ const featuredPages = [
   {
     slug: "etf-bond-duration-rate-cycle-2026",
     title: "채권 ETF는 금리 인하 기대보다 듀레이션과 손실 폭을 먼저 봐야 합니다",
-    desk: "ETF·배당",
+    desk: "부동산·리츠",
+    author: "Brick",
     publishedAt: "2026-05-30T17:41:00+09:00",
     summary: "채권 ETF는 금리 인하 기대만 보고 고르면 위험하며 듀레이션, 신용위험, 환율, 분배금과 가격 변동을 함께 확인해야 합니다.",
     image: ETF_BOND_DURATION_RATE_CYCLE_2026_IMAGE,
@@ -350,7 +368,8 @@ const featuredPages = [
   {
     slug: "strategy-portfolio-cash-rebalancing-2026",
     title: "포트폴리오 리밸런싱은 수익률 예측보다 원래 비중을 지키는 훈련입니다",
-    desk: "투자전략",
+    desk: "핀테크",
+    author: "Ledger",
     publishedAt: "2026-05-30T17:40:00+09:00",
     summary: "리밸런싱은 시장을 맞히는 기술이 아니라 주식, 채권, 현금의 원래 비중을 지키며 위험을 관리하는 반복 절차입니다.",
     image: STRATEGY_PORTFOLIO_CASH_REBALANCING_2026_IMAGE,
@@ -360,7 +379,8 @@ const featuredPages = [
   {
     slug: "strategy-tenbagger-quality-checklist-2026",
     title: "텐베거 후보는 매출 성장보다 시장 크기와 이익 전환 속도를 함께 봐야 합니다",
-    desk: "투자전략",
+    desk: "소프트웨어",
+    author: "Kernel",
     publishedAt: "2026-05-30T17:39:00+09:00",
     summary: "텐베거 후보를 찾을 때는 높은 매출 성장률만이 아니라 시장 크기, 가격 결정력, 반복 매출, 이익 전환 속도와 희석 위험을 함께 확인해야 합니다.",
     image: STRATEGY_TENBAGGER_QUALITY_CHECKLIST_2026_IMAGE,
@@ -370,7 +390,8 @@ const featuredPages = [
   {
     slug: "strategy-loss-cut-position-sizing-2026",
     title: "손절 기준과 포지션 사이징은 좋은 종목보다 먼저 정해야 합니다",
-    desk: "투자전략",
+    desk: "핀테크",
+    author: "Ledger",
     publishedAt: "2026-05-30T17:38:00+09:00",
     summary: "좋은 종목을 고르는 일보다 먼저 손실 허용 범위, 포지션 크기, 추가 매수 조건, 매도 기준을 정해야 포트폴리오 생존력이 높아집니다.",
     image: STRATEGY_LOSS_CUT_POSITION_SIZING_2026_IMAGE,
@@ -379,24 +400,130 @@ const featuredPages = [
   }
 ];
 
+const THEME_DESKS = [
+  "인공지능",
+  "클라우드 컴퓨팅",
+  "전기차",
+  "운송·물류",
+  "우주 기술",
+  "재생에너지",
+  "전통 에너지",
+  "반도체",
+  "사이버보안",
+  "산업 자동화",
+  "로보틱스",
+  "나노기술",
+  "사물인터넷",
+  "에너지 원자재",
+  "농업·식품",
+  "소프트웨어",
+  "양자컴퓨팅",
+  "방산·항공우주",
+  "통신",
+  "자율 시스템",
+  "금속 원자재",
+  "환경 지속가능성",
+  "하드웨어",
+  "가상·증강현실",
+  "전자상거래",
+  "디지털 엔터테인먼트",
+  "소비재",
+  "스마트홈",
+  "헬스케어·바이오테크",
+  "핀테크",
+  "생체인식",
+  "빅데이터",
+  "소셜미디어",
+  "부동산·리츠",
+  "웨어러블",
+  "에듀테크",
+  "고령화",
+  "건강식품",
+  "암호화폐·블록체인",
+];
+
 const deskEmoji = {
-  "시장 브리핑": "💹",
-  "미국주식": "🇺🇸",
-  "한국주식": "🇰🇷",
-  "산업·테마": "🏭",
-  "실적분석": "📊",
-  "ETF·배당": "💵",
-  "투자전략": "🧭",
+  "인공지능": "🤖",
+  "클라우드 컴퓨팅": "☁️",
+  "전기차": "🔋",
+  "운송·물류": "🚚",
+  "우주 기술": "🚀",
+  "재생에너지": "🌞",
+  "전통 에너지": "🛢️",
+  "반도체": "🧩",
+  "사이버보안": "🛡️",
+  "산업 자동화": "🏗️",
+  "로보틱스": "🦾",
+  "나노기술": "🔬",
+  "사물인터넷": "📡",
+  "에너지 원자재": "⛏️",
+  "농업·식품": "🌾",
+  "소프트웨어": "💻",
+  "양자컴퓨팅": "⚛️",
+  "방산·항공우주": "🛫",
+  "통신": "📶",
+  "자율 시스템": "🛰️",
+  "금속 원자재": "⚙️",
+  "환경 지속가능성": "🌱",
+  "하드웨어": "🖥️",
+  "가상·증강현실": "🥽",
+  "전자상거래": "🛒",
+  "디지털 엔터테인먼트": "🎬",
+  "소비재": "🛍️",
+  "스마트홈": "🏠",
+  "헬스케어·바이오테크": "🧬",
+  "핀테크": "💳",
+  "생체인식": "🪪",
+  "빅데이터": "📊",
+  "소셜미디어": "💬",
+  "부동산·리츠": "🏢",
+  "웨어러블": "⌚",
+  "에듀테크": "🎓",
+  "고령화": "🧓",
+  "건강식품": "🥗",
+  "암호화폐·블록체인": "₿",
 };
 
 const deskAgentNames = {
-  "시장 브리핑": ["Macro", "Rates", "Flow"],
-  "미국주식": ["Morgan", "Catherine", "Howard"],
-  "한국주식": ["Mirae", "Jisoo", "Dohyun"],
-  "산업·테마": ["Mason", "Ingrid", "Rowan"],
-  "실적분석": ["Clara", "Edgar", "Nora"],
-  "ETF·배당": ["Ivy", "Nolan", "Dana"],
-  "투자전략": ["Kelly", "Ray", "June"],
+  "인공지능": ["Aiden"],
+  "클라우드 컴퓨팅": ["Nimbus"],
+  "전기차": ["Volt"],
+  "운송·물류": ["Harbor"],
+  "우주 기술": ["Orion"],
+  "재생에너지": ["Sol"],
+  "전통 에너지": ["Flint"],
+  "반도체": ["Silica"],
+  "사이버보안": ["Cipher"],
+  "산업 자동화": ["Gear"],
+  "로보틱스": ["Axis"],
+  "나노기술": ["Nano"],
+  "사물인터넷": ["Mesh"],
+  "에너지 원자재": ["Quarry"],
+  "농업·식품": ["Terra"],
+  "소프트웨어": ["Kernel"],
+  "양자컴퓨팅": ["Qubit"],
+  "방산·항공우주": ["Vector"],
+  "통신": ["Signal"],
+  "자율 시스템": ["Pilot"],
+  "금속 원자재": ["Forge"],
+  "환경 지속가능성": ["Grove"],
+  "하드웨어": ["Circuit"],
+  "가상·증강현실": ["Holo"],
+  "전자상거래": ["Cart"],
+  "디지털 엔터테인먼트": ["Studio"],
+  "소비재": ["Shelf"],
+  "스마트홈": ["Hearth"],
+  "헬스케어·바이오테크": ["Genome"],
+  "핀테크": ["Ledger"],
+  "생체인식": ["Biokey"],
+  "빅데이터": ["Delta"],
+  "소셜미디어": ["Pulse"],
+  "부동산·리츠": ["Brick"],
+  "웨어러블": ["Band"],
+  "에듀테크": ["Tutor"],
+  "고령화": ["Silver"],
+  "건강식품": ["Nutri"],
+  "암호화폐·블록체인": ["Chain"],
 };
 
 const CARD_MIN_WIDTH = 280;
@@ -410,7 +537,7 @@ const SCHEMA_CONTEXT = "https://schema.org";
 const SEO_LANGUAGE = "ko-KR";
 const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
-const DEFAULT_SEO_DESCRIPTION = "Eurekan은 주식투자에 도움이 되는 시장 브리핑, 미국주식, 한국주식, 산업·테마, 실적분석, ETF·배당, 투자전략을 장문으로 정리하는 투자 정보 매거진입니다.";
+const DEFAULT_SEO_DESCRIPTION = "Eurekan은 인공지능, 반도체, 전기차, 클라우드, 방산, 바이오, 핀테크 등 39개 투자 테마를 장문으로 정리하는 투자 정보 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
@@ -625,7 +752,7 @@ let articleTocItems = [];
 let articleTocHeadings = [];
 const sectionPageState = new Map();
 const DESK_MENU_COLLAPSE_QUERY = "(max-width: 520px)";
-const HOME_DESK_PRIORITY = ["시장 브리핑"];
+const HOME_DESK_PRIORITY = ["인공지능", "반도체", "전기차", "클라우드 컴퓨팅", "방산·항공우주"];
 const BASE_OPEN_GRAPH_META = {
   "og:locale": "ko_KR",
   "og:site_name": SITE_NAME,
@@ -645,14 +772,55 @@ const SPEECH_HIGHLIGHT_EXCLUDE_SELECTOR = "figcaption, script, noscript, iframe,
 
 function normalizeDesk(desk = "") {
   const normalizedDesk = String(desk).trim();
-  if (["마켓", "시장", "경제", "시장브리핑"].includes(normalizedDesk)) return "시장 브리핑";
-  if (["미국 주식", "미국증시"].includes(normalizedDesk)) return "미국주식";
-  if (["한국 주식", "국내주식", "국내 주식", "한국증시"].includes(normalizedDesk)) return "한국주식";
-  if (["산업", "테마", "산업테마", "산업·테마"].includes(normalizedDesk)) return "산업·테마";
-  if (["실적", "실적 분석", "실적분석"].includes(normalizedDesk)) return "실적분석";
-  if (["ETF", "배당", "ETF·배당", "ETF/배당"].includes(normalizedDesk)) return "ETF·배당";
-  if (["전략", "투자 전략", "투자전략"].includes(normalizedDesk)) return "투자전략";
-  return normalizedDesk;
+  const aliases = {
+    "AI": "인공지능",
+    "인공 지능": "인공지능",
+    "클라우드": "클라우드 컴퓨팅",
+    "EV": "전기차",
+    "전기 자동차": "전기차",
+    "물류": "운송·물류",
+    "운송": "운송·물류",
+    "우주": "우주 기술",
+    "재생 에너지": "재생에너지",
+    "신재생에너지": "재생에너지",
+    "석유": "전통 에너지",
+    "에너지": "전통 에너지",
+    "보안": "사이버보안",
+    "자동화": "산업 자동화",
+    "IoT": "사물인터넷",
+    "IOT": "사물인터넷",
+    "원자재": "에너지 원자재",
+    "농업": "농업·식품",
+    "식품": "농업·식품",
+    "양자": "양자컴퓨팅",
+    "방산": "방산·항공우주",
+    "항공우주": "방산·항공우주",
+    "자율주행": "자율 시스템",
+    "금속": "금속 원자재",
+    "ESG": "환경 지속가능성",
+    "VR": "가상·증강현실",
+    "AR": "가상·증강현실",
+    "이커머스": "전자상거래",
+    "전자 상거래": "전자상거래",
+    "엔터테인먼트": "디지털 엔터테인먼트",
+    "바이오": "헬스케어·바이오테크",
+    "헬스케어": "헬스케어·바이오테크",
+    "생명공학": "헬스케어·바이오테크",
+    "금융기술": "핀테크",
+    "빅 데이터": "빅데이터",
+    "SNS": "소셜미디어",
+    "소셜 미디어": "소셜미디어",
+    "리츠": "부동산·리츠",
+    "부동산": "부동산·리츠",
+    "웨어러블 기기": "웨어러블",
+    "교육기술": "에듀테크",
+    "시니어": "고령화",
+    "건강 식품": "건강식품",
+    "크립토": "암호화폐·블록체인",
+    "암호화폐": "암호화폐·블록체인",
+    "블록체인": "암호화폐·블록체인",
+  };
+  return aliases[normalizedDesk] || normalizedDesk;
 }
 
 function createEmptyDataStore() {
@@ -1301,7 +1469,7 @@ function getCurrentRoute() {
 }
 
 function getDeskList() {
-  return [...new Set(getPublishedPages().map((page) => page.desk))];
+  return [...THEME_DESKS];
 }
 
 function getDeskLabel(desk) {
@@ -1310,6 +1478,9 @@ function getDeskLabel(desk) {
 
 function getDeskAgentName(pageOrDesk) {
   const desk = typeof pageOrDesk === "object" && pageOrDesk !== null ? pageOrDesk.desk : pageOrDesk;
+  if (typeof pageOrDesk === "object" && pageOrDesk !== null && pageOrDesk.author) {
+    return pageOrDesk.author;
+  }
   const agents = deskAgentNames[desk] || deskAgentNames[normalizeDesk(desk)] || [];
   if (!agents.length) return "Eurekan";
   if (typeof pageOrDesk !== "object" || pageOrDesk === null) return agents[0];
@@ -1555,9 +1726,9 @@ function renderCard(page, extraClass = "", duplicate = false, { priority = false
 }
 
 function renderDeskSections(items) {
-  const desks = prioritizeHomeDesks(getDeskList());
   const sectionPageSize = getSectionPageSize();
   const visibleItems = getPublishedPages(items);
+  const desks = prioritizeHomeDesks(getDeskList()).filter((desk) => visibleItems.some((page) => page.desk === desk));
   return desks
     .map((desk, deskIndex) => {
       const deskId = `desk-${encodeURIComponent(desk)}`;
