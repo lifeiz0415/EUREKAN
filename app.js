@@ -950,6 +950,318 @@ const CRYPTO_BLOCKCHAIN_RISK_CYCLE_2026_IMAGE = {
   height: 720,
 };
 
+const ARTIFICIAL_INTELLIGENCE_INFERENCE_UNIT_ECONOMICS_2026_IMAGE = {
+  src: "images/artificial-intelligence-inference-unit-economics-2026-1280.webp",
+  alt: "인공지능 투자는 모델 성능보다 추론 단가와 고객 사용 시간이 먼저 숫자로 드러납니다 내용을 설명하는 인공지능 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/48741368@N00/400107233",
+  width: 1280,
+  height: 720,
+};
+
+const CLOUD_COMPUTING_CAPEX_UTILIZATION_2026_IMAGE = {
+  src: "images/cloud-computing-capex-utilization-2026-1280.webp",
+  alt: "클라우드 컴퓨팅은 서버 증설 속도보다 사용량 매출의 질을 먼저 봐야 합니다 내용을 설명하는 클라우드 컴퓨팅 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/45778851@N00/3025911233",
+  width: 1280,
+  height: 720,
+};
+
+const ELECTRIC_VEHICLE_BATTERY_INVENTORY_MARGIN_2026_IMAGE = {
+  src: "images/electric-vehicle-battery-inventory-margin-2026-1280.webp",
+  alt: "전기차 투자는 판매 대수보다 배터리 원가와 재고 회전이 먼저 마진을 가릅니다 내용을 설명하는 전기차 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/44124348109@N01/6220891466",
+  width: 1280,
+  height: 720,
+};
+
+const TRANSPORT_LOGISTICS_CONTRACT_FREIGHT_2026_IMAGE = {
+  src: "images/transport-logistics-contract-freight-2026-1280.webp",
+  alt: "운송·물류 투자는 물동량보다 계약 운임과 빈차 시간을 먼저 확인해야 합니다 내용을 설명하는 운송·물류 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/88483799@N00/6310012853",
+  width: 1280,
+  height: 720,
+};
+
+const SPACE_TECHNOLOGY_LAUNCH_INSURANCE_BACKLOG_2026_IMAGE = {
+  src: "images/space-technology-launch-insurance-backlog-2026-1280.webp",
+  alt: "우주 기술은 발사 성공보다 보험료와 장기 서비스 계약이 현금흐름을 가릅니다 내용을 설명하는 우주 기술 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/44124348109@N01/363783371",
+  width: 1280,
+  height: 720,
+};
+
+const RENEWABLE_ENERGY_PPA_GRID_CONNECTION_2026_IMAGE = {
+  src: "images/renewable-energy-ppa-grid-connection-2026-1280.webp",
+  alt: "재생에너지는 설치량보다 전력구매계약 단가와 계통 접속이 수익률을 정합니다 내용을 설명하는 재생에너지 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/126337375@N05/15986041648",
+  width: 1280,
+  height: 720,
+};
+
+const TRADITIONAL_ENERGY_REFINING_CASH_RETURN_2026_IMAGE = {
+  src: "images/traditional-energy-refining-cash-return-2026-1280.webp",
+  alt: "전통 에너지는 유가보다 정제 마진과 배당 재원이 오래가는지가 핵심입니다 내용을 설명하는 전통 에너지 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/12806074@N08/2480070660",
+  width: 1280,
+  height: 720,
+};
+
+const SEMICONDUCTOR_PACKAGING_CUSTOMER_PREPAYMENT_2026_IMAGE = {
+  src: "images/semiconductor-packaging-customer-prepayment-2026-1280.webp",
+  alt: "반도체 투자는 출하량보다 패키징 병목과 고객 선급금이 먼저 움직입니다 내용을 설명하는 반도체 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/50424755@N04/5609916000",
+  width: 1280,
+  height: 720,
+};
+
+const CYBERSECURITY_RENEWAL_PLATFORM_SPEND_2026_IMAGE = {
+  src: "images/cybersecurity-renewal-platform-spend-2026-1280.webp",
+  alt: "사이버보안은 해킹 뉴스보다 갱신율과 플랫폼 통합 속도가 실적을 만듭니다 내용을 설명하는 사이버보안 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/30369883@N03/3639507323",
+  width: 1280,
+  height: 720,
+};
+
+const INDUSTRIAL_AUTOMATION_FACTORY_SERVICE_REVENUE_2026_IMAGE = {
+  src: "images/industrial-automation-factory-service-revenue-2026-1280.webp",
+  alt: "산업 자동화는 로봇 수요보다 공장 투자 재개와 서비스 매출을 봐야 합니다 내용을 설명하는 산업 자동화 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/44124348109@N01/6858583426",
+  width: 1280,
+  height: 720,
+};
+
+const ROBOTICS_FIELD_REORDER_MAINTENANCE_2026_IMAGE = {
+  src: "images/robotics-field-reorder-maintenance-2026-1280.webp",
+  alt: "로보틱스는 시연 장면보다 현장 재주문과 유지보수 매출이 진짜 신호입니다 내용을 설명하는 로보틱스 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/132593559@N07/17809570293",
+  width: 1280,
+  height: 720,
+};
+
+const NANOTECHNOLOGY_YIELD_CUSTOMER_QUALIFICATION_2026_IMAGE = {
+  src: "images/nanotechnology-yield-customer-qualification-2026-1280.webp",
+  alt: "나노기술은 소재 성능보다 양산 수율과 고객 인증 시간이 투자 성패를 가릅니다 내용을 설명하는 나노기술 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/93452909@N00/176058851",
+  width: 1280,
+  height: 720,
+};
+
+const INTERNET_OF_THINGS_DEVICE_DATA_FEES_2026_IMAGE = {
+  src: "images/internet-of-things-device-data-fees-2026-1280.webp",
+  alt: "사물인터넷은 연결 기기 수보다 보안 업데이트와 데이터 과금이 이익을 만듭니다 내용을 설명하는 사물인터넷 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/67540051@N03/13996565942",
+  width: 1280,
+  height: 720,
+};
+
+const ENERGY_COMMODITIES_CONTRACT_SUPPLY_DELAY_2026_IMAGE = {
+  src: "images/energy-commodities-contract-supply-delay-2026-1280.webp",
+  alt: "에너지 원자재는 현물 가격보다 장기 계약과 증설 지연을 함께 봐야 합니다 내용을 설명하는 에너지 원자재 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/35068899@N03/4770416983",
+  width: 1280,
+  height: 720,
+};
+
+const AGRICULTURE_FOOD_PRICING_REPEAT_PURCHASE_2026_IMAGE = {
+  src: "images/agriculture-food-pricing-repeat-purchase-2026-1280.webp",
+  alt: "농업·식품은 곡물 가격보다 원가 전가력과 반복 구매율이 주가를 지탱합니다 내용을 설명하는 농업·식품 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/30552029@N00/28880963774",
+  width: 1280,
+  height: 720,
+};
+
+const SOFTWARE_CHURN_SEAT_EXPANSION_2026_IMAGE = {
+  src: "images/software-churn-seat-expansion-2026-1280.webp",
+  alt: "소프트웨어 투자는 매출 성장보다 해지율과 좌석 확장이 먼저 이익을 설명합니다 내용을 설명하는 소프트웨어 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/44124348109@N01/43514737601",
+  width: 1280,
+  height: 720,
+};
+
+const QUANTUM_COMPUTING_PILOT_CONTRACTS_2026_IMAGE = {
+  src: "images/quantum-computing-pilot-contracts-2026-1280.webp",
+  alt: "양자컴퓨팅은 기술 발표보다 고객 파일럿이 유료 계약으로 바뀌는지를 봐야 합니다 내용을 설명하는 양자컴퓨팅 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/194516106@N05/53135634244",
+  width: 1280,
+  height: 720,
+};
+
+const DEFENSE_AEROSPACE_DELIVERY_CASH_CONVERSION_2026_IMAGE = {
+  src: "images/defense-aerospace-delivery-cash-conversion-2026-1280.webp",
+  alt: "방산·항공우주는 수주잔고보다 납품 속도와 현금 회수가 더 중요합니다 내용을 설명하는 방산·항공우주 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/47430793@N08/48948343672",
+  width: 1280,
+  height: 720,
+};
+
+const TELECOMMUNICATIONS_SPECTRUM_CAPEX_DIVIDEND_2026_IMAGE = {
+  src: "images/telecommunications-spectrum-capex-dividend-2026-1280.webp",
+  alt: "통신 투자는 가입자 수보다 주파수 비용과 설비투자 부담을 먼저 봐야 합니다 내용을 설명하는 통신 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/89165847@N00/5047039173",
+  width: 1280,
+  height: 720,
+};
+
+const AUTONOMOUS_SYSTEMS_PERMIT_LIABILITY_2026_IMAGE = {
+  src: "images/autonomous-systems-permit-liability-2026-1280.webp",
+  alt: "자율 시스템은 주행거리보다 보험 책임과 상용 운행 허가가 먼저입니다 내용을 설명하는 자율 시스템 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/44124348109@N01/5499949739",
+  width: 1280,
+  height: 720,
+};
+
+const METAL_COMMODITIES_ORE_GRADE_PERMIT_2026_IMAGE = {
+  src: "images/metal-commodities-ore-grade-permit-2026-1280.webp",
+  alt: "금속 원자재는 구리 가격보다 광산 품위와 증설 허가가 공급을 좌우합니다 내용을 설명하는 금속 원자재 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/82955120@N05/10788211895",
+  width: 1280,
+  height: 720,
+};
+
+const ENVIRONMENT_SUSTAINABILITY_WASTE_PRICING_REGULATION_2026_IMAGE = {
+  src: "images/environment-sustainability-waste-pricing-regulation-2026-1280.webp",
+  alt: "환경 지속가능성은 친환경 구호보다 처리 단가와 규제 의무가 매출을 만듭니다 내용을 설명하는 환경 지속가능성 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/193840292@N08/51939979863",
+  width: 1280,
+  height: 720,
+};
+
+const HARDWARE_REPLACEMENT_CYCLE_COMPONENT_COST_2026_IMAGE = {
+  src: "images/hardware-replacement-cycle-component-cost-2026-1280.webp",
+  alt: "하드웨어 투자는 신제품보다 부품 원가와 교체 주기 회복을 먼저 봐야 합니다 내용을 설명하는 하드웨어 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/83542829@N00/2830319467",
+  width: 1280,
+  height: 720,
+};
+
+const VIRTUAL_AUGMENTED_REALITY_CONTENT_RETENTION_2026_IMAGE = {
+  src: "images/virtual-augmented-reality-content-retention-2026-1280.webp",
+  alt: "가상·증강현실은 기기 출시보다 콘텐츠 체류 시간과 개발자 생태계가 관건입니다 내용을 설명하는 가상·증강현실 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/24539921@N08/2444155973",
+  width: 1280,
+  height: 720,
+};
+
+const ECOMMERCE_LOGISTICS_AD_MARGIN_2026_IMAGE = {
+  src: "images/ecommerce-logistics-ad-margin-2026-1280.webp",
+  alt: "전자상거래는 거래액보다 물류비와 광고 매출의 균형을 봐야 합니다 내용을 설명하는 전자상거래 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/64018555@N03/36906693900",
+  width: 1280,
+  height: 720,
+};
+
+const DIGITAL_ENTERTAINMENT_IP_REPEAT_SPENDING_2026_IMAGE = {
+  src: "images/digital-entertainment-ip-repeat-spending-2026-1280.webp",
+  alt: "디지털 엔터테인먼트는 흥행작보다 반복 결제와 IP 확장력이 중요합니다 내용을 설명하는 디지털 엔터테인먼트 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/30346812@N07/3201023881",
+  width: 1280,
+  height: 720,
+};
+
+const CONSUMER_GOODS_PRICING_VOLUME_RESILIENCE_2026_IMAGE = {
+  src: "images/consumer-goods-pricing-volume-resilience-2026-1280.webp",
+  alt: "소비재 투자는 브랜드 인지도보다 가격 인상 후 판매량이 버티는지가 핵심입니다 내용을 설명하는 소비재 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/58606771@N00/4975298471",
+  width: 1280,
+  height: 720,
+};
+
+const SMART_HOME_STANDARD_SUBSCRIPTION_2026_IMAGE = {
+  src: "images/smart-home-standard-subscription-2026-1280.webp",
+  alt: "스마트홈은 기기 보급보다 연결 표준과 구독 서비스가 수익성을 가릅니다 내용을 설명하는 스마트홈 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/75654647@N05/15174524016",
+  width: 1280,
+  height: 720,
+};
+
+const HEALTHCARE_BIOTECH_REIMBURSEMENT_CAPACITY_2026_IMAGE = {
+  src: "images/healthcare-biotech-reimbursement-capacity-2026-1280.webp",
+  alt: "헬스케어·바이오테크는 임상 뉴스보다 보험 적용과 생산 능력이 더 오래 갑니다 내용을 설명하는 헬스케어·바이오테크 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/130921112@N07/51582230748",
+  width: 1280,
+  height: 720,
+};
+
+const FINTECH_CREDIT_LOSS_FUNDING_COST_2026_IMAGE = {
+  src: "images/fintech-credit-loss-funding-cost-2026-1280.webp",
+  alt: "핀테크는 결제액보다 연체율과 자금 조달 비용이 먼저 주가를 흔듭니다 내용을 설명하는 핀테크 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/111692634@N04/15327728653",
+  width: 1280,
+  height: 720,
+};
+
+const BIOMETRICS_PRIVACY_CONTRACT_ADOPTION_2026_IMAGE = {
+  src: "images/biometrics-privacy-contract-adoption-2026-1280.webp",
+  alt: "생체인식은 보안 편의보다 개인정보 규제와 기관 계약 속도가 관건입니다 내용을 설명하는 생체인식 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/148598741@N02/52173356582",
+  width: 1280,
+  height: 720,
+};
+
+const BIG_DATA_DECISION_WORKFLOW_BUDGET_2026_IMAGE = {
+  src: "images/big-data-decision-workflow-budget-2026-1280.webp",
+  alt: "빅데이터 투자는 데이터 양보다 고객 의사결정에 붙는 반복 예산이 핵심입니다 내용을 설명하는 빅데이터 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/80824546@N00/30082867316",
+  width: 1280,
+  height: 720,
+};
+
+const SOCIAL_MEDIA_AD_PRICING_TRUST_2026_IMAGE = {
+  src: "images/social-media-ad-pricing-trust-2026-1280.webp",
+  alt: "소셜미디어는 이용자 수보다 광고 단가와 추천 알고리즘 신뢰를 봐야 합니다 내용을 설명하는 소셜미디어 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/22882274@N04/52338846088",
+  width: 1280,
+  height: 720,
+};
+
+const REAL_ESTATE_REITS_LEASE_DEBT_MATURITY_2026_IMAGE = {
+  src: "images/real-estate-reits-lease-debt-maturity-2026-1280.webp",
+  alt: "부동산·리츠는 배당률보다 임대료 재계약과 차입 만기가 먼저입니다 내용을 설명하는 부동산·리츠 대표 이미지",
+  sourceUrl: "https://www.geograph.org.uk/photo/1274363",
+  width: 1280,
+  height: 720,
+};
+
+const WEARABLES_HEALTH_DATA_SERVICE_2026_IMAGE = {
+  src: "images/wearables-health-data-service-2026-1280.webp",
+  alt: "웨어러블은 출하량보다 건강 데이터 정확도와 서비스 연결이 가치를 만듭니다 내용을 설명하는 웨어러블 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/42826854@N00/10447520273",
+  width: 1280,
+  height: 720,
+};
+
+const EDTECH_COMPLETION_ENTERPRISE_BUDGET_2026_IMAGE = {
+  src: "images/edtech-completion-enterprise-budget-2026-1280.webp",
+  alt: "에듀테크는 수강자 수보다 완료율과 기업 교육 예산이 매출을 지탱합니다 내용을 설명하는 에듀테크 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/33547369@N00/5051157647",
+  width: 1280,
+  height: 720,
+};
+
+const AGING_CARE_LABOR_REIMBURSEMENT_2026_IMAGE = {
+  src: "images/aging-care-labor-reimbursement-2026-1280.webp",
+  alt: "고령화 투자는 인구 통계보다 돌봄 인력 비용과 보험 수가가 먼저입니다 내용을 설명하는 고령화 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/150276478@N03/34406844136",
+  width: 1280,
+  height: 720,
+};
+
+const HEALTH_FOOD_EFFICACY_REPEAT_PURCHASE_2026_IMAGE = {
+  src: "images/health-food-efficacy-repeat-purchase-2026-1280.webp",
+  alt: "건강식품은 유행 성분보다 효능 신뢰와 재구매 주기가 사업을 가릅니다 내용을 설명하는 건강식품 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/33677599@N00/419584946",
+  width: 1280,
+  height: 720,
+};
+
+const CRYPTO_BLOCKCHAIN_CUSTODY_REGULATION_2026_IMAGE = {
+  src: "images/crypto-blockchain-custody-regulation-2026-1280.webp",
+  alt: "암호화폐·블록체인은 가격보다 보관 인프라와 규제 통과 속도가 먼저입니다 내용을 설명하는 암호화폐·블록체인 대표 이미지",
+  sourceUrl: "https://www.flickr.com/photos/190906320@N06/53388290798",
+  width: 1280,
+  height: 720,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1154,6 +1466,396 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "artificial-intelligence-inference-unit-economics-2026",
+    title: "인공지능 투자는 모델 성능보다 추론 단가와 고객 사용 시간이 먼저 숫자로 드러납니다",
+    desk: "인공지능",
+    author: "Aiden",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "인공지능 투자는 모델 성능 발표보다 추론 단가, 전력 계약, 고객 사용 시간, 반복 과금 전환율을 함께 봐야 실적의 질을 가늠할 수 있습니다.",
+    image: ARTIFICIAL_INTELLIGENCE_INFERENCE_UNIT_ECONOMICS_2026_IMAGE,
+    video: { youtubeId: "7VcdPR8IEnA", title: "인공지능 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7VcdPR8IEnA", thumbnailUrl: "https://i.ytimg.com/vi/7VcdPR8IEnA/hqdefault.jpg", description: "인공지능 투자는 모델 성능 발표보다 추론 단가, 전력 계약, 고객 사용 시간, 반복 과금 전환율을 함께 봐야 실적의 질을 가늠할 수 있습니다." },
+  },
+  {
+    slug: "cloud-computing-capex-utilization-2026",
+    title: "클라우드 컴퓨팅은 서버 증설 속도보다 사용량 매출의 질을 먼저 봐야 합니다",
+    desk: "클라우드 컴퓨팅",
+    author: "Nimbus",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "클라우드 컴퓨팅 기업은 AI 서버 증설보다 리전 가동률, 사용량 기반 매출, 감가상각 부담, 잉여현금흐름을 같이 확인해야 합니다.",
+    image: CLOUD_COMPUTING_CAPEX_UTILIZATION_2026_IMAGE,
+    video: { youtubeId: "5s9UnfOpSJo", title: "클라우드 컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=5s9UnfOpSJo", thumbnailUrl: "https://i.ytimg.com/vi/5s9UnfOpSJo/hqdefault.jpg", description: "클라우드 컴퓨팅 기업은 AI 서버 증설보다 리전 가동률, 사용량 기반 매출, 감가상각 부담, 잉여현금흐름을 같이 확인해야 합니다." },
+  },
+  {
+    slug: "electric-vehicle-battery-inventory-margin-2026",
+    title: "전기차 투자는 판매 대수보다 배터리 원가와 재고 회전이 먼저 마진을 가릅니다",
+    desk: "전기차",
+    author: "Volt",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "전기차 투자는 판매 대수 증가만 보지 말고 배터리 원가, 가격 인하 압력, 재고 회전, 보조금 변화가 차량당 마진에 미치는 영향을 확인해야 합니다.",
+    image: ELECTRIC_VEHICLE_BATTERY_INVENTORY_MARGIN_2026_IMAGE,
+    video: { youtubeId: "ueUaCY_swpU", title: "전기차 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ueUaCY_swpU", thumbnailUrl: "https://i.ytimg.com/vi/ueUaCY_swpU/hqdefault.jpg", description: "전기차 투자는 판매 대수 증가만 보지 말고 배터리 원가, 가격 인하 압력, 재고 회전, 보조금 변화가 차량당 마진에 미치는 영향을 확인해야 합니다." },
+  },
+  {
+    slug: "transport-logistics-contract-freight-2026",
+    title: "운송·물류 투자는 물동량보다 계약 운임과 빈차 시간을 먼저 확인해야 합니다",
+    desk: "운송·물류",
+    author: "Harbor",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "운송·물류 기업은 물동량 증가보다 계약 운임, 빈차 시간, 창고 가동률, 인건비와 연료비 전가 여부가 이익을 좌우합니다.",
+    image: TRANSPORT_LOGISTICS_CONTRACT_FREIGHT_2026_IMAGE,
+    video: { youtubeId: "7E86Y_gXNg4", title: "운송·물류 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7E86Y_gXNg4", thumbnailUrl: "https://i.ytimg.com/vi/7E86Y_gXNg4/hqdefault.jpg", description: "운송·물류 기업은 물동량 증가보다 계약 운임, 빈차 시간, 창고 가동률, 인건비와 연료비 전가 여부가 이익을 좌우합니다." },
+  },
+  {
+    slug: "space-technology-launch-insurance-backlog-2026",
+    title: "우주 기술은 발사 성공보다 보험료와 장기 서비스 계약이 현금흐름을 가릅니다",
+    desk: "우주 기술",
+    author: "Orion",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "우주 기술 투자는 발사 장면보다 보험료, 발사 지연, 위성 교체 주기, 장기 데이터 서비스 계약이 현금흐름으로 이어지는지를 봐야 합니다.",
+    image: SPACE_TECHNOLOGY_LAUNCH_INSURANCE_BACKLOG_2026_IMAGE,
+    video: { youtubeId: "8Am8EoBriZs", title: "우주 기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8Am8EoBriZs", thumbnailUrl: "https://i.ytimg.com/vi/8Am8EoBriZs/hqdefault.jpg", description: "우주 기술 투자는 발사 장면보다 보험료, 발사 지연, 위성 교체 주기, 장기 데이터 서비스 계약이 현금흐름으로 이어지는지를 봐야 합니다." },
+  },
+  {
+    slug: "renewable-energy-ppa-grid-connection-2026",
+    title: "재생에너지는 설치량보다 전력구매계약 단가와 계통 접속이 수익률을 정합니다",
+    desk: "재생에너지",
+    author: "Sol",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "재생에너지 투자는 설치량보다 전력구매계약 가격, 계통 접속 지연, 금리, 터빈과 모듈 원가가 프로젝트 수익률을 어떻게 바꾸는지 봐야 합니다.",
+    image: RENEWABLE_ENERGY_PPA_GRID_CONNECTION_2026_IMAGE,
+    video: { youtubeId: "YmHZhpxtneM", title: "재생에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=YmHZhpxtneM", thumbnailUrl: "https://i.ytimg.com/vi/YmHZhpxtneM/hqdefault.jpg", description: "재생에너지 투자는 설치량보다 전력구매계약 가격, 계통 접속 지연, 금리, 터빈과 모듈 원가가 프로젝트 수익률을 어떻게 바꾸는지 봐야 합니다." },
+  },
+  {
+    slug: "traditional-energy-refining-cash-return-2026",
+    title: "전통 에너지는 유가보다 정제 마진과 배당 재원이 오래가는지가 핵심입니다",
+    desk: "전통 에너지",
+    author: "Flint",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "전통 에너지 기업은 유가 방향만으로 판단하지 말고 정제 마진, 생산 단가, 잉여현금흐름, 배당과 자사주 매입 지속성을 함께 봐야 합니다.",
+    image: TRADITIONAL_ENERGY_REFINING_CASH_RETURN_2026_IMAGE,
+    video: { youtubeId: "iAj8DEITbe0", title: "전통 에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=iAj8DEITbe0", thumbnailUrl: "https://i.ytimg.com/vi/iAj8DEITbe0/hqdefault.jpg", description: "전통 에너지 기업은 유가 방향만으로 판단하지 말고 정제 마진, 생산 단가, 잉여현금흐름, 배당과 자사주 매입 지속성을 함께 봐야 합니다." },
+  },
+  {
+    slug: "semiconductor-packaging-customer-prepayment-2026",
+    title: "반도체 투자는 출하량보다 패키징 병목과 고객 선급금이 먼저 움직입니다",
+    desk: "반도체",
+    author: "Silica",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "반도체 투자는 웨이퍼 출하량보다 HBM 패키징 병목, 수율, 고객 선급금, 장기 공급 계약이 이익률을 지키는지 확인해야 합니다.",
+    image: SEMICONDUCTOR_PACKAGING_CUSTOMER_PREPAYMENT_2026_IMAGE,
+    video: { youtubeId: "KtBiw1BId7M", title: "반도체 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=KtBiw1BId7M", thumbnailUrl: "https://i.ytimg.com/vi/KtBiw1BId7M/hqdefault.jpg", description: "반도체 투자는 웨이퍼 출하량보다 HBM 패키징 병목, 수율, 고객 선급금, 장기 공급 계약이 이익률을 지키는지 확인해야 합니다." },
+  },
+  {
+    slug: "cybersecurity-renewal-platform-spend-2026",
+    title: "사이버보안은 해킹 뉴스보다 갱신율과 플랫폼 통합 속도가 실적을 만듭니다",
+    desk: "사이버보안",
+    author: "Cipher",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "사이버보안 투자는 침해 사고 뉴스보다 고객 갱신율, 플랫폼 통합, 연간반복매출, 계정 보호 예산이 얼마나 끈끈한지를 먼저 봐야 합니다.",
+    image: CYBERSECURITY_RENEWAL_PLATFORM_SPEND_2026_IMAGE,
+    video: { youtubeId: "l-oiFQFSdT8", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=l-oiFQFSdT8", thumbnailUrl: "https://i.ytimg.com/vi/l-oiFQFSdT8/hqdefault.jpg", description: "사이버보안 투자는 침해 사고 뉴스보다 고객 갱신율, 플랫폼 통합, 연간반복매출, 계정 보호 예산이 얼마나 끈끈한지를 먼저 봐야 합니다." },
+  },
+  {
+    slug: "industrial-automation-factory-service-revenue-2026",
+    title: "산업 자동화는 로봇 수요보다 공장 투자 재개와 서비스 매출을 봐야 합니다",
+    desk: "산업 자동화",
+    author: "Gear",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "산업 자동화 기업은 로봇 수요보다 설비투자 재개, 설치 인력, 수주잔고, 유지보수 서비스 매출 비중이 이익을 얼마나 안정시키는지 봐야 합니다.",
+    image: INDUSTRIAL_AUTOMATION_FACTORY_SERVICE_REVENUE_2026_IMAGE,
+    video: { youtubeId: "LcGtLLcOHVc", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LcGtLLcOHVc", thumbnailUrl: "https://i.ytimg.com/vi/LcGtLLcOHVc/hqdefault.jpg", description: "산업 자동화 기업은 로봇 수요보다 설비투자 재개, 설치 인력, 수주잔고, 유지보수 서비스 매출 비중이 이익을 얼마나 안정시키는지 봐야 합니다." },
+  },
+  {
+    slug: "robotics-field-reorder-maintenance-2026",
+    title: "로보틱스는 시연 장면보다 현장 재주문과 유지보수 매출이 진짜 신호입니다",
+    desk: "로보틱스",
+    author: "Axis",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "로보틱스 투자는 시연 영상보다 실제 현장 재주문, 안전 인증, 유지보수 매출, 로봇당 서비스 수익이 쌓이는지를 확인해야 합니다.",
+    image: ROBOTICS_FIELD_REORDER_MAINTENANCE_2026_IMAGE,
+    video: { youtubeId: "ezUnJ3McW9M", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ezUnJ3McW9M", thumbnailUrl: "https://i.ytimg.com/vi/ezUnJ3McW9M/hqdefault.jpg", description: "로보틱스 투자는 시연 영상보다 실제 현장 재주문, 안전 인증, 유지보수 매출, 로봇당 서비스 수익이 쌓이는지를 확인해야 합니다." },
+  },
+  {
+    slug: "nanotechnology-yield-customer-qualification-2026",
+    title: "나노기술은 소재 성능보다 양산 수율과 고객 인증 시간이 투자 성패를 가릅니다",
+    desk: "나노기술",
+    author: "Nano",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "나노기술 투자는 실험실 성능보다 양산 수율, 고객 인증 기간, 적용처 확대, 소재 단가가 얼마나 안정되는지를 봐야 합니다.",
+    image: NANOTECHNOLOGY_YIELD_CUSTOMER_QUALIFICATION_2026_IMAGE,
+    video: { youtubeId: "g8pGiQOScRU", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g8pGiQOScRU", thumbnailUrl: "https://i.ytimg.com/vi/g8pGiQOScRU/hqdefault.jpg", description: "나노기술 투자는 실험실 성능보다 양산 수율, 고객 인증 기간, 적용처 확대, 소재 단가가 얼마나 안정되는지를 봐야 합니다." },
+  },
+  {
+    slug: "internet-of-things-device-data-fees-2026",
+    title: "사물인터넷은 연결 기기 수보다 보안 업데이트와 데이터 과금이 이익을 만듭니다",
+    desk: "사물인터넷",
+    author: "Mesh",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "사물인터넷 기업은 연결 기기 수보다 보안 업데이트, 게이트웨이 관리, 데이터 과금, 플랫폼 사용료가 반복 매출로 남는지를 봐야 합니다.",
+    image: INTERNET_OF_THINGS_DEVICE_DATA_FEES_2026_IMAGE,
+    video: { youtubeId: "tsTq8_hc2p8", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=tsTq8_hc2p8", thumbnailUrl: "https://i.ytimg.com/vi/tsTq8_hc2p8/hqdefault.jpg", description: "사물인터넷 기업은 연결 기기 수보다 보안 업데이트, 게이트웨이 관리, 데이터 과금, 플랫폼 사용료가 반복 매출로 남는지를 봐야 합니다." },
+  },
+  {
+    slug: "energy-commodities-contract-supply-delay-2026",
+    title: "에너지 원자재는 현물 가격보다 장기 계약과 증설 지연을 함께 봐야 합니다",
+    desk: "에너지 원자재",
+    author: "Quarry",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "에너지 원자재 투자는 리튬, 우라늄, 천연가스 가격보다 장기 오프테이크 계약, 생산량, 허가, 증설 지연이 공급을 어떻게 묶는지 확인해야 합니다.",
+    image: ENERGY_COMMODITIES_CONTRACT_SUPPLY_DELAY_2026_IMAGE,
+    video: { youtubeId: "R1eWgqMW7VY", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=R1eWgqMW7VY", thumbnailUrl: "https://i.ytimg.com/vi/R1eWgqMW7VY/hqdefault.jpg", description: "에너지 원자재 투자는 리튬, 우라늄, 천연가스 가격보다 장기 오프테이크 계약, 생산량, 허가, 증설 지연이 공급을 어떻게 묶는지 확인해야 합니다." },
+  },
+  {
+    slug: "agriculture-food-pricing-repeat-purchase-2026",
+    title: "농업·식품은 곡물 가격보다 원가 전가력과 반복 구매율이 주가를 지탱합니다",
+    desk: "농업·식품",
+    author: "Terra",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "농업·식품 기업은 곡물 가격만 보지 말고 원가 전가력, 브랜드 반복 구매율, 종자와 농기계 수요, 날씨 리스크를 함께 봐야 합니다.",
+    image: AGRICULTURE_FOOD_PRICING_REPEAT_PURCHASE_2026_IMAGE,
+    video: { youtubeId: "307Y_TuWB8Q", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=307Y_TuWB8Q", thumbnailUrl: "https://i.ytimg.com/vi/307Y_TuWB8Q/hqdefault.jpg", description: "농업·식품 기업은 곡물 가격만 보지 말고 원가 전가력, 브랜드 반복 구매율, 종자와 농기계 수요, 날씨 리스크를 함께 봐야 합니다." },
+  },
+  {
+    slug: "software-churn-seat-expansion-2026",
+    title: "소프트웨어 투자는 매출 성장보다 해지율과 좌석 확장이 먼저 이익을 설명합니다",
+    desk: "소프트웨어",
+    author: "Kernel",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "소프트웨어 투자는 신규 매출보다 해지율, 좌석 확장, 영업레버리지, 고객 획득 비용 회수 기간이 반복 이익을 만드는지 확인해야 합니다.",
+    image: SOFTWARE_CHURN_SEAT_EXPANSION_2026_IMAGE,
+    video: { youtubeId: "uSxIdtQSS6w", title: "소프트웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=uSxIdtQSS6w", thumbnailUrl: "https://i.ytimg.com/vi/uSxIdtQSS6w/hqdefault.jpg", description: "소프트웨어 투자는 신규 매출보다 해지율, 좌석 확장, 영업레버리지, 고객 획득 비용 회수 기간이 반복 이익을 만드는지 확인해야 합니다." },
+  },
+  {
+    slug: "quantum-computing-pilot-contracts-2026",
+    title: "양자컴퓨팅은 기술 발표보다 고객 파일럿이 유료 계약으로 바뀌는지를 봐야 합니다",
+    desk: "양자컴퓨팅",
+    author: "Qubit",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "양자컴퓨팅 투자는 큐비트 수 발표보다 고객 파일럿, 오류 보정, 클라우드 접근료, 연구 계약이 실제 매출로 전환되는지를 확인해야 합니다.",
+    image: QUANTUM_COMPUTING_PILOT_CONTRACTS_2026_IMAGE,
+    video: { youtubeId: "igU8KGLoQUo", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=igU8KGLoQUo", thumbnailUrl: "https://i.ytimg.com/vi/igU8KGLoQUo/hqdefault.jpg", description: "양자컴퓨팅 투자는 큐비트 수 발표보다 고객 파일럿, 오류 보정, 클라우드 접근료, 연구 계약이 실제 매출로 전환되는지를 확인해야 합니다." },
+  },
+  {
+    slug: "defense-aerospace-delivery-cash-conversion-2026",
+    title: "방산·항공우주는 수주잔고보다 납품 속도와 현금 회수가 더 중요합니다",
+    desk: "방산·항공우주",
+    author: "Vector",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "방산·항공우주 기업은 수주잔고의 크기보다 생산능력, 납품 일정, 원가 상승 조항, 선수금과 현금 회수 속도를 함께 봐야 합니다.",
+    image: DEFENSE_AEROSPACE_DELIVERY_CASH_CONVERSION_2026_IMAGE,
+    video: { youtubeId: "LQcuIPuaZHI", title: "방산·항공우주 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LQcuIPuaZHI", thumbnailUrl: "https://i.ytimg.com/vi/LQcuIPuaZHI/hqdefault.jpg", description: "방산·항공우주 기업은 수주잔고의 크기보다 생산능력, 납품 일정, 원가 상승 조항, 선수금과 현금 회수 속도를 함께 봐야 합니다." },
+  },
+  {
+    slug: "telecommunications-spectrum-capex-dividend-2026",
+    title: "통신 투자는 가입자 수보다 주파수 비용과 설비투자 부담을 먼저 봐야 합니다",
+    desk: "통신",
+    author: "Signal",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "통신 기업은 가입자 수보다 주파수 비용, 5G 설비투자, 해지율, 요금제 상승 여력, 배당 재원이 안정적인지를 확인해야 합니다.",
+    image: TELECOMMUNICATIONS_SPECTRUM_CAPEX_DIVIDEND_2026_IMAGE,
+    video: { youtubeId: "38DgsVe7jFc", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=38DgsVe7jFc", thumbnailUrl: "https://i.ytimg.com/vi/38DgsVe7jFc/hqdefault.jpg", description: "통신 기업은 가입자 수보다 주파수 비용, 5G 설비투자, 해지율, 요금제 상승 여력, 배당 재원이 안정적인지를 확인해야 합니다." },
+  },
+  {
+    slug: "autonomous-systems-permit-liability-2026",
+    title: "자율 시스템은 주행거리보다 보험 책임과 상용 운행 허가가 먼저입니다",
+    desk: "자율 시스템",
+    author: "Pilot",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "자율 시스템 투자는 누적 주행거리보다 상용 운행 허가, 사고 책임, 보험 비용, 차량당 운영비가 실제 서비스 마진으로 이어지는지를 봐야 합니다.",
+    image: AUTONOMOUS_SYSTEMS_PERMIT_LIABILITY_2026_IMAGE,
+    video: { youtubeId: "U_jdTk4wkdI", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=U_jdTk4wkdI", thumbnailUrl: "https://i.ytimg.com/vi/U_jdTk4wkdI/hqdefault.jpg", description: "자율 시스템 투자는 누적 주행거리보다 상용 운행 허가, 사고 책임, 보험 비용, 차량당 운영비가 실제 서비스 마진으로 이어지는지를 봐야 합니다." },
+  },
+  {
+    slug: "metal-commodities-ore-grade-permit-2026",
+    title: "금속 원자재는 구리 가격보다 광산 품위와 증설 허가가 공급을 좌우합니다",
+    desk: "금속 원자재",
+    author: "Forge",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "금속 원자재 투자는 구리와 알루미늄 가격보다 광산 품위, 증설 허가, 전력 비용, 장기 수요처 계약을 함께 확인해야 합니다.",
+    image: METAL_COMMODITIES_ORE_GRADE_PERMIT_2026_IMAGE,
+    video: { youtubeId: "JHK8yCXiKKU", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=JHK8yCXiKKU", thumbnailUrl: "https://i.ytimg.com/vi/JHK8yCXiKKU/hqdefault.jpg", description: "금속 원자재 투자는 구리와 알루미늄 가격보다 광산 품위, 증설 허가, 전력 비용, 장기 수요처 계약을 함께 확인해야 합니다." },
+  },
+  {
+    slug: "environment-sustainability-waste-pricing-regulation-2026",
+    title: "환경 지속가능성은 친환경 구호보다 처리 단가와 규제 의무가 매출을 만듭니다",
+    desk: "환경 지속가능성",
+    author: "Grove",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "환경 지속가능성 기업은 친환경 구호보다 폐기물 처리 단가, 재활용 수율, 물 인프라 요금, 규제 의무가 반복 매출로 남는지를 봐야 합니다.",
+    image: ENVIRONMENT_SUSTAINABILITY_WASTE_PRICING_REGULATION_2026_IMAGE,
+    video: { youtubeId: "jZH0HPVipUU", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jZH0HPVipUU", thumbnailUrl: "https://i.ytimg.com/vi/jZH0HPVipUU/hqdefault.jpg", description: "환경 지속가능성 기업은 친환경 구호보다 폐기물 처리 단가, 재활용 수율, 물 인프라 요금, 규제 의무가 반복 매출로 남는지를 봐야 합니다." },
+  },
+  {
+    slug: "hardware-replacement-cycle-component-cost-2026",
+    title: "하드웨어 투자는 신제품보다 부품 원가와 교체 주기 회복을 먼저 봐야 합니다",
+    desk: "하드웨어",
+    author: "Circuit",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "하드웨어 기업은 신제품 공개보다 부품 원가, 재고 회전, 교체 주기, 서비스 연결 매출이 기기 판매를 얼마나 보완하는지 봐야 합니다.",
+    image: HARDWARE_REPLACEMENT_CYCLE_COMPONENT_COST_2026_IMAGE,
+    video: { youtubeId: "EZOWZDB60i4", title: "하드웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=EZOWZDB60i4", thumbnailUrl: "https://i.ytimg.com/vi/EZOWZDB60i4/hqdefault.jpg", description: "하드웨어 기업은 신제품 공개보다 부품 원가, 재고 회전, 교체 주기, 서비스 연결 매출이 기기 판매를 얼마나 보완하는지 봐야 합니다." },
+  },
+  {
+    slug: "virtual-augmented-reality-content-retention-2026",
+    title: "가상·증강현실은 기기 출시보다 콘텐츠 체류 시간과 개발자 생태계가 관건입니다",
+    desk: "가상·증강현실",
+    author: "Holo",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "가상·증강현실 투자는 헤드셋 출시보다 콘텐츠 체류 시간, 개발자 수익, 기업용 활용, 기기 원가와 앱 결제율을 함께 봐야 합니다.",
+    image: VIRTUAL_AUGMENTED_REALITY_CONTENT_RETENTION_2026_IMAGE,
+    video: { youtubeId: "8tnMjWcYeBA", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8tnMjWcYeBA", thumbnailUrl: "https://i.ytimg.com/vi/8tnMjWcYeBA/hqdefault.jpg", description: "가상·증강현실 투자는 헤드셋 출시보다 콘텐츠 체류 시간, 개발자 수익, 기업용 활용, 기기 원가와 앱 결제율을 함께 봐야 합니다." },
+  },
+  {
+    slug: "ecommerce-logistics-ad-margin-2026",
+    title: "전자상거래는 거래액보다 물류비와 광고 매출의 균형을 봐야 합니다",
+    desk: "전자상거래",
+    author: "Cart",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "전자상거래 투자는 거래액 증가보다 물류비, 반품률, 광고 매출, 멤버십 유지율이 영업이익률을 얼마나 끌어올리는지 확인해야 합니다.",
+    image: ECOMMERCE_LOGISTICS_AD_MARGIN_2026_IMAGE,
+    video: { youtubeId: "vU8UEakEHLU", title: "전자상거래 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=vU8UEakEHLU", thumbnailUrl: "https://i.ytimg.com/vi/vU8UEakEHLU/hqdefault.jpg", description: "전자상거래 투자는 거래액 증가보다 물류비, 반품률, 광고 매출, 멤버십 유지율이 영업이익률을 얼마나 끌어올리는지 확인해야 합니다." },
+  },
+  {
+    slug: "digital-entertainment-ip-repeat-spending-2026",
+    title: "디지털 엔터테인먼트는 흥행작보다 반복 결제와 IP 확장력이 중요합니다",
+    desk: "디지털 엔터테인먼트",
+    author: "Studio",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "디지털 엔터테인먼트 기업은 흥행작 하나보다 IP 확장, 구독 유지율, 게임 내 반복 결제, 제작비 회수 속도를 함께 봐야 합니다.",
+    image: DIGITAL_ENTERTAINMENT_IP_REPEAT_SPENDING_2026_IMAGE,
+    video: { youtubeId: "GViZEwZvnck", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=GViZEwZvnck", thumbnailUrl: "https://i.ytimg.com/vi/GViZEwZvnck/hqdefault.jpg", description: "디지털 엔터테인먼트 기업은 흥행작 하나보다 IP 확장, 구독 유지율, 게임 내 반복 결제, 제작비 회수 속도를 함께 봐야 합니다." },
+  },
+  {
+    slug: "consumer-goods-pricing-volume-resilience-2026",
+    title: "소비재 투자는 브랜드 인지도보다 가격 인상 후 판매량이 버티는지가 핵심입니다",
+    desk: "소비재",
+    author: "Shelf",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "소비재 투자는 브랜드 인지도보다 가격 인상 후 판매량, 유통 재고, 원재료 가격, 반복 구매율이 마진을 지키는지 확인해야 합니다.",
+    image: CONSUMER_GOODS_PRICING_VOLUME_RESILIENCE_2026_IMAGE,
+    video: { youtubeId: "wd7DnDISJjY", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=wd7DnDISJjY", thumbnailUrl: "https://i.ytimg.com/vi/wd7DnDISJjY/hqdefault.jpg", description: "소비재 투자는 브랜드 인지도보다 가격 인상 후 판매량, 유통 재고, 원재료 가격, 반복 구매율이 마진을 지키는지 확인해야 합니다." },
+  },
+  {
+    slug: "smart-home-standard-subscription-2026",
+    title: "스마트홈은 기기 보급보다 연결 표준과 구독 서비스가 수익성을 가릅니다",
+    desk: "스마트홈",
+    author: "Hearth",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "스마트홈 투자는 기기 판매보다 연결 표준, 설치 편의성, 보안 업데이트, 구독 서비스가 가정 내 반복 매출을 만드는지를 봐야 합니다.",
+    image: SMART_HOME_STANDARD_SUBSCRIPTION_2026_IMAGE,
+    video: { youtubeId: "g7buf6Tg4OE", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g7buf6Tg4OE", thumbnailUrl: "https://i.ytimg.com/vi/g7buf6Tg4OE/hqdefault.jpg", description: "스마트홈 투자는 기기 판매보다 연결 표준, 설치 편의성, 보안 업데이트, 구독 서비스가 가정 내 반복 매출을 만드는지를 봐야 합니다." },
+  },
+  {
+    slug: "healthcare-biotech-reimbursement-capacity-2026",
+    title: "헬스케어·바이오테크는 임상 뉴스보다 보험 적용과 생산 능력이 더 오래 갑니다",
+    desk: "헬스케어·바이오테크",
+    author: "Genome",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "헬스케어·바이오테크 투자는 임상 뉴스만 보지 말고 보험 적용, 처방 속도, 생산 능력, 규제 리스크가 매출 지속성을 어떻게 바꾸는지 봐야 합니다.",
+    image: HEALTHCARE_BIOTECH_REIMBURSEMENT_CAPACITY_2026_IMAGE,
+    video: { youtubeId: "SPCQnkLujKc", title: "헬스케어·바이오테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=SPCQnkLujKc", thumbnailUrl: "https://i.ytimg.com/vi/SPCQnkLujKc/hqdefault.jpg", description: "헬스케어·바이오테크 투자는 임상 뉴스만 보지 말고 보험 적용, 처방 속도, 생산 능력, 규제 리스크가 매출 지속성을 어떻게 바꾸는지 봐야 합니다." },
+  },
+  {
+    slug: "fintech-credit-loss-funding-cost-2026",
+    title: "핀테크는 결제액보다 연체율과 자금 조달 비용이 먼저 주가를 흔듭니다",
+    desk: "핀테크",
+    author: "Ledger",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "핀테크 투자는 결제액과 이용자 수보다 연체율, 자금 조달 비용, 수수료율, 규제 준수 비용이 이익을 얼마나 지키는지 확인해야 합니다.",
+    image: FINTECH_CREDIT_LOSS_FUNDING_COST_2026_IMAGE,
+    video: { youtubeId: "K-ruTEg3MH4", title: "미국 장기금리와 달러 흐름을 함께 보는 시장 해설", channel: "삼프로TV_경제의신과함께", sourceUrl: "https://www.youtube.com/watch?v=K-ruTEg3MH4", thumbnailUrl: "https://i.ytimg.com/vi/K-ruTEg3MH4/hqdefault.jpg", description: "핀테크 투자는 결제액과 이용자 수보다 연체율, 자금 조달 비용, 수수료율, 규제 준수 비용이 이익을 얼마나 지키는지 확인해야 합니다." },
+  },
+  {
+    slug: "biometrics-privacy-contract-adoption-2026",
+    title: "생체인식은 보안 편의보다 개인정보 규제와 기관 계약 속도가 관건입니다",
+    desk: "생체인식",
+    author: "Biokey",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "생체인식 투자는 편의성보다 개인정보 규제, 공항과 기관 계약, 인증 정확도, 보안 사고 대응 비용이 채택 속도를 결정합니다.",
+    image: BIOMETRICS_PRIVACY_CONTRACT_ADOPTION_2026_IMAGE,
+    video: { youtubeId: "ku3LDxs_054", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ku3LDxs_054", thumbnailUrl: "https://i.ytimg.com/vi/ku3LDxs_054/hqdefault.jpg", description: "생체인식 투자는 편의성보다 개인정보 규제, 공항과 기관 계약, 인증 정확도, 보안 사고 대응 비용이 채택 속도를 결정합니다." },
+  },
+  {
+    slug: "big-data-decision-workflow-budget-2026",
+    title: "빅데이터 투자는 데이터 양보다 고객 의사결정에 붙는 반복 예산이 핵심입니다",
+    desk: "빅데이터",
+    author: "Delta",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "빅데이터 기업은 데이터 저장량보다 고객 의사결정 흐름에 붙는 반복 예산, 데이터 품질, 분석 워크플로, 보안 요건을 봐야 합니다.",
+    image: BIG_DATA_DECISION_WORKFLOW_BUDGET_2026_IMAGE,
+    video: { youtubeId: "pNb-BM30xu4", title: "빅데이터 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=pNb-BM30xu4", thumbnailUrl: "https://i.ytimg.com/vi/pNb-BM30xu4/hqdefault.jpg", description: "빅데이터 기업은 데이터 저장량보다 고객 의사결정 흐름에 붙는 반복 예산, 데이터 품질, 분석 워크플로, 보안 요건을 봐야 합니다." },
+  },
+  {
+    slug: "social-media-ad-pricing-trust-2026",
+    title: "소셜미디어는 이용자 수보다 광고 단가와 추천 알고리즘 신뢰를 봐야 합니다",
+    desk: "소셜미디어",
+    author: "Pulse",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "소셜미디어 투자는 이용자 수보다 광고 단가, 체류 시간, 추천 알고리즘 신뢰, 브랜드 안전성, 크리에이터 보상 구조가 핵심입니다.",
+    image: SOCIAL_MEDIA_AD_PRICING_TRUST_2026_IMAGE,
+    video: { youtubeId: "IFHJjmXFFEY", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=IFHJjmXFFEY", thumbnailUrl: "https://i.ytimg.com/vi/IFHJjmXFFEY/hqdefault.jpg", description: "소셜미디어 투자는 이용자 수보다 광고 단가, 체류 시간, 추천 알고리즘 신뢰, 브랜드 안전성, 크리에이터 보상 구조가 핵심입니다." },
+  },
+  {
+    slug: "real-estate-reits-lease-debt-maturity-2026",
+    title: "부동산·리츠는 배당률보다 임대료 재계약과 차입 만기가 먼저입니다",
+    desk: "부동산·리츠",
+    author: "Brick",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "부동산·리츠 투자는 배당률만 보지 말고 임대료 재계약, 공실률, 차입 만기, 금리 민감도, 자산 유형별 수요를 함께 봐야 합니다.",
+    image: REAL_ESTATE_REITS_LEASE_DEBT_MATURITY_2026_IMAGE,
+    video: { youtubeId: "gn2nVZ3V9Ks", title: "부동산·리츠 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=gn2nVZ3V9Ks", thumbnailUrl: "https://i.ytimg.com/vi/gn2nVZ3V9Ks/hqdefault.jpg", description: "부동산·리츠 투자는 배당률만 보지 말고 임대료 재계약, 공실률, 차입 만기, 금리 민감도, 자산 유형별 수요를 함께 봐야 합니다." },
+  },
+  {
+    slug: "wearables-health-data-service-2026",
+    title: "웨어러블은 출하량보다 건강 데이터 정확도와 서비스 연결이 가치를 만듭니다",
+    desk: "웨어러블",
+    author: "Band",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "웨어러블 투자는 기기 출하량보다 센서 정확도, 배터리, 건강 데이터 서비스, 보험과 의료 연계가 반복 수익으로 이어지는지를 봐야 합니다.",
+    image: WEARABLES_HEALTH_DATA_SERVICE_2026_IMAGE,
+    video: { youtubeId: "RfKxwbE-pZ8", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RfKxwbE-pZ8", thumbnailUrl: "https://i.ytimg.com/vi/RfKxwbE-pZ8/hqdefault.jpg", description: "웨어러블 투자는 기기 출하량보다 센서 정확도, 배터리, 건강 데이터 서비스, 보험과 의료 연계가 반복 수익으로 이어지는지를 봐야 합니다." },
+  },
+  {
+    slug: "edtech-completion-enterprise-budget-2026",
+    title: "에듀테크는 수강자 수보다 완료율과 기업 교육 예산이 매출을 지탱합니다",
+    desk: "에듀테크",
+    author: "Tutor",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "에듀테크 투자는 수강자 수보다 학습 완료율, 기업 교육 예산, AI 튜터 품질, 구독 유지율이 장기 매출로 남는지를 확인해야 합니다.",
+    image: EDTECH_COMPLETION_ENTERPRISE_BUDGET_2026_IMAGE,
+    video: { youtubeId: "zUdXScyI2MI", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zUdXScyI2MI", thumbnailUrl: "https://i.ytimg.com/vi/zUdXScyI2MI/hqdefault.jpg", description: "에듀테크 투자는 수강자 수보다 학습 완료율, 기업 교육 예산, AI 튜터 품질, 구독 유지율이 장기 매출로 남는지를 확인해야 합니다." },
+  },
+  {
+    slug: "aging-care-labor-reimbursement-2026",
+    title: "고령화 투자는 인구 통계보다 돌봄 인력 비용과 보험 수가가 먼저입니다",
+    desk: "고령화",
+    author: "Silver",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "고령화 투자는 노인 인구 증가보다 돌봄 인력 비용, 보험 수가, 만성질환 관리, 시설 가동률이 현금흐름을 지키는지를 봐야 합니다.",
+    image: AGING_CARE_LABOR_REIMBURSEMENT_2026_IMAGE,
+    video: { youtubeId: "1dqJ-TpMiTg", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=1dqJ-TpMiTg", thumbnailUrl: "https://i.ytimg.com/vi/1dqJ-TpMiTg/hqdefault.jpg", description: "고령화 투자는 노인 인구 증가보다 돌봄 인력 비용, 보험 수가, 만성질환 관리, 시설 가동률이 현금흐름을 지키는지를 봐야 합니다." },
+  },
+  {
+    slug: "health-food-efficacy-repeat-purchase-2026",
+    title: "건강식품은 유행 성분보다 효능 신뢰와 재구매 주기가 사업을 가릅니다",
+    desk: "건강식품",
+    author: "Nutri",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "건강식품 투자는 유행 성분보다 효능 신뢰, 광고 규제, 원료 가격, 재구매 주기, 브랜드 충성도가 마진을 지키는지 확인해야 합니다.",
+    image: HEALTH_FOOD_EFFICACY_REPEAT_PURCHASE_2026_IMAGE,
+    video: { youtubeId: "Qj99w0sfH04", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Qj99w0sfH04", thumbnailUrl: "https://i.ytimg.com/vi/Qj99w0sfH04/hqdefault.jpg", description: "건강식품 투자는 유행 성분보다 효능 신뢰, 광고 규제, 원료 가격, 재구매 주기, 브랜드 충성도가 마진을 지키는지 확인해야 합니다." },
+  },
+  {
+    slug: "crypto-blockchain-custody-regulation-2026",
+    title: "암호화폐·블록체인은 가격보다 보관 인프라와 규제 통과 속도가 먼저입니다",
+    desk: "암호화폐·블록체인",
+    author: "Chain",
+    publishedAt: "2026-05-30T23:24:18+09:00",
+    summary: "암호화폐·블록체인 투자는 코인 가격보다 보관 인프라, 거래 수수료, ETF·기관 수요, 규제 승인, 해킹 대응 비용을 봐야 합니다.",
+    image: CRYPTO_BLOCKCHAIN_CUSTODY_REGULATION_2026_IMAGE,
+    video: { youtubeId: "RWtjXO8nvNc", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RWtjXO8nvNc", thumbnailUrl: "https://i.ytimg.com/vi/RWtjXO8nvNc/hqdefault.jpg", description: "암호화폐·블록체인 투자는 코인 가격보다 보관 인프라, 거래 수수료, ETF·기관 수요, 규제 승인, 해킹 대응 비용을 봐야 합니다." },
+  },
   {
     slug: "artificial-intelligence-margin-bottleneck-2026",
     title: "인공지능 투자는 추론 서버와 에이전트 소프트웨어보다 전력과 GPU 임대료를 먼저 봐야 합니다",
