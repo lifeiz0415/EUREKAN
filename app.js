@@ -4111,7 +4111,7 @@ function getDeskLabel(desk) {
 }
 
 function getDeskMenuLabel(desk, index = 0) {
-  return `${index + 1}. ${deskEmoji[desk] || "📌"} ${desk}`;
+  return `${index + 1}. ${desk} ${deskEmoji[desk] || "📌"}`;
 }
 
 function getDeskAgentName(pageOrDesk) {
