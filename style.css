@@ -752,6 +752,57 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   color: var(--accent-dark);
 }
 
+.article-related-stocks {
+  margin: -4px 0 22px;
+  border: 1px solid rgba(73, 107, 57, 0.22);
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(250, 252, 246, 0.95);
+}
+
+.article-related-stocks__title {
+  margin: 0 0 10px;
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.article-related-stocks__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.article-related-stocks__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 11px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.article-related-stocks__link:hover,
+.article-related-stocks__link:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+
+.article-related-stocks__ticker {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
 .article-body {
   display: grid;
   gap: 18px;

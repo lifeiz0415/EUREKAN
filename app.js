@@ -1034,10 +1034,17 @@ const featuredPages = [
     desk: "우주 기술",
     author: "Orion",
     publishedAt: "2026-05-30T19:10:24+09:00",
+    modifiedAt: "2026-05-30T20:39:48+09:00",
     summary: "우주 기술 테마는 위성, 발사체, 우주 데이터 서비스의 성장성만으로 판단하기 어렵고 발사 일정과 보험 비용, 수주잔고와 반복 서비스 매출, 장기 서비스 계약가 함께 맞아야 합니다.",
     image: SPACE_TECHNOLOGY_MARGIN_BOTTLENECK_2026_IMAGE,
     audio: { src: "audios/space-technology-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
     video: { youtubeId: "8Am8EoBriZs", title: "우주 기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8Am8EoBriZs", thumbnailUrl: "https://i.ytimg.com/vi/8Am8EoBriZs/hqdefault.jpg", description: "우주 기술 테마는 위성, 발사체, 우주 데이터 서비스의 성장성만으로 판단하기 어렵고 발사 일정과 보험 비용, 수주잔고와 반복 서비스 매출, 장기 서비스 계약가 함께 맞아야 합니다." },
+    relatedStocks: [
+      { name: "로켓 랩", market: "미국", ticker: "RKLB", url: "https://m.stock.naver.com/worldstock/stock/RKLB.O" },
+      { name: "플래닛 랩스 PBC", market: "미국", ticker: "PL", url: "https://m.stock.naver.com/worldstock/stock/PL" },
+      { name: "한화에어로스페이스", market: "한국", ticker: "012450.KS", url: "https://m.stock.naver.com/domestic/stock/012450/total" },
+      { name: "쎄트렉아이", market: "한국", ticker: "099320.KQ", url: "https://m.stock.naver.com/domestic/stock/099320/total" },
+    ],
   },
   {
     slug: "space-technology-demand-revenue-2026",
@@ -2441,6 +2448,7 @@ const articleMetaNode = document.querySelector("#article-meta");
 const articleBodyNode = document.querySelector("#article-body");
 let articleMainNode = articleViewNode?.querySelector(".article-main");
 let articleTocNode = document.querySelector("#article-toc");
+let articleRelatedStocksNode = document.querySelector("#article-related-stocks");
 const voiceButtonNode = document.querySelector("#voice-button");
 const voiceStatusNode = document.querySelector("#voice-status");
 let voiceProgressNode = document.querySelector("#voice-progress");
@@ -2526,6 +2534,21 @@ if (!articleTocNode && articleViewNode && articleBodyNode) {
   articleTocNode.hidden = true;
   articleTocNode.setAttribute("aria-label", "글 목차");
   articleViewNode.insertBefore(articleTocNode, articleBodyNode);
+}
+
+if (!articleRelatedStocksNode && articleViewNode && articleBodyNode) {
+  articleRelatedStocksNode = document.createElement("section");
+  articleRelatedStocksNode.id = "article-related-stocks";
+  articleRelatedStocksNode.className = "article-related-stocks";
+  articleRelatedStocksNode.hidden = true;
+  articleRelatedStocksNode.setAttribute("aria-label", "관련종목");
+}
+
+if (articleRelatedStocksNode && articleBodyNode) {
+  const referenceNode = articleTocNode?.nextSibling || articleBodyNode;
+  if (articleRelatedStocksNode.parentElement !== articleViewNode || articleRelatedStocksNode.nextElementSibling !== articleBodyNode) {
+    articleViewNode.insertBefore(articleRelatedStocksNode, referenceNode);
+  }
 }
 
 if (voiceButtonNode && !voiceProgressNode) {
@@ -3002,6 +3025,50 @@ function renderArticleVideo(page) {
   `;
 }
 
+function getPageRelatedStocks(page) {
+  if (!Array.isArray(page?.relatedStocks)) return [];
+  return page.relatedStocks
+    .filter((stock) => stock?.name && stock?.market && stock?.url)
+    .slice(0, 4);
+}
+
+function getRelatedStockMarketLabel(market = "") {
+  if (market === "한국") return "🇰🇷";
+  if (market === "미국") return "🇺🇸";
+  return market;
+}
+
+function getRelatedStockTickerLabel(stock) {
+  const ticker = String(stock?.ticker || "");
+  if (stock?.market === "한국") return ticker.replace(/\.(?:KS|KQ)$/i, "");
+  return ticker;
+}
+
+function renderArticleRelatedStocks(page) {
+  if (!articleRelatedStocksNode) return;
+  const stocks = getPageRelatedStocks(page);
+  if (!stocks.length) {
+    articleRelatedStocksNode.hidden = true;
+    articleRelatedStocksNode.innerHTML = "";
+    return;
+  }
+
+  articleRelatedStocksNode.hidden = false;
+  articleRelatedStocksNode.innerHTML = `
+    <p class="article-related-stocks__title">관련종목</p>
+    <ul class="article-related-stocks__list">
+      ${stocks.map((stock) => `
+        <li class="article-related-stocks__item">
+          <a class="article-related-stocks__link" href="${escapeHtml(stock.url)}" target="_blank" rel="noopener noreferrer">
+            <span>${escapeHtml(getRelatedStockMarketLabel(stock.market))} ${escapeHtml(stock.name)}</span>
+            ${stock.ticker ? `<span class="article-related-stocks__ticker">${escapeHtml(getRelatedStockTickerLabel(stock))}</span>` : ""}
+          </a>
+        </li>
+      `).join("")}
+    </ul>
+  `;
+}
+
 function getStaticArticleSlugFromPath() {
   const match = decodeURIComponent(window.location.pathname).match(/\/pages\/([^/]+)\.html$/);
   return match ? match[1] : "";
@@ -3110,7 +3177,7 @@ function setArticleMeta(page) {
   setPropertyMetaEntries({
     "article:section": page.desk,
     "article:published_time": page.publishedAt,
-    "article:modified_time": page.publishedAt,
+    "article:modified_time": page.modifiedAt || page.publishedAt,
   });
 }
 
@@ -3246,7 +3313,7 @@ function updateArticleSeo(page) {
       } : {}),
       ...videoStructuredData,
       datePublished: page.publishedAt,
-      dateModified: page.publishedAt,
+      dateModified: page.modifiedAt || page.publishedAt,
       articleSection: page.desk,
       inLanguage: SEO_LANGUAGE,
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
@@ -3640,6 +3707,7 @@ function setMainView(view) {
 
 function clearArticleContext() {
   hideArticleToc();
+  renderArticleRelatedStocks(null);
   activePage = null;
   setVoiceReady("");
 }
@@ -3885,6 +3953,7 @@ function getArticleSpeechPayload(page) {
 
 function renderArticleBodyAndVoice(articleHtml, page) {
   renderArticleHtmlContent(articleHtml, page);
+  renderArticleRelatedStocks(page);
   buildSpeechHighlightSegments(page?.title);
   setVoiceReady(getArticleSpeechPayload(page), page);
 }
