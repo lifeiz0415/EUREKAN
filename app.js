@@ -1474,7 +1474,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "인공지능 투자는 모델 성능 발표보다 추론 단가, 전력 계약, 고객 사용 시간, 반복 과금 전환율을 함께 봐야 실적의 질을 가늠할 수 있습니다.",
     image: ARTIFICIAL_INTELLIGENCE_INFERENCE_UNIT_ECONOMICS_2026_IMAGE,
-    video: { youtubeId: "7VcdPR8IEnA", title: "인공지능 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7VcdPR8IEnA", thumbnailUrl: "https://i.ytimg.com/vi/7VcdPR8IEnA/hqdefault.jpg", description: "인공지능 투자는 모델 성능 발표보다 추론 단가, 전력 계약, 고객 사용 시간, 반복 과금 전환율을 함께 봐야 실적의 질을 가늠할 수 있습니다." },
+    video: { youtubeId: "6swCgt6jZcg", title: "인공지능 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=6swCgt6jZcg", thumbnailUrl: "https://i.ytimg.com/vi/6swCgt6jZcg/hqdefault.jpg", description: "인공지능 투자는 모델 성능 발표보다 추론 단가, 전력 계약, 고객 사용 시간, 반복 과금 전환율을 함께 봐야 실적의 질을 가늠할 수 있습니다." },
   },
   {
     slug: "cloud-computing-capex-utilization-2026",
@@ -1484,7 +1484,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "클라우드 컴퓨팅 기업은 AI 서버 증설보다 리전 가동률, 사용량 기반 매출, 감가상각 부담, 잉여현금흐름을 같이 확인해야 합니다.",
     image: CLOUD_COMPUTING_CAPEX_UTILIZATION_2026_IMAGE,
-    video: { youtubeId: "5s9UnfOpSJo", title: "클라우드 컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=5s9UnfOpSJo", thumbnailUrl: "https://i.ytimg.com/vi/5s9UnfOpSJo/hqdefault.jpg", description: "클라우드 컴퓨팅 기업은 AI 서버 증설보다 리전 가동률, 사용량 기반 매출, 감가상각 부담, 잉여현금흐름을 같이 확인해야 합니다." },
+    video: { youtubeId: "7u0VZPoE_uc", title: "클라우드 컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7u0VZPoE_uc", thumbnailUrl: "https://i.ytimg.com/vi/7u0VZPoE_uc/hqdefault.jpg", description: "클라우드 컴퓨팅 기업은 AI 서버 증설보다 리전 가동률, 사용량 기반 매출, 감가상각 부담, 잉여현금흐름을 같이 확인해야 합니다." },
   },
   {
     slug: "electric-vehicle-battery-inventory-margin-2026",
@@ -1494,7 +1494,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "전기차 투자는 판매 대수 증가만 보지 말고 배터리 원가, 가격 인하 압력, 재고 회전, 보조금 변화가 차량당 마진에 미치는 영향을 확인해야 합니다.",
     image: ELECTRIC_VEHICLE_BATTERY_INVENTORY_MARGIN_2026_IMAGE,
-    video: { youtubeId: "ueUaCY_swpU", title: "전기차 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ueUaCY_swpU", thumbnailUrl: "https://i.ytimg.com/vi/ueUaCY_swpU/hqdefault.jpg", description: "전기차 투자는 판매 대수 증가만 보지 말고 배터리 원가, 가격 인하 압력, 재고 회전, 보조금 변화가 차량당 마진에 미치는 영향을 확인해야 합니다." },
+    video: { youtubeId: "3QS9wGGGCr4", title: "전기차 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=3QS9wGGGCr4", thumbnailUrl: "https://i.ytimg.com/vi/3QS9wGGGCr4/hqdefault.jpg", description: "전기차 투자는 판매 대수 증가만 보지 말고 배터리 원가, 가격 인하 압력, 재고 회전, 보조금 변화가 차량당 마진에 미치는 영향을 확인해야 합니다." },
   },
   {
     slug: "transport-logistics-contract-freight-2026",
@@ -1504,7 +1504,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "운송·물류 기업은 물동량 증가보다 계약 운임, 빈차 시간, 창고 가동률, 인건비와 연료비 전가 여부가 이익을 좌우합니다.",
     image: TRANSPORT_LOGISTICS_CONTRACT_FREIGHT_2026_IMAGE,
-    video: { youtubeId: "7E86Y_gXNg4", title: "운송·물류 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7E86Y_gXNg4", thumbnailUrl: "https://i.ytimg.com/vi/7E86Y_gXNg4/hqdefault.jpg", description: "운송·물류 기업은 물동량 증가보다 계약 운임, 빈차 시간, 창고 가동률, 인건비와 연료비 전가 여부가 이익을 좌우합니다." },
+    video: { youtubeId: "oy8SRhwkujk", title: "운송·물류 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=oy8SRhwkujk", thumbnailUrl: "https://i.ytimg.com/vi/oy8SRhwkujk/hqdefault.jpg", description: "운송·물류 기업은 물동량 증가보다 계약 운임, 빈차 시간, 창고 가동률, 인건비와 연료비 전가 여부가 이익을 좌우합니다." },
   },
   {
     slug: "space-technology-launch-insurance-backlog-2026",
@@ -1534,7 +1534,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "전통 에너지 기업은 유가 방향만으로 판단하지 말고 정제 마진, 생산 단가, 잉여현금흐름, 배당과 자사주 매입 지속성을 함께 봐야 합니다.",
     image: TRADITIONAL_ENERGY_REFINING_CASH_RETURN_2026_IMAGE,
-    video: { youtubeId: "iAj8DEITbe0", title: "전통 에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=iAj8DEITbe0", thumbnailUrl: "https://i.ytimg.com/vi/iAj8DEITbe0/hqdefault.jpg", description: "전통 에너지 기업은 유가 방향만으로 판단하지 말고 정제 마진, 생산 단가, 잉여현금흐름, 배당과 자사주 매입 지속성을 함께 봐야 합니다." },
+    video: { youtubeId: "6YLb3k9QWIg", title: "전통 에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=6YLb3k9QWIg", thumbnailUrl: "https://i.ytimg.com/vi/6YLb3k9QWIg/hqdefault.jpg", description: "전통 에너지 기업은 유가 방향만으로 판단하지 말고 정제 마진, 생산 단가, 잉여현금흐름, 배당과 자사주 매입 지속성을 함께 봐야 합니다." },
   },
   {
     slug: "semiconductor-packaging-customer-prepayment-2026",
@@ -1544,7 +1544,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "반도체 투자는 웨이퍼 출하량보다 HBM 패키징 병목, 수율, 고객 선급금, 장기 공급 계약이 이익률을 지키는지 확인해야 합니다.",
     image: SEMICONDUCTOR_PACKAGING_CUSTOMER_PREPAYMENT_2026_IMAGE,
-    video: { youtubeId: "KtBiw1BId7M", title: "반도체 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=KtBiw1BId7M", thumbnailUrl: "https://i.ytimg.com/vi/KtBiw1BId7M/hqdefault.jpg", description: "반도체 투자는 웨이퍼 출하량보다 HBM 패키징 병목, 수율, 고객 선급금, 장기 공급 계약이 이익률을 지키는지 확인해야 합니다." },
+    video: { youtubeId: "7xKqc-ZcKkc", title: "반도체 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7xKqc-ZcKkc", thumbnailUrl: "https://i.ytimg.com/vi/7xKqc-ZcKkc/hqdefault.jpg", description: "반도체 투자는 웨이퍼 출하량보다 HBM 패키징 병목, 수율, 고객 선급금, 장기 공급 계약이 이익률을 지키는지 확인해야 합니다." },
   },
   {
     slug: "cybersecurity-renewal-platform-spend-2026",
@@ -1554,7 +1554,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "사이버보안 투자는 침해 사고 뉴스보다 고객 갱신율, 플랫폼 통합, 연간반복매출, 계정 보호 예산이 얼마나 끈끈한지를 먼저 봐야 합니다.",
     image: CYBERSECURITY_RENEWAL_PLATFORM_SPEND_2026_IMAGE,
-    video: { youtubeId: "l-oiFQFSdT8", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=l-oiFQFSdT8", thumbnailUrl: "https://i.ytimg.com/vi/l-oiFQFSdT8/hqdefault.jpg", description: "사이버보안 투자는 침해 사고 뉴스보다 고객 갱신율, 플랫폼 통합, 연간반복매출, 계정 보호 예산이 얼마나 끈끈한지를 먼저 봐야 합니다." },
+    video: { youtubeId: "OzfrMklIoG4", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=OzfrMklIoG4", thumbnailUrl: "https://i.ytimg.com/vi/OzfrMklIoG4/hqdefault.jpg", description: "사이버보안 투자는 침해 사고 뉴스보다 고객 갱신율, 플랫폼 통합, 연간반복매출, 계정 보호 예산이 얼마나 끈끈한지를 먼저 봐야 합니다." },
   },
   {
     slug: "industrial-automation-factory-service-revenue-2026",
@@ -1564,7 +1564,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "산업 자동화 기업은 로봇 수요보다 설비투자 재개, 설치 인력, 수주잔고, 유지보수 서비스 매출 비중이 이익을 얼마나 안정시키는지 봐야 합니다.",
     image: INDUSTRIAL_AUTOMATION_FACTORY_SERVICE_REVENUE_2026_IMAGE,
-    video: { youtubeId: "LcGtLLcOHVc", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LcGtLLcOHVc", thumbnailUrl: "https://i.ytimg.com/vi/LcGtLLcOHVc/hqdefault.jpg", description: "산업 자동화 기업은 로봇 수요보다 설비투자 재개, 설치 인력, 수주잔고, 유지보수 서비스 매출 비중이 이익을 얼마나 안정시키는지 봐야 합니다." },
+    video: { youtubeId: "Rx_LCgziK4k", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Rx_LCgziK4k", thumbnailUrl: "https://i.ytimg.com/vi/Rx_LCgziK4k/hqdefault.jpg", description: "산업 자동화 기업은 로봇 수요보다 설비투자 재개, 설치 인력, 수주잔고, 유지보수 서비스 매출 비중이 이익을 얼마나 안정시키는지 봐야 합니다." },
   },
   {
     slug: "robotics-field-reorder-maintenance-2026",
@@ -1574,7 +1574,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "로보틱스 투자는 시연 영상보다 실제 현장 재주문, 안전 인증, 유지보수 매출, 로봇당 서비스 수익이 쌓이는지를 확인해야 합니다.",
     image: ROBOTICS_FIELD_REORDER_MAINTENANCE_2026_IMAGE,
-    video: { youtubeId: "ezUnJ3McW9M", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ezUnJ3McW9M", thumbnailUrl: "https://i.ytimg.com/vi/ezUnJ3McW9M/hqdefault.jpg", description: "로보틱스 투자는 시연 영상보다 실제 현장 재주문, 안전 인증, 유지보수 매출, 로봇당 서비스 수익이 쌓이는지를 확인해야 합니다." },
+    video: { youtubeId: "lYulQljNtwo", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=lYulQljNtwo", thumbnailUrl: "https://i.ytimg.com/vi/lYulQljNtwo/hqdefault.jpg", description: "로보틱스 투자는 시연 영상보다 실제 현장 재주문, 안전 인증, 유지보수 매출, 로봇당 서비스 수익이 쌓이는지를 확인해야 합니다." },
   },
   {
     slug: "nanotechnology-yield-customer-qualification-2026",
@@ -1584,7 +1584,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "나노기술 투자는 실험실 성능보다 양산 수율, 고객 인증 기간, 적용처 확대, 소재 단가가 얼마나 안정되는지를 봐야 합니다.",
     image: NANOTECHNOLOGY_YIELD_CUSTOMER_QUALIFICATION_2026_IMAGE,
-    video: { youtubeId: "g8pGiQOScRU", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g8pGiQOScRU", thumbnailUrl: "https://i.ytimg.com/vi/g8pGiQOScRU/hqdefault.jpg", description: "나노기술 투자는 실험실 성능보다 양산 수율, 고객 인증 기간, 적용처 확대, 소재 단가가 얼마나 안정되는지를 봐야 합니다." },
+    video: { youtubeId: "NFMO5jvtfOc", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=NFMO5jvtfOc", thumbnailUrl: "https://i.ytimg.com/vi/NFMO5jvtfOc/hqdefault.jpg", description: "나노기술 투자는 실험실 성능보다 양산 수율, 고객 인증 기간, 적용처 확대, 소재 단가가 얼마나 안정되는지를 봐야 합니다." },
   },
   {
     slug: "internet-of-things-device-data-fees-2026",
@@ -1594,7 +1594,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "사물인터넷 기업은 연결 기기 수보다 보안 업데이트, 게이트웨이 관리, 데이터 과금, 플랫폼 사용료가 반복 매출로 남는지를 봐야 합니다.",
     image: INTERNET_OF_THINGS_DEVICE_DATA_FEES_2026_IMAGE,
-    video: { youtubeId: "tsTq8_hc2p8", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=tsTq8_hc2p8", thumbnailUrl: "https://i.ytimg.com/vi/tsTq8_hc2p8/hqdefault.jpg", description: "사물인터넷 기업은 연결 기기 수보다 보안 업데이트, 게이트웨이 관리, 데이터 과금, 플랫폼 사용료가 반복 매출로 남는지를 봐야 합니다." },
+    video: { youtubeId: "PUFlFViz3Ts", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=PUFlFViz3Ts", thumbnailUrl: "https://i.ytimg.com/vi/PUFlFViz3Ts/hqdefault.jpg", description: "사물인터넷 기업은 연결 기기 수보다 보안 업데이트, 게이트웨이 관리, 데이터 과금, 플랫폼 사용료가 반복 매출로 남는지를 봐야 합니다." },
   },
   {
     slug: "energy-commodities-contract-supply-delay-2026",
@@ -1604,7 +1604,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "에너지 원자재 투자는 리튬, 우라늄, 천연가스 가격보다 장기 오프테이크 계약, 생산량, 허가, 증설 지연이 공급을 어떻게 묶는지 확인해야 합니다.",
     image: ENERGY_COMMODITIES_CONTRACT_SUPPLY_DELAY_2026_IMAGE,
-    video: { youtubeId: "R1eWgqMW7VY", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=R1eWgqMW7VY", thumbnailUrl: "https://i.ytimg.com/vi/R1eWgqMW7VY/hqdefault.jpg", description: "에너지 원자재 투자는 리튬, 우라늄, 천연가스 가격보다 장기 오프테이크 계약, 생산량, 허가, 증설 지연이 공급을 어떻게 묶는지 확인해야 합니다." },
+    video: { youtubeId: "bSF9Wu8ZDQw", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=bSF9Wu8ZDQw", thumbnailUrl: "https://i.ytimg.com/vi/bSF9Wu8ZDQw/hqdefault.jpg", description: "에너지 원자재 투자는 리튬, 우라늄, 천연가스 가격보다 장기 오프테이크 계약, 생산량, 허가, 증설 지연이 공급을 어떻게 묶는지 확인해야 합니다." },
   },
   {
     slug: "agriculture-food-pricing-repeat-purchase-2026",
@@ -1614,7 +1614,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "농업·식품 기업은 곡물 가격만 보지 말고 원가 전가력, 브랜드 반복 구매율, 종자와 농기계 수요, 날씨 리스크를 함께 봐야 합니다.",
     image: AGRICULTURE_FOOD_PRICING_REPEAT_PURCHASE_2026_IMAGE,
-    video: { youtubeId: "307Y_TuWB8Q", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=307Y_TuWB8Q", thumbnailUrl: "https://i.ytimg.com/vi/307Y_TuWB8Q/hqdefault.jpg", description: "농업·식품 기업은 곡물 가격만 보지 말고 원가 전가력, 브랜드 반복 구매율, 종자와 농기계 수요, 날씨 리스크를 함께 봐야 합니다." },
+    video: { youtubeId: "NmgqCzWKdSY", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=NmgqCzWKdSY", thumbnailUrl: "https://i.ytimg.com/vi/NmgqCzWKdSY/hqdefault.jpg", description: "농업·식품 기업은 곡물 가격만 보지 말고 원가 전가력, 브랜드 반복 구매율, 종자와 농기계 수요, 날씨 리스크를 함께 봐야 합니다." },
   },
   {
     slug: "software-churn-seat-expansion-2026",
@@ -1624,7 +1624,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "소프트웨어 투자는 신규 매출보다 해지율, 좌석 확장, 영업레버리지, 고객 획득 비용 회수 기간이 반복 이익을 만드는지 확인해야 합니다.",
     image: SOFTWARE_CHURN_SEAT_EXPANSION_2026_IMAGE,
-    video: { youtubeId: "uSxIdtQSS6w", title: "소프트웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=uSxIdtQSS6w", thumbnailUrl: "https://i.ytimg.com/vi/uSxIdtQSS6w/hqdefault.jpg", description: "소프트웨어 투자는 신규 매출보다 해지율, 좌석 확장, 영업레버리지, 고객 획득 비용 회수 기간이 반복 이익을 만드는지 확인해야 합니다." },
+    video: { youtubeId: "Kp1KD7KvsEo", title: "소프트웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Kp1KD7KvsEo", thumbnailUrl: "https://i.ytimg.com/vi/Kp1KD7KvsEo/hqdefault.jpg", description: "소프트웨어 투자는 신규 매출보다 해지율, 좌석 확장, 영업레버리지, 고객 획득 비용 회수 기간이 반복 이익을 만드는지 확인해야 합니다." },
   },
   {
     slug: "quantum-computing-pilot-contracts-2026",
@@ -1634,7 +1634,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "양자컴퓨팅 투자는 큐비트 수 발표보다 고객 파일럿, 오류 보정, 클라우드 접근료, 연구 계약이 실제 매출로 전환되는지를 확인해야 합니다.",
     image: QUANTUM_COMPUTING_PILOT_CONTRACTS_2026_IMAGE,
-    video: { youtubeId: "igU8KGLoQUo", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=igU8KGLoQUo", thumbnailUrl: "https://i.ytimg.com/vi/igU8KGLoQUo/hqdefault.jpg", description: "양자컴퓨팅 투자는 큐비트 수 발표보다 고객 파일럿, 오류 보정, 클라우드 접근료, 연구 계약이 실제 매출로 전환되는지를 확인해야 합니다." },
+    video: { youtubeId: "Cwn35DchoKQ", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Cwn35DchoKQ", thumbnailUrl: "https://i.ytimg.com/vi/Cwn35DchoKQ/hqdefault.jpg", description: "양자컴퓨팅 투자는 큐비트 수 발표보다 고객 파일럿, 오류 보정, 클라우드 접근료, 연구 계약이 실제 매출로 전환되는지를 확인해야 합니다." },
   },
   {
     slug: "defense-aerospace-delivery-cash-conversion-2026",
@@ -1644,7 +1644,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "방산·항공우주 기업은 수주잔고의 크기보다 생산능력, 납품 일정, 원가 상승 조항, 선수금과 현금 회수 속도를 함께 봐야 합니다.",
     image: DEFENSE_AEROSPACE_DELIVERY_CASH_CONVERSION_2026_IMAGE,
-    video: { youtubeId: "LQcuIPuaZHI", title: "방산·항공우주 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LQcuIPuaZHI", thumbnailUrl: "https://i.ytimg.com/vi/LQcuIPuaZHI/hqdefault.jpg", description: "방산·항공우주 기업은 수주잔고의 크기보다 생산능력, 납품 일정, 원가 상승 조항, 선수금과 현금 회수 속도를 함께 봐야 합니다." },
+    video: { youtubeId: "tVwi-tepoe0", title: "방산·항공우주 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=tVwi-tepoe0", thumbnailUrl: "https://i.ytimg.com/vi/tVwi-tepoe0/hqdefault.jpg", description: "방산·항공우주 기업은 수주잔고의 크기보다 생산능력, 납품 일정, 원가 상승 조항, 선수금과 현금 회수 속도를 함께 봐야 합니다." },
   },
   {
     slug: "telecommunications-spectrum-capex-dividend-2026",
@@ -1654,7 +1654,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "통신 기업은 가입자 수보다 주파수 비용, 5G 설비투자, 해지율, 요금제 상승 여력, 배당 재원이 안정적인지를 확인해야 합니다.",
     image: TELECOMMUNICATIONS_SPECTRUM_CAPEX_DIVIDEND_2026_IMAGE,
-    video: { youtubeId: "38DgsVe7jFc", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=38DgsVe7jFc", thumbnailUrl: "https://i.ytimg.com/vi/38DgsVe7jFc/hqdefault.jpg", description: "통신 기업은 가입자 수보다 주파수 비용, 5G 설비투자, 해지율, 요금제 상승 여력, 배당 재원이 안정적인지를 확인해야 합니다." },
+    video: { youtubeId: "CQt9nMtBuHo", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=CQt9nMtBuHo", thumbnailUrl: "https://i.ytimg.com/vi/CQt9nMtBuHo/hqdefault.jpg", description: "통신 기업은 가입자 수보다 주파수 비용, 5G 설비투자, 해지율, 요금제 상승 여력, 배당 재원이 안정적인지를 확인해야 합니다." },
   },
   {
     slug: "autonomous-systems-permit-liability-2026",
@@ -1664,7 +1664,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "자율 시스템 투자는 누적 주행거리보다 상용 운행 허가, 사고 책임, 보험 비용, 차량당 운영비가 실제 서비스 마진으로 이어지는지를 봐야 합니다.",
     image: AUTONOMOUS_SYSTEMS_PERMIT_LIABILITY_2026_IMAGE,
-    video: { youtubeId: "U_jdTk4wkdI", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=U_jdTk4wkdI", thumbnailUrl: "https://i.ytimg.com/vi/U_jdTk4wkdI/hqdefault.jpg", description: "자율 시스템 투자는 누적 주행거리보다 상용 운행 허가, 사고 책임, 보험 비용, 차량당 운영비가 실제 서비스 마진으로 이어지는지를 봐야 합니다." },
+    video: { youtubeId: "F-PB0ygRLiE", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=F-PB0ygRLiE", thumbnailUrl: "https://i.ytimg.com/vi/F-PB0ygRLiE/hqdefault.jpg", description: "자율 시스템 투자는 누적 주행거리보다 상용 운행 허가, 사고 책임, 보험 비용, 차량당 운영비가 실제 서비스 마진으로 이어지는지를 봐야 합니다." },
   },
   {
     slug: "metal-commodities-ore-grade-permit-2026",
@@ -1674,7 +1674,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "금속 원자재 투자는 구리와 알루미늄 가격보다 광산 품위, 증설 허가, 전력 비용, 장기 수요처 계약을 함께 확인해야 합니다.",
     image: METAL_COMMODITIES_ORE_GRADE_PERMIT_2026_IMAGE,
-    video: { youtubeId: "JHK8yCXiKKU", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=JHK8yCXiKKU", thumbnailUrl: "https://i.ytimg.com/vi/JHK8yCXiKKU/hqdefault.jpg", description: "금속 원자재 투자는 구리와 알루미늄 가격보다 광산 품위, 증설 허가, 전력 비용, 장기 수요처 계약을 함께 확인해야 합니다." },
+    video: { youtubeId: "LQxw4j9Wmeg", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LQxw4j9Wmeg", thumbnailUrl: "https://i.ytimg.com/vi/LQxw4j9Wmeg/hqdefault.jpg", description: "금속 원자재 투자는 구리와 알루미늄 가격보다 광산 품위, 증설 허가, 전력 비용, 장기 수요처 계약을 함께 확인해야 합니다." },
   },
   {
     slug: "environment-sustainability-waste-pricing-regulation-2026",
@@ -1684,7 +1684,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "환경 지속가능성 기업은 친환경 구호보다 폐기물 처리 단가, 재활용 수율, 물 인프라 요금, 규제 의무가 반복 매출로 남는지를 봐야 합니다.",
     image: ENVIRONMENT_SUSTAINABILITY_WASTE_PRICING_REGULATION_2026_IMAGE,
-    video: { youtubeId: "jZH0HPVipUU", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jZH0HPVipUU", thumbnailUrl: "https://i.ytimg.com/vi/jZH0HPVipUU/hqdefault.jpg", description: "환경 지속가능성 기업은 친환경 구호보다 폐기물 처리 단가, 재활용 수율, 물 인프라 요금, 규제 의무가 반복 매출로 남는지를 봐야 합니다." },
+    video: { youtubeId: "zOjj4O7uLJw", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zOjj4O7uLJw", thumbnailUrl: "https://i.ytimg.com/vi/zOjj4O7uLJw/hqdefault.jpg", description: "환경 지속가능성 기업은 친환경 구호보다 폐기물 처리 단가, 재활용 수율, 물 인프라 요금, 규제 의무가 반복 매출로 남는지를 봐야 합니다." },
   },
   {
     slug: "hardware-replacement-cycle-component-cost-2026",
@@ -1694,7 +1694,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "하드웨어 기업은 신제품 공개보다 부품 원가, 재고 회전, 교체 주기, 서비스 연결 매출이 기기 판매를 얼마나 보완하는지 봐야 합니다.",
     image: HARDWARE_REPLACEMENT_CYCLE_COMPONENT_COST_2026_IMAGE,
-    video: { youtubeId: "EZOWZDB60i4", title: "하드웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=EZOWZDB60i4", thumbnailUrl: "https://i.ytimg.com/vi/EZOWZDB60i4/hqdefault.jpg", description: "하드웨어 기업은 신제품 공개보다 부품 원가, 재고 회전, 교체 주기, 서비스 연결 매출이 기기 판매를 얼마나 보완하는지 봐야 합니다." },
+    video: { youtubeId: "zTzIxVDm4yk", title: "하드웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zTzIxVDm4yk", thumbnailUrl: "https://i.ytimg.com/vi/zTzIxVDm4yk/hqdefault.jpg", description: "하드웨어 기업은 신제품 공개보다 부품 원가, 재고 회전, 교체 주기, 서비스 연결 매출이 기기 판매를 얼마나 보완하는지 봐야 합니다." },
   },
   {
     slug: "virtual-augmented-reality-content-retention-2026",
@@ -1704,7 +1704,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "가상·증강현실 투자는 헤드셋 출시보다 콘텐츠 체류 시간, 개발자 수익, 기업용 활용, 기기 원가와 앱 결제율을 함께 봐야 합니다.",
     image: VIRTUAL_AUGMENTED_REALITY_CONTENT_RETENTION_2026_IMAGE,
-    video: { youtubeId: "8tnMjWcYeBA", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8tnMjWcYeBA", thumbnailUrl: "https://i.ytimg.com/vi/8tnMjWcYeBA/hqdefault.jpg", description: "가상·증강현실 투자는 헤드셋 출시보다 콘텐츠 체류 시간, 개발자 수익, 기업용 활용, 기기 원가와 앱 결제율을 함께 봐야 합니다." },
+    video: { youtubeId: "0f7Dm7gzQkI", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=0f7Dm7gzQkI", thumbnailUrl: "https://i.ytimg.com/vi/0f7Dm7gzQkI/hqdefault.jpg", description: "가상·증강현실 투자는 헤드셋 출시보다 콘텐츠 체류 시간, 개발자 수익, 기업용 활용, 기기 원가와 앱 결제율을 함께 봐야 합니다." },
   },
   {
     slug: "ecommerce-logistics-ad-margin-2026",
@@ -1714,7 +1714,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "전자상거래 투자는 거래액 증가보다 물류비, 반품률, 광고 매출, 멤버십 유지율이 영업이익률을 얼마나 끌어올리는지 확인해야 합니다.",
     image: ECOMMERCE_LOGISTICS_AD_MARGIN_2026_IMAGE,
-    video: { youtubeId: "vU8UEakEHLU", title: "전자상거래 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=vU8UEakEHLU", thumbnailUrl: "https://i.ytimg.com/vi/vU8UEakEHLU/hqdefault.jpg", description: "전자상거래 투자는 거래액 증가보다 물류비, 반품률, 광고 매출, 멤버십 유지율이 영업이익률을 얼마나 끌어올리는지 확인해야 합니다." },
+    video: { youtubeId: "w9mXs0m1cR0", title: "전자상거래 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=w9mXs0m1cR0", thumbnailUrl: "https://i.ytimg.com/vi/w9mXs0m1cR0/hqdefault.jpg", description: "전자상거래 투자는 거래액 증가보다 물류비, 반품률, 광고 매출, 멤버십 유지율이 영업이익률을 얼마나 끌어올리는지 확인해야 합니다." },
   },
   {
     slug: "digital-entertainment-ip-repeat-spending-2026",
@@ -1724,7 +1724,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "디지털 엔터테인먼트 기업은 흥행작 하나보다 IP 확장, 구독 유지율, 게임 내 반복 결제, 제작비 회수 속도를 함께 봐야 합니다.",
     image: DIGITAL_ENTERTAINMENT_IP_REPEAT_SPENDING_2026_IMAGE,
-    video: { youtubeId: "GViZEwZvnck", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=GViZEwZvnck", thumbnailUrl: "https://i.ytimg.com/vi/GViZEwZvnck/hqdefault.jpg", description: "디지털 엔터테인먼트 기업은 흥행작 하나보다 IP 확장, 구독 유지율, 게임 내 반복 결제, 제작비 회수 속도를 함께 봐야 합니다." },
+    video: { youtubeId: "jsCENr9QmPk", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jsCENr9QmPk", thumbnailUrl: "https://i.ytimg.com/vi/jsCENr9QmPk/hqdefault.jpg", description: "디지털 엔터테인먼트 기업은 흥행작 하나보다 IP 확장, 구독 유지율, 게임 내 반복 결제, 제작비 회수 속도를 함께 봐야 합니다." },
   },
   {
     slug: "consumer-goods-pricing-volume-resilience-2026",
@@ -1734,7 +1734,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "소비재 투자는 브랜드 인지도보다 가격 인상 후 판매량, 유통 재고, 원재료 가격, 반복 구매율이 마진을 지키는지 확인해야 합니다.",
     image: CONSUMER_GOODS_PRICING_VOLUME_RESILIENCE_2026_IMAGE,
-    video: { youtubeId: "wd7DnDISJjY", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=wd7DnDISJjY", thumbnailUrl: "https://i.ytimg.com/vi/wd7DnDISJjY/hqdefault.jpg", description: "소비재 투자는 브랜드 인지도보다 가격 인상 후 판매량, 유통 재고, 원재료 가격, 반복 구매율이 마진을 지키는지 확인해야 합니다." },
+    video: { youtubeId: "unR0Wu1anI0", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=unR0Wu1anI0", thumbnailUrl: "https://i.ytimg.com/vi/unR0Wu1anI0/hqdefault.jpg", description: "소비재 투자는 브랜드 인지도보다 가격 인상 후 판매량, 유통 재고, 원재료 가격, 반복 구매율이 마진을 지키는지 확인해야 합니다." },
   },
   {
     slug: "smart-home-standard-subscription-2026",
@@ -1744,7 +1744,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "스마트홈 투자는 기기 판매보다 연결 표준, 설치 편의성, 보안 업데이트, 구독 서비스가 가정 내 반복 매출을 만드는지를 봐야 합니다.",
     image: SMART_HOME_STANDARD_SUBSCRIPTION_2026_IMAGE,
-    video: { youtubeId: "g7buf6Tg4OE", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g7buf6Tg4OE", thumbnailUrl: "https://i.ytimg.com/vi/g7buf6Tg4OE/hqdefault.jpg", description: "스마트홈 투자는 기기 판매보다 연결 표준, 설치 편의성, 보안 업데이트, 구독 서비스가 가정 내 반복 매출을 만드는지를 봐야 합니다." },
+    video: { youtubeId: "CPhqDkz1q8A", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=CPhqDkz1q8A", thumbnailUrl: "https://i.ytimg.com/vi/CPhqDkz1q8A/hqdefault.jpg", description: "스마트홈 투자는 기기 판매보다 연결 표준, 설치 편의성, 보안 업데이트, 구독 서비스가 가정 내 반복 매출을 만드는지를 봐야 합니다." },
   },
   {
     slug: "healthcare-biotech-reimbursement-capacity-2026",
@@ -1754,7 +1754,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "헬스케어·바이오테크 투자는 임상 뉴스만 보지 말고 보험 적용, 처방 속도, 생산 능력, 규제 리스크가 매출 지속성을 어떻게 바꾸는지 봐야 합니다.",
     image: HEALTHCARE_BIOTECH_REIMBURSEMENT_CAPACITY_2026_IMAGE,
-    video: { youtubeId: "SPCQnkLujKc", title: "헬스케어·바이오테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=SPCQnkLujKc", thumbnailUrl: "https://i.ytimg.com/vi/SPCQnkLujKc/hqdefault.jpg", description: "헬스케어·바이오테크 투자는 임상 뉴스만 보지 말고 보험 적용, 처방 속도, 생산 능력, 규제 리스크가 매출 지속성을 어떻게 바꾸는지 봐야 합니다." },
+    video: { youtubeId: "uH9Y8n5i29w", title: "헬스케어·바이오테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=uH9Y8n5i29w", thumbnailUrl: "https://i.ytimg.com/vi/uH9Y8n5i29w/hqdefault.jpg", description: "헬스케어·바이오테크 투자는 임상 뉴스만 보지 말고 보험 적용, 처방 속도, 생산 능력, 규제 리스크가 매출 지속성을 어떻게 바꾸는지 봐야 합니다." },
   },
   {
     slug: "fintech-credit-loss-funding-cost-2026",
@@ -1774,7 +1774,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "생체인식 투자는 편의성보다 개인정보 규제, 공항과 기관 계약, 인증 정확도, 보안 사고 대응 비용이 채택 속도를 결정합니다.",
     image: BIOMETRICS_PRIVACY_CONTRACT_ADOPTION_2026_IMAGE,
-    video: { youtubeId: "ku3LDxs_054", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ku3LDxs_054", thumbnailUrl: "https://i.ytimg.com/vi/ku3LDxs_054/hqdefault.jpg", description: "생체인식 투자는 편의성보다 개인정보 규제, 공항과 기관 계약, 인증 정확도, 보안 사고 대응 비용이 채택 속도를 결정합니다." },
+    video: { youtubeId: "jVj1D51uBps", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jVj1D51uBps", thumbnailUrl: "https://i.ytimg.com/vi/jVj1D51uBps/hqdefault.jpg", description: "생체인식 투자는 편의성보다 개인정보 규제, 공항과 기관 계약, 인증 정확도, 보안 사고 대응 비용이 채택 속도를 결정합니다." },
   },
   {
     slug: "big-data-decision-workflow-budget-2026",
@@ -1784,7 +1784,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "빅데이터 기업은 데이터 저장량보다 고객 의사결정 흐름에 붙는 반복 예산, 데이터 품질, 분석 워크플로, 보안 요건을 봐야 합니다.",
     image: BIG_DATA_DECISION_WORKFLOW_BUDGET_2026_IMAGE,
-    video: { youtubeId: "pNb-BM30xu4", title: "빅데이터 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=pNb-BM30xu4", thumbnailUrl: "https://i.ytimg.com/vi/pNb-BM30xu4/hqdefault.jpg", description: "빅데이터 기업은 데이터 저장량보다 고객 의사결정 흐름에 붙는 반복 예산, 데이터 품질, 분석 워크플로, 보안 요건을 봐야 합니다." },
+    video: { youtubeId: "4GdKar3IMKk", title: "빅데이터 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=4GdKar3IMKk", thumbnailUrl: "https://i.ytimg.com/vi/4GdKar3IMKk/hqdefault.jpg", description: "빅데이터 기업은 데이터 저장량보다 고객 의사결정 흐름에 붙는 반복 예산, 데이터 품질, 분석 워크플로, 보안 요건을 봐야 합니다." },
   },
   {
     slug: "social-media-ad-pricing-trust-2026",
@@ -1794,7 +1794,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "소셜미디어 투자는 이용자 수보다 광고 단가, 체류 시간, 추천 알고리즘 신뢰, 브랜드 안전성, 크리에이터 보상 구조가 핵심입니다.",
     image: SOCIAL_MEDIA_AD_PRICING_TRUST_2026_IMAGE,
-    video: { youtubeId: "IFHJjmXFFEY", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=IFHJjmXFFEY", thumbnailUrl: "https://i.ytimg.com/vi/IFHJjmXFFEY/hqdefault.jpg", description: "소셜미디어 투자는 이용자 수보다 광고 단가, 체류 시간, 추천 알고리즘 신뢰, 브랜드 안전성, 크리에이터 보상 구조가 핵심입니다." },
+    video: { youtubeId: "nclgmEPI0kg", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=nclgmEPI0kg", thumbnailUrl: "https://i.ytimg.com/vi/nclgmEPI0kg/hqdefault.jpg", description: "소셜미디어 투자는 이용자 수보다 광고 단가, 체류 시간, 추천 알고리즘 신뢰, 브랜드 안전성, 크리에이터 보상 구조가 핵심입니다." },
   },
   {
     slug: "real-estate-reits-lease-debt-maturity-2026",
@@ -1804,7 +1804,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "부동산·리츠 투자는 배당률만 보지 말고 임대료 재계약, 공실률, 차입 만기, 금리 민감도, 자산 유형별 수요를 함께 봐야 합니다.",
     image: REAL_ESTATE_REITS_LEASE_DEBT_MATURITY_2026_IMAGE,
-    video: { youtubeId: "gn2nVZ3V9Ks", title: "부동산·리츠 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=gn2nVZ3V9Ks", thumbnailUrl: "https://i.ytimg.com/vi/gn2nVZ3V9Ks/hqdefault.jpg", description: "부동산·리츠 투자는 배당률만 보지 말고 임대료 재계약, 공실률, 차입 만기, 금리 민감도, 자산 유형별 수요를 함께 봐야 합니다." },
+    video: { youtubeId: "eBkVZSM7oh4", title: "부동산·리츠 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=eBkVZSM7oh4", thumbnailUrl: "https://i.ytimg.com/vi/eBkVZSM7oh4/hqdefault.jpg", description: "부동산·리츠 투자는 배당률만 보지 말고 임대료 재계약, 공실률, 차입 만기, 금리 민감도, 자산 유형별 수요를 함께 봐야 합니다." },
   },
   {
     slug: "wearables-health-data-service-2026",
@@ -1814,7 +1814,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "웨어러블 투자는 기기 출하량보다 센서 정확도, 배터리, 건강 데이터 서비스, 보험과 의료 연계가 반복 수익으로 이어지는지를 봐야 합니다.",
     image: WEARABLES_HEALTH_DATA_SERVICE_2026_IMAGE,
-    video: { youtubeId: "RfKxwbE-pZ8", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RfKxwbE-pZ8", thumbnailUrl: "https://i.ytimg.com/vi/RfKxwbE-pZ8/hqdefault.jpg", description: "웨어러블 투자는 기기 출하량보다 센서 정확도, 배터리, 건강 데이터 서비스, 보험과 의료 연계가 반복 수익으로 이어지는지를 봐야 합니다." },
+    video: { youtubeId: "t8IbcoREFc0", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=t8IbcoREFc0", thumbnailUrl: "https://i.ytimg.com/vi/t8IbcoREFc0/hqdefault.jpg", description: "웨어러블 투자는 기기 출하량보다 센서 정확도, 배터리, 건강 데이터 서비스, 보험과 의료 연계가 반복 수익으로 이어지는지를 봐야 합니다." },
   },
   {
     slug: "edtech-completion-enterprise-budget-2026",
@@ -1824,7 +1824,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "에듀테크 투자는 수강자 수보다 학습 완료율, 기업 교육 예산, AI 튜터 품질, 구독 유지율이 장기 매출로 남는지를 확인해야 합니다.",
     image: EDTECH_COMPLETION_ENTERPRISE_BUDGET_2026_IMAGE,
-    video: { youtubeId: "zUdXScyI2MI", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zUdXScyI2MI", thumbnailUrl: "https://i.ytimg.com/vi/zUdXScyI2MI/hqdefault.jpg", description: "에듀테크 투자는 수강자 수보다 학습 완료율, 기업 교육 예산, AI 튜터 품질, 구독 유지율이 장기 매출로 남는지를 확인해야 합니다." },
+    video: { youtubeId: "T-enGNSR6_Q", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=T-enGNSR6_Q", thumbnailUrl: "https://i.ytimg.com/vi/T-enGNSR6_Q/hqdefault.jpg", description: "에듀테크 투자는 수강자 수보다 학습 완료율, 기업 교육 예산, AI 튜터 품질, 구독 유지율이 장기 매출로 남는지를 확인해야 합니다." },
   },
   {
     slug: "aging-care-labor-reimbursement-2026",
@@ -1834,7 +1834,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "고령화 투자는 노인 인구 증가보다 돌봄 인력 비용, 보험 수가, 만성질환 관리, 시설 가동률이 현금흐름을 지키는지를 봐야 합니다.",
     image: AGING_CARE_LABOR_REIMBURSEMENT_2026_IMAGE,
-    video: { youtubeId: "1dqJ-TpMiTg", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=1dqJ-TpMiTg", thumbnailUrl: "https://i.ytimg.com/vi/1dqJ-TpMiTg/hqdefault.jpg", description: "고령화 투자는 노인 인구 증가보다 돌봄 인력 비용, 보험 수가, 만성질환 관리, 시설 가동률이 현금흐름을 지키는지를 봐야 합니다." },
+    video: { youtubeId: "yTYsgJLfAyo", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=yTYsgJLfAyo", thumbnailUrl: "https://i.ytimg.com/vi/yTYsgJLfAyo/hqdefault.jpg", description: "고령화 투자는 노인 인구 증가보다 돌봄 인력 비용, 보험 수가, 만성질환 관리, 시설 가동률이 현금흐름을 지키는지를 봐야 합니다." },
   },
   {
     slug: "health-food-efficacy-repeat-purchase-2026",
@@ -1844,7 +1844,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "건강식품 투자는 유행 성분보다 효능 신뢰, 광고 규제, 원료 가격, 재구매 주기, 브랜드 충성도가 마진을 지키는지 확인해야 합니다.",
     image: HEALTH_FOOD_EFFICACY_REPEAT_PURCHASE_2026_IMAGE,
-    video: { youtubeId: "Qj99w0sfH04", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Qj99w0sfH04", thumbnailUrl: "https://i.ytimg.com/vi/Qj99w0sfH04/hqdefault.jpg", description: "건강식품 투자는 유행 성분보다 효능 신뢰, 광고 규제, 원료 가격, 재구매 주기, 브랜드 충성도가 마진을 지키는지 확인해야 합니다." },
+    video: { youtubeId: "CTXtthGoTdk", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=CTXtthGoTdk", thumbnailUrl: "https://i.ytimg.com/vi/CTXtthGoTdk/hqdefault.jpg", description: "건강식품 투자는 유행 성분보다 효능 신뢰, 광고 규제, 원료 가격, 재구매 주기, 브랜드 충성도가 마진을 지키는지 확인해야 합니다." },
   },
   {
     slug: "crypto-blockchain-custody-regulation-2026",
@@ -1854,7 +1854,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T23:24:18+09:00",
     summary: "암호화폐·블록체인 투자는 코인 가격보다 보관 인프라, 거래 수수료, ETF·기관 수요, 규제 승인, 해킹 대응 비용을 봐야 합니다.",
     image: CRYPTO_BLOCKCHAIN_CUSTODY_REGULATION_2026_IMAGE,
-    video: { youtubeId: "RWtjXO8nvNc", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RWtjXO8nvNc", thumbnailUrl: "https://i.ytimg.com/vi/RWtjXO8nvNc/hqdefault.jpg", description: "암호화폐·블록체인 투자는 코인 가격보다 보관 인프라, 거래 수수료, ETF·기관 수요, 규제 승인, 해킹 대응 비용을 봐야 합니다." },
+    video: { youtubeId: "jGGbTVOfFFA", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jGGbTVOfFFA", thumbnailUrl: "https://i.ytimg.com/vi/jGGbTVOfFFA/hqdefault.jpg", description: "암호화폐·블록체인 투자는 코인 가격보다 보관 인프라, 거래 수수료, ETF·기관 수요, 규제 승인, 해킹 대응 비용을 봐야 합니다." },
   },
   {
     slug: "artificial-intelligence-margin-bottleneck-2026",
@@ -1864,7 +1864,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T19:17:24+09:00",
     summary: "인공지능 테마는 추론 서버와 에이전트 소프트웨어의 성장성만으로 판단하기 어렵고 전력과 GPU 임대료, 매출총이익률과 사용량 유지율, 반복 사용료가 함께 맞아야 합니다.",
     image: ARTIFICIAL_INTELLIGENCE_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "7VcdPR8IEnA", title: "인공지능 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7VcdPR8IEnA", thumbnailUrl: "https://i.ytimg.com/vi/7VcdPR8IEnA/hqdefault.jpg", description: "인공지능 테마는 추론 서버와 에이전트 소프트웨어의 성장성만으로 판단하기 어렵고 전력과 GPU 임대료, 매출총이익률과 사용량 유지율, 반복 사용료가 함께 맞아야 합니다." },
+    video: { youtubeId: "6swCgt6jZcg", title: "인공지능 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=6swCgt6jZcg", thumbnailUrl: "https://i.ytimg.com/vi/6swCgt6jZcg/hqdefault.jpg", description: "인공지능 테마는 추론 서버와 에이전트 소프트웨어의 성장성만으로 판단하기 어렵고 전력과 GPU 임대료, 매출총이익률과 사용량 유지율, 반복 사용료가 함께 맞아야 합니다." },
   },
   {
     slug: "artificial-intelligence-demand-revenue-2026",
@@ -1884,7 +1884,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T19:15:24+09:00",
     summary: "클라우드 컴퓨팅 테마는 AI 클라우드 인프라와 관리형 서비스의 성장성만으로 판단하기 어렵고 전력 계약과 감가상각, 자본지출 대비 매출 전환율, 사용량 기반 매출이 함께 맞아야 합니다.",
     image: CLOUD_COMPUTING_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "5s9UnfOpSJo", title: "클라우드 컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=5s9UnfOpSJo", thumbnailUrl: "https://i.ytimg.com/vi/5s9UnfOpSJo/hqdefault.jpg", description: "클라우드 컴퓨팅 테마는 AI 클라우드 인프라와 관리형 서비스의 성장성만으로 판단하기 어렵고 전력 계약과 감가상각, 자본지출 대비 매출 전환율, 사용량 기반 매출이 함께 맞아야 합니다." },
+    video: { youtubeId: "7u0VZPoE_uc", title: "클라우드 컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7u0VZPoE_uc", thumbnailUrl: "https://i.ytimg.com/vi/7u0VZPoE_uc/hqdefault.jpg", description: "클라우드 컴퓨팅 테마는 AI 클라우드 인프라와 관리형 서비스의 성장성만으로 판단하기 어렵고 전력 계약과 감가상각, 자본지출 대비 매출 전환율, 사용량 기반 매출이 함께 맞아야 합니다." },
   },
   {
     slug: "cloud-computing-demand-revenue-2026",
@@ -1904,7 +1904,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T19:13:24+09:00",
     summary: "전기차 테마는 배터리와 전동화 플랫폼의 성장성만으로 판단하기 어렵고 배터리 원가와 충전 인프라, 차량당 마진과 재고 회전, 판매 믹스 개선가 함께 맞아야 합니다.",
     image: ELECTRIC_VEHICLE_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "ueUaCY_swpU", title: "전기차 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ueUaCY_swpU", thumbnailUrl: "https://i.ytimg.com/vi/ueUaCY_swpU/hqdefault.jpg", description: "전기차 테마는 배터리와 전동화 플랫폼의 성장성만으로 판단하기 어렵고 배터리 원가와 충전 인프라, 차량당 마진과 재고 회전, 판매 믹스 개선가 함께 맞아야 합니다." },
+    video: { youtubeId: "3QS9wGGGCr4", title: "전기차 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=3QS9wGGGCr4", thumbnailUrl: "https://i.ytimg.com/vi/3QS9wGGGCr4/hqdefault.jpg", description: "전기차 테마는 배터리와 전동화 플랫폼의 성장성만으로 판단하기 어렵고 배터리 원가와 충전 인프라, 차량당 마진과 재고 회전, 판매 믹스 개선가 함께 맞아야 합니다." },
   },
   {
     slug: "electric-vehicle-demand-revenue-2026",
@@ -1924,7 +1924,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T19:11:24+09:00",
     summary: "운송·물류 테마는 항만, 창고, 라스트마일 네트워크의 성장성만으로 판단하기 어렵고 운임 변동과 인건비, 가동률과 단위 배송비, 계약 물량과 창고 임대료가 함께 맞아야 합니다.",
     image: TRANSPORT_LOGISTICS_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "7E86Y_gXNg4", title: "운송·물류 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7E86Y_gXNg4", thumbnailUrl: "https://i.ytimg.com/vi/7E86Y_gXNg4/hqdefault.jpg", description: "운송·물류 테마는 항만, 창고, 라스트마일 네트워크의 성장성만으로 판단하기 어렵고 운임 변동과 인건비, 가동률과 단위 배송비, 계약 물량과 창고 임대료가 함께 맞아야 합니다." },
+    video: { youtubeId: "oy8SRhwkujk", title: "운송·물류 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=oy8SRhwkujk", thumbnailUrl: "https://i.ytimg.com/vi/oy8SRhwkujk/hqdefault.jpg", description: "운송·물류 테마는 항만, 창고, 라스트마일 네트워크의 성장성만으로 판단하기 어렵고 운임 변동과 인건비, 가동률과 단위 배송비, 계약 물량과 창고 임대료가 함께 맞아야 합니다." },
   },
   {
     slug: "space-technology-margin-bottleneck-2026",
@@ -1995,7 +1995,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T19:04:24+09:00",
     summary: "전통 에너지 테마는 석유, 가스, 정제, 파이프라인의 성장성만으로 판단하기 어렵고 원유 가격과 정제 마진, 잉여현금흐름과 배당 여력, 배당과 자사주 매입이 함께 맞아야 합니다.",
     image: TRADITIONAL_ENERGY_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "iAj8DEITbe0", title: "전통 에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=iAj8DEITbe0", thumbnailUrl: "https://i.ytimg.com/vi/iAj8DEITbe0/hqdefault.jpg", description: "전통 에너지 테마는 석유, 가스, 정제, 파이프라인의 성장성만으로 판단하기 어렵고 원유 가격과 정제 마진, 잉여현금흐름과 배당 여력, 배당과 자사주 매입이 함께 맞아야 합니다." },
+    video: { youtubeId: "6YLb3k9QWIg", title: "전통 에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=6YLb3k9QWIg", thumbnailUrl: "https://i.ytimg.com/vi/6YLb3k9QWIg/hqdefault.jpg", description: "전통 에너지 테마는 석유, 가스, 정제, 파이프라인의 성장성만으로 판단하기 어렵고 원유 가격과 정제 마진, 잉여현금흐름과 배당 여력, 배당과 자사주 매입이 함께 맞아야 합니다." },
   },
   {
     slug: "traditional-energy-demand-revenue-2026",
@@ -2015,7 +2015,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T19:02:24+09:00",
     summary: "반도체 테마는 HBM, 파운드리, 장비 공급망의 성장성만으로 판단하기 어렵고 수율과 첨단 패키징, ASP와 웨이퍼 투입량, 장기 공급 계약가 함께 맞아야 합니다.",
     image: SEMICONDUCTOR_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "KtBiw1BId7M", title: "반도체 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=KtBiw1BId7M", thumbnailUrl: "https://i.ytimg.com/vi/KtBiw1BId7M/hqdefault.jpg", description: "반도체 테마는 HBM, 파운드리, 장비 공급망의 성장성만으로 판단하기 어렵고 수율과 첨단 패키징, ASP와 웨이퍼 투입량, 장기 공급 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "7xKqc-ZcKkc", title: "반도체 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7xKqc-ZcKkc", thumbnailUrl: "https://i.ytimg.com/vi/7xKqc-ZcKkc/hqdefault.jpg", description: "반도체 테마는 HBM, 파운드리, 장비 공급망의 성장성만으로 판단하기 어렵고 수율과 첨단 패키징, ASP와 웨이퍼 투입량, 장기 공급 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "cybersecurity-margin-bottleneck-2026",
@@ -2025,7 +2025,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T19:01:24+09:00",
     summary: "사이버보안 테마는 클라우드 보안과 엔드포인트 방어의 성장성만으로 판단하기 어렵고 보안 예산 승인과 제품 통합, 순매출유지율과 연간반복매출, 구독 매출이 함께 맞아야 합니다.",
     image: CYBERSECURITY_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "l-oiFQFSdT8", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=l-oiFQFSdT8", thumbnailUrl: "https://i.ytimg.com/vi/l-oiFQFSdT8/hqdefault.jpg", description: "사이버보안 테마는 클라우드 보안과 엔드포인트 방어의 성장성만으로 판단하기 어렵고 보안 예산 승인과 제품 통합, 순매출유지율과 연간반복매출, 구독 매출이 함께 맞아야 합니다." },
+    video: { youtubeId: "OzfrMklIoG4", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=OzfrMklIoG4", thumbnailUrl: "https://i.ytimg.com/vi/OzfrMklIoG4/hqdefault.jpg", description: "사이버보안 테마는 클라우드 보안과 엔드포인트 방어의 성장성만으로 판단하기 어렵고 보안 예산 승인과 제품 통합, 순매출유지율과 연간반복매출, 구독 매출이 함께 맞아야 합니다." },
   },
   {
     slug: "cybersecurity-demand-revenue-2026",
@@ -2055,7 +2055,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:58:24+09:00",
     summary: "산업 자동화 테마는 공장 제어, 센서, 자동화 장비의 성장성만으로 판단하기 어렵고 설비투자 주기와 설치 인력, 수주잔고와 서비스 매출 비중, 유지보수 계약가 함께 맞아야 합니다.",
     image: INDUSTRIAL_AUTOMATION_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "LcGtLLcOHVc", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LcGtLLcOHVc", thumbnailUrl: "https://i.ytimg.com/vi/LcGtLLcOHVc/hqdefault.jpg", description: "산업 자동화 테마는 공장 제어, 센서, 자동화 장비의 성장성만으로 판단하기 어렵고 설비투자 주기와 설치 인력, 수주잔고와 서비스 매출 비중, 유지보수 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "Rx_LCgziK4k", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Rx_LCgziK4k", thumbnailUrl: "https://i.ytimg.com/vi/Rx_LCgziK4k/hqdefault.jpg", description: "산업 자동화 테마는 공장 제어, 센서, 자동화 장비의 성장성만으로 판단하기 어렵고 설비투자 주기와 설치 인력, 수주잔고와 서비스 매출 비중, 유지보수 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "industrial-automation-demand-revenue-2026",
@@ -2085,7 +2085,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:55:24+09:00",
     summary: "로보틱스 테마는 협동로봇과 물류 로봇의 성장성만으로 판단하기 어렵고 현장 적용 속도와 안전 인증, 납품 대수와 서비스 매출률, 로봇 판매와 구독형 유지보수가 함께 맞아야 합니다.",
     image: ROBOTICS_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "ezUnJ3McW9M", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ezUnJ3McW9M", thumbnailUrl: "https://i.ytimg.com/vi/ezUnJ3McW9M/hqdefault.jpg", description: "로보틱스 테마는 협동로봇과 물류 로봇의 성장성만으로 판단하기 어렵고 현장 적용 속도와 안전 인증, 납품 대수와 서비스 매출률, 로봇 판매와 구독형 유지보수가 함께 맞아야 합니다." },
+    video: { youtubeId: "lYulQljNtwo", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=lYulQljNtwo", thumbnailUrl: "https://i.ytimg.com/vi/lYulQljNtwo/hqdefault.jpg", description: "로보틱스 테마는 협동로봇과 물류 로봇의 성장성만으로 판단하기 어렵고 현장 적용 속도와 안전 인증, 납품 대수와 서비스 매출률, 로봇 판매와 구독형 유지보수가 함께 맞아야 합니다." },
   },
   {
     slug: "robotics-demand-revenue-2026",
@@ -2115,7 +2115,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:52:24+09:00",
     summary: "나노기술 테마는 나노 소재와 정밀 공정의 성장성만으로 판단하기 어렵고 양산 수율과 인증 기간, 그램당 단가와 적용처 확대, 소재 공급 계약가 함께 맞아야 합니다.",
     image: NANOTECHNOLOGY_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "g8pGiQOScRU", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g8pGiQOScRU", thumbnailUrl: "https://i.ytimg.com/vi/g8pGiQOScRU/hqdefault.jpg", description: "나노기술 테마는 나노 소재와 정밀 공정의 성장성만으로 판단하기 어렵고 양산 수율과 인증 기간, 그램당 단가와 적용처 확대, 소재 공급 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "NFMO5jvtfOc", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=NFMO5jvtfOc", thumbnailUrl: "https://i.ytimg.com/vi/NFMO5jvtfOc/hqdefault.jpg", description: "나노기술 테마는 나노 소재와 정밀 공정의 성장성만으로 판단하기 어렵고 양산 수율과 인증 기간, 그램당 단가와 적용처 확대, 소재 공급 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "nanotechnology-demand-revenue-2026",
@@ -2145,7 +2145,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:49:24+09:00",
     summary: "사물인터넷 테마는 센서, 게이트웨이, 연결 플랫폼의 성장성만으로 판단하기 어렵고 보안과 표준 통합, 연결 기기 수와 데이터 과금, 플랫폼 사용료가 함께 맞아야 합니다.",
     image: INTERNET_OF_THINGS_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "tsTq8_hc2p8", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=tsTq8_hc2p8", thumbnailUrl: "https://i.ytimg.com/vi/tsTq8_hc2p8/hqdefault.jpg", description: "사물인터넷 테마는 센서, 게이트웨이, 연결 플랫폼의 성장성만으로 판단하기 어렵고 보안과 표준 통합, 연결 기기 수와 데이터 과금, 플랫폼 사용료가 함께 맞아야 합니다." },
+    video: { youtubeId: "PUFlFViz3Ts", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=PUFlFViz3Ts", thumbnailUrl: "https://i.ytimg.com/vi/PUFlFViz3Ts/hqdefault.jpg", description: "사물인터넷 테마는 센서, 게이트웨이, 연결 플랫폼의 성장성만으로 판단하기 어렵고 보안과 표준 통합, 연결 기기 수와 데이터 과금, 플랫폼 사용료가 함께 맞아야 합니다." },
   },
   {
     slug: "internet-of-things-demand-revenue-2026",
@@ -2175,7 +2175,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:46:24+09:00",
     summary: "에너지 원자재 테마는 리튬, 우라늄, 천연가스 원자재의 성장성만으로 판단하기 어렵고 광산 허가와 장기 공급 계약, 생산량과 현물 가격 민감도, 장기 오프테이크 계약가 함께 맞아야 합니다.",
     image: ENERGY_COMMODITIES_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "R1eWgqMW7VY", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=R1eWgqMW7VY", thumbnailUrl: "https://i.ytimg.com/vi/R1eWgqMW7VY/hqdefault.jpg", description: "에너지 원자재 테마는 리튬, 우라늄, 천연가스 원자재의 성장성만으로 판단하기 어렵고 광산 허가와 장기 공급 계약, 생산량과 현물 가격 민감도, 장기 오프테이크 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "bSF9Wu8ZDQw", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=bSF9Wu8ZDQw", thumbnailUrl: "https://i.ytimg.com/vi/bSF9Wu8ZDQw/hqdefault.jpg", description: "에너지 원자재 테마는 리튬, 우라늄, 천연가스 원자재의 성장성만으로 판단하기 어렵고 광산 허가와 장기 공급 계약, 생산량과 현물 가격 민감도, 장기 오프테이크 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "energy-commodities-demand-revenue-2026",
@@ -2205,7 +2205,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:43:24+09:00",
     summary: "농업·식품 테마는 정밀 농업, 종자, 식품 공급망의 성장성만으로 판단하기 어렵고 날씨와 원재료 가격, 수확량과 원가 전가력, 반복 구매와 브랜드 매출이 함께 맞아야 합니다.",
     image: AGRICULTURE_FOOD_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "307Y_TuWB8Q", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=307Y_TuWB8Q", thumbnailUrl: "https://i.ytimg.com/vi/307Y_TuWB8Q/hqdefault.jpg", description: "농업·식품 테마는 정밀 농업, 종자, 식품 공급망의 성장성만으로 판단하기 어렵고 날씨와 원재료 가격, 수확량과 원가 전가력, 반복 구매와 브랜드 매출이 함께 맞아야 합니다." },
+    video: { youtubeId: "NmgqCzWKdSY", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=NmgqCzWKdSY", thumbnailUrl: "https://i.ytimg.com/vi/NmgqCzWKdSY/hqdefault.jpg", description: "농업·식품 테마는 정밀 농업, 종자, 식품 공급망의 성장성만으로 판단하기 어렵고 날씨와 원재료 가격, 수확량과 원가 전가력, 반복 구매와 브랜드 매출이 함께 맞아야 합니다." },
   },
   {
     slug: "agriculture-food-demand-revenue-2026",
@@ -2235,7 +2235,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:40:24+09:00",
     summary: "소프트웨어 테마는 기업용 SaaS와 개발 도구의 성장성만으로 판단하기 어렵고 고객 획득 비용과 해지율, 순매출유지율과 영업레버리지, 구독 매출이 함께 맞아야 합니다.",
     image: SOFTWARE_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "uSxIdtQSS6w", title: "소프트웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=uSxIdtQSS6w", thumbnailUrl: "https://i.ytimg.com/vi/uSxIdtQSS6w/hqdefault.jpg", description: "소프트웨어 테마는 기업용 SaaS와 개발 도구의 성장성만으로 판단하기 어렵고 고객 획득 비용과 해지율, 순매출유지율과 영업레버리지, 구독 매출이 함께 맞아야 합니다." },
+    video: { youtubeId: "Kp1KD7KvsEo", title: "소프트웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Kp1KD7KvsEo", thumbnailUrl: "https://i.ytimg.com/vi/Kp1KD7KvsEo/hqdefault.jpg", description: "소프트웨어 테마는 기업용 SaaS와 개발 도구의 성장성만으로 판단하기 어렵고 고객 획득 비용과 해지율, 순매출유지율과 영업레버리지, 구독 매출이 함께 맞아야 합니다." },
   },
   {
     slug: "software-demand-revenue-2026",
@@ -2255,7 +2255,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:38:24+09:00",
     summary: "양자컴퓨팅 테마는 양자 하드웨어와 알고리즘 서비스의 성장성만으로 판단하기 어렵고 오류 보정과 상용화 시간, 연구 계약과 클라우드 사용량, 정부 연구비와 파일럿 계약가 함께 맞아야 합니다.",
     image: QUANTUM_COMPUTING_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "igU8KGLoQUo", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=igU8KGLoQUo", thumbnailUrl: "https://i.ytimg.com/vi/igU8KGLoQUo/hqdefault.jpg", description: "양자컴퓨팅 테마는 양자 하드웨어와 알고리즘 서비스의 성장성만으로 판단하기 어렵고 오류 보정과 상용화 시간, 연구 계약과 클라우드 사용량, 정부 연구비와 파일럿 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "Cwn35DchoKQ", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Cwn35DchoKQ", thumbnailUrl: "https://i.ytimg.com/vi/Cwn35DchoKQ/hqdefault.jpg", description: "양자컴퓨팅 테마는 양자 하드웨어와 알고리즘 서비스의 성장성만으로 판단하기 어렵고 오류 보정과 상용화 시간, 연구 계약과 클라우드 사용량, 정부 연구비와 파일럿 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "quantum-computing-demand-revenue-2026",
@@ -2285,7 +2285,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:35:24+09:00",
     summary: "방산·항공우주 테마는 방산 플랫폼과 항공우주 부품의 성장성만으로 판단하기 어렵고 납품 승인과 원가 상승, 수주잔고와 현금 회수, 장기 방산 계약가 함께 맞아야 합니다.",
     image: DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "LQcuIPuaZHI", title: "방산·항공우주 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LQcuIPuaZHI", thumbnailUrl: "https://i.ytimg.com/vi/LQcuIPuaZHI/hqdefault.jpg", description: "방산·항공우주 테마는 방산 플랫폼과 항공우주 부품의 성장성만으로 판단하기 어렵고 납품 승인과 원가 상승, 수주잔고와 현금 회수, 장기 방산 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "tVwi-tepoe0", title: "방산·항공우주 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=tVwi-tepoe0", thumbnailUrl: "https://i.ytimg.com/vi/tVwi-tepoe0/hqdefault.jpg", description: "방산·항공우주 테마는 방산 플랫폼과 항공우주 부품의 성장성만으로 판단하기 어렵고 납품 승인과 원가 상승, 수주잔고와 현금 회수, 장기 방산 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "defense-aerospace-demand-revenue-2026",
@@ -2305,7 +2305,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:33:24+09:00",
     summary: "통신 테마는 5G, 광망, 데이터 전송 인프라의 성장성만으로 판단하기 어렵고 요금 경쟁과 설비투자 부담, 가입자당매출과 투자 회수율, 통신 요금과 기업 회선가 함께 맞아야 합니다.",
     image: TELECOMMUNICATIONS_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "38DgsVe7jFc", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=38DgsVe7jFc", thumbnailUrl: "https://i.ytimg.com/vi/38DgsVe7jFc/hqdefault.jpg", description: "통신 테마는 5G, 광망, 데이터 전송 인프라의 성장성만으로 판단하기 어렵고 요금 경쟁과 설비투자 부담, 가입자당매출과 투자 회수율, 통신 요금과 기업 회선가 함께 맞아야 합니다." },
+    video: { youtubeId: "CQt9nMtBuHo", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=CQt9nMtBuHo", thumbnailUrl: "https://i.ytimg.com/vi/CQt9nMtBuHo/hqdefault.jpg", description: "통신 테마는 5G, 광망, 데이터 전송 인프라의 성장성만으로 판단하기 어렵고 요금 경쟁과 설비투자 부담, 가입자당매출과 투자 회수율, 통신 요금과 기업 회선가 함께 맞아야 합니다." },
   },
   {
     slug: "telecommunications-demand-revenue-2026",
@@ -2335,7 +2335,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:30:24+09:00",
     summary: "자율 시스템 테마는 자율주행, 드론, 무인 운용 소프트웨어의 성장성만으로 판단하기 어렵고 규제 승인과 센서 비용, 운행 거리와 사고율, 운용 서비스 계약가 함께 맞아야 합니다.",
     image: AUTONOMOUS_SYSTEMS_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "U_jdTk4wkdI", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=U_jdTk4wkdI", thumbnailUrl: "https://i.ytimg.com/vi/U_jdTk4wkdI/hqdefault.jpg", description: "자율 시스템 테마는 자율주행, 드론, 무인 운용 소프트웨어의 성장성만으로 판단하기 어렵고 규제 승인과 센서 비용, 운행 거리와 사고율, 운용 서비스 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "F-PB0ygRLiE", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=F-PB0ygRLiE", thumbnailUrl: "https://i.ytimg.com/vi/F-PB0ygRLiE/hqdefault.jpg", description: "자율 시스템 테마는 자율주행, 드론, 무인 운용 소프트웨어의 성장성만으로 판단하기 어렵고 규제 승인과 센서 비용, 운행 거리와 사고율, 운용 서비스 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "autonomous-systems-demand-revenue-2026",
@@ -2365,7 +2365,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:27:24+09:00",
     summary: "금속 원자재 테마는 구리, 알루미늄, 희토류 공급망의 성장성만으로 판단하기 어렵고 광산 개발과 제련 비용, 생산 원가와 재고 일수, 장기 공급 계약가 함께 맞아야 합니다.",
     image: METAL_COMMODITIES_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "JHK8yCXiKKU", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=JHK8yCXiKKU", thumbnailUrl: "https://i.ytimg.com/vi/JHK8yCXiKKU/hqdefault.jpg", description: "금속 원자재 테마는 구리, 알루미늄, 희토류 공급망의 성장성만으로 판단하기 어렵고 광산 개발과 제련 비용, 생산 원가와 재고 일수, 장기 공급 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "LQxw4j9Wmeg", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LQxw4j9Wmeg", thumbnailUrl: "https://i.ytimg.com/vi/LQxw4j9Wmeg/hqdefault.jpg", description: "금속 원자재 테마는 구리, 알루미늄, 희토류 공급망의 성장성만으로 판단하기 어렵고 광산 개발과 제련 비용, 생산 원가와 재고 일수, 장기 공급 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "metal-commodities-demand-revenue-2026",
@@ -2395,7 +2395,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:24:24+09:00",
     summary: "환경 지속가능성 테마는 탄소 저감, 재활용, 수처리 솔루션의 성장성만으로 판단하기 어렵고 프로젝트 경제성과 인증, 톤당 처리비와 계약 기간, 장기 처리 계약가 함께 맞아야 합니다.",
     image: ENVIRONMENT_SUSTAINABILITY_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "jZH0HPVipUU", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jZH0HPVipUU", thumbnailUrl: "https://i.ytimg.com/vi/jZH0HPVipUU/hqdefault.jpg", description: "환경 지속가능성 테마는 탄소 저감, 재활용, 수처리 솔루션의 성장성만으로 판단하기 어렵고 프로젝트 경제성과 인증, 톤당 처리비와 계약 기간, 장기 처리 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "zOjj4O7uLJw", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zOjj4O7uLJw", thumbnailUrl: "https://i.ytimg.com/vi/zOjj4O7uLJw/hqdefault.jpg", description: "환경 지속가능성 테마는 탄소 저감, 재활용, 수처리 솔루션의 성장성만으로 판단하기 어렵고 프로젝트 경제성과 인증, 톤당 처리비와 계약 기간, 장기 처리 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "environment-sustainability-demand-revenue-2026",
@@ -2425,7 +2425,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:21:24+09:00",
     summary: "하드웨어 테마는 PC, 서버, 디바이스 공급망의 성장성만으로 판단하기 어렵고 부품 재고와 가격 경쟁, 판매량과 평균판매가격, 완제품 판매와 서비스 연결가 함께 맞아야 합니다.",
     image: HARDWARE_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "EZOWZDB60i4", title: "하드웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=EZOWZDB60i4", thumbnailUrl: "https://i.ytimg.com/vi/EZOWZDB60i4/hqdefault.jpg", description: "하드웨어 테마는 PC, 서버, 디바이스 공급망의 성장성만으로 판단하기 어렵고 부품 재고와 가격 경쟁, 판매량과 평균판매가격, 완제품 판매와 서비스 연결가 함께 맞아야 합니다." },
+    video: { youtubeId: "zTzIxVDm4yk", title: "하드웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zTzIxVDm4yk", thumbnailUrl: "https://i.ytimg.com/vi/zTzIxVDm4yk/hqdefault.jpg", description: "하드웨어 테마는 PC, 서버, 디바이스 공급망의 성장성만으로 판단하기 어렵고 부품 재고와 가격 경쟁, 판매량과 평균판매가격, 완제품 판매와 서비스 연결가 함께 맞아야 합니다." },
   },
   {
     slug: "hardware-demand-revenue-2026",
@@ -2445,7 +2445,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:19:24+09:00",
     summary: "가상·증강현실 테마는 헤드셋, 공간 컴퓨팅, 산업용 시뮬레이션의 성장성만으로 판단하기 어렵고 착용감과 콘텐츠 부족, 활성 이용자와 기기 마진, 앱스토어와 기업 라이선스가 함께 맞아야 합니다.",
     image: VIRTUAL_AUGMENTED_REALITY_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "8tnMjWcYeBA", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8tnMjWcYeBA", thumbnailUrl: "https://i.ytimg.com/vi/8tnMjWcYeBA/hqdefault.jpg", description: "가상·증강현실 테마는 헤드셋, 공간 컴퓨팅, 산업용 시뮬레이션의 성장성만으로 판단하기 어렵고 착용감과 콘텐츠 부족, 활성 이용자와 기기 마진, 앱스토어와 기업 라이선스가 함께 맞아야 합니다." },
+    video: { youtubeId: "0f7Dm7gzQkI", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=0f7Dm7gzQkI", thumbnailUrl: "https://i.ytimg.com/vi/0f7Dm7gzQkI/hqdefault.jpg", description: "가상·증강현실 테마는 헤드셋, 공간 컴퓨팅, 산업용 시뮬레이션의 성장성만으로 판단하기 어렵고 착용감과 콘텐츠 부족, 활성 이용자와 기기 마진, 앱스토어와 기업 라이선스가 함께 맞아야 합니다." },
   },
   {
     slug: "virtual-augmented-reality-demand-revenue-2026",
@@ -2475,7 +2475,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:16:24+09:00",
     summary: "전자상거래 테마는 온라인 유통과 광고 플랫폼의 성장성만으로 판단하기 어렵고 물류비와 반품 비용, 총거래액과 광고 매출률, 거래 수수료와 광고 매출이 함께 맞아야 합니다.",
     image: ECOMMERCE_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "vU8UEakEHLU", title: "전자상거래 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=vU8UEakEHLU", thumbnailUrl: "https://i.ytimg.com/vi/vU8UEakEHLU/hqdefault.jpg", description: "전자상거래 테마는 온라인 유통과 광고 플랫폼의 성장성만으로 판단하기 어렵고 물류비와 반품 비용, 총거래액과 광고 매출률, 거래 수수료와 광고 매출이 함께 맞아야 합니다." },
+    video: { youtubeId: "w9mXs0m1cR0", title: "전자상거래 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=w9mXs0m1cR0", thumbnailUrl: "https://i.ytimg.com/vi/w9mXs0m1cR0/hqdefault.jpg", description: "전자상거래 테마는 온라인 유통과 광고 플랫폼의 성장성만으로 판단하기 어렵고 물류비와 반품 비용, 총거래액과 광고 매출률, 거래 수수료와 광고 매출이 함께 맞아야 합니다." },
   },
   {
     slug: "ecommerce-demand-revenue-2026",
@@ -2495,7 +2495,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:14:24+09:00",
     summary: "디지털 엔터테인먼트 테마는 게임, 스트리밍, 디지털 콘텐츠 IP의 성장성만으로 판단하기 어렵고 콘텐츠 제작비와 흥행 변동, 유료 이용자와 IP 확장 매출, 구독료와 라이선스가 함께 맞아야 합니다.",
     image: DIGITAL_ENTERTAINMENT_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "GViZEwZvnck", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=GViZEwZvnck", thumbnailUrl: "https://i.ytimg.com/vi/GViZEwZvnck/hqdefault.jpg", description: "디지털 엔터테인먼트 테마는 게임, 스트리밍, 디지털 콘텐츠 IP의 성장성만으로 판단하기 어렵고 콘텐츠 제작비와 흥행 변동, 유료 이용자와 IP 확장 매출, 구독료와 라이선스가 함께 맞아야 합니다." },
+    video: { youtubeId: "jsCENr9QmPk", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jsCENr9QmPk", thumbnailUrl: "https://i.ytimg.com/vi/jsCENr9QmPk/hqdefault.jpg", description: "디지털 엔터테인먼트 테마는 게임, 스트리밍, 디지털 콘텐츠 IP의 성장성만으로 판단하기 어렵고 콘텐츠 제작비와 흥행 변동, 유료 이용자와 IP 확장 매출, 구독료와 라이선스가 함께 맞아야 합니다." },
   },
   {
     slug: "digital-entertainment-demand-revenue-2026",
@@ -2525,7 +2525,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:11:24+09:00",
     summary: "소비재 테마는 브랜드 소비재와 프리미엄 제품의 성장성만으로 판단하기 어렵고 원재료비와 판촉비, 가격 전가력과 재구매율, 반복 판매가 함께 맞아야 합니다.",
     image: CONSUMER_GOODS_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "wd7DnDISJjY", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=wd7DnDISJjY", thumbnailUrl: "https://i.ytimg.com/vi/wd7DnDISJjY/hqdefault.jpg", description: "소비재 테마는 브랜드 소비재와 프리미엄 제품의 성장성만으로 판단하기 어렵고 원재료비와 판촉비, 가격 전가력과 재구매율, 반복 판매가 함께 맞아야 합니다." },
+    video: { youtubeId: "unR0Wu1anI0", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=unR0Wu1anI0", thumbnailUrl: "https://i.ytimg.com/vi/unR0Wu1anI0/hqdefault.jpg", description: "소비재 테마는 브랜드 소비재와 프리미엄 제품의 성장성만으로 판단하기 어렵고 원재료비와 판촉비, 가격 전가력과 재구매율, 반복 판매가 함께 맞아야 합니다." },
   },
   {
     slug: "consumer-goods-demand-revenue-2026",
@@ -2555,7 +2555,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:08:24+09:00",
     summary: "스마트홈 테마는 가전, 보안, 에너지 관리 기기의 성장성만으로 판단하기 어렵고 표준 호환성과 설치 비용, 연결 기기 수와 서비스 이용률, 기기 판매와 구독 서비스가 함께 맞아야 합니다.",
     image: SMART_HOME_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "g7buf6Tg4OE", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g7buf6Tg4OE", thumbnailUrl: "https://i.ytimg.com/vi/g7buf6Tg4OE/hqdefault.jpg", description: "스마트홈 테마는 가전, 보안, 에너지 관리 기기의 성장성만으로 판단하기 어렵고 표준 호환성과 설치 비용, 연결 기기 수와 서비스 이용률, 기기 판매와 구독 서비스가 함께 맞아야 합니다." },
+    video: { youtubeId: "CPhqDkz1q8A", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=CPhqDkz1q8A", thumbnailUrl: "https://i.ytimg.com/vi/CPhqDkz1q8A/hqdefault.jpg", description: "스마트홈 테마는 가전, 보안, 에너지 관리 기기의 성장성만으로 판단하기 어렵고 표준 호환성과 설치 비용, 연결 기기 수와 서비스 이용률, 기기 판매와 구독 서비스가 함께 맞아야 합니다." },
   },
   {
     slug: "smart-home-demand-revenue-2026",
@@ -2585,7 +2585,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:05:24+09:00",
     summary: "헬스케어·바이오테크 테마는 신약, 진단, 위탁생산 플랫폼의 성장성만으로 판단하기 어렵고 임상 데이터와 허가, 임상 성공률과 매출 전환, 제품 매출과 로열티가 함께 맞아야 합니다.",
     image: HEALTHCARE_BIOTECH_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "SPCQnkLujKc", title: "헬스케어·바이오테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=SPCQnkLujKc", thumbnailUrl: "https://i.ytimg.com/vi/SPCQnkLujKc/hqdefault.jpg", description: "헬스케어·바이오테크 테마는 신약, 진단, 위탁생산 플랫폼의 성장성만으로 판단하기 어렵고 임상 데이터와 허가, 임상 성공률과 매출 전환, 제품 매출과 로열티가 함께 맞아야 합니다." },
+    video: { youtubeId: "uH9Y8n5i29w", title: "헬스케어·바이오테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=uH9Y8n5i29w", thumbnailUrl: "https://i.ytimg.com/vi/uH9Y8n5i29w/hqdefault.jpg", description: "헬스케어·바이오테크 테마는 신약, 진단, 위탁생산 플랫폼의 성장성만으로 판단하기 어렵고 임상 데이터와 허가, 임상 성공률과 매출 전환, 제품 매출과 로열티가 함께 맞아야 합니다." },
   },
   {
     slug: "healthcare-biotech-demand-revenue-2026",
@@ -2605,7 +2605,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:03:24+09:00",
     summary: "생체인식 테마는 얼굴, 지문, 행동 인증 솔루션의 성장성만으로 판단하기 어렵고 개인정보 규제와 오인식률, 인증 성공률과 도입 기관 수, 솔루션 라이선스가 함께 맞아야 합니다.",
     image: BIOMETRICS_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "ku3LDxs_054", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ku3LDxs_054", thumbnailUrl: "https://i.ytimg.com/vi/ku3LDxs_054/hqdefault.jpg", description: "생체인식 테마는 얼굴, 지문, 행동 인증 솔루션의 성장성만으로 판단하기 어렵고 개인정보 규제와 오인식률, 인증 성공률과 도입 기관 수, 솔루션 라이선스가 함께 맞아야 합니다." },
+    video: { youtubeId: "jVj1D51uBps", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jVj1D51uBps", thumbnailUrl: "https://i.ytimg.com/vi/jVj1D51uBps/hqdefault.jpg", description: "생체인식 테마는 얼굴, 지문, 행동 인증 솔루션의 성장성만으로 판단하기 어렵고 개인정보 규제와 오인식률, 인증 성공률과 도입 기관 수, 솔루션 라이선스가 함께 맞아야 합니다." },
   },
   {
     slug: "biometrics-demand-revenue-2026",
@@ -2635,7 +2635,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T18:00:24+09:00",
     summary: "빅데이터 테마는 데이터 플랫폼과 분석 파이프라인의 성장성만으로 판단하기 어렵고 데이터 품질과 통합 비용, 데이터 처리량과 순매출유지율, 플랫폼 구독료가 함께 맞아야 합니다.",
     image: BIG_DATA_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "pNb-BM30xu4", title: "빅데이터 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=pNb-BM30xu4", thumbnailUrl: "https://i.ytimg.com/vi/pNb-BM30xu4/hqdefault.jpg", description: "빅데이터 테마는 데이터 플랫폼과 분석 파이프라인의 성장성만으로 판단하기 어렵고 데이터 품질과 통합 비용, 데이터 처리량과 순매출유지율, 플랫폼 구독료가 함께 맞아야 합니다." },
+    video: { youtubeId: "4GdKar3IMKk", title: "빅데이터 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=4GdKar3IMKk", thumbnailUrl: "https://i.ytimg.com/vi/4GdKar3IMKk/hqdefault.jpg", description: "빅데이터 테마는 데이터 플랫폼과 분석 파이프라인의 성장성만으로 판단하기 어렵고 데이터 품질과 통합 비용, 데이터 처리량과 순매출유지율, 플랫폼 구독료가 함께 맞아야 합니다." },
   },
   {
     slug: "social-media-margin-bottleneck-2026",
@@ -2645,7 +2645,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T17:59:24+09:00",
     summary: "소셜미디어 테마는 광고 플랫폼과 크리에이터 생태계의 성장성만으로 판단하기 어렵고 광고 경기와 콘텐츠 안전성, 이용시간과 광고단가, 광고 매출이 함께 맞아야 합니다.",
     image: SOCIAL_MEDIA_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "IFHJjmXFFEY", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=IFHJjmXFFEY", thumbnailUrl: "https://i.ytimg.com/vi/IFHJjmXFFEY/hqdefault.jpg", description: "소셜미디어 테마는 광고 플랫폼과 크리에이터 생태계의 성장성만으로 판단하기 어렵고 광고 경기와 콘텐츠 안전성, 이용시간과 광고단가, 광고 매출이 함께 맞아야 합니다." },
+    video: { youtubeId: "nclgmEPI0kg", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=nclgmEPI0kg", thumbnailUrl: "https://i.ytimg.com/vi/nclgmEPI0kg/hqdefault.jpg", description: "소셜미디어 테마는 광고 플랫폼과 크리에이터 생태계의 성장성만으로 판단하기 어렵고 광고 경기와 콘텐츠 안전성, 이용시간과 광고단가, 광고 매출이 함께 맞아야 합니다." },
   },
   {
     slug: "social-media-demand-revenue-2026",
@@ -2675,7 +2675,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T17:56:24+09:00",
     summary: "부동산·리츠 테마는 물류센터, 데이터센터, 임대형 부동산의 성장성만으로 판단하기 어렵고 금리와 차환 비용, 공실률과 순영업소득, 임대료와 배당가 함께 맞아야 합니다.",
     image: REAL_ESTATE_REITS_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "gn2nVZ3V9Ks", title: "부동산·리츠 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=gn2nVZ3V9Ks", thumbnailUrl: "https://i.ytimg.com/vi/gn2nVZ3V9Ks/hqdefault.jpg", description: "부동산·리츠 테마는 물류센터, 데이터센터, 임대형 부동산의 성장성만으로 판단하기 어렵고 금리와 차환 비용, 공실률과 순영업소득, 임대료와 배당가 함께 맞아야 합니다." },
+    video: { youtubeId: "eBkVZSM7oh4", title: "부동산·리츠 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=eBkVZSM7oh4", thumbnailUrl: "https://i.ytimg.com/vi/eBkVZSM7oh4/hqdefault.jpg", description: "부동산·리츠 테마는 물류센터, 데이터센터, 임대형 부동산의 성장성만으로 판단하기 어렵고 금리와 차환 비용, 공실률과 순영업소득, 임대료와 배당가 함께 맞아야 합니다." },
   },
   {
     slug: "real-estate-reits-demand-revenue-2026",
@@ -2695,7 +2695,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T17:54:24+09:00",
     summary: "웨어러블 테마는 스마트워치와 건강 센서의 성장성만으로 판단하기 어렵고 배터리와 센서 정확도, 활성 사용자와 교체 주기, 기기 판매와 건강 서비스가 함께 맞아야 합니다.",
     image: WEARABLES_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "RfKxwbE-pZ8", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RfKxwbE-pZ8", thumbnailUrl: "https://i.ytimg.com/vi/RfKxwbE-pZ8/hqdefault.jpg", description: "웨어러블 테마는 스마트워치와 건강 센서의 성장성만으로 판단하기 어렵고 배터리와 센서 정확도, 활성 사용자와 교체 주기, 기기 판매와 건강 서비스가 함께 맞아야 합니다." },
+    video: { youtubeId: "t8IbcoREFc0", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=t8IbcoREFc0", thumbnailUrl: "https://i.ytimg.com/vi/t8IbcoREFc0/hqdefault.jpg", description: "웨어러블 테마는 스마트워치와 건강 센서의 성장성만으로 판단하기 어렵고 배터리와 센서 정확도, 활성 사용자와 교체 주기, 기기 판매와 건강 서비스가 함께 맞아야 합니다." },
   },
   {
     slug: "wearables-demand-revenue-2026",
@@ -2725,7 +2725,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T17:51:24+09:00",
     summary: "에듀테크 테마는 AI 학습 플랫폼과 직무 교육의 성장성만으로 판단하기 어렵고 콘텐츠 품질과 학습 지속률, 유료 전환율과 수강 완료율, 구독료와 기업 계약가 함께 맞아야 합니다.",
     image: EDTECH_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "zUdXScyI2MI", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zUdXScyI2MI", thumbnailUrl: "https://i.ytimg.com/vi/zUdXScyI2MI/hqdefault.jpg", description: "에듀테크 테마는 AI 학습 플랫폼과 직무 교육의 성장성만으로 판단하기 어렵고 콘텐츠 품질과 학습 지속률, 유료 전환율과 수강 완료율, 구독료와 기업 계약가 함께 맞아야 합니다." },
+    video: { youtubeId: "T-enGNSR6_Q", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=T-enGNSR6_Q", thumbnailUrl: "https://i.ytimg.com/vi/T-enGNSR6_Q/hqdefault.jpg", description: "에듀테크 테마는 AI 학습 플랫폼과 직무 교육의 성장성만으로 판단하기 어렵고 콘텐츠 품질과 학습 지속률, 유료 전환율과 수강 완료율, 구독료와 기업 계약가 함께 맞아야 합니다." },
   },
   {
     slug: "edtech-demand-revenue-2026",
@@ -2755,7 +2755,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T17:48:24+09:00",
     summary: "고령화 테마는 시니어 케어와 만성질환 관리 서비스의 성장성만으로 판단하기 어렵고 인건비와 보험 수가, 이용자 유지율과 방문당 수익, 서비스 구독과 보험 청구가 함께 맞아야 합니다.",
     image: AGING_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "1dqJ-TpMiTg", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=1dqJ-TpMiTg", thumbnailUrl: "https://i.ytimg.com/vi/1dqJ-TpMiTg/hqdefault.jpg", description: "고령화 테마는 시니어 케어와 만성질환 관리 서비스의 성장성만으로 판단하기 어렵고 인건비와 보험 수가, 이용자 유지율과 방문당 수익, 서비스 구독과 보험 청구가 함께 맞아야 합니다." },
+    video: { youtubeId: "yTYsgJLfAyo", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=yTYsgJLfAyo", thumbnailUrl: "https://i.ytimg.com/vi/yTYsgJLfAyo/hqdefault.jpg", description: "고령화 테마는 시니어 케어와 만성질환 관리 서비스의 성장성만으로 판단하기 어렵고 인건비와 보험 수가, 이용자 유지율과 방문당 수익, 서비스 구독과 보험 청구가 함께 맞아야 합니다." },
   },
   {
     slug: "aging-demand-revenue-2026",
@@ -2785,7 +2785,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T17:45:24+09:00",
     summary: "건강식품 테마는 기능성 식품과 영양 브랜드의 성장성만으로 판단하기 어렵고 원료 가격과 효능 신뢰, 재구매율과 채널 마진, 반복 구매가 함께 맞아야 합니다.",
     image: HEALTH_FOOD_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "Qj99w0sfH04", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Qj99w0sfH04", thumbnailUrl: "https://i.ytimg.com/vi/Qj99w0sfH04/hqdefault.jpg", description: "건강식품 테마는 기능성 식품과 영양 브랜드의 성장성만으로 판단하기 어렵고 원료 가격과 효능 신뢰, 재구매율과 채널 마진, 반복 구매가 함께 맞아야 합니다." },
+    video: { youtubeId: "CTXtthGoTdk", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=CTXtthGoTdk", thumbnailUrl: "https://i.ytimg.com/vi/CTXtthGoTdk/hqdefault.jpg", description: "건강식품 테마는 기능성 식품과 영양 브랜드의 성장성만으로 판단하기 어렵고 원료 가격과 효능 신뢰, 재구매율과 채널 마진, 반복 구매가 함께 맞아야 합니다." },
   },
   {
     slug: "health-food-demand-revenue-2026",
@@ -2815,7 +2815,7 @@ const featuredPages = [
     publishedAt: "2026-05-30T17:42:24+09:00",
     summary: "암호화폐·블록체인 테마는 비트코인 인프라와 토큰화 플랫폼의 성장성만으로 판단하기 어렵고 규제와 보관 인프라, 거래량과 수탁 잔고, 거래 수수료와 보관 수수료가 함께 맞아야 합니다.",
     image: CRYPTO_BLOCKCHAIN_MARGIN_BOTTLENECK_2026_IMAGE,
-    video: { youtubeId: "RWtjXO8nvNc", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RWtjXO8nvNc", thumbnailUrl: "https://i.ytimg.com/vi/RWtjXO8nvNc/hqdefault.jpg", description: "암호화폐·블록체인 테마는 비트코인 인프라와 토큰화 플랫폼의 성장성만으로 판단하기 어렵고 규제와 보관 인프라, 거래량과 수탁 잔고, 거래 수수료와 보관 수수료가 함께 맞아야 합니다." },
+    video: { youtubeId: "jGGbTVOfFFA", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jGGbTVOfFFA", thumbnailUrl: "https://i.ytimg.com/vi/jGGbTVOfFFA/hqdefault.jpg", description: "암호화폐·블록체인 테마는 비트코인 인프라와 토큰화 플랫폼의 성장성만으로 판단하기 어렵고 규제와 보관 인프라, 거래량과 수탁 잔고, 거래 수수료와 보관 수수료가 함께 맞아야 합니다." },
   },
   {
     slug: "crypto-blockchain-demand-revenue-2026",
@@ -4109,7 +4109,7 @@ function getDeskLabel(desk) {
 }
 
 function getDeskMenuLabel(desk, index = 0) {
-  return `${index + 1}. ${desk}`;
+  return `${index + 1}. ${deskEmoji[desk] || "📌"} ${desk}`;
 }
 
 function getDeskAgentName(pageOrDesk) {
