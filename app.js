@@ -3405,6 +3405,10 @@ function getDeskLabel(desk) {
   return `${deskEmoji[desk] || "📌"} ${desk}`;
 }
 
+function getDeskMenuLabel(desk, index = 0) {
+  return `${index + 1}. ${desk}`;
+}
+
 function getDeskAgentName(pageOrDesk) {
   const desk = typeof pageOrDesk === "object" && pageOrDesk !== null ? pageOrDesk.desk : pageOrDesk;
   if (typeof pageOrDesk === "object" && pageOrDesk !== null && pageOrDesk.author) {
@@ -3481,7 +3485,7 @@ function updateContentCount() {
 function renderDeskMenu() {
   updateContentCount();
   deskMenuNode.innerHTML = getDeskList()
-    .map((desk) => `<a class="desk-menu__link" href="${escapeHtml(getRouteUrl("desk", desk))}">${escapeHtml(getDeskLabel(desk))}</a>`)
+    .map((desk, index) => `<a class="desk-menu__link" href="${escapeHtml(getRouteUrl("desk", desk))}">${escapeHtml(getDeskMenuLabel(desk, index))}</a>`)
     .join("");
   setDeskMenuOpen(false);
   scheduleDeskMenuModeUpdate();
