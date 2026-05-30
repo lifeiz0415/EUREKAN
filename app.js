@@ -166,7 +166,1869 @@ const STRATEGY_LOSS_CUT_POSITION_SIZING_2026_IMAGE = {
   height: 720,
 };
 
+const ARTIFICIAL_INTELLIGENCE_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/artificial-intelligence-margin-bottleneck-2026-1280.webp",
+  alt: "인공지능 투자는 추론 서버와 에이전트 소프트웨어보다 전력과 GPU 임대료를 먼저 봐야 합니다 내용을 설명하는 인공지능 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:CERN_Server_03.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ARTIFICIAL_INTELLIGENCE_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/artificial-intelligence-demand-revenue-2026-1280.webp",
+  alt: "인공지능 기업은 업무 자동화 수요가 반복 사용료로 바뀌는 속도가 핵심입니다 내용을 설명하는 인공지능 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:123Net_Data_Center_(DC2).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CLOUD_COMPUTING_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/cloud-computing-margin-bottleneck-2026-1280.webp",
+  alt: "클라우드 컴퓨팅 투자는 AI 클라우드 인프라와 관리형 서비스보다 전력 계약과 감가상각을 먼저 봐야 합니다 내용을 설명하는 클라우드 컴퓨팅 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Energy_Efficient_Processors.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CLOUD_COMPUTING_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/cloud-computing-demand-revenue-2026-1280.webp",
+  alt: "클라우드 컴퓨팅 기업은 클라우드 이전과 AI 학습 수요가 사용량 기반 매출로 바뀌는 속도가 핵심입니다 내용을 설명하는 클라우드 컴퓨팅 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ELECTRIC_VEHICLE_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/electric-vehicle-margin-bottleneck-2026-1280.webp",
+  alt: "전기차 투자는 배터리와 전동화 플랫폼보다 배터리 원가와 충전 인프라를 먼저 봐야 합니다 내용을 설명하는 전기차 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Baker_Electric_Automobiles_(1908)_(ADVERT_94).jpeg",
+  width: 1280,
+  height: 720,
+};
+
+const ELECTRIC_VEHICLE_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/electric-vehicle-demand-revenue-2026-1280.webp",
+  alt: "전기차 기업은 전기차와 하이브리드 전환 수요가 판매 믹스 개선로 바뀌는 속도가 핵심입니다 내용을 설명하는 전기차 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Secretary_Blinken_Tours_the_Tritium_Factory_in_Brisbane_-_53089406893.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const TRANSPORT_LOGISTICS_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/transport-logistics-margin-bottleneck-2026-1280.webp",
+  alt: "운송·물류 투자는 항만, 창고, 라스트마일 네트워크보다 운임 변동과 인건비를 먼저 봐야 합니다 내용을 설명하는 운송·물류 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:First_Container_Terminal_St_Petersburg.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const SPACE_TECHNOLOGY_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/space-technology-margin-bottleneck-2026-1280.webp",
+  alt: "우주 기술 투자는 위성, 발사체, 우주 데이터 서비스보다 발사 일정과 보험 비용을 먼저 봐야 합니다 내용을 설명하는 우주 기술 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Vanguard_rocket_explodes.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const SPACE_TECHNOLOGY_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/space-technology-demand-revenue-2026-1280.webp",
+  alt: "우주 기술 기업은 저궤도 통신과 지구 관측 수요가 장기 서비스 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 우주 기술 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Titan_23G_rocket_hurtles_above_the_launch_tower.JPG",
+  width: 1280,
+  height: 720,
+};
+
+const SPACE_TECHNOLOGY_RISK_CYCLE_2026_IMAGE = {
+  src: "images/space-technology-risk-cycle-2026-1280.webp",
+  alt: "우주 기술 테마는 성장률보다 발사 실패와 자금 조달를 가격에 반영해야 합니다 내용을 설명하는 우주 기술 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Epsilon_rocket.png",
+  width: 1280,
+  height: 720,
+};
+
+const RENEWABLE_ENERGY_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/renewable-energy-margin-bottleneck-2026-1280.webp",
+  alt: "재생에너지 투자는 태양광, 풍력, 저장장치 프로젝트보다 계통 연결과 금리 부담을 먼저 봐야 합니다 내용을 설명하는 재생에너지 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Biogas_Photovoltaik_Wind.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const RENEWABLE_ENERGY_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/renewable-energy-demand-revenue-2026-1280.webp",
+  alt: "재생에너지 기업은 청정 전력 조달 수요가 장기 전력 판매로 바뀌는 속도가 핵심입니다 내용을 설명하는 재생에너지 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Renewable_energy_park.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const RENEWABLE_ENERGY_RISK_CYCLE_2026_IMAGE = {
+  src: "images/renewable-energy-risk-cycle-2026-1280.webp",
+  alt: "재생에너지 테마는 성장률보다 정책 변경과 원가 상승를 가격에 반영해야 합니다 내용을 설명하는 재생에너지 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:SOLAR_ENERGY_IN_USE_(3522564721).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const TRADITIONAL_ENERGY_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/traditional-energy-margin-bottleneck-2026-1280.webp",
+  alt: "전통 에너지 투자는 석유, 가스, 정제, 파이프라인보다 원유 가격과 정제 마진을 먼저 봐야 합니다 내용을 설명하는 전통 에너지 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:LNG_pipeline_west_of_Waterston_-_geograph.org.uk_-_217400.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const TRADITIONAL_ENERGY_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/traditional-energy-demand-revenue-2026-1280.webp",
+  alt: "전통 에너지 기업은 운송 연료와 전력용 가스 수요가 배당과 자사주 매입로 바뀌는 속도가 핵심입니다 내용을 설명하는 전통 에너지 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Data_Center_c%E1%BB%A7a_CMC_Telecom_(2).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const SEMICONDUCTOR_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/semiconductor-margin-bottleneck-2026-1280.webp",
+  alt: "반도체 투자는 HBM, 파운드리, 장비 공급망보다 수율과 첨단 패키징을 먼저 봐야 합니다 내용을 설명하는 반도체 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:HBM_-_Grenoble.JPG",
+  width: 1280,
+  height: 720,
+};
+
+const CYBERSECURITY_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/cybersecurity-margin-bottleneck-2026-1280.webp",
+  alt: "사이버보안 투자는 클라우드 보안과 엔드포인트 방어보다 보안 예산 승인과 제품 통합을 먼저 봐야 합니다 내용을 설명하는 사이버보안 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:102d_SSB_completes_NETMOD_in_Baumholder-_Enhanced_cybersecurity,_network_performance_for_DoD_operations_in_USAG_Rheinland-Pfalz%E2%80%99s_footprint_(8708241).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CYBERSECURITY_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/cybersecurity-demand-revenue-2026-1280.webp",
+  alt: "사이버보안 기업은 랜섬웨어 대응과 계정 보호 수요가 구독 매출로 바뀌는 속도가 핵심입니다 내용을 설명하는 사이버보안 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:102d_SSB_completes_NETMOD_in_Baumholder-_Enhanced_cybersecurity,_network_performance_for_DoD_operations_in_USAG_Rheinland-Pfalz%E2%80%99s_footprint_(8708242).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CYBERSECURITY_RISK_CYCLE_2026_IMAGE = {
+  src: "images/cybersecurity-risk-cycle-2026-1280.webp",
+  alt: "사이버보안 테마는 성장률보다 플랫폼 통합 경쟁과 고객 이탈를 가격에 반영해야 합니다 내용을 설명하는 사이버보안 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:102d_SSB_completes_NETMOD_in_Baumholder-_Enhanced_cybersecurity,_network_performance_for_DoD_operations_in_USAG_Rheinland-Pfalz%E2%80%99s_footprint_(8708243).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const INDUSTRIAL_AUTOMATION_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/industrial-automation-margin-bottleneck-2026-1280.webp",
+  alt: "산업 자동화 투자는 공장 제어, 센서, 자동화 장비보다 설비투자 주기와 설치 인력을 먼저 봐야 합니다 내용을 설명하는 산업 자동화 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Programmable_logic_controller.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const INDUSTRIAL_AUTOMATION_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/industrial-automation-demand-revenue-2026-1280.webp",
+  alt: "산업 자동화 기업은 인건비 절감과 품질 안정 수요가 유지보수 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 산업 자동화 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:PLC_buildibg.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const INDUSTRIAL_AUTOMATION_RISK_CYCLE_2026_IMAGE = {
+  src: "images/industrial-automation-risk-cycle-2026-1280.webp",
+  alt: "산업 자동화 테마는 성장률보다 경기 둔화와 고객 지연를 가격에 반영해야 합니다 내용을 설명하는 산업 자동화 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:BMA_Automation_Allen_Bradley_PLC_3.JPG",
+  width: 1280,
+  height: 720,
+};
+
+const ROBOTICS_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/robotics-margin-bottleneck-2026-1280.webp",
+  alt: "로보틱스 투자는 협동로봇과 물류 로봇보다 현장 적용 속도와 안전 인증을 먼저 봐야 합니다 내용을 설명하는 로보틱스 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:US_Army_51918_Automated_Guided_Vehicle_Corridor.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ROBOTICS_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/robotics-demand-revenue-2026-1280.webp",
+  alt: "로보틱스 기업은 반복 작업 자동화 수요가 로봇 판매와 구독형 유지보수로 바뀌는 속도가 핵심입니다 내용을 설명하는 로보틱스 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Forklift_AGV_with_Stabilizer_Pad,_Egemin_Automation_Inc.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ROBOTICS_RISK_CYCLE_2026_IMAGE = {
+  src: "images/robotics-risk-cycle-2026-1280.webp",
+  alt: "로보틱스 테마는 성장률보다 파일럿 이후 확산 지연를 가격에 반영해야 합니다 내용을 설명하는 로보틱스 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Automated_Guided_Vehicles.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const NANOTECHNOLOGY_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/nanotechnology-margin-bottleneck-2026-1280.webp",
+  alt: "나노기술 투자는 나노 소재와 정밀 공정보다 양산 수율과 인증 기간을 먼저 봐야 합니다 내용을 설명하는 나노기술 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:First_STM.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const NANOTECHNOLOGY_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/nanotechnology-demand-revenue-2026-1280.webp",
+  alt: "나노기술 기업은 소재 성능 개선 수요가 소재 공급 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 나노기술 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:U.S._Department_of_Energy_-_Science_-_390_021_008_(9358355847).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const NANOTECHNOLOGY_RISK_CYCLE_2026_IMAGE = {
+  src: "images/nanotechnology-risk-cycle-2026-1280.webp",
+  alt: "나노기술 테마는 성장률보다 실험실 성과와 양산 간격를 가격에 반영해야 합니다 내용을 설명하는 나노기술 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Transmission_electron_microscope_(2).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const INTERNET_OF_THINGS_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/internet-of-things-margin-bottleneck-2026-1280.webp",
+  alt: "사물인터넷 투자는 센서, 게이트웨이, 연결 플랫폼보다 보안과 표준 통합을 먼저 봐야 합니다 내용을 설명하는 사물인터넷 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Smart_City_Nansha.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const INTERNET_OF_THINGS_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/internet-of-things-demand-revenue-2026-1280.webp",
+  alt: "사물인터넷 기업은 설비 데이터 수집 수요가 플랫폼 사용료로 바뀌는 속도가 핵심입니다 내용을 설명하는 사물인터넷 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Creative_and_Smart_City.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const INTERNET_OF_THINGS_RISK_CYCLE_2026_IMAGE = {
+  src: "images/internet-of-things-risk-cycle-2026-1280.webp",
+  alt: "사물인터넷 테마는 성장률보다 낮은 단가와 유지관리 비용를 가격에 반영해야 합니다 내용을 설명하는 사물인터넷 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Smart_City.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ENERGY_COMMODITIES_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/energy-commodities-margin-bottleneck-2026-1280.webp",
+  alt: "에너지 원자재 투자는 리튬, 우라늄, 천연가스 원자재보다 광산 허가와 장기 공급 계약을 먼저 봐야 합니다 내용을 설명하는 에너지 원자재 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Duga-1_radar_data_center_interior_server_room_2018.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ENERGY_COMMODITIES_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/energy-commodities-demand-revenue-2026-1280.webp",
+  alt: "에너지 원자재 기업은 전력화와 저장장치 수요가 장기 오프테이크 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 에너지 원자재 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Virginia_Tech_-_data_center.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ENERGY_COMMODITIES_RISK_CYCLE_2026_IMAGE = {
+  src: "images/energy-commodities-risk-cycle-2026-1280.webp",
+  alt: "에너지 원자재 테마는 성장률보다 가격 급락과 증설 지연를 가격에 반영해야 합니다 내용을 설명하는 에너지 원자재 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Data_Center_of_CNPC.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const AGRICULTURE_FOOD_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/agriculture-food-margin-bottleneck-2026-1280.webp",
+  alt: "농업·식품 투자는 정밀 농업, 종자, 식품 공급망보다 날씨와 원재료 가격을 먼저 봐야 합니다 내용을 설명하는 농업·식품 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Data_Center_(UNC).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const AGRICULTURE_FOOD_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/agriculture-food-demand-revenue-2026-1280.webp",
+  alt: "농업·식품 기업은 생산성 개선과 식량 안정 수요가 반복 구매와 브랜드 매출로 바뀌는 속도가 핵심입니다 내용을 설명하는 농업·식품 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Data_Center_3_(UNC).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const AGRICULTURE_FOOD_RISK_CYCLE_2026_IMAGE = {
+  src: "images/agriculture-food-risk-cycle-2026-1280.webp",
+  alt: "농업·식품 테마는 성장률보다 곡물 가격 변동과 규제를 가격에 반영해야 합니다 내용을 설명하는 농업·식품 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Data_Center_2_(UNC).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const SOFTWARE_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/software-margin-bottleneck-2026-1280.webp",
+  alt: "소프트웨어 투자는 기업용 SaaS와 개발 도구보다 고객 획득 비용과 해지율을 먼저 봐야 합니다 내용을 설명하는 소프트웨어 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Excel_chart.PNG",
+  width: 1280,
+  height: 720,
+};
+
+const SOFTWARE_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/software-demand-revenue-2026-1280.webp",
+  alt: "소프트웨어 기업은 업무 효율화와 자동화 수요가 구독 매출로 바뀌는 속도가 핵심입니다 내용을 설명하는 소프트웨어 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Microsoft_Office_Excel_(Inverted,_2013-2019).png",
+  width: 1280,
+  height: 720,
+};
+
+const QUANTUM_COMPUTING_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/quantum-computing-margin-bottleneck-2026-1280.webp",
+  alt: "양자컴퓨팅 투자는 양자 하드웨어와 알고리즘 서비스보다 오류 보정과 상용화 시간을 먼저 봐야 합니다 내용을 설명하는 양자컴퓨팅 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Measuring_a_qubit_leaves_no_room_for_error.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const QUANTUM_COMPUTING_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/quantum-computing-demand-revenue-2026-1280.webp",
+  alt: "양자컴퓨팅 기업은 복잡한 최적화와 보안 연구 수요가 정부 연구비와 파일럿 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 양자컴퓨팅 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:CERN_data_centre.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const QUANTUM_COMPUTING_RISK_CYCLE_2026_IMAGE = {
+  src: "images/quantum-computing-risk-cycle-2026-1280.webp",
+  alt: "양자컴퓨팅 테마는 성장률보다 기대 과열과 매출 공백를 가격에 반영해야 합니다 내용을 설명하는 양자컴퓨팅 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Confinamento_de_data_center-es.png",
+  width: 1280,
+  height: 720,
+};
+
+const DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/defense-aerospace-margin-bottleneck-2026-1280.webp",
+  alt: "방산·항공우주 투자는 방산 플랫폼과 항공우주 부품보다 납품 승인과 원가 상승을 먼저 봐야 합니다 내용을 설명하는 방산·항공우주 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cadillac_Gage_Commando,_Osan_Air_Base_(1980).JPEG",
+  width: 1280,
+  height: 720,
+};
+
+const DEFENSE_AEROSPACE_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/defense-aerospace-demand-revenue-2026-1280.webp",
+  alt: "방산·항공우주 기업은 안보 지출과 교체 수요가 장기 방산 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 방산·항공우주 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:U.S._Airmen_from_the_67th_Aircraft_Maintenance_Unit_move_an_F-15_Eagle_aircraft_into_a_hangar_in_anticipation_of_Typhoon_Kompasu_Aug._30,_2010,_at_Kadena_Air_Base,_Japan_100830-F-NG139-062.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const TELECOMMUNICATIONS_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/telecommunications-margin-bottleneck-2026-1280.webp",
+  alt: "통신 투자는 5G, 광망, 데이터 전송 인프라보다 요금 경쟁과 설비투자 부담을 먼저 봐야 합니다 내용을 설명하는 통신 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Discover-A-Data-Center-Ashlan-Chidester-book-cover-2023.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const TELECOMMUNICATIONS_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/telecommunications-demand-revenue-2026-1280.webp",
+  alt: "통신 기업은 데이터 트래픽 증가 수요가 통신 요금과 기업 회선로 바뀌는 속도가 핵심입니다 내용을 설명하는 통신 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Space_data_center.webp",
+  width: 1280,
+  height: 720,
+};
+
+const TELECOMMUNICATIONS_RISK_CYCLE_2026_IMAGE = {
+  src: "images/telecommunications-risk-cycle-2026-1280.webp",
+  alt: "통신 테마는 성장률보다 가격 인하와 규제를 가격에 반영해야 합니다 내용을 설명하는 통신 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Isando_data_centre.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const AUTONOMOUS_SYSTEMS_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/autonomous-systems-margin-bottleneck-2026-1280.webp",
+  alt: "자율 시스템 투자는 자율주행, 드론, 무인 운용 소프트웨어보다 규제 승인과 센서 비용을 먼저 봐야 합니다 내용을 설명하는 자율 시스템 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:CBP%E2%80%99s_Autonomous_Surveillance_Towers_Declared_a_Program_of_Record_along_the_Southwest_Border_(50108908281).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const AUTONOMOUS_SYSTEMS_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/autonomous-systems-demand-revenue-2026-1280.webp",
+  alt: "자율 시스템 기업은 인력 부족과 안전 자동화 수요가 운용 서비스 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 자율 시스템 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:CBP%E2%80%99s_Autonomous_Surveillance_Towers_Declared_a_Program_of_Record_along_the_Southwest_Border_(50108908251).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const AUTONOMOUS_SYSTEMS_RISK_CYCLE_2026_IMAGE = {
+  src: "images/autonomous-systems-risk-cycle-2026-1280.webp",
+  alt: "자율 시스템 테마는 성장률보다 책임 소재와 상용화 지연를 가격에 반영해야 합니다 내용을 설명하는 자율 시스템 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:AI_Amendment_Aerial_Vehicle_(Octocopter_Drone)_by_Rafi_Hossain_on_display_at_NMST.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const METAL_COMMODITIES_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/metal-commodities-margin-bottleneck-2026-1280.webp",
+  alt: "금속 원자재 투자는 구리, 알루미늄, 희토류 공급망보다 광산 개발과 제련 비용을 먼저 봐야 합니다 내용을 설명하는 금속 원자재 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Chuquicamata-002.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const METAL_COMMODITIES_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/metal-commodities-demand-revenue-2026-1280.webp",
+  alt: "금속 원자재 기업은 전력화와 인프라 증설 수요가 장기 공급 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 금속 원자재 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Chuquicamata-003.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const METAL_COMMODITIES_RISK_CYCLE_2026_IMAGE = {
+  src: "images/metal-commodities-risk-cycle-2026-1280.webp",
+  alt: "금속 원자재 테마는 성장률보다 중국 수요 둔화와 가격 변동를 가격에 반영해야 합니다 내용을 설명하는 금속 원자재 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Chuquicamata_panorama.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ENVIRONMENT_SUSTAINABILITY_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/environment-sustainability-margin-bottleneck-2026-1280.webp",
+  alt: "환경 지속가능성 투자는 탄소 저감, 재활용, 수처리 솔루션보다 프로젝트 경제성과 인증을 먼저 봐야 합니다 내용을 설명하는 환경 지속가능성 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Drought_Mitigation-Pajaro_Valley_Water_Recycle_Facility_(20150827-NRCS-LSC-0448).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ENVIRONMENT_SUSTAINABILITY_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/environment-sustainability-demand-revenue-2026-1280.webp",
+  alt: "환경 지속가능성 기업은 규제 대응과 비용 절감 수요가 장기 처리 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 환경 지속가능성 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Drought_Mitigation-Pajaro_Valley_Water_Recycle_Facility_(20150827-NRCS-LSC-0432).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ENVIRONMENT_SUSTAINABILITY_RISK_CYCLE_2026_IMAGE = {
+  src: "images/environment-sustainability-risk-cycle-2026-1280.webp",
+  alt: "환경 지속가능성 테마는 성장률보다 보조금 의존과 기술 검증를 가격에 반영해야 합니다 내용을 설명하는 환경 지속가능성 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Drought_Mitigation-Pajaro_Valley_Water_Recycle_Facility_(20150827-NRCS-LSC-0074).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const HARDWARE_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/hardware-margin-bottleneck-2026-1280.webp",
+  alt: "하드웨어 투자는 PC, 서버, 디바이스 공급망보다 부품 재고와 가격 경쟁을 먼저 봐야 합니다 내용을 설명하는 하드웨어 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Micron_MTC40F204681RC48BA1R_20240407_076.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const HARDWARE_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/hardware-demand-revenue-2026-1280.webp",
+  alt: "하드웨어 기업은 교체 주기와 AI 기기 수요가 완제품 판매와 서비스 연결로 바뀌는 속도가 핵심입니다 내용을 설명하는 하드웨어 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:I-PC-Piacenza24.JPG",
+  width: 1280,
+  height: 720,
+};
+
+const VIRTUAL_AUGMENTED_REALITY_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/virtual-augmented-reality-margin-bottleneck-2026-1280.webp",
+  alt: "가상·증강현실 투자는 헤드셋, 공간 컴퓨팅, 산업용 시뮬레이션보다 착용감과 콘텐츠 부족을 먼저 봐야 합니다 내용을 설명하는 가상·증강현실 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:ISS-46_Scott_Kelly_with_HoloLens_in_the_Destiny_lab.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const VIRTUAL_AUGMENTED_REALITY_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/virtual-augmented-reality-demand-revenue-2026-1280.webp",
+  alt: "가상·증강현실 기업은 몰입형 교육과 원격 협업 수요가 앱스토어와 기업 라이선스로 바뀌는 속도가 핵심입니다 내용을 설명하는 가상·증강현실 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:MicrosoftHoloLensRoomScan.JPG",
+  width: 1280,
+  height: 720,
+};
+
+const VIRTUAL_AUGMENTED_REALITY_RISK_CYCLE_2026_IMAGE = {
+  src: "images/virtual-augmented-reality-risk-cycle-2026-1280.webp",
+  alt: "가상·증강현실 테마는 성장률보다 하드웨어 보급 지연를 가격에 반영해야 합니다 내용을 설명하는 가상·증강현실 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Jose69.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const ECOMMERCE_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/ecommerce-margin-bottleneck-2026-1280.webp",
+  alt: "전자상거래 투자는 온라인 유통과 광고 플랫폼보다 물류비와 반품 비용을 먼저 봐야 합니다 내용을 설명하는 전자상거래 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Local_Shops_online_marketplace.png",
+  width: 1280,
+  height: 720,
+};
+
+const ECOMMERCE_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/ecommerce-demand-revenue-2026-1280.webp",
+  alt: "전자상거래 기업은 편의 구매와 디지털 광고 수요가 거래 수수료와 광고 매출로 바뀌는 속도가 핵심입니다 내용을 설명하는 전자상거래 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Some_of_Indonesia%E2%80%99s_leading_women_entrepreneurs_discuss_how_to_become_business_leaders_in_the_online_marketplace_(6143529016).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const DIGITAL_ENTERTAINMENT_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/digital-entertainment-margin-bottleneck-2026-1280.webp",
+  alt: "디지털 엔터테인먼트 투자는 게임, 스트리밍, 디지털 콘텐츠 IP보다 콘텐츠 제작비와 흥행 변동을 먼저 봐야 합니다 내용을 설명하는 디지털 엔터테인먼트 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Superheros_(8638125491).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const DIGITAL_ENTERTAINMENT_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/digital-entertainment-demand-revenue-2026-1280.webp",
+  alt: "디지털 엔터테인먼트 기업은 여가 시간과 팬덤 소비 수요가 구독료와 라이선스로 바뀌는 속도가 핵심입니다 내용을 설명하는 디지털 엔터테인먼트 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Wonder_Woman,_Green_Lantern_(8638119033).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const DIGITAL_ENTERTAINMENT_RISK_CYCLE_2026_IMAGE = {
+  src: "images/digital-entertainment-risk-cycle-2026-1280.webp",
+  alt: "디지털 엔터테인먼트 테마는 성장률보다 해지율과 제작비 상승를 가격에 반영해야 합니다 내용을 설명하는 디지털 엔터테인먼트 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Living_Live_Human_Statues_(9090500784).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CONSUMER_GOODS_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/consumer-goods-margin-bottleneck-2026-1280.webp",
+  alt: "소비재 투자는 브랜드 소비재와 프리미엄 제품보다 원재료비와 판촉비를 먼저 봐야 합니다 내용을 설명하는 소비재 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Foundation_(cosmetics).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CONSUMER_GOODS_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/consumer-goods-demand-revenue-2026-1280.webp",
+  alt: "소비재 기업은 생활 필수품과 프리미엄 교체 수요가 반복 판매로 바뀌는 속도가 핵심입니다 내용을 설명하는 소비재 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CONSUMER_GOODS_RISK_CYCLE_2026_IMAGE = {
+  src: "images/consumer-goods-risk-cycle-2026-1280.webp",
+  alt: "소비재 테마는 성장률보다 소비 둔화와 브랜드 피로를 가격에 반영해야 합니다 내용을 설명하는 소비재 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cosmetic_Box_with_a_Swivel_Top_MET_DP116089.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const SMART_HOME_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/smart-home-margin-bottleneck-2026-1280.webp",
+  alt: "스마트홈 투자는 가전, 보안, 에너지 관리 기기보다 표준 호환성과 설치 비용을 먼저 봐야 합니다 내용을 설명하는 스마트홈 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Sonos_PLAY_1_wireless_speaker.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const SMART_HOME_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/smart-home-demand-revenue-2026-1280.webp",
+  alt: "스마트홈 기업은 편의와 에너지 절감 수요가 기기 판매와 구독 서비스로 바뀌는 속도가 핵심입니다 내용을 설명하는 스마트홈 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Harman_Kardon_Invoke_Speaker_-_aerial.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const SMART_HOME_RISK_CYCLE_2026_IMAGE = {
+  src: "images/smart-home-risk-cycle-2026-1280.webp",
+  alt: "스마트홈 테마는 성장률보다 낮은 교체 빈도와 플랫폼 경쟁를 가격에 반영해야 합니다 내용을 설명하는 스마트홈 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Smart_Speaker_Google_Home,_Recover_Reputation.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const HEALTHCARE_BIOTECH_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/healthcare-biotech-margin-bottleneck-2026-1280.webp",
+  alt: "헬스케어·바이오테크 투자는 신약, 진단, 위탁생산 플랫폼보다 임상 데이터와 허가를 먼저 봐야 합니다 내용을 설명하는 헬스케어·바이오테크 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:NASA_astronaut_Zena_Cardman_conducting_research_operations_for_a_biotechnology_experiment_(iss073e0865452).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const HEALTHCARE_BIOTECH_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/healthcare-biotech-demand-revenue-2026-1280.webp",
+  alt: "헬스케어·바이오테크 기업은 치료 접근성과 생산 위탁 수요가 제품 매출과 로열티로 바뀌는 속도가 핵심입니다 내용을 설명하는 헬스케어·바이오테크 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:NASA_astronaut_Zena_Cardman_conducting_research_operations_for_a_biotechnology_experiment_(iss073e0817247).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const BIOMETRICS_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/biometrics-margin-bottleneck-2026-1280.webp",
+  alt: "생체인식 투자는 얼굴, 지문, 행동 인증 솔루션보다 개인정보 규제와 오인식률을 먼저 봐야 합니다 내용을 설명하는 생체인식 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:USB_Flash_Memory_Drive_SanDisk_cruizer_profile.JPG",
+  width: 1280,
+  height: 720,
+};
+
+const BIOMETRICS_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/biometrics-demand-revenue-2026-1280.webp",
+  alt: "생체인식 기업은 비밀번호 대체와 출입 보안 수요가 솔루션 라이선스로 바뀌는 속도가 핵심입니다 내용을 설명하는 생체인식 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:2014_02_02_Identity_Cards-05.jpg_(12286710994).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const BIOMETRICS_RISK_CYCLE_2026_IMAGE = {
+  src: "images/biometrics-risk-cycle-2026-1280.webp",
+  alt: "생체인식 테마는 성장률보다 프라이버시 반발과 법적 제한를 가격에 반영해야 합니다 내용을 설명하는 생체인식 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:161129-Dulles-OFO-Ops-GF-372_(30534091333).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const BIG_DATA_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/big-data-margin-bottleneck-2026-1280.webp",
+  alt: "빅데이터 투자는 데이터 플랫폼과 분석 파이프라인보다 데이터 품질과 통합 비용을 먼저 봐야 합니다 내용을 설명하는 빅데이터 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Data_warehouse_overview.JPG",
+  width: 1280,
+  height: 720,
+};
+
+const SOCIAL_MEDIA_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/social-media-margin-bottleneck-2026-1280.webp",
+  alt: "소셜미디어 투자는 광고 플랫폼과 크리에이터 생태계보다 광고 경기와 콘텐츠 안전성을 먼저 봐야 합니다 내용을 설명하는 소셜미디어 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Space_data_center_hexagon.webp",
+  width: 1280,
+  height: 720,
+};
+
+const SOCIAL_MEDIA_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/social-media-demand-revenue-2026-1280.webp",
+  alt: "소셜미디어 기업은 숏폼 소비와 타깃 광고 수요가 광고 매출로 바뀌는 속도가 핵심입니다 내용을 설명하는 소셜미디어 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const SOCIAL_MEDIA_RISK_CYCLE_2026_IMAGE = {
+  src: "images/social-media-risk-cycle-2026-1280.webp",
+  alt: "소셜미디어 테마는 성장률보다 규제와 이용자 이탈를 가격에 반영해야 합니다 내용을 설명하는 소셜미디어 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Sun-synchronous_orbit_for_solar_data_centers.webp",
+  width: 1280,
+  height: 720,
+};
+
+const REAL_ESTATE_REITS_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/real-estate-reits-margin-bottleneck-2026-1280.webp",
+  alt: "부동산·리츠 투자는 물류센터, 데이터센터, 임대형 부동산보다 금리와 차환 비용을 먼저 봐야 합니다 내용을 설명하는 부동산·리츠 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Hotel_Ritz_Paris.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const REAL_ESTATE_REITS_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/real-estate-reits-demand-revenue-2026-1280.webp",
+  alt: "부동산·리츠 기업은 임대 현금흐름과 인프라 수요가 임대료와 배당로 바뀌는 속도가 핵심입니다 내용을 설명하는 부동산·리츠 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Ritz_Paris.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const WEARABLES_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/wearables-margin-bottleneck-2026-1280.webp",
+  alt: "웨어러블 투자는 스마트워치와 건강 센서보다 배터리와 센서 정확도를 먼저 봐야 합니다 내용을 설명하는 웨어러블 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Stevemannwristcomp.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const WEARABLES_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/wearables-demand-revenue-2026-1280.webp",
+  alt: "웨어러블 기업은 건강 모니터링과 피트니스 수요가 기기 판매와 건강 서비스로 바뀌는 속도가 핵심입니다 내용을 설명하는 웨어러블 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Pebble_smartwatch_size.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const WEARABLES_RISK_CYCLE_2026_IMAGE = {
+  src: "images/wearables-risk-cycle-2026-1280.webp",
+  alt: "웨어러블 테마는 성장률보다 기기 포화와 개인정보 우려를 가격에 반영해야 합니다 내용을 설명하는 웨어러블 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:AGENT_smartwatch_prototype_by_Secret_Labs_-_WP_20130627_031_(15837480416).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const EDTECH_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/edtech-margin-bottleneck-2026-1280.webp",
+  alt: "에듀테크 투자는 AI 학습 플랫폼과 직무 교육보다 콘텐츠 품질과 학습 지속률을 먼저 봐야 합니다 내용을 설명하는 에듀테크 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Online_education_is_adversely_affecting_the_physical_and_mental_health_of_children._at_West_Bengal_in_June_18,_2021-00015.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const EDTECH_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/edtech-demand-revenue-2026-1280.webp",
+  alt: "에듀테크 기업은 맞춤형 학습과 재교육 수요가 구독료와 기업 계약으로 바뀌는 속도가 핵심입니다 내용을 설명하는 에듀테크 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Crowdfunding_classrooms_-_with_sound_policies_in_place,_school_districts_can_ensure_that_online_fundraising_enhances_student_learning_-_DPLA_-_58a957192277a10fdc91f8441e969627.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const EDTECH_RISK_CYCLE_2026_IMAGE = {
+  src: "images/edtech-risk-cycle-2026-1280.webp",
+  alt: "에듀테크 테마는 성장률보다 무료 콘텐츠 경쟁과 CAC 상승를 가격에 반영해야 합니다 내용을 설명하는 에듀테크 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Earth_Dyson_Ring_of_AI_data_centers.webp",
+  width: 1280,
+  height: 720,
+};
+
+const AGING_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/aging-margin-bottleneck-2026-1280.webp",
+  alt: "고령화 투자는 시니어 케어와 만성질환 관리 서비스보다 인건비와 보험 수가를 먼저 봐야 합니다 내용을 설명하는 고령화 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Hexagon_data_center_foil_back.webp",
+  width: 1280,
+  height: 720,
+};
+
+const AGING_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/aging-demand-revenue-2026-1280.webp",
+  alt: "고령화 기업은 돌봄 인력 부족과 건강관리 수요가 서비스 구독과 보험 청구로 바뀌는 속도가 핵심입니다 내용을 설명하는 고령화 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Data_center_infrastructure_in_the_United_States.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const AGING_RISK_CYCLE_2026_IMAGE = {
+  src: "images/aging-risk-cycle-2026-1280.webp",
+  alt: "고령화 테마는 성장률보다 규제와 인력 확보를 가격에 반영해야 합니다 내용을 설명하는 고령화 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Microsoft_Data_Center_Middenmeer,_the_Netherlands_-_1.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const HEALTH_FOOD_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/health-food-margin-bottleneck-2026-1280.webp",
+  alt: "건강식품 투자는 기능성 식품과 영양 브랜드보다 원료 가격과 효능 신뢰를 먼저 봐야 합니다 내용을 설명하는 건강식품 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:(%EC%8B%A0%EB%AF%BC%EC%95%84_2019%EB%85%84_%EC%83%88%ED%95%B4_%EC%9D%B8%EC%82%AC)_%EC%9E%A5_%EA%B1%B4%EA%B0%95%EC%9D%80_%ED%94%84%EB%A1%9C%EB%B0%94%EC%9D%B4%EC%98%A4%ED%8B%B1%EC%8A%A4_%EB%93%80%EC%98%A4%EB%9D%BD%EA%B3%BC_%ED%95%A8%EA%BB%98.png",
+  width: 1280,
+  height: 720,
+};
+
+const HEALTH_FOOD_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/health-food-demand-revenue-2026-1280.webp",
+  alt: "건강식품 기업은 면역, 장 건강, 단백질 보충 수요가 반복 구매로 바뀌는 속도가 핵심입니다 내용을 설명하는 건강식품 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Microsoft_Data_Center_Middenmeer,_the_Netherlands_-_2.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const HEALTH_FOOD_RISK_CYCLE_2026_IMAGE = {
+  src: "images/health-food-risk-cycle-2026-1280.webp",
+  alt: "건강식품 테마는 성장률보다 과장 광고와 규제를 가격에 반영해야 합니다 내용을 설명하는 건강식품 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Final_assembly_3.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CRYPTO_BLOCKCHAIN_MARGIN_BOTTLENECK_2026_IMAGE = {
+  src: "images/crypto-blockchain-margin-bottleneck-2026-1280.webp",
+  alt: "암호화폐·블록체인 투자는 비트코인 인프라와 토큰화 플랫폼보다 규제와 보관 인프라를 먼저 봐야 합니다 내용을 설명하는 암호화폐·블록체인 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Production_Line_-_Wrights_Biscuits.jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CRYPTO_BLOCKCHAIN_DEMAND_REVENUE_2026_IMAGE = {
+  src: "images/crypto-blockchain-demand-revenue-2026-1280.webp",
+  alt: "암호화폐·블록체인 기업은 디지털 자산 접근성과 결제 실험 수요가 거래 수수료와 보관 수수료로 바뀌는 속도가 핵심입니다 내용을 설명하는 암호화폐·블록체인 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cromemco_C-10_computer_production_line_(1983).jpg",
+  width: 1280,
+  height: 720,
+};
+
+const CRYPTO_BLOCKCHAIN_RISK_CYCLE_2026_IMAGE = {
+  src: "images/crypto-blockchain-risk-cycle-2026-1280.webp",
+  alt: "암호화폐·블록체인 테마는 성장률보다 가격 변동성과 해킹를 가격에 반영해야 합니다 내용을 설명하는 암호화폐·블록체인 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:N3N_production_at_Naval_Aircraft_Factory_c1937.jpg",
+  width: 1280,
+  height: 720,
+};
+
 const featuredPages = [
+  {
+    slug: "artificial-intelligence-margin-bottleneck-2026",
+    title: "인공지능 투자는 추론 서버와 에이전트 소프트웨어보다 전력과 GPU 임대료를 먼저 봐야 합니다",
+    desk: "인공지능",
+    author: "Aiden",
+    publishedAt: "2026-05-30T19:17:24+09:00",
+    summary: "인공지능 테마는 추론 서버와 에이전트 소프트웨어의 성장성만으로 판단하기 어렵고 전력과 GPU 임대료, 매출총이익률과 사용량 유지율, 반복 사용료가 함께 맞아야 합니다.",
+    image: ARTIFICIAL_INTELLIGENCE_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/artificial-intelligence-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "7VcdPR8IEnA", title: "인공지능 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7VcdPR8IEnA", thumbnailUrl: "https://i.ytimg.com/vi/7VcdPR8IEnA/hqdefault.jpg", description: "인공지능 테마는 추론 서버와 에이전트 소프트웨어의 성장성만으로 판단하기 어렵고 전력과 GPU 임대료, 매출총이익률과 사용량 유지율, 반복 사용료가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "artificial-intelligence-demand-revenue-2026",
+    title: "인공지능 기업은 업무 자동화 수요가 반복 사용료로 바뀌는 속도가 핵심입니다",
+    desk: "인공지능",
+    author: "Aiden",
+    publishedAt: "2026-05-30T19:16:24+09:00",
+    summary: "인공지능 기업을 볼 때는 업무 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 매출총이익률과 사용량 유지율가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: ARTIFICIAL_INTELLIGENCE_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/artificial-intelligence-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "dzCLtKW4Eg8", title: "인공지능 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=dzCLtKW4Eg8", thumbnailUrl: "https://i.ytimg.com/vi/dzCLtKW4Eg8/hqdefault.jpg", description: "인공지능 기업을 볼 때는 업무 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 매출총이익률과 사용량 유지율가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "cloud-computing-margin-bottleneck-2026",
+    title: "클라우드 컴퓨팅 투자는 AI 클라우드 인프라와 관리형 서비스보다 전력 계약과 감가상각을 먼저 봐야 합니다",
+    desk: "클라우드 컴퓨팅",
+    author: "Nimbus",
+    publishedAt: "2026-05-30T19:15:24+09:00",
+    summary: "클라우드 컴퓨팅 테마는 AI 클라우드 인프라와 관리형 서비스의 성장성만으로 판단하기 어렵고 전력 계약과 감가상각, 자본지출 대비 매출 전환율, 사용량 기반 매출이 함께 맞아야 합니다.",
+    image: CLOUD_COMPUTING_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/cloud-computing-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "5s9UnfOpSJo", title: "클라우드 컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=5s9UnfOpSJo", thumbnailUrl: "https://i.ytimg.com/vi/5s9UnfOpSJo/hqdefault.jpg", description: "클라우드 컴퓨팅 테마는 AI 클라우드 인프라와 관리형 서비스의 성장성만으로 판단하기 어렵고 전력 계약과 감가상각, 자본지출 대비 매출 전환율, 사용량 기반 매출이 함께 맞아야 합니다." },
+  },
+  {
+    slug: "cloud-computing-demand-revenue-2026",
+    title: "클라우드 컴퓨팅 기업은 클라우드 이전과 AI 학습 수요가 사용량 기반 매출로 바뀌는 속도가 핵심입니다",
+    desk: "클라우드 컴퓨팅",
+    author: "Nimbus",
+    publishedAt: "2026-05-30T19:14:24+09:00",
+    summary: "클라우드 컴퓨팅 기업을 볼 때는 클라우드 이전과 AI 학습 수요의 크기보다 실제 고객 계약, 반복 매출, 자본지출 대비 매출 전환율가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: CLOUD_COMPUTING_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/cloud-computing-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "-7HzQM5E3TA", title: "클라우드 컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=-7HzQM5E3TA", thumbnailUrl: "https://i.ytimg.com/vi/-7HzQM5E3TA/hqdefault.jpg", description: "클라우드 컴퓨팅 기업을 볼 때는 클라우드 이전과 AI 학습 수요의 크기보다 실제 고객 계약, 반복 매출, 자본지출 대비 매출 전환율가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "electric-vehicle-margin-bottleneck-2026",
+    title: "전기차 투자는 배터리와 전동화 플랫폼보다 배터리 원가와 충전 인프라를 먼저 봐야 합니다",
+    desk: "전기차",
+    author: "Volt",
+    publishedAt: "2026-05-30T19:13:24+09:00",
+    summary: "전기차 테마는 배터리와 전동화 플랫폼의 성장성만으로 판단하기 어렵고 배터리 원가와 충전 인프라, 차량당 마진과 재고 회전, 판매 믹스 개선가 함께 맞아야 합니다.",
+    image: ELECTRIC_VEHICLE_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/electric-vehicle-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "ueUaCY_swpU", title: "전기차 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ueUaCY_swpU", thumbnailUrl: "https://i.ytimg.com/vi/ueUaCY_swpU/hqdefault.jpg", description: "전기차 테마는 배터리와 전동화 플랫폼의 성장성만으로 판단하기 어렵고 배터리 원가와 충전 인프라, 차량당 마진과 재고 회전, 판매 믹스 개선가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "electric-vehicle-demand-revenue-2026",
+    title: "전기차 기업은 전기차와 하이브리드 전환 수요가 판매 믹스 개선로 바뀌는 속도가 핵심입니다",
+    desk: "전기차",
+    author: "Volt",
+    publishedAt: "2026-05-30T19:12:24+09:00",
+    summary: "전기차 기업을 볼 때는 전기차와 하이브리드 전환 수요의 크기보다 실제 고객 계약, 반복 매출, 차량당 마진과 재고 회전가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: ELECTRIC_VEHICLE_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/electric-vehicle-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "4vJ-Sak1TeE", title: "전기차 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=4vJ-Sak1TeE", thumbnailUrl: "https://i.ytimg.com/vi/4vJ-Sak1TeE/hqdefault.jpg", description: "전기차 기업을 볼 때는 전기차와 하이브리드 전환 수요의 크기보다 실제 고객 계약, 반복 매출, 차량당 마진과 재고 회전가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "transport-logistics-margin-bottleneck-2026",
+    title: "운송·물류 투자는 항만, 창고, 라스트마일 네트워크보다 운임 변동과 인건비를 먼저 봐야 합니다",
+    desk: "운송·물류",
+    author: "Harbor",
+    publishedAt: "2026-05-30T19:11:24+09:00",
+    summary: "운송·물류 테마는 항만, 창고, 라스트마일 네트워크의 성장성만으로 판단하기 어렵고 운임 변동과 인건비, 가동률과 단위 배송비, 계약 물량과 창고 임대료가 함께 맞아야 합니다.",
+    image: TRANSPORT_LOGISTICS_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/transport-logistics-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "7E86Y_gXNg4", title: "운송·물류 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=7E86Y_gXNg4", thumbnailUrl: "https://i.ytimg.com/vi/7E86Y_gXNg4/hqdefault.jpg", description: "운송·물류 테마는 항만, 창고, 라스트마일 네트워크의 성장성만으로 판단하기 어렵고 운임 변동과 인건비, 가동률과 단위 배송비, 계약 물량과 창고 임대료가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "space-technology-margin-bottleneck-2026",
+    title: "우주 기술 투자는 위성, 발사체, 우주 데이터 서비스보다 발사 일정과 보험 비용을 먼저 봐야 합니다",
+    desk: "우주 기술",
+    author: "Orion",
+    publishedAt: "2026-05-30T19:10:24+09:00",
+    summary: "우주 기술 테마는 위성, 발사체, 우주 데이터 서비스의 성장성만으로 판단하기 어렵고 발사 일정과 보험 비용, 수주잔고와 반복 서비스 매출, 장기 서비스 계약가 함께 맞아야 합니다.",
+    image: SPACE_TECHNOLOGY_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/space-technology-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "8Am8EoBriZs", title: "우주 기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8Am8EoBriZs", thumbnailUrl: "https://i.ytimg.com/vi/8Am8EoBriZs/hqdefault.jpg", description: "우주 기술 테마는 위성, 발사체, 우주 데이터 서비스의 성장성만으로 판단하기 어렵고 발사 일정과 보험 비용, 수주잔고와 반복 서비스 매출, 장기 서비스 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "space-technology-demand-revenue-2026",
+    title: "우주 기술 기업은 저궤도 통신과 지구 관측 수요가 장기 서비스 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "우주 기술",
+    author: "Orion",
+    publishedAt: "2026-05-30T19:09:24+09:00",
+    summary: "우주 기술 기업을 볼 때는 저궤도 통신과 지구 관측 수요의 크기보다 실제 고객 계약, 반복 매출, 수주잔고와 반복 서비스 매출이 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: SPACE_TECHNOLOGY_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/space-technology-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "WXi98XR4A40", title: "우주 기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=WXi98XR4A40", thumbnailUrl: "https://i.ytimg.com/vi/WXi98XR4A40/hqdefault.jpg", description: "우주 기술 기업을 볼 때는 저궤도 통신과 지구 관측 수요의 크기보다 실제 고객 계약, 반복 매출, 수주잔고와 반복 서비스 매출이 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "space-technology-risk-cycle-2026",
+    title: "우주 기술 테마는 성장률보다 발사 실패와 자금 조달를 가격에 반영해야 합니다",
+    desk: "우주 기술",
+    author: "Orion",
+    publishedAt: "2026-05-30T19:08:24+09:00",
+    summary: "우주 기술 테마는 성장 기대가 커질수록 발사 실패와 자금 조달가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: SPACE_TECHNOLOGY_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/space-technology-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "cE3lz7Xai_c", title: "우주 기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=cE3lz7Xai_c", thumbnailUrl: "https://i.ytimg.com/vi/cE3lz7Xai_c/hqdefault.jpg", description: "우주 기술 테마는 성장 기대가 커질수록 발사 실패와 자금 조달가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "renewable-energy-margin-bottleneck-2026",
+    title: "재생에너지 투자는 태양광, 풍력, 저장장치 프로젝트보다 계통 연결과 금리 부담을 먼저 봐야 합니다",
+    desk: "재생에너지",
+    author: "Sol",
+    publishedAt: "2026-05-30T19:07:24+09:00",
+    summary: "재생에너지 테마는 태양광, 풍력, 저장장치 프로젝트의 성장성만으로 판단하기 어렵고 계통 연결과 금리 부담, 전력구매계약 단가와 프로젝트 수익률, 장기 전력 판매가 함께 맞아야 합니다.",
+    image: RENEWABLE_ENERGY_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/renewable-energy-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "YmHZhpxtneM", title: "재생에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=YmHZhpxtneM", thumbnailUrl: "https://i.ytimg.com/vi/YmHZhpxtneM/hqdefault.jpg", description: "재생에너지 테마는 태양광, 풍력, 저장장치 프로젝트의 성장성만으로 판단하기 어렵고 계통 연결과 금리 부담, 전력구매계약 단가와 프로젝트 수익률, 장기 전력 판매가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "renewable-energy-demand-revenue-2026",
+    title: "재생에너지 기업은 청정 전력 조달 수요가 장기 전력 판매로 바뀌는 속도가 핵심입니다",
+    desk: "재생에너지",
+    author: "Sol",
+    publishedAt: "2026-05-30T19:06:24+09:00",
+    summary: "재생에너지 기업을 볼 때는 청정 전력 조달 수요의 크기보다 실제 고객 계약, 반복 매출, 전력구매계약 단가와 프로젝트 수익률가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: RENEWABLE_ENERGY_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/renewable-energy-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "hEQTJv0Irgg", title: "재생에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=hEQTJv0Irgg", thumbnailUrl: "https://i.ytimg.com/vi/hEQTJv0Irgg/hqdefault.jpg", description: "재생에너지 기업을 볼 때는 청정 전력 조달 수요의 크기보다 실제 고객 계약, 반복 매출, 전력구매계약 단가와 프로젝트 수익률가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "renewable-energy-risk-cycle-2026",
+    title: "재생에너지 테마는 성장률보다 정책 변경과 원가 상승를 가격에 반영해야 합니다",
+    desk: "재생에너지",
+    author: "Sol",
+    publishedAt: "2026-05-30T19:05:24+09:00",
+    summary: "재생에너지 테마는 성장 기대가 커질수록 정책 변경과 원가 상승가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: RENEWABLE_ENERGY_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/renewable-energy-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "O_CtSpsHVvg", title: "재생에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=O_CtSpsHVvg", thumbnailUrl: "https://i.ytimg.com/vi/O_CtSpsHVvg/hqdefault.jpg", description: "재생에너지 테마는 성장 기대가 커질수록 정책 변경과 원가 상승가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "traditional-energy-margin-bottleneck-2026",
+    title: "전통 에너지 투자는 석유, 가스, 정제, 파이프라인보다 원유 가격과 정제 마진을 먼저 봐야 합니다",
+    desk: "전통 에너지",
+    author: "Flint",
+    publishedAt: "2026-05-30T19:04:24+09:00",
+    summary: "전통 에너지 테마는 석유, 가스, 정제, 파이프라인의 성장성만으로 판단하기 어렵고 원유 가격과 정제 마진, 잉여현금흐름과 배당 여력, 배당과 자사주 매입이 함께 맞아야 합니다.",
+    image: TRADITIONAL_ENERGY_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/traditional-energy-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "iAj8DEITbe0", title: "전통 에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=iAj8DEITbe0", thumbnailUrl: "https://i.ytimg.com/vi/iAj8DEITbe0/hqdefault.jpg", description: "전통 에너지 테마는 석유, 가스, 정제, 파이프라인의 성장성만으로 판단하기 어렵고 원유 가격과 정제 마진, 잉여현금흐름과 배당 여력, 배당과 자사주 매입이 함께 맞아야 합니다." },
+  },
+  {
+    slug: "traditional-energy-demand-revenue-2026",
+    title: "전통 에너지 기업은 운송 연료와 전력용 가스 수요가 배당과 자사주 매입로 바뀌는 속도가 핵심입니다",
+    desk: "전통 에너지",
+    author: "Flint",
+    publishedAt: "2026-05-30T19:03:24+09:00",
+    summary: "전통 에너지 기업을 볼 때는 운송 연료와 전력용 가스 수요의 크기보다 실제 고객 계약, 반복 매출, 잉여현금흐름과 배당 여력가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: TRADITIONAL_ENERGY_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/traditional-energy-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "wYVfWIGDMDo", title: "전통 에너지 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=wYVfWIGDMDo", thumbnailUrl: "https://i.ytimg.com/vi/wYVfWIGDMDo/hqdefault.jpg", description: "전통 에너지 기업을 볼 때는 운송 연료와 전력용 가스 수요의 크기보다 실제 고객 계약, 반복 매출, 잉여현금흐름과 배당 여력가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "semiconductor-margin-bottleneck-2026",
+    title: "반도체 투자는 HBM, 파운드리, 장비 공급망보다 수율과 첨단 패키징을 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Silica",
+    publishedAt: "2026-05-30T19:02:24+09:00",
+    summary: "반도체 테마는 HBM, 파운드리, 장비 공급망의 성장성만으로 판단하기 어렵고 수율과 첨단 패키징, ASP와 웨이퍼 투입량, 장기 공급 계약가 함께 맞아야 합니다.",
+    image: SEMICONDUCTOR_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/semiconductor-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "KtBiw1BId7M", title: "반도체 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=KtBiw1BId7M", thumbnailUrl: "https://i.ytimg.com/vi/KtBiw1BId7M/hqdefault.jpg", description: "반도체 테마는 HBM, 파운드리, 장비 공급망의 성장성만으로 판단하기 어렵고 수율과 첨단 패키징, ASP와 웨이퍼 투입량, 장기 공급 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "cybersecurity-margin-bottleneck-2026",
+    title: "사이버보안 투자는 클라우드 보안과 엔드포인트 방어보다 보안 예산 승인과 제품 통합을 먼저 봐야 합니다",
+    desk: "사이버보안",
+    author: "Cipher",
+    publishedAt: "2026-05-30T19:01:24+09:00",
+    summary: "사이버보안 테마는 클라우드 보안과 엔드포인트 방어의 성장성만으로 판단하기 어렵고 보안 예산 승인과 제품 통합, 순매출유지율과 연간반복매출, 구독 매출이 함께 맞아야 합니다.",
+    image: CYBERSECURITY_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/cybersecurity-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "l-oiFQFSdT8", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=l-oiFQFSdT8", thumbnailUrl: "https://i.ytimg.com/vi/l-oiFQFSdT8/hqdefault.jpg", description: "사이버보안 테마는 클라우드 보안과 엔드포인트 방어의 성장성만으로 판단하기 어렵고 보안 예산 승인과 제품 통합, 순매출유지율과 연간반복매출, 구독 매출이 함께 맞아야 합니다." },
+  },
+  {
+    slug: "cybersecurity-demand-revenue-2026",
+    title: "사이버보안 기업은 랜섬웨어 대응과 계정 보호 수요가 구독 매출로 바뀌는 속도가 핵심입니다",
+    desk: "사이버보안",
+    author: "Cipher",
+    publishedAt: "2026-05-30T19:00:24+09:00",
+    summary: "사이버보안 기업을 볼 때는 랜섬웨어 대응과 계정 보호 수요의 크기보다 실제 고객 계약, 반복 매출, 순매출유지율과 연간반복매출이 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: CYBERSECURITY_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/cybersecurity-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "BPAOxEpBwMY", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=BPAOxEpBwMY", thumbnailUrl: "https://i.ytimg.com/vi/BPAOxEpBwMY/hqdefault.jpg", description: "사이버보안 기업을 볼 때는 랜섬웨어 대응과 계정 보호 수요의 크기보다 실제 고객 계약, 반복 매출, 순매출유지율과 연간반복매출이 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "cybersecurity-risk-cycle-2026",
+    title: "사이버보안 테마는 성장률보다 플랫폼 통합 경쟁과 고객 이탈를 가격에 반영해야 합니다",
+    desk: "사이버보안",
+    author: "Cipher",
+    publishedAt: "2026-05-30T18:59:24+09:00",
+    summary: "사이버보안 테마는 성장 기대가 커질수록 플랫폼 통합 경쟁과 고객 이탈가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: CYBERSECURITY_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/cybersecurity-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "eqQqo2Z9apA", title: "사이버보안 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=eqQqo2Z9apA", thumbnailUrl: "https://i.ytimg.com/vi/eqQqo2Z9apA/hqdefault.jpg", description: "사이버보안 테마는 성장 기대가 커질수록 플랫폼 통합 경쟁과 고객 이탈가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "industrial-automation-margin-bottleneck-2026",
+    title: "산업 자동화 투자는 공장 제어, 센서, 자동화 장비보다 설비투자 주기와 설치 인력을 먼저 봐야 합니다",
+    desk: "산업 자동화",
+    author: "Gear",
+    publishedAt: "2026-05-30T18:58:24+09:00",
+    summary: "산업 자동화 테마는 공장 제어, 센서, 자동화 장비의 성장성만으로 판단하기 어렵고 설비투자 주기와 설치 인력, 수주잔고와 서비스 매출 비중, 유지보수 계약가 함께 맞아야 합니다.",
+    image: INDUSTRIAL_AUTOMATION_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/industrial-automation-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "LcGtLLcOHVc", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LcGtLLcOHVc", thumbnailUrl: "https://i.ytimg.com/vi/LcGtLLcOHVc/hqdefault.jpg", description: "산업 자동화 테마는 공장 제어, 센서, 자동화 장비의 성장성만으로 판단하기 어렵고 설비투자 주기와 설치 인력, 수주잔고와 서비스 매출 비중, 유지보수 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "industrial-automation-demand-revenue-2026",
+    title: "산업 자동화 기업은 인건비 절감과 품질 안정 수요가 유지보수 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "산업 자동화",
+    author: "Gear",
+    publishedAt: "2026-05-30T18:57:24+09:00",
+    summary: "산업 자동화 기업을 볼 때는 인건비 절감과 품질 안정 수요의 크기보다 실제 고객 계약, 반복 매출, 수주잔고와 서비스 매출 비중가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: INDUSTRIAL_AUTOMATION_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/industrial-automation-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "RDQ6jiFZNlQ", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RDQ6jiFZNlQ", thumbnailUrl: "https://i.ytimg.com/vi/RDQ6jiFZNlQ/hqdefault.jpg", description: "산업 자동화 기업을 볼 때는 인건비 절감과 품질 안정 수요의 크기보다 실제 고객 계약, 반복 매출, 수주잔고와 서비스 매출 비중가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "industrial-automation-risk-cycle-2026",
+    title: "산업 자동화 테마는 성장률보다 경기 둔화와 고객 지연를 가격에 반영해야 합니다",
+    desk: "산업 자동화",
+    author: "Gear",
+    publishedAt: "2026-05-30T18:56:24+09:00",
+    summary: "산업 자동화 테마는 성장 기대가 커질수록 경기 둔화와 고객 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: INDUSTRIAL_AUTOMATION_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/industrial-automation-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "kCbqe0NA_ds", title: "산업 자동화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=kCbqe0NA_ds", thumbnailUrl: "https://i.ytimg.com/vi/kCbqe0NA_ds/hqdefault.jpg", description: "산업 자동화 테마는 성장 기대가 커질수록 경기 둔화와 고객 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "robotics-margin-bottleneck-2026",
+    title: "로보틱스 투자는 협동로봇과 물류 로봇보다 현장 적용 속도와 안전 인증을 먼저 봐야 합니다",
+    desk: "로보틱스",
+    author: "Axis",
+    publishedAt: "2026-05-30T18:55:24+09:00",
+    summary: "로보틱스 테마는 협동로봇과 물류 로봇의 성장성만으로 판단하기 어렵고 현장 적용 속도와 안전 인증, 납품 대수와 서비스 매출률, 로봇 판매와 구독형 유지보수가 함께 맞아야 합니다.",
+    image: ROBOTICS_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/robotics-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "ezUnJ3McW9M", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ezUnJ3McW9M", thumbnailUrl: "https://i.ytimg.com/vi/ezUnJ3McW9M/hqdefault.jpg", description: "로보틱스 테마는 협동로봇과 물류 로봇의 성장성만으로 판단하기 어렵고 현장 적용 속도와 안전 인증, 납품 대수와 서비스 매출률, 로봇 판매와 구독형 유지보수가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "robotics-demand-revenue-2026",
+    title: "로보틱스 기업은 반복 작업 자동화 수요가 로봇 판매와 구독형 유지보수로 바뀌는 속도가 핵심입니다",
+    desk: "로보틱스",
+    author: "Axis",
+    publishedAt: "2026-05-30T18:54:24+09:00",
+    summary: "로보틱스 기업을 볼 때는 반복 작업 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 납품 대수와 서비스 매출률가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: ROBOTICS_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/robotics-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "0yRYotzohKk", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=0yRYotzohKk", thumbnailUrl: "https://i.ytimg.com/vi/0yRYotzohKk/hqdefault.jpg", description: "로보틱스 기업을 볼 때는 반복 작업 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 납품 대수와 서비스 매출률가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "robotics-risk-cycle-2026",
+    title: "로보틱스 테마는 성장률보다 파일럿 이후 확산 지연를 가격에 반영해야 합니다",
+    desk: "로보틱스",
+    author: "Axis",
+    publishedAt: "2026-05-30T18:53:24+09:00",
+    summary: "로보틱스 테마는 성장 기대가 커질수록 파일럿 이후 확산 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: ROBOTICS_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/robotics-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "JQbL991DfGk", title: "로보틱스 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=JQbL991DfGk", thumbnailUrl: "https://i.ytimg.com/vi/JQbL991DfGk/hqdefault.jpg", description: "로보틱스 테마는 성장 기대가 커질수록 파일럿 이후 확산 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "nanotechnology-margin-bottleneck-2026",
+    title: "나노기술 투자는 나노 소재와 정밀 공정보다 양산 수율과 인증 기간을 먼저 봐야 합니다",
+    desk: "나노기술",
+    author: "Nano",
+    publishedAt: "2026-05-30T18:52:24+09:00",
+    summary: "나노기술 테마는 나노 소재와 정밀 공정의 성장성만으로 판단하기 어렵고 양산 수율과 인증 기간, 그램당 단가와 적용처 확대, 소재 공급 계약가 함께 맞아야 합니다.",
+    image: NANOTECHNOLOGY_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/nanotechnology-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "g8pGiQOScRU", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g8pGiQOScRU", thumbnailUrl: "https://i.ytimg.com/vi/g8pGiQOScRU/hqdefault.jpg", description: "나노기술 테마는 나노 소재와 정밀 공정의 성장성만으로 판단하기 어렵고 양산 수율과 인증 기간, 그램당 단가와 적용처 확대, 소재 공급 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "nanotechnology-demand-revenue-2026",
+    title: "나노기술 기업은 소재 성능 개선 수요가 소재 공급 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "나노기술",
+    author: "Nano",
+    publishedAt: "2026-05-30T18:51:24+09:00",
+    summary: "나노기술 기업을 볼 때는 소재 성능 개선 수요의 크기보다 실제 고객 계약, 반복 매출, 그램당 단가와 적용처 확대가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: NANOTECHNOLOGY_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/nanotechnology-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "Ho1jTZRog_w", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Ho1jTZRog_w", thumbnailUrl: "https://i.ytimg.com/vi/Ho1jTZRog_w/hqdefault.jpg", description: "나노기술 기업을 볼 때는 소재 성능 개선 수요의 크기보다 실제 고객 계약, 반복 매출, 그램당 단가와 적용처 확대가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "nanotechnology-risk-cycle-2026",
+    title: "나노기술 테마는 성장률보다 실험실 성과와 양산 간격를 가격에 반영해야 합니다",
+    desk: "나노기술",
+    author: "Nano",
+    publishedAt: "2026-05-30T18:50:24+09:00",
+    summary: "나노기술 테마는 성장 기대가 커질수록 실험실 성과와 양산 간격가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: NANOTECHNOLOGY_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/nanotechnology-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "CTiFYDDsfKQ", title: "나노기술 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=CTiFYDDsfKQ", thumbnailUrl: "https://i.ytimg.com/vi/CTiFYDDsfKQ/hqdefault.jpg", description: "나노기술 테마는 성장 기대가 커질수록 실험실 성과와 양산 간격가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "internet-of-things-margin-bottleneck-2026",
+    title: "사물인터넷 투자는 센서, 게이트웨이, 연결 플랫폼보다 보안과 표준 통합을 먼저 봐야 합니다",
+    desk: "사물인터넷",
+    author: "Mesh",
+    publishedAt: "2026-05-30T18:49:24+09:00",
+    summary: "사물인터넷 테마는 센서, 게이트웨이, 연결 플랫폼의 성장성만으로 판단하기 어렵고 보안과 표준 통합, 연결 기기 수와 데이터 과금, 플랫폼 사용료가 함께 맞아야 합니다.",
+    image: INTERNET_OF_THINGS_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/internet-of-things-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "tsTq8_hc2p8", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=tsTq8_hc2p8", thumbnailUrl: "https://i.ytimg.com/vi/tsTq8_hc2p8/hqdefault.jpg", description: "사물인터넷 테마는 센서, 게이트웨이, 연결 플랫폼의 성장성만으로 판단하기 어렵고 보안과 표준 통합, 연결 기기 수와 데이터 과금, 플랫폼 사용료가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "internet-of-things-demand-revenue-2026",
+    title: "사물인터넷 기업은 설비 데이터 수집 수요가 플랫폼 사용료로 바뀌는 속도가 핵심입니다",
+    desk: "사물인터넷",
+    author: "Mesh",
+    publishedAt: "2026-05-30T18:48:24+09:00",
+    summary: "사물인터넷 기업을 볼 때는 설비 데이터 수집 수요의 크기보다 실제 고객 계약, 반복 매출, 연결 기기 수와 데이터 과금가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: INTERNET_OF_THINGS_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/internet-of-things-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "dL0-59LJgyY", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=dL0-59LJgyY", thumbnailUrl: "https://i.ytimg.com/vi/dL0-59LJgyY/hqdefault.jpg", description: "사물인터넷 기업을 볼 때는 설비 데이터 수집 수요의 크기보다 실제 고객 계약, 반복 매출, 연결 기기 수와 데이터 과금가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "internet-of-things-risk-cycle-2026",
+    title: "사물인터넷 테마는 성장률보다 낮은 단가와 유지관리 비용를 가격에 반영해야 합니다",
+    desk: "사물인터넷",
+    author: "Mesh",
+    publishedAt: "2026-05-30T18:47:24+09:00",
+    summary: "사물인터넷 테마는 성장 기대가 커질수록 낮은 단가와 유지관리 비용가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: INTERNET_OF_THINGS_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/internet-of-things-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "LJdnowFC714", title: "사물인터넷 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LJdnowFC714", thumbnailUrl: "https://i.ytimg.com/vi/LJdnowFC714/hqdefault.jpg", description: "사물인터넷 테마는 성장 기대가 커질수록 낮은 단가와 유지관리 비용가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "energy-commodities-margin-bottleneck-2026",
+    title: "에너지 원자재 투자는 리튬, 우라늄, 천연가스 원자재보다 광산 허가와 장기 공급 계약을 먼저 봐야 합니다",
+    desk: "에너지 원자재",
+    author: "Quarry",
+    publishedAt: "2026-05-30T18:46:24+09:00",
+    summary: "에너지 원자재 테마는 리튬, 우라늄, 천연가스 원자재의 성장성만으로 판단하기 어렵고 광산 허가와 장기 공급 계약, 생산량과 현물 가격 민감도, 장기 오프테이크 계약가 함께 맞아야 합니다.",
+    image: ENERGY_COMMODITIES_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/energy-commodities-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "R1eWgqMW7VY", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=R1eWgqMW7VY", thumbnailUrl: "https://i.ytimg.com/vi/R1eWgqMW7VY/hqdefault.jpg", description: "에너지 원자재 테마는 리튬, 우라늄, 천연가스 원자재의 성장성만으로 판단하기 어렵고 광산 허가와 장기 공급 계약, 생산량과 현물 가격 민감도, 장기 오프테이크 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "energy-commodities-demand-revenue-2026",
+    title: "에너지 원자재 기업은 전력화와 저장장치 수요가 장기 오프테이크 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "에너지 원자재",
+    author: "Quarry",
+    publishedAt: "2026-05-30T18:45:24+09:00",
+    summary: "에너지 원자재 기업을 볼 때는 전력화와 저장장치 수요의 크기보다 실제 고객 계약, 반복 매출, 생산량과 현물 가격 민감도가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: ENERGY_COMMODITIES_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/energy-commodities-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "kk2z_WLV6zU", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=kk2z_WLV6zU", thumbnailUrl: "https://i.ytimg.com/vi/kk2z_WLV6zU/hqdefault.jpg", description: "에너지 원자재 기업을 볼 때는 전력화와 저장장치 수요의 크기보다 실제 고객 계약, 반복 매출, 생산량과 현물 가격 민감도가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "energy-commodities-risk-cycle-2026",
+    title: "에너지 원자재 테마는 성장률보다 가격 급락과 증설 지연를 가격에 반영해야 합니다",
+    desk: "에너지 원자재",
+    author: "Quarry",
+    publishedAt: "2026-05-30T18:44:24+09:00",
+    summary: "에너지 원자재 테마는 성장 기대가 커질수록 가격 급락과 증설 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: ENERGY_COMMODITIES_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/energy-commodities-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "uacYZjKNMug", title: "에너지 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=uacYZjKNMug", thumbnailUrl: "https://i.ytimg.com/vi/uacYZjKNMug/hqdefault.jpg", description: "에너지 원자재 테마는 성장 기대가 커질수록 가격 급락과 증설 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "agriculture-food-margin-bottleneck-2026",
+    title: "농업·식품 투자는 정밀 농업, 종자, 식품 공급망보다 날씨와 원재료 가격을 먼저 봐야 합니다",
+    desk: "농업·식품",
+    author: "Terra",
+    publishedAt: "2026-05-30T18:43:24+09:00",
+    summary: "농업·식품 테마는 정밀 농업, 종자, 식품 공급망의 성장성만으로 판단하기 어렵고 날씨와 원재료 가격, 수확량과 원가 전가력, 반복 구매와 브랜드 매출이 함께 맞아야 합니다.",
+    image: AGRICULTURE_FOOD_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/agriculture-food-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "307Y_TuWB8Q", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=307Y_TuWB8Q", thumbnailUrl: "https://i.ytimg.com/vi/307Y_TuWB8Q/hqdefault.jpg", description: "농업·식품 테마는 정밀 농업, 종자, 식품 공급망의 성장성만으로 판단하기 어렵고 날씨와 원재료 가격, 수확량과 원가 전가력, 반복 구매와 브랜드 매출이 함께 맞아야 합니다." },
+  },
+  {
+    slug: "agriculture-food-demand-revenue-2026",
+    title: "농업·식품 기업은 생산성 개선과 식량 안정 수요가 반복 구매와 브랜드 매출로 바뀌는 속도가 핵심입니다",
+    desk: "농업·식품",
+    author: "Terra",
+    publishedAt: "2026-05-30T18:42:24+09:00",
+    summary: "농업·식품 기업을 볼 때는 생산성 개선과 식량 안정 수요의 크기보다 실제 고객 계약, 반복 매출, 수확량과 원가 전가력가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: AGRICULTURE_FOOD_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/agriculture-food-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "J5RTUXLSBwM", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=J5RTUXLSBwM", thumbnailUrl: "https://i.ytimg.com/vi/J5RTUXLSBwM/hqdefault.jpg", description: "농업·식품 기업을 볼 때는 생산성 개선과 식량 안정 수요의 크기보다 실제 고객 계약, 반복 매출, 수확량과 원가 전가력가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "agriculture-food-risk-cycle-2026",
+    title: "농업·식품 테마는 성장률보다 곡물 가격 변동과 규제를 가격에 반영해야 합니다",
+    desk: "농업·식품",
+    author: "Terra",
+    publishedAt: "2026-05-30T18:41:24+09:00",
+    summary: "농업·식품 테마는 성장 기대가 커질수록 곡물 가격 변동과 규제가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: AGRICULTURE_FOOD_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/agriculture-food-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "LFdUl2aCO3E", title: "농업·식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LFdUl2aCO3E", thumbnailUrl: "https://i.ytimg.com/vi/LFdUl2aCO3E/hqdefault.jpg", description: "농업·식품 테마는 성장 기대가 커질수록 곡물 가격 변동과 규제가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "software-margin-bottleneck-2026",
+    title: "소프트웨어 투자는 기업용 SaaS와 개발 도구보다 고객 획득 비용과 해지율을 먼저 봐야 합니다",
+    desk: "소프트웨어",
+    author: "Kernel",
+    publishedAt: "2026-05-30T18:40:24+09:00",
+    summary: "소프트웨어 테마는 기업용 SaaS와 개발 도구의 성장성만으로 판단하기 어렵고 고객 획득 비용과 해지율, 순매출유지율과 영업레버리지, 구독 매출이 함께 맞아야 합니다.",
+    image: SOFTWARE_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/software-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "uSxIdtQSS6w", title: "소프트웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=uSxIdtQSS6w", thumbnailUrl: "https://i.ytimg.com/vi/uSxIdtQSS6w/hqdefault.jpg", description: "소프트웨어 테마는 기업용 SaaS와 개발 도구의 성장성만으로 판단하기 어렵고 고객 획득 비용과 해지율, 순매출유지율과 영업레버리지, 구독 매출이 함께 맞아야 합니다." },
+  },
+  {
+    slug: "software-demand-revenue-2026",
+    title: "소프트웨어 기업은 업무 효율화와 자동화 수요가 구독 매출로 바뀌는 속도가 핵심입니다",
+    desk: "소프트웨어",
+    author: "Kernel",
+    publishedAt: "2026-05-30T18:39:24+09:00",
+    summary: "소프트웨어 기업을 볼 때는 업무 효율화와 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 순매출유지율과 영업레버리지가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: SOFTWARE_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/software-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "pofrWxhxn14", title: "소프트웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=pofrWxhxn14", thumbnailUrl: "https://i.ytimg.com/vi/pofrWxhxn14/hqdefault.jpg", description: "소프트웨어 기업을 볼 때는 업무 효율화와 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 순매출유지율과 영업레버리지가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "quantum-computing-margin-bottleneck-2026",
+    title: "양자컴퓨팅 투자는 양자 하드웨어와 알고리즘 서비스보다 오류 보정과 상용화 시간을 먼저 봐야 합니다",
+    desk: "양자컴퓨팅",
+    author: "Qubit",
+    publishedAt: "2026-05-30T18:38:24+09:00",
+    summary: "양자컴퓨팅 테마는 양자 하드웨어와 알고리즘 서비스의 성장성만으로 판단하기 어렵고 오류 보정과 상용화 시간, 연구 계약과 클라우드 사용량, 정부 연구비와 파일럿 계약가 함께 맞아야 합니다.",
+    image: QUANTUM_COMPUTING_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/quantum-computing-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "igU8KGLoQUo", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=igU8KGLoQUo", thumbnailUrl: "https://i.ytimg.com/vi/igU8KGLoQUo/hqdefault.jpg", description: "양자컴퓨팅 테마는 양자 하드웨어와 알고리즘 서비스의 성장성만으로 판단하기 어렵고 오류 보정과 상용화 시간, 연구 계약과 클라우드 사용량, 정부 연구비와 파일럿 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "quantum-computing-demand-revenue-2026",
+    title: "양자컴퓨팅 기업은 복잡한 최적화와 보안 연구 수요가 정부 연구비와 파일럿 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "양자컴퓨팅",
+    author: "Qubit",
+    publishedAt: "2026-05-30T18:37:24+09:00",
+    summary: "양자컴퓨팅 기업을 볼 때는 복잡한 최적화와 보안 연구 수요의 크기보다 실제 고객 계약, 반복 매출, 연구 계약과 클라우드 사용량가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: QUANTUM_COMPUTING_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/quantum-computing-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "O1cxQqHOrGI", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=O1cxQqHOrGI", thumbnailUrl: "https://i.ytimg.com/vi/O1cxQqHOrGI/hqdefault.jpg", description: "양자컴퓨팅 기업을 볼 때는 복잡한 최적화와 보안 연구 수요의 크기보다 실제 고객 계약, 반복 매출, 연구 계약과 클라우드 사용량가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "quantum-computing-risk-cycle-2026",
+    title: "양자컴퓨팅 테마는 성장률보다 기대 과열과 매출 공백를 가격에 반영해야 합니다",
+    desk: "양자컴퓨팅",
+    author: "Qubit",
+    publishedAt: "2026-05-30T18:36:24+09:00",
+    summary: "양자컴퓨팅 테마는 성장 기대가 커질수록 기대 과열과 매출 공백가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: QUANTUM_COMPUTING_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/quantum-computing-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "SOdKov0qB-o", title: "양자컴퓨팅 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=SOdKov0qB-o", thumbnailUrl: "https://i.ytimg.com/vi/SOdKov0qB-o/hqdefault.jpg", description: "양자컴퓨팅 테마는 성장 기대가 커질수록 기대 과열과 매출 공백가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "defense-aerospace-margin-bottleneck-2026",
+    title: "방산·항공우주 투자는 방산 플랫폼과 항공우주 부품보다 납품 승인과 원가 상승을 먼저 봐야 합니다",
+    desk: "방산·항공우주",
+    author: "Vector",
+    publishedAt: "2026-05-30T18:35:24+09:00",
+    summary: "방산·항공우주 테마는 방산 플랫폼과 항공우주 부품의 성장성만으로 판단하기 어렵고 납품 승인과 원가 상승, 수주잔고와 현금 회수, 장기 방산 계약가 함께 맞아야 합니다.",
+    image: DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/defense-aerospace-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "LQcuIPuaZHI", title: "방산·항공우주 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LQcuIPuaZHI", thumbnailUrl: "https://i.ytimg.com/vi/LQcuIPuaZHI/hqdefault.jpg", description: "방산·항공우주 테마는 방산 플랫폼과 항공우주 부품의 성장성만으로 판단하기 어렵고 납품 승인과 원가 상승, 수주잔고와 현금 회수, 장기 방산 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "defense-aerospace-demand-revenue-2026",
+    title: "방산·항공우주 기업은 안보 지출과 교체 수요가 장기 방산 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "방산·항공우주",
+    author: "Vector",
+    publishedAt: "2026-05-30T18:34:24+09:00",
+    summary: "방산·항공우주 기업을 볼 때는 안보 지출과 교체 수요의 크기보다 실제 고객 계약, 반복 매출, 수주잔고와 현금 회수가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: DEFENSE_AEROSPACE_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/defense-aerospace-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "txK007bBpYs", title: "방산·항공우주 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=txK007bBpYs", thumbnailUrl: "https://i.ytimg.com/vi/txK007bBpYs/hqdefault.jpg", description: "방산·항공우주 기업을 볼 때는 안보 지출과 교체 수요의 크기보다 실제 고객 계약, 반복 매출, 수주잔고와 현금 회수가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "telecommunications-margin-bottleneck-2026",
+    title: "통신 투자는 5G, 광망, 데이터 전송 인프라보다 요금 경쟁과 설비투자 부담을 먼저 봐야 합니다",
+    desk: "통신",
+    author: "Signal",
+    publishedAt: "2026-05-30T18:33:24+09:00",
+    summary: "통신 테마는 5G, 광망, 데이터 전송 인프라의 성장성만으로 판단하기 어렵고 요금 경쟁과 설비투자 부담, 가입자당매출과 투자 회수율, 통신 요금과 기업 회선가 함께 맞아야 합니다.",
+    image: TELECOMMUNICATIONS_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/telecommunications-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "38DgsVe7jFc", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=38DgsVe7jFc", thumbnailUrl: "https://i.ytimg.com/vi/38DgsVe7jFc/hqdefault.jpg", description: "통신 테마는 5G, 광망, 데이터 전송 인프라의 성장성만으로 판단하기 어렵고 요금 경쟁과 설비투자 부담, 가입자당매출과 투자 회수율, 통신 요금과 기업 회선가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "telecommunications-demand-revenue-2026",
+    title: "통신 기업은 데이터 트래픽 증가 수요가 통신 요금과 기업 회선로 바뀌는 속도가 핵심입니다",
+    desk: "통신",
+    author: "Signal",
+    publishedAt: "2026-05-30T18:32:24+09:00",
+    summary: "통신 기업을 볼 때는 데이터 트래픽 증가 수요의 크기보다 실제 고객 계약, 반복 매출, 가입자당매출과 투자 회수율가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: TELECOMMUNICATIONS_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/telecommunications-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "-NjElpiGEpw", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=-NjElpiGEpw", thumbnailUrl: "https://i.ytimg.com/vi/-NjElpiGEpw/hqdefault.jpg", description: "통신 기업을 볼 때는 데이터 트래픽 증가 수요의 크기보다 실제 고객 계약, 반복 매출, 가입자당매출과 투자 회수율가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "telecommunications-risk-cycle-2026",
+    title: "통신 테마는 성장률보다 가격 인하와 규제를 가격에 반영해야 합니다",
+    desk: "통신",
+    author: "Signal",
+    publishedAt: "2026-05-30T18:31:24+09:00",
+    summary: "통신 테마는 성장 기대가 커질수록 가격 인하와 규제가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: TELECOMMUNICATIONS_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/telecommunications-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "vt4Hdu1-1t4", title: "통신 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=vt4Hdu1-1t4", thumbnailUrl: "https://i.ytimg.com/vi/vt4Hdu1-1t4/hqdefault.jpg", description: "통신 테마는 성장 기대가 커질수록 가격 인하와 규제가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "autonomous-systems-margin-bottleneck-2026",
+    title: "자율 시스템 투자는 자율주행, 드론, 무인 운용 소프트웨어보다 규제 승인과 센서 비용을 먼저 봐야 합니다",
+    desk: "자율 시스템",
+    author: "Pilot",
+    publishedAt: "2026-05-30T18:30:24+09:00",
+    summary: "자율 시스템 테마는 자율주행, 드론, 무인 운용 소프트웨어의 성장성만으로 판단하기 어렵고 규제 승인과 센서 비용, 운행 거리와 사고율, 운용 서비스 계약가 함께 맞아야 합니다.",
+    image: AUTONOMOUS_SYSTEMS_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/autonomous-systems-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "U_jdTk4wkdI", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=U_jdTk4wkdI", thumbnailUrl: "https://i.ytimg.com/vi/U_jdTk4wkdI/hqdefault.jpg", description: "자율 시스템 테마는 자율주행, 드론, 무인 운용 소프트웨어의 성장성만으로 판단하기 어렵고 규제 승인과 센서 비용, 운행 거리와 사고율, 운용 서비스 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "autonomous-systems-demand-revenue-2026",
+    title: "자율 시스템 기업은 인력 부족과 안전 자동화 수요가 운용 서비스 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "자율 시스템",
+    author: "Pilot",
+    publishedAt: "2026-05-30T18:29:24+09:00",
+    summary: "자율 시스템 기업을 볼 때는 인력 부족과 안전 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 운행 거리와 사고율가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: AUTONOMOUS_SYSTEMS_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/autonomous-systems-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "GmQ3JimSzEY", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=GmQ3JimSzEY", thumbnailUrl: "https://i.ytimg.com/vi/GmQ3JimSzEY/hqdefault.jpg", description: "자율 시스템 기업을 볼 때는 인력 부족과 안전 자동화 수요의 크기보다 실제 고객 계약, 반복 매출, 운행 거리와 사고율가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "autonomous-systems-risk-cycle-2026",
+    title: "자율 시스템 테마는 성장률보다 책임 소재와 상용화 지연를 가격에 반영해야 합니다",
+    desk: "자율 시스템",
+    author: "Pilot",
+    publishedAt: "2026-05-30T18:28:24+09:00",
+    summary: "자율 시스템 테마는 성장 기대가 커질수록 책임 소재와 상용화 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: AUTONOMOUS_SYSTEMS_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/autonomous-systems-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "l6nz__-szV4", title: "자율 시스템 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=l6nz__-szV4", thumbnailUrl: "https://i.ytimg.com/vi/l6nz__-szV4/hqdefault.jpg", description: "자율 시스템 테마는 성장 기대가 커질수록 책임 소재와 상용화 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "metal-commodities-margin-bottleneck-2026",
+    title: "금속 원자재 투자는 구리, 알루미늄, 희토류 공급망보다 광산 개발과 제련 비용을 먼저 봐야 합니다",
+    desk: "금속 원자재",
+    author: "Forge",
+    publishedAt: "2026-05-30T18:27:24+09:00",
+    summary: "금속 원자재 테마는 구리, 알루미늄, 희토류 공급망의 성장성만으로 판단하기 어렵고 광산 개발과 제련 비용, 생산 원가와 재고 일수, 장기 공급 계약가 함께 맞아야 합니다.",
+    image: METAL_COMMODITIES_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/metal-commodities-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "JHK8yCXiKKU", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=JHK8yCXiKKU", thumbnailUrl: "https://i.ytimg.com/vi/JHK8yCXiKKU/hqdefault.jpg", description: "금속 원자재 테마는 구리, 알루미늄, 희토류 공급망의 성장성만으로 판단하기 어렵고 광산 개발과 제련 비용, 생산 원가와 재고 일수, 장기 공급 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "metal-commodities-demand-revenue-2026",
+    title: "금속 원자재 기업은 전력화와 인프라 증설 수요가 장기 공급 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "금속 원자재",
+    author: "Forge",
+    publishedAt: "2026-05-30T18:26:24+09:00",
+    summary: "금속 원자재 기업을 볼 때는 전력화와 인프라 증설 수요의 크기보다 실제 고객 계약, 반복 매출, 생산 원가와 재고 일수가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: METAL_COMMODITIES_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/metal-commodities-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "tZi5l-KgM2E", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=tZi5l-KgM2E", thumbnailUrl: "https://i.ytimg.com/vi/tZi5l-KgM2E/hqdefault.jpg", description: "금속 원자재 기업을 볼 때는 전력화와 인프라 증설 수요의 크기보다 실제 고객 계약, 반복 매출, 생산 원가와 재고 일수가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "metal-commodities-risk-cycle-2026",
+    title: "금속 원자재 테마는 성장률보다 중국 수요 둔화와 가격 변동를 가격에 반영해야 합니다",
+    desk: "금속 원자재",
+    author: "Forge",
+    publishedAt: "2026-05-30T18:25:24+09:00",
+    summary: "금속 원자재 테마는 성장 기대가 커질수록 중국 수요 둔화와 가격 변동가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: METAL_COMMODITIES_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/metal-commodities-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "TttUC5qVa7o", title: "금속 원자재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=TttUC5qVa7o", thumbnailUrl: "https://i.ytimg.com/vi/TttUC5qVa7o/hqdefault.jpg", description: "금속 원자재 테마는 성장 기대가 커질수록 중국 수요 둔화와 가격 변동가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "environment-sustainability-margin-bottleneck-2026",
+    title: "환경 지속가능성 투자는 탄소 저감, 재활용, 수처리 솔루션보다 프로젝트 경제성과 인증을 먼저 봐야 합니다",
+    desk: "환경 지속가능성",
+    author: "Grove",
+    publishedAt: "2026-05-30T18:24:24+09:00",
+    summary: "환경 지속가능성 테마는 탄소 저감, 재활용, 수처리 솔루션의 성장성만으로 판단하기 어렵고 프로젝트 경제성과 인증, 톤당 처리비와 계약 기간, 장기 처리 계약가 함께 맞아야 합니다.",
+    image: ENVIRONMENT_SUSTAINABILITY_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/environment-sustainability-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "jZH0HPVipUU", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=jZH0HPVipUU", thumbnailUrl: "https://i.ytimg.com/vi/jZH0HPVipUU/hqdefault.jpg", description: "환경 지속가능성 테마는 탄소 저감, 재활용, 수처리 솔루션의 성장성만으로 판단하기 어렵고 프로젝트 경제성과 인증, 톤당 처리비와 계약 기간, 장기 처리 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "environment-sustainability-demand-revenue-2026",
+    title: "환경 지속가능성 기업은 규제 대응과 비용 절감 수요가 장기 처리 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "환경 지속가능성",
+    author: "Grove",
+    publishedAt: "2026-05-30T18:23:24+09:00",
+    summary: "환경 지속가능성 기업을 볼 때는 규제 대응과 비용 절감 수요의 크기보다 실제 고객 계약, 반복 매출, 톤당 처리비와 계약 기간가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: ENVIRONMENT_SUSTAINABILITY_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/environment-sustainability-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "mvlCdNPYamI", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=mvlCdNPYamI", thumbnailUrl: "https://i.ytimg.com/vi/mvlCdNPYamI/hqdefault.jpg", description: "환경 지속가능성 기업을 볼 때는 규제 대응과 비용 절감 수요의 크기보다 실제 고객 계약, 반복 매출, 톤당 처리비와 계약 기간가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "environment-sustainability-risk-cycle-2026",
+    title: "환경 지속가능성 테마는 성장률보다 보조금 의존과 기술 검증를 가격에 반영해야 합니다",
+    desk: "환경 지속가능성",
+    author: "Grove",
+    publishedAt: "2026-05-30T18:22:24+09:00",
+    summary: "환경 지속가능성 테마는 성장 기대가 커질수록 보조금 의존과 기술 검증가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: ENVIRONMENT_SUSTAINABILITY_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/environment-sustainability-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "Apbz0Fmtfb8", title: "환경 지속가능성 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Apbz0Fmtfb8", thumbnailUrl: "https://i.ytimg.com/vi/Apbz0Fmtfb8/hqdefault.jpg", description: "환경 지속가능성 테마는 성장 기대가 커질수록 보조금 의존과 기술 검증가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "hardware-margin-bottleneck-2026",
+    title: "하드웨어 투자는 PC, 서버, 디바이스 공급망보다 부품 재고와 가격 경쟁을 먼저 봐야 합니다",
+    desk: "하드웨어",
+    author: "Circuit",
+    publishedAt: "2026-05-30T18:21:24+09:00",
+    summary: "하드웨어 테마는 PC, 서버, 디바이스 공급망의 성장성만으로 판단하기 어렵고 부품 재고와 가격 경쟁, 판매량과 평균판매가격, 완제품 판매와 서비스 연결가 함께 맞아야 합니다.",
+    image: HARDWARE_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/hardware-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "EZOWZDB60i4", title: "하드웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=EZOWZDB60i4", thumbnailUrl: "https://i.ytimg.com/vi/EZOWZDB60i4/hqdefault.jpg", description: "하드웨어 테마는 PC, 서버, 디바이스 공급망의 성장성만으로 판단하기 어렵고 부품 재고와 가격 경쟁, 판매량과 평균판매가격, 완제품 판매와 서비스 연결가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "hardware-demand-revenue-2026",
+    title: "하드웨어 기업은 교체 주기와 AI 기기 수요가 완제품 판매와 서비스 연결로 바뀌는 속도가 핵심입니다",
+    desk: "하드웨어",
+    author: "Circuit",
+    publishedAt: "2026-05-30T18:20:24+09:00",
+    summary: "하드웨어 기업을 볼 때는 교체 주기와 AI 기기 수요의 크기보다 실제 고객 계약, 반복 매출, 판매량과 평균판매가격가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: HARDWARE_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/hardware-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "8dFsbFMZA_4", title: "하드웨어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8dFsbFMZA_4", thumbnailUrl: "https://i.ytimg.com/vi/8dFsbFMZA_4/hqdefault.jpg", description: "하드웨어 기업을 볼 때는 교체 주기와 AI 기기 수요의 크기보다 실제 고객 계약, 반복 매출, 판매량과 평균판매가격가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "virtual-augmented-reality-margin-bottleneck-2026",
+    title: "가상·증강현실 투자는 헤드셋, 공간 컴퓨팅, 산업용 시뮬레이션보다 착용감과 콘텐츠 부족을 먼저 봐야 합니다",
+    desk: "가상·증강현실",
+    author: "Holo",
+    publishedAt: "2026-05-30T18:19:24+09:00",
+    summary: "가상·증강현실 테마는 헤드셋, 공간 컴퓨팅, 산업용 시뮬레이션의 성장성만으로 판단하기 어렵고 착용감과 콘텐츠 부족, 활성 이용자와 기기 마진, 앱스토어와 기업 라이선스가 함께 맞아야 합니다.",
+    image: VIRTUAL_AUGMENTED_REALITY_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/virtual-augmented-reality-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "8tnMjWcYeBA", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=8tnMjWcYeBA", thumbnailUrl: "https://i.ytimg.com/vi/8tnMjWcYeBA/hqdefault.jpg", description: "가상·증강현실 테마는 헤드셋, 공간 컴퓨팅, 산업용 시뮬레이션의 성장성만으로 판단하기 어렵고 착용감과 콘텐츠 부족, 활성 이용자와 기기 마진, 앱스토어와 기업 라이선스가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "virtual-augmented-reality-demand-revenue-2026",
+    title: "가상·증강현실 기업은 몰입형 교육과 원격 협업 수요가 앱스토어와 기업 라이선스로 바뀌는 속도가 핵심입니다",
+    desk: "가상·증강현실",
+    author: "Holo",
+    publishedAt: "2026-05-30T18:18:24+09:00",
+    summary: "가상·증강현실 기업을 볼 때는 몰입형 교육과 원격 협업 수요의 크기보다 실제 고객 계약, 반복 매출, 활성 이용자와 기기 마진가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: VIRTUAL_AUGMENTED_REALITY_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/virtual-augmented-reality-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "da3jX-nmPxw", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=da3jX-nmPxw", thumbnailUrl: "https://i.ytimg.com/vi/da3jX-nmPxw/hqdefault.jpg", description: "가상·증강현실 기업을 볼 때는 몰입형 교육과 원격 협업 수요의 크기보다 실제 고객 계약, 반복 매출, 활성 이용자와 기기 마진가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "virtual-augmented-reality-risk-cycle-2026",
+    title: "가상·증강현실 테마는 성장률보다 하드웨어 보급 지연를 가격에 반영해야 합니다",
+    desk: "가상·증강현실",
+    author: "Holo",
+    publishedAt: "2026-05-30T18:17:24+09:00",
+    summary: "가상·증강현실 테마는 성장 기대가 커질수록 하드웨어 보급 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: VIRTUAL_AUGMENTED_REALITY_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/virtual-augmented-reality-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "Cj2_kSemj2E", title: "가상·증강현실 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Cj2_kSemj2E", thumbnailUrl: "https://i.ytimg.com/vi/Cj2_kSemj2E/hqdefault.jpg", description: "가상·증강현실 테마는 성장 기대가 커질수록 하드웨어 보급 지연가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "ecommerce-margin-bottleneck-2026",
+    title: "전자상거래 투자는 온라인 유통과 광고 플랫폼보다 물류비와 반품 비용을 먼저 봐야 합니다",
+    desk: "전자상거래",
+    author: "Cart",
+    publishedAt: "2026-05-30T18:16:24+09:00",
+    summary: "전자상거래 테마는 온라인 유통과 광고 플랫폼의 성장성만으로 판단하기 어렵고 물류비와 반품 비용, 총거래액과 광고 매출률, 거래 수수료와 광고 매출이 함께 맞아야 합니다.",
+    image: ECOMMERCE_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/ecommerce-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "vU8UEakEHLU", title: "전자상거래 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=vU8UEakEHLU", thumbnailUrl: "https://i.ytimg.com/vi/vU8UEakEHLU/hqdefault.jpg", description: "전자상거래 테마는 온라인 유통과 광고 플랫폼의 성장성만으로 판단하기 어렵고 물류비와 반품 비용, 총거래액과 광고 매출률, 거래 수수료와 광고 매출이 함께 맞아야 합니다." },
+  },
+  {
+    slug: "ecommerce-demand-revenue-2026",
+    title: "전자상거래 기업은 편의 구매와 디지털 광고 수요가 거래 수수료와 광고 매출로 바뀌는 속도가 핵심입니다",
+    desk: "전자상거래",
+    author: "Cart",
+    publishedAt: "2026-05-30T18:15:24+09:00",
+    summary: "전자상거래 기업을 볼 때는 편의 구매와 디지털 광고 수요의 크기보다 실제 고객 계약, 반복 매출, 총거래액과 광고 매출률가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: ECOMMERCE_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/ecommerce-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "LEnzU91B-aU", title: "전자상거래 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LEnzU91B-aU", thumbnailUrl: "https://i.ytimg.com/vi/LEnzU91B-aU/hqdefault.jpg", description: "전자상거래 기업을 볼 때는 편의 구매와 디지털 광고 수요의 크기보다 실제 고객 계약, 반복 매출, 총거래액과 광고 매출률가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "digital-entertainment-margin-bottleneck-2026",
+    title: "디지털 엔터테인먼트 투자는 게임, 스트리밍, 디지털 콘텐츠 IP보다 콘텐츠 제작비와 흥행 변동을 먼저 봐야 합니다",
+    desk: "디지털 엔터테인먼트",
+    author: "Studio",
+    publishedAt: "2026-05-30T18:14:24+09:00",
+    summary: "디지털 엔터테인먼트 테마는 게임, 스트리밍, 디지털 콘텐츠 IP의 성장성만으로 판단하기 어렵고 콘텐츠 제작비와 흥행 변동, 유료 이용자와 IP 확장 매출, 구독료와 라이선스가 함께 맞아야 합니다.",
+    image: DIGITAL_ENTERTAINMENT_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/digital-entertainment-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "GViZEwZvnck", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=GViZEwZvnck", thumbnailUrl: "https://i.ytimg.com/vi/GViZEwZvnck/hqdefault.jpg", description: "디지털 엔터테인먼트 테마는 게임, 스트리밍, 디지털 콘텐츠 IP의 성장성만으로 판단하기 어렵고 콘텐츠 제작비와 흥행 변동, 유료 이용자와 IP 확장 매출, 구독료와 라이선스가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "digital-entertainment-demand-revenue-2026",
+    title: "디지털 엔터테인먼트 기업은 여가 시간과 팬덤 소비 수요가 구독료와 라이선스로 바뀌는 속도가 핵심입니다",
+    desk: "디지털 엔터테인먼트",
+    author: "Studio",
+    publishedAt: "2026-05-30T18:13:24+09:00",
+    summary: "디지털 엔터테인먼트 기업을 볼 때는 여가 시간과 팬덤 소비 수요의 크기보다 실제 고객 계약, 반복 매출, 유료 이용자와 IP 확장 매출이 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: DIGITAL_ENTERTAINMENT_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/digital-entertainment-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "HidYPvQ2MOc", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=HidYPvQ2MOc", thumbnailUrl: "https://i.ytimg.com/vi/HidYPvQ2MOc/hqdefault.jpg", description: "디지털 엔터테인먼트 기업을 볼 때는 여가 시간과 팬덤 소비 수요의 크기보다 실제 고객 계약, 반복 매출, 유료 이용자와 IP 확장 매출이 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "digital-entertainment-risk-cycle-2026",
+    title: "디지털 엔터테인먼트 테마는 성장률보다 해지율과 제작비 상승를 가격에 반영해야 합니다",
+    desk: "디지털 엔터테인먼트",
+    author: "Studio",
+    publishedAt: "2026-05-30T18:12:24+09:00",
+    summary: "디지털 엔터테인먼트 테마는 성장 기대가 커질수록 해지율과 제작비 상승가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: DIGITAL_ENTERTAINMENT_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/digital-entertainment-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "JxYtfUSyWRU", title: "디지털 엔터테인먼트 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=JxYtfUSyWRU", thumbnailUrl: "https://i.ytimg.com/vi/JxYtfUSyWRU/hqdefault.jpg", description: "디지털 엔터테인먼트 테마는 성장 기대가 커질수록 해지율과 제작비 상승가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "consumer-goods-margin-bottleneck-2026",
+    title: "소비재 투자는 브랜드 소비재와 프리미엄 제품보다 원재료비와 판촉비를 먼저 봐야 합니다",
+    desk: "소비재",
+    author: "Shelf",
+    publishedAt: "2026-05-30T18:11:24+09:00",
+    summary: "소비재 테마는 브랜드 소비재와 프리미엄 제품의 성장성만으로 판단하기 어렵고 원재료비와 판촉비, 가격 전가력과 재구매율, 반복 판매가 함께 맞아야 합니다.",
+    image: CONSUMER_GOODS_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/consumer-goods-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "wd7DnDISJjY", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=wd7DnDISJjY", thumbnailUrl: "https://i.ytimg.com/vi/wd7DnDISJjY/hqdefault.jpg", description: "소비재 테마는 브랜드 소비재와 프리미엄 제품의 성장성만으로 판단하기 어렵고 원재료비와 판촉비, 가격 전가력과 재구매율, 반복 판매가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "consumer-goods-demand-revenue-2026",
+    title: "소비재 기업은 생활 필수품과 프리미엄 교체 수요가 반복 판매로 바뀌는 속도가 핵심입니다",
+    desk: "소비재",
+    author: "Shelf",
+    publishedAt: "2026-05-30T18:10:24+09:00",
+    summary: "소비재 기업을 볼 때는 생활 필수품과 프리미엄 교체 수요의 크기보다 실제 고객 계약, 반복 매출, 가격 전가력과 재구매율가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: CONSUMER_GOODS_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/consumer-goods-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "5N0jh7wDssI", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=5N0jh7wDssI", thumbnailUrl: "https://i.ytimg.com/vi/5N0jh7wDssI/hqdefault.jpg", description: "소비재 기업을 볼 때는 생활 필수품과 프리미엄 교체 수요의 크기보다 실제 고객 계약, 반복 매출, 가격 전가력과 재구매율가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "consumer-goods-risk-cycle-2026",
+    title: "소비재 테마는 성장률보다 소비 둔화와 브랜드 피로를 가격에 반영해야 합니다",
+    desk: "소비재",
+    author: "Shelf",
+    publishedAt: "2026-05-30T18:09:24+09:00",
+    summary: "소비재 테마는 성장 기대가 커질수록 소비 둔화와 브랜드 피로가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: CONSUMER_GOODS_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/consumer-goods-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "nomXwaka75I", title: "소비재 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=nomXwaka75I", thumbnailUrl: "https://i.ytimg.com/vi/nomXwaka75I/hqdefault.jpg", description: "소비재 테마는 성장 기대가 커질수록 소비 둔화와 브랜드 피로가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "smart-home-margin-bottleneck-2026",
+    title: "스마트홈 투자는 가전, 보안, 에너지 관리 기기보다 표준 호환성과 설치 비용을 먼저 봐야 합니다",
+    desk: "스마트홈",
+    author: "Hearth",
+    publishedAt: "2026-05-30T18:08:24+09:00",
+    summary: "스마트홈 테마는 가전, 보안, 에너지 관리 기기의 성장성만으로 판단하기 어렵고 표준 호환성과 설치 비용, 연결 기기 수와 서비스 이용률, 기기 판매와 구독 서비스가 함께 맞아야 합니다.",
+    image: SMART_HOME_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/smart-home-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "g7buf6Tg4OE", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=g7buf6Tg4OE", thumbnailUrl: "https://i.ytimg.com/vi/g7buf6Tg4OE/hqdefault.jpg", description: "스마트홈 테마는 가전, 보안, 에너지 관리 기기의 성장성만으로 판단하기 어렵고 표준 호환성과 설치 비용, 연결 기기 수와 서비스 이용률, 기기 판매와 구독 서비스가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "smart-home-demand-revenue-2026",
+    title: "스마트홈 기업은 편의와 에너지 절감 수요가 기기 판매와 구독 서비스로 바뀌는 속도가 핵심입니다",
+    desk: "스마트홈",
+    author: "Hearth",
+    publishedAt: "2026-05-30T18:07:24+09:00",
+    summary: "스마트홈 기업을 볼 때는 편의와 에너지 절감 수요의 크기보다 실제 고객 계약, 반복 매출, 연결 기기 수와 서비스 이용률가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: SMART_HOME_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/smart-home-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "LbQt4lJpr1A", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=LbQt4lJpr1A", thumbnailUrl: "https://i.ytimg.com/vi/LbQt4lJpr1A/hqdefault.jpg", description: "스마트홈 기업을 볼 때는 편의와 에너지 절감 수요의 크기보다 실제 고객 계약, 반복 매출, 연결 기기 수와 서비스 이용률가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "smart-home-risk-cycle-2026",
+    title: "스마트홈 테마는 성장률보다 낮은 교체 빈도와 플랫폼 경쟁를 가격에 반영해야 합니다",
+    desk: "스마트홈",
+    author: "Hearth",
+    publishedAt: "2026-05-30T18:06:24+09:00",
+    summary: "스마트홈 테마는 성장 기대가 커질수록 낮은 교체 빈도와 플랫폼 경쟁가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: SMART_HOME_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/smart-home-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "xgyfyowcEBY", title: "스마트홈 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=xgyfyowcEBY", thumbnailUrl: "https://i.ytimg.com/vi/xgyfyowcEBY/hqdefault.jpg", description: "스마트홈 테마는 성장 기대가 커질수록 낮은 교체 빈도와 플랫폼 경쟁가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "healthcare-biotech-margin-bottleneck-2026",
+    title: "헬스케어·바이오테크 투자는 신약, 진단, 위탁생산 플랫폼보다 임상 데이터와 허가를 먼저 봐야 합니다",
+    desk: "헬스케어·바이오테크",
+    author: "Genome",
+    publishedAt: "2026-05-30T18:05:24+09:00",
+    summary: "헬스케어·바이오테크 테마는 신약, 진단, 위탁생산 플랫폼의 성장성만으로 판단하기 어렵고 임상 데이터와 허가, 임상 성공률과 매출 전환, 제품 매출과 로열티가 함께 맞아야 합니다.",
+    image: HEALTHCARE_BIOTECH_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/healthcare-biotech-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "SPCQnkLujKc", title: "헬스케어·바이오테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=SPCQnkLujKc", thumbnailUrl: "https://i.ytimg.com/vi/SPCQnkLujKc/hqdefault.jpg", description: "헬스케어·바이오테크 테마는 신약, 진단, 위탁생산 플랫폼의 성장성만으로 판단하기 어렵고 임상 데이터와 허가, 임상 성공률과 매출 전환, 제품 매출과 로열티가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "healthcare-biotech-demand-revenue-2026",
+    title: "헬스케어·바이오테크 기업은 치료 접근성과 생산 위탁 수요가 제품 매출과 로열티로 바뀌는 속도가 핵심입니다",
+    desk: "헬스케어·바이오테크",
+    author: "Genome",
+    publishedAt: "2026-05-30T18:04:24+09:00",
+    summary: "헬스케어·바이오테크 기업을 볼 때는 치료 접근성과 생산 위탁 수요의 크기보다 실제 고객 계약, 반복 매출, 임상 성공률과 매출 전환가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: HEALTHCARE_BIOTECH_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/healthcare-biotech-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "GTo4RkFbrjI", title: "헬스케어·바이오테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=GTo4RkFbrjI", thumbnailUrl: "https://i.ytimg.com/vi/GTo4RkFbrjI/hqdefault.jpg", description: "헬스케어·바이오테크 기업을 볼 때는 치료 접근성과 생산 위탁 수요의 크기보다 실제 고객 계약, 반복 매출, 임상 성공률과 매출 전환가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "biometrics-margin-bottleneck-2026",
+    title: "생체인식 투자는 얼굴, 지문, 행동 인증 솔루션보다 개인정보 규제와 오인식률을 먼저 봐야 합니다",
+    desk: "생체인식",
+    author: "Biokey",
+    publishedAt: "2026-05-30T18:03:24+09:00",
+    summary: "생체인식 테마는 얼굴, 지문, 행동 인증 솔루션의 성장성만으로 판단하기 어렵고 개인정보 규제와 오인식률, 인증 성공률과 도입 기관 수, 솔루션 라이선스가 함께 맞아야 합니다.",
+    image: BIOMETRICS_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/biometrics-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "ku3LDxs_054", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ku3LDxs_054", thumbnailUrl: "https://i.ytimg.com/vi/ku3LDxs_054/hqdefault.jpg", description: "생체인식 테마는 얼굴, 지문, 행동 인증 솔루션의 성장성만으로 판단하기 어렵고 개인정보 규제와 오인식률, 인증 성공률과 도입 기관 수, 솔루션 라이선스가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "biometrics-demand-revenue-2026",
+    title: "생체인식 기업은 비밀번호 대체와 출입 보안 수요가 솔루션 라이선스로 바뀌는 속도가 핵심입니다",
+    desk: "생체인식",
+    author: "Biokey",
+    publishedAt: "2026-05-30T18:02:24+09:00",
+    summary: "생체인식 기업을 볼 때는 비밀번호 대체와 출입 보안 수요의 크기보다 실제 고객 계약, 반복 매출, 인증 성공률과 도입 기관 수가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: BIOMETRICS_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/biometrics-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "5GW-WJ9SGtA", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=5GW-WJ9SGtA", thumbnailUrl: "https://i.ytimg.com/vi/5GW-WJ9SGtA/hqdefault.jpg", description: "생체인식 기업을 볼 때는 비밀번호 대체와 출입 보안 수요의 크기보다 실제 고객 계약, 반복 매출, 인증 성공률과 도입 기관 수가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "biometrics-risk-cycle-2026",
+    title: "생체인식 테마는 성장률보다 프라이버시 반발과 법적 제한를 가격에 반영해야 합니다",
+    desk: "생체인식",
+    author: "Biokey",
+    publishedAt: "2026-05-30T18:01:24+09:00",
+    summary: "생체인식 테마는 성장 기대가 커질수록 프라이버시 반발과 법적 제한가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: BIOMETRICS_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/biometrics-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "kMZab8f-GnQ", title: "생체인식 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=kMZab8f-GnQ", thumbnailUrl: "https://i.ytimg.com/vi/kMZab8f-GnQ/hqdefault.jpg", description: "생체인식 테마는 성장 기대가 커질수록 프라이버시 반발과 법적 제한가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "big-data-margin-bottleneck-2026",
+    title: "빅데이터 투자는 데이터 플랫폼과 분석 파이프라인보다 데이터 품질과 통합 비용을 먼저 봐야 합니다",
+    desk: "빅데이터",
+    author: "Delta",
+    publishedAt: "2026-05-30T18:00:24+09:00",
+    summary: "빅데이터 테마는 데이터 플랫폼과 분석 파이프라인의 성장성만으로 판단하기 어렵고 데이터 품질과 통합 비용, 데이터 처리량과 순매출유지율, 플랫폼 구독료가 함께 맞아야 합니다.",
+    image: BIG_DATA_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/big-data-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "pNb-BM30xu4", title: "빅데이터 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=pNb-BM30xu4", thumbnailUrl: "https://i.ytimg.com/vi/pNb-BM30xu4/hqdefault.jpg", description: "빅데이터 테마는 데이터 플랫폼과 분석 파이프라인의 성장성만으로 판단하기 어렵고 데이터 품질과 통합 비용, 데이터 처리량과 순매출유지율, 플랫폼 구독료가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "social-media-margin-bottleneck-2026",
+    title: "소셜미디어 투자는 광고 플랫폼과 크리에이터 생태계보다 광고 경기와 콘텐츠 안전성을 먼저 봐야 합니다",
+    desk: "소셜미디어",
+    author: "Pulse",
+    publishedAt: "2026-05-30T17:59:24+09:00",
+    summary: "소셜미디어 테마는 광고 플랫폼과 크리에이터 생태계의 성장성만으로 판단하기 어렵고 광고 경기와 콘텐츠 안전성, 이용시간과 광고단가, 광고 매출이 함께 맞아야 합니다.",
+    image: SOCIAL_MEDIA_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/social-media-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "IFHJjmXFFEY", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=IFHJjmXFFEY", thumbnailUrl: "https://i.ytimg.com/vi/IFHJjmXFFEY/hqdefault.jpg", description: "소셜미디어 테마는 광고 플랫폼과 크리에이터 생태계의 성장성만으로 판단하기 어렵고 광고 경기와 콘텐츠 안전성, 이용시간과 광고단가, 광고 매출이 함께 맞아야 합니다." },
+  },
+  {
+    slug: "social-media-demand-revenue-2026",
+    title: "소셜미디어 기업은 숏폼 소비와 타깃 광고 수요가 광고 매출로 바뀌는 속도가 핵심입니다",
+    desk: "소셜미디어",
+    author: "Pulse",
+    publishedAt: "2026-05-30T17:58:24+09:00",
+    summary: "소셜미디어 기업을 볼 때는 숏폼 소비와 타깃 광고 수요의 크기보다 실제 고객 계약, 반복 매출, 이용시간과 광고단가가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: SOCIAL_MEDIA_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/social-media-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "3mzCteLKdaI", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=3mzCteLKdaI", thumbnailUrl: "https://i.ytimg.com/vi/3mzCteLKdaI/hqdefault.jpg", description: "소셜미디어 기업을 볼 때는 숏폼 소비와 타깃 광고 수요의 크기보다 실제 고객 계약, 반복 매출, 이용시간과 광고단가가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "social-media-risk-cycle-2026",
+    title: "소셜미디어 테마는 성장률보다 규제와 이용자 이탈를 가격에 반영해야 합니다",
+    desk: "소셜미디어",
+    author: "Pulse",
+    publishedAt: "2026-05-30T17:57:24+09:00",
+    summary: "소셜미디어 테마는 성장 기대가 커질수록 규제와 이용자 이탈가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: SOCIAL_MEDIA_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/social-media-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "RDEO7tKznSM", title: "소셜미디어 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RDEO7tKznSM", thumbnailUrl: "https://i.ytimg.com/vi/RDEO7tKznSM/hqdefault.jpg", description: "소셜미디어 테마는 성장 기대가 커질수록 규제와 이용자 이탈가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "real-estate-reits-margin-bottleneck-2026",
+    title: "부동산·리츠 투자는 물류센터, 데이터센터, 임대형 부동산보다 금리와 차환 비용을 먼저 봐야 합니다",
+    desk: "부동산·리츠",
+    author: "Brick",
+    publishedAt: "2026-05-30T17:56:24+09:00",
+    summary: "부동산·리츠 테마는 물류센터, 데이터센터, 임대형 부동산의 성장성만으로 판단하기 어렵고 금리와 차환 비용, 공실률과 순영업소득, 임대료와 배당가 함께 맞아야 합니다.",
+    image: REAL_ESTATE_REITS_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/real-estate-reits-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "gn2nVZ3V9Ks", title: "부동산·리츠 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=gn2nVZ3V9Ks", thumbnailUrl: "https://i.ytimg.com/vi/gn2nVZ3V9Ks/hqdefault.jpg", description: "부동산·리츠 테마는 물류센터, 데이터센터, 임대형 부동산의 성장성만으로 판단하기 어렵고 금리와 차환 비용, 공실률과 순영업소득, 임대료와 배당가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "real-estate-reits-demand-revenue-2026",
+    title: "부동산·리츠 기업은 임대 현금흐름과 인프라 수요가 임대료와 배당로 바뀌는 속도가 핵심입니다",
+    desk: "부동산·리츠",
+    author: "Brick",
+    publishedAt: "2026-05-30T17:55:24+09:00",
+    summary: "부동산·리츠 기업을 볼 때는 임대 현금흐름과 인프라 수요의 크기보다 실제 고객 계약, 반복 매출, 공실률과 순영업소득가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: REAL_ESTATE_REITS_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/real-estate-reits-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "zrAtFec6-80", title: "부동산·리츠 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zrAtFec6-80", thumbnailUrl: "https://i.ytimg.com/vi/zrAtFec6-80/hqdefault.jpg", description: "부동산·리츠 기업을 볼 때는 임대 현금흐름과 인프라 수요의 크기보다 실제 고객 계약, 반복 매출, 공실률과 순영업소득가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "wearables-margin-bottleneck-2026",
+    title: "웨어러블 투자는 스마트워치와 건강 센서보다 배터리와 센서 정확도를 먼저 봐야 합니다",
+    desk: "웨어러블",
+    author: "Band",
+    publishedAt: "2026-05-30T17:54:24+09:00",
+    summary: "웨어러블 테마는 스마트워치와 건강 센서의 성장성만으로 판단하기 어렵고 배터리와 센서 정확도, 활성 사용자와 교체 주기, 기기 판매와 건강 서비스가 함께 맞아야 합니다.",
+    image: WEARABLES_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/wearables-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "RfKxwbE-pZ8", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RfKxwbE-pZ8", thumbnailUrl: "https://i.ytimg.com/vi/RfKxwbE-pZ8/hqdefault.jpg", description: "웨어러블 테마는 스마트워치와 건강 센서의 성장성만으로 판단하기 어렵고 배터리와 센서 정확도, 활성 사용자와 교체 주기, 기기 판매와 건강 서비스가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "wearables-demand-revenue-2026",
+    title: "웨어러블 기업은 건강 모니터링과 피트니스 수요가 기기 판매와 건강 서비스로 바뀌는 속도가 핵심입니다",
+    desk: "웨어러블",
+    author: "Band",
+    publishedAt: "2026-05-30T17:53:24+09:00",
+    summary: "웨어러블 기업을 볼 때는 건강 모니터링과 피트니스 수요의 크기보다 실제 고객 계약, 반복 매출, 활성 사용자와 교체 주기가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: WEARABLES_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/wearables-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "ibMgg4xI-mE", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=ibMgg4xI-mE", thumbnailUrl: "https://i.ytimg.com/vi/ibMgg4xI-mE/hqdefault.jpg", description: "웨어러블 기업을 볼 때는 건강 모니터링과 피트니스 수요의 크기보다 실제 고객 계약, 반복 매출, 활성 사용자와 교체 주기가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "wearables-risk-cycle-2026",
+    title: "웨어러블 테마는 성장률보다 기기 포화와 개인정보 우려를 가격에 반영해야 합니다",
+    desk: "웨어러블",
+    author: "Band",
+    publishedAt: "2026-05-30T17:52:24+09:00",
+    summary: "웨어러블 테마는 성장 기대가 커질수록 기기 포화와 개인정보 우려가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: WEARABLES_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/wearables-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "hKp6Rky4hp4", title: "웨어러블 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=hKp6Rky4hp4", thumbnailUrl: "https://i.ytimg.com/vi/hKp6Rky4hp4/hqdefault.jpg", description: "웨어러블 테마는 성장 기대가 커질수록 기기 포화와 개인정보 우려가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "edtech-margin-bottleneck-2026",
+    title: "에듀테크 투자는 AI 학습 플랫폼과 직무 교육보다 콘텐츠 품질과 학습 지속률을 먼저 봐야 합니다",
+    desk: "에듀테크",
+    author: "Tutor",
+    publishedAt: "2026-05-30T17:51:24+09:00",
+    summary: "에듀테크 테마는 AI 학습 플랫폼과 직무 교육의 성장성만으로 판단하기 어렵고 콘텐츠 품질과 학습 지속률, 유료 전환율과 수강 완료율, 구독료와 기업 계약가 함께 맞아야 합니다.",
+    image: EDTECH_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/edtech-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "zUdXScyI2MI", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=zUdXScyI2MI", thumbnailUrl: "https://i.ytimg.com/vi/zUdXScyI2MI/hqdefault.jpg", description: "에듀테크 테마는 AI 학습 플랫폼과 직무 교육의 성장성만으로 판단하기 어렵고 콘텐츠 품질과 학습 지속률, 유료 전환율과 수강 완료율, 구독료와 기업 계약가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "edtech-demand-revenue-2026",
+    title: "에듀테크 기업은 맞춤형 학습과 재교육 수요가 구독료와 기업 계약으로 바뀌는 속도가 핵심입니다",
+    desk: "에듀테크",
+    author: "Tutor",
+    publishedAt: "2026-05-30T17:50:24+09:00",
+    summary: "에듀테크 기업을 볼 때는 맞춤형 학습과 재교육 수요의 크기보다 실제 고객 계약, 반복 매출, 유료 전환율과 수강 완료율가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: EDTECH_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/edtech-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "hr4U4ZiY5i4", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=hr4U4ZiY5i4", thumbnailUrl: "https://i.ytimg.com/vi/hr4U4ZiY5i4/hqdefault.jpg", description: "에듀테크 기업을 볼 때는 맞춤형 학습과 재교육 수요의 크기보다 실제 고객 계약, 반복 매출, 유료 전환율과 수강 완료율가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "edtech-risk-cycle-2026",
+    title: "에듀테크 테마는 성장률보다 무료 콘텐츠 경쟁과 CAC 상승를 가격에 반영해야 합니다",
+    desk: "에듀테크",
+    author: "Tutor",
+    publishedAt: "2026-05-30T17:49:24+09:00",
+    summary: "에듀테크 테마는 성장 기대가 커질수록 무료 콘텐츠 경쟁과 CAC 상승가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: EDTECH_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/edtech-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "UHx-U0YUJgY", title: "에듀테크 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=UHx-U0YUJgY", thumbnailUrl: "https://i.ytimg.com/vi/UHx-U0YUJgY/hqdefault.jpg", description: "에듀테크 테마는 성장 기대가 커질수록 무료 콘텐츠 경쟁과 CAC 상승가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "aging-margin-bottleneck-2026",
+    title: "고령화 투자는 시니어 케어와 만성질환 관리 서비스보다 인건비와 보험 수가를 먼저 봐야 합니다",
+    desk: "고령화",
+    author: "Silver",
+    publishedAt: "2026-05-30T17:48:24+09:00",
+    summary: "고령화 테마는 시니어 케어와 만성질환 관리 서비스의 성장성만으로 판단하기 어렵고 인건비와 보험 수가, 이용자 유지율과 방문당 수익, 서비스 구독과 보험 청구가 함께 맞아야 합니다.",
+    image: AGING_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/aging-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "1dqJ-TpMiTg", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=1dqJ-TpMiTg", thumbnailUrl: "https://i.ytimg.com/vi/1dqJ-TpMiTg/hqdefault.jpg", description: "고령화 테마는 시니어 케어와 만성질환 관리 서비스의 성장성만으로 판단하기 어렵고 인건비와 보험 수가, 이용자 유지율과 방문당 수익, 서비스 구독과 보험 청구가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "aging-demand-revenue-2026",
+    title: "고령화 기업은 돌봄 인력 부족과 건강관리 수요가 서비스 구독과 보험 청구로 바뀌는 속도가 핵심입니다",
+    desk: "고령화",
+    author: "Silver",
+    publishedAt: "2026-05-30T17:47:24+09:00",
+    summary: "고령화 기업을 볼 때는 돌봄 인력 부족과 건강관리 수요의 크기보다 실제 고객 계약, 반복 매출, 이용자 유지율과 방문당 수익가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: AGING_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/aging-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "DnEYGC2gGWo", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=DnEYGC2gGWo", thumbnailUrl: "https://i.ytimg.com/vi/DnEYGC2gGWo/hqdefault.jpg", description: "고령화 기업을 볼 때는 돌봄 인력 부족과 건강관리 수요의 크기보다 실제 고객 계약, 반복 매출, 이용자 유지율과 방문당 수익가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "aging-risk-cycle-2026",
+    title: "고령화 테마는 성장률보다 규제와 인력 확보를 가격에 반영해야 합니다",
+    desk: "고령화",
+    author: "Silver",
+    publishedAt: "2026-05-30T17:46:24+09:00",
+    summary: "고령화 테마는 성장 기대가 커질수록 규제와 인력 확보가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: AGING_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/aging-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "OmyT9rn8XUA", title: "고령화 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=OmyT9rn8XUA", thumbnailUrl: "https://i.ytimg.com/vi/OmyT9rn8XUA/hqdefault.jpg", description: "고령화 테마는 성장 기대가 커질수록 규제와 인력 확보가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "health-food-margin-bottleneck-2026",
+    title: "건강식품 투자는 기능성 식품과 영양 브랜드보다 원료 가격과 효능 신뢰를 먼저 봐야 합니다",
+    desk: "건강식품",
+    author: "Nutri",
+    publishedAt: "2026-05-30T17:45:24+09:00",
+    summary: "건강식품 테마는 기능성 식품과 영양 브랜드의 성장성만으로 판단하기 어렵고 원료 가격과 효능 신뢰, 재구매율과 채널 마진, 반복 구매가 함께 맞아야 합니다.",
+    image: HEALTH_FOOD_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/health-food-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "Qj99w0sfH04", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Qj99w0sfH04", thumbnailUrl: "https://i.ytimg.com/vi/Qj99w0sfH04/hqdefault.jpg", description: "건강식품 테마는 기능성 식품과 영양 브랜드의 성장성만으로 판단하기 어렵고 원료 가격과 효능 신뢰, 재구매율과 채널 마진, 반복 구매가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "health-food-demand-revenue-2026",
+    title: "건강식품 기업은 면역, 장 건강, 단백질 보충 수요가 반복 구매로 바뀌는 속도가 핵심입니다",
+    desk: "건강식품",
+    author: "Nutri",
+    publishedAt: "2026-05-30T17:44:24+09:00",
+    summary: "건강식품 기업을 볼 때는 면역, 장 건강, 단백질 보충 수요의 크기보다 실제 고객 계약, 반복 매출, 재구매율과 채널 마진가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: HEALTH_FOOD_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/health-food-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "NZGG_dlGtss", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=NZGG_dlGtss", thumbnailUrl: "https://i.ytimg.com/vi/NZGG_dlGtss/hqdefault.jpg", description: "건강식품 기업을 볼 때는 면역, 장 건강, 단백질 보충 수요의 크기보다 실제 고객 계약, 반복 매출, 재구매율과 채널 마진가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "health-food-risk-cycle-2026",
+    title: "건강식품 테마는 성장률보다 과장 광고와 규제를 가격에 반영해야 합니다",
+    desk: "건강식품",
+    author: "Nutri",
+    publishedAt: "2026-05-30T17:43:24+09:00",
+    summary: "건강식품 테마는 성장 기대가 커질수록 과장 광고와 규제가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: HEALTH_FOOD_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/health-food-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "L6RmWWnqH4U", title: "건강식품 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=L6RmWWnqH4U", thumbnailUrl: "https://i.ytimg.com/vi/L6RmWWnqH4U/hqdefault.jpg", description: "건강식품 테마는 성장 기대가 커질수록 과장 광고와 규제가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
+  {
+    slug: "crypto-blockchain-margin-bottleneck-2026",
+    title: "암호화폐·블록체인 투자는 비트코인 인프라와 토큰화 플랫폼보다 규제와 보관 인프라를 먼저 봐야 합니다",
+    desk: "암호화폐·블록체인",
+    author: "Chain",
+    publishedAt: "2026-05-30T17:42:24+09:00",
+    summary: "암호화폐·블록체인 테마는 비트코인 인프라와 토큰화 플랫폼의 성장성만으로 판단하기 어렵고 규제와 보관 인프라, 거래량과 수탁 잔고, 거래 수수료와 보관 수수료가 함께 맞아야 합니다.",
+    image: CRYPTO_BLOCKCHAIN_MARGIN_BOTTLENECK_2026_IMAGE,
+    audio: { src: "audios/crypto-blockchain-margin-bottleneck-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "RWtjXO8nvNc", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=RWtjXO8nvNc", thumbnailUrl: "https://i.ytimg.com/vi/RWtjXO8nvNc/hqdefault.jpg", description: "암호화폐·블록체인 테마는 비트코인 인프라와 토큰화 플랫폼의 성장성만으로 판단하기 어렵고 규제와 보관 인프라, 거래량과 수탁 잔고, 거래 수수료와 보관 수수료가 함께 맞아야 합니다." },
+  },
+  {
+    slug: "crypto-blockchain-demand-revenue-2026",
+    title: "암호화폐·블록체인 기업은 디지털 자산 접근성과 결제 실험 수요가 거래 수수료와 보관 수수료로 바뀌는 속도가 핵심입니다",
+    desk: "암호화폐·블록체인",
+    author: "Chain",
+    publishedAt: "2026-05-30T17:41:24+09:00",
+    summary: "암호화폐·블록체인 기업을 볼 때는 디지털 자산 접근성과 결제 실험 수요의 크기보다 실제 고객 계약, 반복 매출, 거래량과 수탁 잔고가 얼마나 오래 유지되는지 확인해야 합니다.",
+    image: CRYPTO_BLOCKCHAIN_DEMAND_REVENUE_2026_IMAGE,
+    audio: { src: "audios/crypto-blockchain-demand-revenue-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "Yky9UbOsQv4", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=Yky9UbOsQv4", thumbnailUrl: "https://i.ytimg.com/vi/Yky9UbOsQv4/hqdefault.jpg", description: "암호화폐·블록체인 기업을 볼 때는 디지털 자산 접근성과 결제 실험 수요의 크기보다 실제 고객 계약, 반복 매출, 거래량과 수탁 잔고가 얼마나 오래 유지되는지 확인해야 합니다." },
+  },
+  {
+    slug: "crypto-blockchain-risk-cycle-2026",
+    title: "암호화폐·블록체인 테마는 성장률보다 가격 변동성과 해킹를 가격에 반영해야 합니다",
+    desk: "암호화폐·블록체인",
+    author: "Chain",
+    publishedAt: "2026-05-30T17:40:24+09:00",
+    summary: "암호화폐·블록체인 테마는 성장 기대가 커질수록 가격 변동성과 해킹가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다.",
+    image: CRYPTO_BLOCKCHAIN_RISK_CYCLE_2026_IMAGE,
+    audio: { src: "audios/crypto-blockchain-risk-cycle-2026.mp3", type: "audio/mpeg" },
+    video: { youtubeId: "9OOYQQkE97c", title: "암호화폐·블록체인 시장과 투자 포인트를 설명하는 영상", channel: "YouTube", sourceUrl: "https://www.youtube.com/watch?v=9OOYQQkE97c", thumbnailUrl: "https://i.ytimg.com/vi/9OOYQQkE97c/hqdefault.jpg", description: "암호화폐·블록체인 테마는 성장 기대가 커질수록 가격 변동성과 해킹가 주가 변동을 키울 수 있어 실적 확인 순서와 리스크 관리가 중요합니다." },
+  },
   {
     slug: "market-yield-dollar-portfolio-2026",
     title: "미국 장기금리와 달러는 주식 포트폴리오의 할인율을 먼저 바꿉니다",
@@ -532,16 +2394,16 @@ const MAX_SECTION_ROWS = 1;
 const PAGINATION_WINDOW_SIZE = 10;
 const SLIDER_SEQUENCE_REPEAT_COUNT = 2;
 const SLIDER_MIN_GROUP_ITEM_COUNT = 6;
-const SITE_NAME = "Eurekan";
+const SITE_NAME = "Eurekan Investment";
 const SCHEMA_CONTEXT = "https://schema.org";
 const SEO_LANGUAGE = "ko-KR";
 const DEFAULT_ROBOTS = "index, follow";
 const TWITTER_CARD_TYPE = "summary";
-const DEFAULT_SEO_DESCRIPTION = "Eurekan은 인공지능, 반도체, 전기차, 클라우드, 방산, 바이오, 핀테크 등 39개 투자 테마를 장문으로 정리하는 투자 정보 매거진입니다.";
+const DEFAULT_SEO_DESCRIPTION = "Eurekan Investment는 인공지능, 반도체, 전기차, 클라우드, 방산, 바이오, 핀테크 등 39개 투자 테마를 장문으로 정리하는 투자 정보 매거진입니다.";
 const APP_BASE_URL = new URL("./", import.meta.url);
 const AUDIO_DIRECTORY = "audios";
 const AUDIO_EXTENSION = "mp3";
-const AUDIO_ASSET_VERSION = "20260530-investment-renewal";
+const AUDIO_ASSET_VERSION = "20260530-theme-three-pack";
 const IMAGE_DIRECTORY = "images";
 const IMAGE_EXTENSION = "webp";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
