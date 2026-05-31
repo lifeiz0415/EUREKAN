@@ -3229,7 +3229,8 @@ const APP_BASE_URL = new URL("./", import.meta.url);
 const IMAGE_DIRECTORY = "images";
 const IMAGE_EXTENSION = "webp";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
-const SPEECH_QUEUE_AHEAD_COUNT = 32;
+const SPEECH_WORDS_PER_CHUNK = 8;
+const SPEECH_QUEUE_AHEAD_COUNT = 6;
 const SPEECH_CHUNK_NEXT_DELAY_MS = 20;
 const SPEECH_KEEPALIVE_INTERVAL_MS = 6500;
 const SPEECH_CHUNK_FALLBACK_EXTRA_MS = 2500;
@@ -5007,20 +5008,30 @@ function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) 
 
 function createSpeechChunks(text = activeArticleSpeechText, startOffset = 0) {
   const chunks = [];
-  let cursor = Math.max(0, Math.min(text.length, Number(startOffset) || 0));
-
-  while (cursor < text.length && /\s/.test(text[cursor])) {
-    cursor += 1;
+  const safeStartOffset = Math.max(0, Math.min(text.length, Number(startOffset) || 0));
+  const fallbackTokens = [];
+  if (!activeSpeechTokenNodes.length) {
+    const rawText = String(text || "");
+    const wordPattern = /\S+/g;
+    let match = wordPattern.exec(rawText);
+    while (match) {
+      fallbackTokens.push({ start: match.index, end: match.index + match[0].length, text: match[0] });
+      match = wordPattern.exec(rawText);
+    }
   }
+  const tokens = activeSpeechTokenNodes.length ? activeSpeechTokenNodes : fallbackTokens;
+  const startTokenIndex = Math.max(0, tokens.findIndex((token) => safeStartOffset < token.end));
+  if (startTokenIndex < 0) return chunks;
 
-  const wordPattern = /\S+/g;
-  wordPattern.lastIndex = cursor;
-  let match = wordPattern.exec(text);
-  while (match) {
-    const chunkText = match[0];
-    const start = match.index;
-    chunks.push({ start, end: start + chunkText.length, text: chunkText });
-    match = wordPattern.exec(text);
+  for (let index = startTokenIndex; index < tokens.length; index += SPEECH_WORDS_PER_CHUNK) {
+    const group = tokens.slice(index, index + SPEECH_WORDS_PER_CHUNK);
+    const firstToken = group[0];
+    const lastToken = group[group.length - 1];
+    chunks.push({
+      start: firstToken.start,
+      end: lastToken.end,
+      text: group.map((token) => token.text).join(" "),
+    });
   }
 
   return chunks;
