@@ -54,6 +54,14 @@ const KOREAN_STOCKS_SAMSUNG_MEMORY_CYCLE_2026_IMAGE = {
   height: 720,
 };
 
+const SEMICONDUCTOR_SAMSUNG_HBM4_FOUNDRY_CASHFLOW_2026_IMAGE = {
+  src: "images/semiconductor-samsung-hbm4-foundry-cashflow-2026-1280.webp",
+  alt: "삼성전자 HBM4 제품 이미지로 HBM4 고객 인증과 파운드리 비용 부담을 함께 설명하는 이미지",
+  sourceUrl: "https://semiconductor.samsung.com/news-events/news/samsung-unveils-hbm4e-showcasing-comprehensive-ai-solutions-nvidia-partnership-and-vision-at-nvidia-gtc-2026/",
+  width: 1280,
+  height: 479,
+};
+
 const KOREAN_STOCKS_HYUNDAI_HYBRID_EXPORT_2026_IMAGE = {
   src: "images/korean-stocks-hyundai-hybrid-export-2026-1280.webp",
   alt: "현대차 하이브리드 판매와 수출 마진을 함께 보는 이미지",
@@ -1403,6 +1411,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "META": { name: "메타", market: "미국", ticker: "META", url: "https://m.stock.naver.com/worldstock/stock/META.O/total" },
   "MSFT": { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
   "MSTR": { name: "스트래티지", market: "미국", ticker: "MSTR", url: "https://m.stock.naver.com/worldstock/stock/MSTR.O/total" },
+  "MU": { name: "마이크론 테크놀로지", market: "미국", ticker: "MU", url: "https://m.stock.naver.com/worldstock/stock/MU.O/total" },
   "NBTX": { name: "나노바이오틱스 ADR", market: "미국", ticker: "NBTX", url: "https://m.stock.naver.com/worldstock/stock/NBTX.O/total" },
   "NNDM": { name: "나노 디멘션 ADR", market: "미국", ticker: "NNDM", url: "https://m.stock.naver.com/worldstock/stock/NNDM.O/total" },
   "NNE": { name: "나노 뉴클리어 에너지", market: "미국", ticker: "NNE", url: "https://m.stock.naver.com/worldstock/stock/NNE.O/total" },
@@ -1510,6 +1519,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "semiconductor-intel-foundry-cashflow-2026": ["INTC", "AMD", "NVDA", "AVGO"],
   "semiconductor-skhynix-hbm-capex-cashflow-2026": ["NVDA", "AMD", "000660.KS", "005930.KS"],
   "korean-stocks-samsung-memory-cycle-2026": ["NVDA", "AVGO", "005930.KS", "000660.KS"],
+  "semiconductor-samsung-hbm4-foundry-cashflow-2026": ["NVDA", "MU", "005930.KS", "000660.KS"],
   "strategy-tenbagger-quality-checklist-2026": ["ADBE", "CRM", "NOW", "035420.KS"],
   "theme-defense-export-backlog-cashflow-2026": ["LMT", "RTX", "NOC", "012450.KS"],
   "us-stocks-apple-ai-iphone-cycle-2026": ["AAPL", "QCOM", "AVGO", "005930.KS"],
@@ -1522,6 +1532,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-samsung-hbm4-foundry-cashflow-2026",
+    title: "삼성전자는 HBM4 납품 뉴스보다 DS 이익 집중도와 파운드리 손익을 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Silica",
+    publishedAt: "2026-05-31T20:16:47+09:00",
+    summary: "삼성전자 005930은 2026년 1분기 DS 실적 급증 뒤에도 HBM4 고객 확대, 파운드리 가동률, 현금흐름 지속성을 함께 확인해야 합니다.",
+    image: SEMICONDUCTOR_SAMSUNG_HBM4_FOUNDRY_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "0JBoCKqJTCU", title: "삼성전자 반도체가 메모리로 AI 시장을 설명하는 공식 영상", channel: "삼성전자 반도체 뉴스룸", sourceUrl: "https://www.youtube.com/watch?v=0JBoCKqJTCU", thumbnailUrl: "https://i.ytimg.com/vi/0JBoCKqJTCU/hqdefault.jpg", description: "삼성전자 반도체 공식 채널의 AI 메모리 설명 영상입니다. HBM과 고성능 메모리가 AI 인프라에서 어떤 역할을 맡는지 이해하는 데 도움이 됩니다." },
+  },
   {
     slug: "semiconductor-skhynix-hbm-capex-cashflow-2026",
     title: "SK하이닉스는 HBM 호황보다 설비투자와 현금흐름 회수 속도를 먼저 봐야 합니다",
@@ -3438,6 +3458,8 @@ if (!articleRelatedStocksNode && articleViewNode && articleBodyNode) {
   articleRelatedStocksNode.className = "article-related-stocks";
   articleRelatedStocksNode.hidden = true;
   articleRelatedStocksNode.setAttribute("aria-label", "관련종목");
+  const relatedStocksParent = articleTocNode?.parentNode || articleBodyNode.parentNode || articleViewNode;
+  relatedStocksParent.insertBefore(articleRelatedStocksNode, articleTocNode || articleBodyNode);
 }
 
 if (voiceButtonNode && !voiceProgressNode) {
