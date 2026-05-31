@@ -79,6 +79,15 @@ const SEMICONDUCTOR_MICRON_HBM4_CASHFLOW_2026_IMAGE = {
   height: 768,
 };
 
+const SEMICONDUCTOR_AMD_MI350_DATACENTER_MARGIN_2026_IMAGE = {
+  src: "images/semiconductor-amd-mi350-datacenter-margin-2026-1280.webp",
+  externalSrc: "https://www.amd.com/en/blogs/2025/amd-instinct-mi350-series-and-beyond-accelerating-the-future-of-ai-and-hpc/_jcr_content/_cq_featuredimage.coreimg.jpeg/1749680001285/3385456-instinct-blog-mi350x.jpeg",
+  alt: "AMD Instinct MI350 시리즈 제품 이미지로 데이터센터 매출과 마진 검증을 설명하는 이미지",
+  sourceUrl: "https://www.amd.com/en/blogs/2025/amd-instinct-mi350-series-and-beyond-accelerating-the-future-of-ai-and-hpc.html",
+  width: 1280,
+  height: 720,
+};
+
 const KOREAN_STOCKS_HYUNDAI_HYBRID_EXPORT_2026_IMAGE = {
   src: "images/korean-stocks-hyundai-hybrid-export-2026-1280.webp",
   alt: "현대차 하이브리드 판매와 수출 마진을 함께 보는 이미지",
@@ -1539,6 +1548,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "korean-stocks-samsung-memory-cycle-2026": ["NVDA", "AVGO", "005930.KS", "000660.KS"],
   "semiconductor-samsung-hbm4-foundry-cashflow-2026": ["NVDA", "MU", "005930.KS", "000660.KS"],
   "semiconductor-micron-hbm4-cashflow-2026": ["MU", "NVDA", "000660.KS", "005930.KS"],
+  "semiconductor-amd-mi350-datacenter-margin-2026": ["AMD", "NVDA", "AVGO", "MSFT"],
   "strategy-tenbagger-quality-checklist-2026": ["ADBE", "CRM", "NOW", "035420.KS"],
   "theme-defense-export-backlog-cashflow-2026": ["LMT", "RTX", "NOC", "012450.KS"],
   "us-stocks-apple-ai-iphone-cycle-2026": ["AAPL", "QCOM", "AVGO", "005930.KS"],
@@ -1551,6 +1561,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-amd-mi350-datacenter-margin-2026",
+    title: "AMD는 MI350 출하보다 데이터센터 마진과 소프트웨어 신뢰를 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Silica",
+    publishedAt: "2026-05-31T21:07:26+09:00",
+    summary: "AMD 주주는 MI350과 EPYC 성장보다 데이터센터 매출총이익률, ROCm 신뢰, 대형 고객 반복 주문, TSMC·HBM 공급망 리스크를 함께 확인해야 합니다.",
+    image: SEMICONDUCTOR_AMD_MI350_DATACENTER_MARGIN_2026_IMAGE,
+    video: { youtubeId: "FsmKRwrNdB4", title: "AMD AI GPU 경쟁과 Helios 전략을 설명하는 한국어 롱폼 영상", channel: "안될공학 - IT 테크 신기술", sourceUrl: "https://www.youtube.com/watch?v=FsmKRwrNdB4", thumbnailUrl: "https://i.ytimg.com/vi/FsmKRwrNdB4/hqdefault.jpg", description: "AMD가 MI350, Helios, AI GPU 경쟁에서 어떤 위치를 만들고 있는지 한국어로 정리한 롱폼 분석 영상입니다." },
+  },
   {
     slug: "artificial-intelligence-nvidia-rubin-ai-factory-2026",
     title: "엔비디아는 루빈보다 AI 공장 비용을 누가 감당하는지 먼저 봐야 합니다",
