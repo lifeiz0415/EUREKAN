@@ -1315,6 +1315,15 @@ const BIG_DATA_DECISION_WORKFLOW_BUDGET_2026_IMAGE = {
   height: 720,
 };
 
+const BIG_DATA_SNOWFLAKE_AI_CONSUMPTION_MARGIN_2026_IMAGE = {
+  src: "images/big-data-snowflake-ai-consumption-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Snowflake_Logo.svg/1280px-Snowflake_Logo.svg.png",
+  alt: "스노우플레이크 로고 이미지로 AI Data Cloud와 소비형 매출 구조를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Snowflake_Logo.svg",
+  width: 1280,
+  height: 720,
+};
+
 const SOCIAL_MEDIA_AD_PRICING_TRUST_2026_IMAGE = {
   src: "images/social-media-ad-pricing-trust-2026-1280.webp",
   alt: "소셜미디어는 이용자 수보다 광고 단가와 추천 알고리즘 신뢰를 봐야 합니다 내용을 설명하는 소셜미디어 대표 이미지",
@@ -1624,6 +1633,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "us-stocks-amazon-aws-retail-margin-2026": ["AMZN", "MSFT", "GOOGL", "035420.KS"],
   "theme-biotech-cdmo-order-cycle-2026": ["LLY", "ABBV", "207940.KS", "068270.KS"],
   "big-data-margin-bottleneck-2026": ["PLTR", "SNOW", "DDOG", "VRSK"],
+  "big-data-snowflake-ai-consumption-margin-2026": ["SNOW", "PLTR", "DDOG", "MSFT"],
   "earnings-guidance-revenue-quality-2026": ["PLTR", "SNOW", "VRSK", "005930.KS"],
   "market-yield-dollar-portfolio-2026": ["MA", "PYPL", "AFRM", "105560.KS"],
   "etf-dividend-growth-payout-ratio-2026": ["MA", "PYPL", "AFRM", "105560.KS"],
@@ -1633,6 +1643,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "big-data-snowflake-ai-consumption-margin-2026",
+    title: "스노우플레이크는 AI 기대보다 소비형 매출과 클라우드 원가를 먼저 봐야 합니다",
+    desk: "빅데이터",
+    author: "Delta",
+    publishedAt: "2026-05-31T23:32:48+09:00",
+    summary: "스노우플레이크 SNOW는 AI Data Cloud 기대가 커졌지만, 투자자는 제품 매출 성장률, RPO, 순매출유지율, AWS 60억달러 약정과 클라우드 원가가 현금흐름으로 이어지는지 확인해야 합니다.",
+    image: BIG_DATA_SNOWFLAKE_AI_CONSUMPTION_MARGIN_2026_IMAGE,
+    video: { youtubeId: "FSN066xUcJU", title: "스노우플레이크와 AWS 60억달러 협력 의미를 설명하는 한국어 롱폼 영상", channel: "머니네버슬립", sourceUrl: "https://www.youtube.com/watch?v=FSN066xUcJU", thumbnailUrl: "https://i.ytimg.com/vi/FSN066xUcJU/hqdefault.jpg", description: "스노우플레이크 주가 반등과 AWS 60억달러 협력, AI 데이터 클라우드 기대를 한국어로 설명하는 7분대 롱폼 영상입니다." },
+  },
   {
     slug: "crypto-blockchain-bitmine-eth-treasury-staking-2026",
     title: "비트마인은 ETH 보유량보다 주당 NAV와 스테이킹 수익을 먼저 봐야 합니다",
