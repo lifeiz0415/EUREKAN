@@ -5115,7 +5115,7 @@ function finishArticleSpeech(runId) {
   clearActiveSpeechTokenHighlight();
   updateVoiceProgress(activeArticleSpeechText.length);
   voiceButtonNode.textContent = "음성으로 읽어주기";
-  voiceStatusNode.textContent = "읽기가 끝났습니다.";
+  voiceStatusNode.textContent = "";
 }
 
 function removeSpeechUtterance(utterance) {
