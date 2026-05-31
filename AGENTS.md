@@ -10,7 +10,8 @@
 - 프로젝트명: Eurekan Research
 - 제품 형태: 정적 단일 페이지형 위키/매거진
 - 핵심 목표: 주식투자에 도움이 되는 39개 산업·기술·소비·금융 테마를 분야별 장문 페이지로 보여주는 읽기 중심 사이트
-- 현재 구현 원칙: 백엔드 없이 `.gitignore`, `_config.yml`, `README.md`, `STOCK.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `images/`, `agents/`만으로 동작한다.
+- 현재 구현 원칙: 공개 사이트는 백엔드 없이 `.gitignore`, `_config.yml`, `README.md`, `STOCK.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `images/`만으로 동작한다.
+- 분야별 에이전트 페르소나 원천은 로컬 전용 `agents/` 폴더에 `<분야>_<성향>_<이름>.md` 형식으로 저장하되, 이 폴더는 Git 추적과 GitHub Pages 배포 대상에서 제외한다.
 - 종목별 심화 리서치 원천은 로컬 전용 `research/` 폴더에 `국가코드_티커_한글종목명.md` 형식으로 저장하되, 이 폴더는 Git 추적과 GitHub Pages 배포 대상에서 제외한다.
 - 현재 운영 분야는 아래 39개 투자 테마 분야이며, 이전 broad 분야 체계는 최상위 분야로 사용하지 않는다.
 
@@ -41,21 +42,22 @@ images/
   <slug>-960.webp
   <slug>-1280.webp
 agents/
+  # 로컬 전용, Git 추적 및 GitHub Pages 배포 제외
   README.md
   <분야>_<성향>_<이름>.md
 research/  # 로컬 전용, Git 추적 및 GitHub Pages 배포 제외
   <KR|US>_<ticker>_<한글종목명>.md
 ```
 
-- 위 구조 외의 프로젝트 파일/폴더는 유지하지 않는다. 단, `research/`는 종목별 심화 리서치 원천을 저장하는 로컬 전용 작업 폴더로 예외 허용한다.
+- 위 구조 외의 프로젝트 파일/폴더는 유지하지 않는다. 단, `agents/`와 `research/`는 각각 에이전트 페르소나와 종목별 심화 리서치 원천을 저장하는 로컬 전용 작업 폴더로 예외 허용한다.
 - `README.md`는 공개 저장소용 프로젝트 소개 문서로 유지한다.
 - `STOCK.md`는 관련종목 표시에 사용하는 한국·미국 주식 종목명, 티커, 네이버증권 링크 참고 파일로 유지한다.
-- `agents/` 폴더는 분야별 전문가 페르소나 문서 저장용으로 남긴다.
+- `agents/` 폴더는 분야별 전문가 페르소나 문서 저장용 로컬 전용 지식 자산으로 남기며, GitHub 원격 저장소와 GitHub Pages 배포본에 포함하지 않는다.
 - `images/` 폴더는 외부 공개 원본 이미지를 글별 로컬 WebP 후보로 최적화해 저장하는 폴더로 유지한다.
 - `research/` 폴더는 종목별 히스토리, 사업 변천, 공시 요약, 자본조달, 경영진 변화, 주가 변곡점, 리스크, 비교 기업, 현재 확인 지표를 누적하는 로컬 전용 지식 베이스로 사용한다.
 - `research/` 안의 파일명은 `국가코드_티커_한글종목명.md` 형식을 기본으로 한다. 예를 들어 미국 주식은 `US_NVDA_엔비디아.md`, 한국 주식은 `.KS`, `.KQ` 접미사를 뺀 `KR_005930_삼성전자.md`처럼 저장한다.
 - 종목명에 `/`처럼 파일명에 쓸 수 없는 문자가 있으면 `·`처럼 읽기 쉬운 구분 문자로 치환한다.
-- `research/`는 `.gitignore`와 `_config.yml`에서 제외해 GitHub 저장소 커밋과 GitHub Pages 배포에 포함하지 않는다.
+- `agents/`와 `research/`는 `.gitignore`와 `_config.yml`에서 제외해 GitHub 저장소 커밋과 GitHub Pages 배포에 포함하지 않는다.
 - 실제 사용자-facing 사이트는 루트의 `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`와 `pages/<slug>.html` 정적 글 페이지를 사용한다.
 - `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`은 애드센스 신청과 사이트 신뢰 확보를 위한 루트 정적 안내 페이지로 유지한다.
 - 검색엔진 수집 보조 파일은 루트의 `robots.txt`, `sitemap.xml`을 사용하며, 루트 안내 페이지도 `sitemap.xml`에 포함한다.
@@ -421,7 +423,9 @@ research/  # 로컬 전용, Git 추적 및 GitHub Pages 배포 제외
 - `app.js` 매니페스트에는 `thumbnail` 메타데이터를 넣지 않고, 이미지가 필요한 경우 `image` 객체만 사용한다. 웹검색 이미지는 `externalSrc`와 `sourceUrl`을 우선 사용한다.
 
 ## agents 폴더 규칙
-- `agents/`는 분야별 전문가 페르소나 문서용으로만 유지한다.
+- `agents/`는 분야별 전문가 페르소나 문서용 로컬 전용 폴더로만 유지한다.
+- 에이전트 페르소나, 문장형 템플릿, 문단형 템플릿, 벤치마킹 방식은 사이트의 핵심 차별화 자산이므로 공개 저장소에 커밋하거나 원격으로 푸시하지 않는다.
+- `agents/`는 `.gitignore`와 `_config.yml`에서 제외되어야 하며, 이미 원격 저장소에 올라간 에이전트 파일은 최신 커밋에서 제거한 상태를 유지한다.
 - 에이전트 문서 자체는 런타임에서 직접 읽지 않지만, 분야별 작성자 이름 목록은 `app.js`의 `deskAgentNames`와 일치해야 한다.
 - 기능별 페르소나는 따로 두지 않고, 탐색·수집·작성·검증·편집·정책 점검·유지보수 역할을 각 분야 전문가 에이전트가 통합 수행한다.
 - 새 페이지를 만들 때는 해당 분야의 순환 차례 또는 주제의 위험·기회 성격에 맞는 `agents/<분야>_<성향>_<이름>.md`를 참고한다.
@@ -469,7 +473,7 @@ research/  # 로컬 전용, Git 추적 및 GitHub Pages 배포 제외
 - 건강식품 분야는 Alex(긍정), Rebecca(중립), Philip(부정)가 담당한다.
 - 암호화폐·블록체인 분야는 Ryan(긍정), Camille(중립), Morgan(부정)가 담당한다.
 
-- 새 분야 desk를 추가할 때는 글을 먼저 쓰지 않고 `app.js`의 39개 분야 목록·이모티콘·작성자 등록, `agents/README.md` 목록 갱신, `agents/<분야>_<성향>_<이름>.md` 생성, `AGENTS.md` 규칙 갱신을 먼저 끝낸 뒤 글을 작성한다.
+- 새 분야 desk를 추가할 때는 글을 먼저 쓰지 않고 `app.js`의 39개 분야 목록·이모티콘·작성자 등록, 로컬 전용 `agents/README.md` 목록 갱신, 로컬 전용 `agents/<분야>_<성향>_<이름>.md` 생성, `AGENTS.md` 규칙 갱신을 먼저 끝낸 뒤 글을 작성한다.
 - 현재 39개 분야는 각 3명의 전망 포지션별 에이전트로 운영한다. 새 투자 테마 분야를 추가할 때는 기존 분야와 중복되지 않는지 먼저 확인하고, 필요하면 39개 목록 자체를 함께 갱신한다.
 - 새 에이전트 파일명은 `<분야>_<성향>_<이름>.md` 형식을 사용하고, 같은 분야 안에서 성향은 `긍정`, `중립`, `부정` 세 값으로 구분한다.
 - 신규 에이전트 페르소나 문서는 기존 에이전트 문서와 같은 수준으로 `역할`, `담당 범위`, `필체 개성`, `참고 웹사이트`, `벤치마킹 글쓰기 템플릿`, `문장형 템플릿`, `문단형 템플릿`, `문체 학습 지침`, `통합 역할`, `분야별 중점 관점`, `페이지 생성 절차`, `금지 사항`, `완료 기준` 섹션을 모두 포함한다.
@@ -513,7 +517,7 @@ research/  # 로컬 전용, Git 추적 및 GitHub Pages 배포 제외
 - 코드 변경이 있는 작업을 완료하면 변경사항을 의미 있는 단위로 한글 커밋 메시지를 사용해 git commit하고 GitHub 원격 저장소에 push한다. 단, 사용자가 해당 작업에서 커밋 또는 푸시 금지를 명시한 경우에는 그 지시를 우선한다.
 
 ## 완료 기준
-- 루트에는 `AGENTS.md`, `README.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `agents/`만 남아 있어야 하며, 글별 HTML은 `pages/` 안에 둔다.
+- 공개 저장소 루트에는 `AGENTS.md`, `.gitignore`, `_config.yml`, `README.md`, `STOCK.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `images/`만 남아 있어야 하며, 글별 HTML은 `pages/` 안에 둔다. 로컬 작업 폴더인 `agents/`와 `research/`는 Git 추적 대상에서 제외한다.
 - 홈 카드와 상세 보기, 상세 페이지 뉴스레터 신청이 동작해야 한다.
 - `pages/` 안의 각 문서는 장문이어야 한다.
 - 소개, 문의, 개인정보처리방침, 면책고지 페이지는 홈과 모든 글 페이지의 공통 푸터에서 접근 가능해야 한다.
