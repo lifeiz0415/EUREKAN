@@ -990,6 +990,14 @@ const SPACE_TECHNOLOGY_LAUNCH_INSURANCE_BACKLOG_2026_IMAGE = {
   height: 720,
 };
 
+const SPACE_TECHNOLOGY_SPACEX_STARLINK_STARSHIP_IPO_2026_IMAGE = {
+  src: "images/space-technology-spacex-starlink-starship-ipo-2026-1280.webp",
+  alt: "스페이스X는 상장 기대보다 스타링크 현금흐름과 스타십 일정이 먼저입니다 내용을 설명하는 우주 기술 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Falcon_9_-_Starlink_6-86_Launch_(9415581).jpg",
+  width: 1280,
+  height: 720,
+};
+
 const RENEWABLE_ENERGY_PPA_GRID_CONNECTION_2026_IMAGE = {
   src: "images/renewable-energy-ppa-grid-connection-2026-1280.webp",
   alt: "재생에너지는 설치량보다 전력구매계약 단가와 계통 접속이 수익률을 정합니다 내용을 설명하는 재생에너지 대표 이미지",
@@ -1447,6 +1455,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "space-technology-spacex-starlink-starship-ipo-2026": ["RKLB", "ASTS", "PL", "012450.KS"],
   "us-stocks-nvidia-ai-margin-2026": ["NVDA", "AVGO", "AMD", "005930.KS"],
   "theme-ai-data-center-power-grid-2026": ["NVDA", "MSFT", "GOOGL", "015760.KS"],
   "korean-stocks-hyundai-hybrid-export-2026": ["TSLA", "RIVN", "005380.KS", "000270.KS"],
@@ -1466,6 +1475,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "space-technology-spacex-starlink-starship-ipo-2026",
+    title: "스페이스X는 상장 기대보다 스타링크 현금흐름과 스타십 일정이 먼저입니다",
+    desk: "우주 기술",
+    author: "Orion",
+    publishedAt: "2026-05-31T14:46:51+09:00",
+    summary: "스페이스X를 볼 때는 S-1의 매출 규모보다 스타링크의 영업 현금창출력, 스타십의 궤도 운송 전환 시점, AI 적자와 발사 인프라 투자 부담을 함께 확인해야 합니다.",
+    image: SPACE_TECHNOLOGY_SPACEX_STARLINK_STARSHIP_IPO_2026_IMAGE,
+    video: { youtubeId: "k3ZjXN7WPyI", title: "스페이스X 스타십 7차 시험비행 확장 중계 영상", channel: "VideoFromSpace", sourceUrl: "https://www.youtube.com/watch?v=k3ZjXN7WPyI", thumbnailUrl: "https://i.ytimg.com/vi/k3ZjXN7WPyI/hqdefault.jpg", description: "스페이스X를 볼 때는 스타링크 현금흐름과 스타십 시험비행이 실제 발사 단가와 위성 배치 속도를 어떻게 바꾸는지 함께 확인해야 합니다." },
+  },
   {
     slug: "artificial-intelligence-inference-unit-economics-2026",
     title: "인공지능 투자는 모델 성능보다 추론 단가와 고객 사용 시간이 먼저 숫자로 드러납니다",
