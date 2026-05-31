@@ -515,12 +515,22 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 }
 
 .article-tools {
+  position: sticky;
+  top: 12px;
+  z-index: 15;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  margin-inline: -8px;
   margin-bottom: 20px;
+  border: 1px solid rgba(73, 107, 57, 0.16);
+  border-radius: 22px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 16px 34px rgba(47, 38, 24, 0.1);
+  backdrop-filter: blur(14px);
 }
 
 .article-media {
@@ -1002,6 +1012,18 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
 
   .content-count {
     justify-self: start;
+  }
+
+  .article-tools {
+    top: 8px;
+    margin-inline: -6px;
+    border-radius: 18px;
+    padding: 8px;
+  }
+
+  .article-meta {
+    width: 100%;
+    text-align: left;
   }
 
   .article-tools__voice,
