@@ -1006,6 +1006,14 @@ const SPACE_TECHNOLOGY_SPACEX_STARLINK_STARSHIP_IPO_2026_IMAGE = {
   height: 720,
 };
 
+const SPACE_TECHNOLOGY_ROCKET_LAB_BACKLOG_CASHFLOW_2026_IMAGE = {
+  src: "images/space-technology-rocket-lab-backlog-cashflow-2026-1280.webp",
+  alt: "로켓 랩 전망은 Neutron 첫 비행보다 백로그가 현금흐름으로 바뀌는 속도에 달려 있습니다 내용을 설명하는 우주 기술 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:TROPICS_Rocket_Launch_(KSC-20230530-PH-RKL02_0004).jpg",
+  width: 1280,
+  height: 720,
+};
+
 const RENEWABLE_ENERGY_PPA_GRID_CONNECTION_2026_IMAGE = {
   src: "images/renewable-energy-ppa-grid-connection-2026-1280.webp",
   alt: "재생에너지는 설치량보다 전력구매계약 단가와 계통 접속이 수익률을 정합니다 내용을 설명하는 재생에너지 대표 이미지",
@@ -1465,6 +1473,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 const RELATED_STOCK_TICKERS_BY_SLUG = {
   "artificial-intelligence-agent-workflow-revenue-2026": ["MSFT", "CRM", "NOW", "GOOGL"],
   "space-technology-spacex-starlink-starship-ipo-2026": ["RKLB", "ASTS", "PL", "012450.KS"],
+  "space-technology-rocket-lab-backlog-cashflow-2026": ["RKLB", "PL", "ASTS", "012450.KS"],
   "us-stocks-nvidia-ai-margin-2026": ["NVDA", "AVGO", "AMD", "005930.KS"],
   "theme-ai-data-center-power-grid-2026": ["NVDA", "MSFT", "GOOGL", "015760.KS"],
   "korean-stocks-hyundai-hybrid-export-2026": ["TSLA", "RIVN", "005380.KS", "000270.KS"],
@@ -1484,6 +1493,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "space-technology-rocket-lab-backlog-cashflow-2026",
+    title: "로켓 랩 전망은 Neutron 첫 비행보다 백로그가 현금흐름으로 바뀌는 속도에 달려 있습니다",
+    desk: "우주 기술",
+    author: "Orion",
+    publishedAt: "2026-05-31T17:58:29+09:00",
+    summary: "로켓 랩 RKLB는 Electron 발사 횟수보다 Space Systems 백로그, Neutron 일정, 현금 소진과 희석, 방산 계약 마진을 함께 확인해야 합니다.",
+    image: SPACE_TECHNOLOGY_ROCKET_LAB_BACKLOG_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "fi_I3qJAn6k", title: "스페이스X 모멘텀과 로켓랩을 함께 설명하는 롱폼 분석 영상", channel: "위즈덤투스", sourceUrl: "https://www.youtube.com/watch?v=fi_I3qJAn6k", thumbnailUrl: "https://i.ytimg.com/vi/fi_I3qJAn6k/hqdefault.jpg", description: "로켓 랩을 스페이스X가 만든 발사 시장의 기준과 비교하며 발사 수요, 고객 신뢰, 성장 기대를 함께 확인할 수 있는 한국어 롱폼 분석 영상입니다." },
+  },
   {
     slug: "artificial-intelligence-agent-workflow-revenue-2026",
     title: "인공지능 에이전트 투자는 데모보다 업무 유지율과 좌석 확장이 먼저입니다",
