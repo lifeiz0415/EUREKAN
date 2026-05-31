@@ -533,14 +533,6 @@ h2 { margin-bottom: 10px; font-size: 1.5rem; }
   backdrop-filter: blur(14px);
 }
 
-.article-tools--stuck .article-meta {
-  display: none;
-}
-
-.article-tools--stuck .article-tools__voice {
-  flex-basis: 100%;
-}
-
 .article-media {
   margin: 2px 0 20px;
   overflow: hidden;
