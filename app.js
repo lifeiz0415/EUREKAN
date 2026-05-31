@@ -329,6 +329,15 @@ const TRADITIONAL_ENERGY_DEMAND_REVENUE_2026_IMAGE = {
   height: 720,
 };
 
+const TRADITIONAL_ENERGY_BATTALION_OIL_DEBT_PRODUCTION_2026_IMAGE = {
+  src: "images/traditional-energy-battalion-oil-debt-production-2026-1280.webp",
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Oil_pumpjack_in_the_Permian_Basin.jpg",
+  alt: "퍼미안 분지 유정 펌프잭 이미지로 바탈리온 오일의 생산 유지력과 부채 부담을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Oil_pumpjack_in_the_Permian_Basin.jpg",
+  width: 1280,
+  height: 720,
+};
+
 const SEMICONDUCTOR_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/semiconductor-margin-bottleneck-2026-1280.webp",
   alt: "반도체 투자는 HBM, 파운드리, 장비 공급망보다 수율과 첨단 패키징을 먼저 봐야 합니다 내용을 설명하는 반도체 대표 이미지",
@@ -1406,6 +1415,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "AUR": { name: "오로라 이노베이션", market: "미국", ticker: "AUR", url: "https://m.stock.naver.com/worldstock/stock/AUR.O/total" },
   "AVGO": { name: "브로드컴", market: "미국", ticker: "AVGO", url: "https://m.stock.naver.com/worldstock/stock/AVGO.O/total" },
   "AWK": { name: "아메리칸 워터 웍스", market: "미국", ticker: "AWK", url: "https://m.stock.naver.com/worldstock/stock/AWK/total" },
+  "BATL": { name: "바탈리온 오일", market: "미국", ticker: "BATL", url: "https://m.stock.naver.com/worldstock/stock/BATL.K/total" },
   "BNED": { name: "반스 앤 노블 에듀케이션", market: "미국", ticker: "BNED", url: "https://m.stock.naver.com/worldstock/stock/BNED.K/total" },
   "CCJ": { name: "카메코", market: "미국", ticker: "CCJ", url: "https://m.stock.naver.com/worldstock/stock/CCJ/total" },
   "CELH": { name: "셀시어스 홀딩스", market: "미국", ticker: "CELH", url: "https://m.stock.naver.com/worldstock/stock/CELH.O/total" },
@@ -1424,6 +1434,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "DELL": { name: "델테크놀로지", market: "미국", ticker: "DELL", url: "https://m.stock.naver.com/worldstock/stock/DELL.K/total" },
   "DIS": { name: "월트 디즈니", market: "미국", ticker: "DIS", url: "https://m.stock.naver.com/worldstock/stock/DIS/total" },
   "DUOL": { name: "듀오링고", market: "미국", ticker: "DUOL", url: "https://m.stock.naver.com/worldstock/stock/DUOL.O/total" },
+  "DVN": { name: "데번 에너지", market: "미국", ticker: "DVN", url: "https://m.stock.naver.com/worldstock/stock/DVN/total" },
   "EA": { name: "일렉트로닉 아츠", market: "미국", ticker: "EA", url: "https://m.stock.naver.com/worldstock/stock/EA.O/total" },
   "EBAY": { name: "이베이", market: "미국", ticker: "EBAY", url: "https://m.stock.naver.com/worldstock/stock/EBAY.O/total" },
   "EDU": { name: "뉴 오리엔탈 에듀케이션 & 테크놀로지 ADR", market: "미국", ticker: "EDU", url: "https://m.stock.naver.com/worldstock/stock/EDU/total" },
@@ -1432,6 +1443,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "ETN": { name: "이튼", market: "미국", ticker: "ETN", url: "https://m.stock.naver.com/worldstock/stock/ETN/total" },
   "FCX": { name: "프리포트 맥모란", market: "미국", ticker: "FCX", url: "https://m.stock.naver.com/worldstock/stock/FCX/total" },
   "FDX": { name: "페덱스", market: "미국", ticker: "FDX", url: "https://m.stock.naver.com/worldstock/stock/FDX/total" },
+  "FANG": { name: "다이아몬드백 에너지", market: "미국", ticker: "FANG", url: "https://m.stock.naver.com/worldstock/stock/FANG.O/total" },
   "FSLR": { name: "퍼스트 솔라", market: "미국", ticker: "FSLR", url: "https://m.stock.naver.com/worldstock/stock/FSLR.O/total" },
   "FTNT": { name: "포티넷", market: "미국", ticker: "FTNT", url: "https://m.stock.naver.com/worldstock/stock/FTNT.O/total" },
   "GOOGL": { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
@@ -1468,6 +1480,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "O": { name: "리얼티 인컴", market: "미국", ticker: "O", url: "https://m.stock.naver.com/worldstock/stock/O/total" },
   "OKTA": { name: "옥타", market: "미국", ticker: "OKTA", url: "https://m.stock.naver.com/worldstock/stock/OKTA.O/total" },
   "ORCL": { name: "오라클", market: "미국", ticker: "ORCL", url: "https://m.stock.naver.com/worldstock/stock/ORCL.K/total" },
+  "OXY": { name: "옥시덴털 페트롤리움", market: "미국", ticker: "OXY", url: "https://m.stock.naver.com/worldstock/stock/OXY/total" },
   "PANW": { name: "팔로 알토 네트웍스", market: "미국", ticker: "PANW", url: "https://m.stock.naver.com/worldstock/stock/PANW.O/total" },
   "PATH": { name: "유아이패스", market: "미국", ticker: "PATH", url: "https://m.stock.naver.com/worldstock/stock/PATH.K/total" },
   "PEP": { name: "펩시코", market: "미국", ticker: "PEP", url: "https://m.stock.naver.com/worldstock/stock/PEP.O/total" },
@@ -1571,6 +1584,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "semiconductor-micron-hbm4-cashflow-2026": ["MU", "NVDA", "000660.KS", "005930.KS"],
   "semiconductor-amd-mi350-datacenter-margin-2026": ["AMD", "NVDA", "AVGO", "MSFT"],
   "semiconductor-asml-euv-orders-margin-2026": ["ASML", "TSM", "NVDA", "005930.KS"],
+  "traditional-energy-battalion-oil-debt-production-2026": ["BATL", "FANG", "DVN", "OXY"],
   "strategy-tenbagger-quality-checklist-2026": ["ADBE", "CRM", "NOW", "035420.KS"],
   "theme-defense-export-backlog-cashflow-2026": ["LMT", "RTX", "NOC", "012450.KS"],
   "us-stocks-apple-ai-iphone-cycle-2026": ["AAPL", "QCOM", "AVGO", "005930.KS"],
@@ -1584,6 +1598,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "traditional-energy-battalion-oil-debt-production-2026",
+    title: "바탈리온 오일은 유가보다 부채 구조와 생산 유지력이 먼저입니다",
+    desk: "전통 에너지",
+    author: "Flint",
+    publishedAt: "2026-05-31T22:28:51+09:00",
+    summary: "바탈리온 오일 BATL은 퍼미안 분지 생산량보다 부채 상환, 자산 매각, 희석 가능성, 처리 비용 절감이 주주가 먼저 확인해야 할 핵심입니다.",
+    image: TRADITIONAL_ENERGY_BATTALION_OIL_DEBT_PRODUCTION_2026_IMAGE,
+    video: { youtubeId: "cZUyM5CGYio", title: "바탈리온 오일 BATL 기업 분석을 다룬 한국어 롱폼 영상", channel: "모여라 서학개미", sourceUrl: "https://www.youtube.com/watch?v=cZUyM5CGYio", thumbnailUrl: "https://i.ytimg.com/vi/cZUyM5CGYio/hqdefault.jpg", description: "바탈리온 오일의 사업 구조와 주가 변동 요인을 한국어로 설명하는 8분대 롱폼 분석 영상입니다." },
+  },
   {
     slug: "crypto-blockchain-coinbase-clarity-act-2026",
     title: "코인베이스는 클래리티 법안보다 USDC와 파생상품 매출의 지속성을 먼저 봐야 합니다",
