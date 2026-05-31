@@ -3432,22 +3432,23 @@ function ensureArticleLayout() {
   const articleContentParentNode = articleBodyNode.parentElement;
   if (!articleContentParentNode) return;
 
+  if (articleRelatedStocksNode) {
+    const relatedStocksAnchorNode = articleTocNode || articleBodyNode;
+    if (articleRelatedStocksNode.parentElement !== articleContentParentNode) {
+      articleContentParentNode.insertBefore(articleRelatedStocksNode, relatedStocksAnchorNode);
+    }
+
+    if (articleRelatedStocksNode.nextElementSibling !== relatedStocksAnchorNode) {
+      articleContentParentNode.insertBefore(articleRelatedStocksNode, relatedStocksAnchorNode);
+    }
+  }
+
   if (articleTocNode && articleTocNode.parentElement !== articleContentParentNode) {
     articleContentParentNode.insertBefore(articleTocNode, articleBodyNode);
   }
 
   if (articleTocNode && articleTocNode.nextElementSibling !== articleBodyNode) {
     articleContentParentNode.insertBefore(articleTocNode, articleBodyNode);
-  }
-
-  if (articleRelatedStocksNode) {
-    if (articleRelatedStocksNode.parentElement !== articleContentParentNode) {
-      articleContentParentNode.insertBefore(articleRelatedStocksNode, articleBodyNode.nextSibling);
-    }
-
-    if (articleBodyNode.nextElementSibling !== articleRelatedStocksNode) {
-      articleContentParentNode.insertBefore(articleRelatedStocksNode, articleBodyNode.nextSibling);
-    }
   }
 
   if (newsletterPanelNode && !newsletterPanelNode.parentElement) articleContentParentNode.append(newsletterPanelNode);
