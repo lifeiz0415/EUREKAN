@@ -260,7 +260,7 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/?desk=%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90%C2%B7%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1280,6 +1280,12 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/pages/crypto-blockchain-coinbase-clarity-act-2026.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKAN/pages/crypto-blockchain-american-bitcoin-sats-per-share-2026.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

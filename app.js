@@ -1371,6 +1371,15 @@ const CRYPTO_BLOCKCHAIN_COINBASE_CLARITY_ACT_2026_IMAGE = {
   height: 720,
 };
 
+const CRYPTO_BLOCKCHAIN_AMERICAN_BITCOIN_SATS_PER_SHARE_2026_IMAGE = {
+  src: "images/crypto-blockchain-american-bitcoin-sats-per-share-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cryptocurrency_Mining_Farm.jpg/1280px-Cryptocurrency_Mining_Farm.jpg",
+  alt: "비트코인 채굴 팜 이미지로 아메리칸 비트코인의 채굴 원가와 주당 사토시를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cryptocurrency_Mining_Farm.jpg",
+  width: 1280,
+  height: 720,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1404,6 +1413,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "AAPL": { name: "애플", market: "미국", ticker: "AAPL", url: "https://m.stock.naver.com/worldstock/stock/AAPL.O/total" },
   "ABBV": { name: "애브비", market: "미국", ticker: "ABBV", url: "https://m.stock.naver.com/worldstock/stock/ABBV.K/total" },
   "ABT": { name: "애보트 래보라토리", market: "미국", ticker: "ABT", url: "https://m.stock.naver.com/worldstock/stock/ABT/total" },
+  "ABTC": { name: "아메리칸 비트코인", market: "미국", ticker: "ABTC", url: "https://m.stock.naver.com/worldstock/stock/ABTC.O/total" },
   "ADBE": { name: "어도비", market: "미국", ticker: "ADBE", url: "https://m.stock.naver.com/worldstock/stock/ADBE.O/total" },
   "ADM": { name: "아처 대니얼스 미들랜드", market: "미국", ticker: "ADM", url: "https://m.stock.naver.com/worldstock/stock/ADM/total" },
   "AFRM": { name: "어펌 홀딩스", market: "미국", ticker: "AFRM", url: "https://m.stock.naver.com/worldstock/stock/AFRM.O/total" },
@@ -1453,6 +1463,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "HOOD": { name: "로빈후드", market: "미국", ticker: "HOOD", url: "https://m.stock.naver.com/worldstock/stock/HOOD.O/total" },
   "HPQ": { name: "HP", market: "미국", ticker: "HPQ", url: "https://m.stock.naver.com/worldstock/stock/HPQ/total" },
   "HUM": { name: "휴마나", market: "미국", ticker: "HUM", url: "https://m.stock.naver.com/worldstock/stock/HUM/total" },
+  "HUT": { name: "헛 8", market: "미국", ticker: "HUT", url: "https://m.stock.naver.com/worldstock/stock/HUT.O/total" },
   "IDAI": { name: "티 스탬프", market: "미국", ticker: "IDAI", url: "https://m.stock.naver.com/worldstock/stock/IDAI.O/total" },
   "INTC": { name: "인텔", market: "미국", ticker: "INTC", url: "https://m.stock.naver.com/worldstock/stock/INTC.O/total" },
   "IONQ": { name: "아이온큐", market: "미국", ticker: "IONQ", url: "https://m.stock.naver.com/worldstock/stock/IONQ.K/total" },
@@ -1595,9 +1606,20 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "market-yield-dollar-portfolio-2026": ["MA", "PYPL", "AFRM", "105560.KS"],
   "etf-dividend-growth-payout-ratio-2026": ["MA", "PYPL", "AFRM", "105560.KS"],
   "crypto-blockchain-coinbase-clarity-act-2026": ["COIN", "HOOD", "MSTR", "MARA"],
+  "crypto-blockchain-american-bitcoin-sats-per-share-2026": ["ABTC", "HUT", "MARA", "RIOT"],
 };
 
 const featuredPages = [
+  {
+    slug: "crypto-blockchain-american-bitcoin-sats-per-share-2026",
+    title: "아메리칸 비트코인은 보유량보다 주당 사토시와 채굴 원가를 먼저 봐야 합니다",
+    desk: "암호화폐·블록체인",
+    author: "Chain",
+    publishedAt: "2026-05-31T22:46:02+09:00",
+    summary: "아메리칸 비트코인 ABTC는 비트코인 보유량과 해시레이트보다 주당 사토시, 채굴 원가, Hut 8 의존도, 채굴기 담보와 희석 가능성을 함께 확인해야 합니다.",
+    image: CRYPTO_BLOCKCHAIN_AMERICAN_BITCOIN_SATS_PER_SHARE_2026_IMAGE,
+    video: { youtubeId: "0kK7GuJeFPw", title: "아메리칸 비트코인 ABTC 기업 분석을 다룬 한국어 롱폼 영상", channel: "모여라 서학개미", sourceUrl: "https://www.youtube.com/watch?v=0kK7GuJeFPw", thumbnailUrl: "https://i.ytimg.com/vi/0kK7GuJeFPw/hqdefault.jpg", description: "아메리칸 비트코인의 사업 구조와 주가 변수를 한국어로 설명하는 9분대 롱폼 분석 영상입니다." },
+  },
   {
     slug: "traditional-energy-battalion-oil-debt-production-2026",
     title: "바탈리온 오일은 유가보다 부채 구조와 생산 유지력이 먼저입니다",
