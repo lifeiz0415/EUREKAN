@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/?desk=%EC%A0%84%EA%B8%B0%EC%B0%A8</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -597,6 +597,12 @@
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/pages/electric-vehicle-battery-inventory-margin-2026.html</loc>
     <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKAN/pages/electric-vehicle-tesla-robotaxi-margin-energy-2026.html</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

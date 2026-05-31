@@ -66,6 +66,15 @@ const US_STOCKS_APPLE_AI_IPHONE_CYCLE_2026_IMAGE = {
   height: 720,
 };
 
+const ELECTRIC_VEHICLE_TESLA_ROBOTAXI_MARGIN_ENERGY_2026_IMAGE = {
+  src: "images/electric-vehicle-tesla-robotaxi-margin-energy-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Front_of_the_Tesla_Cybercab.jpg",
+  alt: "테슬라 Cybercab 전면 사진으로 로보택시 기대와 차량 마진 검증을 함께 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Front_of_the_Tesla_Cybercab.jpg",
+  width: 1280,
+  height: 720,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1646,6 +1655,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "artificial-intelligence-nvidia-rubin-ai-factory-2026": ["NVDA", "MSFT", "AVGO", "AMD"],
   "theme-ai-data-center-power-grid-2026": ["NVDA", "MSFT", "GOOGL", "015760.KS"],
   "korean-stocks-hyundai-hybrid-export-2026": ["TSLA", "RIVN", "005380.KS", "000270.KS"],
+  "electric-vehicle-tesla-robotaxi-margin-energy-2026": ["TSLA", "RIVN", "LCID", "005380.KS"],
   "transport-logistics-margin-bottleneck-2026": ["FDX", "UBER", "DAL", "000120.KS"],
   "market-won-dollar-export-margin-2026": ["FDX", "UBER", "005380.KS", "086280.KS"],
   "semiconductor-margin-bottleneck-2026": ["NVDA", "AVGO", "AMD", "005930.KS"],
@@ -3296,6 +3306,16 @@ const featuredPages = [
     summary: "애플은 2026 회계연도 2분기에 iPhone과 Services가 함께 강했지만, 투자자는 AI 발표보다 서비스 마진, 아이폰 교체 속도, 관세와 공급망 비용을 순서대로 확인해야 합니다.",
     image: US_STOCKS_APPLE_AI_IPHONE_CYCLE_2026_IMAGE,
     video: { youtubeId: "bTlHT8TzpFY", title: "애플의 인공지능 전략과 데이터 병목을 설명하는 한국어 롱폼 영상", channel: "한국경제TV", sourceUrl: "https://www.youtube.com/watch?v=bTlHT8TzpFY", thumbnailUrl: "https://i.ytimg.com/vi/bTlHT8TzpFY/hqdefault.jpg", description: "애플의 인공지능 전략과 밸류체인 변화를 12분대 길이로 설명하는 한국어 롱폼 영상입니다." },
+  },
+  {
+    slug: "electric-vehicle-tesla-robotaxi-margin-energy-2026",
+    title: "테슬라 주식은 로보택시보다 차량 재고와 에너지 마진 회복을 먼저 봐야 합니다",
+    desk: "전기차",
+    author: "Oliver",
+    publishedAt: "2026-06-01T02:45:00+09:00",
+    summary: "테슬라 TSLA는 로보택시와 Optimus 기대가 크지만, 투자자는 Q1 2026 차량 인도와 재고, 자동차 마진, 에너지 저장 배치, FSD 구독 증가를 같은 순서로 확인해야 합니다.",
+    image: ELECTRIC_VEHICLE_TESLA_ROBOTAXI_MARGIN_ENERGY_2026_IMAGE,
+    video: { youtubeId: "Kk7-LrLhp2E", title: "테슬라 1분기 실적과 주가 조건을 설명하는 한국어 롱폼 영상", channel: "한국경제TV", sourceUrl: "https://www.youtube.com/watch?v=Kk7-LrLhp2E", thumbnailUrl: "https://i.ytimg.com/vi/Kk7-LrLhp2E/hqdefault.jpg", description: "한국경제TV가 테슬라 1분기 실적, 로보택시 기대, 주가 반응 조건을 다룬 21분대 한국어 롱폼 영상입니다." },
   },
   {
     slug: "us-stocks-amazon-aws-retail-margin-2026",
