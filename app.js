@@ -1389,6 +1389,15 @@ const CRYPTO_BLOCKCHAIN_AMERICAN_BITCOIN_SATS_PER_SHARE_2026_IMAGE = {
   height: 720,
 };
 
+const CRYPTO_BLOCKCHAIN_BITMINE_ETH_TREASURY_STAKING_2026_IMAGE = {
+  src: "images/crypto-blockchain-bitmine-eth-treasury-staking-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cryptocurrency_%2838747838010%29.jpg/1280px-Cryptocurrency_%2838747838010%29.jpg",
+  alt: "이더리움과 비트코인 코인 이미지로 비트마인의 ETH 트레저리와 스테이킹 전략을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cryptocurrency_(38747838010).jpg",
+  width: 1280,
+  height: 720,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1435,6 +1444,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "AVGO": { name: "브로드컴", market: "미국", ticker: "AVGO", url: "https://m.stock.naver.com/worldstock/stock/AVGO.O/total" },
   "AWK": { name: "아메리칸 워터 웍스", market: "미국", ticker: "AWK", url: "https://m.stock.naver.com/worldstock/stock/AWK/total" },
   "BATL": { name: "바탈리온 오일", market: "미국", ticker: "BATL", url: "https://m.stock.naver.com/worldstock/stock/BATL.K/total" },
+  "BMNR": { name: "비트마인 이머전 테크놀로지스", market: "미국", ticker: "BMNR", url: "https://m.stock.naver.com/worldstock/stock/BMNR.K/total" },
   "BNED": { name: "반스 앤 노블 에듀케이션", market: "미국", ticker: "BNED", url: "https://m.stock.naver.com/worldstock/stock/BNED.K/total" },
   "CCJ": { name: "카메코", market: "미국", ticker: "CCJ", url: "https://m.stock.naver.com/worldstock/stock/CCJ/total" },
   "CELH": { name: "셀시어스 홀딩스", market: "미국", ticker: "CELH", url: "https://m.stock.naver.com/worldstock/stock/CELH.O/total" },
@@ -1524,6 +1534,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "RSG": { name: "리퍼블릭 서비스", market: "미국", ticker: "RSG", url: "https://m.stock.naver.com/worldstock/stock/RSG/total" },
   "RTX": { name: "RTX", market: "미국", ticker: "RTX", url: "https://m.stock.naver.com/worldstock/stock/RTX/total" },
   "SCCO": { name: "서던 코퍼", market: "미국", ticker: "SCCO", url: "https://m.stock.naver.com/worldstock/stock/SCCO.K/total" },
+  "SBET": { name: "샤프링크", market: "미국", ticker: "SBET", url: "https://m.stock.naver.com/worldstock/stock/SBET.O/total" },
   "SENS": { name: "센서닉스 홀딩스", market: "미국", ticker: "SENS", url: "https://m.stock.naver.com/worldstock/stock/SENS.O/total" },
   "SMPL": { name: "더 심플리 굿 푸드", market: "미국", ticker: "SMPL", url: "https://m.stock.naver.com/worldstock/stock/SMPL.O/total" },
   "SNDK": { name: "샌디스크", market: "미국", ticker: "SNDK", url: "https://m.stock.naver.com/worldstock/stock/SNDK.O/total" },
@@ -1618,9 +1629,20 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "etf-dividend-growth-payout-ratio-2026": ["MA", "PYPL", "AFRM", "105560.KS"],
   "crypto-blockchain-coinbase-clarity-act-2026": ["COIN", "HOOD", "MSTR", "MARA"],
   "crypto-blockchain-american-bitcoin-sats-per-share-2026": ["ABTC", "HUT", "MARA", "RIOT"],
+  "crypto-blockchain-bitmine-eth-treasury-staking-2026": ["BMNR", "SBET", "COIN", "MSTR"],
 };
 
 const featuredPages = [
+  {
+    slug: "crypto-blockchain-bitmine-eth-treasury-staking-2026",
+    title: "비트마인은 ETH 보유량보다 주당 NAV와 스테이킹 수익을 먼저 봐야 합니다",
+    desk: "암호화폐·블록체인",
+    author: "Chain",
+    publishedAt: "2026-05-31T23:14:49+09:00",
+    summary: "비트마인 BMNR은 세계 최대 이더리움 트레저리로 주목받지만, 투자자는 ETH 보유량보다 주당 NAV, 희석 속도, MAVAN 스테이킹 수익, 규제와 ETH 가격 변동성을 함께 확인해야 합니다.",
+    image: CRYPTO_BLOCKCHAIN_BITMINE_ETH_TREASURY_STAKING_2026_IMAGE,
+    video: { youtubeId: "73aWSV8UwZ4", title: "비트마인 BMNR과 이더리움 트레저리 전략을 설명하는 한국어 롱폼 영상", channel: "월가 알람", sourceUrl: "https://www.youtube.com/watch?v=73aWSV8UwZ4", thumbnailUrl: "https://i.ytimg.com/vi/73aWSV8UwZ4/hqdefault.jpg", description: "비트마인의 이더리움 매집, 톰 리 의장 메시지, ETH 트레저리 전략을 한국어로 정리한 13분대 롱폼 분석 영상입니다." },
+  },
   {
     slug: "semiconductor-sandisk-nand-price-inventory-2026",
     title: "샌디스크는 AI SSD 수요보다 NAND 가격과 고객 계약의 질을 먼저 봐야 합니다",
