@@ -59,8 +59,9 @@ const ARTIFICIAL_INTELLIGENCE_PALANTIR_AIP_REVENUE_QUALITY_2026_IMAGE = {
 
 const US_STOCKS_APPLE_AI_IPHONE_CYCLE_2026_IMAGE = {
   src: "images/us-stocks-apple-ai-iphone-cycle-2026-1280.webp",
-  alt: "애플 아이폰 교체 주기와 서비스 매출을 함께 보는 이미지",
-  sourceUrl: "https://commons.wikimedia.org/",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/6/67/HK_%E9%A6%99%E6%B8%AF_CWB_Apple_Store_shop_interior_Jan_2017_Apple_iPhone_testing_10.jpg",
+  alt: "홍콩 Apple Store 내부에서 고객들이 아이폰을 체험하는 장면으로 애플 교체 수요와 서비스 매출을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:HK_%E9%A6%99%E6%B8%AF_CWB_Apple_Store_shop_interior_Jan_2017_Apple_iPhone_testing_10.jpg",
   width: 1280,
   height: 720,
 };
@@ -3287,13 +3288,14 @@ const featuredPages = [
   },
   {
     slug: "us-stocks-apple-ai-iphone-cycle-2026",
-    title: "애플 주식은 AI 기능보다 아이폰 교체 주기가 실제 매출을 만듭니다",
+    title: "애플 주식은 AI보다 서비스 마진과 아이폰 교체 속도를 먼저 봐야 합니다",
     desk: "하드웨어",
     author: "Harold",
     publishedAt: "2026-05-30T17:54:00+09:00",
-    summary: "애플의 AI 기능은 관심을 끌지만 주가의 핵심은 아이폰 교체 주기, 서비스 매출률, 중국과 프리미엄 시장의 수요 회복입니다.",
+    modifiedAt: "2026-06-01T02:27:34+09:00",
+    summary: "애플은 2026 회계연도 2분기에 iPhone과 Services가 함께 강했지만, 투자자는 AI 발표보다 서비스 마진, 아이폰 교체 속도, 관세와 공급망 비용을 순서대로 확인해야 합니다.",
     image: US_STOCKS_APPLE_AI_IPHONE_CYCLE_2026_IMAGE,
-    video: { youtubeId: "bTlHT8TzpFY", title: "애플 AI와 아이폰 교체 수요를 분석하는 영상", channel: "ITSub잇섭", sourceUrl: "https://www.youtube.com/watch?v=bTlHT8TzpFY", thumbnailUrl: "https://i.ytimg.com/vi/bTlHT8TzpFY/hqdefault.jpg", description: "애플의 AI 기능은 관심을 끌지만 주가의 핵심은 아이폰 교체 주기, 서비스 매출률, 중국과 프리미엄 시장의 수요 회복입니다." },
+    video: { youtubeId: "bTlHT8TzpFY", title: "애플의 인공지능 전략과 데이터 병목을 설명하는 한국어 롱폼 영상", channel: "한국경제TV", sourceUrl: "https://www.youtube.com/watch?v=bTlHT8TzpFY", thumbnailUrl: "https://i.ytimg.com/vi/bTlHT8TzpFY/hqdefault.jpg", description: "애플의 인공지능 전략과 밸류체인 변화를 12분대 길이로 설명하는 한국어 롱폼 영상입니다." },
   },
   {
     slug: "us-stocks-amazon-aws-retail-margin-2026",
