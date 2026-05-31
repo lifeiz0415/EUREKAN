@@ -4719,23 +4719,17 @@ function getArticleHeadingAnchorNode(position = 1) {
 }
 
 function getArticleVideoAnchorNode() {
-  return getArticleHeadingAnchorNode(4);
+  return getArticleHeadingAnchorNode(2);
 }
 
 function placeNewsletterPanel() {
-  if (!newsletterPanelNode) return;
+  if (!newsletterPanelNode || !articleBodyNode) return;
   newsletterPanelNode.classList.remove("article-newsletter--top");
   newsletterPanelNode.classList.add("article-newsletter--bottom");
 
-  const anchorNode = getArticleHeadingAnchorNode(2);
-  if (anchorNode) {
-    if (anchorNode.nextElementSibling !== newsletterPanelNode) {
-      anchorNode.insertAdjacentElement("afterend", newsletterPanelNode);
-    }
-    return;
+  if (newsletterPanelNode.previousElementSibling !== articleBodyNode) {
+    articleBodyNode.insertAdjacentElement("afterend", newsletterPanelNode);
   }
-
-  if (articleBodyNode.lastElementChild !== newsletterPanelNode) articleBodyNode.append(newsletterPanelNode);
 }
 
 function placeArticleVideoSection(html = "") {
