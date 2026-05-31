@@ -958,6 +958,14 @@ const ARTIFICIAL_INTELLIGENCE_INFERENCE_UNIT_ECONOMICS_2026_IMAGE = {
   height: 720,
 };
 
+const ARTIFICIAL_INTELLIGENCE_AGENT_WORKFLOW_REVENUE_2026_IMAGE = {
+  src: "images/artificial-intelligence-agent-workflow-revenue-2026-1280.webp",
+  alt: "인공지능 에이전트 투자는 데모보다 업무 유지율과 좌석 확장이 먼저입니다 내용을 설명하는 인공지능 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:San_Francisco,_California_April_2022_Salesforce_Tower.jpg",
+  width: 1280,
+  height: 720,
+};
+
 const CLOUD_COMPUTING_CAPEX_UTILIZATION_2026_IMAGE = {
   src: "images/cloud-computing-capex-utilization-2026-1280.webp",
   alt: "클라우드 컴퓨팅은 서버 증설 속도보다 사용량 매출의 질을 먼저 봐야 합니다 내용을 설명하는 클라우드 컴퓨팅 대표 이미지",
@@ -1455,6 +1463,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "artificial-intelligence-agent-workflow-revenue-2026": ["MSFT", "CRM", "NOW", "GOOGL"],
   "space-technology-spacex-starlink-starship-ipo-2026": ["RKLB", "ASTS", "PL", "012450.KS"],
   "us-stocks-nvidia-ai-margin-2026": ["NVDA", "AVGO", "AMD", "005930.KS"],
   "theme-ai-data-center-power-grid-2026": ["NVDA", "MSFT", "GOOGL", "015760.KS"],
@@ -1475,6 +1484,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "artificial-intelligence-agent-workflow-revenue-2026",
+    title: "인공지능 에이전트 투자는 데모보다 업무 유지율과 좌석 확장이 먼저입니다",
+    desk: "인공지능",
+    author: "Aiden",
+    publishedAt: "2026-05-31T15:17:55+09:00",
+    summary: "인공지능 에이전트 투자는 시연 영상보다 실제 업무 흐름에 남는 시간, 유료 좌석 확장, 사용량 과금, 추론 비용 전가 여부를 함께 확인해야 합니다.",
+    image: ARTIFICIAL_INTELLIGENCE_AGENT_WORKFLOW_REVENUE_2026_IMAGE,
+    video: { youtubeId: "dM-kqR_ygn0", title: "ServiceNow Now Assist Agents 시작하기 영상", channel: "ServiceNow Community", sourceUrl: "https://www.youtube.com/watch?v=dM-kqR_ygn0", thumbnailUrl: "https://i.ytimg.com/vi/dM-kqR_ygn0/hqdefault.jpg", description: "기업용 인공지능 에이전트가 실제 업무 흐름 안에서 어떻게 설정되고 운영되는지 확인할 수 있는 ServiceNow Now Assist Agents 설명 영상입니다." },
+  },
   {
     slug: "space-technology-spacex-starlink-starship-ipo-2026",
     title: "스페이스X는 상장 기대보다 스타링크 현금흐름과 스타십 일정이 먼저입니다",

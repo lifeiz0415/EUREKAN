@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/?desk=%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -309,6 +309,12 @@
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/pages/agriculture-food-risk-cycle-2026.html</loc>
     <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKAN/pages/artificial-intelligence-agent-workflow-revenue-2026.html</loc>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
