@@ -3230,7 +3230,6 @@ const IMAGE_DIRECTORY = "images";
 const IMAGE_EXTENSION = "webp";
 const SPEECH_RATE = 1.12;
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 11;
-const SPEECH_MIN_CHARS_PER_UTTERANCE = 260;
 const SPEECH_MAX_CHARS_PER_UTTERANCE = 640;
 const SPEECH_CHUNK_NEXT_DELAY_MS = 10;
 const SPEECH_KEEPALIVE_INTERVAL_MS = 4500;
@@ -4709,6 +4708,13 @@ function getSpeechSentenceHighlightRange(index = activeSpeechCurrentIndex, fallb
   return { start, end };
 }
 
+function getSpeechResumeOffset(index = activeSpeechCurrentIndex) {
+  if (!activeArticleSpeechText) return 0;
+  const activeChunk = activeSpeechChunks[activeSpeechChunkIndex];
+  if (isArticleSpeechPlaying && activeChunk) return activeChunk.start;
+  return getSpeechSentenceHighlightRange(index).start;
+}
+
 function prepareArticleSpeechTokens() {
   clearActiveSpeechTokenHighlight();
   activeSpeechTokenNodes = [];
@@ -5012,11 +5018,9 @@ function isArticleSpeechActive() {
 }
 
 function getSpeechStartOffset(index = 0) {
-  let startOffset = getNormalizedSpeechIndex(index);
-  if (startOffset >= activeArticleSpeechText.length) return 0;
-  while (startOffset > 0 && !/[.!?。！？…]/.test(activeArticleSpeechText[startOffset - 1])) {
-    startOffset -= 1;
-  }
+  const normalizedIndex = getNormalizedSpeechIndex(index);
+  if (normalizedIndex >= activeArticleSpeechText.length) return 0;
+  let startOffset = getSpeechSentenceHighlightRange(normalizedIndex).start;
   while (startOffset < activeArticleSpeechText.length && /\s/.test(activeArticleSpeechText[startOffset])) {
     startOffset += 1;
   }
@@ -5065,9 +5069,7 @@ function createSpeechChunks(text = activeArticleSpeechText, startOffset = 0) {
       if (/[.!?。！？…]/.test(char)) {
         sentenceEnd = end + 1;
         while (sentenceEnd < rawText.length && /["'”’)\]]/.test(rawText[sentenceEnd])) sentenceEnd += 1;
-        if (sentenceEnd - cursor >= SPEECH_MIN_CHARS_PER_UTTERANCE || sentenceEnd >= rawText.length) break;
-        end = sentenceEnd;
-        continue;
+        break;
       }
       if (end - cursor >= SPEECH_MAX_CHARS_PER_UTTERANCE && /\s/.test(char)) {
         sentenceEnd = end;
@@ -5267,7 +5269,8 @@ function toggleArticleSpeech() {
 
 function pauseArticleSpeech() {
   if (!isArticleSpeechActive()) return;
-  const pauseIndex = syncSpeechProgressEstimate();
+  syncSpeechProgressEstimate();
+  const pauseIndex = getSpeechResumeOffset(activeSpeechCurrentIndex);
   speechRunId += 1;
   isArticleSpeechPaused = true;
   isArticleSpeechPlaying = false;
