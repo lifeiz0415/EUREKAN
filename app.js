@@ -39,6 +39,15 @@ const ARTIFICIAL_INTELLIGENCE_NVIDIA_RUBIN_AI_FACTORY_2026_IMAGE = {
   height: 720,
 };
 
+const ARTIFICIAL_INTELLIGENCE_PALANTIR_AIP_REVENUE_QUALITY_2026_IMAGE = {
+  src: "images/artificial-intelligence-palantir-aip-revenue-quality-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Palantir_Technologies_logo.svg/1280px-Palantir_Technologies_logo.svg.png",
+  alt: "팔란티어 로고로 AIP와 미국 상업 매출의 질을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Palantir_Technologies_logo.svg",
+  width: 1280,
+  height: 720,
+};
+
 const US_STOCKS_APPLE_AI_IPHONE_CYCLE_2026_IMAGE = {
   src: "images/us-stocks-apple-ai-iphone-cycle-2026-1280.webp",
   alt: "애플 아이폰 교체 주기와 서비스 매출을 함께 보는 이미지",
@@ -1617,6 +1626,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "artificial-intelligence-palantir-aip-revenue-quality-2026": ["PLTR", "MSFT", "GOOGL", "ORCL"],
   "artificial-intelligence-agent-workflow-revenue-2026": ["MSFT", "CRM", "NOW", "GOOGL"],
   "space-technology-redwire-edge-cashflow-2026": ["RDW", "RKLB", "PL", "ASTS"],
   "space-technology-spacex-starlink-starship-ipo-2026": ["RKLB", "ASTS", "PL", "012450.KS"],
@@ -1654,6 +1664,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "artificial-intelligence-palantir-aip-revenue-quality-2026",
+    title: "팔란티어는 AIP 열기보다 미국 상업 매출의 질을 먼저 봐야 합니다",
+    desk: "인공지능",
+    author: "Marcus",
+    publishedAt: "2026-06-01T00:50:45+09:00",
+    summary: "팔란티어 PLTR은 AIP와 미국 상업 매출 성장으로 인공지능 대표 종목이 됐지만, 투자자는 고객 확장, 남은 계약가치, 정부 의존도, 밸류에이션 부담을 함께 확인해야 합니다.",
+    image: ARTIFICIAL_INTELLIGENCE_PALANTIR_AIP_REVENUE_QUALITY_2026_IMAGE,
+    video: { youtubeId: "c-UgOzgPUbo", title: "팔란티어 PLTR 성장 논리를 설명하는 한국어 롱폼 영상", channel: "가을바람월드", sourceUrl: "https://www.youtube.com/watch?v=c-UgOzgPUbo", thumbnailUrl: "https://i.ytimg.com/vi/c-UgOzgPUbo/hqdefault.jpg", description: "팔란티어의 AIP와 장기 성장 논리를 한국어로 설명하는 14분대 롱폼 분석 영상입니다." },
+  },
   {
     slug: "social-media-reddit-arpu-ai-licensing-2026",
     title: "레딧은 AI 데이터 가치보다 광고 ARPU와 검색 의존도를 먼저 봐야 합니다",

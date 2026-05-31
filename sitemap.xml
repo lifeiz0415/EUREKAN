@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/?desk=%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1317,6 +1317,12 @@
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/pages/traditional-energy-battalion-oil-debt-production-2026.html</loc>
     <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKAN/pages/artificial-intelligence-palantir-aip-revenue-quality-2026.html</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
