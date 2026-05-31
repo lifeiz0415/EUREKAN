@@ -3283,6 +3283,7 @@ const articleDeskNode = document.querySelector("#article-desk");
 const articleTitleNode = document.querySelector("#article-title");
 const articleMetaNode = document.querySelector("#article-meta");
 const articleBodyNode = document.querySelector("#article-body");
+const articleToolsNode = document.querySelector(".article-tools");
 let articleMainNode = articleViewNode?.querySelector(".article-main");
 let articleTocNode = document.querySelector("#article-toc");
 let articleRelatedStocksNode = document.querySelector("#article-related-stocks");
@@ -3447,6 +3448,13 @@ function ensureArticleLayout() {
 }
 
 ensureArticleLayout();
+
+function updateArticleToolsStickyState() {
+  if (!articleToolsNode || articleViewNode?.hidden) return;
+  const stickyTop = Number.parseFloat(window.getComputedStyle(articleToolsNode).top) || 0;
+  const isStuck = articleToolsNode.getBoundingClientRect().top <= stickyTop + 1 && window.scrollY > 0;
+  articleToolsNode.classList.toggle("article-tools--stuck", isStuck);
+}
 
 let dataFileHandle = null;
 let dataStore = createEmptyDataStore();
@@ -4508,6 +4516,8 @@ function setMainView(view) {
   searchFieldNode.hidden = false;
   listViewNode.hidden = view !== "list";
   articleViewNode.hidden = view !== "article";
+  if (view !== "article") articleToolsNode?.classList.remove("article-tools--stuck");
+  else window.requestAnimationFrame(updateArticleToolsStickyState);
 }
 
 function clearArticleContext() {
@@ -5691,12 +5701,14 @@ window.addEventListener("popstate", syncViewFromLocation);
 document.addEventListener("click", handleRouteLinkClick);
 document.addEventListener("click", handleArticleVideoPlay);
 window.addEventListener("scroll", scheduleArticleTocActiveUpdate, { passive: true });
+window.addEventListener("scroll", updateArticleToolsStickyState, { passive: true });
 window.addEventListener("resize", () => {
   clearTimeout(resizeRenderTimer);
   resizeRenderTimer = window.setTimeout(() => {
     scheduleDeskMenuModeUpdate();
     refreshArticleTocForCurrentPage();
     scheduleArticleTocActiveUpdate();
+    updateArticleToolsStickyState();
     if (!listViewNode.hidden && !searchNode.value.trim()) {
       renderCards(searchNode.value);
       return;
