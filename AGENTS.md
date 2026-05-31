@@ -11,7 +11,7 @@
 - 제품 형태: 정적 단일 페이지형 위키/매거진
 - 핵심 목표: 주식투자에 도움이 되는 39개 산업·기술·소비·금융 테마를 분야별 장문 페이지로 보여주는 읽기 중심 사이트
 - 현재 구현 원칙: 백엔드 없이 `.gitignore`, `_config.yml`, `README.md`, `STOCK.md`, `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`, `data.json`, `robots.txt`, `ads.txt`, `sitemap.xml`, `pages/`, `images/`, `agents/`만으로 동작한다.
-- 종목별 심화 리서치 원천은 로컬 전용 `research/` 폴더에 `티커.md` 형식으로 저장하되, 이 폴더는 Git 추적과 GitHub Pages 배포 대상에서 제외한다.
+- 종목별 심화 리서치 원천은 로컬 전용 `research/` 폴더에 `한글종목명_티커.md` 형식으로 저장하되, 이 폴더는 Git 추적과 GitHub Pages 배포 대상에서 제외한다.
 - 현재 운영 분야는 아래 39개 투자 테마 분야이며, 이전 broad 분야 체계는 최상위 분야로 사용하지 않는다.
 
 ## 현재 파일 구조
@@ -44,7 +44,7 @@ agents/
   README.md
   <desk>-agent-<name>.md
 research/  # 로컬 전용, Git 추적 및 GitHub Pages 배포 제외
-  <ticker>.md
+  <한글종목명>_<ticker>.md
 ```
 
 - 위 구조 외의 프로젝트 파일/폴더는 유지하지 않는다. 단, `research/`는 종목별 심화 리서치 원천을 저장하는 로컬 전용 작업 폴더로 예외 허용한다.
@@ -53,7 +53,8 @@ research/  # 로컬 전용, Git 추적 및 GitHub Pages 배포 제외
 - `agents/` 폴더는 분야별 전문가 페르소나 문서 저장용으로 남긴다.
 - `images/` 폴더는 외부 공개 원본 이미지를 글별 로컬 WebP 후보로 최적화해 저장하는 폴더로 유지한다.
 - `research/` 폴더는 종목별 히스토리, 사업 변천, 공시 요약, 자본조달, 경영진 변화, 주가 변곡점, 리스크, 비교 기업, 현재 확인 지표를 누적하는 로컬 전용 지식 베이스로 사용한다.
-- `research/` 안의 파일명은 미국 주식은 `NVDA.md`처럼 티커 대문자, 한국 주식은 `005930.md`처럼 종목 코드를 기본으로 한다.
+- `research/` 안의 파일명은 `한글종목명_티커.md` 형식을 기본으로 한다. 예를 들어 미국 주식은 `엔비디아_NVDA.md`, 한국 주식은 `.KS`, `.KQ` 접미사를 뺀 `삼성전자_005930.md`처럼 저장한다.
+- 종목명에 `/`처럼 파일명에 쓸 수 없는 문자가 있으면 `·`처럼 읽기 쉬운 구분 문자로 치환한다.
 - `research/`는 `.gitignore`와 `_config.yml`에서 제외해 GitHub 저장소 커밋과 GitHub Pages 배포에 포함하지 않는다.
 - 실제 사용자-facing 사이트는 루트의 `index.html`, `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`, `style.css`, `app.js`와 `pages/<slug>.html` 정적 글 페이지를 사용한다.
 - `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`은 애드센스 신청과 사이트 신뢰 확보를 위한 루트 정적 안내 페이지로 유지한다.
