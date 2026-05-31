@@ -39,6 +39,15 @@ const ARTIFICIAL_INTELLIGENCE_NVIDIA_RUBIN_AI_FACTORY_2026_IMAGE = {
   height: 720,
 };
 
+const CLOUD_COMPUTING_MICROSOFT_AZURE_AI_CAPEX_MARGIN_2026_IMAGE = {
+  src: "images/cloud-computing-microsoft-azure-ai-capex-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/6/64/Microsoft_Redmond_Campus_redevelopment_aerial_view%2C_Sept._2021.jpg",
+  alt: "마이크로소프트 레드먼드 캠퍼스 항공 사진으로 Azure 용량과 AI 투자 회수 속도를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Microsoft_Redmond_Campus_redevelopment_aerial_view,_Sept._2021.jpg",
+  width: 1280,
+  height: 720,
+};
+
 const ARTIFICIAL_INTELLIGENCE_PALANTIR_AIP_REVENUE_QUALITY_2026_IMAGE = {
   src: "images/artificial-intelligence-palantir-aip-revenue-quality-2026-1280.webp",
   externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Palantir_Technologies_logo.svg/1280px-Palantir_Technologies_logo.svg.png",
@@ -1626,6 +1635,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "cloud-computing-microsoft-azure-ai-capex-margin-2026": ["MSFT", "NVDA", "GOOGL", "AMZN"],
   "artificial-intelligence-palantir-aip-revenue-quality-2026": ["PLTR", "MSFT", "GOOGL", "ORCL"],
   "artificial-intelligence-agent-workflow-revenue-2026": ["MSFT", "CRM", "NOW", "GOOGL"],
   "space-technology-redwire-edge-cashflow-2026": ["RDW", "RKLB", "PL", "ASTS"],
@@ -1664,6 +1674,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "cloud-computing-microsoft-azure-ai-capex-margin-2026",
+    title: "마이크로소프트는 코파일럿보다 Azure 용량과 AI 투자 회수 속도를 먼저 봐야 합니다",
+    desk: "클라우드 컴퓨팅",
+    author: "Clara",
+    publishedAt: "2026-06-01T02:15:00+09:00",
+    summary: "마이크로소프트 MSFT는 AI 사업 ARR과 Azure 성장률이 강하지만, 투자자는 Copilot 이름보다 Microsoft Cloud 마진, Commercial RPO, 데이터센터 투자 회수 속도를 함께 확인해야 합니다.",
+    image: CLOUD_COMPUTING_MICROSOFT_AZURE_AI_CAPEX_MARGIN_2026_IMAGE,
+    video: { youtubeId: "H9RVOu3QnTQ", title: "마이크로소프트 AI와 클라우드 투자 포인트를 설명하는 한국어 롱폼 영상", channel: "Insightout", sourceUrl: "https://www.youtube.com/watch?v=H9RVOu3QnTQ", thumbnailUrl: "https://i.ytimg.com/vi/H9RVOu3QnTQ/hqdefault.jpg", description: "마이크로소프트의 AI, 클라우드, 주가 기회를 한국어로 설명하는 8분대 롱폼 분석 영상입니다." },
+  },
   {
     slug: "artificial-intelligence-palantir-aip-revenue-quality-2026",
     title: "팔란티어는 AIP 열기보다 미국 상업 매출의 질을 먼저 봐야 합니다",
