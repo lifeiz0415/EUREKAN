@@ -3229,13 +3229,11 @@ const APP_BASE_URL = new URL("./", import.meta.url);
 const IMAGE_DIRECTORY = "images";
 const IMAGE_EXTENSION = "webp";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
-const SPEECH_CHUNK_MAX_LENGTH = 70;
-const SPEECH_CHUNK_MIN_BREAK_LENGTH = 24;
-const SPEECH_QUEUE_AHEAD_COUNT = 4;
-const SPEECH_CHUNK_NEXT_DELAY_MS = 40;
+const SPEECH_QUEUE_AHEAD_COUNT = 32;
+const SPEECH_CHUNK_NEXT_DELAY_MS = 20;
 const SPEECH_KEEPALIVE_INTERVAL_MS = 6500;
-const SPEECH_CHUNK_FALLBACK_EXTRA_MS = 9000;
-const SPEECH_CHUNK_MIN_FALLBACK_MS = 14000;
+const SPEECH_CHUNK_FALLBACK_EXTRA_MS = 2500;
+const SPEECH_CHUNK_MIN_FALLBACK_MS = 5000;
 const CARD_IMAGE_WIDTHS = [220, 330, 500];
 const ARTICLE_IMAGE_WIDTHS = [500, 960, 1280];
 const CARD_IMAGE_SIZES = "(max-width: 640px) 42vw, (max-width: 960px) 28vw, 300px";
@@ -3407,6 +3405,8 @@ let dataFileHandle = null;
 let dataStore = createEmptyDataStore();
 let activePage = null;
 let activeArticleSpeechText = "";
+let activeSpeechTokenNodes = [];
+let activeSpeechHighlightNode = null;
 let activeUtterance = null;
 let activeSpeechUtterances = [];
 let activeSpeechChunks = [];
@@ -3448,6 +3448,8 @@ const ARTICLE_BODY_ASSET_SELECTOR = ARTICLE_BODY_ASSET_ATTRIBUTES.map((attribute
 const ARTICLE_BODY_ENHANCEMENT_SELECTOR = "script, .article-slider-section";
 const SPEECH_BLOCK_SELECTOR = "p, .article-subheading";
 const SPEECH_BLOCK_EXCLUDE_SELECTOR = "figcaption, script, noscript, iframe, .article-slider-section, .article-video, .article-media";
+const SPEECH_TOKEN_CLASS = "article-speech-token";
+const SPEECH_TOKEN_HIGHLIGHT_CLASS = "article-speech-token-highlight";
 
 
 function normalizeDesk(desk = "") {
@@ -4634,16 +4636,97 @@ function getNormalizedSpeechText(value = "") {
   return String(value || "").replace(/\s+/g, " ").trim();
 }
 
-function getArticleSpeechBlocks() {
+function getArticleSpeechBlockNodes() {
   if (!articleBodyNode) return [];
   return [...articleBodyNode.querySelectorAll(SPEECH_BLOCK_SELECTOR)]
-    .filter((node) => !node.closest(SPEECH_BLOCK_EXCLUDE_SELECTOR))
+    .filter((node) => !node.closest(SPEECH_BLOCK_EXCLUDE_SELECTOR));
+}
+
+function getArticleSpeechBlocks() {
+  return getArticleSpeechBlockNodes()
     .map((node) => ({ text: getNormalizedSpeechText(node.textContent) }))
     .filter((item) => item.text);
 }
 
+function clearActiveSpeechTokenHighlight() {
+  if (activeSpeechHighlightNode) {
+    activeSpeechHighlightNode.classList.remove(SPEECH_TOKEN_HIGHLIGHT_CLASS);
+    activeSpeechHighlightNode.removeAttribute("aria-current");
+  }
+  activeSpeechHighlightNode = null;
+}
+
+function updateSpeechTokenHighlight(index = activeSpeechCurrentIndex) {
+  if (!activeSpeechTokenNodes.length || (!isArticleSpeechActive() && !isVoiceProgressSeeking)) {
+    clearActiveSpeechTokenHighlight();
+    return;
+  }
+
+  const safeIndex = getNormalizedSpeechIndex(index);
+  const token = activeSpeechTokenNodes.find((item) => safeIndex >= item.start && safeIndex < item.end)
+    || activeSpeechTokenNodes.find((item) => safeIndex < item.end)
+    || activeSpeechTokenNodes[activeSpeechTokenNodes.length - 1];
+  if (!token || activeSpeechHighlightNode === token.node) return;
+
+  clearActiveSpeechTokenHighlight();
+  activeSpeechHighlightNode = token.node;
+  activeSpeechHighlightNode.classList.add(SPEECH_TOKEN_HIGHLIGHT_CLASS);
+  activeSpeechHighlightNode.setAttribute("aria-current", "true");
+}
+
+function prepareArticleSpeechTokens() {
+  clearActiveSpeechTokenHighlight();
+  activeSpeechTokenNodes = [];
+  let speechCursor = 0;
+
+  getArticleSpeechBlockNodes().forEach((blockNode) => {
+    const walker = document.createTreeWalker(blockNode, NodeFilter.SHOW_TEXT, {
+      acceptNode(textNode) {
+        const parent = textNode.parentElement;
+        if (!parent || parent.closest(`.${SPEECH_TOKEN_CLASS}`) || parent.closest(SPEECH_BLOCK_EXCLUDE_SELECTOR)) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return /\S/.test(textNode.nodeValue || "") ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      },
+    });
+    const textNodes = [];
+    let textNode = walker.nextNode();
+    while (textNode) {
+      textNodes.push(textNode);
+      textNode = walker.nextNode();
+    }
+
+    textNodes.forEach((node) => {
+      const text = node.nodeValue || "";
+      const fragment = document.createDocumentFragment();
+      const wordPattern = /\S+/g;
+      let cursor = 0;
+      let match = wordPattern.exec(text);
+      while (match) {
+        if (match.index > cursor) fragment.append(document.createTextNode(text.slice(cursor, match.index)));
+
+        const tokenText = match[0];
+        const tokenNode = document.createElement("span");
+        tokenNode.className = SPEECH_TOKEN_CLASS;
+        tokenNode.textContent = tokenText;
+        const start = speechCursor;
+        const end = start + tokenText.length;
+        activeSpeechTokenNodes.push({ node: tokenNode, start, end, text: tokenText });
+        speechCursor = end + 1;
+        fragment.append(tokenNode);
+        cursor = match.index + tokenText.length;
+        match = wordPattern.exec(text);
+      }
+
+      if (cursor < text.length) fragment.append(document.createTextNode(text.slice(cursor)));
+      node.parentNode?.replaceChild(fragment, node);
+    });
+  });
+}
+
 function getArticleSpeechText() {
-  return getArticleSpeechBlocks().map((item) => item.text).join("\n\n");
+  if (activeSpeechTokenNodes.length) return activeSpeechTokenNodes.map((item) => item.text).join(" ");
+  return getArticleSpeechBlocks().map((item) => item.text).join(" ");
 }
 
 function getArticleSpeechPayload(page) {
@@ -4653,6 +4736,7 @@ function getArticleSpeechPayload(page) {
 function renderArticleBodyAndVoice(articleHtml, page) {
   renderArticleHtmlContent(articleHtml, page);
   renderArticleRelatedStocks(page);
+  prepareArticleSpeechTokens();
   setVoiceReady(getArticleSpeechPayload(page), page);
 }
 
@@ -4745,6 +4829,10 @@ function setVoiceReady(text = "", page = activePage) {
   activeSpeechCurrentIndex = 0;
   isVoiceProgressSeeking = false;
   clearTimeout(speechSeekTimer);
+  if (!activeArticleSpeechText) {
+    clearActiveSpeechTokenHighlight();
+    activeSpeechTokenNodes = [];
+  }
 
   voiceButtonNode.disabled = !activeArticleSpeechText || !isSpeechSupported();
   voiceButtonNode.textContent = "음성으로 읽어주기";
@@ -4779,6 +4867,7 @@ function updateVoiceProgress(index = activeSpeechCurrentIndex) {
   voiceProgressNode.value = String(nextIndex);
   voiceProgressNode.setAttribute("aria-valuetext", `${percent}%`);
   if (voiceProgressLabelNode) voiceProgressLabelNode.textContent = `${percent}%`;
+  updateSpeechTokenHighlight(nextIndex);
 }
 
 function stopSpeechProgressTimer() {
@@ -4912,6 +5001,7 @@ function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) 
     activeSpeechStartOffset = 0;
     updateVoiceProgress(0);
   }
+  if (clearStatus || resetProgress) clearActiveSpeechTokenHighlight();
   if (clearStatus) voiceStatusNode.textContent = "";
 }
 
@@ -4919,44 +5009,18 @@ function createSpeechChunks(text = activeArticleSpeechText, startOffset = 0) {
   const chunks = [];
   let cursor = Math.max(0, Math.min(text.length, Number(startOffset) || 0));
 
-  while (cursor < text.length) {
-    while (cursor < text.length && /\s/.test(text[cursor])) cursor += 1;
-    if (cursor >= text.length) break;
+  while (cursor < text.length && /\s/.test(text[cursor])) {
+    cursor += 1;
+  }
 
-    let end = Math.min(text.length, cursor + SPEECH_CHUNK_MAX_LENGTH);
-    if (end < text.length) {
-      const slice = text.slice(cursor, end);
-      const punctuationBreak = Math.max(
-        slice.lastIndexOf("."),
-        slice.lastIndexOf("?"),
-        slice.lastIndexOf("!"),
-        slice.lastIndexOf("。"),
-        slice.lastIndexOf("？"),
-        slice.lastIndexOf("！"),
-        slice.lastIndexOf("…"),
-        slice.lastIndexOf("\n"),
-      );
-      const clauseBreak = Math.max(
-        slice.lastIndexOf(","),
-        slice.lastIndexOf("，"),
-        slice.lastIndexOf("、"),
-        slice.lastIndexOf(";"),
-        slice.lastIndexOf("；"),
-        slice.lastIndexOf(":"),
-        slice.lastIndexOf("："),
-      );
-      const fallbackBreak = Math.max(slice.lastIndexOf(" "), slice.lastIndexOf("\u00a0"));
-      const breakAt = punctuationBreak > SPEECH_CHUNK_MIN_BREAK_LENGTH
-        ? punctuationBreak
-        : clauseBreak > SPEECH_CHUNK_MIN_BREAK_LENGTH
-          ? clauseBreak
-          : fallbackBreak;
-      if (breakAt > SPEECH_CHUNK_MIN_BREAK_LENGTH) end = cursor + breakAt + 1;
-    }
-
-    const chunkText = text.slice(cursor, end).trim();
-    if (chunkText) chunks.push({ start: cursor, end: cursor + chunkText.length, text: chunkText });
-    cursor = end;
+  const wordPattern = /\S+/g;
+  wordPattern.lastIndex = cursor;
+  let match = wordPattern.exec(text);
+  while (match) {
+    const chunkText = match[0];
+    const start = match.index;
+    chunks.push({ start, end: start + chunkText.length, text: chunkText });
+    match = wordPattern.exec(text);
   }
 
   return chunks;
