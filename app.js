@@ -3361,16 +3361,6 @@ if (!articleRelatedStocksNode && articleViewNode && articleBodyNode) {
   articleRelatedStocksNode.setAttribute("aria-label", "관련종목");
 }
 
-if (articleRelatedStocksNode && articleBodyNode) {
-  const articleContentParentNode = articleBodyNode.parentElement;
-  const referenceNode = articleTocNode?.parentElement === articleContentParentNode
-    ? articleTocNode.nextSibling
-    : articleBodyNode;
-  if (articleContentParentNode && (articleRelatedStocksNode.parentElement !== articleContentParentNode || articleRelatedStocksNode.nextElementSibling !== articleBodyNode)) {
-    articleContentParentNode.insertBefore(articleRelatedStocksNode, referenceNode || articleBodyNode);
-  }
-}
-
 if (voiceButtonNode && !voiceProgressNode) {
   const progressWrapper = document.createElement("label");
   progressWrapper.className = "voice-progress";
@@ -3397,6 +3387,43 @@ function ensureArticleLayout() {
       .filter((node) => node !== articleMainNode);
     articleViewNode.prepend(articleMainNode);
     contentNodes.forEach((node) => articleMainNode.append(node));
+  }
+
+  const articleContentParentNode = articleBodyNode.parentElement;
+  if (!articleContentParentNode) return;
+
+  if (articleTocNode && articleTocNode.parentElement !== articleContentParentNode) {
+    articleContentParentNode.insertBefore(articleTocNode, articleBodyNode);
+  }
+
+  if (articleTocNode && articleTocNode.nextElementSibling !== articleBodyNode) {
+    articleContentParentNode.insertBefore(articleTocNode, articleBodyNode);
+  }
+
+  if (articleRelatedStocksNode) {
+    if (articleRelatedStocksNode.parentElement !== articleContentParentNode) {
+      articleContentParentNode.insertBefore(articleRelatedStocksNode, articleBodyNode.nextSibling);
+    }
+
+    if (articleBodyNode.nextElementSibling !== articleRelatedStocksNode) {
+      articleContentParentNode.insertBefore(articleRelatedStocksNode, articleBodyNode.nextSibling);
+    }
+  }
+
+  if (newsletterPanelNode) {
+    newsletterPanelNode.classList.remove("article-newsletter--top");
+    newsletterPanelNode.classList.add("article-newsletter--bottom");
+    if (newsletterPanelNode.parentElement !== articleContentParentNode) {
+      articleContentParentNode.append(newsletterPanelNode);
+    }
+
+    if (articleRelatedStocksNode?.parentElement === articleContentParentNode) {
+      if (articleRelatedStocksNode.nextElementSibling !== newsletterPanelNode) {
+        articleContentParentNode.insertBefore(newsletterPanelNode, articleRelatedStocksNode.nextSibling);
+      }
+    } else if (articleBodyNode.nextElementSibling !== newsletterPanelNode) {
+      articleContentParentNode.insertBefore(newsletterPanelNode, articleBodyNode.nextSibling);
+    }
   }
 }
 
