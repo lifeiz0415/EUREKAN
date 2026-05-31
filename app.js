@@ -3452,6 +3452,7 @@ const SPEECH_BLOCK_SELECTOR = "p, .article-subheading";
 const SPEECH_BLOCK_EXCLUDE_SELECTOR = "figcaption, script, noscript, iframe, .article-slider-section, .article-video, .article-media";
 const SPEECH_TOKEN_CLASS = "article-speech-token";
 const SPEECH_TOKEN_HIGHLIGHT_CLASS = "article-speech-token-highlight";
+const SPEECH_BLOCK_HIGHLIGHT_CLASS = "article-speech-block-highlight";
 
 
 function normalizeDesk(desk = "") {
@@ -4655,6 +4656,9 @@ function clearActiveSpeechTokenHighlight() {
     node.classList.remove(SPEECH_TOKEN_HIGHLIGHT_CLASS);
     node.removeAttribute("aria-current");
   });
+  articleBodyNode?.querySelectorAll(`.${SPEECH_BLOCK_HIGHLIGHT_CLASS}`).forEach((node) => {
+    node.classList.remove(SPEECH_BLOCK_HIGHLIGHT_CLASS);
+  });
   activeSpeechHighlightNodes = [];
 }
 
@@ -4667,9 +4671,12 @@ function updateSpeechChunkHighlight(start = activeSpeechCurrentIndex, end = star
   const range = getSpeechSentenceHighlightRange(start, end);
   const safeStart = range.start;
   const safeEnd = Math.max(safeStart + 1, range.end);
-  const nextNodes = activeSpeechTokenNodes
-    .filter((token) => token.end > safeStart && token.start < safeEnd)
-    .map((token) => token.node);
+  const nextTokenItems = activeSpeechTokenNodes
+    .filter((token) => token.end > safeStart && token.start < safeEnd);
+  const nextNodes = nextTokenItems.map((token) => token.node);
+  const nextBlockNodes = [...new Set(nextTokenItems
+    .map((token) => token.node.closest(SPEECH_BLOCK_SELECTOR))
+    .filter(Boolean))];
 
   if (
     nextNodes.length === activeSpeechHighlightNodes.length
@@ -4684,6 +4691,7 @@ function updateSpeechChunkHighlight(start = activeSpeechCurrentIndex, end = star
     node.classList.add(SPEECH_TOKEN_HIGHLIGHT_CLASS);
     if (index === 0) node.setAttribute("aria-current", "true");
   });
+  nextBlockNodes.forEach((node) => node.classList.add(SPEECH_BLOCK_HIGHLIGHT_CLASS));
 }
 
 function getSpeechSentenceHighlightRange(index = activeSpeechCurrentIndex, fallbackEnd = index) {
@@ -5199,6 +5207,8 @@ function queueSpeechChunks(runId, startChunkIndex = activeSpeechChunkIndex) {
   activeSpeechQueuedUntilIndex = chunkIndex;
   activeUtterance = utterance;
   activeSpeechUtterances = [utterance];
+  updateVoiceProgress(activeSpeechChunks[chunkIndex].start);
+  updateSpeechChunkHighlight(activeSpeechChunks[chunkIndex].start, activeSpeechChunks[chunkIndex].end);
   scheduleSpeechChunkFallback(runId, chunkIndex, activeSpeechChunks[chunkIndex]);
   window.speechSynthesis.speak(utterance);
 }
@@ -5229,8 +5239,9 @@ function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
   activeSpeechQueuedUntilIndex = -1;
   activeUtterance = null;
   activeSpeechStartOffset = chunks[0].start;
-  updateVoiceProgress(chunks[0].start);
   clearActiveSpeechTokenHighlight();
+  updateVoiceProgress(chunks[0].start);
+  updateSpeechChunkHighlight(chunks[0].start, chunks[0].end);
 
   stopSpeechKeepAliveTimer();
   clearSpeechChunkFallbackTimer();
