@@ -224,7 +224,7 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/?desk=%EC%86%8C%EC%85%9C%EB%AF%B8%EB%94%94%EC%96%B4</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1286,6 +1286,12 @@
   </url>
   <url>
     <loc>https://lifeiz0415.github.io/EUREKAN/pages/crypto-blockchain-bitmine-eth-treasury-staking-2026.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lifeiz0415.github.io/EUREKAN/pages/social-media-reddit-arpu-ai-licensing-2026.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

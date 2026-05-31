@@ -1332,6 +1332,15 @@ const SOCIAL_MEDIA_AD_PRICING_TRUST_2026_IMAGE = {
   height: 720,
 };
 
+const SOCIAL_MEDIA_REDDIT_ARPU_AI_LICENSING_2026_IMAGE = {
+  src: "images/social-media-reddit-arpu-ai-licensing-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Reddit_logo.svg/1280px-Reddit_logo.svg.png",
+  alt: "레딧 로고 이미지로 RDDT의 광고 ARPU와 AI 데이터 라이선스 가치를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Reddit_logo.svg",
+  width: 1280,
+  height: 720,
+};
+
 const REAL_ESTATE_REITS_LEASE_DEBT_MATURITY_2026_IMAGE = {
   src: "images/real-estate-reits-lease-debt-maturity-2026-1280.webp",
   alt: "부동산·리츠는 배당률보다 임대료 재계약과 차입 만기가 먼저입니다 내용을 설명하는 부동산·리츠 대표 이미지",
@@ -1537,6 +1546,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "RGTI": { name: "리게티 컴퓨팅", market: "미국", ticker: "RGTI", url: "https://m.stock.naver.com/worldstock/stock/RGTI.O/total" },
   "RIOT": { name: "라이엇 플랫폼즈", market: "미국", ticker: "RIOT", url: "https://m.stock.naver.com/worldstock/stock/RIOT.O/total" },
   "RIVN": { name: "리비안", market: "미국", ticker: "RIVN", url: "https://m.stock.naver.com/worldstock/stock/RIVN.O/total" },
+  "RDDT": { name: "레딧", market: "미국", ticker: "RDDT", url: "https://m.stock.naver.com/worldstock/stock/RDDT.K/total" },
   "RDW": { name: "레드와이어", market: "미국", ticker: "RDW", url: "https://m.stock.naver.com/worldstock/stock/RDW/total" },
   "RKLB": { name: "로켓 랩", market: "미국", ticker: "RKLB", url: "https://m.stock.naver.com/worldstock/stock/RKLB.O/total" },
   "ROK": { name: "로크웰 오토메이션", market: "미국", ticker: "ROK", url: "https://m.stock.naver.com/worldstock/stock/ROK/total" },
@@ -1596,7 +1606,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
   "헬스케어·바이오테크": ["LLY", "ABBV", "ABT", "207940.KS"],
   "생체인식": ["YOU", "IDAI", "AAPL", "012750.KS"],
   "빅데이터": ["PLTR", "SNOW", "DDOG", "005930.KS"],
-  "소셜미디어": ["META", "SNAP", "PINS", "035720.KS"],
+  "소셜미디어": ["RDDT", "META", "SNAP", "PINS"],
   "부동산·리츠": ["PLD", "AMT", "O", "395400.KS"],
   "웨어러블": ["AAPL", "GRMN", "WLDS", "005930.KS"],
   "에듀테크": ["DUOL", "COUR", "BNED", "EDU"],
@@ -1640,9 +1650,20 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "crypto-blockchain-coinbase-clarity-act-2026": ["COIN", "HOOD", "MSTR", "MARA"],
   "crypto-blockchain-american-bitcoin-sats-per-share-2026": ["ABTC", "HUT", "MARA", "RIOT"],
   "crypto-blockchain-bitmine-eth-treasury-staking-2026": ["BMNR", "SBET", "COIN", "MSTR"],
+  "social-media-reddit-arpu-ai-licensing-2026": ["RDDT", "META", "SNAP", "PINS"],
 };
 
 const featuredPages = [
+  {
+    slug: "social-media-reddit-arpu-ai-licensing-2026",
+    title: "레딧은 AI 데이터 가치보다 광고 ARPU와 검색 의존도를 먼저 봐야 합니다",
+    desk: "소셜미디어",
+    author: "Pulse",
+    publishedAt: "2026-05-31T23:44:22+09:00",
+    summary: "레딧 RDDT는 커뮤니티 데이터와 AI 라이선스 기대가 크지만, 투자자는 DAUq 성장보다 광고 ARPU, 미국·해외 수익화 격차, 검색 유입 의존도, 조정 EBITDA 지속성을 함께 확인해야 합니다.",
+    image: SOCIAL_MEDIA_REDDIT_ARPU_AI_LICENSING_2026_IMAGE,
+    video: { youtubeId: "aPdOQrzU6AQ", title: "레딧 RDDT의 흑자 전환과 AI 데이터 수익화를 설명하는 한국어 롱폼 영상", channel: "집나간 김PD", sourceUrl: "https://www.youtube.com/watch?v=aPdOQrzU6AQ", thumbnailUrl: "https://i.ytimg.com/vi/aPdOQrzU6AQ/hqdefault.jpg", description: "레딧의 흑자 전환, 광고 수익화, AI 데이터 수익화 기대를 한국어로 설명하는 9분대 롱폼 분석 영상입니다." },
+  },
   {
     slug: "big-data-snowflake-ai-consumption-margin-2026",
     title: "스노우플레이크는 AI 기대보다 소비형 매출과 클라우드 원가를 먼저 봐야 합니다",
