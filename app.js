@@ -1014,6 +1014,14 @@ const SPACE_TECHNOLOGY_ROCKET_LAB_BACKLOG_CASHFLOW_2026_IMAGE = {
   height: 720,
 };
 
+const SPACE_TECHNOLOGY_REDWIRE_EDGE_CASHFLOW_2026_IMAGE = {
+  src: "images/space-technology-redwire-edge-cashflow-2026-1280.webp",
+  alt: "레드와이어는 우주 인프라 기대보다 Edge 인수 뒤 현금흐름 전환을 먼저 봐야 합니다 내용을 설명하는 우주 기술 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Testing_Gateway%E2%80%99s_Roll-Out_Solar_Array_(jsc2025e069609).jpg",
+  width: 1280,
+  height: 720,
+};
+
 const RENEWABLE_ENERGY_PPA_GRID_CONNECTION_2026_IMAGE = {
   src: "images/renewable-energy-ppa-grid-connection-2026-1280.webp",
   alt: "재생에너지는 설치량보다 전력구매계약 단가와 계통 접속이 수익률을 정합니다 내용을 설명하는 재생에너지 대표 이미지",
@@ -1405,6 +1413,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "RGTI": { name: "리게티 컴퓨팅", market: "미국", ticker: "RGTI", url: "https://m.stock.naver.com/worldstock/stock/RGTI.O/total" },
   "RIOT": { name: "라이엇 플랫폼즈", market: "미국", ticker: "RIOT", url: "https://m.stock.naver.com/worldstock/stock/RIOT.O/total" },
   "RIVN": { name: "리비안", market: "미국", ticker: "RIVN", url: "https://m.stock.naver.com/worldstock/stock/RIVN.O/total" },
+  "RDW": { name: "레드와이어", market: "미국", ticker: "RDW", url: "https://m.stock.naver.com/worldstock/stock/RDW/total" },
   "RKLB": { name: "로켓 랩", market: "미국", ticker: "RKLB", url: "https://m.stock.naver.com/worldstock/stock/RKLB.O/total" },
   "ROK": { name: "로크웰 오토메이션", market: "미국", ticker: "ROK", url: "https://m.stock.naver.com/worldstock/stock/ROK/total" },
   "RSG": { name: "리퍼블릭 서비스", market: "미국", ticker: "RSG", url: "https://m.stock.naver.com/worldstock/stock/RSG/total" },
@@ -1472,6 +1481,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
   "artificial-intelligence-agent-workflow-revenue-2026": ["MSFT", "CRM", "NOW", "GOOGL"],
+  "space-technology-redwire-edge-cashflow-2026": ["RDW", "RKLB", "PL", "ASTS"],
   "space-technology-spacex-starlink-starship-ipo-2026": ["RKLB", "ASTS", "PL", "012450.KS"],
   "space-technology-rocket-lab-backlog-cashflow-2026": ["RKLB", "PL", "ASTS", "012450.KS"],
   "us-stocks-nvidia-ai-margin-2026": ["NVDA", "AVGO", "AMD", "005930.KS"],
@@ -1493,6 +1503,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "space-technology-redwire-edge-cashflow-2026",
+    title: "레드와이어는 우주 인프라 기대보다 Edge 인수 뒤 현금흐름 전환을 먼저 봐야 합니다",
+    desk: "우주 기술",
+    author: "Orion",
+    publishedAt: "2026-05-31T18:36:08+09:00",
+    summary: "레드와이어 RDW는 우주 구조물과 방산 자율 시스템이 섞인 회사로 바뀌고 있습니다. 2026년 1분기 백로그, 매출총이익률, 조정 EBITDA, 잉여현금흐름을 함께 확인해야 합니다.",
+    image: SPACE_TECHNOLOGY_REDWIRE_EDGE_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "Pz2oIMFfKRE", title: "레드와이어 우주 인프라 사업을 설명하는 한국어 롱폼 분석 영상", channel: "위즈덤투스", sourceUrl: "https://www.youtube.com/watch?v=Pz2oIMFfKRE", thumbnailUrl: "https://i.ytimg.com/vi/Pz2oIMFfKRE/hqdefault.jpg", description: "레드와이어가 위성, 로켓, 우주 인프라 공급망에서 어떤 역할을 하는지 장시간 설명하는 한국어 롱폼 분석 영상입니다." },
+  },
   {
     slug: "space-technology-rocket-lab-backlog-cashflow-2026",
     title: "로켓 랩 전망은 Neutron 첫 비행보다 백로그가 현금흐름으로 바뀌는 속도에 달려 있습니다",
