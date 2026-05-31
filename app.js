@@ -4242,12 +4242,12 @@ function getDeskAgentName(pageOrDesk) {
 function formatPublishedAt(value = "") {
   const match = String(value).match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})/);
   if (!match) return value;
-  const [, year, month, day, hour, minute, second] = match;
-  return `${year}.${month}.${day} ${hour}:${minute}:${second} KST`;
+  const [, year, month, day, hour, minute] = match;
+  return `${year}.${month}.${day} ${hour}:${minute}`;
 }
 
 function getArticleMetaText(page) {
-  return `작성자 ${getDeskAgentName(page)} · 발행시각 ${formatPublishedAt(page.publishedAt)}`;
+  return `${getDeskAgentName(page)} · ${formatPublishedAt(page.publishedAt)}`;
 }
 
 function isPagePublished(page, now = Date.now()) {
