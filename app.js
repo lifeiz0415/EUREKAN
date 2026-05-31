@@ -4883,6 +4883,25 @@ function placeArticleVideoSection(html = "") {
   }
 }
 
+function normalizeArticleVideoSection(page) {
+  const videoNode = articleBodyNode.querySelector(".article-video");
+  if (!videoNode) return;
+
+  const video = getPageVideo(page);
+  if (!video) return;
+
+  const hasPoster = Boolean(videoNode.querySelector(".article-video__poster[data-video-play] img"));
+  const currentYoutubeId = getYouTubeIdFromValue(videoNode.dataset.youtubeId || "");
+  if (hasPoster && currentYoutubeId === video.youtubeId) return;
+
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = renderArticleVideo(page).trim();
+  const normalizedNode = wrapper.firstElementChild;
+  if (!normalizedNode) return;
+
+  videoNode.replaceWith(normalizedNode);
+}
+
 function placeArticleSliderSection(html = "", sectionKey = "", headingPosition = null) {
   if (!sectionKey) {
     insertArticleBodySection(html);
@@ -4922,6 +4941,7 @@ function renderArticleEnhancements(page) {
   placeNewsletterPanel();
   placeArticleSliderSection(relatedSection, "related", 3);
   placeArticleVideoSection(videoSection);
+  normalizeArticleVideoSection(page);
   placeArticleSliderSection(trendingSection, "trending");
   renderArticleTocFromBody();
   refreshSliderLoops();
