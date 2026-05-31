@@ -3229,9 +3229,10 @@ const APP_BASE_URL = new URL("./", import.meta.url);
 const IMAGE_DIRECTORY = "images";
 const IMAGE_EXTENSION = "webp";
 const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
-const SPEECH_CHUNK_MAX_LENGTH = 160;
-const SPEECH_CHUNK_MIN_BREAK_LENGTH = 55;
-const SPEECH_CHUNK_NEXT_DELAY_MS = 120;
+const SPEECH_CHUNK_MAX_LENGTH = 70;
+const SPEECH_CHUNK_MIN_BREAK_LENGTH = 24;
+const SPEECH_QUEUE_AHEAD_COUNT = 4;
+const SPEECH_CHUNK_NEXT_DELAY_MS = 40;
 const SPEECH_KEEPALIVE_INTERVAL_MS = 6500;
 const SPEECH_CHUNK_FALLBACK_EXTRA_MS = 9000;
 const SPEECH_CHUNK_MIN_FALLBACK_MS = 14000;
@@ -3406,12 +3407,11 @@ let dataFileHandle = null;
 let dataStore = createEmptyDataStore();
 let activePage = null;
 let activeArticleSpeechText = "";
-let activeSpeechHighlightSegments = [];
-let activeSpeechHighlightNode = null;
 let activeUtterance = null;
 let activeSpeechUtterances = [];
 let activeSpeechChunks = [];
 let activeSpeechChunkIndex = 0;
+let activeSpeechQueuedUntilIndex = -1;
 let activeSpeechStartOffset = 0;
 let activeSpeechCurrentIndex = 0;
 let isVoiceProgressSeeking = false;
@@ -3446,8 +3446,8 @@ const ARTICLE_BODY_SELECTOR = "#article-body";
 const ARTICLE_BODY_ASSET_ATTRIBUTES = ["src", "href", "poster"];
 const ARTICLE_BODY_ASSET_SELECTOR = ARTICLE_BODY_ASSET_ATTRIBUTES.map((attributeName) => `[${attributeName}]`).join(", ");
 const ARTICLE_BODY_ENHANCEMENT_SELECTOR = "script, .article-slider-section";
-const SPEECH_HIGHLIGHT_SELECTOR = "p, .article-subheading";
-const SPEECH_HIGHLIGHT_EXCLUDE_SELECTOR = "figcaption, script, noscript, iframe, .article-slider-section, .article-video, .article-media";
+const SPEECH_BLOCK_SELECTOR = "p, .article-subheading";
+const SPEECH_BLOCK_EXCLUDE_SELECTOR = "figcaption, script, noscript, iframe, .article-slider-section, .article-video, .article-media";
 
 
 function normalizeDesk(desk = "") {
@@ -4636,60 +4636,10 @@ function getNormalizedSpeechText(value = "") {
 
 function getArticleSpeechBlocks() {
   if (!articleBodyNode) return [];
-  return [...articleBodyNode.querySelectorAll(SPEECH_HIGHLIGHT_SELECTOR)]
-    .filter((node) => !node.closest(SPEECH_HIGHLIGHT_EXCLUDE_SELECTOR))
-    .map((node) => ({ node, text: getNormalizedSpeechText(node.textContent) }))
+  return [...articleBodyNode.querySelectorAll(SPEECH_BLOCK_SELECTOR)]
+    .filter((node) => !node.closest(SPEECH_BLOCK_EXCLUDE_SELECTOR))
+    .map((node) => ({ text: getNormalizedSpeechText(node.textContent) }))
     .filter((item) => item.text);
-}
-
-function clearActiveSpeechHighlight() {
-  if (activeSpeechHighlightNode) {
-    activeSpeechHighlightNode.classList.remove("article-speech-highlight");
-    activeSpeechHighlightNode.removeAttribute("aria-current");
-  }
-  activeSpeechHighlightNode = null;
-}
-
-function buildSpeechHighlightSegments(pageTitle = "") {
-  clearActiveSpeechHighlight();
-  activeSpeechHighlightSegments = [];
-
-  let cursor = 0;
-  getArticleSpeechBlocks().forEach(({ node, text }) => {
-    const start = cursor;
-    const end = start + text.length;
-    activeSpeechHighlightSegments.push({ node, start, end });
-    cursor = end + 2;
-  });
-}
-
-function getSpeechHighlightIndex(progressIndex = activeSpeechCurrentIndex) {
-  const safeIndex = Number(progressIndex);
-  if (!Number.isFinite(safeIndex)) return 0;
-  return getNormalizedSpeechIndex(safeIndex);
-}
-
-function updateSpeechHighlight(progressIndex = activeSpeechCurrentIndex) {
-  if (!isArticleSpeechActive() && !isVoiceProgressSeeking) {
-    clearActiveSpeechHighlight();
-    return;
-  }
-
-  if (!activeSpeechHighlightSegments.length) {
-    clearActiveSpeechHighlight();
-    return;
-  }
-
-  const highlightIndex = getSpeechHighlightIndex(progressIndex);
-  const segment = activeSpeechHighlightSegments.find((item) => highlightIndex >= item.start && highlightIndex < item.end)
-    || activeSpeechHighlightSegments.find((item) => highlightIndex < item.end)
-    || activeSpeechHighlightSegments[activeSpeechHighlightSegments.length - 1];
-
-  if (!segment || activeSpeechHighlightNode === segment.node) return;
-  clearActiveSpeechHighlight();
-  activeSpeechHighlightNode = segment.node;
-  activeSpeechHighlightNode.classList.add("article-speech-highlight");
-  activeSpeechHighlightNode.setAttribute("aria-current", "true");
 }
 
 function getArticleSpeechText() {
@@ -4703,7 +4653,6 @@ function getArticleSpeechPayload(page) {
 function renderArticleBodyAndVoice(articleHtml, page) {
   renderArticleHtmlContent(articleHtml, page);
   renderArticleRelatedStocks(page);
-  buildSpeechHighlightSegments(page?.title);
   setVoiceReady(getArticleSpeechPayload(page), page);
 }
 
@@ -4830,7 +4779,6 @@ function updateVoiceProgress(index = activeSpeechCurrentIndex) {
   voiceProgressNode.value = String(nextIndex);
   voiceProgressNode.setAttribute("aria-valuetext", `${percent}%`);
   if (voiceProgressLabelNode) voiceProgressLabelNode.textContent = `${percent}%`;
-  updateSpeechHighlight(nextIndex);
 }
 
 function stopSpeechProgressTimer() {
@@ -4848,12 +4796,17 @@ function stopSpeechKeepAliveTimer() {
   speechKeepAliveTimer = 0;
 }
 
+function detachSpeechUtteranceHandlers(utterance) {
+  if (!utterance) return;
+  utterance.onstart = null;
+  utterance.onboundary = null;
+  utterance.onend = null;
+  utterance.onerror = null;
+}
+
 function detachActiveSpeechUtteranceHandlers() {
-  if (!activeUtterance) return;
-  activeUtterance.onstart = null;
-  activeUtterance.onboundary = null;
-  activeUtterance.onend = null;
-  activeUtterance.onerror = null;
+  activeSpeechUtterances.forEach(detachSpeechUtteranceHandlers);
+  detachSpeechUtteranceHandlers(activeUtterance);
 }
 
 function startSpeechKeepAliveTimer(runId) {
@@ -4898,8 +4851,9 @@ function scheduleSpeechChunkFallback(runId, chunkIndex, chunk) {
     updateVoiceProgress(chunk.end);
     activeUtterance = null;
     activeSpeechUtterances = [];
+    activeSpeechQueuedUntilIndex = chunkIndex;
     if (isSpeechSupported()) window.speechSynthesis.cancel();
-    window.setTimeout(() => speakSpeechChunk(runId, chunkIndex + 1), SPEECH_CHUNK_NEXT_DELAY_MS);
+    window.setTimeout(() => queueSpeechChunks(runId, chunkIndex + 1), SPEECH_CHUNK_NEXT_DELAY_MS);
   }, fallbackDelay);
 }
 
@@ -4952,12 +4906,12 @@ function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) 
   activeSpeechUtterances = [];
   activeSpeechChunks = [];
   activeSpeechChunkIndex = 0;
+  activeSpeechQueuedUntilIndex = -1;
   voiceButtonNode.textContent = "음성으로 읽어주기";
   if (resetProgress) {
     activeSpeechStartOffset = 0;
     updateVoiceProgress(0);
   }
-  if (clearStatus || resetProgress) clearActiveSpeechHighlight();
   if (clearStatus) voiceStatusNode.textContent = "";
 }
 
@@ -5013,28 +4967,25 @@ function finishArticleSpeech(runId) {
   stopSpeechProgressTimer();
   stopSpeechKeepAliveTimer();
   clearSpeechChunkFallbackTimer();
+  detachActiveSpeechUtteranceHandlers();
   activeUtterance = null;
   activeSpeechUtterances = [];
+  activeSpeechQueuedUntilIndex = -1;
   isArticleSpeechPlaying = false;
   updateVoiceProgress(activeArticleSpeechText.length);
   voiceButtonNode.textContent = "음성으로 읽어주기";
   voiceStatusNode.textContent = "읽기가 끝났습니다.";
 }
 
-function speakSpeechChunk(runId, chunkIndex = 0) {
-  if (runId !== speechRunId || isArticleSpeechStopping) return;
+function removeSpeechUtterance(utterance) {
+  activeSpeechUtterances = activeSpeechUtterances.filter((item) => item !== utterance);
+}
+
+function createSpeechUtterance(runId, chunkIndex) {
   const chunk = activeSpeechChunks[chunkIndex];
-  if (!chunk) {
-    finishArticleSpeech(runId);
-    return;
-  }
+  if (!chunk) return null;
 
   const utterance = new SpeechSynthesisUtterance(chunk.text);
-  activeUtterance = utterance;
-  activeSpeechUtterances = [utterance];
-  activeSpeechChunkIndex = chunkIndex;
-  activeSpeechStartOffset = chunk.start;
-  resetSpeechProgressAnchor(chunk.start);
 
   utterance.lang = "ko-KR";
   utterance.rate = 1;
@@ -5068,30 +5019,47 @@ function speakSpeechChunk(runId, chunkIndex = 0) {
     stopSpeechProgressTimer();
     stopSpeechKeepAliveTimer();
     updateVoiceProgress(chunk.end);
-    activeUtterance = null;
-    activeSpeechUtterances = [];
-    window.setTimeout(() => speakSpeechChunk(runId, chunkIndex + 1), SPEECH_CHUNK_NEXT_DELAY_MS);
+    removeSpeechUtterance(utterance);
+    if (activeUtterance === utterance) activeUtterance = null;
+    if (chunkIndex >= activeSpeechChunks.length - 1) {
+      finishArticleSpeech(runId);
+      return;
+    }
+    queueSpeechChunks(runId, chunkIndex + 1);
   };
   utterance.onerror = () => {
     if (runId !== speechRunId) return;
     clearSpeechChunkFallbackTimer();
     stopSpeechProgressTimer();
     stopSpeechKeepAliveTimer();
-    activeUtterance = null;
-    activeSpeechUtterances = [];
-    isArticleSpeechPlaying = false;
-    voiceButtonNode.textContent = "음성으로 읽어주기";
-    if (!isArticleSpeechStopping) voiceStatusNode.textContent = "음성 읽기를 시작하지 못했습니다.";
+    removeSpeechUtterance(utterance);
+    if (activeUtterance === utterance) activeUtterance = null;
+    if (!isArticleSpeechStopping) {
+      updateVoiceProgress(chunk.end);
+      queueSpeechChunks(runId, chunkIndex + 1);
+    }
   };
 
-  startSpeechProgressTimer(runId, chunk.start, chunk.end);
-  scheduleSpeechChunkFallback(runId, chunkIndex, chunk);
-  window.speechSynthesis.speak(utterance);
+  return utterance;
 }
 
-function speakSpeechQueue(runId) {
+function queueSpeechChunks(runId, startChunkIndex = activeSpeechChunkIndex) {
   if (runId !== speechRunId || isArticleSpeechStopping) return;
-  speakSpeechChunk(runId, activeSpeechChunkIndex);
+
+  const firstIndex = Math.max(0, Number(startChunkIndex) || 0);
+  const targetIndex = Math.min(activeSpeechChunks.length - 1, firstIndex + SPEECH_QUEUE_AHEAD_COUNT - 1);
+  while (activeSpeechQueuedUntilIndex < targetIndex) {
+    const nextIndex = activeSpeechQueuedUntilIndex + 1;
+    const utterance = createSpeechUtterance(runId, nextIndex);
+    if (!utterance) break;
+    activeSpeechUtterances.push(utterance);
+    activeSpeechQueuedUntilIndex = nextIndex;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  if (!activeSpeechUtterances.length && firstIndex >= activeSpeechChunks.length) {
+    finishArticleSpeech(runId);
+  }
 }
 
 function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
@@ -5116,6 +5084,7 @@ function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
   activeSpeechChunks = chunks;
   activeSpeechUtterances = [];
   activeSpeechChunkIndex = 0;
+  activeSpeechQueuedUntilIndex = -1;
   activeUtterance = null;
   activeSpeechStartOffset = chunks[0].start;
   updateVoiceProgress(chunks[0].start);
@@ -5124,7 +5093,7 @@ function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
   clearSpeechChunkFallbackTimer();
   if (isSpeechSupported()) window.speechSynthesis.cancel();
   voiceButtonNode.textContent = "음성읽기 중지하기";
-  const beginSpeaking = () => speakSpeechQueue(runId);
+  const beginSpeaking = () => queueSpeechChunks(runId, 0);
   if (window.speechSynthesis.getVoices().length) {
     window.setTimeout(beginSpeaking, 80);
     return;
