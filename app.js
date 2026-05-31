@@ -3450,21 +3450,7 @@ function ensureArticleLayout() {
     }
   }
 
-  if (newsletterPanelNode) {
-    newsletterPanelNode.classList.remove("article-newsletter--top");
-    newsletterPanelNode.classList.add("article-newsletter--bottom");
-    if (newsletterPanelNode.parentElement !== articleContentParentNode) {
-      articleContentParentNode.append(newsletterPanelNode);
-    }
-
-    if (articleRelatedStocksNode?.parentElement === articleContentParentNode) {
-      if (articleRelatedStocksNode.nextElementSibling !== newsletterPanelNode) {
-        articleContentParentNode.insertBefore(newsletterPanelNode, articleRelatedStocksNode.nextSibling);
-      }
-    } else if (articleBodyNode.nextElementSibling !== newsletterPanelNode) {
-      articleContentParentNode.insertBefore(newsletterPanelNode, articleBodyNode.nextSibling);
-    }
-  }
+  if (newsletterPanelNode && !newsletterPanelNode.parentElement) articleContentParentNode.append(newsletterPanelNode);
 }
 
 ensureArticleLayout();
@@ -3523,7 +3509,7 @@ const ARTICLE_BODY_ASSET_ATTRIBUTES = ["src", "href", "poster"];
 const ARTICLE_BODY_ASSET_SELECTOR = ARTICLE_BODY_ASSET_ATTRIBUTES.map((attributeName) => `[${attributeName}]`).join(", ");
 const ARTICLE_BODY_ENHANCEMENT_SELECTOR = "script, .article-slider-section";
 const SPEECH_BLOCK_SELECTOR = "p, .article-subheading";
-const SPEECH_BLOCK_EXCLUDE_SELECTOR = "figcaption, script, noscript, iframe, .article-slider-section, .article-video, .article-media";
+const SPEECH_BLOCK_EXCLUDE_SELECTOR = "figcaption, script, noscript, iframe, .article-newsletter, .article-slider-section, .article-video, .article-media";
 const SPEECH_TOKEN_CLASS = "article-speech-token";
 const SPEECH_TOKEN_HIGHLIGHT_CLASS = "article-speech-token-highlight";
 const SPEECH_BLOCK_HIGHLIGHT_CLASS = "article-speech-block-highlight";
@@ -4687,9 +4673,29 @@ function insertArticleBodySection(html = "", anchorIndex = null) {
   else articleBodyNode.insertAdjacentHTML("beforeend", html);
 }
 
-function getArticleVideoAnchorNode() {
+function getArticleHeadingAnchorNode(position = 1) {
   const headings = [...articleBodyNode.querySelectorAll(".article-subheading")];
-  return headings[3] || null;
+  return headings[Math.max(0, position - 1)] || null;
+}
+
+function getArticleVideoAnchorNode() {
+  return getArticleHeadingAnchorNode(4);
+}
+
+function placeNewsletterPanel() {
+  if (!newsletterPanelNode) return;
+  newsletterPanelNode.classList.remove("article-newsletter--top");
+  newsletterPanelNode.classList.add("article-newsletter--bottom");
+
+  const anchorNode = getArticleHeadingAnchorNode(2);
+  if (anchorNode) {
+    if (anchorNode.nextElementSibling !== newsletterPanelNode) {
+      anchorNode.insertAdjacentElement("afterend", newsletterPanelNode);
+    }
+    return;
+  }
+
+  if (articleBodyNode.lastElementChild !== newsletterPanelNode) articleBodyNode.append(newsletterPanelNode);
 }
 
 function placeArticleVideoSection(html = "") {
@@ -4719,20 +4725,46 @@ function placeArticleVideoSection(html = "") {
   }
 }
 
+function placeArticleSliderSection(html = "", sectionKey = "", headingPosition = null) {
+  if (!sectionKey) {
+    insertArticleBodySection(html);
+    return;
+  }
+
+  let sectionNode = articleBodyNode.querySelector(`.article-slider-section[data-article-section="${sectionKey}"]`);
+  if (!sectionNode && html) {
+    const anchorNode = Number.isInteger(headingPosition) ? getArticleHeadingAnchorNode(headingPosition) : null;
+    if (anchorNode) anchorNode.insertAdjacentHTML("afterend", html);
+    else articleBodyNode.insertAdjacentHTML("beforeend", html);
+    sectionNode = articleBodyNode.querySelector(`.article-slider-section[data-article-section="${sectionKey}"]`);
+  }
+
+  if (!sectionNode) return;
+
+  const anchorNode = Number.isInteger(headingPosition) ? getArticleHeadingAnchorNode(headingPosition) : null;
+  if (anchorNode) {
+    if (anchorNode.nextElementSibling !== sectionNode) {
+      anchorNode.insertAdjacentElement("afterend", sectionNode);
+    }
+    return;
+  }
+
+  if (articleBodyNode.lastElementChild !== sectionNode) articleBodyNode.append(sectionNode);
+}
+
 function renderArticleEnhancements(page) {
   const relatedPages = getRelatedArticlePages(page);
   const trendingPages = getTrendingArticlePages(page);
   const videoSection = articleBodyNode.querySelector(".article-video")
     ? ""
     : renderArticleVideo(page);
-  const relatedSection = renderArticleSliderSection(`${deskEmoji[page.desk] || "📌"} 같은 분야 더 보기`, relatedPages);
-  const trendingSection = renderArticleSliderSection("🔥 지금 사람들이 많이 보는 주제", trendingPages);
-  const bodyChildren = [...articleBodyNode.children];
-  const middleIndex = Math.max(1, Math.floor(bodyChildren.length / 2));
+  const relatedSection = renderArticleSliderSection(`${deskEmoji[page.desk] || "📌"} 같은 분야 더 보기`, relatedPages, "related");
+  const trendingSection = renderArticleSliderSection("🔥 지금 사람들이 많이 보는 주제", trendingPages, "trending");
 
+  placeNewsletterPanel();
+  placeArticleSliderSection(relatedSection, "related", 3);
   placeArticleVideoSection(videoSection);
-  insertArticleBodySection(relatedSection, middleIndex);
-  insertArticleBodySection(trendingSection);
+  placeArticleSliderSection(trendingSection, "trending");
   renderArticleTocFromBody();
   refreshSliderLoops();
 }
@@ -4969,11 +5001,12 @@ function updateArticleTocActiveLink() {
   });
 }
 
-function renderArticleSliderSection(title, items) {
+function renderArticleSliderSection(title, items, sectionKey = "") {
   if (!items.length) return "";
+  const sectionAttribute = sectionKey ? ` data-article-section="${escapeHtml(sectionKey)}"` : "";
 
   return `
-    <section class="article-slider-section" aria-label="${escapeHtml(title)}">
+    <section class="article-slider-section"${sectionAttribute} aria-label="${escapeHtml(title)}">
       <h3>${escapeHtml(title)}</h3>
       ${renderTrendingSlider(items)}
     </section>
