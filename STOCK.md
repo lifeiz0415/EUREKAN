@@ -8160,3 +8160,5 @@
 | 8145 | 미국주식 | 전 엘케이 워터 솔루션스 | ZWS | 산업 자동화 | <https://m.stock.naver.com/worldstock/stock/ZWS/total> |
 | 8146 | 미국주식 | 정업 바이오테크놀로지 홀딩 | ZYBT | 헬스케어·바이오테크 | <https://m.stock.naver.com/worldstock/stock/ZYBT.O/total> |
 | 8147 | 미국주식 | 자임웍스 | ZYME | 헬스케어·바이오테크 | <https://m.stock.naver.com/worldstock/stock/ZYME.O/total> |
+| 8148 | 미국주식 | ASML 홀딩 ADR | ASML | 반도체 | <https://m.stock.naver.com/worldstock/stock/ASML.O/total> |
+| 8149 | 미국주식 | TSMC ADR | TSM | 반도체 | <https://m.stock.naver.com/worldstock/stock/TSM/total> |

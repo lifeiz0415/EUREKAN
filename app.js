@@ -88,6 +88,15 @@ const SEMICONDUCTOR_AMD_MI350_DATACENTER_MARGIN_2026_IMAGE = {
   height: 720,
 };
 
+const SEMICONDUCTOR_ASML_EUV_ORDERS_MARGIN_2026_IMAGE = {
+  src: "images/semiconductor-asml-euv-orders-margin-2026-1280.webp",
+  externalSrc: "https://edge.sitecorecloud.io/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/images/news/stories/2024/high-na/full-exe5000-header.jpg?h=1007&iar=0&w=1920",
+  alt: "ASML High NA EUV 장비 이미지로 EUV 주문과 매출 전환 속도를 설명하는 이미지",
+  sourceUrl: "https://www.asml.com/en/news/stories/2024/5-things-high-na-euv",
+  width: 1280,
+  height: 720,
+};
+
 const KOREAN_STOCKS_HYUNDAI_HYBRID_EXPORT_2026_IMAGE = {
   src: "images/korean-stocks-hyundai-hybrid-export-2026-1280.webp",
   alt: "현대차 하이브리드 판매와 수출 마진을 함께 보는 이미지",
@@ -1383,6 +1392,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "AMD": { name: "AMD(어드밴스드 마이크로 디바이시스)", market: "미국", ticker: "AMD", url: "https://m.stock.naver.com/worldstock/stock/AMD.O/total" },
   "AMT": { name: "아메리칸 타워", market: "미국", ticker: "AMT", url: "https://m.stock.naver.com/worldstock/stock/AMT/total" },
   "AMZN": { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+  "ASML": { name: "ASML 홀딩 ADR", market: "미국", ticker: "ASML", url: "https://m.stock.naver.com/worldstock/stock/ASML.O/total" },
   "ASTS": { name: "AST 스페이스모바일", market: "미국", ticker: "ASTS", url: "https://m.stock.naver.com/worldstock/stock/ASTS.O/total" },
   "AUR": { name: "오로라 이노베이션", market: "미국", ticker: "AUR", url: "https://m.stock.naver.com/worldstock/stock/AUR.O/total" },
   "AVGO": { name: "브로드컴", market: "미국", ticker: "AVGO", url: "https://m.stock.naver.com/worldstock/stock/AVGO.O/total" },
@@ -1477,6 +1487,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "SNOW": { name: "스노우플레이크", market: "미국", ticker: "SNOW", url: "https://m.stock.naver.com/worldstock/stock/SNOW.K/total" },
   "SYM": { name: "심보틱", market: "미국", ticker: "SYM", url: "https://m.stock.naver.com/worldstock/stock/SYM.O/total" },
   "TMUS": { name: "T-모바일 US", market: "미국", ticker: "TMUS", url: "https://m.stock.naver.com/worldstock/stock/TMUS.O/total" },
+  "TSM": { name: "TSMC ADR", market: "미국", ticker: "TSM", url: "https://m.stock.naver.com/worldstock/stock/TSM/total" },
   "TSLA": { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
   "UBER": { name: "우버", market: "미국", ticker: "UBER", url: "https://m.stock.naver.com/worldstock/stock/UBER.K/total" },
   "UEC": { name: "우라늄 에너지", market: "미국", ticker: "UEC", url: "https://m.stock.naver.com/worldstock/stock/UEC/total" },
@@ -1549,6 +1560,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "semiconductor-samsung-hbm4-foundry-cashflow-2026": ["NVDA", "MU", "005930.KS", "000660.KS"],
   "semiconductor-micron-hbm4-cashflow-2026": ["MU", "NVDA", "000660.KS", "005930.KS"],
   "semiconductor-amd-mi350-datacenter-margin-2026": ["AMD", "NVDA", "AVGO", "MSFT"],
+  "semiconductor-asml-euv-orders-margin-2026": ["ASML", "TSM", "NVDA", "005930.KS"],
   "strategy-tenbagger-quality-checklist-2026": ["ADBE", "CRM", "NOW", "035420.KS"],
   "theme-defense-export-backlog-cashflow-2026": ["LMT", "RTX", "NOC", "012450.KS"],
   "us-stocks-apple-ai-iphone-cycle-2026": ["AAPL", "QCOM", "AVGO", "005930.KS"],
@@ -1561,6 +1573,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-asml-euv-orders-margin-2026",
+    title: "ASML은 EUV 독점보다 주문이 매출과 마진으로 바뀌는 속도를 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Silica",
+    publishedAt: "2026-05-31T21:26:37+09:00",
+    summary: "ASML은 2026년 매출 가이던스를 높였지만, 투자자는 EUV 독점보다 순예약, High NA EUV 고객 채택, 수출통제와 고객 설비투자 사이클을 함께 확인해야 합니다.",
+    image: SEMICONDUCTOR_ASML_EUV_ORDERS_MARGIN_2026_IMAGE,
+    video: { youtubeId: "xRPe-BQvILk", title: "ASML 독점 구조와 반도체 장비 사업을 설명하는 한국어 롱폼 영상", channel: "대신TV", sourceUrl: "https://www.youtube.com/watch?v=xRPe-BQvILk", thumbnailUrl: "https://i.ytimg.com/vi/xRPe-BQvILk/hqdefault.jpg", description: "ASML의 EUV 장비 독점 구조와 반도체 공급망에서의 위치를 한국어로 길게 설명하는 영상입니다." },
+  },
   {
     slug: "semiconductor-amd-mi350-datacenter-margin-2026",
     title: "AMD는 MI350 출하보다 데이터센터 마진과 소프트웨어 신뢰를 먼저 봐야 합니다",
