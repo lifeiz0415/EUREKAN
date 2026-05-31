@@ -3228,9 +3228,11 @@ const DEFAULT_SEO_DESCRIPTION = "Eurekan Investment는 인공지능, 반도체, 
 const APP_BASE_URL = new URL("./", import.meta.url);
 const IMAGE_DIRECTORY = "images";
 const IMAGE_EXTENSION = "webp";
-const SPEECH_ESTIMATED_CHARS_PER_SECOND = 7;
-const SPEECH_MAX_CHARS_PER_UTTERANCE = 260;
-const SPEECH_CHUNK_NEXT_DELAY_MS = 120;
+const SPEECH_RATE = 1.08;
+const SPEECH_ESTIMATED_CHARS_PER_SECOND = 8;
+const SPEECH_MIN_CHARS_PER_UTTERANCE = 140;
+const SPEECH_MAX_CHARS_PER_UTTERANCE = 380;
+const SPEECH_CHUNK_NEXT_DELAY_MS = 40;
 const SPEECH_KEEPALIVE_INTERVAL_MS = 6500;
 const SPEECH_CHUNK_FALLBACK_EXTRA_MS = 2500;
 const SPEECH_CHUNK_MIN_FALLBACK_MS = 5000;
@@ -4929,7 +4931,9 @@ function createSpeechChunks(text = activeArticleSpeechText, startOffset = 0) {
       if (/[.!?。！？…]/.test(char)) {
         sentenceEnd = end + 1;
         while (sentenceEnd < rawText.length && /["'”’)\]]/.test(rawText[sentenceEnd])) sentenceEnd += 1;
-        break;
+        if (sentenceEnd - cursor >= SPEECH_MIN_CHARS_PER_UTTERANCE || sentenceEnd >= rawText.length) break;
+        end = sentenceEnd;
+        continue;
       }
       if (end - cursor >= SPEECH_MAX_CHARS_PER_UTTERANCE && /\s/.test(char)) {
         sentenceEnd = end;
@@ -4979,7 +4983,7 @@ function createSpeechUtterance(runId, chunkIndex) {
   const utterance = new SpeechSynthesisUtterance(chunk.text);
 
   utterance.lang = "ko-KR";
-  utterance.rate = 1;
+  utterance.rate = SPEECH_RATE;
   utterance.pitch = 1;
   const preferredVoice = getPreferredSpeechVoice();
   if (preferredVoice) utterance.voice = preferredVoice;
@@ -5090,7 +5094,7 @@ function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
   voiceButtonNode.textContent = "음성읽기 중지하기";
   const beginSpeaking = () => queueSpeechChunks(runId, 0);
   if (window.speechSynthesis.getVoices().length) {
-    window.setTimeout(beginSpeaking, 80);
+    window.setTimeout(beginSpeaking, 20);
     return;
   }
 
