@@ -3407,6 +3407,8 @@ let dataFileHandle = null;
 let dataStore = createEmptyDataStore();
 let activePage = null;
 let activeArticleSpeechText = "";
+let activeSpeechTokenNodes = [];
+let activeSpeechHighlightNodes = [];
 let activeUtterance = null;
 let activeSpeechUtterances = [];
 let activeSpeechChunks = [];
@@ -3449,6 +3451,8 @@ const ARTICLE_BODY_ASSET_SELECTOR = ARTICLE_BODY_ASSET_ATTRIBUTES.map((attribute
 const ARTICLE_BODY_ENHANCEMENT_SELECTOR = "script, .article-slider-section";
 const SPEECH_BLOCK_SELECTOR = "p, .article-subheading";
 const SPEECH_BLOCK_EXCLUDE_SELECTOR = "figcaption, script, noscript, iframe, .article-slider-section, .article-video, .article-media";
+const SPEECH_TOKEN_CLASS = "article-speech-token";
+const SPEECH_TOKEN_HIGHLIGHT_CLASS = "article-speech-token-highlight";
 
 
 function normalizeDesk(desk = "") {
@@ -4647,7 +4651,116 @@ function getArticleSpeechBlocks() {
     .filter((item) => item.text);
 }
 
+function clearActiveSpeechTokenHighlight() {
+  activeSpeechHighlightNodes.forEach((node) => {
+    node.classList.remove(SPEECH_TOKEN_HIGHLIGHT_CLASS);
+    node.removeAttribute("aria-current");
+  });
+  activeSpeechHighlightNodes = [];
+}
+
+function updateSpeechChunkHighlight(start = activeSpeechCurrentIndex, end = start) {
+  if (!activeSpeechTokenNodes.length || !isArticleSpeechPlaying || isArticleSpeechPaused) {
+    clearActiveSpeechTokenHighlight();
+    return;
+  }
+
+  const range = getSpeechSentenceHighlightRange(start, end);
+  const safeStart = range.start;
+  const safeEnd = Math.max(safeStart + 1, range.end);
+  const nextNodes = activeSpeechTokenNodes
+    .filter((token) => token.end > safeStart && token.start < safeEnd)
+    .map((token) => token.node);
+
+  if (
+    nextNodes.length === activeSpeechHighlightNodes.length
+    && nextNodes.every((node, index) => node === activeSpeechHighlightNodes[index])
+  ) {
+    return;
+  }
+
+  clearActiveSpeechTokenHighlight();
+  activeSpeechHighlightNodes = nextNodes;
+  activeSpeechHighlightNodes.forEach((node, index) => {
+    node.classList.add(SPEECH_TOKEN_HIGHLIGHT_CLASS);
+    if (index === 0) node.setAttribute("aria-current", "true");
+  });
+}
+
+function getSpeechSentenceHighlightRange(index = activeSpeechCurrentIndex, fallbackEnd = index) {
+  const text = activeArticleSpeechText || "";
+  const sentenceBoundaryPattern = /[.!?。！？…]/;
+  const safeIndex = getNormalizedSpeechIndex(index);
+  let start = safeIndex;
+  let end = safeIndex;
+
+  while (start > 0 && !sentenceBoundaryPattern.test(text[start - 1])) start -= 1;
+  while (start < text.length && /\s/.test(text[start])) start += 1;
+
+  while (end < text.length && !sentenceBoundaryPattern.test(text[end])) end += 1;
+  if (end < text.length) {
+    end += 1;
+    while (end < text.length && /["'”’)\]]/.test(text[end])) end += 1;
+  }
+
+  if (end <= start) end = Math.max(start + 1, getNormalizedSpeechIndex(fallbackEnd));
+  while (end > start && /\s/.test(text[end - 1])) end -= 1;
+
+  return { start, end };
+}
+
+function prepareArticleSpeechTokens() {
+  clearActiveSpeechTokenHighlight();
+  activeSpeechTokenNodes = [];
+  let speechCursor = 0;
+
+  getArticleSpeechBlockNodes().forEach((blockNode) => {
+    const walker = document.createTreeWalker(blockNode, NodeFilter.SHOW_TEXT, {
+      acceptNode(textNode) {
+        const parent = textNode.parentElement;
+        if (!parent || parent.closest(`.${SPEECH_TOKEN_CLASS}`) || parent.closest(SPEECH_BLOCK_EXCLUDE_SELECTOR)) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return /\S/.test(textNode.nodeValue || "") ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      },
+    });
+    const textNodes = [];
+    let textNode = walker.nextNode();
+    while (textNode) {
+      textNodes.push(textNode);
+      textNode = walker.nextNode();
+    }
+
+    textNodes.forEach((node) => {
+      const text = node.nodeValue || "";
+      const fragment = document.createDocumentFragment();
+      const wordPattern = /\S+/g;
+      let cursor = 0;
+      let match = wordPattern.exec(text);
+      while (match) {
+        if (match.index > cursor) fragment.append(document.createTextNode(text.slice(cursor, match.index)));
+
+        const tokenText = match[0];
+        const tokenNode = document.createElement("span");
+        tokenNode.className = SPEECH_TOKEN_CLASS;
+        tokenNode.textContent = tokenText;
+        const start = speechCursor;
+        const end = start + tokenText.length;
+        activeSpeechTokenNodes.push({ node: tokenNode, start, end, text: tokenText });
+        speechCursor = end + 1;
+        fragment.append(tokenNode);
+        cursor = match.index + tokenText.length;
+        match = wordPattern.exec(text);
+      }
+
+      if (cursor < text.length) fragment.append(document.createTextNode(text.slice(cursor)));
+      node.parentNode?.replaceChild(fragment, node);
+    });
+  });
+}
+
 function getArticleSpeechText() {
+  if (activeSpeechTokenNodes.length) return activeSpeechTokenNodes.map((item) => item.text).join(" ");
   return getArticleSpeechBlocks().map((item) => item.text).join(" ");
 }
 
@@ -4658,6 +4771,7 @@ function getArticleSpeechPayload(page) {
 function renderArticleBodyAndVoice(articleHtml, page) {
   renderArticleHtmlContent(articleHtml, page);
   renderArticleRelatedStocks(page);
+  prepareArticleSpeechTokens();
   setVoiceReady(getArticleSpeechPayload(page), page);
 }
 
@@ -4750,6 +4864,8 @@ function setVoiceReady(text = "", page = activePage) {
   activeSpeechCurrentIndex = 0;
   isVoiceProgressSeeking = false;
   clearTimeout(speechSeekTimer);
+  clearActiveSpeechTokenHighlight();
+  if (!activeArticleSpeechText) activeSpeechTokenNodes = [];
 
   voiceButtonNode.disabled = !activeArticleSpeechText || !isSpeechSupported();
   voiceButtonNode.textContent = "음성으로 읽어주기";
@@ -4784,6 +4900,7 @@ function updateVoiceProgress(index = activeSpeechCurrentIndex) {
   voiceProgressNode.value = String(nextIndex);
   voiceProgressNode.setAttribute("aria-valuetext", `${percent}%`);
   if (voiceProgressLabelNode) voiceProgressLabelNode.textContent = `${percent}%`;
+  if (isArticleSpeechPlaying && !isArticleSpeechPaused && !isVoiceProgressSeeking) updateSpeechChunkHighlight(nextIndex);
 }
 
 function stopSpeechProgressTimer() {
@@ -4847,6 +4964,7 @@ function scheduleSpeechChunkFallback(runId, chunkIndex, chunk) {
     stopSpeechProgressTimer();
     stopSpeechKeepAliveTimer();
     updateVoiceProgress(chunk.end);
+    clearActiveSpeechTokenHighlight();
     activeUtterance = null;
     activeSpeechUtterances = [];
     activeSpeechQueuedUntilIndex = -1;
@@ -4922,6 +5040,7 @@ function stopArticleSpeech(clearStatus = false, { resetProgress = false } = {}) 
   activeSpeechChunks = [];
   activeSpeechChunkIndex = 0;
   activeSpeechQueuedUntilIndex = -1;
+  clearActiveSpeechTokenHighlight();
   voiceButtonNode.textContent = "음성으로 읽어주기";
   if (resetProgress) {
     activeSpeechStartOffset = 0;
@@ -4983,6 +5102,7 @@ function finishArticleSpeech(runId) {
   activeSpeechQueuedUntilIndex = -1;
   isArticleSpeechPlaying = false;
   isArticleSpeechPaused = false;
+  clearActiveSpeechTokenHighlight();
   updateVoiceProgress(activeArticleSpeechText.length);
   voiceButtonNode.textContent = "음성으로 읽어주기";
   voiceStatusNode.textContent = "읽기가 끝났습니다.";
@@ -5014,6 +5134,7 @@ function createSpeechUtterance(runId, chunkIndex) {
     voiceStatusNode.textContent = "";
     resetSpeechProgressAnchor(chunk.start);
     updateVoiceProgress(Math.max(activeSpeechCurrentIndex, chunk.start));
+    updateSpeechChunkHighlight(chunk.start, chunk.end);
     startSpeechProgressTimer(runId, chunk.start, chunk.end);
     startSpeechKeepAliveTimer(runId);
     scheduleSpeechChunkFallback(runId, chunkIndex, chunk);
@@ -5023,6 +5144,7 @@ function createSpeechUtterance(runId, chunkIndex) {
     const nextIndex = chunk.start + Number(event.charIndex || 0);
     resetSpeechProgressAnchor(nextIndex);
     updateVoiceProgress(nextIndex);
+    updateSpeechChunkHighlight(nextIndex, chunk.end);
   };
   utterance.onend = () => {
     if (runId !== speechRunId || isArticleSpeechStopping || isArticleSpeechPaused) return;
@@ -5030,6 +5152,7 @@ function createSpeechUtterance(runId, chunkIndex) {
     stopSpeechProgressTimer();
     stopSpeechKeepAliveTimer();
     updateVoiceProgress(chunk.end);
+    clearActiveSpeechTokenHighlight();
     removeSpeechUtterance(utterance);
     if (activeUtterance === utterance) activeUtterance = null;
     if (chunkIndex >= activeSpeechChunks.length - 1) {
@@ -5043,6 +5166,7 @@ function createSpeechUtterance(runId, chunkIndex) {
     clearSpeechChunkFallbackTimer();
     stopSpeechProgressTimer();
     stopSpeechKeepAliveTimer();
+    clearActiveSpeechTokenHighlight();
     removeSpeechUtterance(utterance);
     if (activeUtterance === utterance) activeUtterance = null;
     if (!isArticleSpeechStopping) {
@@ -5104,6 +5228,7 @@ function startArticleSpeech(startIndex = activeSpeechCurrentIndex) {
   activeUtterance = null;
   activeSpeechStartOffset = chunks[0].start;
   updateVoiceProgress(chunks[0].start);
+  clearActiveSpeechTokenHighlight();
 
   stopSpeechKeepAliveTimer();
   clearSpeechChunkFallbackTimer();
@@ -5161,6 +5286,7 @@ function pauseArticleSpeech() {
   activeSpeechChunkIndex = 0;
   activeSpeechQueuedUntilIndex = -1;
   updateVoiceProgress(pauseIndex);
+  clearActiveSpeechTokenHighlight();
   voiceButtonNode.textContent = "음성으로 읽어주기";
   voiceStatusNode.textContent = "";
 }
