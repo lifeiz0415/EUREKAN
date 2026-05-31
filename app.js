@@ -30,6 +30,15 @@ const US_STOCKS_NVIDIA_AI_MARGIN_2026_IMAGE = {
   height: 720,
 };
 
+const ARTIFICIAL_INTELLIGENCE_NVIDIA_RUBIN_AI_FACTORY_2026_IMAGE = {
+  src: "images/artificial-intelligence-nvidia-rubin-ai-factory-2026-1280.webp",
+  externalSrc: "https://iprsoftwaremedia.com/219/files/202601/nvidia-rubin-platform.jpg",
+  alt: "엔비디아 루빈 플랫폼 서버 랙으로 AI 공장 비용과 고객 집중을 설명하는 이미지",
+  sourceUrl: "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer",
+  width: 1280,
+  height: 720,
+};
+
 const US_STOCKS_APPLE_AI_IPHONE_CYCLE_2026_IMAGE = {
   src: "images/us-stocks-apple-ai-iphone-cycle-2026-1280.webp",
   alt: "애플 아이폰 교체 주기와 서비스 매출을 함께 보는 이미지",
@@ -1519,6 +1528,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "space-technology-spacex-starlink-starship-ipo-2026": ["RKLB", "ASTS", "PL", "012450.KS"],
   "space-technology-rocket-lab-backlog-cashflow-2026": ["RKLB", "PL", "ASTS", "012450.KS"],
   "us-stocks-nvidia-ai-margin-2026": ["NVDA", "AVGO", "AMD", "005930.KS"],
+  "artificial-intelligence-nvidia-rubin-ai-factory-2026": ["NVDA", "MSFT", "AVGO", "AMD"],
   "theme-ai-data-center-power-grid-2026": ["NVDA", "MSFT", "GOOGL", "015760.KS"],
   "korean-stocks-hyundai-hybrid-export-2026": ["TSLA", "RIVN", "005380.KS", "000270.KS"],
   "transport-logistics-margin-bottleneck-2026": ["FDX", "UBER", "DAL", "000120.KS"],
@@ -1541,6 +1551,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "artificial-intelligence-nvidia-rubin-ai-factory-2026",
+    title: "엔비디아는 루빈보다 AI 공장 비용을 누가 감당하는지 먼저 봐야 합니다",
+    desk: "인공지능",
+    author: "Aiden",
+    publishedAt: "2026-05-31T20:49:11+09:00",
+    summary: "엔비디아 NVDA는 FY2027 1분기 매출 816억달러와 루빈 플랫폼으로 AI 인프라 중심을 굳혔지만, 고객 집중, 중국 공백, 공급 약정이 다음 판단 기준입니다.",
+    image: ARTIFICIAL_INTELLIGENCE_NVIDIA_RUBIN_AI_FACTORY_2026_IMAGE,
+    video: { youtubeId: "UGsLIw5L_ZQ", title: "엔비디아 GTC 루빈·블랙웰 발표를 요약한 한국어 롱폼 영상", channel: "월텍남 - 월스트리트 테크남", sourceUrl: "https://www.youtube.com/watch?v=UGsLIw5L_ZQ", thumbnailUrl: "https://i.ytimg.com/vi/UGsLIw5L_ZQ/hqdefault.jpg", description: "엔비디아 GTC 발표에서 루빈, 블랙웰, AI 공장 전략이 어떤 의미를 갖는지 한국어로 길게 정리한 영상입니다." },
+  },
   {
     slug: "semiconductor-micron-hbm4-cashflow-2026",
     title: "마이크론은 HBM4 공급 뉴스보다 잉여현금흐름이 반복되는지를 먼저 봐야 합니다",
