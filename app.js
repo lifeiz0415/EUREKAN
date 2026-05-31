@@ -1054,6 +1054,14 @@ const SEMICONDUCTOR_INTEL_FOUNDRY_CASHFLOW_2026_IMAGE = {
   height: 960,
 };
 
+const SEMICONDUCTOR_SKHYNIX_HBM_CAPEX_CASHFLOW_2026_IMAGE = {
+  src: "images/semiconductor-skhynix-hbm-capex-cashflow-2026-1280.webp",
+  alt: "SK하이닉스 M15X 팹 조감도를 통해 HBM 설비투자와 현금흐름 회수 속도를 설명하는 이미지",
+  sourceUrl: "https://news.skhynix.com/sk-hynix-to-produce-dram-from-m15x-in-cheongju/",
+  width: 1169,
+  height: 769,
+};
+
 const CYBERSECURITY_RENEWAL_PLATFORM_SPEND_2026_IMAGE = {
   src: "images/cybersecurity-renewal-platform-spend-2026-1280.webp",
   alt: "사이버보안은 해킹 뉴스보다 갱신율과 플랫폼 통합 속도가 실적을 만듭니다 내용을 설명하는 사이버보안 대표 이미지",
@@ -1500,6 +1508,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "market-won-dollar-export-margin-2026": ["FDX", "UBER", "005380.KS", "086280.KS"],
   "semiconductor-margin-bottleneck-2026": ["NVDA", "AVGO", "AMD", "005930.KS"],
   "semiconductor-intel-foundry-cashflow-2026": ["INTC", "AMD", "NVDA", "AVGO"],
+  "semiconductor-skhynix-hbm-capex-cashflow-2026": ["NVDA", "AMD", "000660.KS", "005930.KS"],
   "korean-stocks-samsung-memory-cycle-2026": ["NVDA", "AVGO", "005930.KS", "000660.KS"],
   "strategy-tenbagger-quality-checklist-2026": ["ADBE", "CRM", "NOW", "035420.KS"],
   "theme-defense-export-backlog-cashflow-2026": ["LMT", "RTX", "NOC", "012450.KS"],
@@ -1513,6 +1522,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-skhynix-hbm-capex-cashflow-2026",
+    title: "SK하이닉스는 HBM 호황보다 설비투자와 현금흐름 회수 속도를 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Silica",
+    publishedAt: "2026-05-31T19:44:20+09:00",
+    summary: "SK하이닉스 000660은 HBM 호황 속에서도 M15X·용인 투자, HBM4 전환, 고객 분산, eSSD와 범용 메모리 회복이 실제 현금흐름으로 이어지는 속도를 함께 봐야 합니다.",
+    image: SEMICONDUCTOR_SKHYNIX_HBM_CAPEX_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "k10GvzwYN2M", title: "SK하이닉스 HBM 패키징 공정을 설명하는 공식 영상", channel: "SK하이닉스 [SK hynix]", sourceUrl: "https://www.youtube.com/watch?v=k10GvzwYN2M", thumbnailUrl: "https://i.ytimg.com/vi/k10GvzwYN2M/hqdefault.jpg", description: "SK하이닉스 공식 채널의 HBM 패키징 공정 설명 영상입니다. HBM이 단순 메모리 생산이 아니라 적층, 연결, 열 관리, 품질 검증이 결합된 제품이라는 점을 이해하는 데 도움이 됩니다." },
+  },
   {
     slug: "semiconductor-intel-foundry-cashflow-2026",
     title: "인텔은 AI 기대보다 파운드리 적자와 제품 현금흐름의 시간표를 먼저 봐야 합니다",
