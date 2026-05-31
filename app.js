@@ -1046,6 +1046,14 @@ const SEMICONDUCTOR_PACKAGING_CUSTOMER_PREPAYMENT_2026_IMAGE = {
   height: 720,
 };
 
+const SEMICONDUCTOR_INTEL_FOUNDRY_CASHFLOW_2026_IMAGE = {
+  src: "images/semiconductor-intel-foundry-cashflow-2026-1280.webp",
+  alt: "인텔은 AI 기대보다 파운드리 적자와 제품 현금흐름의 시간표를 먼저 봐야 합니다 내용을 설명하는 반도체 대표 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Intel_Fab_12,_Fab_22,_Fab_32.jpg",
+  width: 1280,
+  height: 960,
+};
+
 const CYBERSECURITY_RENEWAL_PLATFORM_SPEND_2026_IMAGE = {
   src: "images/cybersecurity-renewal-platform-spend-2026-1280.webp",
   alt: "사이버보안은 해킹 뉴스보다 갱신율과 플랫폼 통합 속도가 실적을 만듭니다 내용을 설명하는 사이버보안 대표 이미지",
@@ -1372,6 +1380,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "HPQ": { name: "HP", market: "미국", ticker: "HPQ", url: "https://m.stock.naver.com/worldstock/stock/HPQ/total" },
   "HUM": { name: "휴마나", market: "미국", ticker: "HUM", url: "https://m.stock.naver.com/worldstock/stock/HUM/total" },
   "IDAI": { name: "티 스탬프", market: "미국", ticker: "IDAI", url: "https://m.stock.naver.com/worldstock/stock/IDAI.O/total" },
+  "INTC": { name: "인텔", market: "미국", ticker: "INTC", url: "https://m.stock.naver.com/worldstock/stock/INTC.O/total" },
   "IONQ": { name: "아이온큐", market: "미국", ticker: "IONQ", url: "https://m.stock.naver.com/worldstock/stock/IONQ.K/total" },
   "IOT": { name: "삼사라", market: "미국", ticker: "IOT", url: "https://m.stock.naver.com/worldstock/stock/IOT/total" },
   "ISRG": { name: "인튜이티브 서지컬", market: "미국", ticker: "ISRG", url: "https://m.stock.naver.com/worldstock/stock/ISRG.O/total" },
@@ -1490,6 +1499,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "transport-logistics-margin-bottleneck-2026": ["FDX", "UBER", "DAL", "000120.KS"],
   "market-won-dollar-export-margin-2026": ["FDX", "UBER", "005380.KS", "086280.KS"],
   "semiconductor-margin-bottleneck-2026": ["NVDA", "AVGO", "AMD", "005930.KS"],
+  "semiconductor-intel-foundry-cashflow-2026": ["INTC", "AMD", "NVDA", "AVGO"],
   "korean-stocks-samsung-memory-cycle-2026": ["NVDA", "AVGO", "005930.KS", "000660.KS"],
   "strategy-tenbagger-quality-checklist-2026": ["ADBE", "CRM", "NOW", "035420.KS"],
   "theme-defense-export-backlog-cashflow-2026": ["LMT", "RTX", "NOC", "012450.KS"],
@@ -1503,6 +1513,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-intel-foundry-cashflow-2026",
+    title: "인텔은 AI 기대보다 파운드리 적자와 제품 현금흐름의 시간표를 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Silica",
+    publishedAt: "2026-05-31T19:07:08+09:00",
+    summary: "인텔 INTC를 볼 때는 AI PC 구호보다 Intel Products의 현금창출력, Intel Foundry의 적자 축소, 18A 양산과 외부 고객 확보가 같은 방향으로 움직이는지 확인해야 합니다.",
+    image: SEMICONDUCTOR_INTEL_FOUNDRY_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "gBcCGkYkens", title: "적자 탈출로는 부족한 인텔 턴어라운드 조건 분석", channel: "한경 글로벌마켓", sourceUrl: "https://www.youtube.com/watch?v=gBcCGkYkens", thumbnailUrl: "https://i.ytimg.com/vi/gBcCGkYkens/hqdefault.jpg", description: "인텔 주가와 사업 턴어라운드를 파운드리 적자, 제품 경쟁력, 실적 개선 조건으로 나누어 설명하는 한국어 롱폼 분석 영상입니다." },
+  },
   {
     slug: "space-technology-redwire-edge-cashflow-2026",
     title: "레드와이어는 우주 인프라 기대보다 Edge 인수 뒤 현금흐름 전환을 먼저 봐야 합니다",
