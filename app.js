@@ -4254,7 +4254,7 @@ function formatPublishedAt(value = "") {
 }
 
 function getArticleMetaText(page) {
-  return `${getDeskAgentName(page)} · ${formatPublishedAt(page.publishedAt)}`;
+  return `작성자 ${getDeskAgentName(page)} · 발행시각 ${formatPublishedAt(page.publishedAt)}`;
 }
 
 function isPagePublished(page, now = Date.now()) {
