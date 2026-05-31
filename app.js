@@ -5142,39 +5142,34 @@ function toggleArticleSpeech() {
 
 function pauseArticleSpeech() {
   if (!isArticleSpeechActive()) return;
-  syncSpeechProgressEstimate();
+  const pauseIndex = syncSpeechProgressEstimate();
+  speechRunId += 1;
   isArticleSpeechPaused = true;
   isArticleSpeechPlaying = false;
+  isArticleSpeechStopping = false;
   stopSpeechProgressTimer();
   stopSpeechKeepAliveTimer();
   clearSpeechChunkFallbackTimer();
-  if (isSpeechSupported() && !window.speechSynthesis.paused) window.speechSynthesis.pause();
+  detachActiveSpeechUtteranceHandlers();
+  if (isSpeechSupported()) {
+    if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+    window.speechSynthesis.cancel();
+  }
+  activeUtterance = null;
+  activeSpeechUtterances = [];
+  activeSpeechChunks = [];
+  activeSpeechChunkIndex = 0;
+  activeSpeechQueuedUntilIndex = -1;
+  updateVoiceProgress(pauseIndex);
   voiceButtonNode.textContent = "음성으로 읽어주기";
   voiceStatusNode.textContent = "";
 }
 
 function resumeArticleSpeech() {
   if (!isSpeechSupported() || !activeArticleSpeechText) return;
-  const runId = speechRunId;
-  const chunk = activeSpeechChunks[activeSpeechChunkIndex];
-
-  if (!chunk || !activeUtterance) {
-    isArticleSpeechPaused = false;
-    startArticleSpeech(activeSpeechCurrentIndex);
-    return;
-  }
-
-  isArticleSpeechStopping = false;
   isArticleSpeechPaused = false;
-  isArticleSpeechPlaying = true;
-  voiceButtonNode.textContent = "음성읽기 중지하기";
-  voiceStatusNode.textContent = "";
-  resetSpeechProgressAnchor(activeSpeechCurrentIndex);
-  startSpeechProgressTimer(runId, activeSpeechCurrentIndex, chunk.end);
-  startSpeechKeepAliveTimer(runId);
-  scheduleSpeechChunkFallback(runId, activeSpeechChunkIndex, chunk);
-  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
-  else if (!window.speechSynthesis.speaking) startArticleSpeech(activeSpeechCurrentIndex);
+  isArticleSpeechStopping = false;
+  startArticleSpeech(activeSpeechCurrentIndex);
 }
 
 function handleVoiceProgressInput() {
