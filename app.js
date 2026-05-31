@@ -1353,6 +1353,15 @@ const CRYPTO_BLOCKCHAIN_CUSTODY_REGULATION_2026_IMAGE = {
   height: 720,
 };
 
+const CRYPTO_BLOCKCHAIN_COINBASE_CLARITY_ACT_2026_IMAGE = {
+  src: "images/crypto-blockchain-coinbase-clarity-act-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/1280px-Coinbase.svg.png",
+  alt: "코인베이스 로고 이미지로 CLARITY 법안과 거래·USDC 인프라 매출을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Coinbase.svg",
+  width: 1280,
+  height: 720,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1429,6 +1438,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "GRMN": { name: "가민", market: "미국", ticker: "GRMN", url: "https://m.stock.naver.com/worldstock/stock/GRMN.K/total" },
   "HLF": { name: "허벌라이프", market: "미국", ticker: "HLF", url: "https://m.stock.naver.com/worldstock/stock/HLF/total" },
   "HON": { name: "허니웰 인터내셔널", market: "미국", ticker: "HON", url: "https://m.stock.naver.com/worldstock/stock/HON.O/total" },
+  "HOOD": { name: "로빈후드", market: "미국", ticker: "HOOD", url: "https://m.stock.naver.com/worldstock/stock/HOOD.O/total" },
   "HPQ": { name: "HP", market: "미국", ticker: "HPQ", url: "https://m.stock.naver.com/worldstock/stock/HPQ/total" },
   "HUM": { name: "휴마나", market: "미국", ticker: "HUM", url: "https://m.stock.naver.com/worldstock/stock/HUM/total" },
   "IDAI": { name: "티 스탬프", market: "미국", ticker: "IDAI", url: "https://m.stock.naver.com/worldstock/stock/IDAI.O/total" },
@@ -1570,9 +1580,20 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "earnings-guidance-revenue-quality-2026": ["PLTR", "SNOW", "VRSK", "005930.KS"],
   "market-yield-dollar-portfolio-2026": ["MA", "PYPL", "AFRM", "105560.KS"],
   "etf-dividend-growth-payout-ratio-2026": ["MA", "PYPL", "AFRM", "105560.KS"],
+  "crypto-blockchain-coinbase-clarity-act-2026": ["COIN", "HOOD", "MSTR", "MARA"],
 };
 
 const featuredPages = [
+  {
+    slug: "crypto-blockchain-coinbase-clarity-act-2026",
+    title: "코인베이스는 클래리티 법안보다 USDC와 파생상품 매출의 지속성을 먼저 봐야 합니다",
+    desk: "암호화폐·블록체인",
+    author: "Chain",
+    publishedAt: "2026-05-31T21:40:36+09:00",
+    summary: "코인베이스 COIN은 CLARITY 법안 기대를 받지만, 투자자는 법안 통과 여부보다 USDC 잔고, Base 사용량, 파생상품·예측시장 매출, 조정 EBITDA 지속성을 함께 확인해야 합니다.",
+    image: CRYPTO_BLOCKCHAIN_COINBASE_CLARITY_ACT_2026_IMAGE,
+    video: { youtubeId: "wUnXYtzJ-g4", title: "코인베이스와 CLARITY Act 논쟁을 설명하는 한국어 롱폼 영상", channel: "신박사", sourceUrl: "https://www.youtube.com/watch?v=wUnXYtzJ-g4", thumbnailUrl: "https://i.ytimg.com/vi/wUnXYtzJ-g4/hqdefault.jpg", description: "코인베이스와 CLARITY Act를 둘러싼 미국 디지털자산 규제 논쟁을 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "semiconductor-asml-euv-orders-margin-2026",
     title: "ASML은 EUV 독점보다 주문이 매출과 마진으로 바뀌는 속도를 먼저 봐야 합니다",
