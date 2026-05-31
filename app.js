@@ -1612,7 +1612,7 @@ const featuredPages = [
     publishedAt: "2026-05-31T21:07:26+09:00",
     summary: "AMD 주주는 MI350과 EPYC 성장보다 데이터센터 매출총이익률, ROCm 신뢰, 대형 고객 반복 주문, TSMC·HBM 공급망 리스크를 함께 확인해야 합니다.",
     image: SEMICONDUCTOR_AMD_MI350_DATACENTER_MARGIN_2026_IMAGE,
-    video: { youtubeId: "FsmKRwrNdB4", title: "AMD AI GPU 경쟁과 Helios 전략을 설명하는 한국어 롱폼 영상", channel: "안될공학 - IT 테크 신기술", sourceUrl: "https://www.youtube.com/watch?v=FsmKRwrNdB4", thumbnailUrl: "https://i.ytimg.com/vi/FsmKRwrNdB4/hqdefault.jpg", description: "AMD가 MI350, Helios, AI GPU 경쟁에서 어떤 위치를 만들고 있는지 한국어로 정리한 롱폼 분석 영상입니다." },
+    video: { youtubeId: "XtxCby3TrT4", title: "AMD와 엔비디아 AI GPU 경쟁을 설명하는 한국어 롱폼 영상", channel: "에스오디 SOD", sourceUrl: "https://www.youtube.com/watch?v=XtxCby3TrT4", thumbnailUrl: "https://i.ytimg.com/vi/XtxCby3TrT4/hqdefault.jpg", description: "AMD와 엔비디아의 AI GPU 경쟁, 리사 수의 전략, 데이터센터 가속기 경쟁 구도를 한국어로 설명하는 롱폼 영상입니다." },
   },
   {
     slug: "artificial-intelligence-nvidia-rubin-ai-factory-2026",
