@@ -62,6 +62,14 @@ const SEMICONDUCTOR_SAMSUNG_HBM4_FOUNDRY_CASHFLOW_2026_IMAGE = {
   height: 479,
 };
 
+const SEMICONDUCTOR_MICRON_HBM4_CASHFLOW_2026_IMAGE = {
+  src: "images/semiconductor-micron-hbm4-cashflow-2026-1280.webp",
+  alt: "마이크론 HBM4 제품 이미지로 AI 메모리 매출과 잉여현금흐름 지속성을 설명하는 이미지",
+  sourceUrl: "https://www.micron.com/about/press/image-gallery/products-technology/hbm/hbm4",
+  width: 1280,
+  height: 768,
+};
+
 const KOREAN_STOCKS_HYUNDAI_HYBRID_EXPORT_2026_IMAGE = {
   src: "images/korean-stocks-hyundai-hybrid-export-2026-1280.webp",
   alt: "현대차 하이브리드 판매와 수출 마진을 함께 보는 이미지",
@@ -1520,6 +1528,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "semiconductor-skhynix-hbm-capex-cashflow-2026": ["NVDA", "AMD", "000660.KS", "005930.KS"],
   "korean-stocks-samsung-memory-cycle-2026": ["NVDA", "AVGO", "005930.KS", "000660.KS"],
   "semiconductor-samsung-hbm4-foundry-cashflow-2026": ["NVDA", "MU", "005930.KS", "000660.KS"],
+  "semiconductor-micron-hbm4-cashflow-2026": ["MU", "NVDA", "000660.KS", "005930.KS"],
   "strategy-tenbagger-quality-checklist-2026": ["ADBE", "CRM", "NOW", "035420.KS"],
   "theme-defense-export-backlog-cashflow-2026": ["LMT", "RTX", "NOC", "012450.KS"],
   "us-stocks-apple-ai-iphone-cycle-2026": ["AAPL", "QCOM", "AVGO", "005930.KS"],
@@ -1532,6 +1541,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-micron-hbm4-cashflow-2026",
+    title: "마이크론은 HBM4 공급 뉴스보다 잉여현금흐름이 반복되는지를 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Silica",
+    publishedAt: "2026-05-31T20:32:46+09:00",
+    summary: "마이크론 MU는 HBM4와 AI 데이터센터 수요로 실적이 급증했지만, 투자 판단은 매출총이익률, 설비투자, 잉여현금흐름 지속성에 달려 있습니다.",
+    image: SEMICONDUCTOR_MICRON_HBM4_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "X02Vk5pP-uU", title: "마이크론 HBM4와 SOCAMM2 데이터센터 메모리 해설 영상", channel: "Counterpoint Research", sourceUrl: "https://www.youtube.com/watch?v=X02Vk5pP-uU", thumbnailUrl: "https://i.ytimg.com/vi/X02Vk5pP-uU/hqdefault.jpg", description: "마이크론 HBM4와 SOCAMM2가 AI 데이터센터 성능과 전력 효율에 어떤 의미를 갖는지 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "semiconductor-samsung-hbm4-foundry-cashflow-2026",
     title: "삼성전자는 HBM4 납품 뉴스보다 DS 이익 집중도와 파운드리 손익을 먼저 봐야 합니다",
