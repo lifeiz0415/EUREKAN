@@ -3580,7 +3580,7 @@ const deskAgentNames = {
   "에너지 원자재": ["Colin", "Diana", "Gareth"],
   "농업·식품": ["Aaron", "Chloe", "Bennett"],
   "소프트웨어": ["Owen", "Grace", "Malcolm"],
-  "양자컴퓨팅": ["Quentin", "Nadia", "Cedric"],
+  "양자컴퓨팅": ["Quentin", "Nadia", "Eleanor", "Cedric"],
   "방산·항공우주": ["Arthur", "Helena", "Damian"],
   "통신": ["Isaac", "Julia", "Trevor"],
   "자율 시스템": ["Logan", "Erica", "Calvin"],
