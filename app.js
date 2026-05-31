@@ -97,6 +97,15 @@ const SEMICONDUCTOR_ASML_EUV_ORDERS_MARGIN_2026_IMAGE = {
   height: 720,
 };
 
+const SEMICONDUCTOR_SANDISK_NAND_PRICE_INVENTORY_2026_IMAGE = {
+  src: "images/semiconductor-sandisk-nand-price-inventory-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/SanDisk_SDSSDA-120G-40239.jpg/1280px-SanDisk_SDSSDA-120G-40239.jpg",
+  alt: "샌디스크 SSD 제품 이미지로 NAND 가격과 데이터센터 고객 계약을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:SanDisk_SDSSDA-120G-40239.jpg",
+  width: 1280,
+  height: 720,
+};
+
 const KOREAN_STOCKS_HYUNDAI_HYBRID_EXPORT_2026_IMAGE = {
   src: "images/korean-stocks-hyundai-hybrid-export-2026-1280.webp",
   alt: "현대차 하이브리드 판매와 수출 마진을 함께 보는 이미지",
@@ -1517,6 +1526,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "SCCO": { name: "서던 코퍼", market: "미국", ticker: "SCCO", url: "https://m.stock.naver.com/worldstock/stock/SCCO.K/total" },
   "SENS": { name: "센서닉스 홀딩스", market: "미국", ticker: "SENS", url: "https://m.stock.naver.com/worldstock/stock/SENS.O/total" },
   "SMPL": { name: "더 심플리 굿 푸드", market: "미국", ticker: "SMPL", url: "https://m.stock.naver.com/worldstock/stock/SMPL.O/total" },
+  "SNDK": { name: "샌디스크", market: "미국", ticker: "SNDK", url: "https://m.stock.naver.com/worldstock/stock/SNDK.O/total" },
   "SNAP": { name: "스냅", market: "미국", ticker: "SNAP", url: "https://m.stock.naver.com/worldstock/stock/SNAP.K/total" },
   "SNOW": { name: "스노우플레이크", market: "미국", ticker: "SNOW", url: "https://m.stock.naver.com/worldstock/stock/SNOW.K/total" },
   "SYM": { name: "심보틱", market: "미국", ticker: "SYM", url: "https://m.stock.naver.com/worldstock/stock/SYM.O/total" },
@@ -1595,6 +1605,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "semiconductor-micron-hbm4-cashflow-2026": ["MU", "NVDA", "000660.KS", "005930.KS"],
   "semiconductor-amd-mi350-datacenter-margin-2026": ["AMD", "NVDA", "AVGO", "MSFT"],
   "semiconductor-asml-euv-orders-margin-2026": ["ASML", "TSM", "NVDA", "005930.KS"],
+  "semiconductor-sandisk-nand-price-inventory-2026": ["SNDK", "MU", "000660.KS", "005930.KS"],
   "traditional-energy-battalion-oil-debt-production-2026": ["BATL", "FANG", "DVN", "OXY"],
   "strategy-tenbagger-quality-checklist-2026": ["ADBE", "CRM", "NOW", "035420.KS"],
   "theme-defense-export-backlog-cashflow-2026": ["LMT", "RTX", "NOC", "012450.KS"],
@@ -1610,6 +1621,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-sandisk-nand-price-inventory-2026",
+    title: "샌디스크는 AI SSD 수요보다 NAND 가격과 고객 계약의 질을 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Silica",
+    publishedAt: "2026-05-31T23:01:58+09:00",
+    summary: "샌디스크 SNDK는 AI 데이터센터 수요와 NAND 가격 상승으로 실적이 급변했지만, 투자자는 신사업 모델 계약, Kioxia 합작 생산, 재고와 현금흐름 지속성을 함께 확인해야 합니다.",
+    image: SEMICONDUCTOR_SANDISK_NAND_PRICE_INVENTORY_2026_IMAGE,
+    video: { youtubeId: "7y0eclC7RyU", title: "샌디스크 SNDK와 NAND 슈퍼사이클을 설명하는 한국어 롱폼 영상", channel: "위즈덤투스", sourceUrl: "https://www.youtube.com/watch?v=7y0eclC7RyU", thumbnailUrl: "https://i.ytimg.com/vi/7y0eclC7RyU/hqdefault.jpg", description: "샌디스크 주가와 NAND 가격 사이클, AI 데이터센터 수요를 한국어로 길게 설명하는 30분대 롱폼 분석 영상입니다." },
+  },
   {
     slug: "crypto-blockchain-american-bitcoin-sats-per-share-2026",
     title: "아메리칸 비트코인은 보유량보다 주당 사토시와 채굴 원가를 먼저 봐야 합니다",
