@@ -4687,6 +4687,38 @@ function insertArticleBodySection(html = "", anchorIndex = null) {
   else articleBodyNode.insertAdjacentHTML("beforeend", html);
 }
 
+function getArticleVideoAnchorNode() {
+  const headings = [...articleBodyNode.querySelectorAll(".article-subheading")];
+  return headings[3] || null;
+}
+
+function placeArticleVideoSection(html = "") {
+  let videoNode = articleBodyNode.querySelector(".article-video");
+  if (!videoNode && html) {
+    const anchorNode = getArticleVideoAnchorNode();
+    if (anchorNode) anchorNode.insertAdjacentHTML("afterend", html);
+    else articleBodyNode.insertAdjacentHTML("beforeend", html);
+    videoNode = articleBodyNode.querySelector(".article-video");
+  }
+
+  if (!videoNode) return;
+
+  const anchorNode = getArticleVideoAnchorNode();
+  if (anchorNode) {
+    if (anchorNode.nextElementSibling !== videoNode) {
+      anchorNode.insertAdjacentElement("afterend", videoNode);
+    }
+    return;
+  }
+
+  const firstSliderNode = articleBodyNode.querySelector(".article-slider-section");
+  if (firstSliderNode && videoNode.nextElementSibling !== firstSliderNode) {
+    articleBodyNode.insertBefore(videoNode, firstSliderNode);
+  } else if (!firstSliderNode && articleBodyNode.lastElementChild !== videoNode) {
+    articleBodyNode.append(videoNode);
+  }
+}
+
 function renderArticleEnhancements(page) {
   const relatedPages = getRelatedArticlePages(page);
   const trendingPages = getTrendingArticlePages(page);
@@ -4698,7 +4730,7 @@ function renderArticleEnhancements(page) {
   const bodyChildren = [...articleBodyNode.children];
   const middleIndex = Math.max(1, Math.floor(bodyChildren.length / 2));
 
-  insertArticleBodySection(videoSection);
+  placeArticleVideoSection(videoSection);
   insertArticleBodySection(relatedSection, middleIndex);
   insertArticleBodySection(trendingSection);
   renderArticleTocFromBody();
