@@ -1624,6 +1624,15 @@ const TELECOMMUNICATIONS_CISCO_AI_NETWORKING_ORDERS_MARGIN_2026_IMAGE = {
   height: 640,
 };
 
+const CONSUMER_GOODS_WALMART_AD_MEMBERSHIP_MARGIN_2026_IMAGE = {
+  src: "images/consumer-goods-walmart-ad-membership-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/0/04/Walmart_exterior.jpg",
+  alt: "월마트 매장 외관으로 소비재 방어력과 광고·멤버십 마진을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Walmart_exterior.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1848,6 +1857,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "consumer-goods-walmart-ad-membership-margin-2026": ["WMT", "COST", "TGT", "AMZN"],
   "telecommunications-cisco-ai-networking-orders-margin-2026": ["CSCO", "AVGO", "NVDA", "LITE"],
   "healthcare-biotech-lilly-glp1-capacity-price-2026": ["LLY", "ABBV", "ABT", "207940.KS"],
   "renewable-energy-ge-vernova-power-backlog-cashflow-2026": ["GEV", "ETN", "VRT", "BE"],
@@ -1908,6 +1918,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "consumer-goods-walmart-ad-membership-margin-2026",
+    title: "월마트는 매장 매출보다 광고와 멤버십 마진이 더 오래갑니다",
+    desk: "소비재",
+    author: "Naomi",
+    publishedAt: "2026-06-01T20:05:47+09:00",
+    summary: "월마트 WMT는 식료품과 생활필수품 매출로 경기 방어력을 갖고 있지만, 투자자는 동일매장 매출보다 광고, 멤버십, 이커머스 물류 효율이 영업이익률을 얼마나 끌어올리는지 확인해야 합니다.",
+    image: CONSUMER_GOODS_WALMART_AD_MEMBERSHIP_MARGIN_2026_IMAGE,
+    video: { youtubeId: "E0I5So5r1Bc", title: "Walmart FY2026 Q1 Earnings Release", channel: "Walmart", sourceUrl: "https://www.youtube.com/watch?v=E0I5So5r1Bc", thumbnailUrl: "https://i.ytimg.com/vi/E0I5So5r1Bc/hqdefault.jpg", width: 480, height: 360, description: "월마트 공식 채널이 FY2026 1분기 실적과 사업 흐름을 설명하는 롱폼 실적 발표 영상입니다." },
+  },
   {
     slug: "telecommunications-cisco-ai-networking-orders-margin-2026",
     title: "시스코 시스템즈는 AI 주문보다 네트워크 전환과 마진 지속성이 먼저입니다",
