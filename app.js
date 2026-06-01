@@ -120,6 +120,15 @@ const SEMICONDUCTOR_QUALCOMM_AUTOMOTIVE_IOT_HANDSET_CYCLE_2026_IMAGE = {
   height: 640,
 };
 
+const SEMICONDUCTOR_MARVELL_AI_CUSTOM_SILICON_DATACENTER_2026_IMAGE = {
+  src: "images/semiconductor-marvell-ai-custom-silicon-datacenter-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Marvell_Santa_Clara_May_2011.jpg",
+  alt: "마벨 산타클라라 본사 건물로 AI 데이터센터 맞춤형 반도체와 광연결 수요를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Marvell_Santa_Clara_May_2011.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1627,6 +1636,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "META": { name: "메타", market: "미국", ticker: "META", url: "https://m.stock.naver.com/worldstock/stock/META.O/total" },
   "MSFT": { name: "마이크로소프트", market: "미국", ticker: "MSFT", url: "https://m.stock.naver.com/worldstock/stock/MSFT.O/total" },
   "MSTR": { name: "스트래티지", market: "미국", ticker: "MSTR", url: "https://m.stock.naver.com/worldstock/stock/MSTR.O/total" },
+  "MRVL": { name: "마벨 테크놀로지 그룹", market: "미국", ticker: "MRVL", url: "https://m.stock.naver.com/worldstock/stock/MRVL.O/total" },
   "MU": { name: "마이크론 테크놀로지", market: "미국", ticker: "MU", url: "https://m.stock.naver.com/worldstock/stock/MU.O/total" },
   "NBTX": { name: "나노바이오틱스 ADR", market: "미국", ticker: "NBTX", url: "https://m.stock.naver.com/worldstock/stock/NBTX.O/total" },
   "NNDM": { name: "나노 디멘션 ADR", market: "미국", ticker: "NNDM", url: "https://m.stock.naver.com/worldstock/stock/NNDM.O/total" },
@@ -1727,6 +1737,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "semiconductor-marvell-ai-custom-silicon-datacenter-2026": ["MRVL", "NVDA", "AVGO", "AMD"],
   "semiconductor-qualcomm-automotive-iot-handset-cycle-2026": ["QCOM", "AAPL", "AVGO", "005930.KS"],
   "hardware-ibm-redhat-mainframe-free-cash-flow-2026": ["IBM", "MSFT", "ORCL", "GOOGL"],
   "cloud-computing-oracle-rpo-ai-capex-2026": ["ORCL", "MSFT", "AMZN", "GOOGL"],
@@ -1776,6 +1787,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-marvell-ai-custom-silicon-datacenter-2026",
+    title: "마벨은 AI 맞춤형 반도체 기대보다 데이터센터 매출 집중을 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Sophia",
+    publishedAt: "2026-06-01T16:34:57+09:00",
+    summary: "마벨은 FY2027 1분기 매출 24억1800만 달러와 데이터센터 매출 18억3270만 달러를 기록했지만, 투자자는 AI 주문보다 고객 집중, 광연결 병목, 맞춤형 XPU 매출 전환 속도를 함께 확인해야 합니다.",
+    image: SEMICONDUCTOR_MARVELL_AI_CUSTOM_SILICON_DATACENTER_2026_IMAGE,
+    video: { youtubeId: "fMUbIC8wc24", title: "NVIDIA and Marvell: Powering Accelerated Computing", channel: "Marvell Technology", sourceUrl: "https://www.youtube.com/watch?v=fMUbIC8wc24", thumbnailUrl: "https://i.ytimg.com/vi/fMUbIC8wc24/hqdefault.jpg", width: 480, height: 360, description: "마벨 공식 채널이 엔비디아와의 가속 컴퓨팅 협력, 고속 연결, AI 인프라 확장 의미를 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "semiconductor-qualcomm-automotive-iot-handset-cycle-2026",
     title: "퀄컴은 스마트폰 반등보다 자동차·IoT 매출의 반복성을 먼저 봐야 합니다",
