@@ -609,6 +609,15 @@ const QUANTUM_COMPUTING_QUBT_PHOTONICS_CASH_BACKLOG_2026_IMAGE = {
   height: 640,
 };
 
+const QUANTUM_COMPUTING_RIGETTI_CEPHEUS_CLOUD_REVENUE_2026_IMAGE = {
+  src: "images/quantum-computing-rigetti-cepheus-cloud-revenue-2026-1280.webp",
+  externalSrc: "https://www.nist.gov/sites/default/files/styles/social/public/images/2017/01/31/physics_quantum_computing_dimmer_switch.jpg",
+  alt: "리게티 컴퓨팅의 초전도 큐비트와 클라우드 접근 전략을 설명하는 초전도 양자 회로 이미지",
+  sourceUrl: "https://www.nist.gov/image/physicsquantumcomputingdimmerswitchjpg",
+  width: 1280,
+  height: 640,
+};
+
 const DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/defense-aerospace-margin-bottleneck-2026-1280.webp",
   alt: "방산·항공우주 투자는 방산 플랫폼과 항공우주 부품보다 납품 승인과 원가 상승을 먼저 봐야 합니다 내용을 설명하는 방산·항공우주 대표 이미지",
@@ -1663,6 +1672,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "quantum-computing-rigetti-cepheus-cloud-revenue-2026": ["RGTI", "IONQ", "QBTS", "QUBT"],
   "quantum-computing-qubt-photonics-cash-backlog-2026": ["QUBT", "IONQ", "RGTI", "QBTS"],
   "quantum-computing-ionq-rpo-contracts-2026": ["IONQ", "RGTI", "QBTS", "QUBT"],
   "cloud-computing-microsoft-azure-ai-capex-margin-2026": ["MSFT", "NVDA", "GOOGL", "AMZN"],
@@ -1705,6 +1715,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "quantum-computing-rigetti-cepheus-cloud-revenue-2026",
+    title: "리게티 컴퓨팅은 108큐비트보다 클라우드 사용량과 Novera 반복 납품을 먼저 봐야 합니다",
+    desk: "양자컴퓨팅",
+    author: "Eleanor",
+    publishedAt: "2026-06-01T10:56:30+09:00",
+    summary: "리게티 컴퓨팅 RGTI는 108큐비트 Cepheus-1-108Q와 5억6,900만 달러 현금을 확보했지만, 투자자는 클라우드 사용량, Novera QPU 반복 판매, 영업손실, 칩렛 로드맵 실행을 함께 확인해야 합니다.",
+    image: QUANTUM_COMPUTING_RIGETTI_CEPHEUS_CLOUD_REVENUE_2026_IMAGE,
+    video: { youtubeId: "mt1oD-Us-zM", title: "리게티 컴퓨팅의 기술 한계와 도약 가능성을 설명하는 한국어 롱폼 영상", channel: "틈트미 (teumiteumi)", sourceUrl: "https://www.youtube.com/watch?v=mt1oD-Us-zM", thumbnailUrl: "https://i.ytimg.com/vi/mt1oD-Us-zM/hqdefault.jpg", width: 480, height: 360, description: "리게티 컴퓨팅 RGTI의 초전도 양자컴퓨팅 전략과 투자 쟁점을 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "quantum-computing-qubt-photonics-cash-backlog-2026",
     title: "퀀텀 컴퓨팅은 14억 달러 현금보다 포토닉스 매출 전환을 먼저 봐야 합니다",
