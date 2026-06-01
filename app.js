@@ -1687,6 +1687,15 @@ const SOFTWARE_SEAGATE_HAMR_CLOUD_STORAGE_CASHFLOW_2026_IMAGE = {
   height: 640,
 };
 
+const TRADITIONAL_ENERGY_EXXON_GUYANA_PERMIAN_BUYBACK_2026_IMAGE = {
+  src: "images/traditional-energy-exxon-guyana-permian-buyback-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Exxon_Mobil_oil_refinery_-_Baton_Rouge%2C_Louisiana.jpg",
+  alt: "엑슨 모빌 정유시설 이미지로 유가보다 생산과 자사주 재원을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Exxon_Mobil_oil_refinery_-_Baton_Rouge,_Louisiana.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1911,6 +1920,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "traditional-energy-exxon-guyana-permian-buyback-2026": ["XOM", "CVX", "COP", "FANG"],
   "software-seagate-hamr-cloud-storage-cashflow-2026": ["STX", "WDC", "SNDK", "MU"],
   "fintech-jpmorgan-nim-credit-trading-2026": ["JPM", "BAC", "SCHW", "MA"],
   "cybersecurity-paloalto-platformization-arr-margin-2026": ["PANW", "CRWD", "FTNT", "OKTA"],
@@ -1978,6 +1988,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "traditional-energy-exxon-guyana-permian-buyback-2026",
+    title: "엑슨 모빌은 유가보다 가이아나·퍼미안 생산과 자사주 재원을 봐야 합니다",
+    desk: "전통 에너지",
+    author: "Laura",
+    publishedAt: "2026-06-01T20:12:47+09:00",
+    summary: "엑슨 모빌 XOM은 유가 민감도가 크지만, 투자자는 단기 유가보다 가이아나와 퍼미안 생산 증가, 정제·화학 마진, 비용 절감, 배당과 자사주 매입을 지속할 현금 재원을 함께 확인해야 합니다.",
+    image: TRADITIONAL_ENERGY_EXXON_GUYANA_PERMIAN_BUYBACK_2026_IMAGE,
+    video: { youtubeId: "2rxmsoh6sAk", title: "ExxonMobil (XOM): Molecule Management Pivot vs. The $20B Annual Buyback", channel: "Griffonomics", sourceUrl: "https://www.youtube.com/watch?v=2rxmsoh6sAk", thumbnailUrl: "https://i.ytimg.com/vi/2rxmsoh6sAk/hqdefault.jpg", width: 480, height: 360, description: "엑슨 모빌의 생산, 화학·정제, 자사주 매입, 현금흐름을 분석하는 영어 롱폼 영상입니다." },
+  },
   {
     slug: "software-seagate-hamr-cloud-storage-cashflow-2026",
     title: "씨게이트는 HDD 공급 부족보다 HAMR 전환과 현금흐름을 확인해야 합니다",
