@@ -93,6 +93,15 @@ const SOCIAL_MEDIA_META_AI_CAPEX_AD_ROI_2026_IMAGE = {
   height: 640,
 };
 
+const CLOUD_COMPUTING_ORACLE_RPO_AI_CAPEX_2026_IMAGE = {
+  src: "images/cloud-computing-oracle-rpo-ai-capex-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Oracle_Campus_in_Austin_2018.jpg",
+  alt: "오라클 AI 클라우드 RPO와 데이터센터 용량 회전율을 설명하는 Oracle Austin Campus 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Oracle_Campus_in_Austin_2018.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1699,6 +1708,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "cloud-computing-oracle-rpo-ai-capex-2026": ["ORCL", "MSFT", "AMZN", "GOOGL"],
   "social-media-meta-ai-capex-ad-roi-2026": ["META", "GOOGL", "RDDT", "SNAP"],
   "hardware-dell-ai-server-backlog-margin-2026": ["DELL", "NVDA", "AVGO", "005930.KS"],
   "quantum-computing-dwave-bookings-rpo-revenue-2026": ["QBTS", "IONQ", "RGTI", "QUBT"],
@@ -1745,6 +1755,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "cloud-computing-oracle-rpo-ai-capex-2026",
+    title: "오라클은 5,530억 달러 RPO보다 AI 클라우드 용량 회전율을 먼저 봐야 합니다",
+    desk: "클라우드 컴퓨팅",
+    author: "Hugo",
+    publishedAt: "2026-06-01T15:44:14+09:00",
+    summary: "오라클 ORCL은 FY2026 3분기 RPO 5,530억 달러와 OCI 매출 49억 달러를 기록했지만, 투자자는 고객 선지급, GPU 조달, 데이터센터 전력, 사용률과 현금흐름을 함께 확인해야 합니다.",
+    image: CLOUD_COMPUTING_ORACLE_RPO_AI_CAPEX_2026_IMAGE,
+    video: { youtubeId: "IyREn1yRZeQ", title: "오라클 AI 월드 투어 2026 클라우드와 AI 전략을 설명하는 공식 롱폼 영상", channel: "Oracle", sourceUrl: "https://www.youtube.com/watch?v=IyREn1yRZeQ", thumbnailUrl: "https://i.ytimg.com/vi/IyREn1yRZeQ/hqdefault.jpg", width: 480, height: 360, description: "Oracle AI World Tour London 2026 opening keynote로 오라클의 AI와 클라우드 전략을 설명하는 공식 롱폼 영상입니다." },
+  },
   {
     slug: "social-media-meta-ai-capex-ad-roi-2026",
     title: "메타는 AI 광고 성장보다 1,450억 달러 설비투자 회수 속도를 봐야 합니다",
