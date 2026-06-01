@@ -1210,6 +1210,15 @@ const SPACE_TECHNOLOGY_REDWIRE_EDGE_CASHFLOW_2026_IMAGE = {
   height: 720,
 };
 
+const SPACE_TECHNOLOGY_ASTS_BLUEBIRD_CASH_BURN_2026_IMAGE = {
+  src: "images/space-technology-asts-bluebird-cash-burn-2026-1280.webp",
+  alt: "AST 스페이스모바일 BlueBird 위성을 싣고 발사되는 팰컨 9 로켓 궤적",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Falcon_9_Bluebird_1-5_Launch_(8638152).jpg",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Falcon_9_Bluebird_1-5_Launch_%288638152%29.jpg/1280px-Falcon_9_Bluebird_1-5_Launch_%288638152%29.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RENEWABLE_ENERGY_PPA_GRID_CONNECTION_2026_IMAGE = {
   src: "images/renewable-energy-ppa-grid-connection-2026-1280.webp",
   alt: "재생에너지는 설치량보다 전력구매계약 단가와 계통 접속이 수익률을 정합니다 내용을 설명하는 재생에너지 대표 이미지",
@@ -1771,6 +1780,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "cloud-computing-microsoft-azure-ai-capex-margin-2026": ["MSFT", "NVDA", "GOOGL", "AMZN"],
   "artificial-intelligence-palantir-aip-revenue-quality-2026": ["PLTR", "MSFT", "GOOGL", "ORCL"],
   "artificial-intelligence-agent-workflow-revenue-2026": ["MSFT", "CRM", "NOW", "GOOGL"],
+  "space-technology-asts-bluebird-cash-burn-2026": ["ASTS", "RKLB", "PL", "012450.KS"],
   "space-technology-redwire-edge-cashflow-2026": ["RDW", "RKLB", "PL", "ASTS"],
   "space-technology-spacex-starlink-starship-ipo-2026": ["RKLB", "ASTS", "PL", "012450.KS"],
   "space-technology-rocket-lab-backlog-cashflow-2026": ["RKLB", "PL", "ASTS", "012450.KS"],
@@ -1810,6 +1820,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "space-technology-asts-bluebird-cash-burn-2026",
+    title: "AST 스페이스모바일은 통신사 파트너보다 45기 위성 배치와 현금 소진을 먼저 봐야 합니다",
+    desk: "우주 기술",
+    author: "Conrad",
+    publishedAt: "2026-06-01T17:27:30+09:00",
+    summary: "AST 스페이스모바일은 2026년 매출 가이던스 1억5000만~2억 달러와 현금 약 35억 달러를 제시했지만, 투자자는 통신사 파트너 숫자보다 BlueBird 45기 배치, 발사 실패 보험, 영업비용과 현금 소진을 먼저 확인해야 합니다.",
+    image: SPACE_TECHNOLOGY_ASTS_BLUEBIRD_CASH_BURN_2026_IMAGE,
+    video: { youtubeId: "t87GsSto9yY", title: "[실전!해외주식] AST 스페이스모바일, 위성 통신 혁신으로 주가 급등…2026년 전망은", channel: "뉴스핌TV", sourceUrl: "https://www.youtube.com/watch?v=t87GsSto9yY", thumbnailUrl: "https://i.ytimg.com/vi/t87GsSto9yY/hqdefault.jpg", width: 480, height: 360, description: "AST 스페이스모바일의 위성 직접 연결 사업과 2026년 전망을 한국어로 다루는 롱폼 분석 영상입니다." },
+  },
   {
     slug: "software-salesforce-agentforce-rpo-margin-2026",
     title: "세일즈포스는 Agentforce 기대보다 잔여계약부채와 마진을 먼저 봐야 합니다",
