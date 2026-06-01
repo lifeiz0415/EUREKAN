@@ -618,6 +618,15 @@ const QUANTUM_COMPUTING_RIGETTI_CEPHEUS_CLOUD_REVENUE_2026_IMAGE = {
   height: 640,
 };
 
+const QUANTUM_COMPUTING_DWAVE_BOOKINGS_RPO_REVENUE_2026_IMAGE = {
+  src: "images/quantum-computing-dwave-bookings-rpo-revenue-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/2/24/D-Wave-Washington-1000Q.jpg",
+  alt: "디 웨이브 퀀텀의 어닐링 양자컴퓨터와 예약 매출 전환을 설명하는 D-Wave 시스템 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:D-Wave-Washington-1000Q.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/defense-aerospace-margin-bottleneck-2026-1280.webp",
   alt: "방산·항공우주 투자는 방산 플랫폼과 항공우주 부품보다 납품 승인과 원가 상승을 먼저 봐야 합니다 내용을 설명하는 방산·항공우주 대표 이미지",
@@ -1672,6 +1681,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "quantum-computing-dwave-bookings-rpo-revenue-2026": ["QBTS", "IONQ", "RGTI", "QUBT"],
   "quantum-computing-rigetti-cepheus-cloud-revenue-2026": ["RGTI", "IONQ", "QBTS", "QUBT"],
   "quantum-computing-qubt-photonics-cash-backlog-2026": ["QUBT", "IONQ", "RGTI", "QBTS"],
   "quantum-computing-ionq-rpo-contracts-2026": ["IONQ", "RGTI", "QBTS", "QUBT"],
@@ -1715,6 +1725,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "quantum-computing-dwave-bookings-rpo-revenue-2026",
+    title: "디 웨이브 퀀텀은 3,340만 달러 예약보다 RPO 매출 전환을 먼저 봐야 합니다",
+    desk: "양자컴퓨팅",
+    author: "Cedric",
+    publishedAt: "2026-06-01T11:12:54+09:00",
+    summary: "디 웨이브 퀀텀 QBTS는 2026년 1분기 예약 3,340만 달러와 RPO 4,240만 달러를 냈지만, 투자자는 12개월 매출 전환, Advantage2 설치, Quantum Circuits 인수 비용, 조정 EBITDA 손실을 함께 확인해야 합니다.",
+    image: QUANTUM_COMPUTING_DWAVE_BOOKINGS_RPO_REVENUE_2026_IMAGE,
+    video: { youtubeId: "a8Tc7DoqVzU", title: "디 웨이브 퀀텀 2026년 1분기 실적과 듀얼 플랫폼 투자 논리를 설명하는 한국어 롱폼 영상", channel: "드림스톡파인더", sourceUrl: "https://www.youtube.com/watch?v=a8Tc7DoqVzU", thumbnailUrl: "https://i.ytimg.com/vi/a8Tc7DoqVzU/hqdefault.jpg", width: 480, height: 360, description: "디 웨이브 퀀텀 QBTS의 2026년 1분기 실적, 예약 증가, 듀얼 플랫폼 전략을 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "quantum-computing-rigetti-cepheus-cloud-revenue-2026",
     title: "리게티 컴퓨팅은 108큐비트보다 클라우드 사용량과 Novera 반복 납품을 먼저 봐야 합니다",
