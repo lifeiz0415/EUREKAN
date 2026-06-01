@@ -1393,6 +1393,15 @@ const CONSUMER_GOODS_PRICING_VOLUME_RESILIENCE_2026_IMAGE = {
   height: 720,
 };
 
+const CONSUMER_GOODS_COSTCO_MEMBERSHIP_RENEWAL_MARGIN_2026_IMAGE = {
+  src: "images/consumer-goods-costco-membership-renewal-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Costco_Neihu_Warehouse_20140928.jpg",
+  alt: "코스트코 네이후 창고형 매장 외관으로 회원제 유통 모델과 창고 효율을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Costco_Neihu_Warehouse_20140928.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const SMART_HOME_STANDARD_SUBSCRIPTION_2026_IMAGE = {
   src: "images/smart-home-standard-subscription-2026-1280.webp",
   alt: "스마트홈은 기기 보급보다 연결 표준과 구독 서비스가 수익성을 가릅니다 내용을 설명하는 스마트홈 대표 이미지",
@@ -1586,6 +1595,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "CELH": { name: "셀시어스 홀딩스", market: "미국", ticker: "CELH", url: "https://m.stock.naver.com/worldstock/stock/CELH.O/total" },
   "COIN": { name: "코인베이스 글로벌", market: "미국", ticker: "COIN", url: "https://m.stock.naver.com/worldstock/stock/COIN.O/total" },
   "COP": { name: "코노코필립스", market: "미국", ticker: "COP", url: "https://m.stock.naver.com/worldstock/stock/COP/total" },
+  "COST": { name: "코스트코 홀세일", market: "미국", ticker: "COST", url: "https://m.stock.naver.com/worldstock/stock/COST.O/total" },
   "COUR": { name: "코세라", market: "미국", ticker: "COUR", url: "https://m.stock.naver.com/worldstock/stock/COUR.K/total" },
   "CRM": { name: "세일즈포스", market: "미국", ticker: "CRM", url: "https://m.stock.naver.com/worldstock/stock/CRM/total" },
   "CRWD": { name: "크라우드 스트라이크 홀딩스", market: "미국", ticker: "CRWD", url: "https://m.stock.naver.com/worldstock/stock/CRWD.O/total" },
@@ -1683,6 +1693,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "TMUS": { name: "T-모바일 US", market: "미국", ticker: "TMUS", url: "https://m.stock.naver.com/worldstock/stock/TMUS.O/total" },
   "TSM": { name: "TSMC ADR", market: "미국", ticker: "TSM", url: "https://m.stock.naver.com/worldstock/stock/TSM/total" },
   "TSLA": { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
+  "TGT": { name: "타겟", market: "미국", ticker: "TGT", url: "https://m.stock.naver.com/worldstock/stock/TGT/total" },
   "UBER": { name: "우버", market: "미국", ticker: "UBER", url: "https://m.stock.naver.com/worldstock/stock/UBER.K/total" },
   "UEC": { name: "우라늄 에너지", market: "미국", ticker: "UEC", url: "https://m.stock.naver.com/worldstock/stock/UEC/total" },
   "UROY": { name: "우라늄 로열티", market: "미국", ticker: "UROY", url: "https://m.stock.naver.com/worldstock/stock/UROY.O/total" },
@@ -1690,6 +1701,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "VZ": { name: "버라이존", market: "미국", ticker: "VZ", url: "https://m.stock.naver.com/worldstock/stock/VZ/total" },
   "WLDS": { name: "웨어러블 디바이시스", market: "미국", ticker: "WLDS", url: "https://m.stock.naver.com/worldstock/stock/WLDS.O/total" },
   "WM": { name: "웨이스트 매니지먼트", market: "미국", ticker: "WM", url: "https://m.stock.naver.com/worldstock/stock/WM/total" },
+  "WMT": { name: "월마트", market: "미국", ticker: "WMT", url: "https://m.stock.naver.com/worldstock/stock/WMT.O/total" },
   "XOM": { name: "엑슨 모빌", market: "미국", ticker: "XOM", url: "https://m.stock.naver.com/worldstock/stock/XOM/total" },
   "YOU": { name: "클리어 시큐어", market: "미국", ticker: "YOU", url: "https://m.stock.naver.com/worldstock/stock/YOU/total" },
 };
@@ -1784,9 +1796,20 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "crypto-blockchain-american-bitcoin-sats-per-share-2026": ["ABTC", "HUT", "MARA", "RIOT"],
   "crypto-blockchain-bitmine-eth-treasury-staking-2026": ["BMNR", "SBET", "COIN", "MSTR"],
   "social-media-reddit-arpu-ai-licensing-2026": ["RDDT", "META", "SNAP", "PINS"],
+  "consumer-goods-costco-membership-renewal-margin-2026": ["COST", "WMT", "TGT", "AMZN"],
 };
 
 const featuredPages = [
+  {
+    slug: "consumer-goods-costco-membership-renewal-margin-2026",
+    title: "코스트코 홀세일은 신규 매장보다 회원 갱신율과 회비 수입의 질을 먼저 봐야 합니다",
+    desk: "소비재",
+    author: "Emma",
+    publishedAt: "2026-06-01T16:50:30+09:00",
+    summary: "코스트코 홀세일은 FY2026 3분기 순매출 691억5000만 달러와 회비 수입 13억7300만 달러를 기록했지만, 투자자는 신규 매장 수보다 회원 갱신율, 이그제큐티브 회원 비중, 상품 마진과 임금·물류비 부담을 함께 봐야 합니다.",
+    image: CONSUMER_GOODS_COSTCO_MEMBERSHIP_RENEWAL_MARGIN_2026_IMAGE,
+    video: { youtubeId: "2XbXE7QQHOM", title: "물건 팔아서 NO! 수익은 연회비로! 1000달러 돌파한 코스트코", channel: "매경 자이앤트", sourceUrl: "https://www.youtube.com/watch?v=2XbXE7QQHOM", thumbnailUrl: "https://i.ytimg.com/vi/2XbXE7QQHOM/hqdefault.jpg", width: 480, height: 360, description: "코스트코의 회원제 유통 모델과 연회비 수익 구조를 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "semiconductor-marvell-ai-custom-silicon-datacenter-2026",
     title: "마벨은 AI 맞춤형 반도체 기대보다 데이터센터 매출 집중을 먼저 봐야 합니다",
