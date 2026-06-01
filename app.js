@@ -1642,6 +1642,15 @@ const INDUSTRIAL_AUTOMATION_CATERPILLAR_ENERGY_MINING_MARGIN_2026_IMAGE = {
   height: 640,
 };
 
+const SOFTWARE_WESTERN_DIGITAL_HDD_AI_STORAGE_MARGIN_2026_IMAGE = {
+  src: "images/software-western-digital-hdd-ai-storage-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Western_Digital_WD93044A_side_view_3.jpg",
+  alt: "웨스턴 디지털 하드디스크 이미지로 AI 저장장치 수요와 HDD 가격 사이클을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Western_Digital_WD93044A_side_view_3.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1866,6 +1875,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "software-western-digital-hdd-ai-storage-margin-2026": ["WDC", "STX", "SNDK", "MU"],
   "industrial-automation-caterpillar-energy-mining-margin-2026": ["CAT", "DE", "GEV", "ETN"],
   "consumer-goods-walmart-ad-membership-margin-2026": ["WMT", "COST", "TGT", "AMZN"],
   "telecommunications-cisco-ai-networking-orders-margin-2026": ["CSCO", "AVGO", "NVDA", "LITE"],
@@ -1928,6 +1938,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "software-western-digital-hdd-ai-storage-margin-2026",
+    title: "웨스턴 디지털은 낸드보다 AI 저장장치 가격과 HDD 공급 부족을 봐야 합니다",
+    desk: "소프트웨어",
+    author: "Owen",
+    publishedAt: "2026-06-01T20:07:47+09:00",
+    summary: "웨스턴 디지털 WDC는 AI 데이터센터 저장 수요와 NAND 가격 회복을 동시에 받고 있지만, 투자자는 HDD 공급 부족, 고용량 드라이브 가격, 플래시 분리 이후 자본 배분과 현금흐름을 먼저 확인해야 합니다.",
+    image: SOFTWARE_WESTERN_DIGITAL_HDD_AI_STORAGE_MARGIN_2026_IMAGE,
+    video: { youtubeId: "vR8h8ztmfa0", title: "AI Storage Need Fuels Hard Drive Demand", channel: "Bloomberg Technology", sourceUrl: "https://www.youtube.com/watch?v=vR8h8ztmfa0", thumbnailUrl: "https://i.ytimg.com/vi/vR8h8ztmfa0/hqdefault.jpg", width: 480, height: 360, description: "AI 데이터센터 저장 수요가 HDD와 스토리지 기업에 미치는 영향을 다루는 Bloomberg Technology 롱폼 영상입니다." },
+  },
   {
     slug: "industrial-automation-caterpillar-energy-mining-margin-2026",
     title: "캐터필러는 건설 경기보다 에너지·광산 장비와 서비스 마진을 봐야 합니다",
