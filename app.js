@@ -591,6 +591,15 @@ const QUANTUM_COMPUTING_RISK_CYCLE_2026_IMAGE = {
   height: 720,
 };
 
+const QUANTUM_COMPUTING_IONQ_RPO_CONTRACTS_2026_IMAGE = {
+  src: "images/quantum-computing-ionq-rpo-contracts-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Quantum_Computing%3B_Ion_Trapping_%285941055642%29.jpg",
+  alt: "아이온큐의 RPO와 256큐비트 시스템 매출 인식 시점을 설명하는 이온 트랩 양자컴퓨팅 장비 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Quantum_Computing;_Ion_Trapping_(5941055642).jpg",
+  width: 1280,
+  height: 720,
+};
+
 const DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/defense-aerospace-margin-bottleneck-2026-1280.webp",
   alt: "방산·항공우주 투자는 방산 플랫폼과 항공우주 부품보다 납품 승인과 원가 상승을 먼저 봐야 합니다 내용을 설명하는 방산·항공우주 대표 이미지",
@@ -1645,6 +1654,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "quantum-computing-ionq-rpo-contracts-2026": ["IONQ", "RGTI", "QBTS", "QUBT"],
   "cloud-computing-microsoft-azure-ai-capex-margin-2026": ["MSFT", "NVDA", "GOOGL", "AMZN"],
   "artificial-intelligence-palantir-aip-revenue-quality-2026": ["PLTR", "MSFT", "GOOGL", "ORCL"],
   "artificial-intelligence-agent-workflow-revenue-2026": ["MSFT", "CRM", "NOW", "GOOGL"],
@@ -1685,6 +1695,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "quantum-computing-ionq-rpo-contracts-2026",
+    title: "아이온큐는 매출보다 RPO와 256큐비트 시스템 인식 시점을 먼저 봐야 합니다",
+    desk: "양자컴퓨팅",
+    author: "Cedric",
+    publishedAt: "2026-06-01T10:12:30+09:00",
+    summary: "아이온큐 IONQ는 2026년 1분기 기록적인 매출과 RPO를 냈지만, 투자자는 256큐비트 시스템 판매, RPO 인식 속도, SkyWater 비용, 조정 EBITDA 손실을 함께 확인해야 합니다.",
+    image: QUANTUM_COMPUTING_IONQ_RPO_CONTRACTS_2026_IMAGE,
+    video: { youtubeId: "ukG0RcR3674", title: "IonQ 급등 이후 장기 투자자가 확인할 선택지를 설명하는 한국어 롱폼 영상", channel: "가을바람월드", sourceUrl: "https://www.youtube.com/watch?v=ukG0RcR3674", thumbnailUrl: "https://i.ytimg.com/vi/ukG0RcR3674/hqdefault.jpg", description: "아이온큐 주가 급등 이후 장기 투자자가 확인할 변수와 양자컴퓨팅 투자 판단을 한국어로 설명하는 31분대 롱폼 영상입니다." },
+  },
   {
     slug: "cloud-computing-microsoft-azure-ai-capex-margin-2026",
     title: "마이크로소프트는 코파일럿보다 Azure 용량과 AI 투자 회수 속도를 먼저 봐야 합니다",
