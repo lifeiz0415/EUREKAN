@@ -621,6 +621,15 @@ const SOFTWARE_DEMAND_REVENUE_2026_IMAGE = {
   height: 720,
 };
 
+const SOFTWARE_SALESFORCE_AGENTFORCE_RPO_MARGIN_2026_IMAGE = {
+  src: "images/software-salesforce-agentforce-rpo-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Salesforce_Tower_Roof.jpg/1280px-Salesforce_Tower_Roof.jpg",
+  alt: "샌프란시스코 세일즈포스 타워 상부 전경으로 기업용 CRM과 AI 에이전트 사업 기반을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Salesforce_Tower_Roof.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const QUANTUM_COMPUTING_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/quantum-computing-margin-bottleneck-2026-1280.webp",
   alt: "양자컴퓨팅 투자는 양자 하드웨어와 알고리즘 서비스보다 오류 보정과 상용화 시간을 먼저 봐야 합니다 내용을 설명하는 양자컴퓨팅 대표 이미지",
@@ -1797,9 +1806,20 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "crypto-blockchain-bitmine-eth-treasury-staking-2026": ["BMNR", "SBET", "COIN", "MSTR"],
   "social-media-reddit-arpu-ai-licensing-2026": ["RDDT", "META", "SNAP", "PINS"],
   "consumer-goods-costco-membership-renewal-margin-2026": ["COST", "WMT", "TGT", "AMZN"],
+  "software-salesforce-agentforce-rpo-margin-2026": ["CRM", "NOW", "MSFT", "ORCL"],
 };
 
 const featuredPages = [
+  {
+    slug: "software-salesforce-agentforce-rpo-margin-2026",
+    title: "세일즈포스는 Agentforce 기대보다 잔여계약부채와 마진을 먼저 봐야 합니다",
+    desk: "소프트웨어",
+    author: "Grace",
+    publishedAt: "2026-06-01T17:09:19+09:00",
+    summary: "세일즈포스는 FY2027 1분기 매출 111억3300만 달러와 Agentforce ARR 12억 달러를 기록했지만, 투자자는 AI 에이전트 발표보다 cRPO 336억 달러, RPO 679억 달러, 구독 매출 성장과 영업이익률을 함께 확인해야 합니다.",
+    image: SOFTWARE_SALESFORCE_AGENTFORCE_RPO_MARGIN_2026_IMAGE,
+    video: { youtubeId: "SRbUhi3Kg08", title: "[Session] 세일즈포스 에이전트포스 챔피언이 되는 법 Part.1", channel: "트레슬 trestle", sourceUrl: "https://www.youtube.com/watch?v=SRbUhi3Kg08", thumbnailUrl: "https://i.ytimg.com/vi/SRbUhi3Kg08/hqdefault.jpg", width: 480, height: 360, description: "세일즈포스 Agentforce 구조와 생성형 AI 적용 방식을 한국어로 설명하는 롱폼 세션 영상입니다." },
+  },
   {
     slug: "consumer-goods-costco-membership-renewal-margin-2026",
     title: "코스트코 홀세일은 신규 매장보다 회원 갱신율과 회비 수입의 질을 먼저 봐야 합니다",
