@@ -102,6 +102,15 @@ const CLOUD_COMPUTING_ORACLE_RPO_AI_CAPEX_2026_IMAGE = {
   height: 640,
 };
 
+const CLOUD_COMPUTING_NEBIUS_ARR_CAPEX_CAPACITY_2026_IMAGE = {
+  src: "images/cloud-computing-nebius-arr-capex-capacity-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Datacenter_Server_Racks_%2822370909788%29.jpg",
+  alt: "데이터센터 서버 랙으로 네비우스 그룹의 AI 클라우드 용량과 자금조달 부담을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Datacenter_Server_Racks_(22370909788).jpg",
+  width: 1280,
+  height: 640,
+};
+
 const HARDWARE_IBM_REDHAT_MAINFRAME_FREE_CASH_FLOW_2026_IMAGE = {
   src: "images/hardware-ibm-redhat-mainframe-free-cash-flow-2026-1280.webp",
   externalSrc: "https://upload.wikimedia.org/wikipedia/commons/6/61/IBM_Building_in_Blue%2C_White_and_Red_%2823070301742%29.jpg",
@@ -1625,6 +1634,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "COST": { name: "코스트코 홀세일", market: "미국", ticker: "COST", url: "https://m.stock.naver.com/worldstock/stock/COST.O/total" },
   "COUR": { name: "코세라", market: "미국", ticker: "COUR", url: "https://m.stock.naver.com/worldstock/stock/COUR.K/total" },
   "CRM": { name: "세일즈포스", market: "미국", ticker: "CRM", url: "https://m.stock.naver.com/worldstock/stock/CRM/total" },
+  "CRWV": { name: "코어위브", market: "미국", ticker: "CRWV", url: "https://m.stock.naver.com/worldstock/stock/CRWV.O/total" },
   "CRWD": { name: "크라우드 스트라이크 홀딩스", market: "미국", ticker: "CRWD", url: "https://m.stock.naver.com/worldstock/stock/CRWD.O/total" },
   "CSCO": { name: "시스코 시스템즈", market: "미국", ticker: "CSCO", url: "https://m.stock.naver.com/worldstock/stock/CSCO.O/total" },
   "CTVA": { name: "코르테바", market: "미국", ticker: "CTVA", url: "https://m.stock.naver.com/worldstock/stock/CTVA.K/total" },
@@ -1676,6 +1686,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "MSTR": { name: "스트래티지", market: "미국", ticker: "MSTR", url: "https://m.stock.naver.com/worldstock/stock/MSTR.O/total" },
   "MRVL": { name: "마벨 테크놀로지 그룹", market: "미국", ticker: "MRVL", url: "https://m.stock.naver.com/worldstock/stock/MRVL.O/total" },
   "MU": { name: "마이크론 테크놀로지", market: "미국", ticker: "MU", url: "https://m.stock.naver.com/worldstock/stock/MU.O/total" },
+  "NBIS": { name: "네비우스 그룹", market: "미국", ticker: "NBIS", url: "https://m.stock.naver.com/worldstock/stock/NBIS.O/total" },
   "NBTX": { name: "나노바이오틱스 ADR", market: "미국", ticker: "NBTX", url: "https://m.stock.naver.com/worldstock/stock/NBTX.O/total" },
   "NNDM": { name: "나노 디멘션 ADR", market: "미국", ticker: "NNDM", url: "https://m.stock.naver.com/worldstock/stock/NNDM.O/total" },
   "NNE": { name: "나노 뉴클리어 에너지", market: "미국", ticker: "NNE", url: "https://m.stock.naver.com/worldstock/stock/NNE.O/total" },
@@ -1781,6 +1792,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "semiconductor-marvell-ai-custom-silicon-datacenter-2026": ["MRVL", "NVDA", "AVGO", "AMD"],
   "semiconductor-qualcomm-automotive-iot-handset-cycle-2026": ["QCOM", "AAPL", "AVGO", "005930.KS"],
   "hardware-ibm-redhat-mainframe-free-cash-flow-2026": ["IBM", "MSFT", "ORCL", "GOOGL"],
+  "cloud-computing-nebius-arr-capex-capacity-2026": ["NBIS", "NVDA", "CRWV", "ORCL"],
   "cloud-computing-oracle-rpo-ai-capex-2026": ["ORCL", "MSFT", "AMZN", "GOOGL"],
   "social-media-meta-ai-capex-ad-roi-2026": ["META", "GOOGL", "RDDT", "SNAP"],
   "hardware-dell-ai-server-backlog-margin-2026": ["DELL", "NVDA", "AVGO", "005930.KS"],
@@ -1832,6 +1844,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "cloud-computing-nebius-arr-capex-capacity-2026",
+    title: "네비우스 그룹은 90억 달러 ARR보다 전력 용량과 자금조달을 먼저 봐야 합니다",
+    desk: "클라우드 컴퓨팅",
+    author: "Hugo",
+    publishedAt: "2026-06-01T18:01:16+09:00",
+    summary: "네비우스 그룹은 2026년 1분기 매출 3억9900만 달러와 ARR 19억2000만 달러를 기록했고 2026년 말 ARR 70억~90억 달러를 제시했지만, 투자자는 성장률보다 전력 용량, 고객 계약, 감가상각비와 자금조달을 먼저 확인해야 합니다.",
+    image: CLOUD_COMPUTING_NEBIUS_ARR_CAPEX_CAPACITY_2026_IMAGE,
+    video: { youtubeId: "VoSFwWPTe3Y", title: "네비우스·코어위브·아이렌 AI 클라우드 경쟁을 비교하는 한국어 롱폼 영상", channel: "올랜도 킴 미국주식", sourceUrl: "https://www.youtube.com/watch?v=VoSFwWPTe3Y", thumbnailUrl: "https://i.ytimg.com/vi/VoSFwWPTe3Y/hqdefault.jpg", width: 480, height: 360, description: "네비우스, 코어위브, 아이렌을 함께 비교하며 AI 클라우드 경쟁 구도와 투자 포인트를 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "fintech-robinhood-net-deposits-gold-crypto-2026",
     title: "로빈후드는 크립토 거래보다 순입금과 Gold 구독 지속성이 먼저입니다",
