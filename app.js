@@ -1633,6 +1633,15 @@ const CONSUMER_GOODS_WALMART_AD_MEMBERSHIP_MARGIN_2026_IMAGE = {
   height: 640,
 };
 
+const INDUSTRIAL_AUTOMATION_CATERPILLAR_ENERGY_MINING_MARGIN_2026_IMAGE = {
+  src: "images/industrial-automation-caterpillar-energy-mining-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/0/03/Caterpillar_330_Excavator.jpg",
+  alt: "캐터필러 굴착기 이미지로 에너지·광산 장비와 서비스 마진을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Caterpillar_330_Excavator.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1857,6 +1866,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "industrial-automation-caterpillar-energy-mining-margin-2026": ["CAT", "DE", "GEV", "ETN"],
   "consumer-goods-walmart-ad-membership-margin-2026": ["WMT", "COST", "TGT", "AMZN"],
   "telecommunications-cisco-ai-networking-orders-margin-2026": ["CSCO", "AVGO", "NVDA", "LITE"],
   "healthcare-biotech-lilly-glp1-capacity-price-2026": ["LLY", "ABBV", "ABT", "207940.KS"],
@@ -1918,6 +1928,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "industrial-automation-caterpillar-energy-mining-margin-2026",
+    title: "캐터필러는 건설 경기보다 에너지·광산 장비와 서비스 마진을 봐야 합니다",
+    desk: "산업 자동화",
+    author: "Mason",
+    publishedAt: "2026-06-01T20:06:47+09:00",
+    summary: "캐터필러 CAT는 건설 장비 경기만으로 설명하기 어렵습니다. 투자자는 에너지·광산 장비 수요, 부품·서비스 매출, 딜러 재고, 금융 부문 신용 리스크가 마진을 얼마나 지키는지 확인해야 합니다.",
+    image: INDUSTRIAL_AUTOMATION_CATERPILLAR_ENERGY_MINING_MARGIN_2026_IMAGE,
+    video: { youtubeId: "gnDryqCwKwU", title: "Caterpillar (CAT) Q1 2026: Solid Foundation or Cracks in the Armor?", channel: "Iron_Financial", sourceUrl: "https://www.youtube.com/watch?v=gnDryqCwKwU", thumbnailUrl: "https://i.ytimg.com/vi/gnDryqCwKwU/hqdefault.jpg", width: 480, height: 360, description: "캐터필러 2026년 1분기 실적과 장비 수요, 마진 구조를 다루는 영어 롱폼 분석 영상입니다." },
+  },
   {
     slug: "consumer-goods-walmart-ad-membership-margin-2026",
     title: "월마트는 매장 매출보다 광고와 멤버십 마진이 더 오래갑니다",
