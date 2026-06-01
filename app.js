@@ -111,6 +111,15 @@ const CLOUD_COMPUTING_NEBIUS_ARR_CAPEX_CAPACITY_2026_IMAGE = {
   height: 640,
 };
 
+const TELECOMMUNICATIONS_LUMENTUM_AI_OPTICAL_MARGIN_2026_IMAGE = {
+  src: "images/telecommunications-lumentum-ai-optical-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Disassembled_QSFP_transciever.jpg",
+  alt: "분해된 QSFP 광트랜시버로 루멘텀 홀딩스의 AI 데이터센터 광부품 수요와 증설 리스크를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Disassembled_QSFP_transciever.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const HARDWARE_IBM_REDHAT_MAINFRAME_FREE_CASH_FLOW_2026_IMAGE = {
   src: "images/hardware-ibm-redhat-mainframe-free-cash-flow-2026-1280.webp",
   externalSrc: "https://upload.wikimedia.org/wikipedia/commons/6/61/IBM_Building_in_Blue%2C_White_and_Red_%2823070301742%29.jpg",
@@ -1630,6 +1639,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "CCJ": { name: "카메코", market: "미국", ticker: "CCJ", url: "https://m.stock.naver.com/worldstock/stock/CCJ/total" },
   "CELH": { name: "셀시어스 홀딩스", market: "미국", ticker: "CELH", url: "https://m.stock.naver.com/worldstock/stock/CELH.O/total" },
   "COIN": { name: "코인베이스 글로벌", market: "미국", ticker: "COIN", url: "https://m.stock.naver.com/worldstock/stock/COIN.O/total" },
+  "COHR": { name: "코히런트", market: "미국", ticker: "COHR", url: "https://m.stock.naver.com/worldstock/stock/COHR.K/total" },
   "COP": { name: "코노코필립스", market: "미국", ticker: "COP", url: "https://m.stock.naver.com/worldstock/stock/COP/total" },
   "COST": { name: "코스트코 홀세일", market: "미국", ticker: "COST", url: "https://m.stock.naver.com/worldstock/stock/COST.O/total" },
   "COUR": { name: "코세라", market: "미국", ticker: "COUR", url: "https://m.stock.naver.com/worldstock/stock/COUR.K/total" },
@@ -1677,6 +1687,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "LCID": { name: "루시드 그룹", market: "미국", ticker: "LCID", url: "https://m.stock.naver.com/worldstock/stock/LCID.O/total" },
   "LLY": { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
   "LMT": { name: "록히드 마틴", market: "미국", ticker: "LMT", url: "https://m.stock.naver.com/worldstock/stock/LMT/total" },
+  "LITE": { name: "루멘텀 홀딩스", market: "미국", ticker: "LITE", url: "https://m.stock.naver.com/worldstock/stock/LITE.O/total" },
   "MA": { name: "마스터카드", market: "미국", ticker: "MA", url: "https://m.stock.naver.com/worldstock/stock/MA/total" },
   "MARA": { name: "마라 홀딩스", market: "미국", ticker: "MARA", url: "https://m.stock.naver.com/worldstock/stock/MARA.O/total" },
   "MBLY": { name: "모빌아이 글로벌", market: "미국", ticker: "MBLY", url: "https://m.stock.naver.com/worldstock/stock/MBLY.O/total" },
@@ -1765,7 +1776,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
   "소프트웨어": ["ADBE", "CRM", "NOW", "ORCL"],
   "양자컴퓨팅": ["IONQ", "QBTS", "RGTI", "QUBT"],
   "방산·항공우주": ["LMT", "RTX", "NOC", "047810.KS"],
-  "통신": ["VZ", "TMUS", "CSCO", "017670.KS"],
+  "통신": ["LITE", "CSCO", "TMUS", "VZ"],
   "자율 시스템": ["AUR", "MBLY", "TSLA", "086280.KS"],
   "금속 원자재": ["AA", "FCX", "SCCO", "005490.KS"],
   "환경 지속가능성": ["WM", "RSG", "AWK", "015760.KS"],
@@ -1790,6 +1801,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
   "semiconductor-marvell-ai-custom-silicon-datacenter-2026": ["MRVL", "NVDA", "AVGO", "AMD"],
+  "telecommunications-lumentum-ai-optical-margin-2026": ["LITE", "NVDA", "COHR", "AVGO"],
   "semiconductor-qualcomm-automotive-iot-handset-cycle-2026": ["QCOM", "AAPL", "AVGO", "005930.KS"],
   "hardware-ibm-redhat-mainframe-free-cash-flow-2026": ["IBM", "MSFT", "ORCL", "GOOGL"],
   "cloud-computing-nebius-arr-capex-capacity-2026": ["NBIS", "NVDA", "CRWV", "ORCL"],
@@ -1844,6 +1856,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "telecommunications-lumentum-ai-optical-margin-2026",
+    title: "루멘텀 홀딩스는 AI 광부품 수요보다 고객 집중과 증설 마진을 먼저 봐야 합니다",
+    desk: "통신",
+    author: "Trevor",
+    publishedAt: "2026-06-01T18:19:50+09:00",
+    summary: "루멘텀 홀딩스 LITE는 FY2026 3분기 매출 8억840만 달러와 엔비디아 20억 달러 전략 투자를 확보했지만, 투자자는 AI 광부품 수요보다 고객 집중, InP 증설 일정, 제품 믹스와 마진 지속성을 먼저 확인해야 합니다.",
+    image: TELECOMMUNICATIONS_LUMENTUM_AI_OPTICAL_MARGIN_2026_IMAGE,
+    video: { youtubeId: "sAZ7KvrTww4", title: "AI 붐의 최종 수혜, 포스트 HBM을 노리는 광트랜시버 설명 영상", channel: "메리츠증권(meritz On)", sourceUrl: "https://www.youtube.com/watch?v=sAZ7KvrTww4", thumbnailUrl: "https://i.ytimg.com/vi/sAZ7KvrTww4/hqdefault.jpg", width: 480, height: 360, description: "AI 데이터센터에서 광트랜시버와 광연결이 왜 병목으로 떠오르는지 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "cloud-computing-nebius-arr-capex-capacity-2026",
     title: "네비우스 그룹은 90억 달러 ARR보다 전력 용량과 자금조달을 먼저 봐야 합니다",
