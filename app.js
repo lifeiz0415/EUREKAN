@@ -1651,6 +1651,15 @@ const SOFTWARE_WESTERN_DIGITAL_HDD_AI_STORAGE_MARGIN_2026_IMAGE = {
   height: 640,
 };
 
+const HARDWARE_SUPERMICRO_AI_SERVER_WORKING_CAPITAL_MARGIN_2026_IMAGE = {
+  src: "images/hardware-supermicro-ai-server-working-capital-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Supermicro_SBI-7228R-T2X_blade_server.jpg",
+  alt: "슈퍼마이크로 서버 이미지로 AI 서버 성장과 운전자본 부담을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Supermicro_SBI-7228R-T2X_blade_server.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1875,6 +1884,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "hardware-supermicro-ai-server-working-capital-margin-2026": ["SMCI", "NVDA", "DELL", "AVGO"],
   "software-western-digital-hdd-ai-storage-margin-2026": ["WDC", "STX", "SNDK", "MU"],
   "industrial-automation-caterpillar-energy-mining-margin-2026": ["CAT", "DE", "GEV", "ETN"],
   "consumer-goods-walmart-ad-membership-margin-2026": ["WMT", "COST", "TGT", "AMZN"],
@@ -1938,6 +1948,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "hardware-supermicro-ai-server-working-capital-margin-2026",
+    title: "슈퍼 마이크로 컴퓨터는 AI 서버 성장보다 운전자본과 마진 회복이 먼저입니다",
+    desk: "하드웨어",
+    author: "Victor",
+    publishedAt: "2026-06-01T20:08:47+09:00",
+    summary: "슈퍼 마이크로 컴퓨터 SMCI는 AI 서버 출하와 랙 스케일 수요로 성장하지만, 투자자는 매출 증가보다 매출총이익률, 재고, 매출채권, 공급망 신뢰, 현금흐름 회복을 먼저 확인해야 합니다.",
+    image: HARDWARE_SUPERMICRO_AI_SERVER_WORKING_CAPITAL_MARGIN_2026_IMAGE,
+    video: { youtubeId: "09mhpQFbNYw", title: "Supermicro Q2 FY2026 Earnings Breakdown: Revenue, Margins, Guidance & SMCI Stock Analysis 2026", channel: "Seed to Wealth", sourceUrl: "https://www.youtube.com/watch?v=09mhpQFbNYw", thumbnailUrl: "https://i.ytimg.com/vi/09mhpQFbNYw/hqdefault.jpg", width: 480, height: 360, description: "슈퍼마이크로 실적과 매출, 마진, 가이던스, 주가 변수를 분석하는 영어 롱폼 영상입니다." },
+  },
   {
     slug: "software-western-digital-hdd-ai-storage-margin-2026",
     title: "웨스턴 디지털은 낸드보다 AI 저장장치 가격과 HDD 공급 부족을 봐야 합니다",
