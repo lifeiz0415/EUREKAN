@@ -600,6 +600,15 @@ const QUANTUM_COMPUTING_IONQ_RPO_CONTRACTS_2026_IMAGE = {
   height: 720,
 };
 
+const QUANTUM_COMPUTING_QUBT_PHOTONICS_CASH_BACKLOG_2026_IMAGE = {
+  src: "images/quantum-computing-qubt-photonics-cash-backlog-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Lithium_Niobate_Wafer.jpg",
+  alt: "퀀텀 컴퓨팅의 박막 리튬나이오베이트 포토닉스 제조 전략을 설명하는 리튬나이오베이트 웨이퍼 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Lithium_Niobate_Wafer.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/defense-aerospace-margin-bottleneck-2026-1280.webp",
   alt: "방산·항공우주 투자는 방산 플랫폼과 항공우주 부품보다 납품 승인과 원가 상승을 먼저 봐야 합니다 내용을 설명하는 방산·항공우주 대표 이미지",
@@ -1654,6 +1663,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "quantum-computing-qubt-photonics-cash-backlog-2026": ["QUBT", "IONQ", "RGTI", "QBTS"],
   "quantum-computing-ionq-rpo-contracts-2026": ["IONQ", "RGTI", "QBTS", "QUBT"],
   "cloud-computing-microsoft-azure-ai-capex-margin-2026": ["MSFT", "NVDA", "GOOGL", "AMZN"],
   "artificial-intelligence-palantir-aip-revenue-quality-2026": ["PLTR", "MSFT", "GOOGL", "ORCL"],
@@ -1695,6 +1705,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "quantum-computing-qubt-photonics-cash-backlog-2026",
+    title: "퀀텀 컴퓨팅은 14억 달러 현금보다 포토닉스 매출 전환을 먼저 봐야 합니다",
+    desk: "양자컴퓨팅",
+    author: "Eleanor",
+    publishedAt: "2026-06-01T10:46:34+09:00",
+    summary: "퀀텀 컴퓨팅 QUBT는 2026년 1분기 현금과 투자자산 14억 달러를 보유했지만, 투자자는 매출 370만 달러의 구성, Luminar Semiconductor와 NuCrypt 인수 통합, Fab 1 매출 전환을 함께 확인해야 합니다.",
+    image: QUANTUM_COMPUTING_QUBT_PHOTONICS_CASH_BACKLOG_2026_IMAGE,
+    video: { youtubeId: "romCdayBdJc", title: "QUBT의 room-temperature quantum 전략을 설명하는 영어 딥다이브 영상", channel: "stockexplorers", sourceUrl: "https://www.youtube.com/watch?v=romCdayBdJc", thumbnailUrl: "https://i.ytimg.com/vi/romCdayBdJc/hqdefault.jpg", description: "퀀텀 컴퓨팅 QUBT의 상온 양자·포토닉스 전략과 투자 쟁점을 설명하는 영어 롱폼 딥다이브 영상입니다." },
+  },
   {
     slug: "quantum-computing-ionq-rpo-contracts-2026",
     title: "아이온큐는 매출보다 RPO와 256큐비트 시스템 인식 시점을 먼저 봐야 합니다",
