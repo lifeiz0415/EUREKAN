@@ -1245,6 +1245,15 @@ const RENEWABLE_ENERGY_PPA_GRID_CONNECTION_2026_IMAGE = {
   height: 720,
 };
 
+const RENEWABLE_ENERGY_GE_VERNOVA_POWER_BACKLOG_CASHFLOW_2026_IMAGE = {
+  src: "images/renewable-energy-ge-vernova-power-backlog-cashflow-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Gas_Turbine_Power_Plant.JPG",
+  alt: "가스터빈 발전 설비로 GE 버노바의 전력 인프라 수요와 수주잔고 전환 리스크를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Gas_Turbine_Power_Plant.JPG",
+  width: 1280,
+  height: 640,
+};
+
 const TRADITIONAL_ENERGY_REFINING_CASH_RETURN_2026_IMAGE = {
   src: "images/traditional-energy-refining-cash-return-2026-1280.webp",
   alt: "전통 에너지는 유가보다 정제 마진과 배당 재원이 오래가는지가 핵심입니다 내용을 설명하는 전통 에너지 대표 이미지",
@@ -1645,6 +1654,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "AVGO": { name: "브로드컴", market: "미국", ticker: "AVGO", url: "https://m.stock.naver.com/worldstock/stock/AVGO.O/total" },
   "AWK": { name: "아메리칸 워터 웍스", market: "미국", ticker: "AWK", url: "https://m.stock.naver.com/worldstock/stock/AWK/total" },
   "BATL": { name: "바탈리온 오일", market: "미국", ticker: "BATL", url: "https://m.stock.naver.com/worldstock/stock/BATL.K/total" },
+  "BE": { name: "블룸 에너지", market: "미국", ticker: "BE", url: "https://m.stock.naver.com/worldstock/stock/BE/total" },
   "BMNR": { name: "비트마인 이머전 테크놀로지스", market: "미국", ticker: "BMNR", url: "https://m.stock.naver.com/worldstock/stock/BMNR.K/total" },
   "BNED": { name: "반스 앤 노블 에듀케이션", market: "미국", ticker: "BNED", url: "https://m.stock.naver.com/worldstock/stock/BNED.K/total" },
   "CCJ": { name: "카메코", market: "미국", ticker: "CCJ", url: "https://m.stock.naver.com/worldstock/stock/CCJ/total" },
@@ -1678,6 +1688,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "FDX": { name: "페덱스", market: "미국", ticker: "FDX", url: "https://m.stock.naver.com/worldstock/stock/FDX/total" },
   "FANG": { name: "다이아몬드백 에너지", market: "미국", ticker: "FANG", url: "https://m.stock.naver.com/worldstock/stock/FANG.O/total" },
   "FSLR": { name: "퍼스트 솔라", market: "미국", ticker: "FSLR", url: "https://m.stock.naver.com/worldstock/stock/FSLR.O/total" },
+  "GEV": { name: "GE 버노바", market: "미국", ticker: "GEV", url: "https://m.stock.naver.com/worldstock/stock/GEV/total" },
   "FTNT": { name: "포티넷", market: "미국", ticker: "FTNT", url: "https://m.stock.naver.com/worldstock/stock/FTNT.O/total" },
   "GOOGL": { name: "알파벳 Class A", market: "미국", ticker: "GOOGL", url: "https://m.stock.naver.com/worldstock/stock/GOOGL.O/total" },
   "GRMN": { name: "가민", market: "미국", ticker: "GRMN", url: "https://m.stock.naver.com/worldstock/stock/GRMN.K/total" },
@@ -1761,6 +1772,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "UEC": { name: "우라늄 에너지", market: "미국", ticker: "UEC", url: "https://m.stock.naver.com/worldstock/stock/UEC/total" },
   "UROY": { name: "우라늄 로열티", market: "미국", ticker: "UROY", url: "https://m.stock.naver.com/worldstock/stock/UROY.O/total" },
   "VRSK": { name: "베리스크 애널리틱스", market: "미국", ticker: "VRSK", url: "https://m.stock.naver.com/worldstock/stock/VRSK.O/total" },
+  "VRT": { name: "버티브 홀딩스", market: "미국", ticker: "VRT", url: "https://m.stock.naver.com/worldstock/stock/VRT/total" },
   "VZ": { name: "버라이존", market: "미국", ticker: "VZ", url: "https://m.stock.naver.com/worldstock/stock/VZ/total" },
   "WLDS": { name: "웨어러블 디바이시스", market: "미국", ticker: "WLDS", url: "https://m.stock.naver.com/worldstock/stock/WLDS.O/total" },
   "WM": { name: "웨이스트 매니지먼트", market: "미국", ticker: "WM", url: "https://m.stock.naver.com/worldstock/stock/WM/total" },
@@ -1812,6 +1824,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "renewable-energy-ge-vernova-power-backlog-cashflow-2026": ["GEV", "ETN", "VRT", "BE"],
   "semiconductor-texas-instruments-analog-inventory-fab-2026": ["TXN", "ADI", "AMAT", "QCOM"],
   "semiconductor-marvell-ai-custom-silicon-datacenter-2026": ["MRVL", "NVDA", "AVGO", "AMD"],
   "telecommunications-lumentum-ai-optical-margin-2026": ["LITE", "NVDA", "COHR", "AVGO"],
@@ -1869,6 +1882,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "renewable-energy-ge-vernova-power-backlog-cashflow-2026",
+    title: "GE 버노바는 전력 수요보다 수주잔고와 현금흐름 전환 속도가 먼저입니다",
+    desk: "재생에너지",
+    author: "Rafael",
+    publishedAt: "2026-06-01T19:29:59+09:00",
+    summary: "GE 버노바 GEV는 2026년 1분기 주문 120억 달러와 매출 80억 달러를 기록하며 AI 전력 인프라 기대를 받지만, 투자자는 전력 수요보다 가스터빈 슬롯, 그리드 장비 납기, 풍력 마진, 서비스 매출과 잉여현금흐름 전환 속도를 먼저 확인해야 합니다.",
+    image: RENEWABLE_ENERGY_GE_VERNOVA_POWER_BACKLOG_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "WuvxaD5rVmc", title: "Inside GE Vernova’s Plan to Power the AI Boom", channel: "WSJ Podcasts", sourceUrl: "https://www.youtube.com/watch?v=WuvxaD5rVmc", thumbnailUrl: "https://i.ytimg.com/vi/WuvxaD5rVmc/hqdefault.jpg", width: 480, height: 360, description: "AI 데이터센터 전력 수요와 GE 버노바의 전력 인프라 전략을 다루는 WSJ 롱폼 인터뷰 영상입니다." },
+  },
   {
     slug: "semiconductor-texas-instruments-analog-inventory-fab-2026",
     title: "텍사스 인스트루먼트는 AI보다 아날로그 재고 사이클과 300mm 팹 가동률이 먼저입니다",
