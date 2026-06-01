@@ -1660,6 +1660,15 @@ const HARDWARE_SUPERMICRO_AI_SERVER_WORKING_CAPITAL_MARGIN_2026_IMAGE = {
   height: 640,
 };
 
+const CYBERSECURITY_PALOALTO_PLATFORMIZATION_ARR_MARGIN_2026_IMAGE = {
+  src: "images/cybersecurity-paloalto-platformization-arr-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/9/98/Palo_Alto_Networks_Headquarters_South_Side_2018.jpg",
+  alt: "팔로 알토 네트웍스 본사 이미지로 보안 플랫폼화와 ARR 전환을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Palo_Alto_Networks_Headquarters_South_Side_2018.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1884,6 +1893,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "cybersecurity-paloalto-platformization-arr-margin-2026": ["PANW", "CRWD", "FTNT", "OKTA"],
   "hardware-supermicro-ai-server-working-capital-margin-2026": ["SMCI", "NVDA", "DELL", "AVGO"],
   "software-western-digital-hdd-ai-storage-margin-2026": ["WDC", "STX", "SNDK", "MU"],
   "industrial-automation-caterpillar-energy-mining-margin-2026": ["CAT", "DE", "GEV", "ETN"],
@@ -1948,6 +1958,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "cybersecurity-paloalto-platformization-arr-margin-2026",
+    title: "팔로 알토 네트웍스는 보안 수요보다 플랫폼화와 ARR 전환 속도를 봐야 합니다",
+    desk: "사이버보안",
+    author: "Leon",
+    publishedAt: "2026-06-01T20:09:47+09:00",
+    summary: "팔로 알토 네트웍스 PANW는 보안 수요가 강한 시장에 있지만, 투자자는 침해 사고 증가보다 플랫폼화 전략, 차세대 보안 ARR, 청구액 성장, 영업마진이 함께 개선되는지 확인해야 합니다.",
+    image: CYBERSECURITY_PALOALTO_PLATFORMIZATION_ARR_MARGIN_2026_IMAGE,
+    video: { youtubeId: "qgBCB5Jl2r8", title: "Palo Alto Networks Q2 2026 Earnings Call", channel: "Investing 101", sourceUrl: "https://www.youtube.com/watch?v=qgBCB5Jl2r8", thumbnailUrl: "https://i.ytimg.com/vi/qgBCB5Jl2r8/hqdefault.jpg", width: 480, height: 360, description: "팔로 알토 네트웍스 2026년 2분기 실적 컨퍼런스콜을 들을 수 있는 영어 롱폼 영상입니다." },
+  },
   {
     slug: "hardware-supermicro-ai-server-working-capital-margin-2026",
     title: "슈퍼 마이크로 컴퓨터는 AI 서버 성장보다 운전자본과 마진 회복이 먼저입니다",
