@@ -75,6 +75,15 @@ const ELECTRIC_VEHICLE_TESLA_ROBOTAXI_MARGIN_ENERGY_2026_IMAGE = {
   height: 720,
 };
 
+const HARDWARE_DELL_AI_SERVER_BACKLOG_MARGIN_2026_IMAGE = {
+  src: "images/hardware-dell-ai-server-backlog-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/1/13/Dell_PowerEdge_Servers.jpg",
+  alt: "델테크놀로지 AI 서버 백로그와 마진 전환을 설명하는 Dell PowerEdge 서버 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Dell_PowerEdge_Servers.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1681,6 +1690,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "hardware-dell-ai-server-backlog-margin-2026": ["DELL", "NVDA", "AVGO", "005930.KS"],
   "quantum-computing-dwave-bookings-rpo-revenue-2026": ["QBTS", "IONQ", "RGTI", "QUBT"],
   "quantum-computing-rigetti-cepheus-cloud-revenue-2026": ["RGTI", "IONQ", "QBTS", "QUBT"],
   "quantum-computing-qubt-photonics-cash-backlog-2026": ["QUBT", "IONQ", "RGTI", "QBTS"],
@@ -1725,6 +1735,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "hardware-dell-ai-server-backlog-margin-2026",
+    title: "델테크놀로지는 AI 서버 매출보다 백로그 마진과 현금 전환을 먼저 봐야 합니다",
+    desk: "하드웨어",
+    author: "Victor",
+    publishedAt: "2026-06-01T12:28:47+09:00",
+    summary: "델테크놀로지 DELL은 FY2027 1분기 매출 438억 달러와 AI 서버 매출 161억 달러를 냈지만, 투자자는 AI 주문, 백로그, ISG 마진, PC 교체 수요, 운전자본과 현금흐름을 함께 확인해야 합니다.",
+    image: HARDWARE_DELL_AI_SERVER_BACKLOG_MARGIN_2026_IMAGE,
+    video: { youtubeId: "5Sw3o5AYtAE", title: "델테크놀로지 AI 서버 주문과 백로그를 설명하는 한국어 롱폼 영상", channel: "돈가치TV", sourceUrl: "https://www.youtube.com/watch?v=5Sw3o5AYtAE", thumbnailUrl: "https://i.ytimg.com/vi/5Sw3o5AYtAE/hqdefault.jpg", width: 480, height: 360, description: "DELL의 AI 서버 주문, 매출, 백로그 증가와 실적 반응을 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "quantum-computing-dwave-bookings-rpo-revenue-2026",
     title: "디 웨이브 퀀텀은 3,340만 달러 예약보다 RPO 매출 전환을 먼저 봐야 합니다",
