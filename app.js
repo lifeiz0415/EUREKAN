@@ -1669,6 +1669,15 @@ const CYBERSECURITY_PALOALTO_PLATFORMIZATION_ARR_MARGIN_2026_IMAGE = {
   height: 640,
 };
 
+const FINTECH_JPMORGAN_NIM_CREDIT_TRADING_2026_IMAGE = {
+  src: "images/fintech-jpmorgan-nim-credit-trading-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/f/f0/JPMorgan_Chase_Headquarters_New_York_City.jpg",
+  alt: "제이피모간체이스 본사 이미지로 순이자마진과 신용비용을 함께 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:JPMorgan_Chase_Headquarters_New_York_City.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1893,6 +1902,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "fintech-jpmorgan-nim-credit-trading-2026": ["JPM", "BAC", "SCHW", "MA"],
   "cybersecurity-paloalto-platformization-arr-margin-2026": ["PANW", "CRWD", "FTNT", "OKTA"],
   "hardware-supermicro-ai-server-working-capital-margin-2026": ["SMCI", "NVDA", "DELL", "AVGO"],
   "software-western-digital-hdd-ai-storage-margin-2026": ["WDC", "STX", "SNDK", "MU"],
@@ -1958,6 +1968,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "fintech-jpmorgan-nim-credit-trading-2026",
+    title: "제이피모간체이스는 순이자마진보다 신용비용과 시장 부문을 함께 봐야 합니다",
+    desk: "핀테크",
+    author: "Benjamin",
+    publishedAt: "2026-06-01T20:10:47+09:00",
+    summary: "제이피모간체이스 JPM은 미국 대형은행의 방어력을 대표하지만, 투자자는 순이자이익만 보지 말고 예금 비용, 신용비용, 카드 연체, 시장 부문 수익, 자본 환원 여력을 함께 확인해야 합니다.",
+    image: FINTECH_JPMORGAN_NIM_CREDIT_TRADING_2026_IMAGE,
+    video: { youtubeId: "iIHG8NbS6o0", title: "JPMorgan earnings: One analyst's key takeaways from the report", channel: "Yahoo Finance", sourceUrl: "https://www.youtube.com/watch?v=iIHG8NbS6o0", thumbnailUrl: "https://i.ytimg.com/vi/iIHG8NbS6o0/hqdefault.jpg", width: 480, height: 360, description: "제이피모간체이스 실적에서 순이자이익, 신용비용, 시장 부문을 짚는 Yahoo Finance 롱폼 인터뷰 영상입니다." },
+  },
   {
     slug: "cybersecurity-paloalto-platformization-arr-margin-2026",
     title: "팔로 알토 네트웍스는 보안 수요보다 플랫폼화와 ARR 전환 속도를 봐야 합니다",
