@@ -4047,6 +4047,7 @@ const newsletterPanelNode = document.querySelector(".article-newsletter");
 const newsletterFormNode = document.querySelector("#newsletter-form");
 const newsletterEmailNode = document.querySelector("#newsletter-email");
 const newsletterMessageNode = document.querySelector("#newsletter-message");
+const NEWSLETTER_SIGNUP_DISABLED = true;
 
 if (!deskMenuToggleNode && deskMenuNode) {
   deskMenuToggleNode = document.createElement("button");
@@ -5271,6 +5272,7 @@ function resetNewsletterPanel(isVisible = false) {
   newsletterTitleNode.textContent = "";
   newsletterCopyNode.textContent = "";
   newsletterMessageNode.textContent = "";
+  setNewsletterDisabledState();
 }
 
 function renderDeskDetail(desk) {
@@ -6456,6 +6458,16 @@ function findSubscriberByEmail(subscribers = [], email = "") {
   return subscribers.find((item) => String(item.email || "").toLowerCase() === email);
 }
 
+function setNewsletterDisabledState() {
+  if (!newsletterFormNode) return;
+  const submitButton = newsletterFormNode.querySelector("button[type='submit']");
+  if (submitButton) {
+    submitButton.disabled = NEWSLETTER_SIGNUP_DISABLED;
+    submitButton.setAttribute("aria-disabled", NEWSLETTER_SIGNUP_DISABLED ? "true" : "false");
+    submitButton.title = NEWSLETTER_SIGNUP_DISABLED ? "현재 뉴스레터 신청은 비활성화되어 있습니다." : "";
+  }
+}
+
 function upsertNewsletterSubscriber(email, page) {
   const subscribers = Array.isArray(dataStore.newsletter_subscribers) ? dataStore.newsletter_subscribers : [];
   const activeDesk = normalizeDesk(page.desk);
@@ -6483,6 +6495,11 @@ function upsertNewsletterSubscriber(email, page) {
 
 async function handleNewsletterSubmit(event) {
   event.preventDefault();
+  if (NEWSLETTER_SIGNUP_DISABLED) {
+    newsletterMessageNode.textContent = "현재 뉴스레터 신청은 비활성화되어 있습니다.";
+    return;
+  }
+
   if (!activePage) {
     newsletterMessageNode.textContent = "문서 상세 화면에서만 뉴스레터를 신청할 수 있습니다.";
     return;
@@ -6555,6 +6572,7 @@ newsletterFormNode.addEventListener("submit", (event) => {
   });
 });
 
+setNewsletterDisabledState();
 renderDeskMenu();
 scheduleNextPublishRefresh();
 loadDataStore().finally(syncViewFromLocation);
