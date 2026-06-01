@@ -1444,6 +1444,15 @@ const FINTECH_CREDIT_LOSS_FUNDING_COST_2026_IMAGE = {
   height: 720,
 };
 
+const FINTECH_ROBINHOOD_NET_DEPOSITS_GOLD_CRYPTO_2026_IMAGE = {
+  src: "images/fintech-robinhood-net-deposits-gold-crypto-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Trading_apps_on_an_iPhone_screen.jpg",
+  alt: "스마트폰 화면의 여러 거래 앱으로 로빈후드의 모바일 브로커리지 경쟁을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Trading_apps_on_an_iPhone_screen.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const BIOMETRICS_PRIVACY_CONTRACT_ADOPTION_2026_IMAGE = {
   src: "images/biometrics-privacy-contract-adoption-2026-1280.webp",
   alt: "생체인식은 보안 편의보다 개인정보 규제와 기관 계약 속도가 관건입니다 내용을 설명하는 생체인식 대표 이미지",
@@ -1648,6 +1657,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "HUM": { name: "휴마나", market: "미국", ticker: "HUM", url: "https://m.stock.naver.com/worldstock/stock/HUM/total" },
   "HUT": { name: "헛 8", market: "미국", ticker: "HUT", url: "https://m.stock.naver.com/worldstock/stock/HUT.O/total" },
   "IBM": { name: "IBM(인터내셔널 비지니스 머신)", market: "미국", ticker: "IBM", url: "https://m.stock.naver.com/worldstock/stock/IBM/total" },
+  "IBKR": { name: "인터랙티브 브로커스 그룹", market: "미국", ticker: "IBKR", url: "https://m.stock.naver.com/worldstock/stock/IBKR.O/total" },
   "IDAI": { name: "티 스탬프", market: "미국", ticker: "IDAI", url: "https://m.stock.naver.com/worldstock/stock/IDAI.O/total" },
   "INTC": { name: "인텔", market: "미국", ticker: "INTC", url: "https://m.stock.naver.com/worldstock/stock/INTC.O/total" },
   "IONQ": { name: "아이온큐", market: "미국", ticker: "IONQ", url: "https://m.stock.naver.com/worldstock/stock/IONQ.K/total" },
@@ -1701,6 +1711,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "RSG": { name: "리퍼블릭 서비스", market: "미국", ticker: "RSG", url: "https://m.stock.naver.com/worldstock/stock/RSG/total" },
   "RTX": { name: "RTX", market: "미국", ticker: "RTX", url: "https://m.stock.naver.com/worldstock/stock/RTX/total" },
   "SCCO": { name: "서던 코퍼", market: "미국", ticker: "SCCO", url: "https://m.stock.naver.com/worldstock/stock/SCCO.K/total" },
+  "SCHW": { name: "찰스 슈왑", market: "미국", ticker: "SCHW", url: "https://m.stock.naver.com/worldstock/stock/SCHW.K/total" },
   "SBET": { name: "샤프링크", market: "미국", ticker: "SBET", url: "https://m.stock.naver.com/worldstock/stock/SBET.O/total" },
   "SENS": { name: "센서닉스 홀딩스", market: "미국", ticker: "SENS", url: "https://m.stock.naver.com/worldstock/stock/SENS.O/total" },
   "SMPL": { name: "더 심플리 굿 푸드", market: "미국", ticker: "SMPL", url: "https://m.stock.naver.com/worldstock/stock/SMPL.O/total" },
@@ -1817,9 +1828,20 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "social-media-reddit-arpu-ai-licensing-2026": ["RDDT", "META", "SNAP", "PINS"],
   "consumer-goods-costco-membership-renewal-margin-2026": ["COST", "WMT", "TGT", "AMZN"],
   "software-salesforce-agentforce-rpo-margin-2026": ["CRM", "NOW", "MSFT", "ORCL"],
+  "fintech-robinhood-net-deposits-gold-crypto-2026": ["HOOD", "COIN", "IBKR", "SCHW"],
 };
 
 const featuredPages = [
+  {
+    slug: "fintech-robinhood-net-deposits-gold-crypto-2026",
+    title: "로빈후드는 크립토 거래보다 순입금과 Gold 구독 지속성이 먼저입니다",
+    desk: "핀테크",
+    author: "Lionel",
+    publishedAt: "2026-06-01T17:45:51+09:00",
+    summary: "로빈후드는 2026년 1분기 매출 10억6700만 달러와 순입금 177억 달러를 기록했지만, 투자자는 크립토 거래보다 순입금, Gold 구독, 마진 대출, 이벤트 계약 매출의 반복성을 먼저 확인해야 합니다.",
+    image: FINTECH_ROBINHOOD_NET_DEPOSITS_GOLD_CRYPTO_2026_IMAGE,
+    video: { youtubeId: "5ch7lr2HwQY", title: "금리 우려와 비트코인 하락 속 로빈후드를 분석하는 한국어 롱폼 영상", channel: "한경 글로벌마켓", sourceUrl: "https://www.youtube.com/watch?v=5ch7lr2HwQY", thumbnailUrl: "https://i.ytimg.com/vi/5ch7lr2HwQY/hqdefault.jpg", width: 480, height: 360, description: "한경 글로벌마켓이 로빈후드 주가와 금리, 비트코인 하락, 밸류에이션 부담을 함께 설명하는 한국어 롱폼 영상입니다." },
+  },
   {
     slug: "space-technology-asts-bluebird-cash-burn-2026",
     title: "AST 스페이스모바일은 통신사 파트너보다 45기 위성 배치와 현금 소진을 먼저 봐야 합니다",
