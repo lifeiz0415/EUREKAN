@@ -84,6 +84,15 @@ const HARDWARE_DELL_AI_SERVER_BACKLOG_MARGIN_2026_IMAGE = {
   height: 640,
 };
 
+const SOCIAL_MEDIA_META_AI_CAPEX_AD_ROI_2026_IMAGE = {
+  src: "images/social-media-meta-ai-capex-ad-roi-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Meta_Platforms_Headquarters_Menlo_Park_California.jpg",
+  alt: "메타 AI 광고 성장과 설비투자 회수 속도를 함께 설명하는 Meta 본사 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Meta_Platforms_Headquarters_Menlo_Park_California.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1690,6 +1699,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "social-media-meta-ai-capex-ad-roi-2026": ["META", "GOOGL", "RDDT", "SNAP"],
   "hardware-dell-ai-server-backlog-margin-2026": ["DELL", "NVDA", "AVGO", "005930.KS"],
   "quantum-computing-dwave-bookings-rpo-revenue-2026": ["QBTS", "IONQ", "RGTI", "QUBT"],
   "quantum-computing-rigetti-cepheus-cloud-revenue-2026": ["RGTI", "IONQ", "QBTS", "QUBT"],
@@ -1735,6 +1745,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "social-media-meta-ai-capex-ad-roi-2026",
+    title: "메타는 AI 광고 성장보다 1,450억 달러 설비투자 회수 속도를 봐야 합니다",
+    desk: "소셜미디어",
+    author: "Nolan",
+    publishedAt: "2026-06-01T13:12:27+09:00",
+    summary: "메타 META는 2026년 1분기 매출 563억 달러와 광고 노출 19%, 평균 광고 단가 12% 증가를 기록했지만, 투자자는 AI 설비투자, Reality Labs 손실, 광고 효율 지속성을 함께 확인해야 합니다.",
+    image: SOCIAL_MEDIA_META_AI_CAPEX_AD_ROI_2026_IMAGE,
+    video: { youtubeId: "gJoLLz58nf4", title: "메타 광고 전략과 크리에이티브 타깃팅 변화를 설명하는 영어 롱폼 영상", channel: "Rooted in Retail Podcast", sourceUrl: "https://www.youtube.com/watch?v=gJoLLz58nf4", thumbnailUrl: "https://i.ytimg.com/vi/gJoLLz58nf4/hqdefault.jpg", width: 480, height: 360, description: "Meta Ads Strategy 2026과 광고 타깃팅 변화, 크리에이티브 중요성을 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "hardware-dell-ai-server-backlog-margin-2026",
     title: "델테크놀로지는 AI 서버 매출보다 백로그 마진과 현금 전환을 먼저 봐야 합니다",
