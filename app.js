@@ -1678,6 +1678,15 @@ const FINTECH_JPMORGAN_NIM_CREDIT_TRADING_2026_IMAGE = {
   height: 640,
 };
 
+const SOFTWARE_SEAGATE_HAMR_CLOUD_STORAGE_CASHFLOW_2026_IMAGE = {
+  src: "images/software-seagate-hamr-cloud-storage-cashflow-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Seagate_Hard_Disk.jpg",
+  alt: "씨게이트 하드디스크 이미지로 HAMR 전환과 클라우드 저장장치 수요를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Seagate_Hard_Disk.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1902,6 +1911,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "software-seagate-hamr-cloud-storage-cashflow-2026": ["STX", "WDC", "SNDK", "MU"],
   "fintech-jpmorgan-nim-credit-trading-2026": ["JPM", "BAC", "SCHW", "MA"],
   "cybersecurity-paloalto-platformization-arr-margin-2026": ["PANW", "CRWD", "FTNT", "OKTA"],
   "hardware-supermicro-ai-server-working-capital-margin-2026": ["SMCI", "NVDA", "DELL", "AVGO"],
@@ -1968,6 +1978,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "software-seagate-hamr-cloud-storage-cashflow-2026",
+    title: "씨게이트는 HDD 공급 부족보다 HAMR 전환과 현금흐름을 확인해야 합니다",
+    desk: "소프트웨어",
+    author: "Grace",
+    publishedAt: "2026-06-01T20:11:47+09:00",
+    summary: "씨게이트 STX는 AI 데이터센터 저장 수요와 HDD 공급 부족의 수혜를 받고 있지만, 투자자는 고용량 HAMR 전환, 클라우드 고객 계약, 매출총이익률, 부채와 배당 여력을 함께 확인해야 합니다.",
+    image: SOFTWARE_SEAGATE_HAMR_CLOUD_STORAGE_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "N3W4dztr5B0", title: "Seagate EPS Up 115% — But Is the Structural Shift Real?", channel: "Chip Stock Investor", sourceUrl: "https://www.youtube.com/watch?v=N3W4dztr5B0", thumbnailUrl: "https://i.ytimg.com/vi/N3W4dztr5B0/hqdefault.jpg", width: 480, height: 360, description: "씨게이트 실적과 HDD 구조적 수요, AI 저장장치 사이클을 분석하는 영어 롱폼 영상입니다." },
+  },
   {
     slug: "fintech-jpmorgan-nim-credit-trading-2026",
     title: "제이피모간체이스는 순이자마진보다 신용비용과 시장 부문을 함께 봐야 합니다",
