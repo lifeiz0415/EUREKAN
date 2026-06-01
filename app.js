@@ -111,6 +111,15 @@ const HARDWARE_IBM_REDHAT_MAINFRAME_FREE_CASH_FLOW_2026_IMAGE = {
   height: 640,
 };
 
+const SEMICONDUCTOR_QUALCOMM_AUTOMOTIVE_IOT_HANDSET_CYCLE_2026_IMAGE = {
+  src: "images/semiconductor-qualcomm-automotive-iot-handset-cycle-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/2/29/Qualcomm_Headquarters_La_Jolla.jpg",
+  alt: "퀄컴 본사 건물로 스마트폰 반도체와 자동차·IoT 다변화를 함께 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Qualcomm_Headquarters_La_Jolla.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1718,6 +1727,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "semiconductor-qualcomm-automotive-iot-handset-cycle-2026": ["QCOM", "AAPL", "AVGO", "005930.KS"],
   "hardware-ibm-redhat-mainframe-free-cash-flow-2026": ["IBM", "MSFT", "ORCL", "GOOGL"],
   "cloud-computing-oracle-rpo-ai-capex-2026": ["ORCL", "MSFT", "AMZN", "GOOGL"],
   "social-media-meta-ai-capex-ad-roi-2026": ["META", "GOOGL", "RDDT", "SNAP"],
@@ -1766,6 +1776,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-qualcomm-automotive-iot-handset-cycle-2026",
+    title: "퀄컴은 스마트폰 반등보다 자동차·IoT 매출의 반복성을 먼저 봐야 합니다",
+    desk: "반도체",
+    author: "Sophia",
+    publishedAt: "2026-06-01T16:16:41+09:00",
+    summary: "퀄컴은 FY2026 2분기 매출 105억9900만 달러와 QCT 매출 90억7600만 달러를 냈지만, 투자자는 핸드셋 회복보다 자동차와 IoT 매출의 반복성, QTL 라이선스, 애플 모뎀 리스크를 함께 확인해야 합니다.",
+    image: SEMICONDUCTOR_QUALCOMM_AUTOMOTIVE_IOT_HANDSET_CYCLE_2026_IMAGE,
+    video: { youtubeId: "6CjgYIA6OyQ", title: "Qualcomm Investor Day 2024: IoT and Automotive Diversification Update", channel: "Qualcomm", sourceUrl: "https://www.youtube.com/watch?v=6CjgYIA6OyQ", thumbnailUrl: "https://i.ytimg.com/vi/6CjgYIA6OyQ/hqdefault.jpg", width: 480, height: 360, description: "퀄컴 공식 채널이 자동차, IoT, 엣지 AI 다변화 전략을 설명하는 Investor Day 롱폼 영상입니다." },
+  },
   {
     slug: "hardware-ibm-redhat-mainframe-free-cash-flow-2026",
     title: "IBM은 AI 이름보다 Red Hat·메인프레임·컨설팅 현금흐름을 먼저 봐야 합니다",
