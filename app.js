@@ -102,6 +102,15 @@ const CLOUD_COMPUTING_ORACLE_RPO_AI_CAPEX_2026_IMAGE = {
   height: 640,
 };
 
+const HARDWARE_IBM_REDHAT_MAINFRAME_FREE_CASH_FLOW_2026_IMAGE = {
+  src: "images/hardware-ibm-redhat-mainframe-free-cash-flow-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/6/61/IBM_Building_in_Blue%2C_White_and_Red_%2823070301742%29.jpg",
+  alt: "IBM의 Red Hat, 메인프레임, AI 현금흐름을 설명하는 IBM 건물 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:IBM_Building_in_Blue,_White_and_Red_(23070301742).jpg",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1592,6 +1601,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "HPQ": { name: "HP", market: "미국", ticker: "HPQ", url: "https://m.stock.naver.com/worldstock/stock/HPQ/total" },
   "HUM": { name: "휴마나", market: "미국", ticker: "HUM", url: "https://m.stock.naver.com/worldstock/stock/HUM/total" },
   "HUT": { name: "헛 8", market: "미국", ticker: "HUT", url: "https://m.stock.naver.com/worldstock/stock/HUT.O/total" },
+  "IBM": { name: "IBM(인터내셔널 비지니스 머신)", market: "미국", ticker: "IBM", url: "https://m.stock.naver.com/worldstock/stock/IBM/total" },
   "IDAI": { name: "티 스탬프", market: "미국", ticker: "IDAI", url: "https://m.stock.naver.com/worldstock/stock/IDAI.O/total" },
   "INTC": { name: "인텔", market: "미국", ticker: "INTC", url: "https://m.stock.naver.com/worldstock/stock/INTC.O/total" },
   "IONQ": { name: "아이온큐", market: "미국", ticker: "IONQ", url: "https://m.stock.naver.com/worldstock/stock/IONQ.K/total" },
@@ -1708,6 +1718,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "hardware-ibm-redhat-mainframe-free-cash-flow-2026": ["IBM", "MSFT", "ORCL", "GOOGL"],
   "cloud-computing-oracle-rpo-ai-capex-2026": ["ORCL", "MSFT", "AMZN", "GOOGL"],
   "social-media-meta-ai-capex-ad-roi-2026": ["META", "GOOGL", "RDDT", "SNAP"],
   "hardware-dell-ai-server-backlog-margin-2026": ["DELL", "NVDA", "AVGO", "005930.KS"],
@@ -1755,6 +1766,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "hardware-ibm-redhat-mainframe-free-cash-flow-2026",
+    title: "IBM은 AI 이름보다 Red Hat·메인프레임·컨설팅 현금흐름을 먼저 봐야 합니다",
+    desk: "하드웨어",
+    author: "Gideon",
+    publishedAt: "2026-06-01T15:54:52+09:00",
+    summary: "IBM은 2026년 1분기 매출 159억 달러와 잉여현금흐름 22억 달러를 냈지만, 투자자는 Red Hat 성장, IBM Z 교체 주기, 컨설팅 수요, 부채와 배당 여력을 함께 확인해야 합니다.",
+    image: HARDWARE_IBM_REDHAT_MAINFRAME_FREE_CASH_FLOW_2026_IMAGE,
+    video: { youtubeId: "zt0JA5rxdfM", title: "IBM Technology가 설명하는 2026년 AI 트렌드와 기업 자동화 롱폼 영상", channel: "IBM Technology", sourceUrl: "https://www.youtube.com/watch?v=zt0JA5rxdfM", thumbnailUrl: "https://i.ytimg.com/vi/zt0JA5rxdfM/hqdefault.jpg", width: 480, height: 360, description: "IBM Technology 공식 채널이 2026년 AI 트렌드, 에이전트형 AI, 양자, 자동화를 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "cloud-computing-oracle-rpo-ai-capex-2026",
     title: "오라클은 5,530억 달러 RPO보다 AI 클라우드 용량 회전율을 먼저 봐야 합니다",
