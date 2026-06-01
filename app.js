@@ -1615,6 +1615,15 @@ const HEALTHCARE_BIOTECH_LILLY_GLP1_CAPACITY_PRICE_2026_IMAGE = {
   height: 640,
 };
 
+const TELECOMMUNICATIONS_CISCO_AI_NETWORKING_ORDERS_MARGIN_2026_IMAGE = {
+  src: "images/telecommunications-cisco-ai-networking-orders-margin-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/3/31/Cisco_Systems_Headquarters_%28Building_10%29%2C_Cisco_San_Jose_Main_Campus.jpg",
+  alt: "시스코 본사 이미지로 AI 네트워크 주문과 통신 장비 전환을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Cisco_Systems_Headquarters_(Building_10),_Cisco_San_Jose_Main_Campus.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1839,6 +1848,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "telecommunications-cisco-ai-networking-orders-margin-2026": ["CSCO", "AVGO", "NVDA", "LITE"],
   "healthcare-biotech-lilly-glp1-capacity-price-2026": ["LLY", "ABBV", "ABT", "207940.KS"],
   "renewable-energy-ge-vernova-power-backlog-cashflow-2026": ["GEV", "ETN", "VRT", "BE"],
   "semiconductor-texas-instruments-analog-inventory-fab-2026": ["TXN", "ADI", "AMAT", "QCOM"],
@@ -1898,6 +1908,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "telecommunications-cisco-ai-networking-orders-margin-2026",
+    title: "시스코 시스템즈는 AI 주문보다 네트워크 전환과 마진 지속성이 먼저입니다",
+    desk: "통신",
+    author: "Isaac",
+    publishedAt: "2026-06-01T20:04:47+09:00",
+    summary: "시스코 시스템즈 CSCO는 AI 네트워크 주문과 보안·관측성 소프트웨어를 키우고 있지만, 투자자는 AI 발표보다 캠퍼스 네트워크 교체, 하이퍼스케일러 주문의 반복성, 매출총이익률 방어를 먼저 확인해야 합니다.",
+    image: TELECOMMUNICATIONS_CISCO_AI_NETWORKING_ORDERS_MARGIN_2026_IMAGE,
+    video: { youtubeId: "M9ruNlPEyLc", title: "Cisco Scaling AI – Deterministic Fabrics and High-Density Infrastructure with Richard Licon", channel: "Tech Field Day", sourceUrl: "https://www.youtube.com/watch?v=M9ruNlPEyLc", thumbnailUrl: "https://i.ytimg.com/vi/M9ruNlPEyLc/hqdefault.jpg", width: 480, height: 360, description: "시스코의 AI 인프라 네트워크, 고밀도 연결, 데이터센터 패브릭을 설명하는 영어 롱폼 기술 영상입니다." },
+  },
   {
     slug: "healthcare-biotech-lilly-glp1-capacity-price-2026",
     title: "일라이 릴리는 GLP-1 매출보다 생산능력과 순가격 방어를 먼저 봐야 합니다",
