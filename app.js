@@ -1588,6 +1588,15 @@ const CRYPTO_BLOCKCHAIN_BITMINE_ETH_TREASURY_STAKING_2026_IMAGE = {
   height: 720,
 };
 
+const SEMICONDUCTOR_TEXAS_INSTRUMENTS_ANALOG_INVENTORY_FAB_2026_IMAGE = {
+  src: "images/semiconductor-texas-instruments-analog-inventory-fab-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Silicon_Photonics_300mm_wafer.JPG",
+  alt: "300mm 실리콘 웨이퍼로 텍사스 인스트루먼트의 아날로그 반도체와 자체 팹 투자 부담을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Silicon_Photonics_300mm_wafer.JPG",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1623,9 +1632,11 @@ const RELATED_STOCKS_BY_TICKER = {
   "ABT": { name: "애보트 래보라토리", market: "미국", ticker: "ABT", url: "https://m.stock.naver.com/worldstock/stock/ABT/total" },
   "ABTC": { name: "아메리칸 비트코인", market: "미국", ticker: "ABTC", url: "https://m.stock.naver.com/worldstock/stock/ABTC.O/total" },
   "ADBE": { name: "어도비", market: "미국", ticker: "ADBE", url: "https://m.stock.naver.com/worldstock/stock/ADBE.O/total" },
+  "ADI": { name: "애널로그 디바이시스", market: "미국", ticker: "ADI", url: "https://m.stock.naver.com/worldstock/stock/ADI.O/total" },
   "ADM": { name: "아처 대니얼스 미들랜드", market: "미국", ticker: "ADM", url: "https://m.stock.naver.com/worldstock/stock/ADM/total" },
   "AFRM": { name: "어펌 홀딩스", market: "미국", ticker: "AFRM", url: "https://m.stock.naver.com/worldstock/stock/AFRM.O/total" },
   "AMD": { name: "AMD(어드밴스드 마이크로 디바이시스)", market: "미국", ticker: "AMD", url: "https://m.stock.naver.com/worldstock/stock/AMD.O/total" },
+  "AMAT": { name: "어플라이드 머티어리얼즈", market: "미국", ticker: "AMAT", url: "https://m.stock.naver.com/worldstock/stock/AMAT.O/total" },
   "AMT": { name: "아메리칸 타워", market: "미국", ticker: "AMT", url: "https://m.stock.naver.com/worldstock/stock/AMT/total" },
   "AMZN": { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
   "ASML": { name: "ASML 홀딩 ADR", market: "미국", ticker: "ASML", url: "https://m.stock.naver.com/worldstock/stock/ASML.O/total" },
@@ -1745,6 +1756,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "TSM": { name: "TSMC ADR", market: "미국", ticker: "TSM", url: "https://m.stock.naver.com/worldstock/stock/TSM/total" },
   "TSLA": { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
   "TGT": { name: "타겟", market: "미국", ticker: "TGT", url: "https://m.stock.naver.com/worldstock/stock/TGT/total" },
+  "TXN": { name: "텍사스 인스트루먼트", market: "미국", ticker: "TXN", url: "https://m.stock.naver.com/worldstock/stock/TXN.O/total" },
   "UBER": { name: "우버", market: "미국", ticker: "UBER", url: "https://m.stock.naver.com/worldstock/stock/UBER.K/total" },
   "UEC": { name: "우라늄 에너지", market: "미국", ticker: "UEC", url: "https://m.stock.naver.com/worldstock/stock/UEC/total" },
   "UROY": { name: "우라늄 로열티", market: "미국", ticker: "UROY", url: "https://m.stock.naver.com/worldstock/stock/UROY.O/total" },
@@ -1800,6 +1812,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "semiconductor-texas-instruments-analog-inventory-fab-2026": ["TXN", "ADI", "AMAT", "QCOM"],
   "semiconductor-marvell-ai-custom-silicon-datacenter-2026": ["MRVL", "NVDA", "AVGO", "AMD"],
   "telecommunications-lumentum-ai-optical-margin-2026": ["LITE", "NVDA", "COHR", "AVGO"],
   "semiconductor-qualcomm-automotive-iot-handset-cycle-2026": ["QCOM", "AAPL", "AVGO", "005930.KS"],
@@ -1856,6 +1869,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-texas-instruments-analog-inventory-fab-2026",
+    title: "텍사스 인스트루먼트는 AI보다 아날로그 재고 사이클과 300mm 팹 가동률이 먼저입니다",
+    desk: "반도체",
+    author: "Sophia",
+    publishedAt: "2026-06-01T19:05:12+09:00",
+    summary: "텍사스 인스트루먼트 TXN은 2026년 1분기 매출 48억2500만 달러와 잉여현금흐름 회복을 기록했지만, 투자자는 AI 수혜보다 산업·자동차 재고 사이클, 아날로그 가격 힘, 300mm 자체 팹 가동률과 감가상각 부담을 먼저 확인해야 합니다.",
+    image: SEMICONDUCTOR_TEXAS_INSTRUMENTS_ANALOG_INVENTORY_FAB_2026_IMAGE,
+    video: { youtubeId: "0FZvRWD50U0", title: "왜 그들은, 이 미국반도체 기업을 주목하는가. 텍사스 인스트루먼트에 대해", channel: "Gadget Seoul", sourceUrl: "https://www.youtube.com/watch?v=0FZvRWD50U0", thumbnailUrl: "https://i.ytimg.com/vi/0FZvRWD50U0/hqdefault.jpg", width: 480, height: 360, description: "텍사스 인스트루먼트의 아날로그 반도체 사업과 장기 투자 포인트를 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "telecommunications-lumentum-ai-optical-margin-2026",
     title: "루멘텀 홀딩스는 AI 광부품 수요보다 고객 집중과 증설 마진을 먼저 봐야 합니다",
