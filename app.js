@@ -1606,6 +1606,15 @@ const SEMICONDUCTOR_TEXAS_INSTRUMENTS_ANALOG_INVENTORY_FAB_2026_IMAGE = {
   height: 640,
 };
 
+const HEALTHCARE_BIOTECH_LILLY_GLP1_CAPACITY_PRICE_2026_IMAGE = {
+  src: "images/healthcare-biotech-lilly-glp1-capacity-price-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Lilly_1.jpg",
+  alt: "일라이 릴리 건물 이미지로 GLP-1 의약품 생산능력과 순가격 방어를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Lilly_1.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1658,6 +1667,12 @@ const RELATED_STOCKS_BY_TICKER = {
   "BMNR": { name: "비트마인 이머전 테크놀로지스", market: "미국", ticker: "BMNR", url: "https://m.stock.naver.com/worldstock/stock/BMNR.K/total" },
   "BNED": { name: "반스 앤 노블 에듀케이션", market: "미국", ticker: "BNED", url: "https://m.stock.naver.com/worldstock/stock/BNED.K/total" },
   "CCJ": { name: "카메코", market: "미국", ticker: "CCJ", url: "https://m.stock.naver.com/worldstock/stock/CCJ/total" },
+  "CAT": { name: "캐터필러", market: "미국", ticker: "CAT", url: "https://m.stock.naver.com/worldstock/stock/CAT/total" },
+  "WDC": { name: "웨스턴 디지털", market: "미국", ticker: "WDC", url: "https://m.stock.naver.com/worldstock/stock/WDC.O/total" },
+  "SMCI": { name: "슈퍼 마이크로 컴퓨터", market: "미국", ticker: "SMCI", url: "https://m.stock.naver.com/worldstock/stock/SMCI.O/total" },
+  "JPM": { name: "제이피모간체이스", market: "미국", ticker: "JPM", url: "https://m.stock.naver.com/worldstock/stock/JPM/total" },
+  "BAC": { name: "뱅크오브아메리카", market: "미국", ticker: "BAC", url: "https://m.stock.naver.com/worldstock/stock/BAC/total" },
+  "STX": { name: "씨게이트", market: "미국", ticker: "STX", url: "https://m.stock.naver.com/worldstock/stock/STX.O/total" },
   "CELH": { name: "셀시어스 홀딩스", market: "미국", ticker: "CELH", url: "https://m.stock.naver.com/worldstock/stock/CELH.O/total" },
   "COIN": { name: "코인베이스 글로벌", market: "미국", ticker: "COIN", url: "https://m.stock.naver.com/worldstock/stock/COIN.O/total" },
   "COHR": { name: "코히런트", market: "미국", ticker: "COHR", url: "https://m.stock.naver.com/worldstock/stock/COHR.K/total" },
@@ -1824,6 +1839,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "healthcare-biotech-lilly-glp1-capacity-price-2026": ["LLY", "ABBV", "ABT", "207940.KS"],
   "renewable-energy-ge-vernova-power-backlog-cashflow-2026": ["GEV", "ETN", "VRT", "BE"],
   "semiconductor-texas-instruments-analog-inventory-fab-2026": ["TXN", "ADI", "AMAT", "QCOM"],
   "semiconductor-marvell-ai-custom-silicon-datacenter-2026": ["MRVL", "NVDA", "AVGO", "AMD"],
@@ -1882,6 +1898,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "healthcare-biotech-lilly-glp1-capacity-price-2026",
+    title: "일라이 릴리는 GLP-1 매출보다 생산능력과 순가격 방어를 먼저 봐야 합니다",
+    desk: "헬스케어·바이오테크",
+    author: "Drake",
+    publishedAt: "2026-06-01T20:03:47+09:00",
+    summary: "일라이 릴리 LLY는 Zepbound와 Mounjaro로 비만·당뇨 시장을 키우고 있지만, 투자자는 매출 성장보다 생산능력 증설, 순가격 방어, 적응증 확대, 경쟁 약물의 보험 등재를 함께 확인해야 합니다.",
+    image: HEALTHCARE_BIOTECH_LILLY_GLP1_CAPACITY_PRICE_2026_IMAGE,
+    video: { youtubeId: "XQa7Y_TcuHs", title: "Eli Lilly Q4 2025 Earnings: Zepbound & Mounjaro EXPLODE + New Weight Loss Pill Launch Date", channel: "Big Picture Investing With Kevin McCormick", sourceUrl: "https://www.youtube.com/watch?v=XQa7Y_TcuHs", thumbnailUrl: "https://i.ytimg.com/vi/XQa7Y_TcuHs/hqdefault.jpg", width: 480, height: 360, description: "일라이 릴리의 Zepbound, Mounjaro, 경구 비만약 기대와 실적 변수를 다루는 영어 롱폼 분석 영상입니다." },
+  },
   {
     slug: "renewable-energy-ge-vernova-power-backlog-cashflow-2026",
     title: "GE 버노바는 전력 수요보다 수주잔고와 현금흐름 전환 속도가 먼저입니다",
