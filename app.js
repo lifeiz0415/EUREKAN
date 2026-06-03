@@ -1696,6 +1696,15 @@ const TRADITIONAL_ENERGY_EXXON_GUYANA_PERMIAN_BUYBACK_2026_IMAGE = {
   height: 640,
 };
 
+const TRADITIONAL_ENERGY_NEXT_DECADE_POWER_GAP_MIX_2035_IMAGE = {
+  src: "images/traditional-energy-next-decade-power-gap-mix-2035-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/b/b4/High_voltage_transmission_towers_and_lines.jpg",
+  alt: "고압 송전탑과 전력선을 통해 향후 10년 전력 부족과 현실적인 에너지 조합을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:High_voltage_transmission_towers_and_lines.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1749,6 +1758,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "BNED": { name: "반스 앤 노블 에듀케이션", market: "미국", ticker: "BNED", url: "https://m.stock.naver.com/worldstock/stock/BNED.K/total" },
   "CCJ": { name: "카메코", market: "미국", ticker: "CCJ", url: "https://m.stock.naver.com/worldstock/stock/CCJ/total" },
   "CAT": { name: "캐터필러", market: "미국", ticker: "CAT", url: "https://m.stock.naver.com/worldstock/stock/CAT/total" },
+  "CEG": { name: "콘스텔레이션 에너지", market: "미국", ticker: "CEG", url: "https://m.stock.naver.com/worldstock/stock/CEG.O/total" },
   "WDC": { name: "웨스턴 디지털", market: "미국", ticker: "WDC", url: "https://m.stock.naver.com/worldstock/stock/WDC.O/total" },
   "SMCI": { name: "슈퍼 마이크로 컴퓨터", market: "미국", ticker: "SMCI", url: "https://m.stock.naver.com/worldstock/stock/SMCI.O/total" },
   "JPM": { name: "제이피모간체이스", market: "미국", ticker: "JPM", url: "https://m.stock.naver.com/worldstock/stock/JPM/total" },
@@ -1920,6 +1930,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "traditional-energy-next-decade-power-gap-mix-2035": ["GEV", "ETN", "CEG", "XOM"],
   "traditional-energy-exxon-guyana-permian-buyback-2026": ["XOM", "CVX", "COP", "FANG"],
   "software-seagate-hamr-cloud-storage-cashflow-2026": ["STX", "WDC", "SNDK", "MU"],
   "fintech-jpmorgan-nim-credit-trading-2026": ["JPM", "BAC", "SCHW", "MA"],
@@ -1988,6 +1999,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "traditional-energy-next-decade-power-gap-mix-2035",
+    title: "향후 10년 에너지 부족은 재생에너지 하나가 아니라 가스·원전·송전망 조합으로 메워야 합니다",
+    desk: "전통 에너지",
+    author: "Graham",
+    publishedAt: "2026-06-03T11:44:20+09:00",
+    summary: "향후 10년 세계 전력 수요는 약 3만TWh에서 4만TWh 이상으로 늘 수 있으며, 부족분은 재생에너지 물량, 가스 발전의 유연성, 원전의 기저 전력, 송전망과 저장장치 투자를 함께 묶어야 현실적으로 충당할 수 있습니다.",
+    image: TRADITIONAL_ENERGY_NEXT_DECADE_POWER_GAP_MIX_2035_IMAGE,
+    video: { youtubeId: "TAmArR9R_V4", title: "폭발적인 전력수요 속 '이주식' 먼저 떠오릅니다ㅣ김효식 삼성액티브자산운용 팀장 [2부]", channel: "이효석아카데미", sourceUrl: "https://www.youtube.com/watch?v=TAmArR9R_V4", thumbnailUrl: "https://i.ytimg.com/vi/TAmArR9R_V4/hqdefault.jpg", width: 480, height: 360, description: "AI와 전기화가 만드는 전력 수요 증가와 전력 인프라 투자 포인트를 설명하는 한국어 롱폼 영상입니다." },
+  },
   {
     slug: "traditional-energy-exxon-guyana-permian-buyback-2026",
     title: "엑슨 모빌은 유가보다 가이아나·퍼미안 생산과 자사주 재원을 봐야 합니다",
