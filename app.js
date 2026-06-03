@@ -1597,6 +1597,15 @@ const CRYPTO_BLOCKCHAIN_BITMINE_ETH_TREASURY_STAKING_2026_IMAGE = {
   height: 720,
 };
 
+const CRYPTO_BLOCKCHAIN_ETHEREUM_PRICE_OUTLOOK_ETF_STAKING_2026_IMAGE = {
+  src: "images/crypto-blockchain-ethereum-price-outlook-etf-staking-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Close-up_of_a_physical_Ethereum_coin_%2851002904687%29.jpg",
+  alt: "이더리움 실물 코인 근접 사진으로 ETH 가격전망과 스테이킹 수요를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Close-up_of_a_physical_Ethereum_coin_(51002904687).jpg",
+  width: 1280,
+  height: 640,
+};
+
 const SEMICONDUCTOR_TEXAS_INSTRUMENTS_ANALOG_INVENTORY_FAB_2026_IMAGE = {
   src: "images/semiconductor-texas-instruments-analog-inventory-fab-2026-1280.webp",
   externalSrc: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Silicon_Photonics_300mm_wafer.JPG",
@@ -1992,6 +2001,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "crypto-blockchain-coinbase-clarity-act-2026": ["COIN", "HOOD", "MSTR", "MARA"],
   "crypto-blockchain-american-bitcoin-sats-per-share-2026": ["ABTC", "HUT", "MARA", "RIOT"],
   "crypto-blockchain-bitmine-eth-treasury-staking-2026": ["BMNR", "SBET", "COIN", "MSTR"],
+  "crypto-blockchain-ethereum-price-outlook-etf-staking-2026": ["BMNR", "SBET", "COIN", "HOOD"],
   "social-media-reddit-arpu-ai-licensing-2026": ["RDDT", "META", "SNAP", "PINS"],
   "consumer-goods-costco-membership-renewal-margin-2026": ["COST", "WMT", "TGT", "AMZN"],
   "software-salesforce-agentforce-rpo-margin-2026": ["CRM", "NOW", "MSFT", "ORCL"],
@@ -1999,6 +2009,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "crypto-blockchain-ethereum-price-outlook-etf-staking-2026",
+    title: "이더리움 가격전망은 ETF보다 스테이킹과 네트워크 수수료 회복을 먼저 봐야 합니다",
+    desk: "암호화폐·블록체인",
+    author: "Ryan",
+    publishedAt: "2026-06-03T14:37:52+09:00",
+    summary: "이더리움 ETH는 약 1,860달러대에서 ETF 순유입, 스테이킹 수익, 네트워크 수수료와 ETH 소각, ETH/BTC 상대강도에 따라 전망이 갈립니다. 투자자는 목표가보다 조건이 실제 숫자로 회복되는지를 먼저 확인해야 합니다.",
+    image: CRYPTO_BLOCKCHAIN_ETHEREUM_PRICE_OUTLOOK_ETF_STAKING_2026_IMAGE,
+    video: { youtubeId: "_JEzkoG_Cc0", title: "나스닥 상장사 200곳이 담은 이더리움, 가격이 안 움직이는 이유", channel: "새벽에온주호", sourceUrl: "https://www.youtube.com/watch?v=_JEzkoG_Cc0", thumbnailUrl: "https://i.ytimg.com/vi/_JEzkoG_Cc0/hqdefault.jpg", width: 480, height: 360, description: "이더리움 보유 기업과 가격이 움직이지 않는 이유를 한국어로 설명하는 30분대 롱폼 영상입니다." },
+  },
   {
     slug: "traditional-energy-next-decade-power-gap-mix-2035",
     title: "향후 10년 에너지 부족은 재생에너지 하나가 아니라 가스·원전·송전망 조합으로 메워야 합니다",
