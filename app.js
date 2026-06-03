@@ -4251,6 +4251,9 @@ const SPEECH_CHUNK_NEXT_DELAY_MS = 10;
 const SPEECH_KEEPALIVE_INTERVAL_MS = 4500;
 const SPEECH_CHUNK_FALLBACK_EXTRA_MS = 700;
 const SPEECH_CHUNK_MIN_FALLBACK_MS = 1200;
+const SPEECH_SCROLL_THROTTLE_MS = 650;
+const SPEECH_SCROLL_CENTER_TOP_RATIO = 0.34;
+const SPEECH_SCROLL_CENTER_BOTTOM_RATIO = 0.66;
 const CARD_IMAGE_WIDTHS = [220, 330, 500];
 const ARTICLE_IMAGE_WIDTHS = [500, 960, 1280];
 const CARD_IMAGE_SIZES = "(max-width: 640px) 42vw, (max-width: 960px) 28vw, 300px";
@@ -4468,6 +4471,9 @@ let speechRunId = 0;
 let speechStartedAt = 0;
 let speechProgressAnchorIndex = 0;
 let speechProgressEndIndex = 0;
+let speechScrollTimer = 0;
+let speechLastScrollNode = null;
+let speechLastScrollAt = 0;
 let resizeRenderTimer = 0;
 let publishRefreshTimer = 0;
 let deskMenuMeasureTimer = 0;
@@ -5787,7 +5793,62 @@ function getArticleSpeechBlocks() {
     .filter((item) => item.text);
 }
 
+function clearSpeechScrollTimer() {
+  clearTimeout(speechScrollTimer);
+  speechScrollTimer = 0;
+}
+
+function getSpeechScrollBehavior() {
+  return window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+}
+
+function isSpeechTargetInCenterBand(node) {
+  if (!node) return false;
+  const rect = node.getBoundingClientRect();
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 1;
+  const targetCenterY = rect.top + (rect.height / 2);
+  return targetCenterY >= viewportHeight * SPEECH_SCROLL_CENTER_TOP_RATIO
+    && targetCenterY <= viewportHeight * SPEECH_SCROLL_CENTER_BOTTOM_RATIO;
+}
+
+function scrollSpeechNodeToViewportCenter(node) {
+  if (!node || !document.documentElement.contains(node)) return;
+  const rect = node.getBoundingClientRect();
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 1;
+  const targetTop = Math.max(0, window.scrollY + rect.top - (viewportHeight / 2) + (rect.height / 2));
+  window.scrollTo({ top: targetTop, behavior: getSpeechScrollBehavior() });
+  speechLastScrollNode = node;
+  speechLastScrollAt = Date.now();
+}
+
+function scheduleSpeechNodeCenterScroll(node, { force = false } = {}) {
+  if (!node || articleViewNode?.hidden || !isArticleSpeechPlaying || isArticleSpeechPaused || isVoiceProgressSeeking) return;
+  if (!force && node === speechLastScrollNode && isSpeechTargetInCenterBand(node)) return;
+  if (!force && isSpeechTargetInCenterBand(node)) {
+    speechLastScrollNode = node;
+    return;
+  }
+
+  const runId = speechRunId;
+  const elapsed = Date.now() - speechLastScrollAt;
+  const delay = Math.max(0, SPEECH_SCROLL_THROTTLE_MS - elapsed);
+  clearSpeechScrollTimer();
+  speechScrollTimer = window.setTimeout(() => {
+    if (runId !== speechRunId || !isArticleSpeechPlaying || isArticleSpeechPaused || isVoiceProgressSeeking) return;
+    scrollSpeechNodeToViewportCenter(node);
+  }, delay);
+}
+
+function getSpeechScrollTargetNode(tokenItems = [], index = activeSpeechCurrentIndex, blockNodes = []) {
+  if (!tokenItems.length) return blockNodes[0] || null;
+  const safeIndex = getNormalizedSpeechIndex(index);
+  return tokenItems.find((token) => token.start <= safeIndex && token.end >= safeIndex)?.node
+    || tokenItems.find((token) => token.start >= safeIndex)?.node
+    || tokenItems[0].node;
+}
+
 function clearActiveSpeechTokenHighlight() {
+  clearSpeechScrollTimer();
   activeSpeechHighlightNodes.forEach((node) => {
     node.classList.remove(SPEECH_TOKEN_HIGHLIGHT_CLASS);
     node.removeAttribute("aria-current");
@@ -5818,6 +5879,7 @@ function updateSpeechChunkHighlight(start = activeSpeechCurrentIndex, end = star
     nextNodes.length === activeSpeechHighlightNodes.length
     && nextNodes.every((node, index) => node === activeSpeechHighlightNodes[index])
   ) {
+    scheduleSpeechNodeCenterScroll(getSpeechScrollTargetNode(nextTokenItems, start, nextBlockNodes));
     return;
   }
 
@@ -5828,6 +5890,7 @@ function updateSpeechChunkHighlight(start = activeSpeechCurrentIndex, end = star
     if (index === 0) node.setAttribute("aria-current", "true");
   });
   nextBlockNodes.forEach((node) => node.classList.add(SPEECH_BLOCK_HIGHLIGHT_CLASS));
+  scheduleSpeechNodeCenterScroll(getSpeechScrollTargetNode(nextTokenItems, start, nextBlockNodes));
 }
 
 function getSpeechSentenceHighlightRange(index = activeSpeechCurrentIndex, fallbackEnd = index) {
