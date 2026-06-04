@@ -772,6 +772,15 @@ const AUTONOMOUS_SYSTEMS_RISK_CYCLE_2026_IMAGE = {
   height: 720,
 };
 
+const AUTONOMOUS_SYSTEMS_ZENATECH_DRONE_SERVICE_REVENUE_2026_IMAGE = {
+  src: "images/autonomous-systems-zenatech-drone-service-revenue-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/b/be/Drone_inspection_of_Yaquina_Head_Lighthouse.jpg",
+  alt: "제나테크의 드론 서비스 매출 성장과 반복 계약 검증을 설명하는 드론 점검 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Drone_inspection_of_Yaquina_Head_Lighthouse.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const METAL_COMMODITIES_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/metal-commodities-margin-bottleneck-2026-1280.webp",
   alt: "금속 원자재 투자는 구리, 알루미늄, 희토류 공급망보다 광산 개발과 제련 비용을 먼저 봐야 합니다 내용을 설명하는 금속 원자재 대표 이미지",
@@ -1759,6 +1768,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "ASML": { name: "ASML 홀딩 ADR", market: "미국", ticker: "ASML", url: "https://m.stock.naver.com/worldstock/stock/ASML.O/total" },
   "ASTS": { name: "AST 스페이스모바일", market: "미국", ticker: "ASTS", url: "https://m.stock.naver.com/worldstock/stock/ASTS.O/total" },
   "AUR": { name: "오로라 이노베이션", market: "미국", ticker: "AUR", url: "https://m.stock.naver.com/worldstock/stock/AUR.O/total" },
+  "AVAV": { name: "에어로바이런먼트", market: "미국", ticker: "AVAV", url: "https://m.stock.naver.com/worldstock/stock/AVAV.O/total" },
   "AVGO": { name: "브로드컴", market: "미국", ticker: "AVGO", url: "https://m.stock.naver.com/worldstock/stock/AVGO.O/total" },
   "AWK": { name: "아메리칸 워터 웍스", market: "미국", ticker: "AWK", url: "https://m.stock.naver.com/worldstock/stock/AWK/total" },
   "BATL": { name: "바탈리온 오일", market: "미국", ticker: "BATL", url: "https://m.stock.naver.com/worldstock/stock/BATL.K/total" },
@@ -1821,6 +1831,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "IOT": { name: "삼사라", market: "미국", ticker: "IOT", url: "https://m.stock.naver.com/worldstock/stock/IOT/total" },
   "ISRG": { name: "인튜이티브 서지컬", market: "미국", ticker: "ISRG", url: "https://m.stock.naver.com/worldstock/stock/ISRG.O/total" },
   "KO": { name: "코카콜라", market: "미국", ticker: "KO", url: "https://m.stock.naver.com/worldstock/stock/KO/total" },
+  "KTOS": { name: "크라토스 디펜스 & 시큐리티 솔", market: "미국", ticker: "KTOS", url: "https://m.stock.naver.com/worldstock/stock/KTOS.O/total" },
   "LCID": { name: "루시드 그룹", market: "미국", ticker: "LCID", url: "https://m.stock.naver.com/worldstock/stock/LCID.O/total" },
   "LLY": { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
   "LMT": { name: "록히드 마틴", market: "미국", ticker: "LMT", url: "https://m.stock.naver.com/worldstock/stock/LMT/total" },
@@ -1860,6 +1871,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "QCOM": { name: "퀄컴", market: "미국", ticker: "QCOM", url: "https://m.stock.naver.com/worldstock/stock/QCOM.O/total" },
   "QUBT": { name: "퀀텀 컴퓨팅", market: "미국", ticker: "QUBT", url: "https://m.stock.naver.com/worldstock/stock/QUBT.O/total" },
   "RBLX": { name: "로블록스", market: "미국", ticker: "RBLX", url: "https://m.stock.naver.com/worldstock/stock/RBLX.K/total" },
+  "RCAT": { name: "레드 캣 홀딩스", market: "미국", ticker: "RCAT", url: "https://m.stock.naver.com/worldstock/stock/RCAT.O/total" },
   "RGTI": { name: "리게티 컴퓨팅", market: "미국", ticker: "RGTI", url: "https://m.stock.naver.com/worldstock/stock/RGTI.O/total" },
   "RIOT": { name: "라이엇 플랫폼즈", market: "미국", ticker: "RIOT", url: "https://m.stock.naver.com/worldstock/stock/RIOT.O/total" },
   "RIVN": { name: "리비안", market: "미국", ticker: "RIVN", url: "https://m.stock.naver.com/worldstock/stock/RIVN.O/total" },
@@ -1894,6 +1906,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "WMT": { name: "월마트", market: "미국", ticker: "WMT", url: "https://m.stock.naver.com/worldstock/stock/WMT.O/total" },
   "XOM": { name: "엑슨 모빌", market: "미국", ticker: "XOM", url: "https://m.stock.naver.com/worldstock/stock/XOM/total" },
   "YOU": { name: "클리어 시큐어", market: "미국", ticker: "YOU", url: "https://m.stock.naver.com/worldstock/stock/YOU/total" },
+  "ZENA": { name: "제나테크", market: "미국", ticker: "ZENA", url: "https://m.stock.naver.com/worldstock/stock/ZENA.O/total" },
 };
 
 const RELATED_STOCK_TICKERS_BY_DESK = {
@@ -2006,9 +2019,20 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "consumer-goods-costco-membership-renewal-margin-2026": ["COST", "WMT", "TGT", "AMZN"],
   "software-salesforce-agentforce-rpo-margin-2026": ["CRM", "NOW", "MSFT", "ORCL"],
   "fintech-robinhood-net-deposits-gold-crypto-2026": ["HOOD", "COIN", "IBKR", "SCHW"],
+  "autonomous-systems-zenatech-drone-service-revenue-2026": ["ZENA", "AVAV", "KTOS", "RCAT"],
 };
 
 const featuredPages = [
+  {
+    slug: "autonomous-systems-zenatech-drone-service-revenue-2026",
+    title: "제나테크는 드론 서비스 매출 성장보다 반복 계약과 현금 소진을 먼저 봐야 합니다",
+    desk: "자율 시스템",
+    author: "Calvin",
+    publishedAt: "2026-06-04T17:23:50+09:00",
+    summary: "제나테크 ZENA는 2026년 1분기 매출이 전년 동기 대비 640% 증가했다고 밝혔지만, 투자자는 DaaS 인수 포트폴리오가 반복 계약, 마진, 현금흐름으로 남는지부터 확인해야 합니다.",
+    image: AUTONOMOUS_SYSTEMS_ZENATECH_DRONE_SERVICE_REVENUE_2026_IMAGE,
+    video: { youtubeId: "GbEJl3risVM", title: "제나테크 ZENA 향후 주가와 사업 전망을 설명하는 한국어 롱폼 영상", channel: "추수기 주식TV", sourceUrl: "https://www.youtube.com/watch?v=GbEJl3risVM", thumbnailUrl: "https://i.ytimg.com/vi/GbEJl3risVM/hqdefault.jpg", width: 480, height: 360, description: "제나테크 ZENA의 드론 서비스 사업과 향후 주가 변수를 한국어로 설명하는 10분대 롱폼 영상입니다." },
+  },
   {
     slug: "crypto-blockchain-ethereum-price-outlook-etf-staking-2026",
     title: "이더리움 가격전망은 ETF보다 스테이킹과 네트워크 수수료 회복을 먼저 봐야 합니다",
