@@ -933,6 +933,15 @@ const CONSUMER_GOODS_RISK_CYCLE_2026_IMAGE = {
   height: 720,
 };
 
+const CONSUMER_GOODS_SBEV_LIQUIDITY_DISTRIBUTION_2026_IMAGE = {
+  src: "images/consumer-goods-sbev-liquidity-distribution-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/8/88/Flavored_Liquor_%28Unsplash%29.jpg",
+  alt: "스플래시 베버리지 그룹의 음료 브랜드 포트폴리오와 유통 회복 과제를 설명하는 음료 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Flavored_Liquor_(Unsplash).jpg",
+  width: 1280,
+  height: 640,
+};
+
 const SMART_HOME_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/smart-home-margin-bottleneck-2026-1280.webp",
   alt: "스마트홈 투자는 가전, 보안, 에너지 관리 기기보다 표준 호환성과 설치 비용을 먼저 봐야 합니다 내용을 설명하는 스마트홈 대표 이미지",
@@ -1884,6 +1893,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "SCCO": { name: "서던 코퍼", market: "미국", ticker: "SCCO", url: "https://m.stock.naver.com/worldstock/stock/SCCO.K/total" },
   "SCHW": { name: "찰스 슈왑", market: "미국", ticker: "SCHW", url: "https://m.stock.naver.com/worldstock/stock/SCHW.K/total" },
   "SBET": { name: "샤프링크", market: "미국", ticker: "SBET", url: "https://m.stock.naver.com/worldstock/stock/SBET.O/total" },
+  "SBEV": { name: "스플래시 베버리지 그룹", market: "미국", ticker: "SBEV", url: "https://m.stock.naver.com/worldstock/stock/SBEV.K/total" },
   "SENS": { name: "센서닉스 홀딩스", market: "미국", ticker: "SENS", url: "https://m.stock.naver.com/worldstock/stock/SENS.O/total" },
   "SMPL": { name: "더 심플리 굿 푸드", market: "미국", ticker: "SMPL", url: "https://m.stock.naver.com/worldstock/stock/SMPL.O/total" },
   "SNDK": { name: "샌디스크", market: "미국", ticker: "SNDK", url: "https://m.stock.naver.com/worldstock/stock/SNDK.O/total" },
@@ -2016,6 +2026,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "crypto-blockchain-bitmine-eth-treasury-staking-2026": ["BMNR", "SBET", "COIN", "MSTR"],
   "crypto-blockchain-ethereum-price-outlook-etf-staking-2026": ["BMNR", "SBET", "COIN", "HOOD"],
   "social-media-reddit-arpu-ai-licensing-2026": ["RDDT", "META", "SNAP", "PINS"],
+  "consumer-goods-sbev-liquidity-distribution-2026": ["SBEV", "CELH", "KO", "PEP"],
   "consumer-goods-costco-membership-renewal-margin-2026": ["COST", "WMT", "TGT", "AMZN"],
   "software-salesforce-agentforce-rpo-margin-2026": ["CRM", "NOW", "MSFT", "ORCL"],
   "fintech-robinhood-net-deposits-gold-crypto-2026": ["HOOD", "COIN", "IBKR", "SCHW"],
@@ -2023,6 +2034,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "consumer-goods-sbev-liquidity-distribution-2026",
+    title: "스플래시 베버리지는 음료 브랜드보다 유동성 회복과 유통 재개를 먼저 봐야 합니다",
+    desk: "소비재",
+    author: "Warren",
+    publishedAt: "2026-06-04T19:59:34+09:00",
+    summary: "스플래시 베버리지 그룹 SBEV는 음료 브랜드 포트폴리오보다 2026년 1분기 순매출 4,224달러, 순손실 213.6만 달러, 유동부채 1,697만 달러를 먼저 확인해야 하는 고위험 소비재 종목입니다.",
+    image: CONSUMER_GOODS_SBEV_LIQUIDITY_DISTRIBUTION_2026_IMAGE,
+    video: { youtubeId: "2zzpokSBwa4", title: "스플래시 베버리지 그룹 SBEV 기업 분석 한국어 롱폼 영상", channel: "모여라 서학개미", sourceUrl: "https://www.youtube.com/watch?v=2zzpokSBwa4", thumbnailUrl: "https://i.ytimg.com/vi/2zzpokSBwa4/hqdefault.jpg", width: 480, height: 360, description: "스플래시 베버리지 그룹 SBEV의 기업 개요와 주식 변수를 한국어로 설명하는 8분대 롱폼 영상입니다." },
+  },
   {
     slug: "autonomous-systems-zenatech-drone-service-revenue-2026",
     title: "제나테크는 드론 서비스 매출 성장보다 반복 계약과 현금 소진을 먼저 봐야 합니다",
