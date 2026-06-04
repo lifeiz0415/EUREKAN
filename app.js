@@ -75,6 +75,15 @@ const ELECTRIC_VEHICLE_TESLA_ROBOTAXI_MARGIN_ENERGY_2026_IMAGE = {
   height: 720,
 };
 
+const INDUSTRIAL_AUTOMATION_STI_BATTERY_COMMERCIALIZATION_CASH_2026_IMAGE = {
+  src: "images/industrial-automation-sti-battery-commercialization-cash-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/5/56/18650_and_21700_lithium_ion_battery_cell.jpg",
+  alt: "리튬이온 배터리 셀 사진으로 솔리디온 테크놀로지의 배터리 상용화와 현금 검증을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:18650_and_21700_lithium_ion_battery_cell.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const HARDWARE_DELL_AI_SERVER_BACKLOG_MARGIN_2026_IMAGE = {
   src: "images/hardware-dell-ai-server-backlog-margin-2026-1280.webp",
   externalSrc: "https://upload.wikimedia.org/wikipedia/commons/1/13/Dell_PowerEdge_Servers.jpg",
@@ -1766,6 +1775,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "ABBV": { name: "애브비", market: "미국", ticker: "ABBV", url: "https://m.stock.naver.com/worldstock/stock/ABBV.K/total" },
   "ABT": { name: "애보트 래보라토리", market: "미국", ticker: "ABT", url: "https://m.stock.naver.com/worldstock/stock/ABT/total" },
   "ABTC": { name: "아메리칸 비트코인", market: "미국", ticker: "ABTC", url: "https://m.stock.naver.com/worldstock/stock/ABTC.O/total" },
+  "ABAT": { name: "아메리칸 배터리 테크놀로지", market: "미국", ticker: "ABAT", url: "https://m.stock.naver.com/worldstock/stock/ABAT.O/total" },
   "ADBE": { name: "어도비", market: "미국", ticker: "ADBE", url: "https://m.stock.naver.com/worldstock/stock/ADBE.O/total" },
   "ADI": { name: "애널로그 디바이시스", market: "미국", ticker: "ADI", url: "https://m.stock.naver.com/worldstock/stock/ADI.O/total" },
   "ADM": { name: "아처 대니얼스 미들랜드", market: "미국", ticker: "ADM", url: "https://m.stock.naver.com/worldstock/stock/ADM/total" },
@@ -1817,6 +1827,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "EDU": { name: "뉴 오리엔탈 에듀케이션 & 테크놀로지 ADR", market: "미국", ticker: "EDU", url: "https://m.stock.naver.com/worldstock/stock/EDU/total" },
   "EMR": { name: "에머슨 일렉트릭", market: "미국", ticker: "EMR", url: "https://m.stock.naver.com/worldstock/stock/EMR/total" },
   "ENPH": { name: "인페이즈 에너지", market: "미국", ticker: "ENPH", url: "https://m.stock.naver.com/worldstock/stock/ENPH.O/total" },
+  "ENVX": { name: "이노빅스", market: "미국", ticker: "ENVX", url: "https://m.stock.naver.com/worldstock/stock/ENVX.O/total" },
   "ETN": { name: "이튼", market: "미국", ticker: "ETN", url: "https://m.stock.naver.com/worldstock/stock/ETN/total" },
   "FCX": { name: "프리포트 맥모란", market: "미국", ticker: "FCX", url: "https://m.stock.naver.com/worldstock/stock/FCX/total" },
   "FDX": { name: "페덱스", market: "미국", ticker: "FDX", url: "https://m.stock.naver.com/worldstock/stock/FDX/total" },
@@ -1876,6 +1887,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "PLTR": { name: "팔란티어 테크놀로지스", market: "미국", ticker: "PLTR", url: "https://m.stock.naver.com/worldstock/stock/PLTR.O/total" },
   "PLUG": { name: "플러그 파워", market: "미국", ticker: "PLUG", url: "https://m.stock.naver.com/worldstock/stock/PLUG.O/total" },
   "PYPL": { name: "페이팔 홀딩스", market: "미국", ticker: "PYPL", url: "https://m.stock.naver.com/worldstock/stock/PYPL.O/total" },
+  "QS": { name: "퀀텀스케이프", market: "미국", ticker: "QS", url: "https://m.stock.naver.com/worldstock/stock/QS.O/total" },
   "QBTS": { name: "디 웨이브 퀀텀", market: "미국", ticker: "QBTS", url: "https://m.stock.naver.com/worldstock/stock/QBTS.K/total" },
   "QCOM": { name: "퀄컴", market: "미국", ticker: "QCOM", url: "https://m.stock.naver.com/worldstock/stock/QCOM.O/total" },
   "QUBT": { name: "퀀텀 컴퓨팅", market: "미국", ticker: "QUBT", url: "https://m.stock.naver.com/worldstock/stock/QUBT.O/total" },
@@ -1899,6 +1911,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "SNDK": { name: "샌디스크", market: "미국", ticker: "SNDK", url: "https://m.stock.naver.com/worldstock/stock/SNDK.O/total" },
   "SNAP": { name: "스냅", market: "미국", ticker: "SNAP", url: "https://m.stock.naver.com/worldstock/stock/SNAP.K/total" },
   "SNOW": { name: "스노우플레이크", market: "미국", ticker: "SNOW", url: "https://m.stock.naver.com/worldstock/stock/SNOW.K/total" },
+  "STI": { name: "솔리디온 테크놀로지", market: "미국", ticker: "STI", url: "https://m.stock.naver.com/worldstock/stock/STI.O/total" },
   "SYM": { name: "심보틱", market: "미국", ticker: "SYM", url: "https://m.stock.naver.com/worldstock/stock/SYM.O/total" },
   "TMUS": { name: "T-모바일 US", market: "미국", ticker: "TMUS", url: "https://m.stock.naver.com/worldstock/stock/TMUS.O/total" },
   "TSM": { name: "TSMC ADR", market: "미국", ticker: "TSM", url: "https://m.stock.naver.com/worldstock/stock/TSM/total" },
@@ -2026,6 +2039,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "crypto-blockchain-bitmine-eth-treasury-staking-2026": ["BMNR", "SBET", "COIN", "MSTR"],
   "crypto-blockchain-ethereum-price-outlook-etf-staking-2026": ["BMNR", "SBET", "COIN", "HOOD"],
   "social-media-reddit-arpu-ai-licensing-2026": ["RDDT", "META", "SNAP", "PINS"],
+  "industrial-automation-sti-battery-commercialization-cash-2026": ["STI", "QS", "ENVX", "ABAT"],
   "consumer-goods-sbev-liquidity-distribution-2026": ["SBEV", "CELH", "KO", "PEP"],
   "consumer-goods-costco-membership-renewal-margin-2026": ["COST", "WMT", "TGT", "AMZN"],
   "software-salesforce-agentforce-rpo-margin-2026": ["CRM", "NOW", "MSFT", "ORCL"],
@@ -2034,6 +2048,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "industrial-automation-sti-battery-commercialization-cash-2026",
+    title: "솔리디온 테크놀로지는 첫 매출보다 현금과 상용화 속도를 먼저 봐야 합니다",
+    desk: "산업 자동화",
+    author: "Patrick",
+    publishedAt: "2026-06-04T20:27:01+09:00",
+    summary: "솔리디온 테크놀로지 STI는 2026년 1분기 순매출 85,426달러를 기록했지만, 현금 38,887달러, 총부채 1,359.5만 달러, 계속기업 의문과 희석 가능성을 함께 확인해야 하는 고위험 배터리 상용화 종목입니다.",
+    image: INDUSTRIAL_AUTOMATION_STI_BATTERY_COMMERCIALIZATION_CASH_2026_IMAGE,
+    video: { youtubeId: "F-Nqn6KPIUY", title: "솔리디온 테크놀로지 STI 사업 변화와 희석 리스크를 설명하는 한국어 롱폼 영상", channel: "골든크로스(GOLDENCROSS)", sourceUrl: "https://www.youtube.com/watch?v=F-Nqn6KPIUY", thumbnailUrl: "https://i.ytimg.com/vi/F-Nqn6KPIUY/hqdefault.jpg", width: 480, height: 360, description: "솔리디온 테크놀로지 STI의 AI 데이터센터 배터리 내러티브와 희석 리스크를 한국어로 설명하는 8분대 롱폼 영상입니다." },
+  },
   {
     slug: "consumer-goods-sbev-liquidity-distribution-2026",
     title: "스플래시 베버리지는 음료 브랜드보다 유동성 회복과 유통 재개를 먼저 봐야 합니다",
