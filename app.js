@@ -1633,6 +1633,15 @@ const CRYPTO_BLOCKCHAIN_ETHEREUM_PRICE_OUTLOOK_ETF_STAKING_2026_IMAGE = {
   height: 640,
 };
 
+const CRYPTO_BLOCKCHAIN_BITCOIN_ETHEREUM_RWA_OUTLOOK_2026_IMAGE = {
+  src: "images/crypto-blockchain-bitcoin-ethereum-rwa-outlook-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Blockchain_Currency_Examples.jpg",
+  alt: "비트코인과 이더리움 등 주요 암호화폐 로고 이미지로 RWA 자산토큰화 전망을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Blockchain_Currency_Examples.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const SEMICONDUCTOR_TEXAS_INSTRUMENTS_ANALOG_INVENTORY_FAB_2026_IMAGE = {
   src: "images/semiconductor-texas-instruments-analog-inventory-fab-2026-1280.webp",
   externalSrc: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Silicon_Photonics_300mm_wafer.JPG",
@@ -2038,6 +2047,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "crypto-blockchain-american-bitcoin-sats-per-share-2026": ["ABTC", "HUT", "MARA", "RIOT"],
   "crypto-blockchain-bitmine-eth-treasury-staking-2026": ["BMNR", "SBET", "COIN", "MSTR"],
   "crypto-blockchain-ethereum-price-outlook-etf-staking-2026": ["BMNR", "SBET", "COIN", "HOOD"],
+  "crypto-blockchain-bitcoin-ethereum-rwa-outlook-2026": ["COIN", "MSTR", "BMNR", "HOOD"],
   "social-media-reddit-arpu-ai-licensing-2026": ["RDDT", "META", "SNAP", "PINS"],
   "industrial-automation-sti-battery-commercialization-cash-2026": ["STI", "QS", "ENVX", "ABAT"],
   "consumer-goods-sbev-liquidity-distribution-2026": ["SBEV", "CELH", "KO", "PEP"],
@@ -2048,6 +2058,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "crypto-blockchain-bitcoin-ethereum-rwa-outlook-2026",
+    title: "비트코인과 이더리움 전망은 RWA가 실제 수수료를 어디에 남기느냐에서 갈립니다",
+    desk: "암호화폐·블록체인",
+    author: "Archer",
+    publishedAt: "2026-06-05T21:25:00+09:00",
+    summary: "비트코인과 이더리움 중 어느 쪽 전망이 더 밝은지는 ETF 자금만으로 결정되지 않습니다. RWA 자산토큰화가 공용 스마트계약망 수수료, 스테이킹, 수탁, 거래 인프라로 이어지는지 확인해야 합니다.",
+    image: CRYPTO_BLOCKCHAIN_BITCOIN_ETHEREUM_RWA_OUTLOOK_2026_IMAGE,
+    video: { youtubeId: "fTR4YBVHhBc", title: "자산 토큰화의 원년, 블록체인 기반 이더리움 생태계가 온다", channel: "경제 읽어주는 남자(김광석TV)", sourceUrl: "https://www.youtube.com/watch?v=fTR4YBVHhBc", thumbnailUrl: "https://i.ytimg.com/vi/fTR4YBVHhBc/hqdefault.jpg", width: 480, height: 360, description: "RWA 자산토큰화와 이더리움 생태계의 연결 지점을 설명하는 25분대 한국어 롱폼 영상입니다." },
+  },
   {
     slug: "industrial-automation-sti-battery-commercialization-cash-2026",
     title: "솔리디온 테크놀로지는 첫 매출보다 현금과 상용화 속도를 먼저 봐야 합니다",
