@@ -717,6 +717,15 @@ const QUANTUM_COMPUTING_DWAVE_BOOKINGS_RPO_REVENUE_2026_IMAGE = {
   height: 640,
 };
 
+const QUANTUM_COMPUTING_US_STOCKS_TECHNOLOGY_OUTLOOK_COMPARISON_2026_IMAGE = {
+  src: "images/quantum-computing-us-stocks-technology-outlook-comparison-2026-1280.webp",
+  externalSrc: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Navaho%20Dilution%20Refrigerator.png",
+  alt: "아이온큐, 퀀텀 컴퓨팅, 디 웨이브, 리게티 컴퓨팅의 양자컴퓨팅 기술 방식을 비교하는 희석 냉동기 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Navaho_Dilution_Refrigerator.png",
+  width: 1280,
+  height: 640,
+};
+
 const DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/defense-aerospace-margin-bottleneck-2026-1280.webp",
   alt: "방산·항공우주 투자는 방산 플랫폼과 항공우주 부품보다 납품 승인과 원가 상승을 먼저 봐야 합니다 내용을 설명하는 방산·항공우주 대표 이미지",
@@ -2009,6 +2018,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "quantum-computing-rigetti-cepheus-cloud-revenue-2026": ["RGTI", "IONQ", "QBTS", "QUBT"],
   "quantum-computing-qubt-photonics-cash-backlog-2026": ["QUBT", "IONQ", "RGTI", "QBTS"],
   "quantum-computing-ionq-rpo-contracts-2026": ["IONQ", "RGTI", "QBTS", "QUBT"],
+  "quantum-computing-us-stocks-technology-outlook-comparison-2026": ["IONQ", "QUBT", "QBTS", "RGTI"],
   "cloud-computing-microsoft-azure-ai-capex-margin-2026": ["MSFT", "NVDA", "GOOGL", "AMZN"],
   "artificial-intelligence-palantir-aip-revenue-quality-2026": ["PLTR", "MSFT", "GOOGL", "ORCL"],
   "artificial-intelligence-agent-workflow-revenue-2026": ["MSFT", "CRM", "NOW", "GOOGL"],
@@ -2058,6 +2068,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "quantum-computing-us-stocks-technology-outlook-comparison-2026",
+    title: "아이온큐·퀀텀컴퓨팅·디웨이브·리게티 주가 전망은 기술 방식보다 계약 전환에서 갈립니다",
+    desk: "양자컴퓨팅",
+    author: "Eleanor",
+    publishedAt: "2026-06-06T00:18:00+09:00",
+    summary: "양자컴퓨팅 미국 대표주 IONQ, QUBT, QBTS, RGTI는 모두 양자 테마지만 기술 방식과 실적 전환 지표가 다릅니다. 이온트랩, 포토닉스, 어닐링, 초전도 방식을 비교하고 주가 전망을 계약, RPO, 현금, 손실 기준으로 정리합니다.",
+    image: QUANTUM_COMPUTING_US_STOCKS_TECHNOLOGY_OUTLOOK_COMPARISON_2026_IMAGE,
+    video: { youtubeId: "xZa6JVjKEkI", title: "아이온큐 방식과 리게티 방식 등 양자컴퓨터 기술 차이를 비교하는 한국어 롱폼 영상", channel: "머니네버슬립", sourceUrl: "https://www.youtube.com/watch?v=xZa6JVjKEkI", thumbnailUrl: "https://i.ytimg.com/vi/xZa6JVjKEkI/hqdefault.jpg", width: 480, height: 360, description: "이온트랩, 초전도 등 양자컴퓨터 구현 방식 차이를 한국어로 설명하는 14분대 롱폼 영상입니다." },
+  },
   {
     slug: "crypto-blockchain-bitcoin-ethereum-rwa-outlook-2026",
     title: "비트코인과 이더리움 전망은 RWA가 실제 수수료를 어디에 남기느냐에서 갈립니다",
