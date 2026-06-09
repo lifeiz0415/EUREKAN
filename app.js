@@ -1759,6 +1759,15 @@ const TRADITIONAL_ENERGY_NEXT_DECADE_POWER_GAP_MIX_2035_IMAGE = {
   height: 640,
 };
 
+const ARTIFICIAL_INTELLIGENCE_INDUSTRY_CYCLE_POWER_ROTATION_2026_IMAGE = {
+  src: "images/artificial-intelligence-industry-cycle-power-rotation-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/2/23/Power_lines_and_substation_connected_to_the_Kajaki_dam%E2%80%99s_hydroelectric_powerplant.jpg",
+  alt: "AI 데이터센터 투자 사이클이 전력망과 변전소 병목으로 번지는 흐름을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Power_lines_and_substation_connected_to_the_Kajaki_dam%E2%80%99s_hydroelectric_powerplant.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1993,6 +2002,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "artificial-intelligence-industry-cycle-power-rotation-2026": ["NVDA", "VRT", "ETN", "GEV"],
   "traditional-energy-next-decade-power-gap-mix-2035": ["GEV", "ETN", "CEG", "XOM"],
   "traditional-energy-exxon-guyana-permian-buyback-2026": ["XOM", "CVX", "COP", "FANG"],
   "software-seagate-hamr-cloud-storage-cashflow-2026": ["STX", "WDC", "SNDK", "MU"],
@@ -2068,6 +2078,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "artificial-intelligence-industry-cycle-power-rotation-2026",
+    title: "AI 산업 사이클은 엔비디아 다음 전력·냉각·발전설비로 번지는지 봐야 합니다",
+    desk: "인공지능",
+    author: "Marcus",
+    publishedAt: "2026-06-09T13:34:06+09:00",
+    summary: "산업 사이클과 테마 로테이션은 한 종목의 상승이 끝났다는 뜻이 아니라 투자 병목이 어디로 옮겨가는지 보는 방법입니다. NVDA, VRT, ETN, GEV를 예로 AI 인프라 수요가 GPU, 데이터센터 전력·냉각, 전기장비, 발전설비로 확산되는 순서를 정리합니다.",
+    image: ARTIFICIAL_INTELLIGENCE_INDUSTRY_CYCLE_POWER_ROTATION_2026_IMAGE,
+    video: { youtubeId: "Q21bEFVwIhc", title: "주식투자는 섹터 순환매를 알아야 합니다", channel: "올투스탁랩", sourceUrl: "https://www.youtube.com/watch?v=Q21bEFVwIhc", thumbnailUrl: "https://i.ytimg.com/vi/Q21bEFVwIhc/hqdefault.jpg", width: 480, height: 360, description: "섹터 순환매와 산업 사이클을 주식 투자 관점에서 설명하는 8분대 한국어 롱폼 영상입니다." },
+  },
   {
     slug: "quantum-computing-us-stocks-technology-outlook-comparison-2026",
     title: "아이온큐·퀀텀컴퓨팅·디웨이브·리게티 주가 전망은 기술 방식보다 계약 전환에서 갈립니다",
