@@ -2094,11 +2094,12 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 const featuredPages = [
   {
     slug: "renewable-energy-long-duration-storage-grid-intelligence-2035",
-    title: "월가가 아직 덜 보는 10년 테마는 장주기 에너지저장과 전력망 지능화입니다",
+    title: "플루언스·아이트론·콴타·허벨 비교는 전력망 성장의 돈 버는 위치에서 갈립니다",
     desk: "재생에너지",
     author: "Clara",
     publishedAt: "2026-06-11T11:56:31+09:00",
-    summary: "AI와 전기화는 이미 뜨거운 테마지만, 그 전력을 실제로 받아내는 장주기 에너지저장, 스마트미터, 송배전 시공, 유틸리티 장비는 아직 더 긴 10년 성장 여지가 남아 있습니다. FLNC, ITRI, PWR, HUBB를 예로 전력망 지능화 테마를 정리합니다.",
+    modifiedAt: "2026-06-12T08:37:33+09:00",
+    summary: "플루언스 에너지, 아이트론, 콴타 서비스, 허벨은 모두 전력망 투자 수혜주처럼 보이지만 매출전략과 이익수준은 다릅니다. ESS 통합, 스마트미터 데이터, 송배전 시공, 유틸리티 장비의 주요사업과 주가 전망을 비교합니다.",
     image: RENEWABLE_ENERGY_LONG_DURATION_STORAGE_GRID_INTELLIGENCE_2035_IMAGE,
     video: { youtubeId: "bgAcbbdev6M", title: "장주기 에너지 저장 LDES 시장 변화와 투자 전략", channel: "딥다이브 DEEPDIVE", sourceUrl: "https://www.youtube.com/watch?v=bgAcbbdev6M", thumbnailUrl: "https://i.ytimg.com/vi/bgAcbbdev6M/hqdefault.jpg", width: 480, height: 360, description: "장주기 에너지 저장과 ESS 시장 변화를 한국어로 설명하는 20분대 롱폼 영상입니다." },
   },
