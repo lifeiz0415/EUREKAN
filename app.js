@@ -1768,6 +1768,15 @@ const ARTIFICIAL_INTELLIGENCE_INDUSTRY_CYCLE_POWER_ROTATION_2026_IMAGE = {
   height: 640,
 };
 
+const RENEWABLE_ENERGY_LONG_DURATION_STORAGE_GRID_INTELLIGENCE_2035_IMAGE = {
+  src: "images/renewable-energy-long-duration-storage-grid-intelligence-2035-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Tesvolt_battery_energy_storage_system_Rheineck.jpg/1280px-Tesvolt_battery_energy_storage_system_Rheineck.jpg",
+  alt: "전력망 지능화와 장주기 에너지저장 산업의 10년 성장 가능성을 설명하는 배터리 저장장치 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Tesvolt_battery_energy_storage_system_Rheineck.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const RELATED_STOCKS_BY_TICKER = {
   "000120.KS": { name: "CJ대한통운", market: "한국", ticker: "000120.KS", url: "https://m.stock.naver.com/domestic/stock/000120/total" },
   "000270.KS": { name: "기아", market: "한국", ticker: "000270.KS", url: "https://m.stock.naver.com/domestic/stock/000270/total" },
@@ -1859,6 +1868,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "FCX": { name: "프리포트 맥모란", market: "미국", ticker: "FCX", url: "https://m.stock.naver.com/worldstock/stock/FCX/total" },
   "FDX": { name: "페덱스", market: "미국", ticker: "FDX", url: "https://m.stock.naver.com/worldstock/stock/FDX/total" },
   "FANG": { name: "다이아몬드백 에너지", market: "미국", ticker: "FANG", url: "https://m.stock.naver.com/worldstock/stock/FANG.O/total" },
+  "FLNC": { name: "플루언스 에너지", market: "미국", ticker: "FLNC", url: "https://m.stock.naver.com/worldstock/stock/FLNC.O/total" },
   "FSLR": { name: "퍼스트 솔라", market: "미국", ticker: "FSLR", url: "https://m.stock.naver.com/worldstock/stock/FSLR.O/total" },
   "GEV": { name: "GE 버노바", market: "미국", ticker: "GEV", url: "https://m.stock.naver.com/worldstock/stock/GEV/total" },
   "FTNT": { name: "포티넷", market: "미국", ticker: "FTNT", url: "https://m.stock.naver.com/worldstock/stock/FTNT.O/total" },
@@ -1868,6 +1878,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "HON": { name: "허니웰 인터내셔널", market: "미국", ticker: "HON", url: "https://m.stock.naver.com/worldstock/stock/HON.O/total" },
   "HOOD": { name: "로빈후드", market: "미국", ticker: "HOOD", url: "https://m.stock.naver.com/worldstock/stock/HOOD.O/total" },
   "HPQ": { name: "HP", market: "미국", ticker: "HPQ", url: "https://m.stock.naver.com/worldstock/stock/HPQ/total" },
+  "HUBB": { name: "허벨", market: "미국", ticker: "HUBB", url: "https://m.stock.naver.com/worldstock/stock/HUBB.K/total" },
   "HUM": { name: "휴마나", market: "미국", ticker: "HUM", url: "https://m.stock.naver.com/worldstock/stock/HUM/total" },
   "HUT": { name: "헛 8", market: "미국", ticker: "HUT", url: "https://m.stock.naver.com/worldstock/stock/HUT.O/total" },
   "IBM": { name: "IBM(인터내셔널 비지니스 머신)", market: "미국", ticker: "IBM", url: "https://m.stock.naver.com/worldstock/stock/IBM/total" },
@@ -1877,6 +1888,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "IONQ": { name: "아이온큐", market: "미국", ticker: "IONQ", url: "https://m.stock.naver.com/worldstock/stock/IONQ.K/total" },
   "IOT": { name: "삼사라", market: "미국", ticker: "IOT", url: "https://m.stock.naver.com/worldstock/stock/IOT/total" },
   "ISRG": { name: "인튜이티브 서지컬", market: "미국", ticker: "ISRG", url: "https://m.stock.naver.com/worldstock/stock/ISRG.O/total" },
+  "ITRI": { name: "아이트론", market: "미국", ticker: "ITRI", url: "https://m.stock.naver.com/worldstock/stock/ITRI.O/total" },
   "KO": { name: "코카콜라", market: "미국", ticker: "KO", url: "https://m.stock.naver.com/worldstock/stock/KO/total" },
   "KTOS": { name: "크라토스 디펜스 & 시큐리티 솔", market: "미국", ticker: "KTOS", url: "https://m.stock.naver.com/worldstock/stock/KTOS.O/total" },
   "LCID": { name: "루시드 그룹", market: "미국", ticker: "LCID", url: "https://m.stock.naver.com/worldstock/stock/LCID.O/total" },
@@ -1913,6 +1925,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "PLD": { name: "프로로지스", market: "미국", ticker: "PLD", url: "https://m.stock.naver.com/worldstock/stock/PLD/total" },
   "PLTR": { name: "팔란티어 테크놀로지스", market: "미국", ticker: "PLTR", url: "https://m.stock.naver.com/worldstock/stock/PLTR.O/total" },
   "PLUG": { name: "플러그 파워", market: "미국", ticker: "PLUG", url: "https://m.stock.naver.com/worldstock/stock/PLUG.O/total" },
+  "PWR": { name: "콴타 서비스", market: "미국", ticker: "PWR", url: "https://m.stock.naver.com/worldstock/stock/PWR/total" },
   "PYPL": { name: "페이팔 홀딩스", market: "미국", ticker: "PYPL", url: "https://m.stock.naver.com/worldstock/stock/PYPL.O/total" },
   "QS": { name: "퀀텀스케이프", market: "미국", ticker: "QS", url: "https://m.stock.naver.com/worldstock/stock/QS.O/total" },
   "QBTS": { name: "디 웨이브 퀀텀", market: "미국", ticker: "QBTS", url: "https://m.stock.naver.com/worldstock/stock/QBTS.K/total" },
@@ -2002,6 +2015,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "renewable-energy-long-duration-storage-grid-intelligence-2035": ["FLNC", "ITRI", "PWR", "HUBB"],
   "artificial-intelligence-industry-cycle-power-rotation-2026": ["NVDA", "VRT", "ETN", "GEV"],
   "traditional-energy-next-decade-power-gap-mix-2035": ["GEV", "ETN", "CEG", "XOM"],
   "traditional-energy-exxon-guyana-permian-buyback-2026": ["XOM", "CVX", "COP", "FANG"],
@@ -2078,6 +2092,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "renewable-energy-long-duration-storage-grid-intelligence-2035",
+    title: "월가가 아직 덜 보는 10년 테마는 장주기 에너지저장과 전력망 지능화입니다",
+    desk: "재생에너지",
+    author: "Clara",
+    publishedAt: "2026-06-11T11:56:31+09:00",
+    summary: "AI와 전기화는 이미 뜨거운 테마지만, 그 전력을 실제로 받아내는 장주기 에너지저장, 스마트미터, 송배전 시공, 유틸리티 장비는 아직 더 긴 10년 성장 여지가 남아 있습니다. FLNC, ITRI, PWR, HUBB를 예로 전력망 지능화 테마를 정리합니다.",
+    image: RENEWABLE_ENERGY_LONG_DURATION_STORAGE_GRID_INTELLIGENCE_2035_IMAGE,
+    video: { youtubeId: "bgAcbbdev6M", title: "장주기 에너지 저장 LDES 시장 변화와 투자 전략", channel: "딥다이브 DEEPDIVE", sourceUrl: "https://www.youtube.com/watch?v=bgAcbbdev6M", thumbnailUrl: "https://i.ytimg.com/vi/bgAcbbdev6M/hqdefault.jpg", width: 480, height: 360, description: "장주기 에너지 저장과 ESS 시장 변화를 한국어로 설명하는 20분대 롱폼 영상입니다." },
+  },
   {
     slug: "artificial-intelligence-industry-cycle-power-rotation-2026",
     title: "AI 산업 사이클은 엔비디아 다음 전력·냉각·발전설비로 번지는지 봐야 합니다",
