@@ -156,6 +156,15 @@ const SEMICONDUCTOR_MARVELL_AI_CUSTOM_SILICON_DATACENTER_2026_IMAGE = {
   height: 640,
 };
 
+const SEMICONDUCTOR_BROADCOM_AI_ASIC_VMWARE_CASHFLOW_2026_IMAGE = {
+  src: "images/semiconductor-broadcom-ai-asic-vmware-cashflow-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/0/07/Raspi_15807388763_6d259773fb_o.png",
+  alt: "Broadcom 칩이 보이는 회로 보드 이미지로 브로드컴의 AI ASIC과 네트워킹 반도체 수요를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Raspi_15807388763_6d259773fb_o.png",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -2015,6 +2024,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "semiconductor-broadcom-ai-asic-vmware-cashflow-2026": ["AVGO", "NVDA", "MRVL", "AMD"],
   "renewable-energy-long-duration-storage-grid-intelligence-2035": ["FLNC", "ITRI", "PWR", "HUBB"],
   "artificial-intelligence-industry-cycle-power-rotation-2026": ["NVDA", "VRT", "ETN", "GEV"],
   "traditional-energy-next-decade-power-gap-mix-2035": ["GEV", "ETN", "CEG", "XOM"],
@@ -2092,6 +2102,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-broadcom-ai-asic-vmware-cashflow-2026",
+    title: "브로드컴은 AI ASIC 성장보다 VMware 현금흐름과 고객 집중을 함께 봐야 합니다",
+    desk: "반도체",
+    author: "Sophia",
+    publishedAt: "2026-06-12T11:09:00+09:00",
+    summary: "브로드컴 AVGO는 FY2026 2분기 매출 221억8700만 달러, AI 반도체 매출 108억 달러, 잉여현금흐름 102억6200만 달러를 기록했습니다. 투자자는 AI ASIC 성장률뿐 아니라 VMware 소프트웨어 현금흐름, 대형 고객 집중, 네트워킹 마진을 함께 확인해야 합니다.",
+    image: SEMICONDUCTOR_BROADCOM_AI_ASIC_VMWARE_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "zX7DeFe2oi8", title: "AI 호재에도 15% 폭락한 브로드컴, 시장이 실망한 이유는?", channel: "머니네버슬립", sourceUrl: "https://www.youtube.com/watch?v=zX7DeFe2oi8", thumbnailUrl: "https://i.ytimg.com/vi/zX7DeFe2oi8/hqdefault.jpg", width: 480, height: 360, description: "브로드컴의 AI 반도체 실적과 주가 반응, 시장 기대와 실망 요인을 한국어로 설명하는 롱폼 분석 영상입니다." },
+  },
   {
     slug: "renewable-energy-long-duration-storage-grid-intelligence-2035",
     title: "플루언스·아이트론·콴타·허벨 비교는 전력망 성장의 돈 버는 위치에서 갈립니다",
