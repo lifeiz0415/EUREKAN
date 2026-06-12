@@ -780,6 +780,15 @@ const QUANTUM_COMPUTING_US_STOCKS_FULL_MAP_BEST_PICK_2026_IMAGE = {
   height: 640,
 };
 
+const QUANTUM_SECURITY_LAES_ARQQ_BUSINESS_2026_IMAGE = {
+  src: "images/quantum-security-laes-arqq-business-2026-1280.webp",
+  externalSrc: "https://www.nist.gov/sites/default/files/styles/960_x_960_limit/public/images/2023/08/22/PQC_Algo_Pre-standardization-vid.jpg?itok=tpUkOrYt",
+  alt: "실스크와 아르킷 퀀텀의 포스트 양자 보안 전환을 설명하는 NIST 암호 표준 이미지",
+  sourceUrl: "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+  width: 1280,
+  height: 640,
+};
+
 const DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/defense-aerospace-margin-bottleneck-2026-1280.webp",
   alt: "방산·항공우주 투자는 방산 플랫폼과 항공우주 부품보다 납품 승인과 원가 상승을 먼저 봐야 합니다 내용을 설명하는 방산·항공우주 대표 이미지",
@@ -1874,6 +1883,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "AMAT": { name: "어플라이드 머티어리얼즈", market: "미국", ticker: "AMAT", url: "https://m.stock.naver.com/worldstock/stock/AMAT.O/total" },
   "AMT": { name: "아메리칸 타워", market: "미국", ticker: "AMT", url: "https://m.stock.naver.com/worldstock/stock/AMT/total" },
   "AMZN": { name: "아마존닷컴", market: "미국", ticker: "AMZN", url: "https://m.stock.naver.com/worldstock/stock/AMZN.O/total" },
+  "ARQQ": { name: "아르킷 퀀텀", market: "미국", ticker: "ARQQ", url: "https://m.stock.naver.com/worldstock/stock/ARQQ.O/total" },
   "ASML": { name: "ASML 홀딩 ADR", market: "미국", ticker: "ASML", url: "https://m.stock.naver.com/worldstock/stock/ASML.O/total" },
   "ASTS": { name: "AST 스페이스모바일", market: "미국", ticker: "ASTS", url: "https://m.stock.naver.com/worldstock/stock/ASTS.O/total" },
   "AUR": { name: "오로라 이노베이션", market: "미국", ticker: "AUR", url: "https://m.stock.naver.com/worldstock/stock/AUR.O/total" },
@@ -1946,6 +1956,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "ITRI": { name: "아이트론", market: "미국", ticker: "ITRI", url: "https://m.stock.naver.com/worldstock/stock/ITRI.O/total" },
   "KO": { name: "코카콜라", market: "미국", ticker: "KO", url: "https://m.stock.naver.com/worldstock/stock/KO/total" },
   "KTOS": { name: "크라토스 디펜스 & 시큐리티 솔", market: "미국", ticker: "KTOS", url: "https://m.stock.naver.com/worldstock/stock/KTOS.O/total" },
+  "LAES": { name: "실스크", market: "미국", ticker: "LAES", url: "https://m.stock.naver.com/worldstock/stock/LAES.O/total" },
   "LCID": { name: "루시드 그룹", market: "미국", ticker: "LCID", url: "https://m.stock.naver.com/worldstock/stock/LCID.O/total" },
   "LEU": { name: "센트러스 에너지", market: "미국", ticker: "LEU", url: "https://m.stock.naver.com/worldstock/stock/LEU/total" },
   "LLY": { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
@@ -2106,6 +2117,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "quantum-computing-rigetti-cepheus-cloud-revenue-2026": ["RGTI", "IONQ", "QBTS", "QUBT"],
   "quantum-computing-qubt-photonics-cash-backlog-2026": ["QUBT", "IONQ", "RGTI", "QBTS"],
   "quantum-computing-ionq-rpo-contracts-2026": ["IONQ", "RGTI", "QBTS", "QUBT"],
+  "quantum-security-laes-arqq-business-2026": ["LAES", "ARQQ"],
   "quantum-computing-us-stocks-full-map-best-pick-2026": ["IONQ", "QBTS", "RGTI", "QUBT"],
   "quantum-computing-us-stocks-technology-outlook-comparison-2026": ["IONQ", "QUBT", "QBTS", "RGTI"],
   "cloud-computing-microsoft-azure-ai-capex-margin-2026": ["MSFT", "NVDA", "GOOGL", "AMZN"],
@@ -2157,6 +2169,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "quantum-security-laes-arqq-business-2026",
+    title: "실스크와 아르킷 퀀텀은 양자컴퓨터보다 양자보안 전환을 파는 회사입니다",
+    desk: "양자컴퓨팅",
+    author: "Cedric",
+    publishedAt: "2026-06-12T19:04:00+09:00",
+    summary: "실스크 LAES와 아르킷 퀀텀 ARQQ는 양자컴퓨터 제조사가 아니라 양자컴퓨터가 기존 암호 체계를 흔들 때 필요한 포스트 양자 보안 전환을 겨냥한 회사입니다. LAES는 보안 반도체와 TPM, ARQQ는 양자안전 암호화 소프트웨어와 키 합의 플랫폼으로 봐야 합니다.",
+    image: QUANTUM_SECURITY_LAES_ARQQ_BUSINESS_2026_IMAGE,
+    video: { youtubeId: "OyHH0-QHqq0", title: "미국 양자컴퓨팅 테마에서 ARQQ와 LAES를 함께 설명하는 한국어 롱폼 영상", channel: "남비스 주식정보", sourceUrl: "https://www.youtube.com/watch?v=OyHH0-QHqq0", thumbnailUrl: "https://i.ytimg.com/vi/OyHH0-QHqq0/hqdefault.jpg", width: 480, height: 360, description: "아이온큐, 리게티, 디 웨이브, 퀀텀 컴퓨팅과 함께 아르킷 퀀텀, 실스크를 다루는 한국어 양자컴퓨팅 테마 분석 영상입니다." },
+  },
   {
     slug: "quantum-computing-us-stocks-full-map-best-pick-2026",
     title: "양자컴퓨팅 관련주는 기술 이름보다 사업화 점수로 보면 아이온큐가 가장 앞섭니다",
