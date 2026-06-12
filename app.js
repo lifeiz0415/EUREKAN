@@ -771,6 +771,15 @@ const QUANTUM_COMPUTING_US_STOCKS_TECHNOLOGY_OUTLOOK_COMPARISON_2026_IMAGE = {
   height: 640,
 };
 
+const QUANTUM_COMPUTING_US_STOCKS_FULL_MAP_BEST_PICK_2026_IMAGE = {
+  src: "images/quantum-computing-us-stocks-full-map-best-pick-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/IBM_Q_System_One_%28Fraunhofer%29_installation.jpg/1280px-IBM_Q_System_One_%28Fraunhofer%29_installation.jpg",
+  alt: "양자컴퓨팅 관련주 전체 비교와 사업화 점수를 설명하는 IBM Quantum System One 설치 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:IBM_Q_System_One_(Fraunhofer)_installation.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const DEFENSE_AEROSPACE_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/defense-aerospace-margin-bottleneck-2026-1280.webp",
   alt: "방산·항공우주 투자는 방산 플랫폼과 항공우주 부품보다 납품 승인과 원가 상승을 먼저 봐야 합니다 내용을 설명하는 방산·항공우주 대표 이미지",
@@ -2097,6 +2106,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "quantum-computing-rigetti-cepheus-cloud-revenue-2026": ["RGTI", "IONQ", "QBTS", "QUBT"],
   "quantum-computing-qubt-photonics-cash-backlog-2026": ["QUBT", "IONQ", "RGTI", "QBTS"],
   "quantum-computing-ionq-rpo-contracts-2026": ["IONQ", "RGTI", "QBTS", "QUBT"],
+  "quantum-computing-us-stocks-full-map-best-pick-2026": ["IONQ", "QBTS", "RGTI", "QUBT"],
   "quantum-computing-us-stocks-technology-outlook-comparison-2026": ["IONQ", "QUBT", "QBTS", "RGTI"],
   "cloud-computing-microsoft-azure-ai-capex-margin-2026": ["MSFT", "NVDA", "GOOGL", "AMZN"],
   "artificial-intelligence-palantir-aip-revenue-quality-2026": ["PLTR", "MSFT", "GOOGL", "ORCL"],
@@ -2147,6 +2157,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "quantum-computing-us-stocks-full-map-best-pick-2026",
+    title: "양자컴퓨팅 관련주는 기술 이름보다 사업화 점수로 보면 아이온큐가 가장 앞섭니다",
+    desk: "양자컴퓨팅",
+    author: "Nadia",
+    publishedAt: "2026-06-12T18:01:00+09:00",
+    summary: "미국 양자컴퓨팅 관련주는 IONQ, QBTS, RGTI, QUBT 같은 순수 양자주와 QNT, ARQQ, LAES, IBM, GOOGL, MSFT, AMZN 같은 플랫폼·보안·장비 축으로 나눠 봐야 합니다. 사업화 점수로는 아이온큐가 가장 앞서지만, 안정형 노출은 IBM, 단기 계약 전환은 디 웨이브가 별도 후보입니다.",
+    image: QUANTUM_COMPUTING_US_STOCKS_FULL_MAP_BEST_PICK_2026_IMAGE,
+    video: { youtubeId: "iUa4_VhVikE", title: "양자컴퓨팅 관련주와 아이온큐·디웨이브·리게티 흐름을 설명하는 한국어 롱폼 영상", channel: "될쫑목", sourceUrl: "https://www.youtube.com/watch?v=iUa4_VhVikE", thumbnailUrl: "https://i.ytimg.com/vi/iUa4_VhVikE/hqdefault.jpg", width: 480, height: 360, description: "양자컴퓨팅 관련주 흐름과 주요 순수 양자 기업의 투자 포인트를 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "traditional-energy-xenergy-xe100-triso-uranium-fuel-2026",
     title: "엑스에너지는 우라늄 광산주가 아니라 원자로 IP와 연료 가공주로 봐야 합니다",
