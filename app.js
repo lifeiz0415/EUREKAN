@@ -590,6 +590,15 @@ const ROBOTICS_RISK_CYCLE_2026_IMAGE = {
   height: 720,
 };
 
+const ROBOTICS_UNDERVALUED_US_STOCKS_2036_IMAGE = {
+  src: "images/robotics-undervalued-us-stocks-2036-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Autonomous_Mobile_Robot_AMR.png",
+  alt: "자율 이동 로봇 개념도로 향후 10년 로보틱스 저평가 미국주 비교를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Autonomous_Mobile_Robot_AMR.png",
+  width: 1280,
+  height: 640,
+};
+
 const NANOTECHNOLOGY_MARGIN_BOTTLENECK_2026_IMAGE = {
   src: "images/nanotechnology-margin-bottleneck-2026-1280.webp",
   alt: "나노기술 투자는 나노 소재와 정밀 공정보다 양산 수율과 인증 기간을 먼저 봐야 합니다 내용을 설명하는 나노기술 대표 이미지",
@@ -2017,6 +2026,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "RDW": { name: "레드와이어", market: "미국", ticker: "RDW", url: "https://m.stock.naver.com/worldstock/stock/RDW/total" },
   "RKLB": { name: "로켓 랩", market: "미국", ticker: "RKLB", url: "https://m.stock.naver.com/worldstock/stock/RKLB.O/total" },
   "ROK": { name: "로크웰 오토메이션", market: "미국", ticker: "ROK", url: "https://m.stock.naver.com/worldstock/stock/ROK/total" },
+  "RR": { name: "리치테크 로보틱스", market: "미국", ticker: "RR", url: "https://m.stock.naver.com/worldstock/stock/RR.O/total" },
   "RSG": { name: "리퍼블릭 서비스", market: "미국", ticker: "RSG", url: "https://m.stock.naver.com/worldstock/stock/RSG/total" },
   "RTX": { name: "RTX", market: "미국", ticker: "RTX", url: "https://m.stock.naver.com/worldstock/stock/RTX/total" },
   "SCCO": { name: "서던 코퍼", market: "미국", ticker: "SCCO", url: "https://m.stock.naver.com/worldstock/stock/SCCO.K/total" },
@@ -2024,12 +2034,14 @@ const RELATED_STOCKS_BY_TICKER = {
   "SBET": { name: "샤프링크", market: "미국", ticker: "SBET", url: "https://m.stock.naver.com/worldstock/stock/SBET.O/total" },
   "SBEV": { name: "스플래시 베버리지 그룹", market: "미국", ticker: "SBEV", url: "https://m.stock.naver.com/worldstock/stock/SBEV.K/total" },
   "SENS": { name: "센서닉스 홀딩스", market: "미국", ticker: "SENS", url: "https://m.stock.naver.com/worldstock/stock/SENS.O/total" },
+  "SERV": { name: "서브 로보틱스", market: "미국", ticker: "SERV", url: "https://m.stock.naver.com/worldstock/stock/SERV.O/total" },
   "SMPL": { name: "더 심플리 굿 푸드", market: "미국", ticker: "SMPL", url: "https://m.stock.naver.com/worldstock/stock/SMPL.O/total" },
   "SNDK": { name: "샌디스크", market: "미국", ticker: "SNDK", url: "https://m.stock.naver.com/worldstock/stock/SNDK.O/total" },
   "SNAP": { name: "스냅", market: "미국", ticker: "SNAP", url: "https://m.stock.naver.com/worldstock/stock/SNAP.K/total" },
   "SNOW": { name: "스노우플레이크", market: "미국", ticker: "SNOW", url: "https://m.stock.naver.com/worldstock/stock/SNOW.K/total" },
   "STI": { name: "솔리디온 테크놀로지", market: "미국", ticker: "STI", url: "https://m.stock.naver.com/worldstock/stock/STI.O/total" },
   "SYM": { name: "심보틱", market: "미국", ticker: "SYM", url: "https://m.stock.naver.com/worldstock/stock/SYM.O/total" },
+  "TER": { name: "테라다인", market: "미국", ticker: "TER", url: "https://m.stock.naver.com/worldstock/stock/TER.O/total" },
   "TMUS": { name: "T-모바일 US", market: "미국", ticker: "TMUS", url: "https://m.stock.naver.com/worldstock/stock/TMUS.O/total" },
   "TSM": { name: "TSMC ADR", market: "미국", ticker: "TSM", url: "https://m.stock.naver.com/worldstock/stock/TSM/total" },
   "TSLA": { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
@@ -2177,9 +2189,20 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "software-salesforce-agentforce-rpo-margin-2026": ["CRM", "NOW", "MSFT", "ORCL"],
   "fintech-robinhood-net-deposits-gold-crypto-2026": ["HOOD", "COIN", "IBKR", "SCHW"],
   "autonomous-systems-zenatech-drone-service-revenue-2026": ["ZENA", "AVAV", "KTOS", "RCAT"],
+  "robotics-undervalued-us-stocks-2036": ["SYM", "SERV", "RR", "TER"],
 };
 
 const featuredPages = [
+  {
+    slug: "robotics-undervalued-us-stocks-2036",
+    title: "향후 10년 로보틱스 저평가주는 심보틱을 기준으로 서브와 리치테크를 따져봐야 합니다",
+    desk: "로보틱스",
+    author: "Vincent",
+    publishedAt: "2026-06-13T08:52:00+09:00",
+    summary: "향후 10년 로보틱스 투자에서 미국 상장 저평가 후보를 볼 때는 주가 낙폭보다 실제 매출, 현금 여력, 고객 집중도, 공시 신뢰를 먼저 봐야 합니다. 심보틱, 서브 로보틱스, 리치테크 로보틱스, 테라다인을 비교해 가장 현실적인 확인 순서를 정리합니다.",
+    image: ROBOTICS_UNDERVALUED_US_STOCKS_2036_IMAGE,
+    video: { youtubeId: "XLkQ6o-dz30", title: "심보틱이 순수 로보틱스 투자 후보인지 분석하는 영어 롱폼 영상", channel: "Chip Stock Investor", sourceUrl: "https://www.youtube.com/watch?v=XLkQ6o-dz30", thumbnailUrl: "https://i.ytimg.com/vi/XLkQ6o-dz30/hqdefault.jpg", width: 480, height: 360, description: "Symbotic을 물류 자동화 로봇 순수주 관점과 고객 의존도 관점에서 분석하는 영어 롱폼 영상입니다." },
+  },
   {
     slug: "hardware-tssi-ai-rack-integration-cashflow-2026",
     title: "TSSI는 AI 데이터센터 매출보다 고객 집중과 현금흐름을 먼저 봐야 합니다",
