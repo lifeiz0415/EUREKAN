@@ -183,6 +183,15 @@ const ENERGY_COMMODITIES_URANIUM_REACTOR_SUPPLY_BOTTLENECK_2035_IMAGE = {
   height: 640,
 };
 
+const ENERGY_COMMODITIES_ENCORE_ENERGY_ISR_URANIUM_COMPARISON_2026_IMAGE = {
+  src: "images/energy-commodities-encore-energy-isr-uranium-comparison-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/NRC_Uranium_In_Situ_Leach.png/1280px-NRC_Uranium_In_Situ_Leach.png",
+  alt: "ISR 우라늄 추출 구조 도식으로 엔코어 에너지와 미국 우라늄 생산주 비교를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:NRC_Uranium_In_Situ_Leach.png",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1892,6 +1901,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "ENPH": { name: "인페이즈 에너지", market: "미국", ticker: "ENPH", url: "https://m.stock.naver.com/worldstock/stock/ENPH.O/total" },
   "ENVX": { name: "이노빅스", market: "미국", ticker: "ENVX", url: "https://m.stock.naver.com/worldstock/stock/ENVX.O/total" },
   "ETN": { name: "이튼", market: "미국", ticker: "ETN", url: "https://m.stock.naver.com/worldstock/stock/ETN/total" },
+  "EU": { name: "엔코어 에너지", market: "미국", ticker: "EU", url: "https://m.stock.naver.com/worldstock/stock/EU.O/total" },
   "FCX": { name: "프리포트 맥모란", market: "미국", ticker: "FCX", url: "https://m.stock.naver.com/worldstock/stock/FCX/total" },
   "FDX": { name: "페덱스", market: "미국", ticker: "FDX", url: "https://m.stock.naver.com/worldstock/stock/FDX/total" },
   "FANG": { name: "다이아몬드백 에너지", market: "미국", ticker: "FANG", url: "https://m.stock.naver.com/worldstock/stock/FANG.O/total" },
@@ -2044,6 +2054,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "energy-commodities-encore-energy-isr-uranium-comparison-2026": ["EU", "UEC", "UUUU", "CCJ"],
   "energy-commodities-uranium-reactor-supply-bottleneck-2035": ["CCJ", "UEC", "NXE", "UUUU"],
   "artificial-intelligence-alphabet-ai-search-cloud-capex-2026": ["GOOGL", "MSFT", "META", "AMZN"],
   "semiconductor-broadcom-ai-asic-vmware-cashflow-2026": ["AVGO", "NVDA", "MRVL", "AMD"],
@@ -2124,6 +2135,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "energy-commodities-encore-energy-isr-uranium-comparison-2026",
+    title: "엔코어 에너지는 미국 ISR 우라늄 생산주로 봐야 합니다",
+    desk: "에너지 원자재",
+    author: "Diana",
+    publishedAt: "2026-06-12T14:34:00+09:00",
+    summary: "엔코어 에너지 EU는 2025년 U3O8 약 699,807파운드를 추출했고 2026년 1분기에는 90,000파운드를 추출했습니다. 투자자는 Rosita·Alta Mesa·Upper Spring Creek의 ISR 실행력, 계약 납품 가격과 원가 차이, UEC·UUUU·CCJ 대비 위험 보상 구조를 함께 봐야 합니다.",
+    image: ENERGY_COMMODITIES_ENCORE_ENERGY_ISR_URANIUM_COMPARISON_2026_IMAGE,
+    video: { youtubeId: "H23wn_XglHk", title: "엔코어 에너지 EU와 원전 르네상스 투자 포인트를 설명하는 한국어 영상", channel: "Ticker Review", sourceUrl: "https://www.youtube.com/watch?v=H23wn_XglHk", thumbnailUrl: "https://i.ytimg.com/vi/H23wn_XglHk/hqdefault.jpg", width: 480, height: 360, description: "엔코어 에너지와 원전 르네상스, 우라늄 투자 포인트를 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "energy-commodities-uranium-reactor-supply-bottleneck-2035",
     title: "향후 10년 원자로 수요는 우라늄 생산량 병목을 먼저 통과해야 합니다",
