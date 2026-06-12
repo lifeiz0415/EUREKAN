@@ -174,6 +174,15 @@ const ARTIFICIAL_INTELLIGENCE_ALPHABET_AI_SEARCH_CLOUD_CAPEX_2026_IMAGE = {
   height: 640,
 };
 
+const ENERGY_COMMODITIES_URANIUM_REACTOR_SUPPLY_BOTTLENECK_2035_IMAGE = {
+  src: "images/energy-commodities-uranium-reactor-supply-bottleneck-2035-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Uranium_Ore_in_Barrels_%2803010299%29_%284723344137%29.jpg/1280px-Uranium_Ore_in_Barrels_%2803010299%29_%284723344137%29.jpg",
+  alt: "우라늄 광석 배럴 이미지로 향후 10년 원자로 수요와 우라늄 생산량 병목을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Uranium_Ore_in_Barrels_(03010299)_(4723344137).jpg",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1930,6 +1939,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "NOC": { name: "노스롭 그루만", market: "미국", ticker: "NOC", url: "https://m.stock.naver.com/worldstock/stock/NOC/total" },
   "NOW": { name: "서비스나우", market: "미국", ticker: "NOW", url: "https://m.stock.naver.com/worldstock/stock/NOW/total" },
   "NVDA": { name: "엔비디아", market: "미국", ticker: "NVDA", url: "https://m.stock.naver.com/worldstock/stock/NVDA.O/total" },
+  "NXE": { name: "넥스젠 에너지", market: "미국", ticker: "NXE", url: "https://m.stock.naver.com/worldstock/stock/NXE/total" },
   "O": { name: "리얼티 인컴", market: "미국", ticker: "O", url: "https://m.stock.naver.com/worldstock/stock/O/total" },
   "OKTA": { name: "옥타", market: "미국", ticker: "OKTA", url: "https://m.stock.naver.com/worldstock/stock/OKTA.O/total" },
   "ORCL": { name: "오라클", market: "미국", ticker: "ORCL", url: "https://m.stock.naver.com/worldstock/stock/ORCL.K/total" },
@@ -1979,6 +1989,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "UBER": { name: "우버", market: "미국", ticker: "UBER", url: "https://m.stock.naver.com/worldstock/stock/UBER.K/total" },
   "UEC": { name: "우라늄 에너지", market: "미국", ticker: "UEC", url: "https://m.stock.naver.com/worldstock/stock/UEC/total" },
   "UROY": { name: "우라늄 로열티", market: "미국", ticker: "UROY", url: "https://m.stock.naver.com/worldstock/stock/UROY.O/total" },
+  "UUUU": { name: "에너지 퓨얼스", market: "미국", ticker: "UUUU", url: "https://m.stock.naver.com/worldstock/stock/UUUU.K/total" },
   "VRSK": { name: "베리스크 애널리틱스", market: "미국", ticker: "VRSK", url: "https://m.stock.naver.com/worldstock/stock/VRSK.O/total" },
   "VRT": { name: "버티브 홀딩스", market: "미국", ticker: "VRT", url: "https://m.stock.naver.com/worldstock/stock/VRT/total" },
   "VZ": { name: "버라이존", market: "미국", ticker: "VZ", url: "https://m.stock.naver.com/worldstock/stock/VZ/total" },
@@ -2033,6 +2044,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "energy-commodities-uranium-reactor-supply-bottleneck-2035": ["CCJ", "UEC", "NXE", "UUUU"],
   "artificial-intelligence-alphabet-ai-search-cloud-capex-2026": ["GOOGL", "MSFT", "META", "AMZN"],
   "semiconductor-broadcom-ai-asic-vmware-cashflow-2026": ["AVGO", "NVDA", "MRVL", "AMD"],
   "renewable-energy-long-duration-storage-grid-intelligence-2035": ["FLNC", "ITRI", "PWR", "HUBB"],
@@ -2112,6 +2124,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "energy-commodities-uranium-reactor-supply-bottleneck-2035",
+    title: "향후 10년 원자로 수요는 우라늄 생산량 병목을 먼저 통과해야 합니다",
+    desk: "에너지 원자재",
+    author: "Diana",
+    publishedAt: "2026-06-12T14:10:00+09:00",
+    summary: "세계원자력협회 기준 2025년 원자로 우라늄 요구량은 68,920tU, 2024년 광산 생산량은 60,213tU입니다. 향후 10년 원전 증설과 수명연장이 이어지면 투자자는 우라늄 가격보다 광산·밀링·전환·농축 병목과 장기 계약 재가격화를 먼저 확인해야 합니다.",
+    image: ENERGY_COMMODITIES_URANIUM_REACTOR_SUPPLY_BOTTLENECK_2035_IMAGE,
+    video: { youtubeId: "xXywqqs6uTs", title: "[보고서] AI가 견인하는 전력 혁명: 미국 원전 건설 빅사이클과 한국의 전략적 기회", channel: "주식으로 세상 이해하기", sourceUrl: "https://www.youtube.com/watch?v=xXywqqs6uTs", thumbnailUrl: "https://i.ytimg.com/vi/xXywqqs6uTs/hqdefault.jpg", width: 480, height: 360, description: "AI 전력 수요와 미국 원전 건설 사이클, 원전 밸류체인 기회를 한국어로 설명하는 롱폼 영상입니다." },
+  },
   {
     slug: "artificial-intelligence-alphabet-ai-search-cloud-capex-2026",
     title: "알파벳은 AI 검색보다 광고 현금흐름과 클라우드 마진을 먼저 봐야 합니다",
