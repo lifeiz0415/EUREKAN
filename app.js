@@ -165,6 +165,15 @@ const SEMICONDUCTOR_BROADCOM_AI_ASIC_VMWARE_CASHFLOW_2026_IMAGE = {
   height: 640,
 };
 
+const ARTIFICIAL_INTELLIGENCE_ALPHABET_AI_SEARCH_CLOUD_CAPEX_2026_IMAGE = {
+  src: "images/artificial-intelligence-alphabet-ai-search-cloud-capex-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Googleplex_Welcome_Sign.jpg",
+  alt: "Googleplex 안내 표지 이미지로 알파벳의 AI 검색, 광고 현금흐름, Google Cloud 마진을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Googleplex_Welcome_Sign.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -2024,6 +2033,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "artificial-intelligence-alphabet-ai-search-cloud-capex-2026": ["GOOGL", "MSFT", "META", "AMZN"],
   "semiconductor-broadcom-ai-asic-vmware-cashflow-2026": ["AVGO", "NVDA", "MRVL", "AMD"],
   "renewable-energy-long-duration-storage-grid-intelligence-2035": ["FLNC", "ITRI", "PWR", "HUBB"],
   "artificial-intelligence-industry-cycle-power-rotation-2026": ["NVDA", "VRT", "ETN", "GEV"],
@@ -2102,6 +2112,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "artificial-intelligence-alphabet-ai-search-cloud-capex-2026",
+    title: "알파벳은 AI 검색보다 광고 현금흐름과 클라우드 마진을 먼저 봐야 합니다",
+    desk: "인공지능",
+    author: "Marcus",
+    publishedAt: "2026-06-12T13:23:00+09:00",
+    summary: "알파벳 GOOGL은 FY2026 1분기 총매출 1,098억9600만 달러, Google Search & other 매출 604억700만 달러, Google Cloud 매출 200억2800만 달러를 기록했습니다. 투자자는 Gemini 성능보다 검색 광고 현금흐름, Cloud operating income, AI 설비투자 회수율을 함께 봐야 합니다.",
+    image: ARTIFICIAL_INTELLIGENCE_ALPHABET_AI_SEARCH_CLOUD_CAPEX_2026_IMAGE,
+    video: { youtubeId: "ktrLa-KOAEU", title: "순이익 81% 상승, 클라우드 63% 폭증…위기론 잠재운 알파벳 역대급 실적", channel: "머니네버슬립", sourceUrl: "https://www.youtube.com/watch?v=ktrLa-KOAEU", thumbnailUrl: "https://i.ytimg.com/vi/ktrLa-KOAEU/hqdefault.jpg", width: 480, height: 360, description: "알파벳의 실적, 클라우드 성장, AI 검색 우려와 주가 반응을 한국어로 설명하는 롱폼 분석 영상입니다." },
+  },
   {
     slug: "semiconductor-broadcom-ai-asic-vmware-cashflow-2026",
     title: "브로드컴은 AI ASIC 성장보다 VMware 현금흐름과 고객 집중을 함께 봐야 합니다",
