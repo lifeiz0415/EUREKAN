@@ -93,6 +93,15 @@ const HARDWARE_DELL_AI_SERVER_BACKLOG_MARGIN_2026_IMAGE = {
   height: 640,
 };
 
+const HARDWARE_TSSI_AI_RACK_INTEGRATION_CASHFLOW_2026_IMAGE = {
+  src: "images/hardware-tssi-ai-rack-integration-cashflow-2026-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Sun_Modular_Datacenter.jpg",
+  alt: "모듈형 데이터센터 사진으로 TSSI의 AI 랙 통합과 데이터센터 인프라 서비스를 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Sun_Modular_Datacenter.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const SOCIAL_MEDIA_META_AI_CAPEX_AD_ROI_2026_IMAGE = {
   src: "images/social-media-meta-ai-capex-ad-roi-2026-1280.webp",
   externalSrc: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Meta_Platforms_Headquarters_Menlo_Park_California.jpg",
@@ -2024,6 +2033,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "TMUS": { name: "T-모바일 US", market: "미국", ticker: "TMUS", url: "https://m.stock.naver.com/worldstock/stock/TMUS.O/total" },
   "TSM": { name: "TSMC ADR", market: "미국", ticker: "TSM", url: "https://m.stock.naver.com/worldstock/stock/TSM/total" },
   "TSLA": { name: "테슬라", market: "미국", ticker: "TSLA", url: "https://m.stock.naver.com/worldstock/stock/TSLA.O/total" },
+  "TSSI": { name: "TSS", market: "미국", ticker: "TSSI", url: "https://m.stock.naver.com/worldstock/stock/TSSI.O/total" },
   "TGT": { name: "타겟", market: "미국", ticker: "TGT", url: "https://m.stock.naver.com/worldstock/stock/TGT/total" },
   "TXN": { name: "텍사스 인스트루먼트", market: "미국", ticker: "TXN", url: "https://m.stock.naver.com/worldstock/stock/TXN.O/total" },
   "UBER": { name: "우버", market: "미국", ticker: "UBER", url: "https://m.stock.naver.com/worldstock/stock/UBER.K/total" },
@@ -2112,6 +2122,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "cloud-computing-nebius-arr-capex-capacity-2026": ["NBIS", "NVDA", "CRWV", "ORCL"],
   "cloud-computing-oracle-rpo-ai-capex-2026": ["ORCL", "MSFT", "AMZN", "GOOGL"],
   "social-media-meta-ai-capex-ad-roi-2026": ["META", "GOOGL", "RDDT", "SNAP"],
+  "hardware-tssi-ai-rack-integration-cashflow-2026": ["TSSI"],
   "hardware-dell-ai-server-backlog-margin-2026": ["DELL", "NVDA", "AVGO", "005930.KS"],
   "quantum-computing-dwave-bookings-rpo-revenue-2026": ["QBTS", "IONQ", "RGTI", "QUBT"],
   "quantum-computing-rigetti-cepheus-cloud-revenue-2026": ["RGTI", "IONQ", "QBTS", "QUBT"],
@@ -2169,6 +2180,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "hardware-tssi-ai-rack-integration-cashflow-2026",
+    title: "TSSI는 AI 데이터센터 매출보다 고객 집중과 현금흐름을 먼저 봐야 합니다",
+    desk: "하드웨어",
+    author: "Gideon",
+    publishedAt: "2026-06-12T22:36:00+09:00",
+    summary: "TSS Inc. TSSI는 AI와 고성능컴퓨팅 인프라를 직접 만드는 회사가 아니라 데이터센터용 랙 통합, 조달, 배포, 시설관리 서비스를 제공하는 회사입니다. 2025년 매출 2억4,572만 달러와 2026년 1분기 시스템 통합 매출 88% 성장을 보였지만 고객 집중과 운전자본 부담을 함께 봐야 합니다.",
+    image: HARDWARE_TSSI_AI_RACK_INTEGRATION_CASHFLOW_2026_IMAGE,
+    video: { youtubeId: "KinhmZvmATM", title: "TSS Inc. TSSI가 AI 데이터센터 인프라 뒤에서 성장한 이유를 설명하는 영어 롱폼 영상", channel: "The Gameplan Wall Street", sourceUrl: "https://www.youtube.com/watch?v=KinhmZvmATM", thumbnailUrl: "https://i.ytimg.com/vi/KinhmZvmATM/hqdefault.jpg", width: 480, height: 360, description: "TSSI가 AI 하드웨어와 모듈형 데이터센터 수요 뒤에서 어떤 역할을 맡는지 설명하는 6분대 영어 롱폼 분석 영상입니다." },
+  },
   {
     slug: "quantum-security-laes-arqq-business-2026",
     title: "실스크와 아르킷 퀀텀은 양자컴퓨터보다 양자보안 전환을 파는 회사입니다",
