@@ -192,6 +192,15 @@ const ENERGY_COMMODITIES_ENCORE_ENERGY_ISR_URANIUM_COMPARISON_2026_IMAGE = {
   height: 640,
 };
 
+const TRADITIONAL_ENERGY_XENERGY_XE100_TRISO_URANIUM_FUEL_2026_IMAGE = {
+  src: "images/traditional-energy-xenergy-xe100-triso-uranium-fuel-2026-1280.webp",
+  externalSrc: "https://www.energy.gov/sites/default/files/styles/full_article_width/public/2022-09/xe-100_x_energy.png?itok=trMEaj8f",
+  alt: "X-energy Xe-100 원자로 설계와 TRISO-X 연료 판매 구조를 설명하는 원전 시설 이미지",
+  sourceUrl: "https://www.energy.gov/ne/articles/did-us-nuclear-energy-sector-just-have-its-best-month-ever",
+  width: 1280,
+  height: 640,
+};
+
 const US_STOCKS_AMAZON_AWS_RETAIL_MARGIN_2026_IMAGE = {
   src: "images/us-stocks-amazon-aws-retail-margin-2026-1280.webp",
   alt: "아마존 물류센터와 리테일 마진 회복을 떠올리게 하는 이미지",
@@ -1929,6 +1938,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "KO": { name: "코카콜라", market: "미국", ticker: "KO", url: "https://m.stock.naver.com/worldstock/stock/KO/total" },
   "KTOS": { name: "크라토스 디펜스 & 시큐리티 솔", market: "미국", ticker: "KTOS", url: "https://m.stock.naver.com/worldstock/stock/KTOS.O/total" },
   "LCID": { name: "루시드 그룹", market: "미국", ticker: "LCID", url: "https://m.stock.naver.com/worldstock/stock/LCID.O/total" },
+  "LEU": { name: "센트러스 에너지", market: "미국", ticker: "LEU", url: "https://m.stock.naver.com/worldstock/stock/LEU/total" },
   "LLY": { name: "일라이 릴리", market: "미국", ticker: "LLY", url: "https://m.stock.naver.com/worldstock/stock/LLY/total" },
   "LMT": { name: "록히드 마틴", market: "미국", ticker: "LMT", url: "https://m.stock.naver.com/worldstock/stock/LMT/total" },
   "LITE": { name: "루멘텀 홀딩스", market: "미국", ticker: "LITE", url: "https://m.stock.naver.com/worldstock/stock/LITE.O/total" },
@@ -2006,6 +2016,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "WLDS": { name: "웨어러블 디바이시스", market: "미국", ticker: "WLDS", url: "https://m.stock.naver.com/worldstock/stock/WLDS.O/total" },
   "WM": { name: "웨이스트 매니지먼트", market: "미국", ticker: "WM", url: "https://m.stock.naver.com/worldstock/stock/WM/total" },
   "WMT": { name: "월마트", market: "미국", ticker: "WMT", url: "https://m.stock.naver.com/worldstock/stock/WMT.O/total" },
+  "XE": { name: "엑스에너지", market: "미국", ticker: "XE", url: "https://m.stock.naver.com/worldstock/stock/XE.O/total" },
   "XOM": { name: "엑슨 모빌", market: "미국", ticker: "XOM", url: "https://m.stock.naver.com/worldstock/stock/XOM/total" },
   "YOU": { name: "클리어 시큐어", market: "미국", ticker: "YOU", url: "https://m.stock.naver.com/worldstock/stock/YOU/total" },
   "ZENA": { name: "제나테크", market: "미국", ticker: "ZENA", url: "https://m.stock.naver.com/worldstock/stock/ZENA.O/total" },
@@ -2054,6 +2065,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "traditional-energy-xenergy-xe100-triso-uranium-fuel-2026": ["XE", "LEU", "CCJ", "UUUU"],
   "energy-commodities-encore-energy-isr-uranium-comparison-2026": ["EU", "UEC", "UUUU", "CCJ"],
   "energy-commodities-uranium-reactor-supply-bottleneck-2035": ["CCJ", "UEC", "NXE", "UUUU"],
   "artificial-intelligence-alphabet-ai-search-cloud-capex-2026": ["GOOGL", "MSFT", "META", "AMZN"],
@@ -2135,6 +2147,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "traditional-energy-xenergy-xe100-triso-uranium-fuel-2026",
+    title: "엑스에너지는 우라늄 광산주가 아니라 원자로 IP와 연료 가공주로 봐야 합니다",
+    desk: "전통 에너지",
+    author: "Graham",
+    publishedAt: "2026-06-12T15:05:00+09:00",
+    summary: "상장 티커 XE로 거래되는 엑스에너지는 2026년 1분기 총 수익과 보조금 수익 4,342만 달러, 영업손실 6,611만 달러를 기록했습니다. 투자자는 우라늄 원료 판매보다 Xe-100 설계 IP, TRISO-X 연료 가공·재장전 모델, TX-1 연료 공장과 HALEU 공급 병목을 함께 봐야 합니다.",
+    image: TRADITIONAL_ENERGY_XENERGY_XE100_TRISO_URANIUM_FUEL_2026_IMAGE,
+    video: { youtubeId: "aqwHtMLAd1k", title: "엑스에너지 IPO 후 첫 메시지를 설명하는 한국어 롱폼 영상", channel: "전력한정", sourceUrl: "https://www.youtube.com/watch?v=aqwHtMLAd1k", thumbnailUrl: "https://i.ytimg.com/vi/aqwHtMLAd1k/hqdefault.jpg", width: 480, height: 360, description: "엑스에너지 IPO 이후 원자로 IP 회사라는 관점과 원전 투자 포인트를 설명하는 한국어 롱폼 영상입니다." },
+  },
   {
     slug: "energy-commodities-encore-energy-isr-uranium-comparison-2026",
     title: "엔코어 에너지는 미국 ISR 우라늄 생산주로 봐야 합니다",
