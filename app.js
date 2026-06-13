@@ -1404,6 +1404,15 @@ const SEMICONDUCTOR_INTEL_FOUNDRY_CASHFLOW_2026_IMAGE = {
   height: 960,
 };
 
+const SEMICONDUCTOR_INTEL_10_YEAR_OUTLOOK_FOUNDRY_PRODUCTS_2036_IMAGE = {
+  src: "images/semiconductor-intel-10-year-outlook-foundry-products-2036-1280.webp",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/0/00/4th_Generation_Intel%C2%AE_Core%E2%84%A2_Processor_Wafer_Black.jpg",
+  alt: "인텔 웨이퍼 이미지로 향후 10년 반도체 제품과 파운드리 전환을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:4th_Generation_Intel%C2%AE_Core%E2%84%A2_Processor_Wafer_Black.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const SEMICONDUCTOR_SKHYNIX_HBM_CAPEX_CASHFLOW_2026_IMAGE = {
   src: "images/semiconductor-skhynix-hbm-capex-cashflow-2026-1280.webp",
   alt: "SK하이닉스 M15X 팹 조감도를 통해 HBM 설비투자와 현금흐름 회수 속도를 설명하는 이미지",
@@ -2117,6 +2126,7 @@ const RELATED_STOCK_TICKERS_BY_DESK = {
 };
 
 const RELATED_STOCK_TICKERS_BY_SLUG = {
+  "semiconductor-intel-10-year-outlook-foundry-products-2036": ["INTC"],
   "traditional-energy-xenergy-xe100-triso-uranium-fuel-2026": ["XE", "LEU", "CCJ", "UUUU"],
   "energy-commodities-encore-energy-isr-uranium-comparison-2026": ["EU", "UEC", "UUUU", "CCJ"],
   "energy-commodities-uranium-reactor-supply-bottleneck-2035": ["CCJ", "UEC", "NXE", "UUUU"],
@@ -2204,6 +2214,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "semiconductor-intel-10-year-outlook-foundry-products-2036",
+    title: "인텔의 향후 10년 전망은 CPU 왕국 회복보다 파운드리 적자를 줄이는 속도에 달려 있습니다",
+    desk: "반도체",
+    author: "Martin",
+    publishedAt: "2026-06-14T08:17:27+09:00",
+    summary: "인텔 INTC의 향후 10년 전망은 좋은 CPU를 파는 힘과 Intel Foundry 적자 축소가 동시에 증명되는지에 달려 있습니다. Products 이익, 18A 수율, 외부 고객, 잉여현금흐름을 중학생도 이해할 수 있게 정리합니다.",
+    image: SEMICONDUCTOR_INTEL_10_YEAR_OUTLOOK_FOUNDRY_PRODUCTS_2036_IMAGE,
+    video: { youtubeId: "gBcCGkYkens", title: "적자 탈출로는 부족한 인텔 턴어라운드 조건 분석", channel: "한경 글로벌마켓", sourceUrl: "https://www.youtube.com/watch?v=gBcCGkYkens", thumbnailUrl: "https://i.ytimg.com/vi/gBcCGkYkens/hqdefault.jpg", width: 480, height: 360, description: "인텔 주가와 사업 턴어라운드를 파운드리 적자, 제품 경쟁력, 실적 개선 조건으로 나누어 설명하는 한국어 롱폼 분석 영상입니다." },
+  },
   {
     slug: "space-technology-spacex-buy-now-after-ipo-2026",
     title: "스페이스X 지금 사도 되는지는 상장 첫날 가격보다 락업과 스타링크 현금흐름에 달려 있습니다",
