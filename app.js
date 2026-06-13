@@ -1329,6 +1329,15 @@ const SPACE_TECHNOLOGY_SPACEX_STARLINK_STARSHIP_IPO_2026_IMAGE = {
   height: 720,
 };
 
+const SPACE_TECHNOLOGY_SPACEX_BUY_NOW_AFTER_IPO_2026_IMAGE = {
+  src: "images/space-technology-spacex-buy-now-after-ipo-2026-1280.webp",
+  alt: "스페이스X Falcon 9 재사용 로켓 발사 장면으로 상장 직후 매수 판단을 설명하는 이미지",
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:SES-10_Launch_-_world%27s_first_reflight_of_an_orbital_class_rocket_(33361035200).jpg",
+  externalSrc: "https://upload.wikimedia.org/wikipedia/commons/b/b8/SES-10_Launch_-_world%27s_first_reflight_of_an_orbital_class_rocket_%2833361035200%29.jpg",
+  width: 1280,
+  height: 640,
+};
+
 const SPACE_TECHNOLOGY_ROCKET_LAB_BACKLOG_CASHFLOW_2026_IMAGE = {
   src: "images/space-technology-rocket-lab-backlog-cashflow-2026-1280.webp",
   alt: "로켓 랩 전망은 Neutron 첫 비행보다 백로그가 현금흐름으로 바뀌는 속도에 달려 있습니다 내용을 설명하는 우주 기술 대표 이미지",
@@ -2039,6 +2048,7 @@ const RELATED_STOCKS_BY_TICKER = {
   "SNDK": { name: "샌디스크", market: "미국", ticker: "SNDK", url: "https://m.stock.naver.com/worldstock/stock/SNDK.O/total" },
   "SNAP": { name: "스냅", market: "미국", ticker: "SNAP", url: "https://m.stock.naver.com/worldstock/stock/SNAP.K/total" },
   "SNOW": { name: "스노우플레이크", market: "미국", ticker: "SNOW", url: "https://m.stock.naver.com/worldstock/stock/SNOW.K/total" },
+  "SPCX": { name: "스페이스X", market: "미국", ticker: "SPCX", url: "https://m.stock.naver.com/worldstock/stock/SPCX.O/total" },
   "STI": { name: "솔리디온 테크놀로지", market: "미국", ticker: "STI", url: "https://m.stock.naver.com/worldstock/stock/STI.O/total" },
   "SYM": { name: "심보틱", market: "미국", ticker: "SYM", url: "https://m.stock.naver.com/worldstock/stock/SYM.O/total" },
   "TER": { name: "테라다인", market: "미국", ticker: "TER", url: "https://m.stock.naver.com/worldstock/stock/TER.O/total" },
@@ -2148,6 +2158,7 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
   "artificial-intelligence-agent-workflow-revenue-2026": ["MSFT", "CRM", "NOW", "GOOGL"],
   "space-technology-asts-bluebird-cash-burn-2026": ["ASTS", "RKLB", "PL", "012450.KS"],
   "space-technology-redwire-edge-cashflow-2026": ["RDW", "RKLB", "PL", "ASTS"],
+  "space-technology-spacex-buy-now-after-ipo-2026": ["SPCX"],
   "space-technology-spacex-starlink-starship-ipo-2026": ["RKLB", "ASTS", "PL", "012450.KS"],
   "space-technology-rocket-lab-backlog-cashflow-2026": ["RKLB", "PL", "ASTS", "012450.KS"],
   "us-stocks-nvidia-ai-margin-2026": ["NVDA", "AVGO", "AMD", "005930.KS"],
@@ -2193,6 +2204,16 @@ const RELATED_STOCK_TICKERS_BY_SLUG = {
 };
 
 const featuredPages = [
+  {
+    slug: "space-technology-spacex-buy-now-after-ipo-2026",
+    title: "스페이스X 지금 사도 되는지는 상장 첫날 가격보다 락업과 스타링크 현금흐름에 달려 있습니다",
+    desk: "우주 기술",
+    author: "Conrad",
+    publishedAt: "2026-06-13T10:12:00+09:00",
+    summary: "스페이스X SPCX가 나스닥 상장 첫날 공모가 대비 크게 오른 뒤 지금 매수해도 되는지 판단하려면 스타링크 현금흐름, 스타십 투자 부담, 락업과 유통물량, 첫 상장사 분기 실적을 함께 확인해야 합니다.",
+    image: SPACE_TECHNOLOGY_SPACEX_BUY_NOW_AFTER_IPO_2026_IMAGE,
+    video: { youtubeId: "72qypqS4sgU", title: "SpaceX IPO 이후 투자자가 확인해야 할 내용을 설명하는 롱폼 영상", channel: "Business Insider", sourceUrl: "https://www.youtube.com/watch?v=72qypqS4sgU", thumbnailUrl: "https://i.ytimg.com/vi/72qypqS4sgU/hqdefault.jpg", width: 480, height: 360, description: "스페이스X 상장 이후 공개시장 투자자가 기업가치, Starlink, Starship, 수급을 어떻게 볼지 점검하는 영어 롱폼 영상입니다." },
+  },
   {
     slug: "robotics-undervalued-us-stocks-2036",
     title: "향후 10년 로보틱스 저평가주는 심보틱을 기준으로 서브와 리치테크를 따져봐야 합니다",
